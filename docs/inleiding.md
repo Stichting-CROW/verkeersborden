@@ -1,6 +1,5 @@
 # Inleiding
 
-Engels of nederlands? [Issue 1](https://github.com/Stichting-CROW/verkeersborden/issues/1)
 
 ## Aanleiding
 
