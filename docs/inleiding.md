@@ -7,32 +7,36 @@ Voor het domein mobiliteit wordt gewerkt aan het beschikbaar krijgen van data ov
 
 Het ministerie I&W heeft in 2021 rondom het management van verkeersborden twee digitaliseringstrajecten lopen: 
 
-1. Het neerzetten van een Nationaal Wegen Bestand+ ([Issue 4](https://github.com/Stichting-CROW/verkeersborden/issues/4)) en
-2. Het bouwen van een verkeersbesluiten database ([Issue 5](https://github.com/Stichting-CROW/verkeersborden/issues/5))
+1. Het neerzetten van een Nationaal Wegen Bestand+ ([nieuwsbericht NWB](https://nationaalwegenbestand.nl/nieuws/ndw-wil-van-nwb-het-wegenbestand-voor-overheidsinformatie-maken)) en
+2. Het bouwen van een verkeersbesluiten database ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing)
 
-Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een informatiemodel voor verkeersborden essentieel. 
+Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een informatiemodel voor verkeersbesluiten essentieel. 
 
 ## Doel document
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel verkeersborden.
+Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel voor verkeersbesluiten.
 
 ## Doel informatiemodel
-Doel van het informatiemodel verkeersborden is zorgen dat verkeersborden, in de context van verkeersbesluiten, op eenduidige manier gepubliceerd kunnen worden en daarmee machine-verwerkbaar. In de toekomst, na 2023, is het doel:
+Doel van het informatiemodel verkeersbesluiten is zorgen dat verkeersborden en markeringen op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk zodat deze informatie machine-verwerkbaar is. In de toekomst, na 2023, is het doel:
 
-Auto en automobilist kunnen veilig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels (oa?) gepubliceerd conform het Informatiemodel Verkeersborden. Alle na 2022 gefabriceerde autos voor de europese markt moeten over techniek beschikken om deze techniek te ondersteunen. [lees hierover meer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
+Auto en automobilist kunnen veilig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels (oa?) gepubliceerd conform het Informatiemodel Verkeersborden. Alle na 2022 gefabriceerde autos voor de europese markt moeten over techniek beschikken om dit te ondersteunen. [lees hierover meer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
 ## Scope
 
-De scope van het "Informatiemodel Verkeersborden" is een informatiemodel voor de use case "registratie van verkeersbesluiten".
+De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel voor de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke netwerkregistratie met het doel 
+
+> "het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken." ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing)
 
 
-**[Issue 9](https://github.com/Stichting-CROW/verkeersborden/issues/9)** Registratie: is ook het proces van aanleveren van verkeersbesluiten binnen scope (transactie-achtige zaken, aanleveren en valideren van het verkeersbesluit); of moet een "instantie" van het verkeersbord alleen kunnen worden gepubliceerd conform het informatiemodel? (op x,y,z en x type bord met y inhoud)
+De use case bevat de volgende processtappen voor de gebruiker:
 
-Een verkeersbord geldt voor een of meerdere rijstroken: wat is de relatie met andere modellen / moet dit worden vastgelegd in het informatiemodel? [Issue 11](https://github.com/Stichting-CROW/verkeersborden/issues/11)
+1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
+2. Het valideren van de aangeboden gegevens;
+3. Het publiceren van de wijziging voor de landelijke netwerkregistraties. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
 
-Wat is het doel van het informatiemodel: voor welke levensfase van een verkeersbord? [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10)
+Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32)
 
-Verkeersborden of ook markeringen? [Issue 16](https://github.com/Stichting-CROW/verkeersborden/issues/16)
+
 
 
 ## Raakvlakken
@@ -42,6 +46,12 @@ Deze use case heeft raakvlakken met andere use cases in de levenscyclus van een 
 ### Wegennetwerken
 Vanuit Smart Mobility/verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet (NWB) de attributen voor wettelijk maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. 
 Verkeerskundig gezien is het de vraag of wegvakniveau het juist niveau van aggregatie is. Het komt regelmatig voor dat binnen een wegvak er meerdere snelheidsregimes van kracht zijn (vb: een kombord halverwege een wegvak). [Issue 11](https://github.com/Stichting-CROW/verkeersborden/issues/11)
+
+Een verkeersbord geldt voor een of meerdere rijstroken: wat is de relatie met andere modellen / moet dit worden vastgelegd in het informatiemodel? [Issue 11](https://github.com/Stichting-CROW/verkeersborden/issues/11)
+
+Wat is het doel van het informatiemodel: voor welke levensfase van een verkeersbord? [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10)
+
+Verkeersborden of ook markeringen? [Issue 16](https://github.com/Stichting-CROW/verkeersborden/issues/16)
 
 
 
