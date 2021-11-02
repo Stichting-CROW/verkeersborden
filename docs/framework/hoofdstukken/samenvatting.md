@@ -1,0 +1,1 @@
+Voor het domein mobiliteit wordt gewerkt aan het beschikbaar krijgen van data over verkeersborden. De behoefte komt voort uit de digitalisering van werkprocessen van wegbeheerders en service providers om de weggebruiker te informeren. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden.
