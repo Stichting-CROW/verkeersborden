@@ -8,7 +8,7 @@ Voor het domein mobiliteit wordt gewerkt aan het beschikbaar krijgen van data ov
 Het ministerie I&W heeft in 2021 rondom het management van verkeersborden twee digitaliseringstrajecten lopen: 
 
 1. Het neerzetten van een Nationaal Wegen Bestand+ ([nieuwsbericht NWB](https://nationaalwegenbestand.nl/nieuws/ndw-wil-van-nwb-het-wegenbestand-voor-overheidsinformatie-maken)) en
-2. Het bouwen van een verkeersbesluiten database ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing)
+2. Het bouwen van een verkeersbesluiten database ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing))
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een informatiemodel voor verkeersbesluiten essentieel. 
 
@@ -27,14 +27,24 @@ De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel v
 
 > [Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing): "Het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden)."
 
-
-De use case bevat de volgende processtappen voor de gebruiker:
-
-1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
-2. Het valideren van de aangeboden wijziging;
-3. Het publiceren van de wijziging in de landelijke netwerkregistratie. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
-
 Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
+
+
+<aside class="example" title="Waarschuwingbord: drempel">
+  <p>
+    Een **wegbeheerder** die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben:
+    1. Zorgen dat het verkeer *snelheid mindert ten opzichte van de maximum snelheid*, zodat een gevaarlijke situatie voorkomen wordt (een kruising, een school, een uitrit....)
+    2. Zorgen dat het verkeer zijn *snelheid beperkt tot de maximum snelheid*, zodat over de gehele lengte van de weg niet te hard gereden wordt.
+    Door op een kaart aan te geven dat er een Waarschuwingsbord komt voor een drempel, en de drempel op de kaart te zetten, is de bedoeling voor een verkeerskundige duidelijk, maar wordt het onderscheid tussen het eerste en tweede doel niet meer af te leiden. Door het ontwerp van de drempel kan een maximale snelheid worden "afgedwongen" omdat het niet comfortabel is om er harder overheen te rijden.
+    
+    Een **Menselijke chauffeur** die het verkeersbord visueel waarneemt, neemt (meestal) ook gelijktijdig de drempel visueel waar. Als de drempel er hoog uitziet ten opzichte van de snelheid, mindert de chauffeur tot minder dan de maximum snelheid. Als de drempel er laag uitziet ten opzichte van de maximum snelheid, beperkt de chauffeur zich tot de maximum snelheid. Voor een menselijke chauffeur voldoet het bord. Vooral omdat een deel van de chauffeurs de route kent, en na een keer te hard over de drempel te zijn gereden de tweede keer de snelheid iets mindert.
+    
+    Een "Automatische pilot" of een "Rijondersteuning" kan ook via beeldherkenning het bord en de drempel waarnemen. De menselijke afweging hoe snel comfortabel over de drempel gereden kan worden, is voor een machine echter moeilijk te maken. De machine weet niet goed welke snelheid het voertuig zou moeten hebben bij de drempel. 
+    
+        Een "Automatische pilot" of een "Rijondersteuning" in een auto krijgt in het ideale geval via de netwerkregistratie door, dat er een drempel ligt. Of eigenlijk: dat tussen punt x en punt y op zijn route (over de lengte van de drempel) snelheid geminderd moet worden tot x. Indien de drempel de maximum snelheid afdwingt, is de waarschuwing eigenlijk niet nodig; tenzij de menselijke chauffeur die zelf rijdt gewaarschuwd moet worden om hier toch maar even snelheid te minderen (bijvoorbeeld door het bord ook op de boordcomputer te tonen). Indien de drempel een lagere snelheid afdwingt, kan de machine de informatie goed interpreteren. Zowel het bord, als de lengte waarover de waarschuwing geldt, als de *consequentie*, langzamer rijden, zal opgenomen moeten worden in de landelijke registratie, om het hierboven beschreven doel te halen.
+  <p>
+</aside>
+
 
 
 ## Leeswijzer
@@ -50,7 +60,10 @@ Bij de uitgangspunten wordt onderscheid gemaakt in:
 * Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
 
 * **Use case**
-
+De use case bevat de volgende processtappen voor de gebruiker:
+1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
+2. Het valideren van de aangeboden wijziging;
+3. Het publiceren van de wijziging in de landelijke netwerkregistratie.
 
 * **Raakvlakanalyse**
 In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het "Informatiemodel Verkeersbesluiten" verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de "digitale representatie" van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
@@ -79,7 +92,21 @@ Bij de uitgangspunten wordt onderscheid gemaakt in:
 BOMOS
 
 # Use case
-Beschrijf de use case
+
+## Inleiding
+De use case bevat de volgende onderdelen
+
+1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
+2. Het valideren van de aangeboden wijziging;
+3. Het publiceren van de wijziging in de landelijke netwerkregistratie. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
+
+## Aanbieden verkeersbesluit
+Het eerste onderdeel van de use case bevast de transactie tussen de **wegbeheerder** en de **Landelijke registratie** waarbij de wegbeheerder een wijziging in de wegligging en/of de verkeersregels aanbiedt aan de landelijke registratie. 
+
+## Valideren verkeersbesluit
+
+## Publiceren verkeersbesluit
+
 
 
 # Raakvlakanalyse
