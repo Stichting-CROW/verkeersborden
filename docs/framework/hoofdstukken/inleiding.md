@@ -16,32 +16,50 @@ Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor
 Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel voor verkeersbesluiten.
 
 ## Doel informatiemodel
-Doel van het informatiemodel verkeersbesluiten is zorgen dat verkeersborden en markeringen op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk zodat deze informatie machine-verwerkbaar is. In de toekomst, na 2023, is het doel:
+Doel van het informatiemodel verkeersbesluiten is zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. In de toekomst, na 2023, is het doel:
 
-Auto en automobilist kunnen veilig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels (oa?) gepubliceerd conform het Informatiemodel Verkeersborden. Alle na 2022 gefabriceerde autos voor de europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
+> Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
 ## Scope
 
-De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel voor de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke netwerkregistratie met het doel 
+De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel voor de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke registratie van het wegennetwerk met het doel
 
-> "het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken." ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing)
+> [Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing): "Het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden)."
 
 
 De use case bevat de volgende processtappen voor de gebruiker:
 
 1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
-2. Het valideren van de aangeboden gegevens;
-3. Het publiceren van de wijziging voor de landelijke netwerkregistraties. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
+2. Het valideren van de aangeboden wijziging;
+3. Het publiceren van de wijziging in de landelijke netwerkregistratie. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
 
-Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32)
-
-
+Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
 
 
+
+## Uitgangspunten
+* Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
+* Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
+
+
+## Leeswijzer
+
+Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel verkeersborden.
+
+
+Dit document bevat: 
+* **Raakvlakanalyse**
+In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het "Informatiemodel Verkeersbesluiten" verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de representatie van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
+
+* **Stakeholderanalyse**
+Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
+
+
+# Raakvlakanalyse
 ## Raakvlakken
 
-Deze use case heeft raakvlakken met andere use cases in de levenscyclus van een verkeersbord [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10).
+De use case "Registreren van verkeersbesluiten" heeft betrekking op de planfase **of ook de ontwerpfase?** [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10). Daarmee heeft de use case raakvlakken met andere use cases in de levenscyclus van een verkeersbord: ontwerp; bouw; beheer; gebruik; en sloop / circulair hergebruik. 
 
 ### Wegennetwerken
 Vanuit Smart Mobility/verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet (NWB) de attributen voor wettelijk maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. 
@@ -78,19 +96,6 @@ Verkeersborden of ook markeringen? [Issue 16](https://github.com/Stichting-CROW/
 ### Sloopfase
 * **Circulair hergebruik**
 
-## Uitgangspunten
-* Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
-* Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
-
-
-## Leeswijzer
-
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel verkeersborden.
-
-
-Dit document bevat: 
-* **Stakeholderanalyse**
-Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
 
 
 # Stakeholderanalyse
