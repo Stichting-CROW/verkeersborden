@@ -21,7 +21,7 @@ Doel van het informatiemodel verkeersbesluiten is zorgen dat **verkeersborden en
 > Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
-## Scope
+## Scope informatiemodel
 
 De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel voor de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke registratie van het wegennetwerk met het doel
 
@@ -37,23 +37,49 @@ De use case bevat de volgende processtappen voor de gebruiker:
 Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
 
 
-
-## Uitgangspunten
-* Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
-* Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
-
-
 ## Leeswijzer
 
 Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel verkeersborden.
 
 
 Dit document bevat: 
+
+* **Uitgangspunten**
+Bij de uitgangspunten wordt onderscheid gemaakt in:
+* Technische uitganngspunten;
+* Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
+
+* **Use case**
+
+
 * **Raakvlakanalyse**
-In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het "Informatiemodel Verkeersbesluiten" verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de representatie van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
+In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het "Informatiemodel Verkeersbesluiten" verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de "digitale representatie" van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
 
 * **Stakeholderanalyse**
 Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
+
+* **Architectuur Framework
+
+
+
+
+
+# Uitgangspunten
+
+Bij de uitgangspunten wordt onderscheid gemaakt in:
+* Technische uitganngspunten;
+* Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
+
+## Technische uitgangspunten
+* Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
+* Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
+
+
+## Organisatorische uitgangspunten
+BOMOS
+
+# Use case
+Beschrijf de use case
 
 
 # Raakvlakanalyse
