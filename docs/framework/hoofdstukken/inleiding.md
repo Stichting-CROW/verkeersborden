@@ -3,7 +3,7 @@
 
 ## Aanleiding
 
-Voor het domein mobiliteit wordt gewerkt aan het beschikbaar krijgen van data over verkeersborden. De behoefte komt voort uit de digitalisering van werkprocessen van wegbeheerders en service providers om de weggebruiker te informeren. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden.
+Voor het domein mobiliteit wordt gewerkt aan het beschikbaar krijgen van data over verkeersbesluiten, waaronder de plaatsing van verkeersborden en wegmarkeringen. De behoefte komt voort uit de digitalisering van werkprocessen van wegbeheerders en service providers om de weggebruiker te informeren. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden en wegmarkeringen.
 
 Het ministerie I&W heeft in 2021 rondom het management van verkeersborden twee digitaliseringstrajecten lopen: 
 
@@ -18,7 +18,7 @@ Dit document beschrijft de uitgangspunten, use case en het architectuur framewor
 ## Doel informatiemodel
 Doel van het informatiemodel verkeersbesluiten is zorgen dat verkeersborden en markeringen op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk zodat deze informatie machine-verwerkbaar is. In de toekomst, na 2023, is het doel:
 
-Auto en automobilist kunnen veilig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels (oa?) gepubliceerd conform het Informatiemodel Verkeersborden. Alle na 2022 gefabriceerde autos voor de europese markt moeten over techniek beschikken om dit te ondersteunen. [lees hierover meer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
+Auto en automobilist kunnen veilig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels (oa?) gepubliceerd conform het Informatiemodel Verkeersborden. Alle na 2022 gefabriceerde autos voor de europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
 ## Scope
