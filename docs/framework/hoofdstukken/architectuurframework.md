@@ -78,4 +78,118 @@ Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn 
 * **Architectuur Framework
 
 
+# Uitgangspunten
+
+Bij de uitgangspunten wordt onderscheid gemaakt in:
+* Technische uitganngspunten;
+* Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
+
+
+## Technische uitgangspunten
+* Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
+* Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
+
+
+## Organisatorische uitgangspunten
+BOMOS
+
+
+# Use case
+
+
+## Inleiding
+De use case bevat de volgende onderdelen
+
+1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
+2. Het valideren van de aangeboden wijziging;
+3. Het publiceren van de wijziging in de landelijke netwerkregistratie. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
+
+
+## Aanbieden verkeersbesluit
+Het eerste onderdeel van de use case bevast de transactie tussen de **wegbeheerder** en de **Landelijke registratie** waarbij de wegbeheerder een wijziging in de wegligging en/of de verkeersregels aanbiedt aan de landelijke registratie. 
+
+
+## Valideren verkeersbesluit
+
+
+## Publiceren verkeersbesluit
+
+
+
+# Raakvlakanalyse
+
+
+
+## Raakvlakken
+
+De use case "Registreren van verkeersbesluiten" heeft betrekking op de planfase **of ook de ontwerpfase?** [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10). Daarmee heeft de use case raakvlakken met andere use cases in de levenscyclus van een verkeersbord: ontwerp; bouw; beheer; gebruik; en sloop / circulair hergebruik. 
+
+
+### Wegennetwerken
+Vanuit Smart Mobility/verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet (NWB) de attributen voor wettelijk maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. 
+Verkeerskundig gezien is het de vraag of wegvakniveau het juist niveau van aggregatie is. Het komt regelmatig voor dat binnen een wegvak er meerdere snelheidsregimes van kracht zijn (vb: een kombord halverwege een wegvak). [Issue 11](https://github.com/Stichting-CROW/verkeersborden/issues/11)
+
+Een verkeersbord geldt voor een of meerdere rijstroken: wat is de relatie met andere modellen / moet dit worden vastgelegd in het informatiemodel? [Issue 11](https://github.com/Stichting-CROW/verkeersborden/issues/11)
+
+Wat is het doel van het informatiemodel: voor welke levensfase van een verkeersbord? [Issue 10](https://github.com/Stichting-CROW/verkeersborden/issues/10)
+
+Verkeersborden of ook markeringen? [Issue 16](https://github.com/Stichting-CROW/verkeersborden/issues/16)
+
+
+
+### Planfase
+* **Opstellen verkeersmodellen**: het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeerborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. ([Issue 3](https://github.com/Stichting-CROW/verkeersborden/issues/3))
+
+
+### Ontwerpfase
+* **Ontwerp van wegen met markering en bebording**: Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van verkeersborden wordt bepaald. Ook kunnen extra verkeersborden uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen. ([Issue 6](https://github.com/Stichting-CROW/verkeersborden/issues/6))
+
+
+### Bouwfase
+* **Bestellen van verkeersborden**; de publieke opdrachtgever of bouw- en onderhoudsaannemer moet de juiste borden kunnen bestellen bij een leverancier. Bij het bestellen worden specificaties toegevoegd. ([Issue 7](https://github.com/Stichting-CROW/verkeersborden/issues/7))
+* **Produceren van verkeersborden**: de producent van verkeersborden werkt op basis van specificaties aan de verkeersborden; en voegt informatie toe over het productieproces en over onderhoudsspecificaties.
+* **Contracteren plaatsing verkeersborden**: De publieke opdrachtgever besteed de plaatsing van verkeersborden conform het verkeersbesluit aan (als onderdeel van een groter project). Hierbij worden specificaties toegevoegd aan het ontworpen verkeersbord.
+* **Plaatsing verkeersborden**: De bouwaannemer plaatst de verkeersborden op basis van het ontwerp en geeft de actuele geometrie door van het geplaatste verkeersbord.
+
+
+### Beheerfase
+* **Beheer verkeersborden**:
+
+
+### Gebruiksfase
+* **Rijden met incar-informatie**:
+* **Handhaving**:
+
+
+### Sloopfase
+* **Circulair hergebruik**
+
+
+
+# Stakeholderanalyse
+... Met daarbij de noodzakelijke afstemming met de relevante organisatie/gremia zoals het BIM-Loket, Geonovem, normcomissie verkeerstekens, Nationale Databank Wegverkeersgegevens en andere volgens CROW relevante gremia/organisaties).
+
+Toevoegen welke databases en informatiemodellen bestaan per use case [issue 13](https://github.com/Stichting-CROW/verkeersborden/issues/13)
+
+
+## Planfase
+....
+
+### NDW: Netwerkregistratie
+Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
+[Issue 14](https://github.com/Stichting-CROW/verkeersborden/issues/14)
+
+
+## Ontwerpfase
+
+
+### Open standaard: NLCS
+[Issue 15](https://github.com/Stichting-CROW/verkeersborden/issues/15)
+
+
+
+
+
+
+
 
