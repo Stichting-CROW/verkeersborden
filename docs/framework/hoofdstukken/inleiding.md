@@ -75,7 +75,8 @@ In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkerin
 * **Stakeholderanalyse**
 Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
 
-* **Architectuur Framework
+* **Architectuur Framework**
+Het architectuur framework beschrijft.....
 
 
 
