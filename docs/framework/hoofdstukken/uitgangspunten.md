@@ -5,10 +5,22 @@
 
 * Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
 * Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
+* In het informatiemodel worden definities opgenomen van concepten
 
-## RVV 1990
-1. Het informatiemodel geeft verkeersinstructies voor de weggebruiker op basis van het [Reglement verkeersregels en verkeerstekens 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (RVV 1990).
-2. Het informatiemodel gebruikt de definities uit de RVV 1990.
+
+## Verkeersinstructies
+1. Het informatiemodel geeft functionele verkeersinstructies voor de weggebruiker op basis van het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. 
+2. Het informatiemodel gebruikt de definities uit het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01)
+
+## Verkeersregels
+ [issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
+
+
+## Verkeersborden
+1. Het informatiemodel geeft naast de functionele verkeersinstructies ook de mogelijkheid om de fysieke verschijningsvorm van een bord met een of meerdere onderborden vast te leggen. 
+2. Het informatiemodel geeft de fysieke verschijningsvorm van het bord weer conform - [issue 24](https://github.com/Stichting-CROW/verkeersborden/issues/24) Is er een bestand met afbeeldingen van wettelijk toegestane borden? Of zijn deze alleen beschreven in de wet? 
+3. Bij elk bord geeft het informatiemodel een link naar de afbeelding van het bord in het [Reglement verkeersregels en verkeerstekens 1990]. 
+4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel. Mag dat? [issue 42](https://github.com/Stichting-CROW/verkeersborden/issues/42)
 
 
 ## Verkeersnetwerk
