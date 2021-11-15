@@ -5,7 +5,7 @@
 
 * Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
 * Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
-* In het informatiemodel worden definities opgenomen van concepten
+* In het informatiemodel worden definities opgenomen van concepten of wordt verwezen naar definities in wetten of andere informatiemodellen.
 
 
 ## Verkeersinstructies RVV 1990
@@ -21,6 +21,7 @@ Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snel
 2. Het informatiemodel geeft de fysieke verschijningsvorm van het bord weer conform - [issue 24](https://github.com/Stichting-CROW/verkeersborden/issues/24) Is er een bestand met afbeeldingen van wettelijk toegestane borden? Of zijn deze alleen beschreven in de wet? 
 3. Bij elk bord geeft het informatiemodel een link naar de afbeelding van het bord in het [Reglement verkeersregels en verkeerstekens 1990]. 
 4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel.
+5. Het informatiemodel geeft naast vaste borden ook de mogelijkheid om de locatie van dynamische borden weer te geven, zodat we weggebruiker kan worden geattendeerd om hierop te letten. 
 
 
 ## Verkeersnetwerk
