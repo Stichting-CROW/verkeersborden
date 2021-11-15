@@ -5,7 +5,7 @@
 
 In Nederland wordt data over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (BGT, BRT) en het wegennetwerk (NWB, WKD). Het voordeel van de basisregistratie: er is betere dienstverlening mogelijk; er zijn efficiency voordelen; burgers en bedrijven hoeven gegevens maar één keer aan te leveren; de overheid hoeft de gegevens maar één keer te verwerken.
 
-Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. 
+Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. 
 
 Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. Verkeersbesluiten zijn daar een representatie van. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op [www.overheid.nl](www.overheid.nl). Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze in een machine-leesbare vorm te kunnen verwerken van besluiten tot kenmerken die gebruikt kunnen worden voor de digitalisering van werkprocessen van wegbeheerders en service providers en om de weggebruiker of rij-assistent digitaal te informeren. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden en wegmarkeringen.
 
@@ -14,26 +14,31 @@ Het ministerie I&W heeft in 2021 rondom verkeer en verkeersbesluiten twee digita
 1. Het neerzetten van een Nationaal Wegen Bestand+ ([nieuwsbericht NWB](https://nationaalwegenbestand.nl/nieuws/ndw-wil-van-nwb-het-wegenbestand-voor-overheidsinformatie-maken)) en
 2. Het bouwen van een verkeersbesluiten database ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing))
 
-Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een informatiemodel voor verkeersbesluiten essentieel. 
+Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een Informatiemodel verkeerstekens en verkeersbesluiten essentieel. 
 
 
 ## Doel document
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel voor verkeersbesluiten.
+Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 
 ## Doel informatiemodel
-Doel van het informatiemodel verkeersbesluiten is zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. In de toekomst, na 2023, is het doel:
+Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. In de toekomst, na 2023, is het doel:
 
 > Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
 ## Scope informatiemodel
 
-De scope van het informatiemodel voor verkeersbesluiten is een informatiemodel voor de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke registratie van het wegennetwerk met het doel
+De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke registratie van het wegennetwerk met het doel:
 
-> [Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing): "Het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden)."
+> "Het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden)." (Quote: [Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing))
 
 Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
+
+Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* > is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
+
+
+### Voorbeeld
 
 > [!TIP]
 > Een **wegbeheerder** die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben:
@@ -51,7 +56,7 @@ Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de w
 
 ## Leeswijzer
 
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een informatiemodel verkeersborden.
+Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 
 Dit document bevat: 
@@ -68,7 +73,7 @@ De use case bevat de volgende processtappen voor de gebruiker:
 3. Het publiceren van de wijziging in de landelijke netwerkregistratie.
 
 * **Raakvlakanalyse**
-In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het "Informatiemodel Verkeersbesluiten" verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de "digitale representatie" van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
+In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de "digitale representatie" van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
 
 * **Stakeholderanalyse**
 Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
