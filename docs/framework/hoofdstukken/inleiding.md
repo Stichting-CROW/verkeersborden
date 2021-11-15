@@ -33,12 +33,12 @@ De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use c
 
 > "Het publiceren van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden)." (Quote: [Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing))
 
-Het publiceren van de wijziging voor juridische doeleinden zoals bedoeld in de wet verkeersbesluiten (bijvoorbeeld door bekendmaking op een website van een overheid) is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
+Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze in een machine-leesbare vorm te kunnen verwerken van besluiten tot kenmerken die gebruikt kunnen worden voor de digitalisering van werkprocessen van wegbeheerders en service providers en om de weggebruiker of rij-assistent digitaal te informeren. Het Informatiemodel verkeerstekens en verkeersbesluiten heeft als doel om verkeersbesluiten machine-leesbaar vast te leggen. Het publiceren van de wijziging op www.overheid.nl, inclusief teksten, ontwerptekeningen of plankaarten die het besluit onderbouwen, is buiten scope > is dat zo? [issue 32](https://github.com/Stichting-CROW/verkeersborden/issues/32).
 
 Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* > is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
 
 
-### Voorbeeld
+### Voorbeeld: drempels
 
 > [!TIP]
 > Een **wegbeheerder** die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben:
@@ -62,24 +62,30 @@ Dit document beschrijft de uitgangspunten, use case en het architectuur framewor
 Dit document bevat: 
 
 * **Uitgangspunten**
+
 Bij de uitgangspunten wordt onderscheid gemaakt in:
-* Technische uitganngspunten;
-* Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
+1. Technische uitganngspunten;
+2. Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
 
 * **Use case**
+
 De use case bevat de volgende processtappen voor de gebruiker:
 1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
 2. Het valideren van de aangeboden wijziging;
 3. Het publiceren van de wijziging in de landelijke netwerkregistratie.
 
 * **Raakvlakanalyse**
-In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van andere objecten (met name het functionele wegennetwerk en de fysieke ligging van de wegen), en ten opzichte van de "digitale representatie" van dezelfde verkeersborden en wegmarkeringen in andere use cases. 
+
+In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van:
+1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
+2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Plan, Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 * **Stakeholderanalyse**
-Allereerst is het belangrijk om in kaart te brengen welke bouwstenen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel. Hiervoor voeren wij een krachtenveld analyse uit waarbij de relevante spelers in kaart brengen.
+
+De stakeholderanalyse verkent welke informatiemodellen en informatiebronnen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel.  
 
 * **Architectuur Framework**
-Het architectuur framework beschrijft.....
+Het architectuur framework beschrijft.....[issue 40](https://github.com/Stichting-CROW/verkeersborden/issues/40)
 
 
 
