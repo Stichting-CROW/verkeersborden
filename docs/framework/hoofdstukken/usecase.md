@@ -7,7 +7,7 @@ De use case bevat de volgende onderdelen
 1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
 2. Het valideren van de aangeboden wijziging;
 3. Het publiceren van de wijziging in de landelijke netwerkregistratie. [Of ook publicatie bij de bron? Issue 33](https://github.com/Stichting-CROW/verkeersborden/issues/33)
-
+4. 4. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
 ## Aanbieden verkeersbesluit
 
@@ -21,7 +21,12 @@ Het publiceren van de wijziging voor juridische doeleinden op www.overheid.nl zo
 ## Valideren verkeersbesluit
 
 
+## Publiceren verkeersdata
+
+
 ## Publiceren verkeersbesluit
+Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
+
 
 
 
