@@ -100,7 +100,7 @@ De use case bevat de volgende processtappen voor de gebruiker:
 
 In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
-2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Plan, Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 * **Stakeholderanalyse**
 
