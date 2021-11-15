@@ -37,7 +37,7 @@ Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publicer
 
 Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* > is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
 
-Het geven van instructies over algemene verkeersregels conform [](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope - toch? [Issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
+Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope - toch? [Issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
 
 
 
