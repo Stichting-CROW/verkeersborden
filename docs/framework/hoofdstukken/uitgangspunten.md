@@ -6,6 +6,10 @@
 * Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
 * Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
 
+## RVV 1990
+1. Het informatiemodel geeft verkeersinstructies voor de weggebruiker op basis van het [Reglement verkeersregels en verkeerstekens 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (RVV 1990).
+2. Het informatiemodel gebruikt de definities uit de RVV 1990.
+
 
 ## Verkeersnetwerk
 
