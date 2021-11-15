@@ -8,13 +8,16 @@
 * In het informatiemodel worden definities opgenomen van concepten
 
 
-## Verkeersinstructies
+## Verkeersinstructies RVV 1990
 1. Het informatiemodel geeft functionele verkeersinstructies voor de weggebruiker op basis van het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. 
 2. Het informatiemodel gebruikt de definities uit het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01)
 
 ## Verkeersregels?
 [issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
 
+
+## Gerdragsadvies?
+Bijvoorbeeld gewenste lage snelheid bij donker en schemering of bij drempel / afrit
 
 ## Verkeersborden
 1. Het informatiemodel geeft naast de functionele verkeersinstructies ook de mogelijkheid om de fysieke verschijningsvorm van een bord met een of meerdere onderborden vast te leggen. 
