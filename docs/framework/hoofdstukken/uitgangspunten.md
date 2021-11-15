@@ -12,8 +12,8 @@
 1. Het informatiemodel geeft functionele verkeersinstructies voor de weggebruiker op basis van het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. 
 2. Het informatiemodel gebruikt de definities uit het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01)
 
-## Verkeersregels
- [issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
+## Verkeersregels?
+[issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
 
 
 ## Verkeersborden
