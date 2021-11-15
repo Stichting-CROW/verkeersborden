@@ -12,18 +12,15 @@
 1. Het informatiemodel geeft functionele verkeersinstructies voor de weggebruiker op basis van het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. 
 2. Het informatiemodel gebruikt de definities uit het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01)
 
-## Verkeersregels?
-[issue 43](https://github.com/Stichting-CROW/verkeersborden/issues/43)
 
-
-## Gerdragsadvies?
-Bijvoorbeeld gewenste lage snelheid bij donker en schemering of bij drempel / afrit
+## Adviessnelheid
+Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snelheid zijn er veel waarschuwingsborden die indirect (voor de mens goed te interpreteren) advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, inrit of zebrapad. Het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, naast de maximumsnelheid. Afhankelijk van de verkeerssituatie kan dit leiden tot een lagere snelheid langs meerdere gevaarlijke punten (bijvoorbeeld, een zebra (met bord) een inrit (zonder bord) en daarna wordt een kruispunt genaderd: over de gehele lengte kan een lagere snelheid gelden, los van de individuele waarschuwingen bij de gevaarlijke punten.
 
 ## Verkeersborden
 1. Het informatiemodel geeft naast de functionele verkeersinstructies ook de mogelijkheid om de fysieke verschijningsvorm van een bord met een of meerdere onderborden vast te leggen. 
 2. Het informatiemodel geeft de fysieke verschijningsvorm van het bord weer conform - [issue 24](https://github.com/Stichting-CROW/verkeersborden/issues/24) Is er een bestand met afbeeldingen van wettelijk toegestane borden? Of zijn deze alleen beschreven in de wet? 
 3. Bij elk bord geeft het informatiemodel een link naar de afbeelding van het bord in het [Reglement verkeersregels en verkeerstekens 1990]. 
-4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel. Mag dat? [issue 42](https://github.com/Stichting-CROW/verkeersborden/issues/42)
+4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel.
 
 
 ## Verkeersnetwerk
