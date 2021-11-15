@@ -88,7 +88,7 @@ In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkerin
 De stakeholderanalyse verkent welke informatiemodellen en informatiebronnen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel.  
 
 * **Architectuur Framework**
-Het architectuur framework beschrijft.....[issue 40](https://github.com/Stichting-CROW/verkeersborden/issues/40)
+Het architectuur framework beschrijft.....[issue 46](https://github.com/Stichting-CROW/verkeersborden/issues/46)
 
 
 
