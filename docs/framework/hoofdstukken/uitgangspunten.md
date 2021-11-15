@@ -4,6 +4,7 @@
 ## Informatiemodellering
 
 * Het informatiemodel wordt opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
+* Waar mogelijk wordt aangesloten op de NEN 3610 en de MIM. Bij tegenstrijdigheden geldt de NEN 2660.
 * Het architectuur framework moet generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
 * In het informatiemodel worden definities opgenomen van concepten of wordt verwezen naar definities in wetten of andere informatiemodellen.
 
