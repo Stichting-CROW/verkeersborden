@@ -76,6 +76,51 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten zal in beheer genomen mo
 ### Financiën
 
 
+## Tactiek
+
+
+### Community
+
+
+### Adoptie en erkenning
+
+
+
+### Rechtenbeleid
+
+
+
+### Architectuur
+
+
+
+### Kwaliteitsbeleid benchmarking
+
+
+
+
+## Operationeel
+
+
+### Initiatie
+
+
+
+### Wensen en eisen
+
+
+
+### Ontwikkeling
+
+
+
+### Uitvoering
+
+
+
+### Documentatie
+
+
 
 
 ## Communicatie
