@@ -60,6 +60,35 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 
 
 # Organisatorische uitgangspunten
-BOMOS
+
+Het Informatiemodel Verkeerstekens en verkeersbesluiten zal in beheer genomen moet worden om up to date te blijven. 
+
+## Strategie
+
+
+### Governance
+
+
+### Visie
+
+
+
+### Financiën
+
+
+
+
+## Communicatie
+
+
+### Promotie
+
+
+
+### Publicatie
+
+
+
+### Klachtenafhandeling
 
 
