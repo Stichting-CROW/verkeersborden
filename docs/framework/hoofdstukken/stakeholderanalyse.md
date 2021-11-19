@@ -9,7 +9,7 @@ Toevoegen welke databases en informatiemodellen bestaan per use case [issue 13](
 ## Planfase
 ....
 
-### NDW: Netwerkregistratie
+### NDW
 Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
 [Issue 14](https://github.com/Stichting-CROW/verkeersborden/issues/14)
 
@@ -28,6 +28,20 @@ BIM loket beheert daarmee standaarden met een inhoudelijke en modelmatige relati
 [Issue 15](https://github.com/Stichting-CROW/verkeersborden/issues/15)
 
 
+## Bouwfase
+
+
+## Beheerfase
+
+
+## Gebruiksfase
+
+### NWB
+
+### Programma Netwerkregistratie
+
+### BGT en SOR
+De Samenhangende Objectenregistraties....
 
 
 
