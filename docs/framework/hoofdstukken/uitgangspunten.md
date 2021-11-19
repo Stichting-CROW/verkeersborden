@@ -58,6 +58,15 @@ Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeer
 ### Bordlocatie
 Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersbord boven het Wegvak / de rijbaan / de rijstrook is gesitueerd, of naast de weg.
 
+## Raakvlakeisen 
+
+### NLCS
+1. Om bestaande, in gebruik zijnde verkeerstekens goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen.
+2. Om vanuit het bestaande werkproces een verkeersbesluit digitaal te kunnen publiceren is het handig om levering van een CAD tekening op basis van NLCS met wegligging en verkeerstekens toe te staan tijdens het registreren van verkeersbesluiten. 
+
+### CB-NL
+1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
+
 
 # Organisatorische uitgangspunten
 
