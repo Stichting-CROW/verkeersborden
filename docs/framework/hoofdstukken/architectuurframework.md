@@ -1,5 +1,21 @@
-# Framework
+# Technische uitwerking
 
-## In te vullen\
-Schrijf een tekst over het framework
+## Informatiemodel
+
+
+### Publicatieplatform
+
+
+### API's
+
+
+### Uitwisselformaten
+
+
+## Transacties
+
+
+### Uitwisselprotocol
+
+
 
