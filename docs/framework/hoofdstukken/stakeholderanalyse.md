@@ -17,7 +17,14 @@ Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
 ## Ontwerpfase
 
 
-### Open standaard: NLCS
+### BIM loket
+BIM loket publiceert CB-NL als verbindende taal voor de gehele bouwsector, om ontologien zoals het Informatiemodel Verkeerstekens en Verkeersbesluiten of objecttypenbibliotheken van asset managers en bouwbedrijven met elkaar te kunnen verbinden.  
+Daarnaast worden verkeersbesluiten soms ruimtelijk uitgewerkt of ontworpen in CAD: wegen, weginrichting en verkeerstekens. BIM loket publiceert de NLCS standaard waarmee CAD ontwerpen worden uitgewisseld. 
+
+BIM loket beheert daarmee standaarden met een inhoudelijke en modelmatige relatie tot het Informatiemodel Verkeersbesluiten en Verkeerstekens.
+
+
+
 [Issue 15](https://github.com/Stichting-CROW/verkeersborden/issues/15)
 
 
