@@ -109,6 +109,10 @@ Beschreven moet zijn wie in welke groep kan participeren en hoe men zich er voor
 
 Het sturende orgaan moet over zijn eigen benoemingen kunnen besluiten. Daarnaast moeten benoemingen in de tijd gelimiteerd zijn. 
 
+### Ecosysteem
+Er zijn afspraken nodig met BIM loket over het afstemmen van de beheer- en publicatiecyclus van CB-NL en NLCS.
+Er zijn afspraken nodig met CROW over het afstemmen van de beheer- en publicatiecyclus van IMBOR en kennispublicaties.
+
 ### Visie
 
 
