@@ -51,7 +51,7 @@ In de beheerfase wordt van de borden en markeringen informatie bijgehouden over 
 ![Asset management proces volgens iAMPro](Beheerfase.JPG "Asset management proces volgens iAMPro")
 
 ### IMBOR
-In het informatiemodel beheer openbare ruimte (IMBOR) zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. 
+In het informatiemodel beheer openbare ruimte (IMBOR) zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan en gebruiken in areaalbeheerpakketten (asset management pakketten gericht op het tactische en operationele beheer).
 
 ## Use cases Gebruiksfase
 
