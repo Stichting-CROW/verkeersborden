@@ -11,10 +11,11 @@ Op langere termijn is locale publicatie wel een optie. In het Digitaal Stelsel G
 
 De use case bevat de volgende onderdelen:
 
-1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
-2. Het valideren van de aangeboden wijziging;
-3. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
-4. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
+1. Het samenstellen van een dataset met een nieuw verkeersbesluit met daarin de wijziging in de wegligging en/of de verkeersregels
+2. De communicatie over een verkeersbesluit van wegbeheerder naar de landelijke registratie;
+3. Het valideren van de aangeboden wijziging;
+4. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
+5. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
 ## Aanbieden verkeersbesluit
 
