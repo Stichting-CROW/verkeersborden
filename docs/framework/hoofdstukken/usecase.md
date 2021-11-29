@@ -35,10 +35,12 @@ Dit onderdeel van de usecase beschrijft de use case waarmee een wegbeheerder of 
 De zo samengestelde netwerkdata kan eventueel worden gebruikt in simulaties of om varianten te onderzoeken, daarom is dit een separate stap ten opzichte van de formele transactie van de netwerkdata van de wegbeheerder naar de beheerder van de landelijke registratie.
 
 ## Transactie netwerkdata 
-Happy flow:
-* Request: De wegbeheerder biedt de wijziging aan en vraagt om deze formeel te accepteren
-* Produce: Het Syhsteem controleert of de set aan de Informatieleveringsspecificatie voldoet en of er een 
-* State: De beheerder van de landelijke registratie accepteert de aangeboden wijziging
+Happy flow (met tussen haakjes de link naar het standaard DEMO transactiepatroon)
+* De wegbeheerder biedt de wijziging aan en vraagt om deze te publiceren (Request)
+* De beheerder van de landelijke registratie belooft dit te zullen doen na validatie (Promise)
+* Het Systeem controleert of aan alle leveringsvoorwaarden is voldaan en of de aangeboden wijziging aansluit op de ongewijzigde netwerkdelen (Produce)
+* De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden (State)
+* De wegbeheerder bedankt de beheerder van de landelijke registratie voor de acceptatie
 
 ## Samenstellen verkeersbesluit
 Dit onderdeel van de usecase beschrijft wat er nodig is zodat een wegbeheerder een correcte dataset kan samenstellen met een verkeersbesluit. 
