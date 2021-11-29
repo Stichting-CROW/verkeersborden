@@ -86,6 +86,11 @@ Die markeringen zijn binnen scope, die een specifieke gedragsinstructie geven ov
 
 Uit de weginrichting volgen instructies over het gebruik van de weg. Deze zijn binnen scope.
 
+> Is dat zo? [Issue 57](https://github.com/Stichting-CROW/verkeersborden/issues/57)
+> Wat voor zaken kan de weggebruiker afleiden uit de "weginrichting" (niet zijnde borden en markeringen) waardoor informatie nodig is in het informatiemodel
+>
+> Zijn zichtlijnen een voorbeeld > een weggebruiker mag niet inhalen als het zicht slecht is?
+
 ## Leeswijzer
 
 Dit document beschrijft de volgende zaken: 
