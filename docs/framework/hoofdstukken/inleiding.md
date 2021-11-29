@@ -97,12 +97,9 @@ Dit document beschrijft de volgende zaken:
 
 * **3. Use case**
 
-De use case bevat de volgende processtappen voor de gebruiker:
-1. Het samenstellen van een dataset met een nieuw verkeersbesluit met daarin de wijziging in de wegligging en/of de verkeersregels
-2. De communicatie over een verkeersbesluit van wegbeheerder naar de landelijke registratie;
-3. Het valideren van de aangeboden wijziging;
-4. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
-5. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
+> Een usecase beschrijft een systeem vanuit het gebruikersperspectief. Het beschrijft de actor, de initiator van de interactie, en het systeem zelf als een opeenvolging van eenvoudige stappen. Actoren kunnen iets of iemand zijn, die bestaat buiten het te bestuderen systeem, en die deelneemt in de opeenvolgende activiteiten in een dialoog met het systeem om een bepaald doel te bereiken. Actoren kunnen eindgebruikers, andere systemen of hardware (apparatuur) zijn. Elke usecase is een complete serie van zogenaamde "events", beschreven vanuit het standpunt van de actor. [Bron: Wikipedia](https://nl.wikipedia.org/wiki/Usecase)
+
+De use case beschrijft de actoren: wegbeheerder, beheerder landelijke registratie, en de systemen die zij gebruiken bij het Publiceren van verkeersbesluiten.
 
 * **4. Raakvlakanalyse**
 
