@@ -3,14 +3,17 @@
 
 ## Aanleiding
 
+### Informatiebehoefte
 Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken.
 
 In Nederland wordt data over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (BGT, BRT) en het wegennetwerk (NWB, WKD). 
 
 Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. 
 
+### Gebreken
 Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. Verkeersbesluiten zijn daar een representatie van. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op [www.overheid.nl](www.overheid.nl). Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze in een machine-leesbare vorm te kunnen verwerken van besluiten tot kenmerken die gebruikt kunnen worden voor de digitalisering van werkprocessen van wegbeheerders en service providers en om de weggebruiker of rij-assistent digitaal te informeren. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden en wegmarkeringen.
 
+### Context
 Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerders aan het digitalisering van mobiliteit o.a. door het Organiseren van de Data Top 15 waar verkeersborden een van de data item is.
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeer en verkeersbesluiten twee digitaliseringstrajecten lopen: 
@@ -21,24 +24,23 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeer en 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een Informatiemodel verkeerstekens en verkeersbesluiten essentieel. 
 
 
-
-
 ## Doel document
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
+
+Dit document beschrijft de uitgangspunten en use case voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 
 ## Doel informatiemodel
+
 Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. In de toekomst, na 2023, is het doel:
 
 > Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 ### Voorbeeld: drempels
 
-> [!TIP]
 > Een **wegbeheerder** die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben:
->    1. Zorgen dat het verkeer *snelheid mindert ten opzichte van de maximum snelheid*, zodat een gevaarlijke situatie voorkomen wordt (een kruising, een school, een uitrit....)
->    2. Zorgen dat het verkeer zijn *snelheid beperkt tot de maximum snelheid*, zodat over de gehele lengte van de weg niet te hard gereden wordt.
->    Door op een kaart aan te geven dat er een Waarschuwingsbord komt voor een drempel, en de drempel op de kaart te zetten, is de bedoeling voor een verkeerskundige duidelijk, maar wordt het onderscheid tussen het eerste en tweede doel niet meer af te leiden. Door het ontwerp van de drempel kan een maximale snelheid worden "afgedwongen" omdat het niet comfortabel is om er harder overheen te rijden.
+> 1. Zorgen dat het verkeer *snelheid mindert ten opzichte van de maximum snelheid*, zodat een gevaarlijke situatie voorkomen wordt (een kruising, een school, een uitrit....)
+> 2. Zorgen dat het verkeer zijn *snelheid beperkt tot de maximum snelheid*, zodat over de gehele lengte van de weg niet te hard gereden wordt.
+> Door op een kaart aan te geven dat er een Waarschuwingsbord komt voor een drempel, en de drempel op de kaart te zetten, is de bedoeling voor een verkeerskundige duidelijk, maar wordt het onderscheid tussen het eerste en tweede doel niet meer af te leiden. Door het ontwerp van de drempel kan een maximale snelheid worden "afgedwongen" omdat het niet comfortabel is om er harder overheen te rijden.
 >    
 >    Een **Menselijke chauffeur** die het verkeersbord visueel waarneemt, neemt (meestal) ook gelijktijdig de drempel visueel waar. Als de drempel er hoog uitziet ten opzichte van de snelheid, mindert de chauffeur tot minder dan de maximum snelheid. Als de drempel er laag uitziet ten opzichte van de maximum snelheid, beperkt de chauffeur zich tot de maximum snelheid. Voor een menselijke chauffeur voldoet het bord. Vooral omdat een deel van de chauffeurs de route kent, en na een keer te hard over de drempel te zijn gereden de tweede keer de snelheid iets mindert.
 >    
@@ -51,6 +53,7 @@ Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat *
 
 
 ### Wegsoorten
+
 Het Informatiemodel Verkeerstekens en Verkeersbesluiten heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen- en buiten de bebouwde kom.
 Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 
@@ -65,33 +68,29 @@ Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publicer
 
 ### Verkeersadviezen
 
-Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* > is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
+Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
+> is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
 
 Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope. 
 
 ### Verkeersborden
+
 Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) als eigen aanvullingen door locale wegbeheerders.
 
 ### Markeringen
+
 Die markeringen zijn binnen scope, die een specifieke gedragsinstructie geven over het gebruik van de weg. Markeringen die slechts de ligging van de rijstrook visueel aanduiden zijn buiten scope.
+> is dat zo? [Issue 56](https://github.com/Stichting-CROW/verkeersborden/issues/56)
 
 ### Weginrichting
+
 Uit de weginrichting volgen instructies over het gebruik van de weg. Deze zijn binnen scope.
 
 ## Leeswijzer
 
-Dit document beschrijft de uitgangspunten, use case en het architectuur framework voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
+Dit document beschrijft de volgende zaken: 
 
-
-Dit document bevat: 
-
-* **Uitgangspunten**
-
-Bij de uitgangspunten wordt onderscheid gemaakt in:
-1. Technische uitganngspunten;
-2. Organisatorische uitgangspunten waaronder het beheer van het informatiemodel en de samenwerking met andere partijen die standaarden beheren of digitale informatie publiceren over verkeersborden en wegmarkeringen.
-
-* **Use case**
+* **3. Use case**
 
 De use case bevat de volgende processtappen voor de gebruiker:
 1. Het aanbieden van een wijziging in de wegligging en/of de verkeersregels;
@@ -99,18 +98,30 @@ De use case bevat de volgende processtappen voor de gebruiker:
 3. Het publiceren van de wijziging in de landelijke netwerkregistratie.
 4. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
-* **Raakvlakanalyse**
+* **4. Raakvlakanalyse**
 
 In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
-* **Stakeholderanalyse**
+* **5. Stakeholderanalyse**
 
 De stakeholderanalyse verkent welke informatiemodellen en informatiebronnen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel.  
 
-* **Architectuur Framework**
-Het architectuur framework beschrijft.....[issue 46](https://github.com/Stichting-CROW/verkeersborden/issues/46)
+* **6. Technische Uitgangspunten**
+
+In Technische Uitganngspunten staan de normen en richtlijnen waaraan het Informatiemodel Verkeerstekens en Verkeersbesluiten dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
+
+* **7. Beheer**
+In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden en wegmarkeringen.
+
+
+* **8. Technische uitwerking**
+De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens en Verkeersbesluiten te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
+
+
+
+
 
 
 
