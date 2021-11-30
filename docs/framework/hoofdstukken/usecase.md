@@ -23,10 +23,8 @@ Op langere termijn is locale publicatie wel een optie. In het Digitaal Stelsel G
 ## Samenstellen netwerkdata
 Dit onderdeel van de usecase beschrijft de use case waarmee een wegbeheerder of een wegontwerper namens de wegbeheerder een correcte dataset kan samenstellen met wijzigingen in het verkeersnetwerk. Het is nog niet uitgewerkt of het systeem uit dit onderdeel van de use case een systeem van de wegbeheerder is, of een systeem van de landelijke registratie.
 
-* De Wegbeheerder markeert het gebied waarbinnen de wijziging valt.
-* Het Systeem geeft dit gebied weer op een kaart.
-* De Wegbeheerder geeft aan op welke datum de netwerkwijziging in gaat.
-* Het Systeem geeft een preselectie van de de wegvakken en juncties die op dat tijdstip actueel zijn.
+* De Wegbeheerder markeert het gebied waarbinnen de wijziging valt en geeft aan op welke datum de wijziging ingaat.
+* Het Systeem geeft geeft een preselectie van de de wegvakken en juncties die op dat tijdstip actueel zijn in dit gebied (online of als dataset)
 * De Wegbeheerder selecteert alle wegvakken en juncties die wijzigen.
 * Het Systeem geeft (1) de selectie weer in een overzicht of (2) exporteert een dataset met de geselecteerde wegvakken en juncties
 * De Wegbeheerder geeft (1) in het systeem of (2) in een dataset aan welke wegvakken en juncties vervallen en voegt nieuwe wegvakken en juncties toe. 
