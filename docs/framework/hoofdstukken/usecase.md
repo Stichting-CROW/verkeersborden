@@ -15,18 +15,27 @@ De use case bevat de volgende onderdelen:
 6. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
 7. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
-### Centrale publicatie
+> Een usecase beschrijft een systeem vanuit het gebruikersperspectief. Het beschrijft de actor, de initiator van de interactie, en het systeem zelf als een opeenvolging van eenvoudige stappen. Actoren kunnen iets of iemand zijn, die bestaat buiten het te bestuderen systeem, en die deelneemt in de opeenvolgende activiteiten in een dialoog met het systeem om een bepaald doel te bereiken. Actoren kunnen eindgebruikers, andere systemen of hardware (apparatuur) zijn. Elke usecase is een complete serie van zogenaamde "events", beschreven vanuit het standpunt van de actor. [Bron: Wikipedia](https://nl.wikipedia.org/wiki/Usecase)
+
+## Uitgangspunten use case
+
+### Centrale registratie
 De use case gaat uit van het centraal publiceren van verkeersbesluiten. Omdat het netwerk moet routeren over gemeente- en provincie- en rijksweggrenzen heen, moet er een controle zijn op de samenhang. Daarom is een landelijke registratie op korte termijn het makkelijkst te organiseren, en je kun je de wegbeheerder die werkt met kaarten beter faciliteren. 
 
-Op langere termijn is locale publicatie wel een optie. In het Digitaal Stelsel Gebouwde Omgeving wordt ervan uitgegeaan, dat degene die een asset ontwerpt, bouwt of beheert ook degene is die de informatie daarover publiceert (publicatie bij de bron). Dit vraagt een hoog digitaal en procesmatig volwassenheidsniveau van de wegbeheerders die bij wijzigingen in de verkeerssituatie zullen moeten valideren dat het gezamenlijke netwerk nog steeds "wiskundig sluitend" is. De huidige status is dat de meerderheid van de wegbeheerders nog niet in staat zijn om informatiemanagement uit te voeren op dit niveau.
+Op langere termijn is publicatie 'bij de bron' wel een optie. In het Digitaal Stelsel Gebouwde Omgeving wordt ervan uitgegeaan, dat degene die een asset ontwerpt, bouwt of beheert ook degene is die de informatie daarover publiceert (publicatie bij de bron). Dit vraagt een hoog digitaal en procesmatig volwassenheidsniveau van de wegbeheerders die bij wijzigingen in de verkeerssituatie zullen moeten valideren dat het gezamenlijke netwerk nog steeds "wiskundig sluitend" is. De huidige status is dat de meerderheid van de wegbeheerders nog niet in staat zijn om informatiemanagement uit te voeren op dit niveau.
+
+### Directe koppeling aan het wegennetwerk
+Verkeersbesluiten worden door wegbeheerderes vaak ontwikkeld op basis van een GIS-kaart of een 2D CAD-ontwerp, waar de nieuwe wegligging en/of oude en nieuwe borden op geplot worden; bij besluiten die gelden voor een zone wordt deze soms aangeduid met een vlak op de kaart. Als deze kaarten of ontwerpen rechtstreeks door een 'Systeem' moeten worden ingelezen en verwerkt tot verkeersdata, gerelateerd aan een wegennetwerk, moeten door het systeem veel complexe puzzels worden gemaakt. Wegen zijn op een GIS-kaart weergegeven met een vlak, in een CAD-ontwerp vaak met lijnen die de stroken en de kant van de verharding aangeven. Om van hieruit een wegennetwerk te kunnen afleiden met wegvakken ('hartlijn van een weg') en juncties ('knopen'), is niet goed programmeerbaar. Ook rekenfouten in het aansluiten op het bestaande netwerk worden door een computer niet begrepen - bijvoorbeeld de juncties verschillen 0.00001 mm van elkaar en het systeem loopt vast, waar een mens ze zo over elkaar plaatst wetend dat de afwijking minimaal is.
+Ook van een bord kent het systeem de reikweidte niet, al kan het ernaar raden: een waarschuwingsbord voor een drempel geldt voor maximaal 50 meter lengte, een bord "kijk uit herten" heeft een onderbord wat vertelt hoeveel meter deze waarschuwing geldt. Al met al zit er een verschil in de mens, die de kaart met wegen en borden 'in één oogopslag' begrijpt, en een systeem waarvoor dit te complex en tegenstrijdig is. Daarom geldt in deze use case de aannae, dat een wegbeheerder wijzigingen doorgeeft passend bij de centrale netwerkregistratie. 
+De andere kant op is minder complex: als het netwerk eenmaal is opgebouwd, kunnen met 'rules' wegvakken en borden worden afgeleid. Hierbij geldt: hoe beter en uitgebreider de netwerkdata, hoe beter dit gaat. Als een wegvak per rijstrook is aangeduid en de breedte van de rijstrook op elke lengte is aangegeven, kan het systeem het "wegontwerp" genereren en de 'in lengterichting' aangeduide borden visualiseren. De wegbeheerder kan dat goed overzien, of hij de 'data' op de juiste manier heeft aangeleverd / ingevoerd.  
 
 ## Samenstellen netwerkdata
 Dit onderdeel van de usecase beschrijft de use case waarmee een wegbeheerder of een wegontwerper namens de wegbeheerder een correcte dataset kan samenstellen met wijzigingen in het verkeersnetwerk. Het is nog niet uitgewerkt of het systeem uit dit onderdeel van de use case een systeem van de wegbeheerder is, of een systeem van de landelijke registratie.
 
 * De Wegbeheerder markeert het gebied waarbinnen de wijziging valt en geeft aan op welke datum de wijziging ingaat.
-* Het Systeem geeft geeft een preselectie van de de wegvakken en juncties die op dat tijdstip actueel zijn in dit gebied (online of als dataset)
+* Het Systeem geeft geeft een preselectie van de de wegvakken en juncties die op dat tijdstip actueel zijn in dit gebied (online of als dataset).
 * De Wegbeheerder selecteert alle wegvakken en juncties die wijzigen.
-* Het Systeem geeft (1) de selectie weer in een overzicht of (2) exporteert een dataset met de geselecteerde wegvakken en juncties
+* Het Systeem geeft (1) de selectie weer in een overzicht of (2) exporteert een dataset met de geselecteerde wegvakken en juncties.
 * De Wegbeheerder geeft (1) in het systeem of (2) in een dataset aan welke wegvakken en juncties vervallen en voegt nieuwe wegvakken en juncties toe. 
 * Het Systeem controleert of het nieuwe netwerk sluitend is en (1) toont een validatieoverzicht met eventuele foutmeldingen of (2) exporteert een validatierapport.
 
@@ -35,23 +44,22 @@ De zo samengestelde netwerkdata kan eventueel worden gebruikt in simulaties of o
 Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten valt, volgen uit deze use case géén eisen aan het informatiemodel.
 
 ## Transactie netwerkdata 
-Happy flow (met tussen haakjes de link naar het standaard DEMO transactiepatroon)
-* De wegbeheerder biedt de wijziging aan en vraagt om deze te publiceren (Request)
-* De beheerder van de landelijke registratie belooft dit te zullen doen na validatie (Promise)
-* Het Systeem controleert of aan alle leveringsvoorwaarden is voldaan en of de aangeboden wijziging aansluit op de ongewijzigde netwerkdelen (Produce)
-* De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden en toont welke wijzigingen worden doorgevoerd. (State)
-* De wegbeheerder accepteert de wijzigingsvoorstellen van de beheerder van de landelijke registratie (Accept)
+Happy flow 
+* De wegbeheerder biedt de wijziging aan en vraagt om deze te publiceren. 
+* De beheerder van de landelijke registratie belooft dit te zullen doen na validatie.
+* Het Systeem controleert of aan alle leveringsvoorwaarden is voldaan en of de aangeboden wijziging aansluit op de ongewijzigde netwerkdelen.
+* De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden en toont welke wijzigingen worden doorgevoerd.
+* De wegbeheerder accepteert de wijzigingsvoorstellen van de beheerder van de landelijke registratie.
 
 Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten valt, volgen uit deze use case géén eisen aan het informatiemodel.
 
 ## Samenstellen verkeersbesluit
 Dit onderdeel van de usecase beschrijft wat er nodig is zodat een wegbeheerder een correcte dataset kan samenstellen met een verkeersbesluit. 
 
-De wegbeheerder heeft daarvoor een "Informatieleveringsspecificatie" nodig waarin staat:
-- Welke informatie minimaal verplicht is uit het Informatiemodel Verkeerstekens en verkeersbesluiten en het model van het verkeersnetwerk. 
-- Welke informatie mag worden toegevoegd uit het Informatiemodel Verkeerstekens en verkeersbesluiten en het model van het verkeersnetwerk. 
-- In welke formaten de wijziging kan worden aangeleverd
-- Of informatie mag worden toegevoegd uit een eigen informatiemodel
+- De Wegbeheerder selecteert het wegvak (in de netwerkdata) waar hij een verkeersbesluit aan wil toevoegen.
+- Het Systeem controleert of het wegvak uit twee richtingen bestaat. Indien dit zo is, krijgt de wegbeheerder de vraag: welke junctie is het startpunt?
+- 
+- , geeft aan wat de begin- junctie is en wat de eind-junctie
 
 De wijziging bestaat vermoedelijk uit een tweetrapsraket: 
 - Een wijziging aanbieden in de ligging van het netwerk: als de weg fysiek wordt gewijzigd qua ligging, hoeveelheid rijstroken of wijzigingen in de afslagrichting van een rijbaan bij een kruising
