@@ -28,6 +28,8 @@ BIM loket beheert daarmee standaarden met een inhoudelijke en modelmatige relati
 
 ## Bouwfase
 
+### Tijdelijke verkeerssituaties
+Afzettingen, omleidingen tijdens de bouw
 
 ## Beheerfase
 
