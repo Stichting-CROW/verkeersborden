@@ -99,15 +99,20 @@ Dit document beschrijft de volgende zaken:
 
 De use case beschrijft de interactie tussen de actoren: wegbeheerder, beheerder landelijke registratie, en de systemen die zij gebruiken bij het publiceren van verkeersbesluiten. De use case geeft een weergave van het verwachte gebruik van het informatiemodel in een specifiek, door een systeem ondersteund werkproces. 
 
-* **4. Raakvlakanalyse**
+* **4. Stakeholderanalyse**
 
-In de raakvlakanalyse worden de raakvlakken van de verkeersborden en wegmarkeringen in het Informatiemodel Verkeerstekens en Verkeersbesluiten verkend ten opzichte van:
+De stakeholderanalyse verkent  welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens en Verkeersbesluiten. 
+
+Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+
+
+
+* **5. Raakvlakanalyse**
+
+De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er al zijn voor:
+
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
-
-* **5. Stakeholderanalyse**
-
-De stakeholderanalyse verkent welke informatiemodellen en informatiebronnen er al zijn en welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van dit informatiemodel.  
 
 * **6. Technische Uitgangspunten**
 
