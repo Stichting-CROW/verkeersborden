@@ -43,6 +43,12 @@ In IMBOR attributen opnemen bij het "bord/mark-als-instantie-van-een-beheerobjec
 
 ## Gebruiksfase
 
+### Smart mobility
+
+#### Nauwkeurigheid
+Geometrische nauwkeurigheid / kloppende lengtematen nodig voor smart mobility?
+
+
 ### NWB
 
 ### Programma Netwerkregistratie
