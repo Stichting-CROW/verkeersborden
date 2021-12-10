@@ -9,6 +9,8 @@ Dat zijn raakvlakken of juist ijkingsbronnen om het Informatiemodel Verkeersteke
 
 Wijzigingen aan wegkenmerken worden beschreven voor het TN-ITS systeem o.b.v. de norm **CEN/TS 17268**:2018: 
 _Intelligent transport systems - ITS spatial data - Data exchange on changes in road attributes_.
+
+De norm is te koop bij NEN à ca. 80 EUR incl. BTW.
 De GML schema's die eraan ten grondslag liggen zijn wel beschikbaar op https://tn-its.eu/standardisation. 
 
 ### Inspire
@@ -54,6 +56,7 @@ https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborden/
 ### Datex II
 
 https://www.datex2.eu/, Gepubliceerd als CEN 16157, deel 1 t/m 9. 
+Deze norm is niet vrij beschikbaar en zijn te koop bij NEN à ca. 100 p.s. tot ca. 250 EUR excl. BTW p.s. 
 Voor Nederlands is er door NDW een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
 
 - beborde omleiding
@@ -83,18 +86,29 @@ Een informatiemodel kan pas marktadoptie krijgen als de specificaties ervan in v
 Dat houdt in dat het Informatiemodel Verkeerstekens en verkeersbesluiten open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd.
 
 In de beschrijving van het informatiemodel moeten gemaakte keuzes beschreven worden, zodat implementaties en toekomstige uitbreidingen afgewogen keuzes kunnen maken.
+Het informatiemodel vermeldt expliciet welke onderdelen normatief zijn, en welke niet-normatief (informatief).
 
 Een voorbeeld van een vrij, machineleesbaar formaat is een RDF-ontologie.
 Een voorbeeldimplementatie is aanbevelenswaardig, omdat het aantoont dat de specificatie van het informatiemodel werkbaar is.
 Voorbeelden van data conform het informatiemodel helpen de implementatie ervan ook. 
 
-### API's
+### API's en uitwisselformaten
 
 Het informatiemodel dient los te staan van specifieke uitwisselingsstandaarden, zoals API's en uitwisselformaten.
 Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technologie-specifieke beperkingen zijn gemaakt.
 
-### Uitwisselformaten
+## Voorbeeld- of normafbeeldingen borden en onderborden
 
+Gaat niet om wat NBd (Nationale Bewegwijzeringsdienst) publiceert over concrete borden aan een concrete weg, maar om referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden.
+
+### Formaten
+
+- Het formaat is SVG, dat zijn schaalbare vectorafbeeldingen die op het web en in print altijd scherp blijven.
+- Merk op dat 
+
+### Publicatieplatform
+
+Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimulren. 
 
 ## Transacties
 
