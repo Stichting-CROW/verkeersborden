@@ -28,8 +28,10 @@ Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snel
 ## Verkeersnetwerk
 
 ### LOD
+1. Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
+
 <aside class="note" title="Levels of Detail">
-Verschillende <i>gebruikers</i> van de informatie over verkeersbesluiten hebben een verschillend Level of Detail nodig. Dit geldt vooral voor het netwerk: is er een polygoon per rijstrook beschikbaar, en hoe nauwkeurig is de geometrie vastgelegd? Het bijbehorende verkeersbesluit is zo gedetailleerd als het netwerk toestaat. 
+Verschillende <i>gebruikers</i> van de informatie over verkeersbesluiten hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één polygoon van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor SMART Mobility geldt dat het het netwerk gedetailleerder moet zijn met een polygoon per rijstrook. Daarnaast moet de nauwkeurigheid van de geometrie niet te veel afwijken van de werkelijkheid. Het bijbehorende verkeersbesluit is zo gedetailleerd als het netwerk toestaat. 
 
 Zie voor toelichting hierop bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
 </aside>
@@ -73,5 +75,10 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 
 ### CB-NL
 1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
+
+### Gebruik data
+
+
+1. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeersbesluiten en Verkeerstekens een grafische weergave te bevatten van de borden. 
 
 
