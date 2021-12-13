@@ -62,7 +62,11 @@ Het informatiemodel maakt het mogelijk om de verkeersinstructie te laten gelden 
 
 ### Bord / markeringspunt
 1. Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. 
-2. Bij elk bord en onderbord is een grafische weergave beschikbaar in het informatiemodel. 
+
+### Grafische weergave van de borden
+1. Bij elk bord en onderbord is een grafische weergave beschikbaar in het informatiemodel. 
+2. Een bord wordt gevisualiseerd conform [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01)
+
 
 
 ### Bordlocatie
