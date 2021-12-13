@@ -74,12 +74,12 @@ De [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid
 In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
 
 ### IMBOR
-CROW publiceert het informatiemodel beheer openbare ruimte [IMBOR](https://www.crow.nl/thema-s/management-openbare-ruimte/imbor). In IMBOR zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten (asset management pakketten gericht op het tactische en operationele beheer).
+CROW publiceert het informatiemodel beheer openbare ruimte [IMBOR](https://www.crow.nl/thema-s/management-openbare-ruimte/imbor). In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien bebakening en bewegwijzering en daarnaast ook markeringen. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van boren en markeringen die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object.  Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte.
 
 Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR, maar geen dubbelingen kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
 1. In het Informatiemodel Verkeersbesluiten en Verkeerstekens staan de definities van verkeersborden en markeringen.
-2. In IMBOR staan eventueel bordne en markeringen die buiten de scope van het Infoprmatiemodel Verkeerstekens en Verkeersbelsuiten vallen. 
+2. In IMBOR staan de borden, bewegwijzeringen en markeringen die buiten de scope van het Infoprmatiemodel Verkeerstekens en Verkeersbesluiten vallen. 
 3. In het Informatiemodel Verkeersbesluiten en Verkeerstekens komen attributen te staan die bij het bord / de markering "-als-instantie-van-verkeersbesluit" (gewenst/gepland bord) informatie geven over datum en herkomst van het besluit, en de geldigheidsperiode van het besluit.
 4. In IMBOR attributen opnemen die bij het bord / de markering "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst bord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de borden en markeringen.
 
