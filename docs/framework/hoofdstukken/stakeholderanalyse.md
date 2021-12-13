@@ -1,24 +1,32 @@
-# Stakeholdervlakanalyse
+# Stakeholderanalyse
 
 
 ## Inleiding
 
-De use case "Registreren van verkeersbesluiten" heeft raakvlakken met andere use cases in de levenscyclus: ontwerp; bouw; beheer; gebruik; en sloop / circulair hergebruik. In dit hoofdstuk worden per levensfase de use cases, standaarden en databases genoemd die raakvlakken hebben met de use case "Registreren van verkeersbesluiten"
+De stakeholderanalyse verkent welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens en Verkeersbesluiten.
+
+Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. De scope van het informatiemodel, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase.
 
 
 ## Use cases ontwerpfase
 
-### Opstellen verkeersmodellen
+### Verkeersmodel
+
+*Stakeholders: Verkeerskundigen*
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstorming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. ([Issue 3](https://github.com/Stichting-CROW/verkeersborden/issues/3)). Dit proces gebeurt vaak tegelijkertijd (iteratief en paralel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
 
+
 ### Wegontwerp
-Ontwerp van wegen met markering en bebording: Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van verkeersborden en markeringen wordt bepaald. Ook kunnen extra verkeersborden en markeringen uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten. ([Issue 6](https://github.com/Stichting-CROW/verkeersborden/issues/6))
 
-Tijdens het wegontwerp wordt niet het netwerk getekend, maar de fysieke ligging van de weg, vaak door een alignement ("hartlijn") te tekenen met bogen, overgangsbogen en rechtstanden, met daarbij de markering van wegstroken of kanten van de stoepbanden. Om aan te sluiten op een landelijke netwerkregistratie van wegen zouden afspraken gemaakt moeten worden om ook het ontworpen netwerk in termen van juncties en wegvakken op te nemen in het ontwerp, naast de verkeerstekens.
+*Stakeholders: Ontwerpers*
 
-### Registreren van verkeersbesluiten
-De use case "Registreren van verkeersbesluiten" heeft betrekking op informatie over weginrichting en verkeerstekens in de ontwerpfase.
+Ontwerp van wegen met markering en bebording: Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van verkeersborden en markeringen wordt bepaald. Ook kunnen extra verkeersborden en markeringen uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten. Tijdens het wegontwerp wordt niet het netwerk ontworpen, maar de fysieke ligging van de weg, met een alignement ("hartlijn") met bogen, overgangsbogen en rechtstanden. Dit alignement wordt vaak gevisualiseerd in een CAD-tekening volgens de open BIM standaard NLCS , met daarnaast op tekening de markering van wegstroken of kanten van de stoepbanden, en de verkeerstekens. Hierbij wordt de BIM standaard NLCS gebruikt. 
+
+1. Om aan te sluiten op een landelijke netwerkregistratie van wegen zouden afspraken gemaakt moeten worden om ook het ontworpen netwerk in termen van juncties en wegvakken op te nemen in het ontwerp, naast de verkeerstekens. Zo kan makkelijker de vertaling worden gemaakt tussen wegontwerp en netwerkregistratie. Deze afspraak zou goed passen bij de BIM standaard NLCS. 
+
+2. Om het geregistreerde netwerk en de verkeersbesluiten te kunnen gebruiken als input voor een nieuw ontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. 
+
 
 ### NLCS
 [NLCS](https://www.bimloket.nl/p/365/NLCS) is de Nederlandse CAD standaard voor uitwisseling van informatie in 2D CAD-ontwerptekeningen. CAD betekent Computer-aided design: het ontwerpen van onder meer constructies en apparaten met behulp van computerprogramma's. De NLCS bevat basisafspraken over het omgaan met metadata, digitaal tekenen, het uiterlijk van de tekening en – vooral – de bestandsopbouw van 2D-tekenwerk. Deze afspraken zijn onafhankelijk van de CAD-platforms die geleverd worden door softwareleveranciers. 
