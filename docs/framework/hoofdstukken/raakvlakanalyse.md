@@ -16,7 +16,9 @@ Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer (KpVV) uitge
 * gemeenten, provincies, stadsregio’s, waterschappen en hun koepels;
 * belangenorganisaties, kennisinstituten, vervoerbedrijven en onderwijsinstellingen.
 
-De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. 
+De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. Deze groepen gebruiken verkeersmodellen om te toetsen of het ontwerp voldoent aan de mobiliteitsdoelstellingen, en zijn verantwoordelijk voor de publicatie van verkeersbesluiten. 
+
+1. Deze groep dient geinformeerd te worden over de toepassing van het Informatiemodel Verkeerstekens en Verkeersbesluiten bij de publicatie van verkeersbesluiten.
 
 ### NDW
 Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
@@ -52,6 +54,10 @@ Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zake
 ###
 
 ## Bouwfase
+
+### Bestellen?
+
+([Issue 7](https://github.com/Stichting-CROW/verkeersborden/issues/7))
 
 ### Tijdelijke verkeerssituaties
 Afzettingen, omleidingen tijdens de bouw
