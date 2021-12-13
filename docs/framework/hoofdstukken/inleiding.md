@@ -57,6 +57,16 @@ De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use c
 
 *Het publiceren van zowel voor mensen leesbare als machine-verwerkbare verkeerskundige informatie die aangeeft wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden).*
 
+De use case bevat de volgende onderdelen:
+
+1. Het samenstellen van een dataset met een nieuwe netwerkinrichting.
+2. De communicatie over de nieuwe weginrichting van wegbeheerder naar de landelijke registratie (transactie)
+3. Het samenstellen van een dataset met functionele verkeersinstructies en verkeerstekens met daarin de wijziging in de verkeersregels
+4. De communicatie over de toe te passen verkeersregels van wegbeheerder naar de landelijke registratie (transactie)
+5. Het valideren van de aangeboden wijziging;
+6. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
+7. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
+
 <aside class="note" title="Verkeersbesluiten en de wet">
 Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze in een machine-leesbare vorm te kunnen verwerken van besluiten tot kenmerken die gebruikt kunnen worden voor de digitalisering van werkprocessen van wegbeheerders en service providers en om de weggebruiker of rij-assistent digitaal te informeren. Het Informatiemodel verkeerstekens en verkeersbesluiten heeft als doel om verkeersbesluiten naast voor de mens bruikbaar ook machine-leesbaar vast te leggen. 
   </aside>
