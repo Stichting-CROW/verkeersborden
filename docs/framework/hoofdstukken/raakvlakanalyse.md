@@ -44,14 +44,18 @@ Afzettingen, omleidingen tijdens de bouw
 
 ## Beheerfase
 
-### CROW
-CROW publiceert het informatiemodel beheer openbare ruimte (IMBOR) waarin borden en markeringen zijn opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. ..aanvullen met publicaties kennisbank...
+### IMBOR
+CROW publiceert het informatiemodel beheer openbare ruimte [IMBOR](https://www.crow.nl/thema-s/management-openbare-ruimte/imbor). In IMBOR zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten (asset management pakketten gericht op het tactische en operationele beheer).
 
-CROW beheert daarmee standaarden met een inhoudelijke en modelmatige relatie tot het Informatiemodel Verkeersbesluiten en Verkeerstekens.
+Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR, maar geen dubbelingen kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
-Er is een afspraak nodig wie de definities van verkeersborden en markeringen publiceert; voorstel: In het informatiemodel verkeersbesluiten concepten definiëren; in het informatiemodel verkeersbesluiten attributen opnemen die bij het "bord/mark-als-instantie-van-verkeersbesluit (gewenst/gepland bord)" informatie geven over datum en herkomst van het besluit, en de geldigheidsperiode van het besluit.
+1. In het Informatiemodel Verkeersbesluiten en Verkeerstekens staan de definities van verkeersborden en markeringen.
+2. In IMBOR staan eventueel bordne en markeringen die buiten de scope van het Infoprmatiemodel Verkeerstekens en Verkeersbelsuiten vallen. 
+3. In het Informatiemodel Verkeersbesluiten en Verkeerstekens komen attributen te staan die bij het bord / de markering "-als-instantie-van-verkeersbesluit" (gewenst/gepland bord) informatie geven over datum en herkomst van het besluit, en de geldigheidsperiode van het besluit.
+4. In IMBOR attributen opnemen die bij het bord / de markering "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst bord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de borden en markeringen.
 
-In IMBOR attributen opnemen bij het "bord/mark-als-instantie-van-een-beheerobject (fysiek / bestaand / geplaatst bord)
+### NWB
+In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
 
 
 ## Gebruiksfase
