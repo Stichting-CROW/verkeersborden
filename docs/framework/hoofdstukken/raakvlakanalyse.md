@@ -9,6 +9,15 @@ De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn
 
 ## Ontwerpfase
 
+### KPVV
+
+Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer (KpVV) uitgevoerd. Doel van dit programma is om door middel van kennis bij te dragen aan de kennisbehoefte van de decentrale overheden op het gebied van mobiliteit. De projecten zijn gericht op het ontwikkelen van nieuwe kennisproducten of op kennisontwikkeling en – uitwisseling (bv communities). De kennisproducten en – diensten worden gebruikt door:
+
+* gemeenten, provincies, stadsregio’s, waterschappen en hun koepels;
+* belangenorganisaties, kennisinstituten, vervoerbedrijven en onderwijsinstellingen.
+
+De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. 
+
 ### NDW
 Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
 [Issue 14](https://github.com/Stichting-CROW/verkeersborden/issues/14)
