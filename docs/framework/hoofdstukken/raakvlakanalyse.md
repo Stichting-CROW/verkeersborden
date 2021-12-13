@@ -55,12 +55,11 @@ Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zake
 
 ## Bouwfase
 
-### Bestellen?
+### ETIM
+Ketenstandaard Bouw en Techniek publiceert [ETIM](https://ketenstandaard.nl/standaard/etim/). Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
 
-([Issue 7](https://github.com/Stichting-CROW/verkeersborden/issues/7))
 
-### Tijdelijke verkeerssituaties
-Afzettingen, omleidingen tijdens de bouw
+
 
 ## Beheerfase
 
