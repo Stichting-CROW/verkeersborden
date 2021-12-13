@@ -73,10 +73,10 @@ Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publicer
 
 ### Wettelijk +
 
-1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt zijn binnen scope. 
+1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) zijn binnen scope. 
 
 2. Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
-> is dat zo? [Issue 39](https://github.com/Stichting-CROW/verkeersborden/issues/39)
+<div class="issue" data-number="39"></div>
 
 3. Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope. 
 
@@ -95,16 +95,14 @@ Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit 
 ### Markeringen
 
 Die markeringen zijn binnen scope, die een specifieke gedragsinstructie geven over het gebruik van de weg. Markeringen die slechts de ligging van de rijstrook visueel aanduiden zijn buiten scope.
-> is dat zo? [Issue 56](https://github.com/Stichting-CROW/verkeersborden/issues/56)
+
+<div class="issue" data-number="56"></div>
 
 ### Weginrichting
 
 Uit de weginrichting volgen instructies over het gebruik van de weg. Deze zijn binnen scope.
 
-> Is dat zo? [Issue 57](https://github.com/Stichting-CROW/verkeersborden/issues/57)
-> Wat voor zaken kan de weggebruiker afleiden uit de "weginrichting" (niet zijnde borden en markeringen) waardoor informatie nodig is in het informatiemodel
->
-> Zijn zichtlijnen een voorbeeld > een weggebruiker mag niet inhalen als het zicht slecht is?
+<div class="issue" data-number="65"></div>
 
 ## Leeswijzer
 
