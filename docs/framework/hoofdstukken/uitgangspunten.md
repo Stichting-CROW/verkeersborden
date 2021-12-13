@@ -27,6 +27,13 @@ Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snel
 
 ## Verkeersnetwerk
 
+### LOD
+<aside class="note" title="Levels of Detail">
+Verschillende <i>gebruikers</i> van de informatie over verkeersbesluiten hebben een verschillend Level of Detail nodig. Dit geldt vooral voor het netwerk: is er een polygoon per rijstrook beschikbaar, en hoe nauwkeurig is de geometrie vastgelegd? Het bijbehorende verkeersbesluit is zo gedetailleerd als het netwerk toestaat. 
+
+Zie voor toelichting hierop bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
+</aside>
+
 ### Wegvak
 
 De in het NWB-Wegen opgenomen geografische basisobjecten zijn ‘wegvak’ en ‘junctie’, aan de hand waarvan het complete Nederlandse wegennetwerk kan worden geïdentificeerd. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Het Nationaal Wegen Bestand is mog niet tot op het niveau van een "rijstrook" gedifferentieerd; afhankelijk van de wegindeling kan een wegvak gaan over een weg met twee rijrichtingen; of over een rijbaan met meerdere rijstroken in één richting van de weg, waarbij de rijstroken niet zijn opgesplitst in afzonderlijke wegvakken. 
