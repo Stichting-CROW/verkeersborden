@@ -15,7 +15,9 @@ De use case bevat de volgende onderdelen:
 6. Het publiceren van de wijziging in de landelijke netwerkregistratie. 
 7. Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
-> Een usecase beschrijft een systeem vanuit het gebruikersperspectief. Het beschrijft de actor, de initiator van de interactie, en het systeem zelf als een opeenvolging van eenvoudige stappen. Actoren kunnen iets of iemand zijn, die bestaat buiten het te bestuderen systeem, en die deelneemt in de opeenvolgende activiteiten in een dialoog met het systeem om een bepaald doel te bereiken. Actoren kunnen eindgebruikers, andere systemen of hardware (apparatuur) zijn. Elke usecase is een complete serie van zogenaamde "events", beschreven vanuit het standpunt van de actor. [Bron: Wikipedia](https://nl.wikipedia.org/wiki/Usecase)
+<aside class="note" title="Definitie use case">
+Een usecase beschrijft een systeem vanuit het gebruikersperspectief. Het beschrijft de actor, de initiator van de interactie, en het systeem zelf als een opeenvolging van eenvoudige stappen. Actoren kunnen iets of iemand zijn, die bestaat buiten het te bestuderen systeem, en die deelneemt in de opeenvolgende activiteiten in een dialoog met het systeem om een bepaald doel te bereiken. Actoren kunnen eindgebruikers, andere systemen of hardware (apparatuur) zijn. Elke usecase is een complete serie van zogenaamde "events", beschreven vanuit het standpunt van de actor. [Bron: Wikipedia](https://nl.wikipedia.org/wiki/Usecase)
+ </aside>
 
 ## Uitgangspunten use case
 
