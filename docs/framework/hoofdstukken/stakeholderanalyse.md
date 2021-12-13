@@ -5,8 +5,7 @@
 
 De stakeholderanalyse verkent welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
-Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. De scope van het informatiemodel, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase.
-
+Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. 
 
 ## Use cases ontwerpfase
 
@@ -15,7 +14,6 @@ Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus
 *Stakeholders: Verkeerskundigen*
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstorming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en paralel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
-
 
 ### Wegontwerp
 
@@ -27,6 +25,11 @@ Ontwerp van wegen met markering en bebording: Op basis van een verkeersmodel wor
 
 2. Om het geregistreerde netwerk en de verkeersbesluiten te kunnen gebruiken als input voor een nieuw wegontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. Als het netwerk een hoger detailniveau krijgt om per rijstrook verkeersbesluiten te kunnen vastleggen, is een standaard nodig waarmee het alignement wordt vastgelegd, omdat het alignement wordt ontworpen per weg of in een enkele geval per rijbaan, niet per rijstrook.
 
+### Verkeersbesluiten
+
+*Stakeholders: Wegbeheerders*
+
+De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase. Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer. 
 
 ## Use cases Bouwfase
 
