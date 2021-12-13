@@ -76,6 +76,12 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR
 ### NWB
 In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
 
+### T3D
+In het "Totaal Dimensionaal" Programma.....
+Hierbij wordt [CityGML](https://www.ogc.org/standards/citygml) gezien als een handig formaat om in te publiceren. 
+
+### CityGML
+Open Geospatial Consortium beheert [CityGML](https://www.ogc.org/standards/citygml). CityGML is een conceptueel model en uitwisselformaat voor de representatie, opslag en uitwisseling van virtuele 3D modellen van steden, inclusief de wegen. 
 
 ## Gebruiksfase
 
