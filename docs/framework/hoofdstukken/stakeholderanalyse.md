@@ -7,6 +7,23 @@ De stakeholderanalyse verkent welke partijen er belanghebbende, “leverancier�
 
 Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. 
 
+### Representatie
+Voor een juiste interpretatie van de use cases is het begrip van ‘representatie’ van belang. Een manier om dit toe te lichten is de ‘Betekenisdriehoek, zoals gedefinieerd in de NEN 2660-1 (2020). Hier staat: “De betekenisdriehoek visualiseert de relatie tussen ‘dingen’, ‘concepten’ en ‘symbolen’. De rechterbenedenhoek vertegenwoordigt ‘iets dat waarneembaar of voorstelbaar is in de werkelijkheid’. De bovenhoek staat ‘de gedachte aan iets uit de werkelijkheid’, kortweg ‘concept’. De linkerbenedenhoek staat voor het symbool dat de gedachte symboliseert en het ‘iets’ representeert.   
+
+![De betekenisdriehoek conform NEN 2660-1 (2020)](./hoofdstukken/media/betekenis.png "De betekenisdriehoek conform NEN 2660-1 (2020)")
+
+Wanneer in de context van dit advies toegepast krijgen we de volgende tabel:
+Individueel concept	Objecttype	“Brug”
+Individueel ding	Object	“John Frost brug”
+Individueel symbool	Geometrische representatie	“Geometrie van John Frost brug”
+
+De gegevens van een object zitten zodoende in de rechterbenedenhoek. Van de “John Frost brug” wordt vast gelegd van welke objecttype (“Brug”) hij is. Hierdoor is duidelijke welke gegevens er vastgelegd moeten worden (bijvoorbeeld wat zijn naam is, wat het bouwjaar is, welke constructie het is, etc.). Er kunnen dan ook één of meerdere representaties vastgelegd worden. Het object kan gerepresenteerd worden in een GIS bestand, op een CAD tekening, maar ook in een 3D model en zelfs alleen in een spreadsheet. Er zijn dus meerdere representaties (of ‘symbolen’) mogelijk van één individueel object.
+
+Dit is nodig om te weten, omdat vanuit de GIS gedachte de geometrie leidend is. Er wordt een feature (polygoon bijvoorbeeld) gemaakt, deze krijgt allerlei attributen en daar worden de waarden ingevuld. Dit werkt prima, totdat men vraagt om een 3D model of CAD tekening erbij. Dan zullen veel van de gegevens herhaald moeten worden en het 3D model kan niet gelinkt worden aan de geo-feature. 
+
+Het is toekomstvaster om te redeneren vanuit het object. Het object heeft een uniek ID en heeft allemaal attributen (in bijvoorbeeld in spreadsheet). De representaties van het object hebben alleen de gegevens benodigd voor die representatie (de geometrie) en het zelfde unieke ID. Zo is het makkelijk te matchen. 
+
+
 ## Use cases ontwerpfase
 
 ### Verkeersmodel
