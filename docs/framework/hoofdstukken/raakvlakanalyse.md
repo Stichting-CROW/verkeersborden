@@ -97,10 +97,8 @@ Open Geospatial Consortium beheert [CityGML](https://www.ogc.org/standards/cityg
 
 ## Gebruiksfase
 
-### Smart mobility
-
-#### Nauwkeurigheid
-Geometrische nauwkeurigheid / kloppende lengtematen nodig voor smart mobility?
+### Data Top 15
+De [Data Top 15](https://www.datapedia.nl/) In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets.
 
 
 ### NWB
