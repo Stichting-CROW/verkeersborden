@@ -59,9 +59,10 @@ Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zake
 Ketenstandaard Bouw en Techniek publiceert [ETIM](https://ketenstandaard.nl/standaard/etim/). Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
 
 
-
-
 ## Beheerfase
+
+### NWB
+In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
 
 ### IMBOR
 CROW publiceert het informatiemodel beheer openbare ruimte [IMBOR](https://www.crow.nl/thema-s/management-openbare-ruimte/imbor). In IMBOR zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten (asset management pakketten gericht op het tactische en operationele beheer).
@@ -73,8 +74,10 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR
 3. In het Informatiemodel Verkeersbesluiten en Verkeerstekens komen attributen te staan die bij het bord / de markering "-als-instantie-van-verkeersbesluit" (gewenst/gepland bord) informatie geven over datum en herkomst van het besluit, en de geldigheidsperiode van het besluit.
 4. In IMBOR attributen opnemen die bij het bord / de markering "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst bord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de borden en markeringen.
 
-### NWB
-In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
+### Verkeersbordendata NDW
+Het NDW publiceert de [actueel waargenomen verkeersborden](https://docs.ndw.nu/api/trafficsigns/nl/index.html) in Nederland. Het bestand is op twee bronnen gebaseerd: 1. Mutaties die door de wegbeheerder worden ingevoerd 2. Mutaties die door de jaarlijkse schouwronde met auto's/camera's wroden gesignaleerd. De eerste bron is vanzelf actueler, maar wordt minder toegepast dan de tweede bron. De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een NWB wegvak en ze hebben allemaal een locatie (x,y).
+
+Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde borden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het Informatiemodel Verkeerstekens en verkeersbesluiten.
 
 ### T3D
 In het "Totaal Dimensionaal" Programma.....
