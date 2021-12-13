@@ -46,6 +46,11 @@ CROW publiceert de ASVV. Dit is een bundeling kennis voor verkeersvoorzieningen 
 
 CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
+### Wegontwerp RWS
+Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
+
+###
+
 ## Bouwfase
 
 ### Tijdelijke verkeerssituaties
