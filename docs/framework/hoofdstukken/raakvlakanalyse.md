@@ -9,6 +9,9 @@ De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn
 
 ## Ontwerpfase
 
+### RVV 1990
+Het Reglement verkeersregels en verkeerstekens 1990 [(RVV 1990)](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990) is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn. 
+
 ### KPVV
 
 Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer (KpVV) uitgevoerd. Doel van dit programma is om door middel van kennis bij te dragen aan de kennisbehoefte van de decentrale overheden op het gebied van mobiliteit. De projecten zijn gericht op het ontwikkelen van nieuwe kennisproducten of op kennisontwikkeling en – uitwisseling (bv communities). De kennisproducten en – diensten worden gebruikt door:
@@ -51,13 +54,19 @@ CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijne
 ### Wegontwerp RWS
 Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
 
-###
-
 ## Bouwfase
 
 ### ETIM
 Ketenstandaard Bouw en Techniek publiceert [ETIM](https://ketenstandaard.nl/standaard/etim/). Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
 
+### PIANOO
+De publieke opdrachtgevers in de [Buyer Group verkeersborden](https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en) en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
+
+### Wetten
+De [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01) bevat regels over de plaatsing en uitvoering van verkeersborden. Deze uitvoeringsvoorschriften verwijzen naar de NEN 3381 voor visualisaties. 
+
+### NEN 3381:2020
+> De [normcommissie ‘Verkeerstekens’](https://www.nen.nl/normcommissie-verkeerstekens) houdt zich bezig met de normalisatie op het gebied van verkeerstekens. De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa. De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen. Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV borden, naar aanleiding van vragen uit de markt. Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV borden.
 
 ## Beheerfase
 
