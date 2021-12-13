@@ -61,7 +61,8 @@ Het informatiemodel maakt het mogelijk om de verkeersinstructie te laten gelden 
 
 
 ### Bord / markeringspunt
-Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. 
+1. Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. 
+2. Bij elk bord en onderbord is een grafische weergave beschikbaar in het informatiemodel. 
 
 
 ### Bordlocatie
@@ -76,8 +77,7 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 ### CB-NL
 1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
 
-### Gebruik data
-
+### SMART Mobility
 
 1. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeersbesluiten en Verkeerstekens een grafische weergave te bevatten van de borden. 
 
