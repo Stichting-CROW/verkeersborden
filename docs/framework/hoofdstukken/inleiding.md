@@ -89,6 +89,9 @@ Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen sco
 
 Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) als eigen aanvullingen door locale wegbeheerders.
 
+### Bewegwijzering
+Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze zijn buiten scope. 
+
 ### Verkeerslichten
 
 <div class="issue" data-number="64"></div>
