@@ -48,7 +48,7 @@ De bouwaannemer brengt de markeringen op basis van het ontwerp aan en geeft de a
 ### Beheren
 In de beheerfase wordt van de borden en markeringen informatie bijgehouden over de kwaliteit: vervuiling, slijtage en bijbehorende maatregelen waarmee de borden en markeringen functioneel en zichtbaar blijven. Ook wil de beheerder generieke informatie gebruiken over de verkeersborden en markeringen: wie de beherende partij is, wie het onderhoud uitvoert, wanneer welke onderhoudsmaatregel is uitgevoerd, en informatie uit de ontwerp- en bouwfase: locatie, paal of mast waarop een bord bevestigd is, datum plaatsing, levensduur of garanties, enzovoorts. Met deze informatie kan de asset manager risico's, prestaties en kosten afwegen en de juiste maatregelen treffen: onderhoud of vervanging. 
 
-![Asset management proces volgens iAMPro](Beheerfase.JPG "Asset management proces volgens iAMPro")
+![Asset management proces volgens iAMPro](./hoofdstukken/media/Beheerfase.JPG "Asset management proces volgens iAMPro")
 
 ### IMBOR
 In het informatiemodel beheer openbare ruimte (IMBOR) zijn borden en markeringen opgenomen met daarbij de vaste objectgegevens die in de beheerfase nodig zijn. Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan en gebruiken in areaalbeheerpakketten (asset management pakketten gericht op het tactische en operationele beheer).
