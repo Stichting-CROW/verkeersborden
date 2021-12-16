@@ -45,7 +45,16 @@ Wanneer in de context van het Informatiemodel Verkeerstekens en Verkeersbesluite
 </aside>
 
 
-## Use cases ontwerpfase
+## Ontwerpfase
+
+![Ontwerpfase](./media/ontwerpfase.jpg "Ontwerpfase")
+
+
+### Aanvraag maatregel
+
+*Stakeholders: Wegbeheerder, omwonenden, bedrijven*
+
+Het ontwerpproces start met de aanvraag van een verkeersbesluit. Dit kan gebeuren omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of bijvoorbeeld omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere verkeersregels. Hoe dan ook, hierdoor ontstaat een aanvraag voor het nemen van een verkeersbesluit. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
 
 ### Verkeersmodel
 
@@ -72,13 +81,19 @@ Wegontwerp is ontwerp van wegen, afhankelijk van het detailniveau van het ontwer
 Ook van een bord kent het systeem de reikweidte niet, al kan het ernaar raden: een waarschuwingsbord voor een drempel geldt voor maximaal 50 meter lengte, een bord "kijk uit herten" heeft een onderbord wat vertelt hoeveel meter deze waarschuwing geldt. Al met al zit er een verschil in de mens, die de kaart met wegen en borden 'in één oogopslag' begrijpt, en een systeem waarvoor dit te complex en tegenstrijdig is. Daarom geldt in deze use case beschrijving de aanname, dat een wegbeheerder wijzigingen doorgeeft passend bij de centrale netwerkregistratie. </p>
 <p> De andere kant op is minder complex: als het netwerk eenmaal is opgebouwd, kunnen met 'rules' wegvakken en borden worden afgeleid. Hierbij geldt: hoe beter en uitgebreider de netwerkdata, hoe beter dit gaat. Als een wegvak per rijstrook is aangeduid en de breedte van de rijstrook op elke lengte is aangegeven, kan het systeem het "wegontwerp" genereren en de 'in lengterichting' aangeduide borden visualiseren. De wegbeheerder kan dat goed overzien, of hij de 'data' op de juiste manier heeft aangeleverd / ingevoerd.</p></aside>  
 
-### Verkeersbesluiten
+### Omgevingsmanagement
+
+*Stakeholders: Wegbeheerder, omwonenden, bedrijven*
+
+Van overheden wordt verwacht dat zij actief aan de slag gaan met burgerparticipatie en ander omgevingsmanagement tijdens het ontwerpproces. Dit moet er toe leiden dat een verkeersbesluit dat ter visie wordt gelegd al bekend is bij de stakeholders. Toch kan het voorkomen dat dit leidt tot bezwaarprocedures. 
+
+### Registratie
 
 *Stakeholders: Wegbeheerders*
 
-De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase. Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer. 
+De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase. Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer. Bij de registratie hoort het publiceren op www.overheid.nl, en het pulbiceren van de data voer het verkeersbesluit in een landelijke registratie.
 
-## Use cases Bouwfase
+## Bouwfase
 
 ### Bestellen 
 
@@ -115,7 +130,7 @@ De *gewenste ligging* volgens het ontwerp en het verkeersbesluit komt niet per s
 Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of borden plaatsen. In de ideale wereld wordt deze situatie ook gepubliceerd als (tijdelijk) verkeersbesluit, zodat de netwerkinformatie en de verkeersinstructies altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
 
 
-## Use cases Beheerfase
+## Beheerfase
 
 ### Beheren
 
@@ -127,7 +142,7 @@ Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesl
 
 ![Asset management proces volgens iAMPro](./hoofdstukken/media/Beheerfase.jpg "Asset management proces volgens iAMPro")
 
-## Use cases Gebruiksfase
+## Gebruiksfase
 
 ### SMART mobility
 
