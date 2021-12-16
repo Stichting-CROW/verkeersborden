@@ -56,6 +56,8 @@ De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use c
 
 *Het publiceren van zowel voor mensen leesbare als machine-verwerkbare verkeerskundige informatie die aangeeft wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden).*
 
+![Ontwerpfase](./media/ontwerpfase.jpg "Ontwerpfase")
+
 De use case bevat de volgende onderdelen:
 
 1. Het samenstellen van een dataset met een nieuwe netwerkinrichting.
