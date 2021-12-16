@@ -47,7 +47,7 @@ Wanneer in de context van het Informatiemodel Verkeerstekens en Verkeersbesluite
 
 ## Ontwerpfase
 
-![Ontwerpfase](./media/ontwerpfase.jpg "Ontwerpfase")
+![Ontwerpfase](./hoofdstukken/media/ontwerpfase.jpg "Ontwerpfase")
 
 
 ### Aanvraag maatregel
