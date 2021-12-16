@@ -95,6 +95,8 @@ De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten, de use cas
 
 ## Bouwfase
 
+![Bouwfase](./hoofdstukken/media/bouwfase.jpg "Bouwfase")
+
 ### Bestellen 
 
 *Stakeholders: Publieke opdrachtgevers, bouwaannemers, producenten, toeleveranciers*
