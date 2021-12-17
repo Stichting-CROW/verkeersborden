@@ -13,8 +13,8 @@
 
 <section>
 <h2>Verkeersinstructies RVV 1990<h2>
-  <p> <ul> <li> Het informatiemodel MOET functionele verkeersinstructies voor de weggebruiker op basis van het <a href="https://wetten.overheid.nl/BWBR0004825/2021-07-01">RVV 1990</a> (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. </li>
-<li> Het informatiemodel MOET de definities gebruiken uit het <a href="https://wetten.overheid.nl/BWBR0004825/2021-07-01">RVV 1990</a> </li></ul></p>
+  <p> <ul> <li> Het informatiemodel MOET functionele verkeersinstructies voor de weggebruiker op basis van het <a>RVV 1990</a> (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. </li>
+<li> Het informatiemodel MOET de definities gebruiken uit het <a>RVV 1990</a> </li></ul></p>
 </section>
 <section id="conformance"></section>
 
