@@ -1,10 +1,9 @@
 # Technische Uitgangspunten
 
 
-## Informatiemodellering
-
 <section>
-  <p> <ul> <li> Het informatiemodel MOET worden opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.</li>
+  <h2>Informatiemodellering<h2>
+  <p> <ul> <li> Het informatiemodel MOET worden opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021. </li>
 <li> Het informatiemodel MOET waar mogelijk aangesloten op de NEN 3610 en de MIM. Bij tegenstrijdigheden geldt de NEN 2660. </li>
 <li> Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.  </li>
 <li> Het informatiemodel MOET van alle concepten een definite geven of verwijzen naar een definitie in wetten of andere informatiemodellen. </li></ul></p>
@@ -12,9 +11,12 @@
 <section id="conformance"></section>
 
 
-## Verkeersinstructies RVV 1990
-1. Het informatiemodel geeft functionele verkeersinstructies voor de weggebruiker op basis van het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. 
-2. Het informatiemodel gebruikt de definities uit het [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01)
+<section>
+<h2>Verkeersinstructies RVV 1990<h2>
+  <p> <ul> <li> Het informatiemodel MOET functionele verkeersinstructies voor de weggebruiker op basis van het <a href="https://wetten.overheid.nl/BWBR0004825/2021-07-01">RVV 1990</a> (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. </li>
+<li> Het informatiemodel MOET de definities gebruiken uit het <a href="https://wetten.overheid.nl/BWBR0004825/2021-07-01">RVV 1990</a> </li></ul></p>
+</section>
+<section id="conformance"></section>
 
 
 ## Adviessnelheid
