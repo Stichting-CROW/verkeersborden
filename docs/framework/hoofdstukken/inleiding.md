@@ -4,9 +4,9 @@
 ## Aanleiding
 
 ### Informatiebehoefte
-Vanuit [[=Smart Mobility=]] en verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken.
+Vanuit [=Smart Mobility=] en verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken.
 
-In Nederland wordt data over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([[=BGT=]], [[=BRT=]]) en het wegennetwerk ([[=NWB=]], [[=WKD=]], [[=WEGGEG=]]). 
+In Nederland wordt data over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
 
 Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. 
 
@@ -18,8 +18,8 @@ Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerde
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeer en verkeersbesluiten twee digitaliseringstrajecten lopen: 
 
-1. Het neerzetten van een [[=Nationaal Wegen Bestand+=]] en
-2. Het bouwen van een verkeersbesluiten database in het [[=Programma Netwerkregistraties=]]
+1. Het neerzetten van een [=Nationaal Wegen Bestand+=] en
+2. Het bouwen van een verkeersbesluiten database in het [=Programma Netwerkregistraties=]
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een Informatiemodel verkeerstekens en verkeersbesluiten essentieel. 
 
@@ -75,7 +75,7 @@ Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publicer
 
 ### Wettelijk +
 
-1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) zijn binnen scope. 
+1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [=RVV 1990=] zijn binnen scope. 
 
 2. Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
 <div class="issue" data-number="39"></div>
@@ -89,7 +89,7 @@ Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen sco
 
 ### Verkeersborden
 
-Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [RVV 1990](https://wetten.overheid.nl/BWBR0004825/2021-07-01) als eigen aanvullingen door locale wegbeheerders.
+Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [=RVV 1990=] als eigen aanvullingen door locale wegbeheerders.
 
 ### Bewegwijzering
 Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze zijn buiten scope. 
