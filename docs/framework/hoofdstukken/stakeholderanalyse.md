@@ -134,6 +134,8 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 
 ## Beheerfase
 
+![Beheer- en gebruiksfase](./hoofdstukken/media/beheerfase.jpg "Beheer- en gebruiksfase")
+
 ### Beheren
 
 *Stakeholders: Wegbeheerders*
