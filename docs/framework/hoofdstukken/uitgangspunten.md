@@ -27,6 +27,15 @@ Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snel
 
 ## Verkeersnetwerk
 
+### LOD
+1. Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
+
+<aside class="note" title="Levels of Detail">
+Verschillende <i>gebruikers</i> van de informatie over verkeersbesluiten hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één polygoon van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor SMART Mobility geldt dat het het netwerk gedetailleerder moet zijn met een polygoon per rijstrook. Daarnaast moet de nauwkeurigheid van de geometrie niet te veel afwijken van de werkelijkheid. Het bijbehorende verkeersbesluit is zo gedetailleerd als het netwerk toestaat. 
+
+Zie voor toelichting hierop bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
+</aside>
+
 ### Wegvak
 
 De in het NWB-Wegen opgenomen geografische basisobjecten zijn ‘wegvak’ en ‘junctie’, aan de hand waarvan het complete Nederlandse wegennetwerk kan worden geïdentificeerd. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Het Nationaal Wegen Bestand is mog niet tot op het niveau van een "rijstrook" gedifferentieerd; afhankelijk van de wegindeling kan een wegvak gaan over een weg met twee rijrichtingen; of over een rijbaan met meerdere rijstroken in één richting van de weg, waarbij de rijstroken niet zijn opgesplitst in afzonderlijke wegvakken. 
@@ -52,7 +61,12 @@ Het informatiemodel maakt het mogelijk om de verkeersinstructie te laten gelden 
 
 
 ### Bord / markeringspunt
-Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. 
+1. Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. 
+
+### Grafische weergave van de borden
+1. Bij elk bord en onderbord is een grafische weergave beschikbaar in het informatiemodel. 
+2. Een bord wordt gevisualiseerd conform [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01)
+
 
 
 ### Bordlocatie
@@ -66,5 +80,9 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 
 ### CB-NL
 1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
+
+### SMART Mobility
+
+1. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeersbesluiten en Verkeerstekens een grafische weergave te bevatten van de borden. 
 
 

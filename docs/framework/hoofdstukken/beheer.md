@@ -2,7 +2,7 @@
 
 Het Informatiemodel Verkeerstekens en verkeersbesluiten zal in beheer genomen moet worden om up to date te blijven. 
 
-## Strategie
+## BOMOS
 De beheerstrategie is open en transparant beheer conform het Beheermodel voor Open Standaarden [BOMOS](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf).
 
 Beheer volgens BOMOS heeft de volgende voordelen:
@@ -14,11 +14,14 @@ Beheer volgens BOMOS heeft de volgende voordelen:
 ![Activiteitendiagram van BOMOS van Forum voor standaardisatie](./media/bomos.PNG "Activiteitendiagram van Beheermodel voor Open Standaarden (BOMOS) van Forum voor standaardisatie")
 
 
-### Governance
-Het beheer van het Informatiemodel Verkeerstekens en verkeersbesluiten moet worden belegd bij een uitvoerende organisatie die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert.
-Wordt dat CROW, NWB, ??? > en wie heeft het meest geschikte profiel als beheerder van de standaard? Of invoegen in bestaande standaard met eigen product manager?
+## Strategie
 
-Wordt het Informatiemodel een onderdeel van IMBOR (waar de governance al is beschreven) of partnerstandaard van IMBOR > of wordt alleen gezorgd voor afstemming en gelijktijdige publicatie van nieuwe versies?
+### Governance
+Het beheer van het Informatiemodel Verkeerstekens en verkeersbesluiten wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het Informatiemodel Verkeerstekens en Verkeersbesluiten wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR. 
+
+#### Stuurgroep IMBOR
+De Stuurgroep IMBOR is verantwoordelijk voor..... 
+
 
 Welke overheidspartijen of partnerstandaarden moeten deelnemen in een sturend orgaan dat verantwoordelijk is voor besluitvorming en evenwichtige afweging van de belangen van de stakeholders?
 
