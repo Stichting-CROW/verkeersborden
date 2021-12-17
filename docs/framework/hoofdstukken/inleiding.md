@@ -18,8 +18,8 @@ Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerde
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeer en verkeersbesluiten twee digitaliseringstrajecten lopen: 
 
-1. Het neerzetten van een Nationaal Wegen Bestand+ ([nieuwsbericht NWB](https://nationaalwegenbestand.nl/nieuws/ndw-wil-van-nwb-het-wegenbestand-voor-overheidsinformatie-maken)) en
-2. Het bouwen van een verkeersbesluiten database ([Programma Netwerkregistraties](https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing))
+1. Het neerzetten van een [[=Nationaal Wegen Bestand+=]] en
+2. Het bouwen van een verkeersbesluiten database in het [[=Programma Netwerkregistraties=]]
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede centrale database toe te kunnen werken is een Informatiemodel verkeerstekens en verkeersbesluiten essentieel. 
 
