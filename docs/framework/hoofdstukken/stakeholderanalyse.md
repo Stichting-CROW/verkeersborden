@@ -168,7 +168,7 @@ Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actue
 
 *Stakeholders: Toezichthouders* 
 
-Bij handhaving in het verkeer is informatie over de locale verkeersregels van belang. Daarbij is op dit moment de *fysieke instructie* oftewel het daadwerkelijk aanwezig zijn van een fysiek bord of markering nodig, om te kunnen handhaven. De *digitale instructie* via een geregistreerd verkeersbesluit is niet voldoende om te kunnen handhaven. Deze controle moet5 worden uitgevoerd door de wegbeheerder, zie bij de [use case beheren](./#beheren).
+Bij handhaving in het verkeer is informatie over de locale verkeersregels van belang. Daarbij is op dit moment de *fysieke instructie* oftewel het daadwerkelijk aanwezig zijn van een fysiek bord of markering nodig, om te kunnen handhaven. De *digitale instructie* via een geregistreerd verkeersbesluit is niet voldoende om te kunnen handhaven. Deze controle is de verantwoordelijkheid van de wegbeheerder, zie bij de [use case beheren](./#beheren).
 
 
 ## Use cases Sloopfase
