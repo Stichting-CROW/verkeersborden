@@ -25,7 +25,8 @@ De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaa
 
 ### NDW
 Het NDW krijgt een rol in de realisatie van de netwerkregistratie. .....
-[Issue 14](https://github.com/Stichting-CROW/verkeersborden/issues/14)
+
+<div class="issue" data-number="14"></div>
 
 
 ### CB-NL
@@ -41,7 +42,7 @@ Met NLCS worden de objecten op een tekening herkend door alle partijen. Het doel
 
 Circa 30% van de verkeersbesluiten ontwerptekeningen bevatten tekeningen die afkomstig zijn uit CAD-systemen. Tijdens het proces om tot deze verkeersbesluiten te komen wordt veel onderliggende data gemaakt, maar deze data wordt niet optimaal gepubliceerd en gebruikt tijdens en na de publicatie van verkeersbesluiten. Om het gebruik van data uit het wegontwerp bij het verkeersbesluit te verbeteren en tot een completere en eenduidigere uitwisseling van data te komen is de intentie van BIM loket om de verkeersborden op te nemen in de NLCS standaard zodra deze gepubliceerd worden in het Informatiemodel verkeersteken en verkeersbesluiten. Hierdoor hoeven gegevens niet telkens handmatig worden overgenomen maar kan deze data automatisch worden ingelezen voor processen in de bouw-, beheer-, gebruik- en hergebruiksfase. Vervolgens worden door het BIM-loket met de leveranciers van CAD-systemen nadere afspraken gemaakt over het kunnen exporteren van de verkeersborden zodat deze als data beschikbaar komen voor andere systemen. 
 
-[Issue 15](https://github.com/Stichting-CROW/verkeersborden/issues/15)
+<div class="issue" data-number="15"></div>
 
 ### ASVV
 
@@ -83,6 +84,8 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR
 3. In het Informatiemodel Verkeersbesluiten en Verkeerstekens komen attributen te staan die bij het bord / de markering "-als-instantie-van-verkeersbesluit" (gewenst/gepland bord) informatie geven over datum en herkomst van het besluit, en de geldigheidsperiode van het besluit.
 4. In IMBOR attributen opnemen die bij het bord / de markering "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst bord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de borden en markeringen.
 
+<div class="issue" data-number="52"></div>
+
 ### Verkeersbordendata NDW
 Het NDW publiceert de [actueel waargenomen verkeersborden](https://docs.ndw.nu/api/trafficsigns/nl/index.html) in Nederland. Het bestand is op twee bronnen gebaseerd: 1. Mutaties die door de wegbeheerder worden ingevoerd 2. Mutaties die door de jaarlijkse schouwronde met auto's/camera's wroden gesignaleerd. De eerste bron is vanzelf actueler, maar wordt minder toegepast dan de tweede bron. De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een NWB wegvak en ze hebben allemaal een locatie (x,y).
 
@@ -98,7 +101,8 @@ Open Geospatial Consortium beheert [CityGML](https://www.ogc.org/standards/cityg
 ## Gebruiksfase
 
 ### Data Top 15
-De [Data Top 15](https://www.datapedia.nl/) In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets.
+De [=Data Top 15=] In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets.
+De DataTop15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.
 
 
 ### NWB
