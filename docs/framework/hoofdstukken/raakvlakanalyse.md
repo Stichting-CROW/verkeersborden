@@ -12,6 +12,7 @@ De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn
 ### RVV 1990
 Het Reglement verkeersregels en verkeerstekens 1990 [(RVV 1990)](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990) is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn. 
 
+**Raakvlaktype: Bron**
 Het RVV 1990 is de primaire bron voor verkeersinstructies en bijbehorende verkeerstekens die worden opgenomen in het Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 ### KPVV
@@ -23,6 +24,7 @@ Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer ([=KpVV=]) u
 
 De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. Deze groepen gebruiken verkeersmodellen om te toetsen of het ontwerp voldoent aan de mobiliteitsdoelstellingen, en zijn verantwoordelijk voor de publicatie van verkeersbesluiten. 
 
+**Raakvlaktype: Te informeren**
 Deze groep MOET geinformeerd worden over de toepassing van het Informatiemodel Verkeerstekens en Verkeersbesluiten bij de publicatie van verkeersbesluiten.
 
 ### NDW
@@ -30,11 +32,13 @@ Onder vlag van het Nationaal Dataportaal Wegverkeer ([=NDW=]) werken Nederlandse
 
 <div class="issue" data-number="14"></div>
 
+**Raakvlaktype: Gebruik**
 
 ### CB-NL
 
 BIM loket publiceert de Nederlandse Conceptenbibliotheek voor de gebouwde omgeving ([=CB-NL=]), een digitale, semantische bibliotheek beheerd door BIM loket. Deze bevat uniformerende definities en legt via beschrijvingen verbindingen tussen standaarden, normen, objecten en producten van bestaande bibliotheken. Een goedwerkende CB-NL zal BIM-processen tussen bouwdisciplines en -partijen aanzienlijk versnellen. CB-NL is gratis toegankelijk via internet. CB-NL is bedoeld om ontologien zoals het Informatiemodel Verkeerstekens en Verkeersbesluiten of objecttypenbibliotheken van asset managers en bouwbedrijven met elkaar te kunnen verbinden. 
 
+**Raakvlaktype: Gezamenlijk beheer**
 CB-NL is de logsiche plek om relaties tussen het Informatiemodel Verkeerstekens en Verkeersbesluiten en andere standaarden zoals NLCS te publiceren, waarbij een afspraak moet worden gemaakt over het beheer van de relatie tussen beide standaarden. Voorwaarde is wel dat een standaard gepubliceerd is als ontologie in linked data.
 
 
@@ -45,26 +49,49 @@ Met NLCS worden de objecten op een tekening herkend door alle partijen. Het doel
 
 Circa 30% van de verkeersbesluiten ontwerptekeningen bevatten tekeningen die afkomstig zijn uit CAD-systemen. Tijdens het proces om tot deze verkeersbesluiten te komen wordt veel onderliggende data gemaakt, maar deze data wordt niet optimaal gepubliceerd en gebruikt tijdens en na de publicatie van verkeersbesluiten. Om het gebruik van data uit het wegontwerp bij het verkeersbesluit te verbeteren en tot een completere en eenduidigere uitwisseling van data te komen is de intentie van BIM loket om de verkeersborden op te nemen in de NLCS standaard zodra deze gepubliceerd worden in het Informatiemodel verkeersteken en verkeersbesluiten. Hierdoor hoeven gegevens niet telkens handmatig worden overgenomen maar kan deze data automatisch worden ingelezen voor processen in de bouw-, beheer-, gebruik- en hergebruiksfase. Vervolgens worden door het BIM-loket met de leveranciers van CAD-systemen nadere afspraken gemaakt over het kunnen exporteren van de verkeersborden zodat deze als data beschikbaar komen voor andere systemen. 
 
+**Raakvlaktype: Gezamenlijk beheer**
 <div class="issue" data-number="15"></div>
 
 ### ASVV
 
-CROW publiceert de ASVV. Dit is een bundeling kennis voor verkeersvoorzieningen binnen de bebouwde kom. De kennis uit de uitgave wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
+CROW publiceert de [=ASVV=]. Dit is een bundeling kennis voor verkeersvoorzieningen binnen de bebouwde kom. De kennis uit de uitgave wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
+
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de ASVV zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
+
+**Raakvlaktype: Gezamenlijk beheer**
+<div class="issue" data-number="69"></div>
 
 ### Handboek Wegontwerp
 
 CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen het Handboek Wegontwerp zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
+
+**Raakvlaktype: Gezamenlijk beheer**
+<div class="issue" data-number="70"></div>
+
 ### Wegontwerp RWS
 Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
+
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de richtlijnen van Rijkswaterstaat zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
+
 
 ## Bouwfase
 
 ### ETIM
-Ketenstandaard Bouw en Techniek publiceert [ETIM](https://ketenstandaard.nl/standaard/etim/). Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
+Ketenstandaard Bouw en Techniek publiceert [=ETIM=]. Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
+
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de ETIM zodat duidelijk is dat het bestelde verkeersteken (indien opgenomen in de productcatalogus) past bij het verkeersbesluit.
 
 ### PIANOO
 De publieke opdrachtgevers in de [Buyer Group verkeersborden](https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en) en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
+
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de eisen van PIANOO zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van de eisen naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
 ### Wetten
 De [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01) bevat regels over de plaatsing en uitvoering van verkeersborden. Deze uitvoeringsvoorschriften verwijzen naar de NEN 3381 voor visualisaties. 
