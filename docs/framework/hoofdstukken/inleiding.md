@@ -36,8 +36,8 @@ Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat *
 > Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 ### Voorbeeld: drempels
-<aside class="example" title="Drempels">
-<p> Een <b>wegbeheerder</b> die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben: </p>
+<aside class="example" title="Drempels, mens versus machine">
+  <p> Een <b>wegbeheerder</b> die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben: </p>
   <ol><li> Zorgen dat het verkeer <i>snelheid mindert ten opzichte van de maximum snelheid</i>, zodat een gevaarlijke situatie voorkomen wordt (een kruising, een school, een uitrit....) </li>
   <li> Zorgen dat het verkeer zijn <i>snelheid beperkt tot de maximum snelheid</i>, zodat over de gehele lengte van de weg niet te hard gereden wordt.</li></ol>
 <p> Door op een kaart aan te geven dat er een Waarschuwingsbord komt voor een drempel, en de drempel op de kaart te zetten, is de bedoeling voor een verkeerskundige duidelijk, maar wordt het onderscheid tussen het eerste en tweede doel niet meer af te leiden. Door het ontwerp van de drempel kan een maximale snelheid worden "afgedwongen" omdat het niet comfortabel is om er harder overheen te rijden.</p>
@@ -49,6 +49,19 @@ Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat *
  
 ## Scope informatiemodel
 
+### Verkeersbesluiten+ 
+
+1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [=RVV 1990=] zijn binnen scope. 
+
+2. Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
+<div class="issue" data-number="39"></div>
+
+3. Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope. 
+
+### Wegsoorten
+
+Het Informatiemodel Verkeerstekens en Verkeersbesluiten heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen- en buiten de bebouwde kom.
+Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 
 ### Use case
 
@@ -73,25 +86,13 @@ Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publicer
   </aside>
 
 
-### Wettelijk +
-
-1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [=RVV 1990=] zijn binnen scope. 
-
-2. Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
-<div class="issue" data-number="39"></div>
-
-3. Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope. 
-
-### Wegsoorten
-
-Het Informatiemodel Verkeerstekens en Verkeersbesluiten heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen- en buiten de bebouwde kom.
-Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
-
 ### Verkeersborden
 
 Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [=RVV 1990=] als eigen aanvullingen door locale wegbeheerders.
 
 <div class="issue" data-number="66"></div>
+
+    
 
 ### Bewegwijzering
 Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze zijn buiten scope. 
