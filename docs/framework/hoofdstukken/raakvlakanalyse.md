@@ -12,7 +12,7 @@ De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn
 ### RVV 1990
 Het Reglement verkeersregels en verkeerstekens 1990 [(RVV 1990)](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990) is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn. 
 
-**Raakvlaktype: Bron**
+**Raakvlaktype: Bron voor informatiemodel**
 Het RVV 1990 is de primaire bron voor verkeersinstructies en bijbehorende verkeerstekens die worden opgenomen in het Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 ### KPVV
@@ -24,15 +24,8 @@ Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer ([=KpVV=]) u
 
 De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. Deze groepen gebruiken verkeersmodellen om te toetsen of het ontwerp voldoent aan de mobiliteitsdoelstellingen, en zijn verantwoordelijk voor de publicatie van verkeersbesluiten. 
 
-**Raakvlaktype: Te informeren**
+**Raakvlaktype: Te informeren groep**
 Deze groep MOET geinformeerd worden over de toepassing van het Informatiemodel Verkeerstekens en Verkeersbesluiten bij de publicatie van verkeersbesluiten.
-
-### NDW
-Onder vlag van het Nationaal Dataportaal Wegverkeer ([=NDW=]) werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert
-
-<div class="issue" data-number="14"></div>
-
-**Raakvlaktype: Gebruik**
 
 ### CB-NL
 
@@ -56,7 +49,7 @@ Circa 30% van de verkeersbesluiten ontwerptekeningen bevatten tekeningen die afk
 
 CROW publiceert de [=ASVV=]. Dit is een bundeling kennis voor verkeersvoorzieningen binnen de bebouwde kom. De kennis uit de uitgave wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
-**Raakvlaktype: Gebruik**
+**Raakvlaktype: Gebruik informatiemodel**
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de ASVV zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
 **Raakvlaktype: Gezamenlijk beheer**
@@ -66,7 +59,7 @@ In het ideale geval worden de concepten en definites uit het Informatiemodel Ver
 
 CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
-**Raakvlaktype: Gebruik**
+**Raakvlaktype: Gebruik informatiemodel**
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen het Handboek Wegontwerp zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
 **Raakvlaktype: Gezamenlijk beheer**
@@ -75,7 +68,7 @@ In het ideale geval worden de concepten en definites uit het Informatiemodel Ver
 ### Wegontwerp RWS
 Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
 
-**Raakvlaktype: Gebruik**
+**Raakvlaktype: Gebruik informatiemodel**
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de richtlijnen van Rijkswaterstaat zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
 
@@ -84,35 +77,40 @@ In het ideale geval worden de concepten en definites uit het Informatiemodel Ver
 ### ETIM
 Ketenstandaard Bouw en Techniek publiceert [=ETIM=]. Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
 
-**Raakvlaktype: Gebruik**
+**Raakvlaktype: Gebruik informatiemodel**
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de ETIM zodat duidelijk is dat het bestelde verkeersteken (indien opgenomen in de productcatalogus) past bij het verkeersbesluit.
+
+<div class="issue" data-number="70"></div>
 
 ### PIANOO
 De publieke opdrachtgevers in de [=Buyer Group verkeersborden=] en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
 
-**Raakvlaktype: Gebruik**
-In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen producten van de Buyer Group Verkeersborden zodat duidelijk is over welke verkeerstekens het gaat.
+**Raakvlaktype: Gebruik informatiemodel**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen producten van de Buyer Group Verkeersborden / PIANOO zodat duidelijk is over welke verkeerstekens het gaat en op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van de eisen naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
-**Raakvlaktype: Gebruik**
-In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de eisen van PIANOO zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van de eisen naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
+<div class="issue" data-number="74"></div>
 
-### Wetten
-De [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01) bevat regels over de plaatsing en uitvoering van verkeersborden. Deze uitvoeringsvoorschriften verwijzen naar de NEN 3381 voor visualisaties. 
+### BABW
+Uitvoeringsvoorschriften BABW inzake verkeerstekens [=BABW=] is onderdeel van de nationale wetgeving en bevat regels over de plaatsing en uitvoering van verkeersborden. Deze uitvoeringsvoorschriften verwijzen naar de NEN 3381 voor visualisaties. 
+
+**Raakvlaktype: Bron voor informatiemodel**
+<div class="issue" data-number="76"></div>
 
 ### NEN3381:2020
 De [=normcommissie Verkeerstekens=] houdt zich bezig met de normalisatie op het gebied van verkeerstekens. De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa. De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen. Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV borden, naar aanleiding van vragen uit de markt. Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV borden.
 
 De [=NEN3381:2020=] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. 
 
+**Raakvlaktype: Gebruik informatiemodel**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de NEN3381:2020 zodat duidelijk is op welk type verkeersteken de eisen in deze NEN-norm betrekking hebben. 
+
+**Raakvlaktype: Bron voor informatiemodel**
+<div class="issue" data-number="78"></div>
+
 ## Beheerfase
 
-### NWB
-Het Nationaal Wegen Bestand ([=NWB=]) is een open databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door de wegbeheerders.
-
-Het NWB bevat het wegennetwerk vast als netwerk van [=Juncties=] en [=Wegvakken=]. Het Informatiemodel Verkeerstekens en Verkeersbesluiten moet hierop aansluiten om te zorgen dat een verkeersbesluit gekoppeld kan worden aan het juiste wegvak.
-
 ### IMBOR
-CROW publiceert het informatiemodel beheer openbare ruimte =IMBOR=]Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie (BGT) en het Informatiemodel geografie (IMGeo) vormen de basis.
+CROW publiceert het informatiemodel beheer openbare ruimte ([=IMBOR=]). IMBOR bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) en het Informatiemodel geografie ([=IMGeo=]) vormen de basis.
 
 
 In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien bebakening en bewegwijzering en daarnaast ook markeringen. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van boren en markeringen die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object.  Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte.
@@ -127,19 +125,37 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR
 
 <div class="issue" data-number="52"></div>
 
-### Verkeersbordendata NDW
+
+## Gebruiksfase
+
+### NWB
+Het Nationaal Wegen Bestand ([=NWB=]) is een open databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door de wegbeheerders.
+
+**Raakvlaktype: Gezamenlijk beheer**
+Het NWB bevat een informatiemodel voor het wegennetwerk vast als netwerk van [=Juncties=] en [=Wegvakken=]. Het Informatiemodel Verkeerstekens en Verkeersbesluiten moet hierop aansluiten om te zorgen dat een verkeersbesluit gekoppeld kan worden aan het juiste wegvak.
+
+### NDW
+Onder de vlag van het Nationaal Dataportaal Wegverkeer ([=NDW=]) werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert.
+
+<div class="issue" data-number="14"></div>
+
+**Raakvlaktype: Gebruik informatiemodel**
+
+#### NDW - Verkeersbordendata
 Het NDW publiceert de [actueel waargenomen verkeersborden](https://docs.ndw.nu/api/trafficsigns/nl/index.html) in Nederland. Het bestand is op twee bronnen gebaseerd: 1. Mutaties die door de wegbeheerder worden ingevoerd 2. Mutaties die door de jaarlijkse schouwronde met auto's/camera's wroden gesignaleerd. De eerste bron is vanzelf actueler, maar wordt minder toegepast dan de tweede bron. De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een NWB wegvak en ze hebben allemaal een locatie (x,y).
 
+**Raakvlaktype: Gebruik informatiemodel**
 Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde borden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het Informatiemodel Verkeerstekens en verkeersbesluiten.
 
 ### T3D
 In het [=Totaal 3Dimensionaal=] Programma wordt gewerkt aan verbetering van het inwinnen, registratie en het gebruik van 3 dimensionale geo-informatie.
 Hierbij wordt [=CityGML=] gezien als een handig formaat om in te publiceren. 
 
+**Raakvlaktype: Gebruik informatiemodel**
+Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde borden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het Informatiemodel Verkeerstekens en verkeersbesluiten.
+
 ### CityGML
 Open Geospatial Consortium beheert [=CityGML=]. CityGML is een conceptueel model en uitwisselformaat voor de representatie, opslag en uitwisseling van virtuele 3D modellen van steden, inclusief de wegen. 
-
-## Gebruiksfase
 
 ### Data Top 15
 De [=Data Top 15=] In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets.
@@ -149,6 +165,9 @@ De DataTop15 verwijst weer door naar andere programma's waarbinnen deze data wor
 ### NWB
 
 ### Programma Netwerkregistratie
+
+
+### IMGeo
 
 ### BGT en SOR
 De Samenhangende Objectenregistraties....
