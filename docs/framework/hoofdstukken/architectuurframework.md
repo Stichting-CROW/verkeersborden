@@ -36,6 +36,8 @@ De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties t
 - https://data.vlaanderen.be/ns/mobiliteit
 - https://data.vlaanderen.be/ns/besluit
 
+<div class="issue" data-number="50"></div>
+
 #### _Besluiten Mobiliteit_
 
 https://data.vlaanderen.be/doc/applicatieprofiel/besluit-mobiliteit/
