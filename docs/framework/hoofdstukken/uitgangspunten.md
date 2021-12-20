@@ -23,6 +23,25 @@ Naast de wettelijk geldende verkeersinstructie over bijvoorbeeld de maximum snel
 4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel.
 5. Het informatiemodel geeft naast vaste borden ook de mogelijkheid om de locatie van dynamische borden weer te geven, zodat we weggebruiker kan worden geattendeerd om hierop te letten. 
 
+<aside class="example" title="Invloedssfeer van een bord of bord als afgeleide van een verkeersinstructie">
+<p> De verkeerskundige die een verkeersbesluit neemt, heeft een heel gebied op het oog, waar de verkeersregels in samenhang moeten zorgen voor een goede doorstroming en veiligheid van het wegverkeer. Deze verkeerskundige zal een instructie willen geven die geldt voor <ol>
+  <li> Een wegvak; </li>
+  <li> Een paar wegvakken (bijvoorbeeld doorlopend over kruisingen heen geldt dezelfde snelheid); </li>
+  <li> Een zone (bijvoorbeeld een parkeerzone)</li></ol> 
+  De verkeerskundige bedenkt daarbij waar borden en markeringen nodig zijn. </p>
+  
+  <p> Een <b>Wegontwerper</b> wil weten, of alle borden die nodig zijn in het ontwerp een plaats heeft gegeven. Voor de wegontwerper is het handig, om de zone te weten en de gewenste borden. </p>
+  
+  <p> Een <b>menselijke weggebruiker</b> wil op de locatie waar hij rijdt weten welke regel geldt: hij leest aan de borden, markeringen en de weginrichting af welke regels gelden. Deze gebruiker moet onthouden dat hij bij inrijden van een zone een bord is tegengekomen. Voor de mens maakt de digitale registratiewijze niet uit </p>
+  
+  <p> Een <b>incar systeem of navigatiesysteem</b> wil op de locatie waar het rijdt weten welke regel geldt: 
+  <ul><li>het localiseert de locatie waar het zich bevindt, vergelijkt dat met de netwerkregistratie, weet op welk wegvak het zich bevindt en leest dan af welke regel geldt in dat wegvak. </li>
+  <li> Als de verkeersinstructie is vastgelegd in een zone, komt er een stap bij: het systeem moet dan bepalen of het zich binnen of buiten een zone bevindt, en welke regels in deze zone gelden. Voor een dergelijk systeem is registratie van verkeersinstructies per wegvak beter dan per zone. </li><ul></p>
+  
+  <p> Een <b>wegbeheerder<b> wil weten, of alle borden die nodig zijn nog steeds aanwezig zijn. De wegbeheerder heeft per zone de locatie nodig van de borden die aanwezig zouden moeten zijn om te kunnen controleren of de borden er zijn. Voor de wegbeheerder maakt het niet uit of een bord aan een wegvak is gekoppeld, of aan een zone, de borden zijn als losse data voldoende. </p> </aside>
+
+  <div class="issue" data-number="77"></div>
+
 
 ## Verkeersnetwerk
 
