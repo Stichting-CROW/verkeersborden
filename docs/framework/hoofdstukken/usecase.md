@@ -51,18 +51,19 @@ Dit onderdeel van de usecase beschrijft wat er nodig is zodat een wegbeheerder e
 * De Wegbeheerder selecteert het wegvak (in de netwerkdata) waar hij een verkeersbesluit aan wil toevoegen.\
 * Het Systeem controleert of het wegvak uit twee richtingen bestaat. Indien dit zo is, krijgt de wegbeheerder de vraag: welke junctie is het startpunt? 
 * De wegbeheerder geeft antwoord
-* Het Systeem vraagt welke verkeersregel of waarschuwing van toepasssing is en presenteert een lijst waar de gebruiker uit kan kiezen (1)
+* Het Systeem vraagt welke verkeersregel of waarschuwing van toepasssing is en presenteert een lijst waar de gebruiker uit kan kiezen <sup>1</sup>
 * De wegbeheerder geeft antwoord
 * Het Systeem vraagt op welke lengte langs het wegvak het verkeersbesluit begint en eindigt.
 * De wegbeheerder geeft antwoord
 * Het Systeem geeft een lijst met borden en markeringen die bij deze verkeersregel passen en vraagt aan te geven op welke lengterichting deze staan, en (bij een bord) of dit naast de weg of boven de rijbaan bevestigd is
-* De wegbeheerder geeft antwoord (2)
+* De wegbeheerder geeft antwoord <sup>2</sup>
 *  Het systeem geeft een lijst met onderborden passend bij de gekozen borden en vraagt de gebruiker of deze worden toegevoegd en eventueel om variabele waarden in te vullen
 * De wegbeheerder geeft antwoord
 
-
-(1) Indien uitbreiding van verkeersregels en borden mogelijk wordt gemaakt moet de wegbeheerder deze aanvullingen eerst publiceren, dan het systeem wijzen op de uitbreiding. 
-(2) De borden en markeringen kunnen eventueel ook via een NLCS tekening worden aangeleverd, indien hier zodanige regels voor zijn ontwikkeld dat dit redelijkerwijs zonder foutmeldingen kan. In dat geval moet de gebruiker nog steeds selecteren, welke borden betrekking hebben op de verkeersregel die wordt ingevoerd
+<p class="note" title="Voetnoten">
+<ol><li> Indien uitbreiding van verkeersregels en borden mogelijk wordt gemaakt moet de wegbeheerder deze aanvullingen eerst publiceren, dan het systeem wijzen op de uitbreiding. </li>
+<li> De borden en markeringen kunnen eventueel ook via een NLCS tekening worden aangeleverd, indien hier zodanige regels voor zijn ontwikkeld dat dit redelijkerwijs zonder foutmeldingen kan. In dat geval moet de gebruiker nog steeds selecteren, welke borden betrekking hebben op de verkeersregel die wordt ingevoerd </li></ol>
+</p>
 
 ## Transactie verkeersbesluit
 Dit onderdeel van de use case bevast de transactie tussen de **wegbeheerder** en de **Landelijke registratie** waarbij de wegbeheerder een wijziging in de wegligging en/of de verkeersregels aanbiedt aan de landelijke registratie. 
