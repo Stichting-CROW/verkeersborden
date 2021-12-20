@@ -13,6 +13,8 @@ _Intelligent transport systems - ITS spatial data - Data exchange on changes in 
 De norm is te koop bij NEN à ca. 80 EUR incl. BTW.
 De GML schema's die eraan ten grondslag liggen zijn wel beschikbaar op https://tn-its.eu/standardisation. 
 
+<div class="issue" data-number="59"></div>
+
 ### Inspire
 
 De dataspecificaties van INSPIRE, infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op 
