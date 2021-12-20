@@ -88,7 +88,10 @@ Ketenstandaard Bouw en Techniek publiceert [=ETIM=]. Dit is een catalogus waarme
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de ETIM zodat duidelijk is dat het bestelde verkeersteken (indien opgenomen in de productcatalogus) past bij het verkeersbesluit.
 
 ### PIANOO
-De publieke opdrachtgevers in de [Buyer Group verkeersborden](https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en) en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
+De publieke opdrachtgevers in de [=Buyer Group verkeersborden=] en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
+
+**Raakvlaktype: Gebruik**
+In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen producten van de Buyer Group Verkeersborden zodat duidelijk is over welke verkeerstekens het gaat.
 
 **Raakvlaktype: Gebruik**
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast binnen de eisen van PIANOO zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van de eisen naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
