@@ -2,7 +2,7 @@
 
 
 <section>
-  <h2>Informatiemodellering<h2>
+  <h2>Informatiemodellering</h2>
   <p> <ul> <li> Het informatiemodel MOET worden opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021. </li>
 <li> Het informatiemodel MOET waar mogelijk aangesloten op de NEN 3610 en de MIM. Bij tegenstrijdigheden geldt de NEN 2660. </li>
 <li> Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.  </li>
@@ -12,7 +12,7 @@
 
 
 <section>
-<h2>Verkeersinstructies RVV 1990<h2>
+<h2>Verkeersinstructies RVV 1990</h2>
   <p> <ul> <li> Het informatiemodel MOET functionele verkeersinstructies voor de weggebruiker op basis van het <a>RVV 1990</a> (Reglement verkeersregels en verkeerstekens 1990). Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. </li>
 <li> Het informatiemodel MOET de definities gebruiken uit het <a>RVV 1990</a> </li></ul></p>
 </section>
