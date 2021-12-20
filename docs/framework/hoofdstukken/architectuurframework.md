@@ -27,7 +27,7 @@ De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenm
 
 ### OSLO
 
-De Vlaamse overheid heeft binnen het project Lokale Besluiten als Gelinkte Open Data verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het Informatiemodel Verkeerstekens en verkeersbesluiten.
+De Vlaamse overheid heeft binnen het OSLO-programma (Open standaarden voor linkede organisaties) en het project Lokale Besluiten als Gelinkte Open Data (LBLOD) verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het Informatiemodel Verkeerstekens en verkeersbesluiten.
 
 Er wordt gebruik gemaakt van vocabularia die de herbruikbare concepten beschrijven. 
 De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties tussen die concepten.
