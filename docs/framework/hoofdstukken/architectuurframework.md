@@ -23,6 +23,8 @@ https://inspire.ec.europa.eu/Themes/115/2892 met UML-diagrammen en uitgebreide t
 Alleen het Wegennetwerk, uit het thema Transportnetwerken is hierbij relevant.
 De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
 
+<div class="issue" data-number="58"></div>
+
 ### OSLO
 
 De Vlaamse overheid heeft binnen het project Lokale Besluiten als Gelinkte Open Data verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het Informatiemodel Verkeerstekens en verkeersbesluiten.
