@@ -92,7 +92,6 @@ Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit 
 
 <div class="issue" data-number="66"></div>
 
-    
 
 ### Bewegwijzering
 Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze zijn buiten scope. 
@@ -104,6 +103,8 @@ Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze 
 ### Markeringen
 
 <div class="issue" data-number="56"></div>
+
+<div class="issue" data-number="75"></div>
 
 ### Weginrichting
 
