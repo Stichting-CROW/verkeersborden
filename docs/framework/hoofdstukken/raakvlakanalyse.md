@@ -66,16 +66,24 @@ De publieke opdrachtgevers in de [Buyer Group verkeersborden](https://www.pianoo
 ### Wetten
 De [Uitvoeringsvoorschriften BABW inzake verkeerstekens](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01) bevat regels over de plaatsing en uitvoering van verkeersborden. Deze uitvoeringsvoorschriften verwijzen naar de NEN 3381 voor visualisaties. 
 
-### NEN 3381:2020
-> De [normcommissie ‘Verkeerstekens’](https://www.nen.nl/normcommissie-verkeerstekens) houdt zich bezig met de normalisatie op het gebied van verkeerstekens. De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa. De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen. Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV borden, naar aanleiding van vragen uit de markt. Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV borden.
+### NEN3381:2020
+De [=normcommissie Verkeerstekens=] houdt zich bezig met de normalisatie op het gebied van verkeerstekens. De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa. De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen. Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV borden, naar aanleiding van vragen uit de markt. Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV borden.
+
+De [=NEN3381:2020=] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. 
 
 ## Beheerfase
 
 ### NWB
-In het nationaal wegen bestand (NWB) ligt het wegennetwerk vast als netwerk van juncties en wegvakken. Het informatiemodel moet hierop aansluiten. 
+Het Nationaal Wegen Bestand ([=NWB=]) is een open databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door de wegbeheerders.
+
+Het NWB bevat het wegennetwerk vast als netwerk van [=Juncties=] en [=Wegvakken=]. Het Informatiemodel Verkeerstekens en Verkeersbesluiten moet hierop aansluiten om te zorgen dat een verkeersbesluit gekoppeld kan worden aan het juiste wegvak.
 
 ### IMBOR
-CROW publiceert het informatiemodel beheer openbare ruimte [IMBOR](https://www.crow.nl/thema-s/management-openbare-ruimte/imbor). In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien bebakening en bewegwijzering en daarnaast ook markeringen. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van boren en markeringen die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object.  Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte.
+CROW publiceert het informatiemodel beheer openbare ruimte =IMBOR=]Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie (BGT) en het Informatiemodel geografie (IMGeo) vormen de basis.
+
+
+In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien bebakening en bewegwijzering en daarnaast ook markeringen. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van boren en markeringen die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object.  Dit model wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden en markeringen te kunnen opslaan en gebruiken in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte.
+
 
 Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR, maar geen dubbelingen kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
@@ -92,11 +100,11 @@ Het NDW publiceert de [actueel waargenomen verkeersborden](https://docs.ndw.nu/a
 Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde borden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het Informatiemodel Verkeerstekens en verkeersbesluiten.
 
 ### T3D
-In het "Totaal Dimensionaal" Programma.....
-Hierbij wordt [CityGML](https://www.ogc.org/standards/citygml) gezien als een handig formaat om in te publiceren. 
+In het [=Totaal 3Dimensionaal=] Programma wordt gewerkt aan verbetering van het inwinnen, registratie en het gebruik van 3 dimensionale geo-informatie.
+Hierbij wordt [=CityGML=] gezien als een handig formaat om in te publiceren. 
 
 ### CityGML
-Open Geospatial Consortium beheert [CityGML](https://www.ogc.org/standards/citygml). CityGML is een conceptueel model en uitwisselformaat voor de representatie, opslag en uitwisseling van virtuele 3D modellen van steden, inclusief de wegen. 
+Open Geospatial Consortium beheert [=CityGML=]. CityGML is een conceptueel model en uitwisselformaat voor de representatie, opslag en uitwisseling van virtuele 3D modellen van steden, inclusief de wegen. 
 
 ## Gebruiksfase
 
