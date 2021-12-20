@@ -1,6 +1,6 @@
 var respecConfig = { // => https://github.com/stichting-crow/respec/wiki
     specType: "CROW-DOC",
-    specStatus: "",
+    specStatus: "wd",
     pubDomain: "verkeersborden",
     shortName: "framework",
     subtitle: "Uitgangspunten, use-case en architectuurframework",
