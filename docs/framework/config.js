@@ -8,6 +8,10 @@ var respecConfig = { // => https://github.com/stichting-crow/respec/wiki
         {
             name: "Elisabeth Klören",
             company: "CROW",
+        },
+        {
+            name: "Redmer Kronemeijer",
+            company: "CROW"
         }
     ],
     github: "https://github.com/Stichting-CROW/verkeersborden",
