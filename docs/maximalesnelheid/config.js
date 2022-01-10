@@ -2,7 +2,7 @@ var respecConfig = { // => https://github.com/stichting-crow/respec/wiki
     specType: "CROW-DOC",
     specStatus: "wd",
     pubDomain: "verkeersborden",
-    shortName: "maximumsnelheid",
+    shortName: "maximalesnelheid",
     subtitle: "Wat is hier de wettelijke maximum snelheid",
     editors: [
         {
