@@ -3,7 +3,7 @@ var respecConfig = { // => https://github.com/stichting-crow/respec/wiki
     specStatus: "wd",
     pubDomain: "verkeersborden",
     shortName: "maximalesnelheid",
-    subtitle: "Wat is hier de wettelijke maximum snelheid",
+    subtitle: "Hoe hard mag ik hier?",
     editors: [
         {
             name: "Elisabeth Klören",
