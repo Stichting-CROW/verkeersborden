@@ -131,6 +131,7 @@ Het Informatiemodel Verkeerstekens en verkeersbesluiten moet aansluiten op IMBOR
 
 ## Gebruiksfase
 
+
 ### NWB
 Het Nationaal Wegen Bestand ([=NWB=]) is een open databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door de wegbeheerders.
 
@@ -160,14 +161,40 @@ Dit betreft een representatie van de verkeersborden in een andere levensfase, na
 ### CityGML
 Open Geospatial Consortium beheert [=CityGML=]. CityGML is een conceptueel model en uitwisselformaat voor de representatie, opslag en uitwisseling van virtuele 3D modellen van steden, inclusief de wegen. 
 
+**Raakvlaktype: Bron voor informatiemodel**
+
 ### Data Top 15
 De [=Data Top 15=] In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets.
 De DataTop15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.
 
+**Raakvlaktype: Gebruik informatiemodel**
 
 ### NWB
 
+
 ### Programma Netwerkregistratie
+Het Programma Netwerkregistratie werkt aan het op orde brengen van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken.
+
+**Raakvlaktype: Gebruik informatiemodel**
+
+#### Verkeersbesluiten DEMO
+
+Proof of Concept van KOOP samen met minisrerie van IenW. Een prototype bordenplan KaartModule, die op dit moment met een aantal stakeholders wordt geëvalueerd. Het is publiek toegankelijk en het geeft een inkijk in de mogelijke toekomstige functionaliteiten en potentiële raakvlakken met het informatiemodel. Het is [hier](https://verkeersbesluiten-demo.overheid.nl/) te zien.
+
+In de huidige situatie van een verkeersbesluit wordt er alleen voor het hele verkeersbesluit gegeocodeerd. Niet per verkeersbord. En er is ook geen mogelijkheid tot het kiezen van een wegvak. 
+
+[Voorbeeld huidige situatie](https://zoek.officielebekendmakingen.nl/stcrt-2021-3722.html)
+
+Zij hebben dan informeel in een plaatje het volgende aangegeven:
+ 
+![Huidige situatie verkeersbesluit](hoofdstukken/media/verkeersbesluitnu.png)
+
+Maar in de metadata (https://zoek.officielebekendmakingen.nl/stcrt-2021-3722) is slechts 1 coördinaat aangegeven. Dat is wat we dus willen verbeteren met de nieuwe KaartModule. 
+
+[Voorbeeld gewenste situatie](https://verkeersbesluiten-demo.overheid.nl/demo.html) en bordenplan bijlage, die kan je dus laden:
+ 
+![Gewenste situatie verkeersbesluit](hoofdstukken/media/verkeersbesluitendemo.png)
+
 
 
 ### IMGeo
