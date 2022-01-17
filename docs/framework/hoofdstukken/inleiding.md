@@ -1,5 +1,7 @@
 # Inleiding
 
+<p class="note" title=" Maximum snelheid">
+Omdat het onderwerp verkeersbesluiten zoveel raakvlakken en stakeholders heeft, is het moeilijk om de in dit document opgeworpen uitgangspunten goed op te stellen. Daarom is gekozen om een eerste proef op de som te nemen met de wettelijke maximumsnelheid. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">hier</a> meer. </p>
 
 ## Aanleiding
 
