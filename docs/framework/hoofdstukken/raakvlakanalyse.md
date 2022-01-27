@@ -200,7 +200,11 @@ Zie voor de dataset [dit bestand](https://github.com/Stichting-CROW/verkeersbord
 ### IMGeo
 
 ### BGT en SOR
-De Samenhangende Objectenregistraties....
+
+Dit traject ontwikkelt in het kader van [=NWB+=].
+Doel daarvan is het ontwikkelen van een sectorregistratie dat in samenhang met [=SOR=] gebruikt kan worden.
+
+<dfn>SOR</dfn> staat voor Samenhangende Objectenregistraties, een doorontwikkeling van basisregistraties BGT, NWB en de Kadastrale kaart. 
 
 
 
