@@ -17,7 +17,10 @@ Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
 
-![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.png)### Informatiebehoefte
+![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.png)
+
+
+### Informatiebehoefte
 
 
 ### Informatiebehoefte
