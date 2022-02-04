@@ -6,6 +6,19 @@ De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
+Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen in een groter stelsel van informatiemodellen, die onderdeel zijn van het Digitaal Stelsel Gebouwde Omgeving (DSGO). 
+
+## DSGO
+De data die je nodig hebt om efficiënter en duurzamer te opereren, is vaak elders in de keten al beschikbaar. Maar als je die data wilt gebruiken, wacht je veelal een tijdrovend en kostbaar proces. Wat als je met een paar klikken alle data over een gebouw, de materialen en componenten die erin verwerkt zijn, onder handbereik hebt? Of als je net zo snel inzage krijgt in wie voor welke klus is gecertificeerd? Het kan straks met DSGO. 
+
+Uniforme afspraken
+Het het Digitaal Stelsel Gebouwde Omgeving (DSGO) is een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken.
+
+Twee barrières voor data delen
+Voor het delen van data in de sector bestaan op dit moment twee belangrijke barrières. Allereerst moeten organisaties steeds opnieuw bilaterale afspraken maken voordat ze kunnen starten met een data-integratie. Dat is tijdrovend en kost geld. Op projectniveau is dat niet altijd haalbaar waardoor het veelal niet komt tot data delen en schaalvoordelen blijven liggen.
+
+Gebrek aan vertrouwen
+Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
 
 ## Ontwerpfase
 
