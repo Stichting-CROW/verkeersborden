@@ -20,8 +20,6 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 ![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.png)
 
 
-### Informatiebehoefte
-
 
 ### Informatiebehoefte
 
@@ -40,6 +38,7 @@ Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die in
 #### Verkeersbesluiten
 Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. Verkeersbesluiten zijn daar een representatie van. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze te verwerken tot digitale informatie over de verkeerskundige situatie van het netwerk. 
 
+<div class="issue" data-number="99"></div>
 
 ## Doel document
 
