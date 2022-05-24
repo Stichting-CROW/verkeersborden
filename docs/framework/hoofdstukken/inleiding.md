@@ -1,7 +1,6 @@
 # Inleiding
 
-<p class="note" title=" Maximum snelheid">
-Omdat het onderwerp verkeersbesluiten zoveel raakvlakken en stakeholders heeft, is het moeilijk om de in dit document opgeworpen uitgangspunten goed op te stellen. Daarom is gekozen om een eerste proef op de som te nemen met de wettelijke maximumsnelheid. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">hier</a> meer. </p>
+
 
 ## Aanleiding
 
@@ -11,14 +10,13 @@ Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerde
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeer en verkeersbesluiten twee digitaliseringstrajecten lopen: 
 
 1. Het neerzetten van een [=Nationaal Wegen Bestand+=] en
-2. Het bouwen van een verkeersbesluiten database in het [=Programma Netwerkregistraties=]
+2. Het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=]
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel verkeerstekens en verkeersbesluiten essentieel. 
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
 
-![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.png)
-
+![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.PNG "Maximale snelheid voor navigatiesystemen")
 
 
 ### Informatiebehoefte
@@ -137,7 +135,8 @@ Dit document beschrijft de volgende zaken:
 
 **8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens en Verkeersbesluiten te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
 
-
+<p class="note" title=" Maximum snelheid">
+Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beshcreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
 
 
 
