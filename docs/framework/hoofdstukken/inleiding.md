@@ -12,7 +12,7 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskun
 1. Het neerzetten van een [=Nationaal Wegen Bestand+=] en
 2. Het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=]
 
-Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel verkeerstekens essentieel. 
+Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
 
@@ -28,39 +28,40 @@ Vanuit [=Smart Mobility=] zien we de behoefte aan accurate en actuele informatie
 Vanuit verkeerskunde groeit de behoefte om de werkprocessen rondom netwerkberekeningen, het toekennen van vergunningen voor tijdelijke verkeerssituaties en het publiceren van verkeersbesluiten te digitaliseren. Ook daarbij is nauwkeurige digitale informatie nodig over de wegkenmerken en verkeersregels in de huidige situatie.
 
 ### Gegevensbronnen
-In Nederland wordt data over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
+Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. In Nederland wordt digitale verkeerskundige informatie vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
 
-Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. Op dit moment wordt door verschillende (markt)partijen definities gemaakt over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren.
+Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken makkelijk te wijzigen zijn, eenduidig te interpreteren en openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. Op dit moment wordt door verschillende (markt)partijen (impliciete) definities gemaakt en registraties gepubliceerd over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren.
 
 #### Verkeersbesluiten
-Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. Verkeersbesluiten zijn daar een representatie van. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze te verwerken tot digitale informatie over de verkeerskundige situatie van het netwerk. 
+ Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale verkeerskundige informatie. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de borden. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze te verwerken tot digitale verkeerskundige informatie.
 
-<div class="issue" data-number="99"></div>
 
 ## Doel document
 
-Dit document beschrijft de uitgangspunten en use case voor een Informatiemodel Verkeerstekens en Verkeersbesluiten.
+Dit document beschrijft de uitgangspunten en use case voor een nationaal Informatiemodel Verkeerstekens.
 
 
 ## Doel informatiemodel
 
-Doel van het Informatiemodel Verkeerstekens en Verkeersbesluiten is zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. In de toekomst, na 2023, is het doel:
+Korte termijn doel van het Informatiemodel Verkeerstekens is:
 
-> Auto en automobilist kunnen veilig en zuinig rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende verkeersregels, onder meer gepubliceerd conform het Informatiemodel Verkeersbesluiten. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
+> zorgen dat **verkeersborden en markeringen** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. 
 
-
+In de toekomst, na 2023, wordt de horizon verbreeed naar smart mobility, met als doel dat auto en automobilist veilig en zuinig kunnen rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende, digitaal beschikbare, verkeersregels. Alle na 2022 gefabriceerde autos voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/)
 
 
 ## Scope informatiemodel
 
 ### Verkeersbesluiten+ 
 
-1. De verkeersbesluiten waarvan een wettelijke publicatieplicht geldt conform [=RVV 1990=] zijn binnen scope. 
+1. Verkeersregels en adviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is.
 
 2. Het publiceren van "niet wettelijk bindende" verkeersinstructies, zoals een advies om langzamer te rijden in een bocht, is *binnen scope* 
 <div class="issue" data-number="39"></div>
 
-3. Het geven van instructies over algemene verkeersregels conform [Artikel 5a Wegenverkeerswet 1994](https://wetten.overheid.nl/jci1.3:c:BWBR0006622&hoofdstuk=II&paragraaf=1&artikel=5a&z=2021-10-19&g=2021-10-19) is buiten scope. 
+3. Buiten scope zijn markeringen en belijningen, bijvoorbeeld haaietanden en zebrapaden: deze ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt.
+
+4. Buiten scope zijn metadata over de juridische procedure van het verkeersbesluit, de registratie en validatie van de verkeerskundige gegevens
 
 ### Wegsoorten
 
@@ -69,7 +70,13 @@ Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen sco
 
 ### Use case
 
-De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use case "registratie van verkeersbesluiten". Waarmee bedoeld wordt: aanbieden van en publiceren van het verkeersbesluit in een landelijke registratie van het wegennetwerk met het doel:
+De scope van het Informatiemodel verkeerstekens en verkeersbesluiten is de use case "Vastleggen van digitale verkeerskundige informatie waarmee de wegbeheerder aangeeft welke verkeersregels gelden en waar de bijbehorende verkeerstekens gepland zijn." De wegbeheerder wil dit doen in drie contexten:
+
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale verkeerskundige informatie betrouwbaar, compleet en actueel te maken.
+2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt.
+3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+
+
 
 *Het publiceren van zowel voor mensen leesbare als machine-verwerkbare verkeerskundige informatie die aangeeft wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden).*
 
