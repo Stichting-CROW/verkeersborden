@@ -26,7 +26,7 @@ Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek a
 Het Reglement verkeersregels en verkeerstekens 1990 [(RVV 1990)](https://wetten.overheid.nl/BWBR0004825/2021-07-01) (Reglement verkeersregels en verkeerstekens 1990) is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn. 
 
 **Raakvlaktype: Bron voor informatiemodel**
-Het RVV 1990 is de primaire bron voor verkeersinstructies en bijbehorende verkeerstekens die worden opgenomen in het Informatiemodel Verkeerstekens en Verkeersbesluiten.
+Het RVV 1990 is de primaire bron voor verkeersregels, verkeersadviezen en bijbehorende verkeerstekens die worden opgenomen in het Informatiemodel Verkeerstekens en Verkeersbesluiten.
 
 ### KPVV
 

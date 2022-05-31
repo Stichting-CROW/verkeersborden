@@ -129,7 +129,7 @@ De *gewenste ligging* volgens het ontwerp en het verkeersbesluit komt niet per s
 
 *Stakeholders: Bouwbedrijven*
 
-Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of borden plaatsen. In de ideale wereld wordt deze situatie ook gepubliceerd als (tijdelijk) verkeersbesluit, zodat de netwerkinformatie en de verkeersinstructies altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
+Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of borden plaatsen. In de ideale wereld wordt deze situatie ook gepubliceerd als (tijdelijk) verkeersbesluit, zodat de netwerkinformatie, de verkeersregels, -adviezen en -tekens altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
 
 
 ## Beheerfase
@@ -181,7 +181,7 @@ Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actue
 
 *Stakeholders: Toezichthouders* 
 
-Bij handhaving in het verkeer is informatie over de locale verkeersregels van belang. Daarbij is op dit moment de *fysieke instructie* oftewel het daadwerkelijk aanwezig zijn van een fysiek bord of markering nodig, om te kunnen handhaven. De *digitale instructie* via een geregistreerd verkeersbesluit is niet voldoende om te kunnen handhaven. Deze controle is de verantwoordelijkheid van de wegbeheerder, zie bij de [use case beheren](./#beheren).
+Bij handhaving in het verkeer is het beschikbaar hebben van digitale verkeerskundige informatie over de lokale vsituatie handig voor gebruik in applicaties om boetes te registreren. Daarbij is het fysiek aanwezig zijn van een bord of markering nodig, om te kunnen handhaven. Controleren of het fysieke verkeersteken aanwezig is, is de verantwoordelijkheid van de wegbeheerder, zie bij de [use case beheren](./#beheren).
 
 
 ## Use cases Sloopfase
