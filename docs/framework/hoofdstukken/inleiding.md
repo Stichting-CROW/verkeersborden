@@ -74,74 +74,8 @@ In de toekomst, na 2023, wordt de horizon verbreeed naar smart mobility, met als
 
 Als tweede doel moet het in de toekomst mogelijk zijn om voor het werkproces van het maken van verkeersmodellen en wegontwerpen de actuele verkeerskundige informatie te kunnen gebruiken als basis voor het ontwerp van een nieuwe verkeerskundige situatie.
 
-
-## Scope
-
-### Binnen Scope
-
-### Verkeersregels+ 
-Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope, ; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. Hieraan toegevoegd worden 
-
-### Adviessnelheid+
-Bij een waarschuwing (bijvoorbeeld voor een drempel) kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder bij een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.
-
-### Verkeersborden
-
-* **Binnen scope** zijn alle borden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst borden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
-
-<p class="note" title=" Maximum snelheid">
-Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beschreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
-
-## Buiten scope
-
-
-### Markeringen
-
-* **Buiten scope** zijn <dfn><dt>Wegmarkeringen</dt>  <dd>Wegmarkering is het geheel aan tekens die op het wegdek staan aangegeven en het verkeer door middel van de visuele informatie geleiden. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
-Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de verkeersbesluiten.
-
-
-### Bewegwijzering
-
-* **Buiten scope** is de <dfn><dt>Bewegwijzering</dt><dd>de instructies aan het verkeer over de te nemen route.</dd></dfn>
-
-### Verkeerslichten
-
-Verkeerslichten zijn buiten scope. 
-
-
-### Weginrichting
-
-In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een bord of markering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
-
-<div class="issue" data-number="136"></div>
-
-Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder bord worden opgenomen in het informatiemodel.
-
-### Metadata
-
-* **Buiten scope** zijn de metadata over de juridische procedure van het verkeersbesluit bij de verkeersregel.
-
-* **Buiten scope** zijn de metadata over de transactie bij registratie en validatie van verkeersbesluiten of niet verkeersbesluitplichtige informatie.
-
-### Wegsoorten
-
-Het Informatiemodel Verkeerstekens heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
-
-Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
-
-## Use case
-
-De scope van het Informatiemodel Verkeerstekens is de use case "Gebruiken van digitale verkeerskundige informatie over de ter plaatse geldende verkeersregels, waarschuwingen en adviessnelheden en de locatie van bijbehorende verkeersborden in een systeem dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
-
-De wegbeheerder genereert deze informatie in drie contexten:
-
-1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale verkeerskundige informatie betrouwbaar, compleet en actueel te maken.
-2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt.
-3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
-
 <aside class="note" title="Representatie">
-Voor een juiste interpretatie van de use cases is het begrip van 'representatie' van belang. Een manier om dit toe te lichten is de 'Betekenisdriehoek', zoals gedefinieerd in de NEN 2660-1 (2020). Hier staat: 'De betekenisdriehoek visualiseert de relatie tussen 'dingen', 'concepten' en 'symbolen'. De rechterbenedenhoek vertegenwoordigt 'iets dat waarneembaar of voorstelbaar is in de werkelijkheid'. De bovenhoek staat 'de gedachte aan iets uit de werkelijkheid', kortweg 'concept'. De concepten worden gedefinieerd in een informatiemodel. De linkerbenedenhoek staat voor het symbool dat de gedachte symboliseert en het 'iets' representeert.   
+Voor een juiste interpretatie van het doel van een informatiemodel is het begrip van 'representatie' van belang. Een manier om dit toe te lichten is de 'Betekenisdriehoek', zoals gedefinieerd in de NEN 2660-1 (2020). Hier staat: 'De betekenisdriehoek visualiseert de relatie tussen 'dingen', 'concepten' en 'symbolen'. De rechterbenedenhoek vertegenwoordigt 'iets dat waarneembaar of voorstelbaar is in de werkelijkheid'. De bovenhoek staat 'de gedachte aan iets uit de werkelijkheid', kortweg 'concept'. De concepten worden gedefinieerd in een informatiemodel. De linkerbenedenhoek staat voor het symbool dat de gedachte symboliseert en het 'iets' representeert.   
 
 ![De betekenisdriehoek conform NEN 2660-1 (2020)](./hoofdstukken/media/representatie.png "De betekenisdriehoek conform NEN 2660-1 (2020)")
 
@@ -179,6 +113,77 @@ Wanneer in de context van het Informatiemodel Verkeerstekens toegepast krijgen w
 <p> Het is toekomstvaster om te redeneren vanuit het object. Het object heeft een uniek ID en heeft allemaal attributen (in bijvoorbeeld in spreadsheet). De representaties van het object hebben alleen de gegevens benodigd voor die representatie (de geometrie) en het zelfde unieke ID. Zo is het makkelijk te matchen. </p>
 
 </aside>
+
+
+## Scope
+
+### Binnen Scope
+
+### Verkeersregels+ 
+Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope, ; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. Hieraan toegevoegd worden 
+
+### Adviessnelheid+
+Bij een waarschuwing (bijvoorbeeld voor een drempel) kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder bij een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.
+
+### Verkeersborden
+
+* **Binnen scope** zijn alle borden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst borden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
+
+<p class="note" title=" Maximum snelheid">
+Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beschreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
+
+### Wegsoorten
+
+Het Informatiemodel Verkeerstekens heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
+
+## Buiten scope
+
+### Markeringen
+
+**Buiten scope** zijn <dfn><dt>Wegmarkeringen</dt>  <dd>Wegmarkering is het geheel aan tekens die op het wegdek staan aangegeven en het verkeer door middel van de visuele informatie geleiden. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
+Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de verkeersbesluiten.
+
+
+### Bewegwijzering
+
+**Buiten scope** is de <dfn><dt>Bewegwijzering</dt><dd>de instructies aan het verkeer over de te nemen route.</dd></dfn>
+
+### Verkeerslichten
+
+Verkeerslichten zijn buiten scope. 
+
+
+### Weginrichting
+
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een bord of markering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
+
+<div class="issue" data-number="136"></div>
+
+Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder bord worden opgenomen in het informatiemodel.
+
+### Juridisch
+
+**Buiten scope** zijn de metadata over de juridische procedure van het verkeersbesluit bij de verkeersregel.
+
+### Datalevering
+
+**Buiten scope** zijn de metadata over de transactie bij registratie en validatie van verkeersbesluiten of niet verkeersbesluitplichtige informatie.
+
+### Wegsoorten
+
+Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
+
+## Use case
+
+De scope van het Informatiemodel Verkeerstekens is de use case "Gebruiken van digitale verkeerskundige informatie over de ter plaatse geldende verkeersregels, waarschuwingen en adviessnelheden en de locatie van bijbehorende verkeersborden in een systeem dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
+
+De wegbeheerder genereert deze informatie in drie contexten:
+
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale verkeerskundige informatie betrouwbaar, compleet en actueel te maken.
+2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt.
+3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+
+
 
 
 ## Leeswijzer
