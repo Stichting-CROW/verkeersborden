@@ -3,7 +3,7 @@
 
 ## Inleiding
 
-De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten is de use case "Publiceren van verkeersbesluiten" in een landelijke netwerkregistratie.
+De scope van het Informatiemodel Verkeerstekens is de use case "Publiceren van verkeersbesluiten" in een landelijke netwerkregistratie.
 
 <aside class="note" title="Definitie use case">
 Een usecase beschrijft een systeem vanuit het gebruikersperspectief. Het beschrijft de actor, de initiator van de interactie, en het systeem zelf als een opeenvolging van eenvoudige stappen. Actoren kunnen iets of iemand zijn, die bestaat buiten het te bestuderen systeem, en die deelneemt in de opeenvolgende activiteiten in een dialoog met het systeem om een bepaald doel te bereiken. Actoren kunnen eindgebruikers, andere systemen of hardware (apparatuur) zijn. Elke usecase is een complete serie van zogenaamde "events", beschreven vanuit het standpunt van de actor. <a HREF="https://nl.wikipedia.org/wiki/Usecase">Bron: Wikipedia</a>
@@ -31,7 +31,7 @@ Dit onderdeel van de usecase beschrijft de use case waarmee een wegbeheerder of 
 
 De zo samengestelde netwerkdata kan eventueel worden gebruikt in simulaties of om varianten te onderzoeken, daarom is dit een separate stap ten opzichte van de formele transactie van de netwerkdata van de wegbeheerder naar de beheerder van de landelijke registratie.
 
-Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten valt, volgen uit deze use case géén eisen aan het informatiemodel.
+Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens valt, volgen uit deze use case géén eisen aan het informatiemodel.
  
  
 
@@ -43,7 +43,7 @@ Happy flow
 * De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden en toont welke wijzigingen worden doorgevoerd.
 * De wegbeheerder accepteert de wijzigingsvoorstellen van de beheerder van de landelijke registratie.
 
-Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten valt, volgen uit deze use case géén eisen aan het informatiemodel.
+Omdat het netwerk buiten de scope van het Informatiemodel Verkeerstekens valt, volgen uit deze use case géén eisen aan het informatiemodel.
 
 ## Samenstellen verkeersbesluit
 Dit onderdeel van de usecase beschrijft wat er nodig is zodat een wegbeheerder een correcte dataset kan samenstellen met een verkeersbesluit.
@@ -82,7 +82,6 @@ De wegbeheerder heeft daarvoor "Aanleverinstructies" nodig waarin staat:
 Het publiceren van de wijziging op [www.overheid.nl](www.overheid.nl) 
 
 
-
-
+ 
 
 

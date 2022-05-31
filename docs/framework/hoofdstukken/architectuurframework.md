@@ -2,8 +2,8 @@
 
 ## Informatiemodel
 
-Er bestaan verschillende andere informatiemodellen die verkeersbesluiten, wegkenmerken of verkeersborden beschrijven. 
-Dat zijn raakvlakken of juist ijkingsbronnen om het Informatiemodel Verkeerstekens en verkeersbesluiten beter vorm te geven.
+Er bestaan verschillende andere informatiemodellen die wegkenmerken of verkeersborden beschrijven. 
+Dat zijn raakvlakken of juist ijkingsbronnen om het Informatiemodel Verkeerstekens beter vorm te geven.
 
 ### TN-ITS
 
@@ -27,7 +27,7 @@ De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenm
 
 ### OSLO
 
-De Vlaamse overheid heeft binnen het OSLO-programma (Open standaarden voor linkede organisaties) en het project Lokale Besluiten als Gelinkte Open Data (LBLOD) verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het Informatiemodel Verkeerstekens en verkeersbesluiten.
+De Vlaamse overheid heeft binnen het OSLO-programma (Open standaarden voor linkede organisaties) en het project Lokale Besluiten als Gelinkte Open Data (LBLOD) verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het Informatiemodel Verkeerstekens.
 
 Er wordt gebruik gemaakt van vocabularia die de herbruikbare concepten beschrijven. 
 De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties tussen die concepten.
@@ -76,20 +76,21 @@ Een goed informatiemodel heeft ook gedocumenteerde afwegingen gemaakt op het geb
 
 - toegankelijkheid en duurzaamheid, bijv:
 
-  Zijn de specficiaties duidelijk genoeg en behapbaar genoeg dat grote en kleine spelers op gelijkwaardige voet informatie kunnen leveren volgens het informatiemodel?
-  Zijn de specificaties geschikt alleen voor de Nederlandse context in het huidige jaar -- of zijn ze wereldwijd geschikt voor Verkeerstekens en verkeersbesluiten die ook in het verleden zijn genomen.
-  Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is?
+  * Zijn de specficiaties duidelijk genoeg en behapbaar genoeg dat grote en kleine spelers op gelijkwaardige voet informatie kunnen leveren volgens het informatiemodel?
+  * Zijn de specificaties geschikt alleen voor de Nederlandse context?
+  * Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens?
+  * Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is?
 
 - security en privacy, bijv:
 
-  Stelt de specificatie niet te veel evt. privacygevoelige informatie verplicht?
-  Schrijft de specificatie voorzorgsmaatregelen voor t.b.v. informatiebeveiliging?
-  Worden privacygevoelige elementen van het informatiemodel expliciet genoemd?
+  * Stelt de specificatie niet te veel evt. privacygevoelige informatie verplicht?
+  * Schrijft de specificatie voorzorgsmaatregelen voor t.b.v. informatiebeveiliging?
+  * Worden privacygevoelige elementen van het informatiemodel expliciet genoemd?
 
 ### Publicatieplatform
 
 Een informatiemodel kan pas marktadoptie krijgen als de specificaties ervan in verschillende vrije formaten vrij beschikbaar zijn.
-Dat houdt in dat het Informatiemodel Verkeerstekens en verkeersbesluiten open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd.
+Dat houdt in dat het Informatiemodel Verkeerstekens open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd.
 
 In de beschrijving van het informatiemodel moeten gemaakte keuzes beschreven worden, zodat implementaties en toekomstige uitbreidingen afgewogen keuzes kunnen maken.
 Het informatiemodel vermeldt expliciet welke onderdelen normatief zijn, en welke niet-normatief (informatief).
@@ -123,8 +124,8 @@ Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimulre
 De wegbeheerder heeft voor het aanleveren van het verkeersbesluit twee "Informatieleveringsspecificaties" nodig. Een voor de wijziging in de netwerkdata, en een voor de wijziging van de functionele verkeersregels en verkeersadviezen voor het gebruik van het netwerk en de bijbehorende verkeerstekens. 
 
 In deze Informatieleveringsspecificaties staat (voor een machine leesbaar):
-- Welke informatie minimaal verplicht is uit het Informatiemodel Verkeerstekens en verkeersbesluiten of het model van het verkeersnetwerk. 
-- Welke informatie mag worden toegevoegd uit het Informatiemodel Verkeerstekens en verkeersbesluiten of het model van het verkeersnetwerk. 
+- Welke informatie minimaal verplicht is uit het Informatiemodel Verkeerstekens of het model van het verkeersnetwerk. 
+- Welke informatie mag worden toegevoegd uit het Informatiemodel Verkeerstekens of het model van het verkeersnetwerk. 
 - In welke formaten de wijziging kan worden aangeleverd
 - Of informatie mag worden toegevoegd uit een eigen informatiemodel
 

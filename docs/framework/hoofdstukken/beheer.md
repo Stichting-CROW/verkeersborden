@@ -1,6 +1,6 @@
 # Organisatorische uitgangspunten
 
-Het Informatiemodel Verkeerstekens en verkeersbesluiten zal in beheer genomen moet worden om up to date te blijven. 
+Het Informatiemodel Verkeerstekens zal in beheer genomen moet worden om up to date te blijven. 
 
 ## BOMOS
 De beheerstrategie is open en transparant beheer conform het Beheermodel voor Open Standaarden [BOMOS](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf).
@@ -17,7 +17,7 @@ Beheer volgens BOMOS heeft de volgende voordelen:
 ## Strategie
 
 ### Governance
-Het beheer van het Informatiemodel Verkeerstekens en verkeersbesluiten wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het Informatiemodel Verkeerstekens en Verkeersbesluiten wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR. 
+Het beheer van het Informatiemodel Verkeerstekens wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het Informatiemodel Verkeerstekens en wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR. 
 
 #### Stuurgroep IMBOR
 De Stuurgroep IMBOR is verantwoordelijk voor..... 
@@ -116,7 +116,7 @@ Promotie zal worden ingericht door de uitvoerende beheerorganisatie.
 
 
 ### Publicatie
-De specificatie van het informatiemodel, afbeeldingen, codes, query's et cetera worden allemaal op Github gepubliceerd. Het Informatiemodel Verkeerstekens en verkeersbesluiten wordt gepubliceerd als linked open data.
+De specificatie van het informatiemodel, afbeeldingen, codes, query's et cetera worden allemaal op Github gepubliceerd. Het Informatiemodel Verkeerstekens wordt gepubliceerd als linked open data.
 
 
 ### Klachtenafhandeling

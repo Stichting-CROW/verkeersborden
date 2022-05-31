@@ -19,18 +19,43 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 ![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.PNG "Maximale snelheid voor navigatiesystemen")
 
 
+<dl>
+  <dt>Verkeerskundige informatie</dt>
+  <dd>Informatie over het beoogde gebruik van de weg, en het bijbehorende gewenste rijgedrag van de verkeersdeelnemers</dd>
+  <dt>Verkeersregels</dt>
+  <dd>De wettelijk geldende verkeersregels op een locatie volgens de [=RVV 1990=]</dd>
+  <dt>Waarschuwingen</dt>
+  <dd>De waarschuwingen op een locatie volgens de [=RVV 1990=]</dd>
+  <dt>Adviessnelheden</dt>
+  <dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
+  <dt>Verkeerstekens</dt>
+  <dd>nog opzoeken</dd>
+    <dt>Verkeersborden</dt>
+  <dd>Borden die de lokale verkeersregels, waarschuwingen en adviessnelheden tonen aan de weggebruiker conform RVV 1990</dd>
+    <dt>Wegmarkeringen</dt>
+  <dd>nog opzoeken</dd>
+    <dt>Belijningen</dt>
+  <dd>nog opzoeken</dd>
+</dl>
+
+<div class="issue" data-number="66"></div>
+
 ### Informatiebehoefte
 
 #### Smart mobility
-Vanuit [=Smart Mobility=] zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken.
+Vanuit [=Smart Mobility=] zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. De beschikbaarheid van informatie kan bijdragen aan betere doorstroming, leefbaarheid en verkeersveiligheid.
 
 #### Verkeerskunde
-Vanuit verkeerskunde groeit de behoefte om de werkprocessen rondom netwerkberekeningen, het toekennen van vergunningen voor tijdelijke verkeerssituaties en het publiceren van verkeersbesluiten te digitaliseren. Ook daarbij is nauwkeurige digitale informatie nodig over de wegkenmerken en verkeersregels in de huidige situatie.
+Vanuit verkeerskunde groeit de behoefte om de werkprocessen rondom netwerkberekeningen, het toekennen van vergunningen voor tijdelijke verkeerssituaties en het publiceren van verkeersbesluiten te digitaliseren. Ook daarbij is nauwkeurige digitale informatie nodig over de wegkenmerken en verkeersregels in de huidige situatie. Deze verkeerskundige kenmerken moeten makkelijk te wijzigen en eenduidig te interpreteren zijn en het liefst openbaar beschikbaar komen. 
 
 ### Gegevensbronnen
-Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. In Nederland wordt digitale verkeerskundige informatie vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
+Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. 
 
-Er ontbreekt echter een categorie gegevens: de verkeerskundige kenmerken, die instructie geven aan de gebruiker van de weg over verkeersregels en -adviezen. Dit zijn kenmerken die van belang zijn voor afnemers, zoals weggebruikers en partijen die werken aan betere doorstroming, leefbaarheid en (verkeers)veiligheid. Maar ook wegbeheerders zelf hebben er belang bij, dat deze verkeerskundige kenmerken makkelijk te wijzigen zijn, eenduidig te interpreteren en openbaar beschikbaar komen. Op deze wijze kunnen zij deze als uitgangspunt gebruiken bij het vaststellen van veranderingen in de verkeerssituatie, die uiteindelijk als een verkeersbesluit juridisch kan worden vastgesteld. Op dit moment wordt door verschillende (markt)partijen (impliciete) definities gemaakt en registraties gepubliceerd over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren.
+#### Basisregistraties
+In Nederland wordt digitale verkeerskundige informatie vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
+
+#### Verkeersregels
+Er ontbreekt echter een categorie in de digitale informatie: de verkeersregels, waarschuwingen en adviessnelheden met bijbehorende borden. Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren.
 
 #### Verkeersbesluiten
  Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale verkeerskundige informatie. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de borden. Wegbeheerders zijn wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de Staatscourant en deze officieel bekend te maken op www.overheid.nl. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het huidig formaat van verkeersbesluiten niet optimaal geschikt om deze op een eenvoudige wijze te verwerken tot digitale verkeerskundige informatie.
@@ -127,7 +152,7 @@ Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze 
 
 Dit document beschrijft de volgende zaken: 
 
-**3. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens en Verkeersbesluiten. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+**3. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 **4. Raakvlakanalyse** De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er al zijn voor:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
@@ -135,11 +160,11 @@ Dit document beschrijft de volgende zaken:
 
 **5. Use case** De use case beschrijft de interactie tussen de actoren: wegbeheerder, beheerder landelijke registratie, en de systemen die zij gebruiken bij het publiceren van verkeersbesluiten. De use case geeft een weergave van het verwachte gebruik van het informatiemodel in een specifiek, door een systeem ondersteund werkproces. 
 
-**6. Technische Uitgangspunten** In Technische Uitganngspunten staan de normen en richtlijnen waaraan het Informatiemodel Verkeerstekens en Verkeersbesluiten dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
+**6. Technische Uitgangspunten** In Technische Uitganngspunten staan de normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
 
 **7. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden en wegmarkeringen.
 
-**8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens en Verkeersbesluiten te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
+**8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
 
 <p class="note" title=" Maximum snelheid">
 Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beshcreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>

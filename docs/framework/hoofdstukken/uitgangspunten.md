@@ -111,3 +111,11 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 1. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeersbesluiten en Verkeerstekens een grafische weergave te bevatten van de borden. 
 
 
+## Historische informatie
+Voor de primaire use case is het niet nodig om historische gegevens te kunnen vinden - alle actuele verkeerskundige gegevens zijn voldoende.
+
+Voor gebruik van de digitale verkeerskundige informatie in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke verkeersregels gelden, en welke borden aanwezig zijn op een bepaald tijdstip.
+
+Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de verkeersregel van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. 
+
+1. Het informatiemodel dient een begin- en einddatum en -tijdstip te bevatten voor het ingaan van de verkeersregel, waarschuwing of snelheidsadvies, en voor de (geplande) plaatsing en weghalen van het bijbehorende verkeersbord. 

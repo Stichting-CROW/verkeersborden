@@ -3,7 +3,7 @@
 
 ## Inleiding
 
-De stakeholderanalyse verkent welke partijen er belanghebbende, ‘leverancier’ en ‘afnemer’ zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens en Verkeersbesluiten.
+De stakeholderanalyse verkent welke partijen er belanghebbende, ‘leverancier’ en ‘afnemer’ zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens.
 
 Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. 
 
@@ -14,7 +14,7 @@ Voor een juiste interpretatie van de use cases is het begrip van ‘representati
 
 ![De betekenisdriehoek conform NEN 2660-1 (2020)](./hoofdstukken/media/representatie.png "De betekenisdriehoek conform NEN 2660-1 (2020)")
 
-Wanneer in de context van het Informatiemodel Verkeerstekens en Verkeersbesluiten toegepast krijgen we de volgende tabel:
+Wanneer in de context van het Informatiemodel Verkeerstekens toegepast krijgen we de volgende tabel:
 
 <table class="wikitable">
 <tr>
@@ -91,7 +91,7 @@ Van overheden wordt verwacht dat zij actief aan de slag gaan met burgerparticipa
 
 *Stakeholders: Wegbeheerders*
 
-De scope van het Informatiemodel Verkeerstekens en Verkeersbesluiten, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase. Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer. Bij de registratie hoort het publiceren op www.overheid.nl, en het pulbiceren van de data voer het verkeersbesluit in een landelijke registratie.
+De scope van het Informatiemodel Verkeerstekens, de use case "Registreren van verkeersbesluiten", valt binnen de ontwerpfase. Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer. Bij de registratie hoort het publiceren op www.overheid.nl, en het pulbiceren van de data voer het verkeersbesluit in een landelijke registratie.
 
 ## Bouwfase
 
@@ -162,7 +162,7 @@ De verkeerstekens en markeringen zijn in eerste instantie bedoeld om de menselij
 Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per rijstrook en richting. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. Daarbij geldt:
 
 1. Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
-2. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeersbesluiten en Verkeerstekens een grafische weergave te bevatten van de borden. 
+2. Voor de gebruikers is het handig, als het verkeersbesluit visueel kan worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeerstekens een grafische weergave te bevatten van de borden. 
 
 #### Voorbeeld
 <aside class="example" title="Drempels, mens versus machine">
@@ -189,7 +189,7 @@ Bij handhaving in het verkeer is het beschikbaar hebben van digitale verkeerskun
 ### Circulair hergebruik
 Bij nieuwbouw of renovatie worden borden en markeringen weggehaald of verplaatst. Hierbij is informatie nodig uit de bouw- en beheerfase die wel wordt aangeduid als een "materialenpaspoort" om te kunnen bepalen of de borden kunnen worden hergebruikt, en of zij hiertoe moeten worden gerestaureerd. 
 
-1. In het Informatiemodel Verkeersteken en verkeersbesluiten moet een verkeersbesluit en daarmee de de bijbehorende borden en markeringen een begin- en eindtijd krijgen zodat duidelijk is of deze aanweizg zijn op een specifiek tijdstip of niet. 
+1. In het Informatiemodel Verkeerstekens moet een verkeersbesluit en daarmee de de bijbehorende borden en markeringen een begin- en eindtijd krijgen zodat duidelijk is of deze aanweizg zijn op een specifiek tijdstip of niet. 
 
 
 ## Data producenten
