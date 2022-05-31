@@ -9,8 +9,8 @@ Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerde
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskundige informatie twee digitaliseringstrajecten lopen: 
 
-1. Het neerzetten van een [=Nationaal Wegen Bestand+=] en
-2. Het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=]
+1. Het neerzetten van een [=Nationaal Wegen Bestand+=] voor het wegennetwerk en bestaande verkeersregels;
+2. Het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeersregels uit nieuwe verkeersbesluiten beter digitaal te registreren.
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
 
@@ -32,13 +32,9 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
   <dd>nog opzoeken</dd>
     <dt>Verkeersborden</dt>
   <dd>Borden die de lokale verkeersregels, waarschuwingen en adviessnelheden tonen aan de weggebruiker conform RVV 1990</dd>
-    <dt>Wegmarkeringen</dt>
-  <dd>nog opzoeken</dd>
-    <dt>Belijningen</dt>
-  <dd>nog opzoeken</dd>
 </dl>
 
-<div class="issue" data-number="66"></div>
+<div class="issue" data-number="134"></div>
 
 ### Informatiebehoefte
 
@@ -79,27 +75,62 @@ In de toekomst, na 2023, wordt de horizon verbreeed naar smart mobility, met als
 Als tweede doel moet het in de toekomst mogelijk zijn om voor het werkproces van het maken van verkeersmodellen en wegontwerpen de actuele verkeerskundige informatie te kunnen gebruiken als basis voor het ontwerp van een nieuwe verkeerskundige situatie.
 
 
-## Scope informatiemodel
+## Scope
+
+### Binnen Scope
 
 ### Verkeersregels+ 
+Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope, ; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. Hieraan toegevoegd worden 
 
-1. Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is.
+### Adviessnelheid+
+Bij een waarschuwing (bijvoorbeeld voor een drempel) kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder bij een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.
 
-2. Bij een waarschuwing kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder aan een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.
+### Verkeersborden
 
-3. Buiten scope zijn markeringen en belijningen, bijvoorbeeld haaietanden en zebrapaden: deze ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt.
+* **Binnen scope** zijn alle borden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst borden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
 
-4. Buiten scope zijn de metadata over de juridische procedure van het verkeersbesluit bij de verkeersregel.
+<p class="note" title=" Maximum snelheid">
+Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beschreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
 
-5. Buiten scope zijn de metadata over de transactie bij registratie en validatie van verkeersbesluiten of niet verkeersbesluitplichtige informatie.
+## Buiten scope
+
+
+### Markeringen
+
+* **Buiten scope** zijn <dfn><dt>Wegmarkeringen</dt>  <dd>Wegmarkering is het geheel aan tekens die op het wegdek staan aangegeven en het verkeer door middel van de visuele informatie geleiden. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
+Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de verkeersbesluiten.
+
+
+### Bewegwijzering
+
+* **Buiten scope** is de <dfn><dt>Bewegwijzering</dt><dd>de instructies aan het verkeer over de te nemen route.</dd></dfn>
+
+### Verkeerslichten
+
+Verkeerslichten zijn buiten scope. 
+
+
+### Weginrichting
+
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een bord of markering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
+
+<div class="issue" data-number="136"></div>
+
+Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder bord worden opgenomen in het informatiemodel.
+
+### Metadata
+
+* **Buiten scope** zijn de metadata over de juridische procedure van het verkeersbesluit bij de verkeersregel.
+
+* **Buiten scope** zijn de metadata over de transactie bij registratie en validatie van verkeersbesluiten of niet verkeersbesluitplichtige informatie.
 
 ### Wegsoorten
 
-Het Informatiemodel Verkeerstekens heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom.
+Het Informatiemodel Verkeerstekens heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
 
 Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 
-### Use case
+## Use case
 
 De scope van het Informatiemodel Verkeerstekens is de use case "Gebruiken van digitale verkeerskundige informatie over de ter plaatse geldende verkeersregels, waarschuwingen en adviessnelheden en de locatie van bijbehorende verkeersborden in een systeem dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
 
@@ -110,38 +141,11 @@ De wegbeheerder genereert deze informatie in drie contexten:
 3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
 
 
-
-### Verkeersborden
-
-Alle verkeersborden zijn binnen scope, zowel de wettelijk toegestane borden uit [=RVV 1990=] als eigen aanvullingen door locale wegbeheerders.
-
-<div class="issue" data-number="66"></div>
-
-<div class="issue" data-number="72"></div>
-
-
-### Bewegwijzering
-Bewegwijzering zijn de instructies aan het verkeer over de te nemen route. Deze zijn buiten scope. 
-
-### Verkeerslichten
-
-<div class="issue" data-number="64"></div>
-
-### Markeringen
-
-<div class="issue" data-number="56"></div>
-
-<div class="issue" data-number="75"></div>
-
-### Weginrichting
-
-<div class="issue" data-number="65"></div>
-
 ## Leeswijzer
 
 Dit document beschrijft de volgende zaken: 
 
-**3. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er belanghebbende, “leverancier” en “afnemer” zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+**3. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er belanghebbende, 'leverancier' en 'afnemer' zouden kunnen worden van de informatie, gemodelleerd met het Informatiemodel Verkeerstekens. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 **4. Raakvlakanalyse** De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er al zijn voor:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
@@ -155,8 +159,7 @@ Dit document beschrijft de volgende zaken:
 
 **8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
 
-<p class="note" title=" Maximum snelheid">
-Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beshcreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
+
 
 
 
