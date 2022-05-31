@@ -114,10 +114,20 @@ Wanneer in de context van het Informatiemodel Verkeerstekens toegepast krijgen w
 
 </aside>
 
+## Use case
 
-## Scope
+De scope van het Informatiemodel Verkeerstekens is de use case "Gebruiken van digitale verkeerskundige informatie over de ter plaatse geldende verkeersregels, waarschuwingen en adviessnelheden en de locatie van bijbehorende verkeersborden in een systeem dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
 
-### Binnen Scope
+
+## Toepassing
+De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van digitale verkeerskundige informatie in drie contexten:
+
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken.
+2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt.
+3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+
+
+## Binnen Scope
 
 ### Verkeersregels+ 
 Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope, ; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. Hieraan toegevoegd worden 
@@ -173,16 +183,6 @@ Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij e
 
 Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 
-## Use case
-
-De scope van het Informatiemodel Verkeerstekens is de use case "Gebruiken van digitale verkeerskundige informatie over de ter plaatse geldende verkeersregels, waarschuwingen en adviessnelheden en de locatie van bijbehorende verkeersborden in een systeem dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
-
-De wegbeheerder genereert deze informatie in drie contexten:
-
-1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale verkeerskundige informatie betrouwbaar, compleet en actueel te maken.
-2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt.
-3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
-
 
 
 
@@ -196,13 +196,15 @@ Dit document beschrijft de volgende zaken:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
-**5. Use case** De use case beschrijft de interactie tussen de actoren: wegbeheerder, beheerder landelijke registratie, en de systemen die zij gebruiken bij het publiceren van verkeersbesluiten. De use case geeft een weergave van het verwachte gebruik van het informatiemodel in een specifiek, door een systeem ondersteund werkproces. 
+**5. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale verkleerskundige informatie door een systeem van een weggebruiker.
 
-**6. Technische Uitgangspunten** In Technische Uitganngspunten staan de normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
+**6. Toepassing** Het hoofdstuk over toepassing van het informatiemodel geeft een inzicht in het potentiele gebruik van het informatiemodel bij het genereren van digitale verkeerskundige informatie.
 
-**7. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden en wegmarkeringen.
+**7. Technische Uitgangspunten** In Technische Uitganngspunten staan de normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
 
-**8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
+**8. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden en wegmarkeringen.
+
+**9. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het Informatiemodel Verkeerstekens te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
 
 
 
