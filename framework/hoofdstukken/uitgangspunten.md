@@ -17,6 +17,7 @@
 Naast de wettelijk geldende verkeersregels over bijvoorbeeld de maximum snelheid zijn er veel waarschuwingsborden die indirect (voor de mens goed te interpreteren) advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, inrit of zebrapad. Het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, naast de maximumsnelheid. Afhankelijk van de verkeerssituatie kan dit leiden tot een lagere snelheid langs meerdere gevaarlijke punten (bijvoorbeeld, een zebra (met bord) een inrit (zonder bord) en daarna wordt een kruispunt genaderd: over de gehele lengte kan een lagere snelheid gelden, los van de individuele waarschuwingen bij de gevaarlijke punten.
 
 ## Verkeersborden
+
 1. Het informatiemodel geeft naast de functionele verkeersregels en verkeersadviezen ook de mogelijkheid om de fysieke verschijningsvorm van een bord met een of meerdere onderborden vast te leggen. 
 2. Het informatiemodel geeft de fysieke verschijningsvorm van het bord weer conform - [issue 24](https://github.com/Stichting-CROW/verkeersborden/issues/24) Is er een bestand met afbeeldingen van wettelijk toegestane borden? Of zijn deze alleen beschreven in de wet? 
 3. Bij elk bord geeft het informatiemodel een link naar de afbeelding van het bord in het [Reglement verkeersregels en verkeerstekens 1990]. 
@@ -24,45 +25,39 @@ Naast de wettelijk geldende verkeersregels over bijvoorbeeld de maximum snelheid
 5. Het informatiemodel geeft naast vaste borden ook de mogelijkheid om de locatie van dynamische borden weer te geven, zodat we weggebruiker kan worden geattendeerd om hierop te letten. 
 
 <aside class="example" title="Invloedssfeer van een bord of bord als afgeleide van een verkeersregel">
-<p> De verkeerskundige die een verkeersbesluit neemt, heeft een heel gebied op het oog, waar de verkeersregels in samenhang moeten zorgen voor een goede doorstroming en veiligheid van het wegverkeer. Deze verkeerskundige zal een verkeersregel willen geven die geldt voor <ol>
-  <li> Een wegvak; </li>
-  <li> Een paar wegvakken (bijvoorbeeld doorlopend over kruisingen heen geldt dezelfde snelheid); </li>
-  <li> Een zone (bijvoorbeeld een parkeerzone)</li></ol> 
-  De verkeerskundige bedenkt daarbij waar borden en markeringen nodig zijn. </p>
-  
-  <p> Een <b>Wegontwerper</b> wil weten, of alle borden die nodig zijn in het ontwerp een plaats heeft gegeven. Voor de wegontwerper is het handig, om de zone te weten en de gewenste borden. </p>
-  
-  <p> Een <b>menselijke weggebruiker</b> wil op de locatie waar hij rijdt weten welke regel geldt: hij leest aan de borden, markeringen en de weginrichting af welke regels gelden. Deze gebruiker moet onthouden dat hij bij inrijden van een zone een bord is tegengekomen. Voor de mens maakt de digitale registratiewijze niet uit </p>
-  
-  <p> Een <b>incar systeem of navigatiesysteem</b> wil op de locatie waar het rijdt weten welke regel geldt: 
-  <ul><li>het localiseert de locatie waar het zich bevindt, vergelijkt dat met de netwerkregistratie, weet op welk wegvak het zich bevindt en leest dan af welke regel geldt in dat wegvak. </li>
-  <li> Als de verkeersregel is vastgelegd in een zone, komt er een stap bij: het systeem moet dan bepalen of het zich binnen of buiten een zone bevindt, en welke regels in deze zone gelden. Voor een dergelijk systeem is registratie van verkeersregels per wegvak beter dan per zone. </li><ul></p>
-  
-  <p> Een <b>wegbeheerder<b> wil weten, of alle borden die nodig zijn nog steeds aanwezig zijn. De wegbeheerder heeft per zone de locatie nodig van de borden die aanwezig zouden moeten zijn om te kunnen controleren of de borden er zijn. Voor de wegbeheerder maakt het niet uit of een bord aan een wegvak is gekoppeld, of aan een zone, de borden zijn als losse data voldoende. </p> </aside>
+<p> De verkeerskundige die een verkeersbesluit neemt, heeft een heel gebied op het oog, waar de verkeersregels in samenhang moeten zorgen voor een goede doorstroming en veiligheid van het wegverkeer. Deze verkeerskundige zal een verkeersregel willen geven die geldt voor:
+<ol><li> Een wegvak; </li>
+<li> Een paar wegvakken (bijvoorbeeld doorlopend over kruisingen heen geldt dezelfde snelheid); </li>
+<li> Een zone (bijvoorbeeld een parkeerzone)</li></ol> 
+<p>De verkeerskundige bedenkt daarbij waar borden en markeringen nodig zijn. </p>
+<p> Een <b>wegontwerper</b> wil weten, of alle borden die nodig zijn in het ontwerp een plaats heeft gegeven. Voor de wegontwerper is het handig, om de zone te weten en de gewenste borden. </p>
+<p> Een <b>menselijke weggebruiker</b> wil op de locatie waar hij rijdt weten welke regel geldt: hij leest aan de borden, markeringen en de weginrichting af welke regels gelden. Deze gebruiker moet onthouden dat hij bij inrijden van een zone een bord is tegengekomen. Voor de mens maakt de digitale registratiewijze niet uit </p>
+<p> Een <b>incar systeem of navigatiesysteem</b> wil op de locatie waar het rijdt weten welke regel geldt: 
+<ul><li>het localiseert de locatie waar het zich bevindt, vergelijkt dat met de netwerkregistratie, weet op welk wegvak het zich bevindt en leest dan af welke regel geldt in dat wegvak. </li>
+<li> Als de verkeersregel is vastgelegd in een zone, komt er een stap bij: het systeem moet dan bepalen of het zich binnen of buiten een zone bevindt, en welke regels in deze zone gelden. Voor een dergelijk systeem is registratie van verkeersregels per wegvak beter dan per zone. </li><ul></p>
+<p> Een <b>wegbeheerder<b> wil weten, of alle borden die nodig zijn nog steeds aanwezig zijn. De wegbeheerder heeft per zone de locatie nodig van de borden die aanwezig zouden moeten zijn om te kunnen controleren of de borden er zijn. Voor de wegbeheerder maakt het niet uit of een bord aan een wegvak is gekoppeld, of aan een zone, de borden zijn als losse data voldoende. </p> </aside>
+ 
 
-  <div class="issue" data-number="77"></div>
 
 
 ## Verkeersnetwerk
 
 
-
 ### Wegvak
 
-De in het NWB-Wegen opgenomen geografische basisobjecten zijn [[=wegvak=]] en [[=junctie=]], aan de hand waarvan het complete Nederlandse wegennetwerk kan worden geïdentificeerd. 
+De in het NWB-Wegen opgenomen geografische basisobjecten zijn [=NWB-wegvak=] en [=NWB-junctie=], aan de hand waarvan het complete Nederlandse wegennetwerk kan worden geïdentificeerd. 
 
 Het Nationaal Wegen Bestand is mog niet tot op het niveau van een "rijstrook" gedifferentieerd; afhankelijk van de wegindeling kan een wegvak gaan over een weg met twee rijrichtingen; of over een rijbaan met meerdere rijstroken in één richting van de weg, waarbij de rijstroken niet zijn opgesplitst in afzonderlijke wegvakken. 
 
-<aside class="def"> Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. Een wegvak in het NWB is een Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. Verandering van een eigenschap van een wegvak resulteert in splitsing in twee of meerdere wegvakken. Juncties dus splitsingen van wegvakken komt voor bij gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen. </aside>
+<dfn data-lt="NWB-Wegvak|Road element">NWB-Wegvak</dfn>
+<dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. Verandering van een eigenschap van een wegvak resulteert in splitsing in twee of meerdere wegvakken. Juncties dus splitsingen van wegvakken komt voor bij gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen. </dd>
 
 ### Junctie
 
-<aside class="def"> Een junctie is het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen. </aside>
+<dfn data-lt="NWB-Junctie|">NWB-Junctie</dfn>
+<dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen.</dd>
 
-
-
-
-Het informatiemodel geeft verkeersregels voor de weggebruiker weer ten opzichte van een [[=Wegvak=]] in het Nationaal Wegenbestand. Daarbij worden de volgende regels gebruikt:
+Het informatiemodel geeft verkeersregels voor de weggebruiker weer ten opzichte van een [=NWB-Wegvak=] in het Nationaal Wegenbestand. Daarbij worden de volgende regels gebruikt:
 
 ### Geometrische nauwkeurigheid
 Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
