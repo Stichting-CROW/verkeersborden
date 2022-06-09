@@ -5,12 +5,15 @@
 ## Aanleiding
 
 ### Context
-Het Ministerie van Infrastructuur en Waterstaat werkt samen met alle wegbeheerders aan het digitalisering van mobiliteit o.a. door het Organiseren van de Data Top 15 waar een aantal typen verkeersborden genoemd worden als data items.
+
+<dfn data-lt="Data Top 15">Data Top 15</dfn>
+<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets. https://www.datapedia.nl/ </dd>
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskundige informatie twee digitaliseringstrajecten lopen: 
 
-1. Het neerzetten van een [=Nationaal Wegen Bestand+=] voor het wegennetwerk en bestaande verkeersregels;
-2. Het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeersregels uit nieuwe verkeersbesluiten beter digitaal te registreren.
+1. Samen met het [=NDW=] wordt gewerkt aan het uitbreiden van het [=Nationaal Wegen Bestand=] voor het wegennetwerk en de bijgehorende verkeerskundige situatie;
+2. Samen met [=NDW=] wordt gewerkt aan het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeersregels uit nieuwe verkeersbesluiten beter digitaal te registreren.
+3. Samen met [=KOOP=] wordt gewerkt aan een verkeersbesluiten-app waarmee wegbeheerders hun verkeersbesluit kunnen publiceren. 
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
 
@@ -19,39 +22,49 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 ![Maximale snelheid voor navigatiesystemen](./hoofdstukken/media/maximalesnelheid.PNG "Maximale snelheid voor navigatiesystemen")
 
 
-<dl>
-  <dt>Verkeerskundige informatie</dt>
-  <dd>Informatie over het beoogde gebruik van de weg, en het bijbehorende gewenste rijgedrag van de verkeersdeelnemers</dd>
-  <dt>Verkeersregels</dt>
-  <dd>De wettelijk geldende verkeersregels op een locatie volgens de [=RVV 1990=]</dd>
-  <dt>Waarschuwingen</dt>
-  <dd>De waarschuwingen op een locatie volgens de [=RVV 1990=]</dd>
-  <dt>Adviessnelheden</dt>
-  <dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
-  <dt>Verkeerstekens</dt>
-  <dd>nog opzoeken</dd>
-    <dt>Verkeersborden</dt>
-  <dd>Borden die de lokale verkeersregels, waarschuwingen en adviessnelheden tonen aan de weggebruiker conform RVV 1990</dd>
-</dl>
+### Informatiebehoefte
+
+<dfn data-lt="Smart Mobility">Smart Mobility</dfn>
+    <dd>Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatiesystemen, rijtaakondersteunende systemen, zelfrijdende voertuigen, intelligente verkeersregelinstallaties en systemen waarmee reizigers hun reis online kunnen plannen, reserveren, betalen en onderweg op de hoogte te blijven </dd>
+
+Het Informatiemodel Verkeerstekens is primair bedoeld om de informatiebehoefte vanuit SMART Moblity vast te leggen. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder en eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. 
+
+
+### Bronhouders
+
+Vanuit verkeerskunde groeit de behoefte om de werkprocessen rondom netwerkberekeningen, het toekennen van vergunningen voor tijdelijke verkeerssituaties en het publiceren van verkeersbesluiten te digitaliseren. Het Informatiemodel Verkeerstekens kan door wegbeheerders gebruikt worden bij het publiceren van (veranderingen in) de actuele verkeerskundige situatie op de weg. 
+
+Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren in een landelijke registratie, beheerd door het [=NDW=].
+
+Twee barrières voor data delen
+Voor het delen van data in de mobiliteitssector bestaan op dit moment twee belangrijke barrières. Allereerst moeten organisaties steeds opnieuw bilaterale afspraken maken voordat ze kunnen starten met een data-integratie. Dat is tijdrovend en kost geld. Op projectniveau is dat niet altijd haalbaar waardoor het veelal niet komt tot data delen en schaalvoordelen blijven liggen.
+
+Gebrek aan vertrouwen
+Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
+
+### Registraties
+
+In Nederland wordt digitale verkeerskundige informatie vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
+
+Er ontbreekt echter een categorie in de digitale informatie: 
+
+<dfn data-lt="Verkeerskundige informatie">Verkeerskundige informatie</dfn>
+<dd>Informatie over de op een weg geldende verkeersregels, waarschuwingen en adviessnelheden en de bijbehorende verkeerstekens.</dd>
+
+<dfn data-lt="Verkeersregels">Verkeersregels</dfn>
+<dd>De wettelijk geldende verkeersregels op een locatie volgens de [=RVV 1990=]. Hieronder vallen de wettelijke maximum snelheid en de ge- en verboden. </dd>
+
+<dfn data-lt="Waarschuwingen">Waarschuwingen</dfn>
+<dd>De waarschuwingen op een locatie volgens de [=RVV 1990=]</dd>
+
+<dfn data-lt="Adviessnelheden">Adviessnelheden</dfn>
+<dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
+
+<dfn data-lt="Verkeerstekens">Verkeerstekens</dfn>
+<dd>Borden, NTBNTB, die de lokale verkeersregels, waarschuwingen en adviessnelheden tonen aan de weggebruiker conform RVV 1990</dd>
 
 <div class="issue" data-number="134"></div>
 
-### Informatiebehoefte
-
-#### Smart mobility
-Vanuit [=Smart Mobility=] zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. De beschikbaarheid van informatie kan bijdragen aan betere doorstroming, leefbaarheid en verkeersveiligheid.
-
-#### Verkeerskunde
-Vanuit verkeerskunde groeit de behoefte om de werkprocessen rondom netwerkberekeningen, het toekennen van vergunningen voor tijdelijke verkeerssituaties en het publiceren van verkeersbesluiten te digitaliseren. Ook daarbij is nauwkeurige digitale informatie nodig over de wegkenmerken en verkeersregels in de huidige situatie. Deze verkeerskundige kenmerken moeten makkelijk te wijzigen en eenduidig te interpreteren zijn en het liefst openbaar beschikbaar komen. 
-
-### Gegevensbronnen
-Verkeerskundige kenmerken zijn af te leiden uit de infrastructuur, verkeersregels, wegmarkeringen en borden. 
-
-#### Basisregistraties
-In Nederland wordt digitale verkeerskundige informatie vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
-
-#### Verkeersregels
-Er ontbreekt echter een categorie in de digitale informatie: de verkeersregels, waarschuwingen en adviessnelheden met bijbehorende borden. Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden en wegmarkeringen. De behoefte is om dit centraal te organiseren.
 
 #### Verkeersbesluiten
 Wegbeheerders zijn per 01072021 wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op www.overheid.nl, conform <a href="https://wetten.overheid.nl/BWBR0006622/2021-10-19/#HoofdstukII_Paragraaf2_Artikel15">Wegenverkeerswet 1994 artikel 15</a>. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het formaat van verkeersbesluiten niet geschikt om deze op een eenvoudige wijze te verwerken tot digitale verkeerskundige informatie.
@@ -130,7 +143,7 @@ De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van d
 ## Binnen Scope
 
 ### Verkeersregels+ 
-Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope, ; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. Hieraan toegevoegd worden 
+Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. 
 
 ### Adviessnelheid+
 Bij een waarschuwing (bijvoorbeeld voor een drempel) kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder bij een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.

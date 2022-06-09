@@ -123,8 +123,7 @@ De verkeerstekens en markeringen zijn in eerste instantie bedoeld om de menselij
 Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per rijstrook en richting. Zodat een rij-assistent of navigatie-assistent de weggebruiker op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. Daarbij geldt:
 
 1. Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
-2. Voor de gebruikers is het handig, als de verkeersregels en waarschuwingen op de weg visueel kunnen worden getoond in de systemen, bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeerstekens een grafische weergave te bevatten van de borden. 
-
+2. Voor de gebruikers is het noodzakelijk dat de actuele verkeersregels, waarschuwingen en adviezen die op de weg gelden visueel kunnen worden getoond in de systemen. Bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het Informatiemodel Verkeerstekens een grafische weergave te bevatten van de borden. 
 
 
 
@@ -134,7 +133,7 @@ Vanuit Smart Mobility en verkeerskunde zien we de behoefte aan accurate en actue
 
 *Stakeholders: Toezichthouders* 
 
-Bij handhaving in het verkeer is het beschikbaar hebben van digitale verkeerskundige informatie over de lokale vsituatie handig voor gebruik in applicaties om boetes te registreren. Daarbij is het fysiek aanwezig zijn van een bord of markering nodig, om te kunnen handhaven. Controleren of het fysieke verkeersteken aanwezig is, is de verantwoordelijkheid van de wegbeheerder, zie bij de [use case beheren](./#beheren).
+Bij handhaving in het verkeer is het beschikbaar hebben van digitale verkeerskundige informatie over de lokale vsituatie handig voor gebruik in applicaties om boetes te registreren. Daarbij is het **fysiek** aanwezig zijn van een bord of markering vanuit de wettelijke basis noodzakelijk om te kunnen handhaven. Controleren of het fysieke verkeersteken aanwezig is, is de verantwoordelijkheid van de wegbeheerder, zie bij de [use case beheren](./#beheren).
 
 
 ## Use cases Sloopfase

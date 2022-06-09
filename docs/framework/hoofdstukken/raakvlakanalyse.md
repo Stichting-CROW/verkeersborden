@@ -1,24 +1,56 @@
 # Raakvlakanalyse
 
+De raakvlakanalyse beschrijft de partijen die standaarden of informatiebronnen beheren en de bijbehorende standaarden en databronnen die een raakvlak hebben met het Informatiemodel Verkeerstekens.
 
-De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er zijn voor:
+De raakvlakanalyse verkent welke standaarden en informatiebronnen er zijn voor:
 
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De "digitale representatie" van verkeersborden en wegmarkeringen in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
+
+## Beheerorganisaties
+
+### DSGO en BIM loket
+
+<dfn data-lt="DSGO">DSGO</dfn>
+<dd>Het programma Digitaal Stelsel Gebouwde Omgeving (DSGO) maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken. Zie voor meer informatie de [website van DSGO](https://www.digigo.nu/default.aspx) </dd>
+
+Het BIM loket beheert nationale standaarden voor de bouwsector, waaronder in dit kader relevante standaarden:
+
+* [=NLCS=]
+* [CB-NL=]
+
+**Raakvlaktype: Gezamenlijk beheer**
+
 Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen in een groter stelsel van informatiemodellen, die onderdeel zijn van het Digitaal Stelsel Gebouwde Omgeving (DSGO). 
 
-## DSGO
-De data die je nodig hebt om efficiënter en duurzamer te opereren, is vaak elders in de keten al beschikbaar. Maar als je die data wilt gebruiken, wacht je veelal een tijdrovend en kostbaar proces. Wat als je met een paar klikken alle data over een gebouw, de materialen en componenten die erin verwerkt zijn, onder handbereik hebt? Of als je net zo snel inzage krijgt in wie voor welke klus is gecertificeerd? Het kan straks met DSGO. 
 
-Uniforme afspraken
-Het het Digitaal Stelsel Gebouwde Omgeving (DSGO) is een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken.
+### CROW
+<dfn data-lt="CROW">CROW</dfn>
+<dd>Kennisinstelling voor de openbare ruimte en infrastructuur </dd>
 
-Twee barrières voor data delen
-Voor het delen van data in de sector bestaan op dit moment twee belangrijke barrières. Allereerst moeten organisaties steeds opnieuw bilaterale afspraken maken voordat ze kunnen starten met een data-integratie. Dat is tijdrovend en kost geld. Op projectniveau is dat niet altijd haalbaar waardoor het veelal niet komt tot data delen en schaalvoordelen blijven liggen.
+CROW beheert (naast het Informatiemodel Verkeerstekens) de volgende relevante standaarden:
+* [=IMBOR=]
+* [=Handboek Wegontwerp=]
+* [=ASVV=]
 
-Gebrek aan vertrouwen
-Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
+
+#### KPVV
+
+<dfn data-lt="KpVV|Kennisprogramma Verkeer en Vervoer">KpVV</dfn>
+<dd>Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer uitgevoerd. Doel van dit programma is om door middel van kennis bij te dragen aan de kennisbehoefte van de decentrale overheden op het gebied van mobiliteit. De projecten zijn gericht op het ontwikkelen van nieuwe kennisproducten of op kennisontwikkeling en – uitwisseling (bv communities).  Zie ook <a href="https://www.kpvv.nl/">deze website</a>  </dd>
+
+De kennisproducten en – diensten worden gebruikt door:
+
+* gemeenten, provincies, stadsregio’s, waterschappen en hun koepels;
+* belangenorganisaties, kennisinstituten, vervoerbedrijven en onderwijsinstellingen.
+
+De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. Deze groepen gebruiken verkeersmodellen om te toetsen of het ontwerp voldoent aan de mobiliteitsdoelstellingen, en zijn verantwoordelijk voor de publicatie van verkeersbesluiten. 
+
+**Raakvlaktype: Te informeren groep**
+
+Deze groep MOET geinformeerd worden over de toepassing van het Informatiemodel Verkeerstekens bij de publicatie van verkeersbesluiten.
+
 
 ## Ontwerpfase
 
@@ -28,17 +60,7 @@ Het Reglement verkeersregels en verkeerstekens 1990 [(RVV 1990)](https://wetten.
 **Raakvlaktype: Bron voor informatiemodel**
 Het RVV 1990 is de primaire bron voor verkeersregels, verkeersadviezen en bijbehorende verkeerstekens die worden opgenomen in het Informatiemodel Verkeerstekens.
 
-### KPVV
 
-Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer ([=KpVV=]) uitgevoerd. Doel van dit programma is om door middel van kennis bij te dragen aan de kennisbehoefte van de decentrale overheden op het gebied van mobiliteit. De projecten zijn gericht op het ontwikkelen van nieuwe kennisproducten of op kennisontwikkeling en – uitwisseling (bv communities). De kennisproducten en – diensten worden gebruikt door:
-
-* gemeenten, provincies, stadsregio’s, waterschappen en hun koepels;
-* belangenorganisaties, kennisinstituten, vervoerbedrijven en onderwijsinstellingen.
-
-De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaal en regionaal verkeers- en vervoersbeleid ontwikkelen en realiseren. Deze groepen gebruiken verkeersmodellen om te toetsen of het ontwerp voldoent aan de mobiliteitsdoelstellingen, en zijn verantwoordelijk voor de publicatie van verkeersbesluiten. 
-
-**Raakvlaktype: Te informeren groep**
-Deze groep MOET geinformeerd worden over de toepassing van het Informatiemodel Verkeerstekens bij de publicatie van verkeersbesluiten.
 
 ### CB-NL
 
@@ -53,30 +75,41 @@ CB-NL is de logsiche plek om relaties tussen het Informatiemodel Verkeerstekens 
 BIM loket beheert de Nederlandse CAD Standaard [=NLCS=]), de Nederlandse CAD standaard voor uitwisseling van informatie in 2D CAD-ontwerptekeningen. CAD betekent Computer-aided design: het ontwerpen van onder meer constructies en apparaten met behulp van computerprogramma's. De NLCS bevat basisafspraken over het omgaan met metadata, digitaal tekenen, het uiterlijk van de tekening en – vooral – de bestandsopbouw van 2D-tekenwerk. Deze afspraken zijn onafhankelijk van de CAD-platforms die geleverd worden door softwareleveranciers. 
 Met NLCS worden de objecten op een tekening herkend door alle partijen. Het doel van NLCS is het vermijden van dubbel werk, misverstanden en extra kosten met eenduidige tekeningen. Dit vergroot de efficiency, de kwaliteit, geeft een completer en eenduidig beeld en versneld de tijdigheid waarmee wijzigingen worden gecommuniceerd. 
 
-Circa 30% van de verkeersbesluiten ontwerptekeningen bevatten tekeningen die afkomstig zijn uit CAD-systemen. Tijdens het proces om tot deze verkeersbesluiten te komen wordt veel onderliggende data gemaakt, maar deze data wordt niet optimaal gepubliceerd en gebruikt tijdens en na de publicatie van verkeersbesluiten. Om het gebruik van data uit het wegontwerp bij het verkeersbesluit te verbeteren en tot een completere en eenduidigere uitwisseling van data te komen is de intentie van BIM loket om de verkeersborden op te nemen in de NLCS standaard zodra deze gepubliceerd worden in het Informatiemodel Verkeerstekens. Hierdoor hoeven gegevens niet telkens handmatig worden overgenomen maar kan deze data automatisch worden ingelezen voor processen in de bouw-, beheer-, gebruik- en hergebruiksfase. Vervolgens worden door het BIM-loket met de leveranciers van CAD-systemen nadere afspraken gemaakt over het kunnen exporteren van de verkeersborden zodat deze als data beschikbaar komen voor andere systemen. 
+Circa 30% van de ontwerptekeningen bij verkeersbesluiten komen uit CAD-systemen. Tijdens het ontwerpproces wordt veel onderliggende data gemaakt, maar deze data wordt niet optimaal ontsloten na de publicatie van verkeersbesluiten. 
 
-**Raakvlaktype: Gezamenlijk beheer**
-<div class="issue" data-number="15"></div>
+NLCS kan verbeterd worden zodat de informatie voor het verkeersbesluit handiger kan worden overgenomen naar de volgende fase. BIM loket wil op verzoek van het Ministerie van Infrastructuur en Waterstaat de verkeersborden opnemen in de NLCS standaard zodra deze gepubliceerd worden in het Informatiemodel Verkeerstekens. Het betreft dan de kijkrichting, positie en het type bord met onderbord. Vervolgens wil het BIM-loket nadere afspraken maken met de leveranciers van CAD-systemen om digitale informatie over de verkeersborden als data beschikbaar te kunnen maken voor andere systemen. 
+
+
+**Raakvlaktype: Gebruik informatiemodel**
+
 
 ### ASVV
 
-CROW publiceert de [=ASVV=]. Dit is een bundeling kennis voor verkeersvoorzieningen binnen de bebouwde kom. De kennis uit de uitgave wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
+<dfn data-lt="ASVV|">ASVV</dfn>
+<dd> CROW publiceert de ASVV. Dit is een bundeling kennis voor verkeersvoorzieningen binnen de bebouwde kom. De kennis uit de uitgave wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/publicaties/asvv-2021">deze website</a> </dd>
 
 **Raakvlaktype: Gebruik informatiemodel**
+
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens toegepast binnen de ASVV zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
-**Raakvlaktype: Gezamenlijk beheer**
-<div class="issue" data-number="69"></div>
 
 ### Handboek Wegontwerp
+
+<dt><dfn data-lt="Handboek Wegontwerp">Handboek Wegontwerp</dfn>
+<dd>CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/productpakketten/handboek-wegontwerp-2013-serie-papier-onlin">deze website</a>     </dd>
 
 CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
 **Raakvlaktype: Gebruik informatiemodel**
+
 In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens toegepast binnen het Handboek Wegontwerp zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
-**Raakvlaktype: Gezamenlijk beheer**
-<div class="issue" data-number="70"></div>
+<aside class="note" title="Vanuit Informatiemodel Verkeerstekens verwijzen naar Handboek Wegontwerp en ASVV">
+Om een betere, samenhangende digitale informatievoorziening te creëren zou het een goede aanvulling zijn, om vanuit het Informatiemodel Verkeerstekens en Verkeersbesluiten te kunnen verwijzen (met links) naar het Handboek Wegontwerp en de ASVV voor instructies (eisen) over het nemen van verkeersbesluiten, het afwegingskader voor een specifiek type besluit enzovoorts. Wegbeheerders worden door deze links geholpen met het vinden van de juiste informatie of kunnen bij een verkeersbesluit vastleggen of en hoe ze zich aan deze instructies hebben gehouden (verificatie van de eisen, vastleggen van de afwegingen bij het verkeersbesluit). Dit verrijkt de netwerkdata met gegevens over de reden waarom deze verkeersbesluiten genomen worden, op een gestructureerde manier. In combinatie met andere gegevens, bijvoorbeeld over files of ongelukken, kan dit leiden tot steeds betere inzichten, eisen en afwegingskaders.<br>
+<br>
+Dit vraagt wel om open publicatie van het Handboek Wegontwerp en de ASVV, zodat de informatie achter de links gevonden kan worden. Wat vraagt om een andere, structurele financiering van het beheer van Handboek Wegontwerp.
+</aside>
+
 
 ### Wegontwerp RWS
 Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
@@ -87,13 +120,7 @@ In het ideale geval worden de concepten en definites uit het Informatiemodel Ver
 
 ## Bouwfase
 
-### ETIM
-Ketenstandaard Bouw en Techniek publiceert [=ETIM=]. Dit is een catalogus waarmee onderdelen kunnen worden besteld bij fabrikanten. Verkeerslichten kunnen worden besteld met behulp van ETIM, analoge borden en markeringen staan niet in ETIM.
 
-**Raakvlaktype: Gebruik informatiemodel**
-In het ideale geval worden de concepten en definites uit het Informatiemodel Verkeerstekens toegepast binnen de ETIM zodat duidelijk is dat het bestelde verkeersteken (indien opgenomen in de productcatalogus) past bij het verkeersbesluit.
-
-<div class="issue" data-number="70"></div>
 
 ### PIANOO
 De publieke opdrachtgevers in de [=Buyer Group verkeersborden=] en bewegwijzering werken samen aan het verduurzamen van verkeersborden en bewegwijzering. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten.
@@ -144,21 +171,37 @@ Het Informatiemodel Verkeerstekens moet aansluiten op IMBOR, maar geen dubbeling
 
 ## Gebruiksfase
 
-
-### NWB
-Het Nationaal Wegen Bestand ([=NWB=]) is een open databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door de wegbeheerders.
-
-**Raakvlaktype: Gezamenlijk beheer**
-Het NWB bevat een informatiemodel voor het wegennetwerk vast als netwerk van [=Juncties=] en [=Wegvakken=]. Het Informatiemodel Verkeerstekens moet hierop aansluiten om te zorgen dat een verkeersbesluit gekoppeld kan worden aan het juiste wegvak.
-
 ### NDW
+
+<dt><dfn data-lt="NDW|Nationaal Dataportaal Wegverkeer">NDW</dfn>
+<dd>Het Nationaal Dataportaal Wegverkeer. Onder vlag van het NDW werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert. Zie ook <a href="https://www.ndw.nu/">hun website</a>   </dd>
+
+
 Onder de vlag van het Nationaal Dataportaal Wegverkeer ([=NDW=]) werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert.
 
 <div class="issue" data-number="14"></div>
 
-**Raakvlaktype: Gebruik informatiemodel**
 
-#### NDW - Verkeersbordendata
+### NWB
+<<dfn data-lt="NWB|Nationaal Wegen Bestand|NWB-Wegen">NWB</dfn>
+<dd> Een open geografisch databestand met alle openbare wegen in Nederland die een straatnaam of wegnummer hebben en in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen. Ook losliggende voet- en fietspaden en onverharde wegen zijn, indien voorzien van een straatnaam, in het NWB-Wegen opgenomen. Vrijliggende fietspaden die geen officiële straatnaam hebben ook. Wanneer een weg gescheiden rijbanen heeft, wat vooral het geval is bij Rijkswegen, worden deze als aparte wegvakken in het bestand verwerkt.Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
+<dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">Nationaal Wegen Bestand+</dfn>
+<dd>Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a>    </dd>
+
+
+
+<dfn data-lt="Wegvak|NWB-wegvak|Road element|Wegvakken">Wegvak</dfn>
+<dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. Verandering van een eigenschap van een wegvak resulteert in splitsing in twee of meerdere wegvakken. Juncties dus splitsingen van wegvakken komt voor bij gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen. </dd>
+
+<dfn data-lt="Junctie|Juncties">Junctie</dfn>
+<dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen.</dd>
+
+
+**Raakvlaktype: Gezamenlijk beheer**
+Het NWB bevat een informatiemodel voor het wegennetwerk vast als netwerk van [=Juncties=] en [=Wegvakken=]. Het Informatiemodel Verkeerstekens moet hierop aansluiten om te zorgen dat verkeerskundige informatie gekoppeld kan worden aan het juiste wegvak en de juiste richting in het wegvak.
+
+
+### Verkeersbordendata
 Het NDW publiceert de [actueel waargenomen verkeersborden](https://docs.ndw.nu/api/trafficsigns/nl/index.html) in Nederland. Het bestand is op twee bronnen gebaseerd: 1. Mutaties die door de wegbeheerder worden ingevoerd 2. Mutaties die door de jaarlijkse schouwronde met auto's/camera's wroden gesignaleerd. De eerste bron is vanzelf actueler, maar wordt minder toegepast dan de tweede bron. De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een NWB wegvak en ze hebben allemaal een locatie (x,y).
 
 **Raakvlaktype: Gebruik informatiemodel**
@@ -190,8 +233,16 @@ Het Programma Netwerkregistratie werkt aan het op orde brengen van de verkeersku
 
 **Raakvlaktype: Gebruik informatiemodel**
 
-#### Verkeersbesluiten DEMO
+#### KOOP
 
+<dfn data-lt="Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties|KOOP">KOOP</dfn>
+<dd>Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties. De primaire taak van KOOP is het rechtsgeldig bekendmaken en beschikbaar stellen van wet- en regelgeving van alle overheden van Nederland.  </dd>
+
+Verkeersbesluiten zijn dit zijn officiële overheidspublicaties. KOOP publiceert verkeersbelsuiten. 
+
+**Raakvlaktype: Gebruik informatiemodel**
+
+#### Verkeersbesluiten DEMO
 Proof of Concept van KOOP samen met minisrerie van IenW. Een prototype bordenplan KaartModule, die op dit moment met een aantal stakeholders wordt geëvalueerd. Het is publiek toegankelijk en het geeft een inkijk in de mogelijke toekomstige functionaliteiten en potentiële raakvlakken met het informatiemodel. Het is [hier](https://verkeersbesluiten-demo.overheid.nl/) te zien.
 
 In de huidige situatie van een verkeersbesluit wordt er alleen voor het hele verkeersbesluit gegeocodeerd. Niet per verkeersbord. En er is ook geen mogelijkheid tot het kiezen van een wegvak. 
