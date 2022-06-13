@@ -9,39 +9,21 @@
 
 ## Verkeersregels RVV 1990
 
-- Het informatiemodel MOET functionele verkeersregels en verkeersadviezen voor de weggebruiker op basis van het <a>RVV 1990</a> (Reglement verkeersregels en verkeerstekens 1990) bevatten. Aanwijzingen door verkeersregelaars zijn buiten scope van het informatiemodel. </li>
-- Het informatiemodel MOET de definities gebruiken uit het <a>RVV 1990</a>.
+- Het informatiemodel MOET de op een weg geldende verkeersregels, waarschuwingen, adviessnelheden en de bijbehorende analoge verkeersborden bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. </li>
+- Het informatiemodel MOET de definities gebruiken uit het [=RVV 1990=].
 
 
-## Adviessnelheid
-Naast de wettelijk geldende verkeersregels over bijvoorbeeld de maximum snelheid zijn er veel waarschuwingsborden die indirect (voor de mens goed te interpreteren) advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, inrit of zebrapad. Het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, naast de maximumsnelheid. Afhankelijk van de verkeerssituatie kan dit leiden tot een lagere snelheid langs meerdere gevaarlijke punten (bijvoorbeeld, een zebra (met bord) een inrit (zonder bord) en daarna wordt een kruispunt genaderd: over de gehele lengte kan een lagere snelheid gelden, los van de individuele waarschuwingen bij de gevaarlijke punten.
+### Adviessnelheid+
+- Het informatiemodel MOET mogelijk maken dat een wegbeheerder bij een (deel van) een [=NWB-wegvak=] een adviessnelheid meegeeft, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
 
-## Verkeersborden
+### Verkeersborden
 
-1. Het informatiemodel geeft naast de functionele verkeersregels en verkeersadviezen ook de mogelijkheid om de fysieke verschijningsvorm van een bord met een of meerdere onderborden vast te leggen. 
-2. Het informatiemodel geeft de fysieke verschijningsvorm van het bord weer conform - [issue 24](https://github.com/Stichting-CROW/verkeersborden/issues/24) Is er een bestand met afbeeldingen van wettelijk toegestane borden? Of zijn deze alleen beschreven in de wet? 
-3. Bij elk bord geeft het informatiemodel een link naar de afbeelding van het bord in het [Reglement verkeersregels en verkeerstekens 1990]. 
-4. Een wegbeheerder mag eigen borden toevoegen, hiervan dient een definitie en afbeelding opgesteld te zijn en als linked open data gepubliceerd op de wijze van het informatiemodel.
-5. Het informatiemodel geeft naast vaste borden ook de mogelijkheid om de locatie van dynamische borden weer te geven, zodat we weggebruiker kan worden geattendeerd om hierop te letten. 
-
-<aside class="example" title="Invloedssfeer van een bord of bord als afgeleide van een verkeersregel">
-<p> De verkeerskundige die een verkeersbesluit neemt, heeft een heel gebied op het oog, waar de verkeersregels in samenhang moeten zorgen voor een goede doorstroming en veiligheid van het wegverkeer. Deze verkeerskundige zal een verkeersregel willen geven die geldt voor:
-<ol><li> Een wegvak; </li>
-<li> Een paar wegvakken (bijvoorbeeld doorlopend over kruisingen heen geldt dezelfde snelheid); </li>
-<li> Een zone (bijvoorbeeld een parkeerzone)</li></ol> 
-<p>De verkeerskundige bedenkt daarbij waar borden en markeringen nodig zijn. </p>
-<p> Een <b>wegontwerper</b> wil weten, of alle borden die nodig zijn in het ontwerp een plaats heeft gegeven. Voor de wegontwerper is het handig, om de zone te weten en de gewenste borden. </p>
-<p> Een <b>menselijke weggebruiker</b> wil op de locatie waar hij rijdt weten welke regel geldt: hij leest aan de borden, markeringen en de weginrichting af welke regels gelden. Deze gebruiker moet onthouden dat hij bij inrijden van een zone een bord is tegengekomen. Voor de mens maakt de digitale registratiewijze niet uit </p>
-<p> Een <b>incar systeem of navigatiesysteem</b> wil op de locatie waar het rijdt weten welke regel geldt: 
-<ul><li>het localiseert de locatie waar het zich bevindt, vergelijkt dat met de netwerkregistratie, weet op welk wegvak het zich bevindt en leest dan af welke regel geldt in dat wegvak. </li>
-<li> Als de verkeersregel is vastgelegd in een zone, komt er een stap bij: het systeem moet dan bepalen of het zich binnen of buiten een zone bevindt, en welke regels in deze zone gelden. Voor een dergelijk systeem is registratie van verkeersregels per wegvak beter dan per zone. </li><ul></p>
-<p> Een <b>wegbeheerder<b> wil weten, of alle borden die nodig zijn nog steeds aanwezig zijn. De wegbeheerder heeft per zone de locatie nodig van de borden die aanwezig zouden moeten zijn om te kunnen controleren of de borden er zijn. Voor de wegbeheerder maakt het niet uit of een bord aan een wegvak is gekoppeld, of aan een zone, de borden zijn als losse data voldoende. </p> </aside>
- 
+1. Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten. 
+2. Het informatiemodel MOET mogelijk maken om een vrije tekst toe te voegen aan een onderbord.
+3. Het informatiemodel MOET bij elk bord een link naar het bord in de [=RVV 1990=] geven.
 
 
-
-## Verkeersnetwerk
-
+## Netwerk
 
 ### Wegvak
 
@@ -57,7 +39,7 @@ Het Nationaal Wegen Bestand is mog niet tot op het niveau van een "rijstrook" ge
 <dfn data-lt="NWB-Junctie|">NWB-Junctie</dfn>
 <dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen.</dd>
 
-Het informatiemodel geeft verkeersregels voor de weggebruiker weer ten opzichte van een [=NWB-Wegvak=] in het Nationaal Wegenbestand. Daarbij worden de volgende regels gebruikt:
+Het informatiemodel geeft verkeersregels voor de weggebruiker weer die kunnen worden toegepast op een of meer [=NWB-Wegvak=]ken in het Nationaal Wegenbestand. Daarbij worden de volgende regels gebruikt:
 
 ### Geometrische nauwkeurigheid
 Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden. 
@@ -68,8 +50,8 @@ Het informatiemodel geeft verkeersregels voor de weggebruiker default weer voor 
 
 
 ### Rijstrook
-Het informatiemodel maakt het mogelijk om de verkeersregel te laten gelden voor één van de rijstroken, die worden genummerd vanuit het midden van de weg. 
-
+Het informatiemodel maakt het mogelijk om de verkeersregel te laten gelden voor één van de rijstroken, die worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
+Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de nummering niet meer te worden aangeduid. 
 
 ### Beginpunt
 
@@ -96,7 +78,7 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 
 ### NLCS
 1. Om bestaande, in gebruik zijnde verkeerstekens goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen.
-2. Om vanuit het bestaande werkproces een verkeersbesluit digitaal te kunnen publiceren is het handig om levering van een CAD tekening op basis van NLCS met wegligging en verkeerstekens toe te staan tijdens het registreren van verkeersbesluiten. 
+2. Om vanuit het bestaande werkproces een verkeersbesluit digitaal te kunnen publiceren is het nodig om levering van een CAD tekening op basis van NLCS met wegligging en borden toe te staan tijdens het registreren van verkeersbesluiten. 
 
 ### CB-NL
 1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
