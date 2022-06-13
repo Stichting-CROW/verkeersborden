@@ -1,6 +1,6 @@
 # Organisatorische uitgangspunten
 
-Het Informatiemodel Verkeerstekens zal in beheer genomen moet worden om up to date te blijven.
+Het [=Informatiemodel Verkeerstekens=] zal in beheer genomen moet worden om up to date te blijven.
 
 ## BOMOS
 
@@ -22,7 +22,7 @@ Beheer volgens BOMOS heeft de volgende voordelen:
 
 ### Governance
 
-Het beheer van het Informatiemodel Verkeerstekens wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het Informatiemodel Verkeerstekens en wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR.
+Het beheer van het [=Informatiemodel Verkeerstekens=] wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het [=Informatiemodel Verkeerstekens=] en wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR.
 
 #### Stuurgroep IMBOR
 
@@ -120,7 +120,7 @@ Promotie zal worden ingericht door de uitvoerende beheerorganisatie.
 
 ### Publicatie
 
-De specificatie van het informatiemodel, afbeeldingen, codes, query's et cetera worden allemaal op Github gepubliceerd. Het Informatiemodel Verkeerstekens wordt gepubliceerd als linked open data.
+De specificatie van het informatiemodel, afbeeldingen, codes, query's et cetera worden allemaal op Github gepubliceerd. Het [=Informatiemodel Verkeerstekens=] wordt gepubliceerd als linked open data.
 
 ### Klachtenafhandeling
 
