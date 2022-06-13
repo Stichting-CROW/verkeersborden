@@ -13,7 +13,10 @@ Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus
 
 De informatie die wordt gepubliceerd over *wijzigingen* in de verkeerskundige situatie op basis van het Informatiemodel Verkeerstekens, wordt gemaakt tijdens de ontwerpfase. 
 
-![Ontwerpfase](./hoofdstukken/media/ontwerpfase.jpg "Ontwerpfase")
+<figure>
+<img src="./hoofdstukken/media/ontwerpfase.jpg">
+<figcaption>Ontwerpfase</caption>
+</figure>
 
 
 ### Aanvraag maatregel
@@ -55,7 +58,11 @@ Het verkeersbesluit geeft de *wettelijke kaders* voor het gedrag van het verkeer
 
 ## Bouwfase
 
-![Bouwfase](./hoofdstukken/media/bouwfase.jpg "Bouwfase")
+<figure>
+<img src="./hoofdstukken/media/bouwfase.jpg">
+<figcaption>Bouwfase</caption>
+</figure>
+
 In de bouwfase wordt de gewenste weginrichting en verkeersborden besteld, gemaakt en geplaatst op basis van het verkeerskundige model en het bijbehorende wegontwerp. 
 
 ### Bestellen 
@@ -90,12 +97,16 @@ De *gewenste ligging* volgens het ontwerp en het verkeersbesluit komt niet per s
 
 *Stakeholders: Bouwbedrijven*
 
-Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of borden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale verkeerskundige informatie gepubliceerd, zodat het netwerk,, de [=verkeersregels=], [=waarschuwingen=], [=snelheidsadviezen=] en [=borden=] altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
+Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of borden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale verkeerskundige informatie gepubliceerd, zodat het netwerk,, de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en verkeersborden altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
 
 
-## Beheerfase
+## Gebruiksfase
 
-![Beheer- en gebruiksfase](./hoofdstukken/media/beheerfase.jpg "Beheer- en gebruiksfase")
+
+<figure>
+<img src="./hoofdstukken/media/beheerfase.jpg">
+<figcaption>Beheer- en gebruiksfase</caption>
+</figure>
 
 ### Beheren
 
@@ -105,7 +116,11 @@ In de beheerfase wordt van de [=verkeerstrekens=] informatie bijgehouden over de
 
 Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of borden aanwezig zijn en markeringen niet te veel versleten. De informatie uit het verkeersbesluit kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een bord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. 
 
-![Asset management proces volgens iAMPro](./hoofdstukken/media/Beheerfase.jpg "Asset management proces volgens iAMPro")
+<figure>
+<img src="./hoofdstukken/media/Beheerfase.jpg">
+<figcaption>Asset management proces volgens iAMPro</caption>
+</figure>
+
 
 ## Gebruiksfase
 
@@ -140,6 +155,7 @@ Bij handhaving in het verkeer is het beschikbaar hebben van digitale verkeerskun
 
 
 ## Use cases Sloopfase
+
 
 ### Circulair hergebruik
 Bij nieuwbouw of renovatie worden borden en markeringen weggehaald of verplaatst. Hierbij is informatie nodig uit de bouw- en beheerfase die wel wordt aangeduid als een "materialenpaspoort" om te kunnen bepalen of de borden kunnen worden hergebruikt, en of zij hiertoe moeten worden gerestaureerd. 

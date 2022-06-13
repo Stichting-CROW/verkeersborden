@@ -379,14 +379,22 @@ In de huidige situatie van een verkeersbesluit wordt er alleen voor het hele ver
 [Voorbeeld huidige situatie](https://zoek.officielebekendmakingen.nl/stcrt-2021-3722.html)
 
 Zij hebben dan informeel in een plaatje het volgende aangegeven:
+
+<figure>
+<img src="./hoofdstukken/media/verkeersbesluitnu.png">
+<figcaption>Huidige situatie verkeersbesluit</caption>
+</figure>
  
-![Huidige situatie verkeersbesluit](hoofdstukken/media/verkeersbesluitnu.png)
 
 Maar in de metadata (https://zoek.officielebekendmakingen.nl/stcrt-2021-3722) is slechts 1 coördinaat aangegeven. Dat is wat we dus willen verbeteren met de nieuwe KaartModule. 
 
 [Voorbeeld gewenste situatie](https://verkeersbesluiten-demo.overheid.nl/demo.html) en bordenplan bijlage, die kan je dus laden:
+
+<figure>
+<img src="./hoofdstukken/media/verkeersbesluitendemo.png">
+<figcaption>Gewenste situatie verkeersbesluit</caption>
+</figure>
  
-![Gewenste situatie verkeersbesluit](hoofdstukken/media/verkeersbesluitendemo.png)
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
