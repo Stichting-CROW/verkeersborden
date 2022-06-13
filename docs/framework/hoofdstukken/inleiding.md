@@ -7,7 +7,7 @@
 ### Context
 
 <dfn data-lt="Data Top 15">Data Top 15</dfn>
-<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, borden en andere datasets. https://www.datapedia.nl/ </dd>
+<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. https://www.datapedia.nl/ </dd>
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskundige informatie twee digitaliseringstrajecten lopen: 
 
@@ -15,7 +15,7 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskun
 2. Samen met [=NDW=] wordt gewerkt aan het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeersregels uit nieuwe verkeersbesluiten beter digitaal te registreren.
 3. Samen met [=KOOP=] wordt gewerkt aan een verkeersbesluiten-app waarmee wegbeheerders hun verkeersbesluit kunnen publiceren. 
 
-Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en markeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
+Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en wegmarkeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
 
@@ -24,10 +24,7 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 
 ### Informatiebehoefte
 
-<dfn data-lt="Smart Mobility">Smart Mobility</dfn>
-    <dd>Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatiesystemen, rijtaakondersteunende systemen, zelfrijdende voertuigen, intelligente verkeersregelinstallaties en systemen waarmee reizigers hun reis online kunnen plannen, reserveren, betalen en onderweg op de hoogte te blijven </dd>
-
-Het Informatiemodel Verkeerstekens is primair bedoeld om de informatiebehoefte vanuit SMART Moblity vast te leggen. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder en eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. 
+Het Informatiemodel Verkeerstekens is primair bedoeld om de informatiebehoefte vanuit [=SMART Moblity=] vast te leggen. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder en eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. 
 
 
 ### Bronhouders
@@ -61,7 +58,7 @@ Er ontbreekt echter een categorie in de digitale informatie:
 <dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
 
 <dfn data-lt="Verkeerstekens">Verkeerstekens</dfn>
-<dd>Borden, NTBNTB, die de lokale verkeersregels, waarschuwingen en adviessnelheden tonen aan de weggebruiker conform RVV 1990</dd>
+<dd>Een verkeersteken is een wettelijk vastgesteld teken ter regeling, waarschuwing, geleiding of informering van het verkeer. Onder de verkeerstekens vallen verkeersborden en wegmarkeringen.</dd>
 
 <div class="issue" data-number="134"></div>
 
@@ -69,7 +66,7 @@ Er ontbreekt echter een categorie in de digitale informatie:
 #### Verkeersbesluiten
 Wegbeheerders zijn per 01072021 wettelijk verplicht om verkeersbesluiten digitaal te publiceren in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op www.overheid.nl, conform <a href="https://wetten.overheid.nl/BWBR0006622/2021-10-19/#HoofdstukII_Paragraaf2_Artikel15">Wegenverkeerswet 1994 artikel 15</a>. Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het formaat van verkeersbesluiten niet geschikt om deze op een eenvoudige wijze te verwerken tot digitale verkeerskundige informatie.
  
-Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale verkeerskundige informatie. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de borden. 
+Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale verkeerskundige informatie. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de verkeersborden. 
 
 
 ## Doel document
@@ -143,14 +140,16 @@ De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van d
 ## Binnen Scope
 
 ### Verkeersregels+ 
-Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle borden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. 
+Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle verkeersborden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersteken die aanduiden wat de verkeersregel is. 
 
 ### Adviessnelheid+
-Bij een waarschuwing (bijvoorbeeld voor een drempel) kan een menselijke verkeersdeelnemer wel inschatten wat er gedaan moet worden: opletten, snelheid minderen, enzovoorts. Voor een systeem is deze afleiding niet mogelijk. Het informatiemodel moet daarom mogelijk maken dat een wegbeheerder bij een waarschuwing een adviessnelheid meegeeft, zonder dat hierbij een fysiek bord geplaatst wordt.
+De wegbeheerder heeft de mogelijkheid een snelheidsadvies te geven met een A4 verkeersbord.
+Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over de gehele lengte van een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegevens, los van de individuele waarschuwingen bij de gevaarlijke punten.
+
 
 ### Verkeersborden
 
-* **Binnen scope** zijn alle borden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst borden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
+* **Binnen scope** zijn alle verkeersborden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst verkeersborden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
 
 <p class="note" title=" Maximum snelheid">
 Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beschreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
@@ -164,7 +163,7 @@ Het Informatiemodel Verkeerstekens heeft als scope: nationale, regionale en loka
 ### Markeringen
 
 **Buiten scope** zijn <dfn><dt>Wegmarkeringen</dt>  <dd>Wegmarkering is het geheel aan tekens die op het wegdek staan aangegeven en het verkeer door middel van de visuele informatie geleiden. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
-Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de borden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de verkeersbesluiten.
+Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de verkeersborden (en straks via digitale verkeerskundige informatie) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de verkeersbesluiten.
 
 
 ### Bewegwijzering
@@ -178,11 +177,11 @@ Verkeerslichten zijn buiten scope.
 
 ### Weginrichting
 
-In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een bord of markering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord of wegmarkering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
 
 <div class="issue" data-number="136"></div>
 
-Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder bord worden opgenomen in het informatiemodel.
+Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder verkeersbord worden opgenomen in het informatiemodel.
 
 ### Juridisch
 
