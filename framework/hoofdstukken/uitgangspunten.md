@@ -50,7 +50,7 @@ Het informatiemodel geeft verkeersregels voor de weggebruiker default weer voor 
 
 
 ### Rijstrook
-Het informatiemodel maakt het mogelijk om de verkeersregel te laten gelden voor één van de rijstroken, die worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
+Het informatiemodel MOET het mogelijk maken om de verkeersregel te laten gelden voor één van de [=rijstroken=], die worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
 Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de nummering niet meer te worden aangeduid. 
 
 ### Beginpunt
@@ -81,7 +81,7 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 2. Om vanuit het bestaande werkproces een verkeersbesluit digitaal te kunnen publiceren is het nodig om levering van een CAD tekening op basis van NLCS met wegligging en borden toe te staan tijdens het registreren van verkeersbesluiten. 
 
 ### CB-NL
-1. De begrippen en definities uit het Informatiemodel Verkeerstekens en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
+1. De begrippen en definities uit het [=Informatiemodel Verkeerstekens=] en Verkeersbesluiten moeten worden gelinked aan concepten in CB-NL.
 
 ### SMART Mobility
 
@@ -91,8 +91,8 @@ Het informatiemodel maakt het mogelijk om aan te duiden of het fysieke verkeersb
 ## Historische informatie
 Voor de primaire use case is het niet nodig om historische gegevens te kunnen vinden - alle actuele verkeerskundige gegevens zijn voldoende.
 
-Voor gebruik van de digitale verkeerskundige informatie in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke verkeersregels gelden, en welke borden aanwezig zijn op een bepaald tijdstip.
+Voor gebruik van de digitale [=Verkeerskundige informatie=] in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke verkeersregels gelden, en welke borden aanwezig zijn op een bepaald tijdstip.
 
 Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de verkeersregel van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. 
 
-1. Het informatiemodel dient een begin- en einddatum en -tijdstip te bevatten voor het ingaan van de verkeersregel, waarschuwing of snelheidsadvies, en voor de (geplande) plaatsing en weghalen van het bijbehorende verkeersbord. 
+1. Het informatiemodel dient een begin- en einddatum en -tijdstip te bevatten voor het ingaan van de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], en voor de (geplande) plaatsing en weghalen van het bijbehorende verkeersbord. 
