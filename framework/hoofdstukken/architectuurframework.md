@@ -97,7 +97,7 @@ Het informatiemodel vermeldt expliciet welke onderdelen normatief zijn, en welke
 
 Een voorbeeld van een vrij, machineleesbaar formaat is een RDF-ontologie.
 Een voorbeeldimplementatie is aanbevelenswaardig, omdat het aantoont dat de specificatie van het informatiemodel werkbaar is.
-Voorbeelden van data conform het informatiemodel helpen de implementatie ervan ook. 
+Voorbeelden van data conform het informatiemodel zijn essentieel om de implementatie ervan te ondersteunen. 
 
 ### API's en uitwisselformaten
 
