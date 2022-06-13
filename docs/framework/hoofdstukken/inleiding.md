@@ -12,17 +12,17 @@
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom verkeerskundige informatie twee digitaliseringstrajecten lopen: 
 
 1. Samen met het [=NDW=] wordt gewerkt aan het uitbreiden van het [=Nationaal Wegen Bestand=] voor het wegennetwerk en de bijgehorende verkeerskundige situatie;
-2. Samen met [=NDW=] wordt gewerkt aan het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeersregels uit nieuwe verkeersbesluiten beter digitaal te registreren.
-3. Samen met [=KOOP=] wordt gewerkt aan een verkeersbesluiten-app waarmee wegbeheerders hun verkeersbesluit kunnen publiceren. 
+2. Samen met [=NDW=] wordt gewerkt aan het uitbreiden van een verkeersbesluiten database in het [=Programma Netwerkregistraties=] om wijzigingen in de verkeerskundige situatie uit nieuwe verkeersbesluiten beter digitaal te registreren.
+3. Samen met [=KOOP=] wordt gewerkt aan een verkeersbesluiten-app waarmee wegbeheerders de digitale verkeerskundige situatie uit hun verkeersbesluit kunnen publiceren. 
 
 Beide trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en wegmarkeringen en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van verkeerskundige informatie toe te kunnen werken is een Informatiemodel Verkeerstekens essentieel. 
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
-
+<div class="issue" data-number="142"></div>
 
 <figure>
 <img src="./hoofdstukken/media/maximalesnelheid.PNG">
-<figcaption>Maximale snelheid voor navigatiesystemen</caption>
+<figcaption>Maximale snelheid voor navigatiesystemen: Een wegbeheerder neemt een verkeersbesluit; het NDW registreert een nieuwe verkeerskundige situatie; SMART Mobility systemen kunnen de juiste verkeersregels afleiden uit de informatie en daarmee weggebruikers ondersteunen </caption>
 </figure>
 
 
