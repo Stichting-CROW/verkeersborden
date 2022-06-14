@@ -121,7 +121,7 @@ Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimulre
 
 
 ## Informatieleveringsspecificatie
-De wegbeheerder heeft voor het aanleveren van het verkeersbesluit twee "Informatieleveringsspecificaties" nodig. Een voor de wijziging in de netwerkdata, en een voor de wijziging van de functionele verkeersregels en verkeersadviezen voor het gebruik van het netwerk en de bijbehorende verkeerstekens. 
+De wegbeheerder heeft voor het aanleveren van het verkeersbesluit twee "Informatieleveringsspecificaties" nodig. Een voor de wijziging in de netwerkdata, en een voor de wijziging van de functionele verkeersregels en verkeersadviezen voor het gebruik van het netwerk en de bijbehorende [=verkeerstekens=]. 
 
 In deze Informatieleveringsspecificaties staat (voor een machine leesbaar):
 - Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. 

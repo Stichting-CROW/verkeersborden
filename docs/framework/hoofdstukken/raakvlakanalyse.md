@@ -315,7 +315,6 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 <dd>Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a>    </dd>
 
 
-
 **Raakvlaktype: Gezamenlijk beheer**
 
 Het NWB bevat een informatiemodel voor het wegennetwerk vast als netwerk van [=NWB-Junctie=]s en [=NWB-Wegvak=]ken. Het [=Informatiemodel Verkeerstekens=] moet hierop aansluiten om te zorgen dat [=Verkeerskundige informatie=] gekoppeld kan worden aan het juiste wegvak en de juiste richting in het wegvak.
