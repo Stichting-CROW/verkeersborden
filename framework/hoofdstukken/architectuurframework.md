@@ -68,7 +68,7 @@ Voor Nederlands is er door NDW een Nederlands profiel opgesteld. Mogelijke relev
 - beborde omleiding
 - snelheidsbeperkingen (`SpeedManagement`)
 
-De focus bij Datex ligt eerder op incidenten, dynamische borden en de huidige situatie, niet op de besluitvorming en statische borden.
+De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=].
 
 ### Toegankelijk, security, privacy, duurzaamheid
 
@@ -104,9 +104,9 @@ Voorbeelden van data conform het informatiemodel zijn essentieel om de implement
 Het informatiemodel dient los te staan van specifieke uitwisselingsstandaarden, zoals API's en uitwisselformaten.
 Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technologie-specifieke beperkingen zijn gemaakt.
 
-## Voorbeeld- of normafbeeldingen borden en onderborden
+## Voorbeeld- of normafbeeldingen verkeersborden en onderborden
 
-Gaat niet om wat NBd (Nationale Bewegwijzeringsdienst) publiceert over concrete borden aan een concrete weg, maar om referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden.
+Gaat niet om wat NBd (Nationale Bewegwijzeringsdienst) publiceert over concrete verkeersborden aan een concrete weg, maar om referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden.
 
 ### Formaten
 
@@ -117,17 +117,10 @@ Gaat niet om wat NBd (Nationale Bewegwijzeringsdienst) publiceert over concrete 
 
 Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimulren. 
 
-## Transacties
 
 
-## Informatieleveringsspecificatie
-De wegbeheerder heeft voor het aanleveren van het verkeersbesluit twee "Informatieleveringsspecificaties" nodig. Een voor de wijziging in de netwerkdata, en een voor de wijziging van de functionele verkeersregels en verkeersadviezen voor het gebruik van het netwerk en de bijbehorende [=verkeerstekens=]. 
 
-In deze Informatieleveringsspecificaties staat (voor een machine leesbaar):
-- Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. 
-- Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. 
-- In welke formaten de wijziging kan worden aangeleverd
-- Of informatie mag worden toegevoegd uit een eigen informatiemodel
+
 
 
 

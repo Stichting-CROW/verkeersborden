@@ -57,9 +57,9 @@ Wanneer in de context van het [=Informatiemodel Verkeerstekens=] toegepast krijg
 
 ## Use case
 
-De scope van het [=Informatiemodel Verkeerstekens=] is de use case "Gebruiken van digitale [=verkeerskundige informatie=] over de ter plaatse geldende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en de locatie van bijbehorende verkeersborden in een systeem voor [SMART Mobility] dat een weggebruiker ondersteunt tijdens deelname aan het verkeer." 
+De scope van het [=Informatiemodel Verkeerstekens=] is de use case "Gebruiken van digitale [=verkeerskundige informatie=] over de ter plaatse geldende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en de locatie van bijbehorende verkeersborden in een systeem voor [SMART Mobility] dat een [=weggebruiker=] ondersteunt tijdens deelname aan het verkeer." 
 
-De gebruikers die in deze use case centraal staan zijn de Weggebruikers, die tijdens het rijdens willen weten welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] gelden voor de weg waar ze op rijden. De weggebruikers willen visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. 
+De gebruikers die in deze use case centraal staan zijn de [=weggebruikers=], die tijdens het rijdens willen weten welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] gelden voor de weg waar ze op rijden. De [=weggebruikers=] willen visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. 
 
 ## Toepassing
 De wegbeheerder past het [=Informatiemodel Verkeerstekens=] toe bij het beheren en publiceren van digitale [=verkeerskundige informatie=] in drie contexten:
@@ -71,36 +71,70 @@ De wegbeheerder past het [=Informatiemodel Verkeerstekens=] toe bij het beheren 
 
 ## Binnen Scope
 
+### Wegsoorten
+
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
+
 ### Verkeersregels+ 
-Verkeersregels, waarschuwingen en snelheidsadviezen die horen bij alle verkeersborden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de weggebruiker van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het [=verkeerstekens=] die aanduiden wat de verkeersregel is. 
+[=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] die horen bij alle verkeersborden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de verkeersregel is. 
 
 ### Adviessnelheid+
 De wegbeheerder heeft de mogelijkheid een [=adviessnelheid] te geven met een A4 verkeersbord.
 Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over de gehele lengte van een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegevens, los van de individuele waarschuwingen bij de gevaarlijke punten.
 
 
-### Verkeersborden
+### Statische verkeersborden
 
-* **Binnen scope** zijn alle verkeersborden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst verkeersborden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
+* **Binnen scope** zijn alle statische verkeersborden uit RVV 1990 en (informatie in) onderborden; aangevuld met een lijst verkeersborden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
 
-<p class="note" title=" Maximum snelheid">
-Als voorbeeld voor verdere uitwerking van het informatiemodel is de wettelijke maximumsnelheid in meer detail beschreven. Lees daarover <a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">in dit document</a> meer.</p>
+<dfn data-lt="statische verkeersborden|statisch verkeersbord">Statisch verkeersbord</dfn>
+<dd>Een verkeersbord waarop altijd dezelfde afbeelding dan wel tekst te zien is</dd></dfn>
 
-### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
 
 ## Buiten scope
 
-### Markeringen
+### Wegsoorten
 
-**Buiten scope** zijn <dfn><dt></dt>  <dd>Wegmarkering is het geheel aan tekens die op het wegdek staan aangegeven en het verkeer door middel van de visuele informatie geleiden. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
-Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de verkeersborden (en straks via digitale [=verkeerskundige informatie=]) al bekend zijn gemaakt. Ze worden niet gepubliceerd bij de [=verkeersbesluiten=].
+Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
+
+
+### Wegennetwerk
+Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk enmaakt het daarmee mogelijk om te verwijzen naar [NWB-wegvakken] en [NWB-juncties]. Deze laatsten worden niet binnen het informatiemodel gedefinieerd. 
+
+
+### Dynamische verkeersborden
+Buiten scope zijn de dynamische verkeersborden.
+
+<dfn data-lt="dynamische verkeersborden|dynamisch verkeersbord">Dynamisch verkeersbord</dfn>
+<dd>Een verkeersbord weergegeven op een electronisch signaleriungsbord, waarmee telkens wisselende afbeedlingen dan we teksten getoond kunnen worden.</dd></dfn>
+
+
+### Wegmarkeringen
+
+**Buiten scope** zijn de wegmarkeringen.
+
+<dfn data-lt="wegmarkering|wegmarkeringen">Wegmarkering</dfn>
+<dd> Op of in het oppervlak van de verharding aangebrachte tekens ter geleiding, waarschuwing, regeling of informatie van het verkeer <a href="https://data.crow.nl/thesaurus/term/735B2275-9052-4DD2-9F86-9EC796BDC483">Bron: CROW thesaurus</a>. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
+
+Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de verkeersborden (en straks via digitale [=verkeerskundige informatie=]) al bekend zijn gemaakt. 
 
 
 ### Bewegwijzering
 
-**Buiten scope** is de <dfn><dt>Bewegwijzering</dt><dd>de instructies aan het verkeer over de te nemen route.</dd></dfn>
+**Buiten scope** is de bewegwijzering.
+
+<dfn data-lt="Bewegwijzering">Bewegwijzering</dfn>
+<dd>Bewegwijzering is het geheel van visuele middelen dat op, langs of boven de weg is aangebracht om de weggebruiker in staat te stellen zijn route te bepalen. <a href="https://data.crow.nl/thesaurus/term/5883952B-E8D8-4EF6-B1A9-EB340C30006D">Bron: CROW thesaurus</a></dd>
+
+
+### Bebakening
+
+**Buiten scope** zijn de voorwerpen die ter geleiding, waarschuwing, regeling en beveiliging van het verkeer dienen.
+
+<dfn data-lt="Bebakening">Bebakening</dfn>
+<dd>Bebakening is het samenstel van op, in en naast de verharding aangebrachte verkeerstekens en voorwerpen die ter geleiding, waarschuwing, regeling en beveiliging van het verkeer dienen. <a href="https://data.crow.nl/thesaurus/term/DA24A2CE-114B-4226-B8FB-94DD79D94B7F">Bron: CROW thesaurus</a></dd>
+
 
 ### Verkeerslichten
 
@@ -109,37 +143,46 @@ Verkeerslichten zijn buiten scope.
 
 ### Weginrichting
 
-In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord of wegmarkering. De menselijke weggebruiker kan dit op zicht inschatten, een systeem wellicht niet. 
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. 
 
 <div class="issue" data-number="136"></div>
 
-Een ander voorbeeld hiervan is een visuele of echte wegvernauwing, met die bij een menselijke chauffeur leidt tot snelheidsmindering. In dit geval kan een adviessnelheid zonder verkeersbord worden opgenomen in het informatiemodel.
 
 ### Juridisch
 
 **Buiten scope** zijn de metadata over de juridische procedure van het [=verkeersbesluit=] bij de verkeersregel.
 
-### Datalevering
+### Wijzigingen
+
+Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijzigingen door de wegbeheerder aan het publicatieplatform worden aangeboden. 
 
 **Buiten scope** zijn:
-* De metadata over de transactie bij registratie en validatie van [=verkeerskundige informatie=] uit [=verkeersbesluiten=] of niet verkeersbesluitplichtige wijzigingen. 
-* De eisen aan de te leveren dataset of de kwaliteitstoets bij de dataset
+* De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=]. 
+* De informatieleveringsspecificatie voor een te leveren dataset met wijzigingen.
+* Een validatierapport of de kwaliteitstoets bij de dataset.
 
 <aside class="note" title="Transactie bij een datalevering">
 Een hapy flow van een transactie is bijvoorbeeld als volgt:
 <ul>
-
 <li>De wegbeheerder biedt de wijziging aan en vraagt om deze te publiceren.</li> 
 <li>De beheerder van de landelijke registratie belooft dit te zullen doen na validatie.</li> 
 <li>Het Systeem controleert of aan alle leveringsvoorwaarden is voldaan en of de aangeboden wijziging aansluit op de ongewijzigde netwerkdelen.</li> 
 <li>De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden en toont welke wijzigingen worden doorgevoerd.</li> 
 <li>De wegbeheerder accepteert de wijzigingsvoorstellen van de beheerder van de landelijke registratie.</li> </ul> 
+
+Daarnaast is voor een transactie een "Aanleverinstructie" nodig waarin staat:
+- Hoe een wijziging kan worden aangeleverd: via VISI, een website, via een API, met adressering van de afnemer en het te volgen transactieprotocol
+</aside> 
+
+<aside class="note" title="Informatieleveringsspecificatie">
+De wegbeheerder heeft voor het aanleveren van een wijziging in de [=verkeerskundige informatie=] een "Informatieleveringsspecificatie" nodig. In een Informatieleveringsspecificatie staat:<ul>
+<li>Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
+<li>Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
+<li>In welk formaat of welke taal de wijziging kan worden aangeleverd</li>
+<li>Of informatie mag worden toegevoegd uit een eigen informatiemodel</li> </ul> 
 </aside> 
 
 
-### Wegsoorten
-
-Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 
 
 

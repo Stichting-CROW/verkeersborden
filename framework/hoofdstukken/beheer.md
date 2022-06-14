@@ -1,4 +1,4 @@
-# Organisatorische uitgangspunten
+# Uitgangspunten beheer
 
 Het [=Informatiemodel Verkeerstekens=] zal in beheer genomen moet worden om up to date te blijven.
 
@@ -28,7 +28,7 @@ Het beheer van het [=Informatiemodel Verkeerstekens=] wordt ondergebracht bij CR
 
 De Stuurgroep IMBOR is verantwoordelijk voor.....
 
-Welke overheidspartijen of partnerstandaarden moeten deelnemen in een sturend orgaan dat verantwoordelijk is voor besluitvorming en evenwichtige afweging van de belangen van de stakeholders?
+Welke overheidspartijen of partners moeten deelnemen in een sturend orgaan dat verantwoordelijk is voor besluitvorming en evenwichtige afweging van de belangen van de stakeholders?
 
 Een stuurgroep, gebruikersgroep, expertgroep, werkgroep dient een onafhankelijke voorzitter te hebben. De rol van de voorzitter is van cruciaal belang, en heeft veel invloed op het eindresultaat.
 
