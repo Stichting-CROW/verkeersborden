@@ -82,7 +82,7 @@ Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de n
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een zone:
     * De [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] wordt direct aan de wegvakken in de zone verbonden
     * De [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] krijgt daarnaast een relatie met een "zone"
-    * De "zone" MAG een relatie hebben naar een geometrisch object (vlak), dit is niet verplicht. 
+* Het informatiemodel MOET de mogelijkheid bieden om een relatie tussen een zone en een geometrisch object (vlak) te leggen, maar de gebruiker is niet verplicht om dit te doen.
 
 Omdat de verkeersborden al gerelateerd zijn aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], is het niet nodig om deze ook te koppelen aan een zone.
 
