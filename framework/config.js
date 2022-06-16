@@ -15,4 +15,5 @@ var respecConfig = {
     },
   ],
   github: "https://github.com/Stichting-CROW/verkeersborden",
+  hypothesisComments: true,
 };
