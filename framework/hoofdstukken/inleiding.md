@@ -29,7 +29,7 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 
 ### Informatiebehoefte
 
-Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder, eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. 
+Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen.  Vanuit Smart Mobility is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per rijstrook en richting. Zodat een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
 
 <dfn data-lt="verkeerskundige informatie">Verkeerskundige informatie</dfn>
 <dd>Informatie over de op een weg geldende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en de bijbehorende [=verkeerstekens=].</dd>
@@ -53,7 +53,7 @@ Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek a
 
 In Nederland wordt digitale [=verkeerskundige informatie=] vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
 
-Er ontbreekt echter een categorie in de huidig beschikbare digitale informatie: 
+Er ontbreekt echter een categorie in de huidig beschikbare digitale informatie: de [=verkeerskundige informatie=]. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder, eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. Het [=Informatiemodel Verkeerstekens=] moet daarbij helpen.
 
 
 <dfn data-lt="verkeersregel|verkeersregels">Verkeersregels</dfn>
@@ -68,7 +68,6 @@ Er ontbreekt echter een categorie in de huidig beschikbare digitale informatie:
 <dfn data-lt="verkeerstekens|verkeersteken">Verkeersteken</dfn>
 <dd>Een wettelijk vastgesteld teken ter regeling, waarschuwing, geleiding of informering van het verkeer. Onder de verkeerstekens vallen verkeersborden en [=wegmarkeringen=].</dd>
 
-<div class="issue" data-number="134"></div>
 
 
 #### Verkeersbesluiten
@@ -95,13 +94,13 @@ Dit document beschrijft de volgende zaken:
 
 **4. Raakvlakanalyse** De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er al zijn voor:
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
-2. De "digitale representatie" van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+2. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
-**5. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale verkleerskundige informatie door een systeem van een [=weggebruiker=].
+**5. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een systeem van een [=weggebruiker=].
 
 **6. Toepassing** Het hoofdstuk over toepassing van het informatiemodel geeft een inzicht in het potentiele gebruik van het informatiemodel bij het genereren van digitale [=verkeerskundige informatie=].
 
-**7. Technische Uitgangspunten** In Technische Uitganngspunten staan de normen en richtlijnen waaraan het [=Informatiemodel Verkeerstekens=] dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
+**7. Technische Uitgangspunten** In Technische Uitgangspunten staan de normen en richtlijnen waaraan het [=Informatiemodel Verkeerstekens=] dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
 
 **8. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden .
 

@@ -1,81 +1,38 @@
 # Technische Uitgangspunten
 
-## Informatiemodellering
+## Inleiding
+In dit hoofdstuk staan de normen en richtlijnen waaraan het [=Informatiemodel Verkeerstekens=] dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
+
+## NEN2660-2:2022
+
+<dfn data-lt="NEN2660-2:2022">NEN2660-2:2022</dfn>
+<dd>NEN2660-2 is een praktische invulling van NEN2660_1. In deel 1 zijn meer theoretische/conceptuele en bouw- en taalonafhankelijke modelleerpatronen vastgelegd. Deze norm is vrij beschikbaar bij de NEN en is ontwikkeld in een samenwerking tussen overheden, adviesbureau's en kennisinstituten. Het heeft als doel de standaard te zijn voor de ontwikkeling van ontologieën in de gebouwde omgeving. Het bevat drie belangrijke (hoofd)onderdelen:
+<ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om IMBOR in uit te drukken.</li>
+<li>Extensies hierop voor de meest gebruikt toepassingen in de gebouwde omgeving. </li>
+<li>Taalbinding naar (en daarmee de keuze voor) de semantisch web W3C talen: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]</li></dd>
+
+* Het informatiemodel MOET worden opgesteld conform de [=NEN2660-2:2022=].
+* Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.
+* Het informatiemodel MOET van alle concepten een definitie geven of verwijzen naar een definitie in wetten of andere informatiemodellen.
+
+## NEN 3610
+<dfn data-lt="NEN3610">NEN3610</dfn>
+<dd>NEN 3610 is de standaard voor het uitwisselen van geo-informatie, gebruikt Unified Modeling Language (UML) als formele taal voor het vastleggen van semantiek en beveelt Geography Markup Language (GML) aan als technisch uitwisselingsformat. NEN 3610 is hiermee nog niet geschikt om semantiek, gegevensdeling en uitwisseling middels Linked Data te realiseren. <a href="https://geonovum.github.io/NEN3610-Linkeddata/#inleiding">bron: Geonovum</a>  </dd>
+
+* Het informatiemodel MOET waar mogelijk aangesloten op de [=NEN3610=]. Bij tegenstrijdigheden geldt de [=NEN2660-2:2022=].
+
+## MIM
+
+<dfn data-lt="MIM">MIM</dfn>
+<dd>Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen. Het model bevat duidelijke afspraken over het vastleggen van gegevensspecificaties en biedt tegelijkertijd ruimte aan de verschillende niveaus van modellering. Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel.  ondanks enkele tegenstrijdigheden met de [=NEN2660-2:2022=]. Het MIM gaat uit van:
+<ol><li>Het scheiden van soort informatiemodellen in niveaus.</li>
+<li>De inhoudelijke modellering van modelconcepten en de metagegevens ervan. Door een informatiemodel uit te drukken in het MIM is een standaard manier van vastleggen en uitleg geborgd.</li>
+Het MIM gaat uit van een begrippenkader en een explicietere modellering van een informatiemodel.</dd>
+
+* Het informatiemodel MOET waar mogelijk aangesloten op de [=MIM=]. Bij tegenstrijdigheden geldt de [=NEN2660-2:2022=].
 
 
 
-* Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
-* Het informatiemodel MOET van alle concepten een definite geven of verwijzen naar een definitie in wetten of andere informatiemodellen. 
-
-
-
-### Verkeersregels 
-
-
-* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=]. 
-
-### Verkeersborden
-
-* Het informatiemodel MOET de types en definities van de verkeersborden bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan.
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden of een bord bedoeld is als [=voorwaarschuwingsbord=].
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden of een bord bedoeld is als [=herhalingsbord=].
-
-<dfn data-lt="Voorwaarschuwingsbord">Voorwaarschuwingsbord</dfn>
-<dd>Een op enige afstand voor het bord geplaatst identiek bord van bijlage 1 van het RVV 1990, met een onderbord waarop een afstandsaanduiding is vermeld. Definitie conform de [=BABW=].</dd>
-
-<dfn data-lt="Herhalingsbord">Herhalingsbord</dfn>
-<dd>Een bord geplaatst ter herinnering aan eenzelfde bord dat aan het begin van een en hetzelfde wegvak geplaatst is. Definitie conform de [=BABW=].</dd>
-
-
-#### Bordlocatie
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWM-junctie] op het startpunt van de rijrichting aan te duiden.
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat gemeten in meters vanaf de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat: boven de weg, of links of rechts naast de weg.
-
-<div class="issue" data-number="145"></div>
-
-#### Bordafbeelding
-* Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten. 
-* De afbeeldingen van de borden MOETEN gevisualiseerd zijn conform de [=BABW=]:
-
-
-#### Onderborden
-* Het informatiemodel MOET de types en definities van onderborden definiëren die volgen uit de [=RVV 1990=].
-* Het informatiemodel MOET de mogelijkheid bieden om een niet nader aangeduid onderbord te gebruiken met een vrij in te vullen tekst.
-* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
-
-
-
-
-## Werkingslengte
-* Het informatiemodel MOET aansluiten op het informatiemodel van het [=NWB=] om te zorgen dat [=Verkeerskundige informatie=] gekoppeld kan worden aan het juiste wegvak en de juiste richting in het wegvak.
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een of meerdere [=NWB-wegvakken=]; deze wegvakken kunnen één 
-* Het informatiemodel MOET als default situatie hebben dat het werkingsgebied het gehele [=NWB-wegvak=] beslaat, in beide richtingen en van [NWB-junctie] tot [NWB-junctie].
-* Het informatiemodel MOET de mogelijkheid bieden om de [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] te laten gelden voor een richting of een gedeelte van een [=NWB-Wegvak=].
-
-<dfn data-lt="Werkingslengte">Werkingslengte</dfn>
-<dd>De lengte in het wegvak waarvoor een [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] met bijbehorend verkeersbord geldt.</dd>
-
-
-### Beginpunt
-* Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] start op de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden vanaf een specifiek beginpunt gemeten in meters vanaf de [NWB-junctie].
-
-Default start 
-
-### Eindpunt
-* Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] eindigt op de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden tot een specifiek eindpunt op x lengte ná de [NWB-junctie]. 
-
-<div class="issue" data-number="146"></div>
-
-## Rijrichting
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden vanaf welke [NWB-junctie] een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, indien deze alleen in één richting geldt. 
-
-## Rijstrook
-* Het informatiemodel MOET de mogelijkheid bieden om de verkeersregel te laten gelden voor één van de [=rijstroken=], die worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
-
-Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de nummering niet meer te worden aangeduid. 
 
 ## Zone
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een zone:
