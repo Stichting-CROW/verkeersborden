@@ -17,6 +17,10 @@ De doelgroep van de use case centraal staan zijn de [=weggebruikers=], die tijde
 
 In het volgende hoofdstuk wordt ingegaan op een andere groep gebruikers van het [=Informatiemodel Verkeerstekens=]: de wegbeheerders, die digitale [=verkeerskundige informatie=] beheren en publiceren.
 
+### Locatie bepalen
+De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] er gelden. Dit betekent, dat het systeem het wegvak moet kunnen herkennen waarop het rijdt, op basis van de locatie. Daarnaast moet ook de plaats in de lengterichting van het wegvak bepaald kunnen worden.
+
+
 
 ### Visuele ondersteuning
 De [=weggebruikers=] willen door hun systeem visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. 
