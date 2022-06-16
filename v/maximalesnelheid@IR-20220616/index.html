@@ -1,0 +1,589 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 25.18.4">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font:small Helvetica Neue,sans-serif,Droid Sans Fallback;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+<link rel="shortcut icon" type="image/x-icon" href="https://docs.crow.nl/respec-design/logos/crow.ico">
+  
+  
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  
+  
+<title>Wettelijke maximum snelheid</title>
+  
+  
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+.hljs{background:0 0!important}
+a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+h2,h3,h4,h5,h6{position:relative}
+aside.example .marker>a.self-link{color:inherit}
+h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}
+h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}
+@media (max-width:767px){
+dd{margin-left:0}
+h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<meta name="description" content="Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens en Verkeersbesluiten, met de wettelijke maximum snelheid.">
+<link rel="canonical" href="https://www.w3.org/TR/maximalesnelheid/">
+<script type="application/ld+json">{
+  "@context": [
+    "http://schema.org",
+    {
+      "@vocab": "http://schema.org/",
+      "@language": "nl",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "datePublished": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date"
+      },
+      "inLanguage": {
+        "@language": null
+      },
+      "isBasedOn": {
+        "@type": "@id"
+      },
+      "license": {
+        "@type": "@id"
+      }
+    }
+  ],
+  "id": "https://www.w3.org/TR/maximalesnelheid/",
+  "type": [
+    "TechArticle"
+  ],
+  "name": "Wettelijke maximum snelheid",
+  "inLanguage": "nl",
+  "license": "https://creativecommons.org/licenses/by/4.0/legalcode",
+  "datePublished": "2022-06-16",
+  "copyrightHolder": {
+    "name": "Stichting CROW",
+    "url": "https://crow.nl/"
+  },
+  "discussionUrl": "https://github.com/Stichting-CROW/verkeersborden/issues/",
+  "alternativeHeadline": "Hoe hard mag ik hier?",
+  "description": "Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens en Verkeersbesluiten, met de wettelijke maximum snelheid.",
+  "editor": [
+    {
+      "type": "Person",
+      "name": "Elisabeth Klören",
+      "worksFor": {
+        "name": "CROW"
+      }
+    },
+    {
+      "type": "Person",
+      "name": "Redmer Kronemeijer",
+      "worksFor": {
+        "name": "CROW"
+      }
+    }
+  ],
+  "citation": []
+}</script>
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specType": "CROW-DOC",
+  "specStatus": "IR",
+  "pubDomain": "verkeersborden",
+  "shortName": "maximalesnelheid",
+  "subtitle": "Hoe hard mag ik hier?",
+  "editors": [
+    {
+      "name": "Elisabeth Klören",
+      "company": "CROW"
+    },
+    {
+      "name": "Redmer Kronemeijer",
+      "company": "CROW"
+    }
+  ],
+  "github": "https://github.com/Stichting-CROW/verkeersborden",
+  "publishDate": "2022-06-16",
+  "reviewDateEnd": "2022-06-30",
+  "hypothesisComments": true,
+  "publishISODate": "2022-06-16T00:00:00.000Z",
+  "generatedSubtitle": "undefined 16 juni 2022"
+}</script>
+<link rel="stylesheet" href="https://docs.crow.nl/respec-design/crow-specStatus-none.css"></head>
+
+<body class="h-entry toc-inline"><div class="head">
+    <a class="logo" href="https://crow.nl/"><img alt="Kennisplatform CROW" width="132" height="40" src="https://www.crow.nl/medialibrary/CROW/img/CROW-logo.svg"></a> <h1 id="title" class="title">Wettelijke maximum snelheid</h1>
+    <h2 id="subtitle" class="subtitle">Hoe hard mag ik hier?</h2>
+    <h2>
+      CROW 
+      <br>
+      
+      <time class="dt-published" datetime="2022-06-16">16 juni 2022</time>
+    </h2>
+    <dl>
+      
+      <dt>Laatste werkversie:</dt><dd><a href="https://docs.crow.nl/verkeersborden/maximalesnelheid/">https://docs.crow.nl/verkeersborden/maximalesnelheid/</a></dd>
+      
+      
+      
+      
+      
+      <dt>Redacteurs:</dt>
+      <dd class="p-author h-card vcard"><span class="p-name fn">Elisabeth Klören</span> (CROW) </dd><dd class="p-author h-card vcard"><span class="p-name fn">Redmer Kronemeijer</span> (CROW) </dd>
+      
+      
+      <dt>Doe mee:</dt><dd>
+    <a href="https://github.com/Stichting-CROW/verkeersborden/">GitHub Stichting-CROW/verkeersborden</a>
+  </dd><dd>
+    <a href="https://github.com/Stichting-CROW/verkeersborden/issues/">Dien een melding in</a>
+  </dd><dd>
+    <a href="https://github.com/Stichting-CROW/verkeersborden/commits/gh-pages">Revisiehistorie</a>
+  </dd><dd>
+    <a href="https://github.com/Stichting-CROW/verkeersborden/pulls/">Pull requests</a>
+  </dd>
+    </dl>
+    
+    
+    
+    <p class="copyright">
+    Copyright ©
+    2022
+    
+    <a href="https://crow.nl/">Stichting CROW, Ede</a>.
+    Gedistribueerd onder 
+    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot">Creative Commons Naamsvermelding 4.0 Internationaal</a>.
+    </p>
+    <hr title="Separator for header">
+  </div>
+  
+  <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens en Verkeersbesluiten, met de wettelijke maximum snelheid.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#wettelijke-grondslag"><bdi class="secno">3. </bdi>Wettelijke grondslag</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#standaard-wettelijke-maximumsnelheid"><bdi class="secno">3.1 </bdi>Standaard wettelijke maximumsnelheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wegtype"><bdi class="secno">3.1.1 </bdi>Wegtype</a></li><li class="tocline"><a class="tocxref" href="#voertuigtype"><bdi class="secno">3.1.2 </bdi>Voertuigtype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#speedpedelec"><bdi class="secno">3.1.2.1 </bdi>Speedpedelec</a></li></ol></li><li class="tocline"><a class="tocxref" href="#zicht"><bdi class="secno">3.1.3 </bdi>Zicht</a></li></ol></li><li class="tocline"><a class="tocxref" href="#lokale-maximumsnelheid"><bdi class="secno">3.2 </bdi>Lokale maximumsnelheid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#borden"><bdi class="secno">3.2.1 </bdi>Borden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#a1"><bdi class="secno">3.2.1.1 </bdi>A1</a></li><li class="tocline"><a class="tocxref" href="#a3"><bdi class="secno">3.2.1.2 </bdi>A3</a></li><li class="tocline"><a class="tocxref" href="#a2"><bdi class="secno">3.2.1.3 </bdi>A2</a></li><li class="tocline"><a class="tocxref" href="#f8"><bdi class="secno">3.2.1.4 </bdi>F8</a></li><li class="tocline"><a class="tocxref" href="#f9"><bdi class="secno">3.2.1.5 </bdi>F9</a></li><li class="tocline"><a class="tocxref" href="#woonerf"><bdi class="secno">3.2.1.6 </bdi>Woonerf</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rijbaan"><bdi class="secno">3.2.2 </bdi>Rijbaan</a></li><li class="tocline"><a class="tocxref" href="#onderborden"><bdi class="secno">3.2.3 </bdi>Onderborden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#zone"><bdi class="secno">3.2.3.1 </bdi>Zone</a></li><li class="tocline"><a class="tocxref" href="#voertuigtype-0"><bdi class="secno">3.2.3.2 </bdi>Voertuigtype</a></li><li class="tocline"><a class="tocxref" href="#overig"><bdi class="secno">3.2.3.3 </bdi>Overig</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel"><bdi class="secno">4. </bdi>Informatiemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">4.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#def-nwb-wegvak"><bdi class="secno">4.2 </bdi>def <code>nwb-Wegvak</code></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#def-wegvak-type"><bdi class="secno">4.2.1 </bdi>def <code>Wegvak.type</code></a></li><li class="tocline"><a class="tocxref" href="#def-nwb-junctie"><bdi class="secno">4.2.2 </bdi>def <code>nwb-junctie</code></a></li></ol></li><li class="tocline"><a class="tocxref" href="#voertuigtype-1"><bdi class="secno">4.3 </bdi>Voertuigtype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#type-aanhangwagen"><bdi class="secno">4.3.1 </bdi>Type aanhangwagen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#def-wegvak-zone"><bdi class="secno">4.4 </bdi>def <code>Wegvak.zone</code></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#zone-type"><bdi class="secno">4.4.1 </bdi><code>Zone.type</code></a></li></ol></li><li class="tocline"><a class="tocxref" href="#def-wettelijke-maximumsnelheid"><bdi class="secno">4.5 </bdi>def <code>Wettelijke maximumsnelheid</code></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#def-maximale-wettelijke-maximumsnelheid"><bdi class="secno">4.5.1 </bdi>def <code>maximale wettelijke maximumsnelheid</code></a></li></ol></li><li class="tocline"><a class="tocxref" href="#def-aanvullende-wettelijke-maximumsnelheid"><bdi class="secno">4.6 </bdi>def <code>aanvullende wettelijke maximumsnelheid</code></a></li><li class="tocline"><a class="tocxref" href="#locatie-in-het-wegvak"><bdi class="secno">4.7 </bdi>Locatie in het wegvak</a></li><li class="tocline"><a class="tocxref" href="#informatiemodel-0"><bdi class="secno">4.8 </bdi>Informatiemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#junctie"><bdi class="secno">4.8.1 </bdi>Junctie</a></li><li class="tocline"><a class="tocxref" href="#rijrichting"><bdi class="secno">4.8.2 </bdi>Rijrichting</a></li><li class="tocline"><a class="tocxref" href="#rijstrook"><bdi class="secno">4.8.3 </bdi>Rijstrook</a></li><li class="tocline"><a class="tocxref" href="#beginpunt"><bdi class="secno">4.8.4 </bdi>Beginpunt</a></li><li class="tocline"><a class="tocxref" href="#eindpunt"><bdi class="secno">4.8.5 </bdi>Eindpunt</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bord-markeringspunt"><bdi class="secno">4.8.5.1 </bdi>Bord / markeringspunt</a></li><li class="tocline"><a class="tocxref" href="#grafische-weergave-van-de-borden"><bdi class="secno">4.8.5.2 </bdi>Grafische weergave van de borden</a></li></ol></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#data-verzamelen"><bdi class="secno">5. </bdi>Data verzamelen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rollen-en-taken"><bdi class="secno">5.1 </bdi>Rollen en taken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#koop"><bdi class="secno">5.1.1 </bdi>KOOP</a></li><li class="tocline"><a class="tocxref" href="#ndw"><bdi class="secno">5.1.2 </bdi>NDW</a></li><li class="tocline"><a class="tocxref" href="#wegbeheerders"><bdi class="secno">5.1.3 </bdi>Wegbeheerders</a></li><li class="tocline"><a class="tocxref" href="#bestaand-netwerk"><bdi class="secno">5.1.4 </bdi>Bestaand netwerk</a></li><li class="tocline"><a class="tocxref" href="#wijzigingen-in-het-netwerk"><bdi class="secno">5.1.5 </bdi>Wijzigingen in het netwerk</a></li><li class="tocline"><a class="tocxref" href="#bestaande-verkeersregels"><bdi class="secno">5.1.6 </bdi>Bestaande verkeersregels</a></li><li class="tocline"><a class="tocxref" href="#nieuwe-verkeersregels"><bdi class="secno">5.1.7 </bdi>Nieuwe verkeersregels</a></li><li class="tocline"><a class="tocxref" href="#bestaande-borden"><bdi class="secno">5.1.8 </bdi>Bestaande borden</a></li><li class="tocline"><a class="tocxref" href="#nieuwe-borden"><bdi class="secno">5.1.9 </bdi>Nieuwe borden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#wegbeheerders-0"><bdi class="secno">5.2 </bdi>Wegbeheerders</a></li><li class="tocline"><a class="tocxref" href="#nwb"><bdi class="secno">5.3 </bdi>NWB</a></li><li class="tocline"><a class="tocxref" href="#sensordata"><bdi class="secno">5.4 </bdi>Sensordata?</a></li><li class="tocline"><a class="tocxref" href="#andere-data"><bdi class="secno">5.5 </bdi>Andere data?</a></li><li class="tocline"><a class="tocxref" href="#wegvakken"><bdi class="secno">5.6 </bdi>Wegvakken</a></li><li class="tocline"><a class="tocxref" href="#bestaande-verkeersbesluiten"><bdi class="secno">5.7 </bdi>Bestaande verkeersbesluiten</a></li><li class="tocline"><a class="tocxref" href="#nieuwe-verkeersbesluiten"><bdi class="secno">5.8 </bdi>Nieuwe verkeersbesluiten</a></li><li class="tocline"><a class="tocxref" href="#bestaande-borden-0"><bdi class="secno">5.9 </bdi>Bestaande borden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#beheerproces-data"><bdi class="secno">6. </bdi>Beheerproces data</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rollen-en-taken-0"><bdi class="secno">6.1 </bdi>Rollen en taken</a></li><li class="tocline"><a class="tocxref" href="#data-inwinnen"><bdi class="secno">6.2 </bdi>Data inwinnen</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#bestaande-situatie"><bdi class="secno">6.2.1 </bdi>Bestaande situatie</a></li><li class="tocline"><a class="tocxref" href="#wijzigingen"><bdi class="secno">6.2.2 </bdi>Wijzigingen</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-valideren"><bdi class="secno">6.3 </bdi>Data valideren</a></li><li class="tocline"><a class="tocxref" href="#data-vrijgeven"><bdi class="secno">6.4 </bdi>Data vrijgeven</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-publiceren"><bdi class="secno">7. </bdi>Data publiceren</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#netwerkregistratie"><bdi class="secno">7.1 </bdi>Netwerkregistratie</a></li><li class="tocline"><a class="tocxref" href="#publiceren-verkeersbesluit"><bdi class="secno">7.2 </bdi>Publiceren verkeersbesluit</a></li><li class="tocline"><a class="tocxref" href="#wegvakken-0"><bdi class="secno">7.3 </bdi>Wegvakken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#data-gebruiken"><bdi class="secno">8. </bdi>Data gebruiken</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#geometrische-nauwkeurigheid"><bdi class="secno">8.1 </bdi>Geometrische nauwkeurigheid</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">A. </bdi>Termen en definities</a></li></ol></nav>
+  
+  
+  
+    <section id="conformance"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit<a class="self-link" aria-label="§" href="#conformance"></a></h2><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section> 
+  
+  <section data-format="markdown" class="informative" id="inleiding"><h2 id="x2-inleiding"><bdi class="secno">2. </bdi>Inleiding<a class="self-link" aria-label="§" href="#inleiding"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><p>Omdat het onderwerp verkeersbesluiten zoveel raakvlakken en stakeholders heeft, is het moeilijk om uitgangspunten goed op te stellen. Daarom is gekozen om een eerste proef op de som te nemen met de wettelijke maximumsnelheid. Daarom is dit document opgesteld</p><p><img src="./hoofdstukken/media/maximalesnelheid.png" alt="Maximale snelheid voor navigatiesystemen"></p></section>
+  <section data-format="markdown" class="informative" id="wettelijke-grondslag"><h2 id="x3-wettelijke-grondslag"><bdi class="secno">3. </bdi>Wettelijke grondslag<a class="self-link" aria-label="§" href="#wettelijke-grondslag"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><section id="standaard-wettelijke-maximumsnelheid"><h3 id="x3-1-standaard-wettelijke-maximumsnelheid"><bdi class="secno">3.1 </bdi>Standaard wettelijke maximumsnelheid<a class="self-link" aria-label="§" href="#standaard-wettelijke-maximumsnelheid"></a></h3><section id="wegtype"><h4 id="x3-1-1-wegtype"><bdi class="secno">3.1.1 </bdi>Wegtype<a class="self-link" aria-label="§" href="#wegtype"></a></h4><p>Indien de snelheid niet staat aangegeven, geldt in heel Nederland een wettelijke maximum snelheid afhankelijk van het wegtype en het voertuigtype. </p><p>De volgende wegtypen worden benoemd:</p><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=20&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 20</a>:</p><ul>
+<li>binnen de kom, voor motorvoertuigen 50 km/h</li>
+</ul><p>Binnen de kom, voor andere voertuigen dan motorvoertuigen, worden per specifieker wegtype snelheden gegeven:</p><ul>
+<li>het fiets/bromfietspad; </li>
+<li>de rijbaan; </li>
+<li>het fietspad; </li>
+<li>het troittoir.</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=21&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 21</a>:
+Voor motorvoertuigen:</p><ul>
+<li>buiten de kom: voor motorvoertuigen 80 km/h; voor de andere voertuigen hangt de snelheid weer af van de locatie op de weg</li>
+<li>op autowegen: 100 km/h</li>
+<li>op autosnelwegen: 130 km/h</li>
+</ul><p>Buiten de kom, voor andere voertuigen dan motorvoertuigen, worden per specifieker wegtype snelheden gegeven:</p><ul>
+<li>het fiets/bromfietspad; </li>
+<li>de rijbaan; </li>
+<li>het fietspad; </li>
+<li>het troittoir.</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=22a&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 Artikel 22a</a> noemt de volgende wegtypen:</p><ul>
+<li>Buiten de kom</li>
+<li>Binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad;</li>
+<li>Binnen de kom, die gesloten zijn voor fietsers</li>
+<li>Binnen de kom, waar een maximumsnelheid van 70 km per uur geldt (sic)</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=17&amp;artikel=45&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 45</a>:</p><ul>
+<li>op erven: 15 km/h.</li>
+</ul></section><section id="voertuigtype"><h4 id="x3-1-2-voertuigtype"><bdi class="secno">3.1.2 </bdi>Voertuigtype<a class="self-link" aria-label="§" href="#voertuigtype"></a></h4><p>Voor specifieke voertuigtypen gelden beperkingen aan de wettelijke maximumsnelheid. Per wegtype staat in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2021-07-01&amp;g=2021-07-01">RVV 199 § 8. Maximumsnelheid</a> de maximale snelheid beschreven. </p><p>De volgende voertuigen worden benoemd:
+<a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=20&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 20</a> en <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=21&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 21</a>:</p><ul>
+<li>Motorvoertuigen</li>
+<li>Bromfietsen</li>
+<li>Gehandicaptenvoertuigen, uitgerust met een motor</li>
+<li>Snorfietsen</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=22&amp;z=2021-07-01&amp;g=2021-07-01">RVV artikel 22</a> geeft onafhankelijk van het wegtype snelheidsbeperkingen voor de volgende voertuigen:</p><ul>
+<li>Kampeerwagens die volgens het kentekenbewijs behoren tot de categorie bedrijfsauto’s en waarvan de toegestane maximummassa meer bedraagt dan 3500 kg</li>
+<li>Vrachtauto’s</li>
+<li>Autobussen, niet zijnde T100 bussen</li>
+<li>T100 bussen</li>
+<li>Brommobielen</li>
+<li>Snorfietsen</li>
+<li>Personenauto’s, bestelauto’s, motorfietsen, driewielige motorvoertuigen en T100-bussen, die een aanhangwagen met een toegestane maximummassa van niet meer dan 3500 kg voortbewegen</li>
+<li>Overige motorvoertuigen met aanhangwagen</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=22a&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 Artikel 22a</a> noemt de volgende voertuigtypen:</p><ul>
+<li>Landbouwtrekkers;</li>
+<li>Bosbouwtrekkers;</li>
+<li>Motorrijtuigen met beperkte snelheid;</li>
+<li>Mobiele machines, al dan niet met aanhangwagen.</li>
+</ul><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=17&amp;artikel=45&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 45</a>:</p><ul>
+<li>Motorvoertuig</li>
+</ul><section id="speedpedelec"><h5 id="x3-1-2-1-speedpedelec"><bdi class="secno">3.1.2.1 </bdi>Speedpedelec<a class="self-link" aria-label="§" href="#speedpedelec"></a></h5><p>Een speedpedelec is wettelijk gezien een bromfiets. 
+Veel wegbeheerders staan een speedpedelec toch toe op het fietspad binnen de bebouwde kom.
+Er is geen wettelijke maximumsnelheid op het fietspad. </p></section></section><section id="zicht"><h4 id="x3-1-3-zicht"><bdi class="secno">3.1.3 </bdi>Zicht<a class="self-link" aria-label="§" href="#zicht"></a></h4><p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=19&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 19</a> geeft aan:<br>De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
+Deze inschatting verschilt per voertuig en is daarom <em>buiten scope</em> van het informatiemodel.</p></section></section><section id="lokale-maximumsnelheid"><h3 id="x3-2-lokale-maximumsnelheid"><bdi class="secno">3.2 </bdi>Lokale maximumsnelheid<a class="self-link" aria-label="§" href="#lokale-maximumsnelheid"></a></h3><p>De verkeersborden in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;bijlage=1&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 Bijlage 1. Verkeersborden</a> geven aanvullend snelheidsbeperkingen aan, en het einde van de aanvullende snelheidsbeperking. Indien geen einde is aangegeven geldt de beperking het hele wegvak (een wegvak eindigt altijd bij een kruising).</p><section id="borden"><h4 id="x3-2-1-borden"><bdi class="secno">3.2.1 </bdi>Borden<a class="self-link" aria-label="§" href="#borden"></a></h4><section id="a1"><h5 id="x3-2-1-1-a1"><bdi class="secno">3.2.1.1 </bdi>A1<a class="self-link" aria-label="§" href="#a1"></a></h5><p>Indien een A1 verkeersbord is geplaatst, geldt de maximum snelheid die is aangegeven op het bord
+<img src="hoofdstukken/media/A1.png" alt="A1" height="371" width="376"></p></section><section id="a3"><h5 id="x3-2-1-2-a3"><bdi class="secno">3.2.1.2 </bdi>A3<a class="self-link" aria-label="§" href="#a3"></a></h5><p>Indien een A3 verkeersbord is geplaatst, geldt de maximum snelheid die is aangegeven op het bord 
+<img src="hoofdstukken/media/A3.png" alt="A3" height="361" width="444"></p><p>Een A3 verkeersbord gaat boven een A1 verkeersbord volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=1&amp;artikel=63b&amp;z=2020-01-01&amp;g=2020-01-01">RVV 1990 Art 63b</a></p></section><section id="a2"><h5 id="x3-2-1-3-a2"><bdi class="secno">3.2.1.3 </bdi>A2<a class="self-link" aria-label="§" href="#a2"></a></h5><p>De snelheidsbeperking geldt tot einde wegvak tenzij een van de volgende borden is geplaatst:</p><p>Een A2 verkeersbord geeft aan dat de snelheidsbeperking eindigt:
+<img src="hoofdstukken/media/A2.png" alt="A2" height="385" width="389"></p><p>Een electronisch bord dat een A2 bord weergeeft is ook geldig volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=64a&amp;z=2020-01-01&amp;g=2020-01-01">RVV 1990 Art 64a</a></p></section><section id="f8"><h5 id="x3-2-1-4-f8"><bdi class="secno">3.2.1.4 </bdi>F8<a class="self-link" aria-label="§" href="#f8"></a></h5><p>Een F8 bord na een A1 bord geeft aan dat de snelheidsbeperking eindigt:
+<img src="hoofdstukken/media/F8.png" alt="F8" height="353" width="355"></p></section><section id="f9"><h5 id="x3-2-1-5-f9"><bdi class="secno">3.2.1.5 </bdi>F9<a class="self-link" aria-label="§" href="#f9"></a></h5><p>Een F9 bord na een A3 bord geeft aan dat de snelheidsbeperking eindigt:
+<img src="hoofdstukken/media/F9.png" alt="F9" height="351" width="438"></p></section><section id="woonerf"><h5 id="x3-2-1-6-woonerf"><bdi class="secno">3.2.1.6 </bdi>Woonerf<a class="self-link" aria-label="§" href="#woonerf"></a></h5><div class="issue" id="issue-container-number-93"><div role="heading" class="issue-title marker" id="h-issue" aria-level="6"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/93"><span class="issue-number">Issue 93</span></a><span class="issue-label" aria-label="This issue is labelled as Maximale snelheid.">: woonerfbord toevoegen <a class="respec-gh-label" href="https://github.com/Stichting-CROW/verkeersborden/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Maximale+snelheid%22" style="background-color: rgb(0, 117, 202); color: rgb(255, 255, 255);">Maximale snelheid</a></span></div><p dir="auto">woonerfbord</p></div></section></section><section id="rijbaan"><h4 id="x3-2-2-rijbaan"><bdi class="secno">3.2.2 </bdi>Rijbaan<a class="self-link" aria-label="§" href="#rijbaan"></a></h4><p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=65&amp;z=2020-01-01&amp;g=2020-01-01">RVV 1990 art 65</a> kan een verkeersbord, en dus ook een snelheidsbord, gelden voor maar één rijbaan. De weggebruiker moet dus weten op welke rijbaan hij zich bevindt en welke snelheid specifiek geldt voor deze rijbaan.</p></section><section id="onderborden"><h4 id="x3-2-3-onderborden"><bdi class="secno">3.2.3 </bdi>Onderborden<a class="self-link" aria-label="§" href="#onderborden"></a></h4><section id="zone"><h5 id="x3-2-3-1-zone"><bdi class="secno">3.2.3.1 </bdi>Zone<a class="self-link" aria-label="§" href="#zone"></a></h5><p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=66&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 66</a> kan een verkeersbord, en dus ook een snelheidsbord, gelden voor een zone. Dit wordt weergegeven met een onderbord. </p><div class="issue" id="issue-container-number-94"><div role="heading" class="issue-title marker" id="h-issue-0" aria-level="6"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/94"><span class="issue-number">Issue 94</span></a><span class="issue-label" aria-label="This issue is labelled as Maximale snelheid.">: zonebord toevoegen <a class="respec-gh-label" href="https://github.com/Stichting-CROW/verkeersborden/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Maximale+snelheid%22" style="background-color: rgb(0, 117, 202); color: rgb(255, 255, 255);">Maximale snelheid</a></span></div><p dir="auto">zonebord toevoegen</p></div></section><section id="voertuigtype-0"><h5 id="x3-2-3-2-voertuigtype"><bdi class="secno">3.2.3.2 </bdi>Voertuigtype<a class="self-link" aria-label="§" href="#voertuigtype-0"></a></h5><p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=67&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 67</a> kan bij een bord, dus ook een snelheidsbord, op een onderbord staan aangegeven dat dit bord alleen geldt voor een of meer specifieke voertuigtypes of niet geldt voor een of meer specifieke voertuigtypes. Het informatiemodel moet dus een lijst van voertuigtypen bevatten waarvoor een afwijkende snelheid kan gelden en de mogelijkheid om uitzonderingen danwel nadere specificaties aan te duiden bij de snelheid.</p><div class="issue" id="issue-container-number-95"><div role="heading" class="issue-title marker" id="h-issue-1" aria-level="6"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/95"><span class="issue-number">Issue 95</span></a><span class="issue-label" aria-label="This issue is labelled as Maximale snelheid.">: snelheidslimiet x voertuigtype?  <a class="respec-gh-label" href="https://github.com/Stichting-CROW/verkeersborden/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Maximale+snelheid%22" style="background-color: rgb(0, 117, 202); color: rgb(255, 255, 255);">Maximale snelheid</a></span></div><p dir="auto">kan een snelheidslimiet beperkt gelden voor een voertuigtype? Anders buiten scope</p></div></section><section id="overig"><h5 id="x3-2-3-3-overig"><bdi class="secno">3.2.3.3 </bdi>Overig<a class="self-link" aria-label="§" href="#overig"></a></h5><p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=67&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 67</a> kan bij een bord, dus ook een snelheidsbord, op een onderbord een aanvullende instructie staan. </p><div class="issue" id="issue-container-number-89"><div role="heading" class="issue-title marker" id="h-issue-2" aria-level="6"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/89"><span class="issue-number">Issue 89</span></a><span class="issue-label">: Onderbord met 'nadere aanduiding"</span></div><p dir="auto">Welke "nadere aanduidingen" kunnen op een onderbord staan bij de maximum snelheid?</p>
+<blockquote>
+<p dir="auto">Schrijver dezes kent in elke geval de aanduiding van een specifieke dag en/of een specifiek tijdstip waarop het bord geldt.<br>
+Bij specifieke omstandigheden: gladheid, neerslag</p>
+</blockquote>
+<p dir="auto">Lijst met onderborden en codes: VNVF, nederlandse verkeersbordenfabrikanten. Zie het verkeersbordenboekje, en codes</p></div></section></section></section></section>
+  <section data-format="markdown" class="conformance" id="informatiemodel"><h2 id="x4-informatiemodel"><bdi class="secno">4. </bdi>Informatiemodel<a class="self-link" aria-label="§" href="#informatiemodel"></a></h2><section id="inleiding-0"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding<a class="self-link" aria-label="§" href="#inleiding-0"></a></h3><p>In het informatiemodel staat alle informatie die nodig is om digitaal te kunnen achterhalen wat de wettelijke maximum snelheid is. Uitgangspunt is, dat men weet op welke plek men zich bevindt in een wegvak.</p></section><section id="def-nwb-wegvak"><h3 id="x4-2-def-nwb-wegvak"><bdi class="secno">4.2 </bdi>def <code>nwb-Wegvak</code><a class="self-link" aria-label="§" href="#def-nwb-wegvak"></a></h3><p>Een nwb-wegvak is een lijn met x- en y coördinatien die als <a data-link-type="dfn" href="#dfn-wegvak" class="internalDFN" id="ref-for-dfn-wegvak-1">wegvak</a> wordt gepubliceerd in het Nationaal Wegen Bestand (NWB). </p><div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Noot</span></div><aside class="">
+Het Nationaal Wegen Bestand is op dit moment nog niet tot op het niveau van een "rijstrook" gedifferentieerd. Afhankelijk van de wegindeling kan een wegvak gaan over een weg met twee rijrichtingen; of over een rijbaan met meerdere rijstroken in één richting van de weg, waarbij de rijstroken niet zijn opgesplitst in afzonderlijke wegvakken.</aside></div><section id="def-wegvak-type"><h4 id="x4-2-1-def-wegvak-type"><bdi class="secno">4.2.1 </bdi>def <code>Wegvak.type</code><a class="self-link" aria-label="§" href="#def-wegvak-type"></a></h4><div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>spaceType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bibeko</code></td>
+<td>binnen de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>bubeko</code></td>
+<td>buiten de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>snelweg</code></td>
+<td>rijbaan, autosnelweg</td>
+</tr>
+<tr>
+<td><code>autoweg</code></td>
+<td>rijbaan, autoweg</td>
+</tr>
+<tr>
+<td><code>erf</code></td>
+<td>rijbaan, erf</td>
+</tr>
+<tr>
+<td><code>bibeko1</code></td>
+<td>Binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad</td>
+</tr>
+<tr>
+<td><code>bibeko2</code></td>
+<td>Binnen de kom, die gesloten zijn voor fietsers</td>
+</tr>
+<tr>
+<td><code>bibeko3</code></td>
+<td>Binnen de kom, waar een maximumsnelheid van 70 km per uur geldt</td>
+</tr>
+<tr>
+<td><code>fietsbrom</code></td>
+<td>fiets/bromfietspad</td>
+</tr>
+<tr>
+<td><code>fiets</code></td>
+<td>fietspad</td>
+</tr>
+<tr>
+<td><code>stoep</code></td>
+<td>troittoir</td>
+</tr>
+
+</tbody></table></div><div class="issue" id="issue-container-number-91"><div role="heading" class="issue-title marker" id="h-issue-3" aria-level="5"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/91"><span class="issue-number">Issue 91</span></a><span class="issue-label">: Check wegtypes: staan deze al in IMBOR/IMWV?</span></div><p dir="auto">Check wegtypes: staan deze al in IMBOR/IMWV?</p></div><div class="issue" id="issue-container-number-86"><div role="heading" class="issue-title marker" id="h-issue-4" aria-level="5"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/86"><span class="issue-number">Issue 86</span></a><span class="issue-label">: Is het nodig de locatie op de weg in het model op te nemen?</span></div><p dir="auto">Keuze 1: een wegvak beschrijft en van de locaties:  het fiets/bromfietspad; de rijbaan; het fietspad; het trottoir. Dan moet dit kunnen worden aangegeven en in het informatiemodel worden opgenomen.</p>
+<p dir="auto">Keuze 2: Een wegvak is niet gesplitst in de locaties. Het systeem moet  in dat geval de locatie op de weg zelfstandig bepalen. Het type weg hoeft niet te worden opgenomen in het informatiemodel.</p></div></section><section id="def-nwb-junctie"><h4 id="x4-2-2-def-nwb-junctie"><bdi class="secno">4.2.2 </bdi>def <code>nwb-junctie</code><a class="self-link" aria-label="§" href="#def-nwb-junctie"></a></h4><p>...</p></section></section><section id="voertuigtype-1"><h3 id="x4-3-voertuigtype"><bdi class="secno">4.3 </bdi>Voertuigtype<a class="self-link" aria-label="§" href="#voertuigtype-1"></a></h3><section id="type-aanhangwagen"><h4 id="x4-3-1-type-aanhangwagen"><bdi class="secno">4.3.1 </bdi>Type aanhangwagen<a class="self-link" aria-label="§" href="#type-aanhangwagen"></a></h4></section></section><section id="def-wegvak-zone"><h3 id="x4-4-def-wegvak-zone"><bdi class="secno">4.4 </bdi>def <code>Wegvak.zone</code><a class="self-link" aria-label="§" href="#def-wegvak-zone"></a></h3><p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=66&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 66</a> kan een verkeersbord, en dus ook een snelheidsbord, gelden voor een zone. Dit wordt weergegeven met een onderbord. De weggebruiker moet dus weten in welke zone hij zich bevindt en welke snelheid specifiek geldt voor deze zone, tenzij deze informatatie altijd kan worden gevonden bij het wegvak. Bij publicatie van het verkeersbesluit zal ofwel de zone als vlak moeten worden vastgesteld, ofwel alle (delen) van wegvakken waarvoor de snelheid geldt worden aangeduid. Dit lijdt tot een keuze in het informatiemodel:</p><div class="issue" id="issue-container-number-20"><div role="heading" class="issue-title marker" id="h-issue-5" aria-level="4"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/20"><span class="issue-number">Issue 20</span></a><span class="issue-label">: Relatie verkeersregel met zone</span></div><p dir="auto">Generiek geldt, dat een verkeersregel altijd geldt voor het wegvak, of specifieker, de rijstrook waar men zich op bevindt.<br>
+Ook als er geen bord langs dat wegvak staat, bijvoorbeeld in het geval van een parkeerzone, 30 km/h zone of een milieuzone. De vraag is, of men de informatie altijd aan een wegvak wil koppelen, of dat informatie ook aan een zone gekoppeld kan worden.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerkdata beheer:</strong><br>
+Beheer van de zone is minder werk dan beheer per wegvak; tenzij de afleiding hiervan automatisch kan gebeuren: men levert een tekening van een zone en de bijbehorende borden aan; een systeem leidt zelf af of het wegvak (deels) binnen de zone valt. Eventueel kan het systeem afleiden dat er een verkeersbord moet staan, en de relatie leggen naar het verkeersbord dat ook op de tekening van de zone staat. De vraag is hier: wat kan er fout gaan bij het alleen opvoeren van een zone en de borden? Dit moet worden beproefd.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerk data gebruik</strong><br>
+De vraag is, of het systeem van een gebruiker de vraag moet stellen "Geldt hier een zone?" of dat het systeem alleen de vraag hoeft te stellen: "ik rij op wegvak x, welke snelheid / regels gelden hier? Hier is onderzoek nodig naar wat de gebruiker van de data nodig heeft.</p></div><section id="zone-type"><h4 id="x4-4-1-zone-type"><bdi class="secno">4.4.1 </bdi><code>Zone.type</code><a class="self-link" aria-label="§" href="#zone-type"></a></h4><div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>spaceType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bibeko</code></td>
+<td>zone binnen de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>bubeko</code></td>
+<td>zone buiten de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>erf</code></td>
+<td>zone erf</td>
+</tr>
+<tr>
+<td><code>30</code></td>
+<td>30 km zone</td>
+</tr>
+<tr>
+<td><code>60</code></td>
+<td>60 km zone</td>
+</tr>
+
+</tbody></table></div><div class="issue" id="issue-container-number-20-0"><div role="heading" class="issue-title marker" id="h-issue-6" aria-level="5"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/20"><span class="issue-number">Issue 20</span></a><span class="issue-label">: Relatie verkeersregel met zone</span></div><p dir="auto">Generiek geldt, dat een verkeersregel altijd geldt voor het wegvak, of specifieker, de rijstrook waar men zich op bevindt.<br>
+Ook als er geen bord langs dat wegvak staat, bijvoorbeeld in het geval van een parkeerzone, 30 km/h zone of een milieuzone. De vraag is, of men de informatie altijd aan een wegvak wil koppelen, of dat informatie ook aan een zone gekoppeld kan worden.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerkdata beheer:</strong><br>
+Beheer van de zone is minder werk dan beheer per wegvak; tenzij de afleiding hiervan automatisch kan gebeuren: men levert een tekening van een zone en de bijbehorende borden aan; een systeem leidt zelf af of het wegvak (deels) binnen de zone valt. Eventueel kan het systeem afleiden dat er een verkeersbord moet staan, en de relatie leggen naar het verkeersbord dat ook op de tekening van de zone staat. De vraag is hier: wat kan er fout gaan bij het alleen opvoeren van een zone en de borden? Dit moet worden beproefd.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerk data gebruik</strong><br>
+De vraag is, of het systeem van een gebruiker de vraag moet stellen "Geldt hier een zone?" of dat het systeem alleen de vraag hoeft te stellen: "ik rij op wegvak x, welke snelheid / regels gelden hier? Hier is onderzoek nodig naar wat de gebruiker van de data nodig heeft.</p></div></section></section><section id="def-wettelijke-maximumsnelheid"><h3 id="x4-5-def-wettelijke-maximumsnelheid"><bdi class="secno">4.5 </bdi>def <code>Wettelijke maximumsnelheid</code><a class="self-link" aria-label="§" href="#def-wettelijke-maximumsnelheid"></a></h3><p>De maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan. De maximumsnelheid is afhankelijk van het voertuigtype. Er is per wegtype en per voertuigsoort een ##maximale wettelijke maximumsnelheid## en een ##aaanvullende wettelijke maximumsnelheid##</p><section id="def-maximale-wettelijke-maximumsnelheid"><h4 id="x4-5-1-def-maximale-wettelijke-maximumsnelheid"><bdi class="secno">4.5.1 </bdi>def <code>maximale wettelijke maximumsnelheid</code><a class="self-link" aria-label="§" href="#def-maximale-wettelijke-maximumsnelheid"></a></h4><p>De maximale wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 § 8. Maximumsnelheid</a>. De maximale wettelijke maximumsnelheid is afhankelijk van het wegtype en het voertuigtype. </p><div class="issue" id="issue-container-number-90"><div role="heading" class="issue-title marker" id="h-issue-7" aria-level="5"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/90"><span class="issue-number">Issue 90</span></a><span class="issue-label">: Wettelijke maximum snelheid per wegtype en voertuigtype, opnemen in informatiemodel?</span></div><p dir="auto">Moeten de wettelijke maximum snelheden per wegtype en voertuigtype opgenomen worden in het informatiemodel, zodat een systeem een query kan bouwen die luid: ik ben dit type voertuig, hoe hard mag ik hier? Of moeten alleen de snelheden voor auto's worden opgegeven? Of is de aanduiding van het wegtype voldoende en kan een applicatiebouwer de wettelijke snelheden per voertuigtype zelf inprogrammeren?</p></div></section></section><section id="def-aanvullende-wettelijke-maximumsnelheid"><h3 id="x4-6-def-aanvullende-wettelijke-maximumsnelheid"><bdi class="secno">4.6 </bdi>def <code>aanvullende wettelijke maximumsnelheid</code><a class="self-link" aria-label="§" href="#def-aanvullende-wettelijke-maximumsnelheid"></a></h3><div class="issue" id="issue-container-number-20-1"><div role="heading" class="issue-title marker" id="h-issue-8" aria-level="4"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/20"><span class="issue-number">Issue 20</span></a><span class="issue-label">: Relatie verkeersregel met zone</span></div><p dir="auto">Generiek geldt, dat een verkeersregel altijd geldt voor het wegvak, of specifieker, de rijstrook waar men zich op bevindt.<br>
+Ook als er geen bord langs dat wegvak staat, bijvoorbeeld in het geval van een parkeerzone, 30 km/h zone of een milieuzone. De vraag is, of men de informatie altijd aan een wegvak wil koppelen, of dat informatie ook aan een zone gekoppeld kan worden.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerkdata beheer:</strong><br>
+Beheer van de zone is minder werk dan beheer per wegvak; tenzij de afleiding hiervan automatisch kan gebeuren: men levert een tekening van een zone en de bijbehorende borden aan; een systeem leidt zelf af of het wegvak (deels) binnen de zone valt. Eventueel kan het systeem afleiden dat er een verkeersbord moet staan, en de relatie leggen naar het verkeersbord dat ook op de tekening van de zone staat. De vraag is hier: wat kan er fout gaan bij het alleen opvoeren van een zone en de borden? Dit moet worden beproefd.</p>
+<p dir="auto"><strong>Vanuit oogpunt van netwerk data gebruik</strong><br>
+De vraag is, of het systeem van een gebruiker de vraag moet stellen "Geldt hier een zone?" of dat het systeem alleen de vraag hoeft te stellen: "ik rij op wegvak x, welke snelheid / regels gelden hier? Hier is onderzoek nodig naar wat de gebruiker van de data nodig heeft.</p></div></section><section id="locatie-in-het-wegvak"><h3 id="x4-7-locatie-in-het-wegvak"><bdi class="secno">4.7 </bdi>Locatie in het wegvak<a class="self-link" aria-label="§" href="#locatie-in-het-wegvak"></a></h3></section><section id="informatiemodel-0"><h3 id="x4-8-informatiemodel"><bdi class="secno">4.8 </bdi>Informatiemodel<a class="self-link" aria-label="§" href="#informatiemodel-0"></a></h3><p>In het informatiemodel staat alle informatie die nodig is om digitaal te kunnen achterhalen wat de wettelijke maximum snelheid is. Uitgangspunt is, dat men weet op welke plek men zich bevindt in een wegvak.</p><section id="junctie"><h4 id="x4-8-1-junctie"><bdi class="secno">4.8.1 </bdi>Junctie<a class="self-link" aria-label="§" href="#junctie"></a></h4><aside class="def"> Een junctie is het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen. </aside><p>Het informatiemodel geeft verkeersinstructies voor de weggebruiker weer ten opzichte van een [<a data-link-type="dfn" href="#dfn-wegvak" class="internalDFN" id="ref-for-dfn-wegvak-2">Wegvak</a>] in het Nationaal Wegenbestand. </p></section><section id="rijrichting"><h4 id="x4-8-2-rijrichting"><bdi class="secno">4.8.2 </bdi>Rijrichting<a class="self-link" aria-label="§" href="#rijrichting"></a></h4><p>Het informatiemodel geeft verkeersinstructies voor de weggebruiker default weer voor beide rijrichtingen indien deze in het wegvak zijn inbegrepen. Indien de instructie slechts geldt voor één richting of een deel van het wegvak, moet deze worden opgesplitst per richting.</p></section><section id="rijstrook"><h4 id="x4-8-3-rijstrook"><bdi class="secno">4.8.3 </bdi>Rijstrook<a class="self-link" aria-label="§" href="#rijstrook"></a></h4><p>Het informatiemodel maakt het mogelijk om de verkeersinstructie te laten gelden voor één van de rijstroken, die worden genummerd vanuit het midden van de weg. </p></section><section id="beginpunt"><h4 id="x4-8-4-beginpunt"><bdi class="secno">4.8.4 </bdi>Beginpunt<a class="self-link" aria-label="§" href="#beginpunt"></a></h4><p>Het informatiemodel geeft verkeersinstructies voor de weggebruiker default weer over de gehele lengte van het wegvak; dus van junctie tot junctie. De verkeersinstructie kan worden beperkt door het aangeven van een specifiek beginpunt; default loopt de instructie door tot de junctie, tenzij ook een eindpunt is aangegeven. </p></section><section id="eindpunt"><h4 id="x4-8-5-eindpunt"><bdi class="secno">4.8.5 </bdi>Eindpunt<a class="self-link" aria-label="§" href="#eindpunt"></a></h4><p>Het informatiemodel maakt het mogelijk om de verkeersinstructie te laten gelden vanaf een specifiek beginpunt; default loopt de instructie door tot de junctie, tenzij ook een eindpunt is aangegeven. </p><section id="bord-markeringspunt"><h5 id="x4-8-5-1-bord-markeringspunt"><bdi class="secno">4.8.5.1 </bdi>Bord / markeringspunt<a class="self-link" aria-label="§" href="#bord-markeringspunt"></a></h5><ol>
+<li>Het informatiemodel maakt het mogelijk om aan te duiden waar het fysieke verkeersbord / de markering zou moeten staan ten opzichte van de lengterichting van het Wegvak; default is dit op het beginpunt van de verkeersinstructie. </li>
+</ol></section><section id="grafische-weergave-van-de-borden"><h5 id="x4-8-5-2-grafische-weergave-van-de-borden"><bdi class="secno">4.8.5.2 </bdi>Grafische weergave van de borden<a class="self-link" aria-label="§" href="#grafische-weergave-van-de-borden"></a></h5><ol>
+<li>Bij elk bord en onderbord is een grafische weergave beschikbaar in het informatiemodel.</li>
+</ol></section></section></section></section>
+  <section data-format="markdown" class="informative" id="data-verzamelen"><h2 id="x5-data-verzamelen"><bdi class="secno">5. </bdi>Data verzamelen<a class="self-link" aria-label="§" href="#data-verzamelen"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><section id="rollen-en-taken"><h3 id="x5-1-rollen-en-taken"><bdi class="secno">5.1 </bdi>Rollen en taken<a class="self-link" aria-label="§" href="#rollen-en-taken"></a></h3><section id="koop"><h4 id="x5-1-1-koop"><bdi class="secno">5.1.1 </bdi>KOOP<a class="self-link" aria-label="§" href="#koop"></a></h4><p>Rol: Publicaties van de overheid verzorgen
+Taak: Het publiceren van nieuwe verkeersbesluiten om deze wettelijk geldig te laten zijn.</p></section><section id="ndw"><h4 id="x5-1-2-ndw"><bdi class="secno">5.1.2 </bdi>NDW<a class="self-link" aria-label="§" href="#ndw"></a></h4><p>Rol: </p><ol>
+<li>Beheren van het Nationaal Wegen Bestand met daarin het wegennetwerk, de verkeersregels en de bijbehorende borden.</li>
+<li>Publiceren van het Nationaal Wegen Bestand</li>
+</ol></section><section id="wegbeheerders"><h4 id="x5-1-3-wegbeheerders"><bdi class="secno">5.1.3 </bdi>Wegbeheerders<a class="self-link" aria-label="§" href="#wegbeheerders"></a></h4></section><section id="bestaand-netwerk"><h4 id="x5-1-4-bestaand-netwerk"><bdi class="secno">5.1.4 </bdi>Bestaand netwerk<a class="self-link" aria-label="§" href="#bestaand-netwerk"></a></h4></section><section id="wijzigingen-in-het-netwerk"><h4 id="x5-1-5-wijzigingen-in-het-netwerk"><bdi class="secno">5.1.5 </bdi>Wijzigingen in het netwerk<a class="self-link" aria-label="§" href="#wijzigingen-in-het-netwerk"></a></h4></section><section id="bestaande-verkeersregels"><h4 id="x5-1-6-bestaande-verkeersregels"><bdi class="secno">5.1.6 </bdi>Bestaande verkeersregels<a class="self-link" aria-label="§" href="#bestaande-verkeersregels"></a></h4></section><section id="nieuwe-verkeersregels"><h4 id="x5-1-7-nieuwe-verkeersregels"><bdi class="secno">5.1.7 </bdi>Nieuwe verkeersregels<a class="self-link" aria-label="§" href="#nieuwe-verkeersregels"></a></h4></section><section id="bestaande-borden"><h4 id="x5-1-8-bestaande-borden"><bdi class="secno">5.1.8 </bdi>Bestaande borden<a class="self-link" aria-label="§" href="#bestaande-borden"></a></h4></section><section id="nieuwe-borden"><h4 id="x5-1-9-nieuwe-borden"><bdi class="secno">5.1.9 </bdi>Nieuwe borden<a class="self-link" aria-label="§" href="#nieuwe-borden"></a></h4></section></section><section id="wegbeheerders-0"><h3 id="x5-2-wegbeheerders"><bdi class="secno">5.2 </bdi>Wegbeheerders<a class="self-link" aria-label="§" href="#wegbeheerders-0"></a></h3></section><section id="nwb"><h3 id="x5-3-nwb"><bdi class="secno">5.3 </bdi>NWB<a class="self-link" aria-label="§" href="#nwb"></a></h3></section><section id="sensordata"><h3 id="x5-4-sensordata"><bdi class="secno">5.4 </bdi>Sensordata?<a class="self-link" aria-label="§" href="#sensordata"></a></h3></section><section id="andere-data"><h3 id="x5-5-andere-data"><bdi class="secno">5.5 </bdi>Andere data?<a class="self-link" aria-label="§" href="#andere-data"></a></h3></section><section id="wegvakken"><h3 id="x5-6-wegvakken"><bdi class="secno">5.6 </bdi>Wegvakken<a class="self-link" aria-label="§" href="#wegvakken"></a></h3></section><section id="bestaande-verkeersbesluiten"><h3 id="x5-7-bestaande-verkeersbesluiten"><bdi class="secno">5.7 </bdi>Bestaande verkeersbesluiten<a class="self-link" aria-label="§" href="#bestaande-verkeersbesluiten"></a></h3></section><section id="nieuwe-verkeersbesluiten"><h3 id="x5-8-nieuwe-verkeersbesluiten"><bdi class="secno">5.8 </bdi>Nieuwe verkeersbesluiten<a class="self-link" aria-label="§" href="#nieuwe-verkeersbesluiten"></a></h3></section><section id="bestaande-borden-0"><h3 id="x5-9-bestaande-borden"><bdi class="secno">5.9 </bdi>Bestaande borden<a class="self-link" aria-label="§" href="#bestaande-borden-0"></a></h3></section></section>
+  <section data-format="markdown" class="informative" id="beheerproces-data"><h2 id="x6-beheerproces-data"><bdi class="secno">6. </bdi>Beheerproces data<a class="self-link" aria-label="§" href="#beheerproces-data"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><section id="rollen-en-taken-0"><h3 id="x6-1-rollen-en-taken"><bdi class="secno">6.1 </bdi>Rollen en taken<a class="self-link" aria-label="§" href="#rollen-en-taken-0"></a></h3></section><section id="data-inwinnen"><h3 id="x6-2-data-inwinnen"><bdi class="secno">6.2 </bdi>Data inwinnen<a class="self-link" aria-label="§" href="#data-inwinnen"></a></h3><section id="bestaande-situatie"><h4 id="x6-2-1-bestaande-situatie"><bdi class="secno">6.2.1 </bdi>Bestaande situatie<a class="self-link" aria-label="§" href="#bestaande-situatie"></a></h4></section><section id="wijzigingen"><h4 id="x6-2-2-wijzigingen"><bdi class="secno">6.2.2 </bdi>Wijzigingen<a class="self-link" aria-label="§" href="#wijzigingen"></a></h4></section></section><section id="data-valideren"><h3 id="x6-3-data-valideren"><bdi class="secno">6.3 </bdi>Data valideren<a class="self-link" aria-label="§" href="#data-valideren"></a></h3></section><section id="data-vrijgeven"><h3 id="x6-4-data-vrijgeven"><bdi class="secno">6.4 </bdi>Data vrijgeven<a class="self-link" aria-label="§" href="#data-vrijgeven"></a></h3></section></section>
+  <section data-format="markdown" class="informative" id="data-publiceren"><h2 id="x7-data-publiceren"><bdi class="secno">7. </bdi>Data publiceren<a class="self-link" aria-label="§" href="#data-publiceren"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><section id="netwerkregistratie"><h3 id="x7-1-netwerkregistratie"><bdi class="secno">7.1 </bdi>Netwerkregistratie<a class="self-link" aria-label="§" href="#netwerkregistratie"></a></h3></section><section id="publiceren-verkeersbesluit"><h3 id="x7-2-publiceren-verkeersbesluit"><bdi class="secno">7.2 </bdi>Publiceren verkeersbesluit<a class="self-link" aria-label="§" href="#publiceren-verkeersbesluit"></a></h3></section><section id="wegvakken-0"><h3 id="x7-3-wegvakken"><bdi class="secno">7.3 </bdi>Wegvakken<a class="self-link" aria-label="§" href="#wegvakken-0"></a></h3></section></section>
+  <section data-format="markdown" class="informative" id="data-gebruiken"><h2 id="x8-data-gebruiken"><bdi class="secno">8. </bdi>Data gebruiken<a class="self-link" aria-label="§" href="#data-gebruiken"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p><section id="geometrische-nauwkeurigheid"><h3 id="x8-1-geometrische-nauwkeurigheid"><bdi class="secno">8.1 </bdi>Geometrische nauwkeurigheid<a class="self-link" aria-label="§" href="#geometrische-nauwkeurigheid"></a></h3><p>Het netwerk en de locaties van verkeerstekens ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna; ook moet het duidelijk zijn voor het systeem op welke rijstrook het zich bevindt als op verschillende rijstroken verschillende regels gelden.</p></section></section>
+
+
+  
+  <section class="appendix informative" id="glossary">
+    <h2 id="a-termen-en-definities"><bdi class="secno">A. </bdi>Termen en definities<a class="self-link" aria-label="§" href="#glossary"></a></h2><p><em>Dit onderdeel is niet normatief.</em></p>
+
+<dl data-sort=""><dt><dfn data-lt="Junctie|Juncties" id="dfn-junctie">Junctie</dfn>
+    </dt><dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen. <p></p></dd>
+<dt><dfn data-lt="NEN3381:2020" id="dfn-nen3381-2020">NEN3381:2020</dfn>
+    </dt><dd>De NEN3381:2020 "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. Zie ook <a href="https://www.nen.nl/nen-3381-2020-nl-267378">deze website</a></dd><dt><dfn data-lt="RVV1990|RVV 1990|Reglement verkeersregels en verkeerstekens 1990" id="dfn-rvv1990">RVV 1990</dfn>
+    </dt><dd>Nederlandse wet over verkeersregels en verkeerstekens, zie ook <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;z=2021-07-01&amp;g=2021-07-01">deze website</a><p></p></dd>
+<dt><dfn data-lt="Wegvak|NWB-wegvak|Road element|Wegvakken" id="dfn-wegvak">Wegvak</dfn>
+    </dt><dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. Verandering van een eigenschap van een wegvak resulteert in splitsing in twee of meerdere wegvakken. Juncties dus splitsingen van wegvakken komt voor bij gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen. <p></p></dd>
+</dl>
+  </section>
+  
+
+
+
+<p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><aside class="dfn-panel" hidden="" id="dfn-panel-for-dfn-junctie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-junctie">Permalink</a>
+         
+      </div>
+      <b>Referenced in:</b>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </aside><aside class="dfn-panel" hidden="" id="dfn-panel-for-dfn-nen3381-2020">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nen3381-2020">Permalink</a>
+         
+      </div>
+      <b>Referenced in:</b>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </aside><aside class="dfn-panel" hidden="" id="dfn-panel-for-dfn-rvv1990">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990">Permalink</a>
+         
+      </div>
+      <b>Referenced in:</b>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </aside><aside class="dfn-panel" hidden="" id="dfn-panel-for-dfn-wegvak">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegvak">Permalink</a>
+         
+      </div>
+      <b>Referenced in:</b>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-wegvak-1">4.2 def nwb-Wegvak</a> 
+  </li><li>
+    <a href="#ref-for-dfn-wegvak-2">4.8.1 Junctie</a> 
+  </li>
+  </ul>
+    </aside><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(dfnPanel);
+} else {
+  dfnPanel();
+}
+
+function dfnPanel() {
+  /** @type {HTMLElement} */
+  let panel;
+  document.body.addEventListener("click", event => {
+    if (!(event.target instanceof HTMLElement)) return;
+
+    /** @type {HTMLElement} */
+    const el = event.target;
+
+    const action = deriveAction(el);
+    switch (action) {
+      case "show": {
+        if (panel) hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = el.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        displayPanel(dfn, panel, { x: event.clientX, y: event.clientY });
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        break;
+      }
+    }
+  });
+}
+
+/** @param {HTMLElement} clickTarget */
+function deriveAction(clickTarget) {
+  const hitALink = !!clickTarget.closest("a");
+  if (clickTarget.closest("dfn, .index-term")) {
+    return hitALink ? null : "show";
+  }
+  if (clickTarget.closest(".dfn-panel")) {
+    if (hitALink) {
+      const clickedSelfLink = clickTarget.classList.contains("self-link");
+      return clickedSelfLink ? "hide" : "dock";
+    }
+    const panel = clickTarget.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : null;
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return null;
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://docs.crow.nl/respec-design/fixup.js"></script></body></html>
