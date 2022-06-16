@@ -139,7 +139,7 @@ KOOP kan bij het publiceren van verkeersbesluiten en bij het inrichten van een v
 ### Programma Digitalisering Overheden
 
 <dfn data-lt="Programma Digitalisering Overheden">Programma Digitalisering Overheden</dfn>
-<dd>In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. </dd>
+<dd>In het landelijke programma 'Digitalisering Overheden' werken 5 landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabil in mobiliteit' te zijn. Hiervoor is een [=Data Top 15=] opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. </dd>
 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
@@ -251,7 +251,7 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 <dd> Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a>  </dd>
 
 <aside class="note" title="Informatiemodel, data en applicaties"><ol><li><b>Informatiemodel</b>: IMBOR is alleen een informatiemodel, géén bron van gegevens over bijvoorbeeld de locatie van in beheer zijnde verkeersborden. </li>
-<li><b>Data</b>: IMBOR wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan. Elke wegbeheerder kan dit zelf organiseren in een eigen database of een database van een opdrachtnemer of softwareleverancier (publicatie bij de bron). Of men kan een landelijke afspraak maken om de in beheer zijnde verkeersborden ergens te publiceren, zoals via het NWB (centrale publicatie). Op dit moment zijn hiervoor geen afspraken. </li>
+<li><b>Data</b>: IMBOR wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan. Elke wegbeheerder kan dit zelf organiseren in een eigen database of een database van een opdrachtnemer of softwareleverancier (publicatie bij de bron). Of men kan een landelijke afspraak maken om de in beheer zijnde verkeersborden ergens te publiceren, zoals via het [=NWB=] (centrale publicatie). Op dit moment zijn hiervoor geen afspraken. </li>
 <li><b>Applicaties</b>: De met IMBOR gemodelleerde data over bijvoorbeeld wegvakken en verkeersborden kan worden gebruikt in applicaties. IMBOR is specifiek opgesteld voor de informatiebehoefte in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte. Als een beheerder de verkeersborden in zijn/haar areaalbeheerapplicatie wil zien, kan de applicatie de bron waar de informatie wordt opgeslagen raadplegen.</li></ol>
 </aside>
 
@@ -297,7 +297,7 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 
 ### NWB(+)
 
-<<dfn data-lt="NWB|Nationaal Wegen Bestand|NWB-Wegen">NWB</dfn>
+<dfn data-lt="NWB|Nationaal Wegen Bestand|NWB-Wegen">NWB</dfn>
 <dd> Een open geografisch databestand van een wegennetwerk bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals zoals Schiphol en Havenbedrijf Rotterdam. Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
 
 <dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">Nationaal Wegen Bestand+</dfn>
@@ -306,7 +306,6 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] MOET aansluiten op het informatiemodel voor het NWB om te zorgen dat [=Verkeerskundige informatie=] gekoppeld kan worden aan het juiste wegvak en de juiste richting in het wegvak.
 
 
 #### NWB-Wegvak
@@ -328,7 +327,7 @@ Daarbij gelden momenteel de volgende regels:
 ### Data Top 15
 
 In het [=Programma Digitalisering Overheden=] is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
-De DataTop15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.</dd>
+De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.</dd>
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
