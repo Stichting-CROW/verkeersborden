@@ -2,17 +2,16 @@
 
 ## Informatiemodellering
 
-* Het informatiemodel MOET worden opgesteld conform de regels voor semantisch modelleren en met de relaties en concepten in de NEN 2660:2021.
-* Het informatiemodel MOET waar mogelijk aangesloten op de NEN 3610 en de MIM. Bij tegenstrijdigheden geldt de NEN 2660.
+
+
 * Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt. 
 * Het informatiemodel MOET van alle concepten een definite geven of verwijzen naar een definitie in wetten of andere informatiemodellen. 
 
-## RVV 1990
-* Het informatiemodel MOET de definities gebruiken uit het [=RVV 1990=].
+
 
 ### Verkeersregels 
 
-* Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
+
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=]. 
 
 ### Verkeersborden
@@ -45,8 +44,8 @@
 * Het informatiemodel MOET de mogelijkheid bieden om een niet nader aangeduid onderbord te gebruiken met een vrij in te vullen tekst.
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
 
-### Adviessnelheid+
-* Het informatiemodel MOET de mogelijkheid bieden bij een (deel van) een [=NWB-wegvak=] een [=adviessnelheid=] mee te geven, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
+
+
 
 ## Werkingslengte
 * Het informatiemodel MOET aansluiten op het informatiemodel van het [=NWB=] om te zorgen dat [=Verkeerskundige informatie=] gekoppeld kan worden aan het juiste wegvak en de juiste richting in het wegvak.
@@ -68,7 +67,7 @@ Default start
 * Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] eindigt op de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden tot een specifiek eindpunt op x lengte ná de [NWB-junctie]. 
 
-
+<div class="issue" data-number="146"></div>
 
 ## Rijrichting
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden vanaf welke [NWB-junctie] een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, indien deze alleen in één richting geldt. 

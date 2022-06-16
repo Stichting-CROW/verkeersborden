@@ -75,12 +75,19 @@ De wegbeheerder past het [=Informatiemodel Verkeerstekens=] toe bij het beheren 
 
 Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
 
-### Verkeersregels+ 
+### RVV 1990+ 
 [=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] die horen bij alle verkeersborden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de verkeersregel is. 
+
+* Het informatiemodel MOET de definities gebruiken uit het [=RVV 1990=].
+* Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
+* Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
+* Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomenzijn in wetgeving, en welke nog niet.
 
 ### Adviessnelheid+
 De wegbeheerder heeft de mogelijkheid een [=adviessnelheid] te geven met een A4 verkeersbord.
 Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over de gehele lengte van een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegevens, los van de individuele waarschuwingen bij de gevaarlijke punten.
+
+* Het informatiemodel MOET de mogelijkheid bieden bij een (deel van) een [=NWB-wegvak=] een [=adviessnelheid=] mee te geven, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
 
 
 ### Statische verkeersborden
@@ -90,6 +97,9 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 <dfn data-lt="statische verkeersborden|statisch verkeersbord">Statisch verkeersbord</dfn>
 <dd>Een verkeersbord waarop altijd dezelfde afbeelding dan wel tekst te zien is</dd></dfn>
 
+* Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
+* Het informatiemodel MOET de types en definities van de [=statische verkeersborden=]   bevatten die genomineerd zijn om in de wet te worden opgenomen. 
+* Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomenzijn in wetgeving, en welke nog niet.
 
 
 ## Buiten scope
