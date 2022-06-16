@@ -98,8 +98,12 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 <dd>Een verkeersbord waarop altijd dezelfde afbeelding dan wel tekst te zien is</dd></dfn>
 
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
-* Het informatiemodel MOET de types en definities van de [=statische verkeersborden=]   bevatten die genomineerd zijn om in de wet te worden opgenomen. 
-* Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomenzijn in wetgeving, en welke nog niet.
+* Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
+* Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomen zijn in wetgeving, en welke nog niet.
+* Het informatiemodel MOET de types en definities van onderborden definiëren die volgen uit de [=RVV 1990=].
+<div class="issue" data-number="149"></div>
+
+
 
 
 ## Buiten scope

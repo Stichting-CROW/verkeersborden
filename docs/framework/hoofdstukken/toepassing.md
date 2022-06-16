@@ -1,5 +1,8 @@
 # Toepassing
 
+
+
+
 Het hoofdstuk over toepassing van het informatiemodel geeft een inzicht in het potentiele gebruik van het informatiemodel bij het genereren van digitale [=Verkeerskundige informatie=].
 De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van digitale [=Verkeerskundige informatie=] in drie contexten:
 
@@ -8,23 +11,28 @@ De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van d
 3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
 
 
+* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=]. 
+
+## Use case: Samenstellen data
 
 
+### Wijzigen wegennetwerk
 
-## Samenstellen netwerkdata
+Als het wegennetwerk wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie wordt geregistreerd en gepubliceerd in het [=NWB=]. Omdat het netwerk buiten de scope van het [=Informatiemodel Verkeerstekens=] valt, wordt van dit onderdeel geen use case uitgewerkt. Er wordt uitgegaan van een sluitend netwerk op een geselecteerd tijdstip, waarbij de wegbeheerder vervolgens [=verkeerskundige informatie=] opstelt die verwijst naar de [=NWB-wegvakken=] en [NWB-juncties=] in het netwerk.
 
-Dit onderdeel van de usecase beschrijft de use case waarmee een wegbeheerder of een wegontwerper namens de wegbeheerder een correcte dataset kan samenstellen met wijzigingen in het verkeersnetwerk. Het is nog niet uitgewerkt of het systeem uit dit onderdeel van de use case een systeem van de wegbeheerder is, of een systeem van de landelijke registratie.
+### Selecteren verkeersregel
+De wegbeheerder wil een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] opnemen in de [=verkeerskundige informatie=].
 
-* De Wegbeheerder markeert het gebied waarbinnen de wijziging valt en geeft aan op welke datum de wijziging ingaat.
-* Het Systeem geeft geeft een preselectie van de de wegvakken en juncties die op dat tijdstip actueel zijn in dit gebied (online of als dataset).
-* De Wegbeheerder selecteert alle wegvakken en juncties die wijzigen.
-* Het Systeem geeft (1) de selectie weer in een overzicht of (2) exporteert een dataset met de geselecteerde wegvakken en juncties.
-* De Wegbeheerder geeft (1) in het systeem of (2) in een dataset aan welke wegvakken en juncties vervallen en voegt nieuwe wegvakken en juncties toe. 
-* Het Systeem controleert of het nieuwe netwerk sluitend is en (1) toont een validatieoverzicht met eventuele foutmeldingen of (2) exporteert een validatierapport.
+### Selecteren bord
 
-De zo samengestelde netwerkdata kan eventueel worden gebruikt in simulaties of om varianten te onderzoeken, daarom is dit een separate stap ten opzichte van de formele transactie van de netwerkdata van de wegbeheerder naar de beheerder van de landelijke registratie.
+### Selecteren onderbord
 
-Omdat het netwerk buiten de scope van het [=Informatiemodel Verkeerstekens=] valt, volgen uit deze use case géén eisen aan het informatiemodel.
+* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
+
+
+## Valideren data
+
+
 
 
 
