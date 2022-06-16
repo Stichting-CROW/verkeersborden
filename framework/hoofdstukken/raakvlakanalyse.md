@@ -10,14 +10,14 @@ De raakvlakanalyse verkent welke standaarden en informatiebronnen er zijn voor:
 
 ## Beheerorganisaties
 
-### DSGO
+### DigiGO
 
-<dfn data-lt="DSGO">DSGO</dfn>
-<dd>Het programma Digitaal Stelsel Gebouwde Omgeving (DSGO) maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken. Zie voor meer informatie de [website van DSGO](https://www.digigo.nu/default.aspx) </dd>
+<dfn data-lt="DigiGO">DigiGO</dfn>
+<dd>Het programma Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken. Zie voor meer informatie de [website van DigiGO](https://www.digigo.nu/default.aspx) </dd>
 
 **Raakvlaktype: Uitgangspunten voor het informatiemodel**
 
-Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen in een groter stelsel van informatiemodellen, die onderdeel zijn van het Digitaal Stelsel Gebouwde Omgeving (DSGO). 
+Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen in een groter stelsel van informatiemodellen, die onderdeel zijn van het Digitaal Stelsel Gebouwde Omgeving. 
 
 
 ### BIM loket
