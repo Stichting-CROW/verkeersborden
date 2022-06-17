@@ -8,6 +8,14 @@
  * @property {string=} sectionNumber - The number of the section
  */
 
+/** This function adds an index of RFC 2119 keywords to the document.
+ *
+ * Requires:
+   <section class="">
+      <h2>Index van eisen</h2>
+      <ol class="toc toc-column toc-labeled" id="index-of-requirements"></ol>
+    </section>
+ */
 function indexOfRequirements(config) {
   const ul = document.querySelector("#index-of-requirements");
   if (!ul) return;
@@ -19,6 +27,7 @@ function indexOfRequirements(config) {
   /** @type {Record<string, RequirementReference[]>} */
   const requirementsPerSection = {};
 
+  // Collect reference information on the instances of RFC 2119 keywords
   requirements.forEach((requirementElem, n) => {
     const parentElem = requirementElem.parentElement;
     if (!parentElem) return;
@@ -27,34 +36,31 @@ function indexOfRequirements(config) {
       parentElem.id = `requirement-${requirementElem.textContent.toLowerCase()}-${n}`;
 
     const sectionElem = requirementElem.closest("section");
-    if (!sectionElem) return;
+    if (!sectionElem) return; // no reference possible
     const headerElem = sectionElem.querySelector(".header-wrapper");
-    if (!headerElem) return;
+    if (!headerElem) return; // no reference possible
     const sectionNumberElem = headerElem.querySelector(".secno");
     const sectionNumberText = sectionNumberElem
       ? sectionNumberElem.textContent || "(unnumbered)"
       : "(unnumbered)";
     const sectionTitle = headerElem.textContent || "";
 
+    // If there is no array for this section yet, create it
     if (!requirementsPerSection[sectionNumberText]) {
       requirementsPerSection[sectionNumberText] = [];
     }
     requirementsPerSection[sectionNumberText].push({
+      // flat content here, we don't want potential re-processing.
       textContent: parentElem.textContent || "",
       contextId: parentElem.id,
       sectionId: sectionElem.id,
       sectionTitle: sectionTitle,
       sectionNumber: sectionNumberText,
     });
-
-    // const li = document.createElement("li");
-    // li.innerHTML = `<a href="#${parentElem.id}">${parentElem.textContent}</a>`;
-    // ul.appendChild(li);
   });
 
-  for (const [section, requirements] of Object.entries(
-    requirementsPerSection
-  )) {
+  // Create the index of RFC 2119 references
+  for (const [__, requirements] of Object.entries(requirementsPerSection)) {
     const entryForSection = document.createElement("li");
     entryForSection.innerHTML = `In § <em>${requirements[0].sectionTitle}</em>:`;
     const listForSection = document.createElement("ol");
@@ -67,8 +73,6 @@ function indexOfRequirements(config) {
     entryForSection.appendChild(listForSection);
     ul.appendChild(entryForSection);
   }
-
-  console.log(JSON.stringify(requirementsPerSection, undefined, "  "));
 }
 
 var respecConfig = {
