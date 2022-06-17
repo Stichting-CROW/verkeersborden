@@ -20,6 +20,60 @@ De wegbeheerder past het informatiemodel toe bij het beheren en publiceren van d
 
 Als het wegennetwerk wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie wordt geregistreerd en gepubliceerd in het [=NWB=]. Omdat het netwerk buiten de scope van het [=Informatiemodel Verkeerstekens=] valt, wordt van dit onderdeel geen use case uitgewerkt. Er wordt uitgegaan van een sluitend netwerk op een geselecteerd tijdstip, waarbij de wegbeheerder vervolgens [=verkeerskundige informatie=] opstelt die verwijst naar de [=NWB-wegvakken=] en [NWB-juncties=] in het netwerk.
 
+
+### Werkingsgebied / zone
+Voor de weggebruikers in de primaire use case is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het wegvak. De wegbeheerder denk eerst in termen van een zone [=zone=] of een [=werkingsgebied=] bij een [verkeersbesluit=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden.
+
+<figure>
+<img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.JPG">
+<figcaption>Van verkeersbesluit naar [verkeerskundige informatie=]. </caption>
+</figure>
+
+<dfn data-lt="Werkingsgebied">Werkingsgebied</dfn>
+<dd>Een geografisch gebied waarvoor een [=verkeersregel=], [=waarschuwing=] en/of [=adviessnelheid=] geldt. Dit kan een polygoon zijn met meerdere aansluitende wegvakken, zoals bij een weg die over meerdere kruispunten heen een verlaagde maximum snelheid kent, of een [=zone=] </dd>
+
+<dfn data-lt="Zone">Zone</dfn>
+<dd>Een geografisch gebied waarvoor een [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] met bijbehorende verkeersbord gelden in de vorm van een vlak waarbinnen meerdere wegvakken (gedeeltelijk) vallen, denk bijvoorbeeld aan een parkeerzone of een milieuzone</dd>
+
+Interactievoorbeeld met een systeem om [=verkeerskundige informatie=] in op te stellen:
+1. De wegbeheerder levert een (link naar) een geometrische representatie (een een polygoon of vlak) in GIS of CAD formaat.
+
+### Verkeersbesluit
+Daarna komt de stap om de [=verkeerskundige informatie=] voor de eindgebruiker op te stellen, en moet de zone [=zone=] of het [=werkingsgebied=] specifieker worden gemaakt door wegvakken te selecteren en van elk wegvak aan te duiden welk gedeelte in de zone valt. Door in de [=verkeerskundige informatie=] ook te kunnen verwijzen naar een [=zone=] of [=werkingsgebied=] kan de wegbeheerder de relatie met het verkeersbesluit één keer vastleggen. 
+
+Interactievoorbeeld met een systeem om [=verkeerskundige informatie=] in op te stellen:
+2. Het systeem vraagt de wegbeheerder om een link te leggen tussen de ingevoerde geometrie en de officiele publicatie van het [=verkeersbesluit=]. Als de ingevoerde [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] niet verkeersbesluitplichtig is wordt deze stap overgeslagen.
+
+* Het informatiemodel MOET de mogelijkheid bieden om een link te leggen naar het [=verkeersbesluit=] waarin een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is gepubliceerd. 
+
+### Verkeersregel
+
+
+### NWB-Wegvakken
+
+
+### Verkeersborden
+
+
+### 
+
+
+3. Het systeem vraagt de wegbeheerder om aan te duiden welke [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] hier van toepassing is
+4. 
+
+
+
+
+* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een zone:
+  * De [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] wordt direct aan de wegvakken in de zone verbonden
+  * De [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] krijgt daarnaast een relatie met een "zone"
+* Het informatiemodel MOET de mogelijkheid bieden om een relatie tussen een zone en een geometrisch object (vlak) te leggen, maar de gebruiker is niet verplicht om dit te doen.
+
+Omdat de verkeersborden al gerelateerd zijn aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], is het niet nodig om deze ook te koppelen aan een zone.
+
+
+
+
 ### Selecteren verkeersregel
 De wegbeheerder wil een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] opnemen in de [=verkeerskundige informatie=].
 
@@ -28,6 +82,8 @@ De wegbeheerder wil een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=
 ### Selecteren onderbord
 
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
+
+
 
 
 ## Valideren data
