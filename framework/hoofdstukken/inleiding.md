@@ -49,6 +49,12 @@ Voor het delen van data in de mobiliteitssector bestaan op dit moment twee belan
 Gebrek aan vertrouwen
 Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
 
+Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=] op:
+
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelike netwerkregistratie.
+2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt. De informatie wordt gepubliceerd door KOOP. Vastlegging van de informatie wordt ondersteund in een verkeersbesluitenapplicatie.
+3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+
 ### Registraties
 
 In Nederland wordt digitale [=verkeerskundige informatie=] vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
@@ -90,21 +96,22 @@ Dit document beschrijft de uitgangspunten en use case voor een nationaal [=Infor
 
 Dit document beschrijft de volgende zaken: 
 
-**3. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er belanghebbende, 'leverancier' en 'afnemer' zouden kunnen worden van de informatie, gemodelleerd met het [=Informatiemodel Verkeerstekens=]. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+**2. Scope** Beschrijft de scope van de [=verkeerskundige informatie=] in het[=Informatiemodel Verkeerstekens=]
 
-**4. Raakvlakanalyse** De raakvlakanalyse verkent welke informatiemodellen en informatiebronnen er al zijn voor:
+**3. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een [=SMART Mobility=] systeem van een [=weggebruiker=]. Hieruit volgen eisen voor het [=Informatiemodel Verkeerstekens=].
+
+**4. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er 'gebruiker', 'leverancier' en 'afnemer' zijn van [=verkeerskundige informatie=], gemodelleerd met het [=Informatiemodel Verkeerstekens=]. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. Door in de gehele keten te denken kan duidelijk worden welke aanvullende eisen er gelden voor het informatiemodel, om gebruik en beheer van de [=verkeerskundige informatie=] te faciliteren.
+
+**5. Raakvlakanalyse** De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
+
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
 2. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
-**5. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een systeem van een [=weggebruiker=].
+**6. Technische Uitgangspunten** In Technische Uitgangspunten staan de normen en richtlijnen waaraan het [=Informatiemodel Verkeerstekens=] dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
 
-**6. Toepassing** Het hoofdstuk over toepassing van het informatiemodel geeft een inzicht in het potentiele gebruik van het informatiemodel bij het genereren van digitale [=verkeerskundige informatie=].
+**7. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden .
 
-**7. Technische Uitgangspunten** In Technische Uitgangspunten staan de normen en richtlijnen waaraan het [=Informatiemodel Verkeerstekens=] dient te voldoen, en de wijze waarop wordt aangesloten op andere informatiemodellen. 
-
-**8. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden .
-
-**9. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het [=Informatiemodel Verkeerstekens=] te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
+**8. Technische uitwerking** De techische uitwqerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het [=Informatiemodel Verkeerstekens=] te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
 
 
 
