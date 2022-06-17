@@ -9,6 +9,31 @@
   <title>Informatiemodel verkeerstekens: Framework</title>
   <script src="config.js" class="remove"></script>
   <script src='https://cdn.jsdelivr.net/gh/stichting-crow/respec@latest/builds/respec-stichting-crow.js' async class='remove'></script>
+  <style>
+@media ( prefers-reduced-motion: no-preference ) {
+  @keyframes animateheader {
+    0% { background-color: unset; }
+    20%   { background-color: #ffff0020; }
+    100% { background-color: unset; }
+  }
+}
+
+:target {
+  animation: animateheader 1s ease-in-out ;
+}
+.toc-labeled>li li {
+  margin-left: 0;
+  list-style: disc;
+  margin-left: 1rem;
+}
+:not(li)>.toc-labeled {
+  margin-left: 0;
+}
+.toc-labeled {
+  font-size: 0.9rem;
+  line-height: inherit;
+}
+</style>
 </head>
 
 <body>
@@ -33,7 +58,10 @@
   <section data-format="markdown" data-include="hoofdstukken/architectuurframework.md"></section>
   
   <section id="index"></section>
-  
+  <section class="">
+    <h2>Index van eisen</h2>
+    <ol class="toc toc-column toc-labeled" id="index-of-requirements"></ol>
+  </section>
 </body>
 
 </html>
