@@ -25,7 +25,7 @@ Als het wegennetwerk wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie
 Voor de weggebruikers in de primaire use case is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het wegvak. De wegbeheerder denk eerst in termen van een zone [=zone=] of een [=werkingsgebied=] bij een [verkeersbesluit=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden.
 
 <figure>
-<img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.JPG">
+<img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.jpg">
 <figcaption>Van verkeersbesluit naar [verkeerskundige informatie=]. </caption>
 </figure>
 
