@@ -1,11 +1,9 @@
 # Raakvlakanalyse
 
-De raakvlakanalyse beschrijft de partijen die standaarden of informatiebronnen beheren en de bijbehorende standaarden en databronnen die een raakvlak hebben met het [=Informatiemodel Verkeerstekens=].
-
-De raakvlakanalyse verkent welke standaarden en informatiebronnen er zijn voor:
+De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
 
 1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
-2. De "digitale representatie" van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
+2. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 
 ## Beheerorganisaties
@@ -193,6 +191,8 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 **Raakvlaktype: Gezamenlijk beheer**
 
 CB-NL is de logsiche plek om relaties tussen het [=Informatiemodel Verkeerstekens=] en andere standaarden zoals NLCS te publiceren, waarbij een afspraak moet worden gemaakt over het beheer van de relatie tussen beide standaarden. Voorwaarde is wel dat een standaard gepubliceerd is als ontologie in linked data.
+
+* De begrippen en definities uit het [=Informatiemodel Verkeerstekens=] en Verkeersbesluiten MOETEN worden gelinked aan concepten in CB-NL. 
 
 
 ### NLCS
