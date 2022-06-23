@@ -52,9 +52,15 @@ Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen w
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=werkingsgebied=].
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] naar een een geometrische representatie (vlak).
 
-#### Selecteren verkeersbord
-Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is.
+<aside class="note" title="Automatisering van zone naar netwerk">
+<p> Een zone die ingetekend is op een een GIS-kaart kan niet door een machine automatisch vertaald worden naar de juiste [=werkingslengte=] en [NWB-wegvakken=]. Dit komt onder andere, omdat in GIS de mate van in- en uitzoomen de breedte van de zonegrens bepaalt. Er kunnen dan grensfouten optreden die bij een machine tot verwerkingsfouten leidt. De werkingslengte van de zone is daarom met alleen een vlak in GIS niet nauwkeurig vast te stellen voor een systeem. Daarnaast komt het voor, dat een weg binnen een zone uitgezonderd is, bijvoorbeeld een doorgaande weg door het gebied, terwijl er maar één zone is getekend op de kaart. Voor de menselijke lezer goed te begrijpen, voor de machine niet. </p></aside>  
 
+<div class="issue" data-number="87"></div>
+
+#### Selecteren verkeersbord
+Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is. 
+
+* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] die kunnen voorkomen. 
 * Het informatiemodel MOET bij een type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] aanduiden, welke verkeersborden hier bij toegepast kunnen worden.
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
 
@@ -84,19 +90,20 @@ Als het wegennetwerk wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie
 
 Om met een wegontwerp aan te sluiten op een landelijke netwerkregistratie van wegen zouden afspraken gemaakt moeten worden om ook het ontworpen netwerk in termen van juncties en wegvakken op te nemen in ontwerptekeningen of BIM modellen, naast de verkeersborden. Zo kan makkelijker de vertaling worden gemaakt tussen wegontwerp en netwerkregistratie. Deze afspraak zou goed passen bij de BIM standaard [=NLCS=]. 
 
-<aside class="note" title="Mens versus machine">
-<p> Verkeersbesluiten worden door wegbeheerders vaak ontwikkeld op basis van een GIS-kaart of een 2D CAD-ontwerp, waar de nieuwe wegligging en/of oude en nieuwe verkeersborden op geplot worden; bij besluiten die gelden voor een zone wordt deze soms aangeduid met een vlak op de kaart. Als deze kaarten of ontwerpen rechtstreeks door een 'Systeem' moeten worden ingelezen en verwerkt tot verkeersdata, gerelateerd aan een wegennetwerk, moeten door het systeem veel complexe puzzels worden gemaakt. Wegen zijn op een GIS-kaart weergegeven met een lijn of vlak, in een CAD-ontwerp vaak met lijnen die de stroken en de kant van de verharding aangeven. Om van hieruit een wegennetwerk te kunnen afleiden met wegvakken ('hartlijn van een weg') en juncties ('knopen'), is niet goed programmeerbaar. Ook rekenfouten in het aansluiten op het bestaande netwerk worden door een computer niet begrepen - bijvoorbeeld de juncties verschillen 0.00001 mm van elkaar en het systeem loopt vast, waar een mens ze zo over elkaar plaatst wetend dat de afwijking minimaal is.
-Ook van een verkeersbord kent het systeem de reikweidte niet, al kan het ernaar raden: een waarschuwingsbord voor een drempel geldt voor maximaal 50 meter lengte, een verkeersbord "kijk uit herten" heeft een onderbord wat vertelt hoeveel meter deze waarschuwing geldt. Al met al zit er een verschil in de mens, die de kaart met wegen en verkeersborden 'in een oogopslag' begrijpt, en een systeem waarvoor dit te complex en tegenstrijdig is. Daarom geldt in deze use case beschrijving de aanname, dat een wegbeheerder wijzigingen doorgeeft passend bij de centrale netwerkregistratie. </p>
-<p> De andere kant op is minder complex: als het netwerk eenmaal is opgebouwd, kunnen met 'rules' wegvakken en verkeersborden worden afgeleid. Hierbij geldt: hoe beter en uitgebreider de netwerkdata, hoe beter dit gaat. Als een wegvak per rijstrook is aangeduid en de breedte van de rijstrook op elke lengte is aangegeven, kan het systeem het "wegontwerp" genereren en de 'in lengterichting' aangeduide verkeersborden visualiseren. De wegbeheerder kan dat goed overzien, of hij de 'data' op de juiste manier heeft aangeleverd / ingevoerd.</p></aside>  
-
-
-Om het opstellen van digitale verkeerskundige informatie te ondersteunen* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] die kunnen voorkomen. 
-
+<aside class="note" title="Automatisering van CAD ontwerp naar netwerk">
+<p> Door wegbeheerders wordt een nieuw netwerk vaak ontwikkeld op basis van een 2D CAD-ontwerp, waar de nieuwe wegligging en locatie van verkeersborden op geplot worden; Als een ontwerp rechtstreeks door een 'Systeem' moeten worden ingelezen en verwerkt tot verkeersdata, gerelateerd aan een wegennetwerk, moeten door het systeem veel complexe puzzels worden gemaakt. Wegen zijn in een CAD-ontwerp vaak aangeduid met lijnen die de stroken en de kant van de verharding aangeven. Om van hieruit een wegennetwerk te kunnen afleiden met wegvakken ('hartlijn van een weg') en juncties ('knopen'), is niet goed programmeerbaar. Ook rekenfouten in het aansluiten op het bestaande netwerk worden door een computer niet begrepen - bijvoorbeeld de juncties verschillen 0.00001 mm van elkaar en het systeem loopt vast, waar een mens ze zo over elkaar plaatst wetend dat de afwijking minimaal is.</p><br>
+<p>Ook van een verkeersbord kent het systeem de reikweidte niet, al kan het ernaar raden: een waarschuwingsbord voor een drempel geldt voor maximaal 50 meter lengte, een verkeersbord "kijk uit herten" heeft een onderbord wat vertelt hoeveel meter deze waarschuwing geldt. Al met al zit er een verschil in de mens, die de kaart met wegen en verkeersborden 'in een oogopslag' begrijpt, en een systeem waarvoor dit te complex en tegenstrijdig is. Daarom moet aan een CAD ontwerp informatie worden toegevoegd om alle informatie, zoals de werkingslengte, van een verkeersbord te kunnen digitaliseren. </p><br>
+</aside>  
 
 
 #### Weginrichting
 
-In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht; bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord. De menselijke weggebruiker kan dit op zicht inschatten. In de digitale [=verkeerskundige informatie=] kan wel een [=adviessnelheid=] worden toegevoegd zonder verkeersbord. Een systeem kan daarmee de informatie die een mens visueel kan inschatten ook goed interpreteren.
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. De [=wegmarkering=] is buiten scope van het informatiemodel, het advies of gebod om niet in te halen zonder bijbehorend verkeersbord ook.
+
+<div class="issue" data-number="135"></div>
+
+In de digitale [=verkeerskundige informatie=] kan wel een [=adviessnelheid=] worden toegevoegd zonder verkeersbord. Een systeem kan daarmee de informatie die een mens visueel kan inschatten ook goed interpreteren.
+
 
 ### Omgevingsmanagement
 
@@ -114,7 +121,17 @@ De wegbeheerder volgt een juridische procedure vanaf de aanvraag van een maatreg
 
 *Stakeholders: Wegbeheerders*
 
-De wegbeheerder publiceert het [=verkeersbesluit=] digitaal in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op www.overheid.nl. Dit  geeft een verkeersbord de wettelijke status waarmee gehandhaaft kan worden op overtreding van de [=verkeersregel=]. De juridische informatie in het verkeersbesluit valt buiten de scope van het informatiemodel. Om het opstellen en beheren van verkeerskundige informatie te ondersteunen wordt de relatie met het verkeersbesluit wel opgenomen in het informatiemodel. 
+<dfn data-lt="Verkeersbesluit|Verkeersbesluiten">Verkeersbesluit</dfn>
+<dd> Wegbeheerders zijn per 01072021 wettelijk verplicht om verkeersbesluiten over nieuwe en langdurende (>4 maanden) tijdelijke verkeerskundige situaties digitaal te publiceren in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op www.overheid.nl, conform <a href="https://wetten.overheid.nl/BWBR0006622/2021-10-19/#HoofdstukII_Paragraaf2_Artikel15">Wegenverkeerswet 1994 artikel 15</a>.
+</dd>
+
+Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het formaat van verkeersbesluiten niet geschikt om deze op een eenvoudige wijze te verwerken tot digitale [=verkeerskundige informatie=].
+ 
+Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale [=verkeerskundige informatie=]. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de verkeersborden. 
+
+ De officiële publicatie van het verkeersbesluit geeft een verkeersbord de wettelijke status waarmee gehandhaaft kan worden op overtreding van de [=verkeersregel=]. 
+ 
+ De juridische informatie in het verkeersbesluit valt buiten de scope van het informatiemodel. Om het opstellen en beheren van verkeerskundige informatie te ondersteunen wordt de relatie met het verkeersbesluit wel opgenomen in het informatiemodel. 
 
 * Het informatiemodel MOET de mogelijkheid bieden om een link te leggen van een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] naar het [=verkeersbesluit=] waarin deze is gepubliceerd.
 
@@ -208,15 +225,11 @@ In de beheerfase wordt informatie bijgehouden over de kwaliteit van de verkeersb
 Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of verkeersborden aanwezig zijn en markeringen niet te veel versleten. De [verkeerskundige informatie] kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een verkeersbord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. 
 
 
-
-
-## Gebruiksfase
-
 ### Weggebruik
 
 *Stakeholders: [=Weggebruikers=]* 
 
-De verkeersborden zijn in eerste instantie bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg. [=weggebruikers=] kunnen daarbij ondersteund worden door digitale systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig. Zie ook de uitgewerkte use case voor meer details.
+De verkeersborden zijn in eerste instantie bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg. [=weggebruikers=] kunnen daarbij ondersteund worden door [=SMART Mobility=] systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig. 
 
 
 <dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
@@ -237,19 +250,6 @@ Bij handhaving in het verkeer is het beschikbaar hebben van digitale [=Verkeersk
 Bij nieuwbouw of renovatie worden verkeersborden en markeringen weggehaald of verplaatst. Hierbij is informatie nodig uit de bouw- en beheerfase die wel wordt aangeduid als een "materialenpaspoort" om te kunnen bepalen of de verkeersborden kunnen worden hergebruikt, en of zij hiertoe moeten worden gerestaureerd. 
 
 1. In het [=Informatiemodel Verkeerstekens=] moet een verkeersbesluit en daarmee de de bijbehorende verkeersborden en markeringen een begin- en eindtijd krijgen zodat duidelijk is of deze aanweizg zijn op een specifiek tijdstip of niet. 
-
-
-## Data producenten
-De producenten van de verkeersbesluiten zijn de wegbeheerders, ondersteund door wegontwerpers en bouwbedrijven. 
-
-## Data gebruikers
-De gebruikers van de verkeersbesluiten zijn de [=weggebruikers=], beheerders en toezichthouders en hun systemen.
-
-<aside class="note" title="Levels of Detail">
-Verschillende <i>gebruikers</i> van de informatie over verkeersbesluiten hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één hartlijn van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor SMART Mobility geldt dat het het netwerk gedetailleerder moet zijn met een polygoon per [=rijstrook=]. Daarnaast moet de nauwkeurigheid van de geometrie niet te veel afwijken van de werkelijkheid. Het bijbehorende verkeersbesluit is zo gedetailleerd als het netwerk toestaat. 
-
-Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
-</aside>
 
 
 

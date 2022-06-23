@@ -44,6 +44,8 @@ CROW beheert (naast het [=Informatiemodel Verkeerstekens=]) de volgende relevant
 * [=Handboek Wegontwerp=]
 * [=ASVV=]
 
+CROW is daarnaast de facilitator van [=KPVV=]
+
 **Raakvlaktype: Gezamenlijk beheer**
 
 
@@ -67,15 +69,16 @@ Deze groep MOET geinformeerd worden over de toepassing van het [=Informatiemodel
 
 ### PIANOO
 
-<dfn data-lt="PIANOO">PIANOO</dfn>
+<dfn data-lt="PIANOo">PIANOo</dfn>
 <dd> PIANOo, Expertisecentrum Aanbesteden van het ministerie van Economische Zaken en Klimaat heeft als taak het inkopen en aanbesteden bij overheden te professionaliseren. PIANOo brengt experts op inkoop- en aanbestedingsgebied bij elkaar, bundelt kennis en ervaring en geeft advies en praktische tips. 
 PIANOo valt per 1 januari 2017 onder de directie Nationale Programma's van de Rijksdienst voor Ondernemend Nederland (RVO).  Zie ook <a href="https://www.pianoo.nl/nl">deze website</a></dd> 
 
+[=PIANOo=] faciliteert het uitwisselen van kennis door publieke opdrachtgevers in Buyer Groups zoals de [=Buyer Group Verkeersborden=]
 
 #### Buyer Group Verkeersborden
 
 <dfn data-lt="Buyer Group verkeersborden|">Buyer Group verkeersborden</dfn>
-<dd>De publieke opdrachtgevers in de Buyer Group verkeersborden en [=bewegwijzering=] werken samen aan het verduurzamen van verkeersborden en [=bewegwijzering=]. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten. Zie ook <a href="https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en">deze website</a>  </dd>
+<dd> De Buyer Group verkeersborden en [=bewegwijzering=] werkt aan het verduurzamen van verkeersborden en [=bewegwijzering=]. In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie. Deze strategie passen deelnemers toe in hun eigen projecten. Zie ook <a href="https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en">deze website</a>  </dd>
 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
@@ -93,9 +96,7 @@ De NEN beheert nationale standaarden en levert input voor CEN- en ISO normen.  D
 <dfn data-lt="Normcommissie Verkeerstekens">Normcommissie Verkeerstekens</dfn>
 <dd>De normcommissie Verkeerstekens houdt zich onder de vlag van de NEN bezig met de normalisatie op het gebied van [=verkeerstekens=]. De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa. De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen. Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV verkeersborden, naar aanleiding van vragen uit de markt. Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV verkeersborden. Zie ook <a href="https://www.nen.nl/normcommissie-verkeerstekens">deze website</a> </dd>
 
-**Raakvlaktype: Buiten scope** Potentieel gezamenlijk beheer
-
-In de toekomst is de normcommissie verkeerstekens een partij om mee samen te werken om de lijst verkeersborden bij te houden die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen.
+**Raakvlaktype: Gezamenlijk beheer** Potentieel gezamenlijk beheer van de de [=statische verkeersborden=] die genomineerd zijn om in de wet te worden opgenomen. Hiervoor moeten nog afspraken worden gemaakt.
 
 
 ### NDW
@@ -144,6 +145,21 @@ KOOP kan bij het publiceren van verkeersbesluiten en bij het inrichten van een v
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
+
+### Vereniging Nederlandse Gemeenten
+
+<dfn data-lt="VNG|Vereniging Nederlandse Gemeenten">VNG</dfn>
+<dd>De Vereniging van Nederlandse Gemeenten is de koepelorganisatie van alle gemeenten in Nederland. De VNG is een privaatrechtelijke rechtspersoon met volledige rechtsbevoegdheid naar Nederlands recht.</dd>
+
+De VNG is kartrekker van het programma [=T3D=] en de [=Samenhangende Objectenregistratie=]
+
+
+### HR-Groep
+
+<dfn data-lt="HR-Groep">HR-Groep</dfn>
+<dd>Commerciële partij die de [=verkeersbordendata=] levert aan het [=NDW=].</dd>
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
 ## Wetgeving
 
@@ -215,7 +231,7 @@ Circa 30% van de ontwerptekeningen bij verkeersbesluiten komen uit CAD-systemen.
 ### ASVV
 
 <dfn data-lt="ASVV|Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom">ASVV</dfn>
-<dd> CROW publiceert de ASVV, de Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom. De kennis uit de ASVV wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is op dit moment geen open standaard, er moet een abonnement voor worden afgesloten. Zie ook <a href="https://www.crow.nl/publicaties/asvv-2021">deze website</a> </dd>
+<dd> [=CROW=] publiceert de ASVV, de Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom. De kennis uit de ASVV wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is op dit moment geen open standaard, er moet een abonnement voor worden afgesloten. Zie ook <a href="https://www.crow.nl/publicaties/asvv-2021">deze website</a> </dd>
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
@@ -225,7 +241,7 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 ### Handboek Wegontwerp
 
 <dt><dfn data-lt="Handboek Wegontwerp">Handboek Wegontwerp</dfn>
-<dd>CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/productpakketten/handboek-wegontwerp-2013-serie-papier-onlin">deze website</a>     </dd>
+<dd>[=CROW=] publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/productpakketten/handboek-wegontwerp-2013-serie-papier-onlin">deze website</a>     </dd>
 
 CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. 
 
@@ -254,6 +270,7 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 
 De NEN3381:2020 wordt beheerd door de [=normcommissie Verkeerstekens=]. 
 
+**Raakvlaktype: Bron voor informatiemodel** Bron voor de [=statische verkeersborden=] die genomineerd zijn om in de wet te worden opgenomen
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
@@ -263,7 +280,7 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 
 ### IMBOR
 <dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR">IMBOR</dfn>
-<dd> Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a>  </dd>
+<dd> Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://docs.crow.nl/onto-verkenner/imbor/#/view">deze viewer</a>  </dd>
 
 <aside class="note" title="Informatiemodel, data en applicaties"><ol><li><b>Informatiemodel</b>: IMBOR is alleen een informatiemodel, géén bron van gegevens over bijvoorbeeld de locatie van in beheer zijnde verkeersborden. </li>
 <li><b>Data</b>: IMBOR wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan. Elke wegbeheerder kan dit zelf organiseren in een eigen database of een database van een opdrachtnemer of softwareleverancier (publicatie bij de bron). Of men kan een landelijke afspraak maken om de in beheer zijnde verkeersborden ergens te publiceren, zoals via het [=NWB=] (centrale publicatie). Op dit moment zijn hiervoor geen afspraken. </li>
@@ -274,7 +291,7 @@ In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien [=bebakenin
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbelingen kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
+Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbele definities kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
 1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze staan dan niet meer in IMBOR
 2. In IMBOR staan de verkeersborden, bewegwijzeringen  die buiten de scope van het [=Informatiemodel Verkeerstekens=] vallen. 
@@ -291,9 +308,10 @@ Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel V
 ### IMGeo
 
 <dfn data-lt="IMGeo|Informatiemodel Geografie">IMGeo</dfn>
-<dd> Het Iformatiemodel ontwikkeld voor objectgerichte geografische informatie voor de [=BGT=]. Wegen zijn hierin opgenomen als 2D vlakobject. Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord". </dd>
+<dd> Het Informatiemodel ontwikkeld voor objectgerichte geografische informatie ontwikkelt voor de [=BGT=]. Wegen zijn hierin opgenomen als 2D vlakobject. Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".</dd>
 
-Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van het informatiemodel IMGEO. Aanvullend hierop voegen zij in hun areaalbeheerpakketten extra informatie toe aan deze wegvlakken, ten behoeve van beheer van de wegen.
+ Welk type verkeersbord op de BGT kaart staat kan niet worden geregistreerd.
+Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van het informatiemodel IMGEO. Aanvullend hierop voegen zij in hun areaalbeheerpakketten extra informatie toe aan deze wegvlakken, ten behoeve van beheer van de wegen. 
 
 **Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
 
@@ -312,14 +330,16 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 
 ### NWB(+)
 
-<dfn data-lt="NWB|Nationaal Wegen Bestand|NWB-Wegen">NWB</dfn>
-<dd> Een open geografisch databestand van een wegennetwerk bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals zoals Schiphol en Havenbedrijf Rotterdam. Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
+<dfn data-lt="Nationaal Wegen Bestand|NWB">NWB</dfn>
+<dd> Nationaal Wegen Bestand. Een open geografisch databestand van een wegennetwerk bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals zoals Schiphol en Havenbedrijf Rotterdam. Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
 
-<dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">Nationaal Wegen Bestand+</dfn>
-<dd>Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a>    </dd>
+<dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">NWB+</dfn>
+<dd>Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
 
+Het NWB wordt actueel gehouden met ingewonnen data en (in mindere mate) door aanlevering van gegevens door wegbeheerders en geeft de gebruikstoestand weer van wegen.
 
-**Raakvlaktype: Gezamenlijk beheer**
+**Raakvlaktype: Gebruik informatiemodel**
+Het NWB gebruikt op dit moment een eigen informatiemodel, wat aansluit op de eigen database. Om het [=Informatiemodel Verkeerstekens=] toe te kunnen passen moet onderzocht worden hoe dit aansluit op de historische gegevens en wat er nodig is om de informatie in het NWB zoekbaar en vindbaar te maken op basis van het datamodel. Op dit moment wordt het NWB door [=SMART Mobility=] systemen niet live bevraagd, maar wordt een kopie verwerkt in de systemen.
 
 
 
@@ -339,15 +359,6 @@ Daarbij gelden momenteel de volgende regels:
 <dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen.</dd>
 
 
-### Data Top 15
-
-<dfn data-lt="Data Top 15">Data Top 15</dfn>
-<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. https://www.datapedia.nl/ </dd>
-
-De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.</dd>
-
-**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
-
 
 
 ### Verkeersbordendata
@@ -355,7 +366,7 @@ De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data w
 <dfn data-lt="Verkeersbordendata">Verkeersbordendata</dfn>
 <dd>Het NDW publiceert de <a href="https://docs.ndw.nu/api/trafficsigns/nl/index.html">actueel waargenomen verkeersborden</a> in Nederland. Het bestand is op twee bronnen gebaseerd: 
 
-1. Mutaties die door de jaarlijkse schouwronde met auto's/camera's worden gesignaleerd. 
+1. Mutaties die door de jaarlijkse schouwronde met auto's/camera's worden gesignaleerd. Leverancier: [=HR-Groep=]
 2. Mutaties die door de wegbeheerder worden ingevoerd. Deze bron is vanzelf actueler, maar wordt minder toegepast. 
 
 De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een [=NWB-wegvak] en ze hebben allemaal een locatie (x,y).</dd>
@@ -363,6 +374,16 @@ De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een [=NW
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
 Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde verkeersborden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het [=Informatiemodel Verkeerstekens=].
+
+
+### Data Top 15
+
+<dfn data-lt="Data Top 15">Data Top 15</dfn>
+<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. https://www.datapedia.nl/ </dd>
+
+De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.</dd>
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
 
 ### NTM
@@ -409,15 +430,17 @@ Dit betreft een representatie van de verkeersborden in een andere levensfase, na
 
 #### SOR
 <dfn data-lt="Samenhangende Objectenregistratie|SOR">SOR</dfn>
-<dd>Samenhangende Objectenregistratie. Ontwikkeling met als doel dat de basisregistraties in de toekomst goed op elkaar aansluiten, zonder overlap. </dd>
+<dd>Een programma gecoördineerd door de [=Vereniging Nederlandse Gemeenten=] waarbinnen gewerkt wordt aan een Samenhangende Objecten Registratie: een nog te ontwikkelen uniforme registratie met basisgegevens over objecten in de fysieke werkelijkheid. Daaronder worden verstaan objecten die in het terrein zichtbaar zijn, zoals spoorlijnen, wegen, water, gebouwen en bomen. Ook worden basisgegevens over niet-zichtbare objecten opgenomen, zoals bestuurlijke gebieden, woonplaatsen en openbare ruimten. </dd>
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak van de informatiemodellen
+
+De ontwikkeling van de samenhangende objectenregistratie is een samenwerkingsverband van onder meer gemeenten, provincies, waterschappen, Rijkswaterstaat, Kadaster en de Waarderingskamer. Het traject maakt onderdeel uit van het regieprogramma Doorontwikkeling in Samenhang van de Geo-basisregistraties (DiS Geo) van het ministerie van BZK en heeft een relatie met het programma Centrale netwerkregistratie van het ministerie van I&W. Kennispartners zijn onder meer het Gemeentelijk Geo-Beraad (GGB), Geonovum en CROW.
 
 
 ### T3D
 
 <dfn data-lt="Programma Totaal 3Dimensionaal|T3D|Totaal 3Dimensionaal">Totaal 3Dimensionaal</dfn>
-<dd>Een programma van de Vereniging Nederlandse Gemeenten (VNG) waarbinnen gewerkt wordt aan verbetering van het inwinnen, registratie en het gebruik van 3 dimensionale geo-informatie. </dd>
+<dd>Een programma gecoördineerd door de [=Vereniging Nederlandse Gemeenten=] waarbinnen gewerkt wordt aan verbetering van het inwinnen, registratie en het gebruik van 3 dimensionale geo-informatie. </dd>
 
 Hierbij wordt [=CityGML=] gezien als een handig formaat om in te publiceren. 
 
