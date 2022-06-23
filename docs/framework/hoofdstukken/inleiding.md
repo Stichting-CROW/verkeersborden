@@ -13,7 +13,7 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom [=verkeersk
 3. Samen met [=BIM loket=] wordt gewerkt aan het uitbreiden van NLCS met netwerkinformatie en verkeersborden om het verkeerskundige CAD-ontwerp beter te kunnen overdragen naar digitale [=verkeerskundige informatie=] voor invoer in het [=Nationaal Wegen Bestand=].
 4. In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een [=Data Top 15=] opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
 
-Alle trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van [=verkeerskundige informatie=] toe te kunnen werken is een [=Informatiemodel Verkeerstekens=] essentieel. 
+Alle trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van [=verkeerskundige informatie=] toe te kunnen werken is een [=Informatiemodel Verkeerstekens=] essentieel. Het ministerie heeft CROW gevraagd om hiervoor dit framework op te stellen.
 
 Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
 
@@ -22,18 +22,15 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 <figcaption>Maximale snelheid voor navigatiesystemen, van rechts naar links: Een wegbeheerder neemt een [=verkeersbesluit=]; het [=NDW=] registreert een nieuwe verkeerskundige situatie; in het [=NTM=] wordt de actuele verkeerskundige informatie gepubliceerd; [=SMART Mobility=] systemen kunnen de juiste verkeerskundige situatie afleiden uit de informatie en daarmee [=weggebruikers=] ondersteunen. </caption>
 </figure>
 
-
-
-
-### Informatiebehoefte
-
-Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen.  Vanuit [=Smart Mobility=] is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per [=rijstrook=] en rijrichting. Zodat een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
-
 <dfn data-lt="verkeerskundige informatie">Verkeerskundige informatie</dfn>
 <dd>Informatie over de op een weg geldende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en de bijbehorende [=verkeerstekens=].</dd>
 
-<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
-<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
+
+### SMART Mobility
+
+Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen.  Vanuit [=Smart Mobility=] is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per [=rijstrook=] en rijrichting. Zodat een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
+
+
 
 ### Bronhouders
 
@@ -58,20 +55,6 @@ Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=]
 In Nederland wordt digitale [=verkeerskundige informatie=] vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]) en het wegennetwerk ([=NWB=], [=WKD=], [=WEGGEG=]). 
 
 Er ontbreekt echter een categorie in de huidig beschikbare digitale informatie: de [=verkeerskundige informatie=]. De actuele digitale [=verkeerskundige informatie=] over de de weg moet makkelijk te wijzigen zijn door de wegbeheerder, eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. Het [=Informatiemodel Verkeerstekens=] moet daarbij helpen.
-
-
-<dfn data-lt="verkeersregel|verkeersregels">Verkeersregels</dfn>
-<dd>De wettelijk geldende verkeersregels op een locatie volgens de [=RVV 1990=]. Hieronder vallen de wettelijke maximum snelheid en de ge- en verboden. </dd>
-
-<dfn data-lt="waarschuwingen|waarschuwing">Waarschuwing</dfn>
-<dd>De waarschuwingen op een locatie volgens de [=RVV 1990=]</dd>
-
-<dfn data-lt="Adviessnelheden|Adviessnelheid">Adviessnelheid</dfn>
-<dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
-
-<dfn data-lt="verkeerstekens|verkeersteken">Verkeersteken</dfn>
-<dd>Een wettelijk vastgesteld teken ter regeling, waarschuwing, geleiding of informering van het verkeer. Onder de verkeerstekens vallen verkeersborden en [=wegmarkeringen=].</dd>
-
 
 
 #### Verkeersbesluiten

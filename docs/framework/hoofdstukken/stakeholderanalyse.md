@@ -33,7 +33,7 @@ Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer 
 
 #### Werkingsgebied
 
-Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een [=zone=] of een [=werkingsgebied=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden. 
+Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een [=zone=] of een [=werkingsgebied=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
 
 <figure>
 <img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.jpg">
@@ -52,11 +52,15 @@ Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen w
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=werkingsgebied=].
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] naar een een geometrische representatie (vlak).
 
-#### Relaties
+#### Selecteren verkeersbord
+Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is.
 
-
+* Het informatiemodel MOET bij een type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] aanduiden, welke verkeersborden hier bij toegepast kunnen worden.
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
 
+Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te kunnen controleren welke verkeersborden daar op dit moment bij horen:
+
+* Het informatiemodel MOET de mogelijkheid bieden om aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] een of meerdere verkeersborden te verbinden.
 
 ### Wegontwerp
 
@@ -213,6 +217,10 @@ Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesl
 *Stakeholders: [=Weggebruikers=]* 
 
 De verkeersborden zijn in eerste instantie bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg. [=weggebruikers=] kunnen daarbij ondersteund worden door digitale systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig. Zie ook de uitgewerkte use case voor meer details.
+
+
+<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
+<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
 
 
 ### Handhaving
