@@ -86,7 +86,7 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 * Het informatiemodel MOET de definities gebruiken uit het [=RVV 1990=].
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
-* Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomenzijn in wetgeving, en welke nog niet.
+* Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomen zijn in wetgeving, en welke nog niet.
 
 ### Adviessnelheid+
 De wegbeheerder heeft de mogelijkheid een [=adviessnelheid] te geven met een A4 verkeersbord.
@@ -106,6 +106,7 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomen zijn in wetgeving, en welke nog niet.
 * Het informatiemodel MOET de types en definities van onderborden definiëren die volgen uit de [=RVV 1990=].
+
 <div class="issue" data-number="149"></div>
 
 
