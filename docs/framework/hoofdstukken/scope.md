@@ -71,6 +71,11 @@ De wegbeheerder past het [=Informatiemodel Verkeerstekens=] toe bij het beheren 
 
 ## Binnen Scope
 
+### Fase
+Het informatiemodel is primair bedoeld om het gebruik van de weg te ondersteunen met digitale [=verkeerskundige informatie=]. 
+
+In het informatiemodel wordt secundair rekening gehouden met het opstellen en beheren van de digitale [=verkeerskundige informatie=] door de wegbeheerder.
+
 ### Wegsoorten
 
 Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
@@ -108,6 +113,14 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 
 ## Buiten scope
 
+### Fasen
+
+**Buiten scope** zijn:
+* Informatie die nodig is tijdens het ontwerp, zoals het alignement of de ontwerpsnelheid, is buiten scope.
+* Informatie die nodig is tijdens het bouwen, zoals inkoopeisen en garantiebepalingen van verkeersborden, is buiten scope.
+* Informatie die nodig is tijdens het beheer, zoals de onderhoudstoestand van verkeersborden, is buiten scope.
+* Informatie die nodig is tijdens de sloop, zoals materialenpaspoorten van verkeersborden, is buiten scope.
+
 ### Wegsoorten
 
 Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
@@ -129,7 +142,7 @@ Buiten scope zijn de dynamische verkeersborden.
 **Buiten scope** zijn de wegmarkeringen.
 
 <dfn data-lt="wegmarkering|wegmarkeringen">Wegmarkering</dfn>
-<dd> Op of in het oppervlak van de verharding aangebrachte tekens ter geleiding, waarschuwing, regeling of informatie van het verkeer <a href="https://data.crow.nl/thesaurus/term/735B2275-9052-4DD2-9F86-9EC796BDC483">Bron: CROW thesaurus</a>. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen, haaientanden.</dd> </dfn>
+<dd> Op of in het oppervlak van de verharding aangebrachte tekens ter geleiding, waarschuwing, regeling of informatie van het verkeer <a href="https://data.crow.nl/thesaurus/term/735B2275-9052-4DD2-9F86-9EC796BDC483">Bron: CROW thesaurus</a>. Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen en haaientanden.</dd> </dfn>
 
 Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de informatie die via de verkeersborden (en straks via digitale [=verkeerskundige informatie=]) al bekend zijn gemaakt. 
 

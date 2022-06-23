@@ -23,8 +23,21 @@ Verkeersborden zijn bedoeld om de menselijke [=weggebruikers=] te informeren ove
 3. Er worden in Nederland en in het buitenland verschillende experimenten gedaan met volledig zelfrijdende voertuigen. Deze systemen zouden meer [=verkeerskundige informatie=] kunnen gebruiken als deze beschikbaar is.
 4. Het verkeer kan steeds beter worden aangestuurd via centrales (intelligente Verkeersregelinstallaties ofwel iVRI's), een ontwikkeling die 'Connected Intelligent Transport Systems', ofwel C-ITS wordt genoemd. Denk daarbij aan het geleiden van hulpvoertuigen, waarbij via centrale aansturing van de verkeerslichten wordt gezorgd voor een veilige route waarin alle verkeerslichten 'mee zitten'. Deze systemen zouden meer [=verkeerskundige informatie=] kunnen bieden of gebruiken als deze beschikbaar is.
 
+### Machineleesbare informatie
+  <p> Een <b>wegbeheerder</b> die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben: </p>
+  <ol><li> Zorgen dat het verkeer <i>snelheid mindert ten opzichte van de maximum snelheid</i>, zodat een gevaarlijke situatie voorkomen wordt (een kruising, een school, een uitrit....) </li>
+  <li> Zorgen dat het verkeer zijn <i>snelheid beperkt tot de maximum snelheid</i>, zodat over de gehele lengte van de weg niet te hard gereden wordt.</li></ol>
+<p> Door op een kaart aan te geven dat er een waarschuwingsbord komt voor een drempel, en de drempel op de kaart te zetten, is de bedoeling voor een verkeerskundige duidelijk, maar is het onderscheid tussen het eerste en tweede doel niet meer af te leiden. Door het ontwerp van de drempel kan een maximale snelheid worden "afgedwongen" omdat het niet comfortabel is om er harder overheen te rijden.</p>
+  <p> Een <b>Menselijke chauffeur</b> die het verkeersbord visueel waarneemt, neemt (meestal) ook gelijktijdig de drempel visueel waar. Als de drempel er hoog uitziet ten opzichte van de snelheid, mindert de chauffeur tot minder dan de maximum snelheid. Als de drempel er laag uitziet ten opzichte van de maximum snelheid, beperkt de chauffeur zich tot de maximum snelheid. Voor een menselijke chauffeur voldoet het verkeersbord. Vooral omdat een deel van de chauffeurs de route kent, en na een keer te hard over de drempel te zijn gereden de tweede keer de snelheid iets mindert. </p>
+  <p> Een <b>Automatische pilot</b> of een <b>Rij-assistent</b> kan ook via beeldherkenning het verkeersbord en de drempel waarnemen. De menselijke afweging hoe snel comfortabel over de drempel gereden kan worden, is voor een machine echter moeilijk te maken. De machine weet niet goed welke snelheid het voertuig zou moeten hebben bij de drempel. </p>
+  <p> Een <b>Automatische pilot</b> of een <b>Rij-assistent</b> krijgt in het ideale geval via de netwerkregistratie door, dat er een drempel ligt. Of eigenlijk: dat tussen punt x en punt y op zijn route (over de lengte van de drempel) snelheid geminderd moet worden tot x. Indien de drempel de maximum snelheid afdwingt, is de waarschuwing eigenlijk niet nodig; tenzij de menselijke chauffeur die zelf rijdt gewaarschuwd moet worden om hier toch maar even snelheid te minderen (bijvoorbeeld door het verkeersbord ook op de boordcomputer te tonen). Indien de drempel een lagere snelheid afdwingt, kan de machine de informatie goed interpreteren. Zowel het verkeersbord, als de lengte waarover de waarschuwing geldt, als de <i>consequentie</i>, langzamer rijden, zal opgenomen moeten worden in de landelijke registratie, om het hierboven beschreven doel te halen. </p>
 
-## Wegvak bepalen
+
+  
+## Informatiebehoefte
+
+
+### NWB-Wegvak 
 De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] er gelden. Dit betekent, dat het systeem het [=NWB-wegvak=] moet kunnen herkennen waarop het rijdt, op basis van de locatie. Als de regel slechts geldt voor één rijstrook, zal dit ook duidelijk moeten zijn voor het systeem.
 
 <dfn data-lt="rijstrook|rijstroken">Rijstrook</dfn>
@@ -40,43 +53,44 @@ Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moete
 
 * Het informatiemodel MOET aansluiten op het informatiemodel van het [=NWB=] om te zorgen dat [=Verkeerskundige informatie=] gekoppeld kan worden aan het juiste [=NWB-wegvak=] en de juiste richting in het [=NWB-wegvak=].
 
-## Verkeersregels ophalen
+
+### Verkeersregel
 De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] er gelden. Dit betekent, dat het systeem deze regels bij het [=NWB-wegvak=] moet kunnen vinden. 
 
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een of meerdere [=NWB-wegvakken=].
 
-### Rijrichting bepalen
+#### Rijrichting 
 Omdat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] zowel voor één als voor beide richtingen kan gelden, zal het systeem moet kunnen vinden voor welke richting de regel van toepassing is.
 
 * Het informatiemodel MOET als default situatie hebben dat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing is op het gehele [=NWB-wegvak=], in beide richtingen.
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden vanaf welke [NWB-junctie] een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, indien deze alleen in één richting geldt. 
 
-### Rijstrook bepalen
+#### Rijstrook 
 * Het informatiemodel MOET de mogelijkheid bieden om de verkeersregel te laten gelden voor één van de [=rijstroken=], die oplopend vanaf één worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
 
 Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de nummering niet meer te worden aangeduid. 
 
 
-### Werkingslengte vinden
+#### Werkingslengte 
 Omdat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] zowel voor het gehele als voor een gedeelte van het [=NWB-wegvak=] kan gelden, zal het systeem moeten kunnen vinden voor welk gedeelte van het [=NWB-wegvak=] de regel van toepassing is. 
 
 <dfn data-lt="Werkingslengte">Werkingslengte</dfn>
 <dd>Het gedeelte van het [=NWB-wegvak=] waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheden=] met bijbehorend verkeersbord geldt.</dd>
 
 
-#### Beginpunt 
+##### Beginpunt 
 * Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] start op de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden vanaf een specifiek beginpunt gemeten in meters vanaf de [NWB-junctie].
 
 
-#### Eindpunt
+##### Eindpunt
 * Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] eindigt op de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden tot een specifiek eindpunt op x lengte ná de [NWB-junctie]. 
 
 <div class="issue" data-number="146"></div>
 
 
-## Fysiek bord tonen
+#### Fysiek bord 
 De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rijdt zien welk fysiek verkeersbord er staat.
 
 * Het informatiemodel MOET de mogelijkheid bieden om aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] een of meerdere verkeersborden te verbinden.
@@ -86,14 +100,14 @@ De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rij
 
 <div class="issue" data-number="145"></div>
 
-## Visualisatie
+#### Visualisatie bord
 De [=weggebruikers=] willen door hun systeem visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. Dit betekent dat het systeem zal moeten weten, welk bord getoond moet worden om duidelijk te maken welke [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt. 
 
-Daarbij geldt als "complicatie" dat niet elke [=verkeersregel=] gepaard gaat met een fysiek bord, of niet met een specifiek bord. Bijvoorbeeld in het geval van de maximumsnelheid, wordt dit fysiek soms aangeduid door een bord met het wegtype ("autoweg") terwijl de visuele ondersteuning beter van het type "A1" kan zijn (snelheidsbord).
+Daarbij geldt als "complicatie" dat niet elke [=verkeersregel=] gepaard gaat met een fysiek bord, of niet met een specifiek bord. Bijvoorbeeld in het geval van de maximumsnelheid, wordt dit fysiek soms aangeduid door een bord over het wegtype, zoals een G3 ("autoweg"), terwijl de visuele ondersteuning beter van het type "A1" kan zijn (snelheidsbord).
 
-
-* Het informatiemodel MOET voor elke [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord in combinatie met onderbord deze informatie *in de visuele ondersteuning* weergeeft.
-* Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten. 
+* Het informatiemodel moet onderscheid maken tussen de *fysiek aanwezige* verkeersborden en het type verkeersbord dat getoond kan worden ten behoeve van de *visuele ondersteuning van de weggebruiker*.
+* Het informatiemodel MOET voor elk type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord in combinatie met onderbord moet worden getoond ten behoeve van *de visuele ondersteuning van de weggebruiker*.
+* Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten ten behoeve van *de visuele ondersteuning van de weggebruiker*.
 
 
 
