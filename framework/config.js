@@ -80,7 +80,7 @@ var respecConfig = {
   specStatus: "DRAFT",
   pubDomain: "verkeersborden",
   shortName: "framework",
-  subtitle: "Uitgangspunten, use-case en architectuurframework",
+  subtitle: "Use-case, inhoudelijke en technische uitgangspunten",
   editors: [
     {
       name: "Elisabeth Klören",

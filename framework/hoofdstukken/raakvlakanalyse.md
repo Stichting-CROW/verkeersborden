@@ -28,6 +28,8 @@ Het BIM loket beheert in dit kader deze BIM relevante standaarden:
 * [=NLCS=]
 * [=CB-NL=]
 
+Het BIM loket werkt nauw samen met [=DigiGO=].
+
 **Raakvlaktype: Gezamenlijk beheer**
 
 Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen bij de BIM standaarden. In het ideale geval vindt gezamenlijk beheer plaats om standaarden op elkaar te laten aansluiten. 
@@ -339,7 +341,9 @@ Daarbij gelden momenteel de volgende regels:
 
 ### Data Top 15
 
-In het [=Programma Digitalisering Overheden=] is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
+<dfn data-lt="Data Top 15">Data Top 15</dfn>
+<dd>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2030 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. https://www.datapedia.nl/ </dd>
+
 De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data wordt gepubliceerd, en naar data.overheid.nl waar individuele beheerorganisaties waaronder Rijkswaterstaat eigen data publiceren. In deze bronnen zitten dubbelingen met de gegevens die in de landelijke netwerkregistratie zullen worden opgenomen.</dd>
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
