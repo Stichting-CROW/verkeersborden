@@ -175,18 +175,32 @@ In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening
 <div class="issue" data-number="136"></div>
 
 
-### Juridisch
-
-**Buiten scope** zijn de metadata over de juridische procedure van het [=verkeersbesluit=] bij de verkeersregel.
-
-### Wijzigingen
-
-Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijzigingen door de wegbeheerder aan het publicatieplatform worden aangeboden. 
+### Procedure verkeersbesluit
 
 **Buiten scope** zijn:
-* De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=]. 
+* De metadata over de juridische procedure van het [=verkeersbesluit=] bij de verkeersregel.
+* De inhoud van de juiridische procedure.
+
+### Informatieleveringsspecificatie
+Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijzigingen door de wegbeheerder aan het publicatieplatform worden aangeboden. De wegbeheerder heeft voor het aanleveren van een wijziging in de [=verkeerskundige informatie=] een "Informatieleveringsspecificatie" nodig en moet kunnen aantonen dat de aangeboden data hieraan voldoet. 
+
+**buiten scope** zijn:
 * De informatieleveringsspecificatie voor een te leveren dataset met wijzigingen.
 * Een validatierapport of de kwaliteitstoets bij de dataset.
+
+<aside class="note" title="Informatieleveringsspecificatie">
+In een Informatieleveringsspecificatie staat:<ul>
+<li>Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
+<li>Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
+<li>In welk formaat of welke taal de wijziging kan worden aangeleverd</li>
+<li>Of informatie mag worden toegevoegd uit een eigen informatiemodel</li> </ul> 
+</aside> 
+
+
+### Transactie
+Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijzigingen door de wegbeheerder aan het publicatieplatform worden aangeboden. De wegbeheerder moet hiervoor een wijzigingstransactie starten.
+
+De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=] zijn **buiten scope**
 
 <aside class="note" title="Transactie bij een datalevering">
 Een hapy flow van een transactie is bijvoorbeeld als volgt:
@@ -200,15 +214,6 @@ Een hapy flow van een transactie is bijvoorbeeld als volgt:
 Daarnaast is voor een transactie een "Aanleverinstructie" nodig waarin staat:
 - Hoe een wijziging kan worden aangeleverd: via VISI, een website, via een API, met adressering van de afnemer en het te volgen transactieprotocol
 </aside> 
-
-<aside class="note" title="Informatieleveringsspecificatie">
-De wegbeheerder heeft voor het aanleveren van een wijziging in de [=verkeerskundige informatie=] een "Informatieleveringsspecificatie" nodig. In een Informatieleveringsspecificatie staat:<ul>
-<li>Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
-<li>Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
-<li>In welk formaat of welke taal de wijziging kan worden aangeleverd</li>
-<li>Of informatie mag worden toegevoegd uit een eigen informatiemodel</li> </ul> 
-</aside> 
-
 
 
 
