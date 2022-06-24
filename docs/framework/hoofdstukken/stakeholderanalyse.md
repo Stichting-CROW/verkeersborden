@@ -216,6 +216,16 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 <figcaption>Beheer- en gebruiksfase</caption>
 </figure>
 
+
+### Weggebruik
+
+*Stakeholders: [=Weggebruikers=]* 
+
+Zie de use case.
+
+<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
+<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
+
 ### Beheren
 
 *Stakeholders: Wegbeheerders*
@@ -229,17 +239,6 @@ In de beheerfase wordt informatie bijgehouden over de kwaliteit van de verkeersb
 </figure>
 
 Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of verkeersborden aanwezig zijn en markeringen niet te veel versleten. De [verkeerskundige informatie] kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een verkeersbord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. 
-
-
-### Weggebruik
-
-*Stakeholders: [=Weggebruikers=]* 
-
-De verkeersborden zijn in eerste instantie bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg. [=weggebruikers=] kunnen daarbij ondersteund worden door [=SMART Mobility=] systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig. 
-
-
-<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
-<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
 
 
 ### Handhaving
