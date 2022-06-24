@@ -1,127 +1,170 @@
 # Uitgangspunten beheer
 
-Het [=Informatiemodel Verkeerstekens=] zal in beheer genomen moet worden om up to date te blijven.
+Het [=Informatiemodel Verkeerstekens=] zal in beheer genomen moet worden om up to date te blijven. Dit hoofdstuk beschrijft hiervoor de afspraken en randvoorwaarden.
 
-## BOMOS
+## Beheermodellen
 
-De beheerstrategie is open en transparant beheer conform het Beheermodel voor Open Standaarden [BOMOS](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf).
+### BOMOS
 
-Beheer volgens BOMOS heeft de volgende voordelen:
-
-- Belangen van stakeholders worden evenwichtig afgewogen bij ontwikkeling en beheer van de standaard.
-- De standaard wordt samen met gebruikers actueel gehouden, iedereen kan ideeën aandragen.
-- Het beheer gebeurt transparant.
-- Informatie is voor iedereen toegankelijk met heldere voorwaarden voor gebruik.
+De beheerstrategie is open en transparant beheer conform het Beheermodel voor Open Standaarden, zie ook de [BOMOS-documentatie](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf). Beheer volgens BOMOS heeft de volgende voordelen:
+* Belangen van stakeholders worden evenwichtig afgewogen bij ontwikkeling en beheer van de standaard.
+* De standaard wordt samen met gebruikers actueel gehouden, iedereen kan ideeën aandragen.
+* Het beheer gebeurt transparant.
+* Informatie is voor iedereen toegankelijk met heldere voorwaarden voor gebruik.
 
 <figure>
 <img src="hoofdstukken/media/bomos.PNG">
 <figcaption>Activiteitendiagram van Beheermodel voor Open Standaarden (BOMOS) van Forum voor standaardisatie</caption>
 </figure>
 
+### Ken Krechmer
+Voor digitale en informatiestandaarden gelden daarnaast de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf). Bij het PCB bevindt zich zowel inhoud in documentformats als in datavorm (eisensets). Deze inhoud wordt in digitale processen gebruikt, zoals bij het beheren van eisenbibliotheken (individuele eisensets van provincies), het opstellen en beheersen van contracten, ricicomanagement en het verder uitdetailleren van eisen, werkproces en kwaliteitsproces tijdens uitvoering van het project. Daarom is het van belang dat de informatieproducten van het PCB voldoen aan de criteria van Ken Krechmer.
+
+
 ## Strategie
 
 ### Governance
 
-Het beheer van het [=Informatiemodel Verkeerstekens=] wordt ondergebracht bij CROW die een transparante besluitvorming en open inspraak organiseert en tactische en operationele beheertaken uitvoert. Het [=Informatiemodel Verkeerstekens=] en wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR.
+<aside class="note" title="BOMOS eisen">
+De governance van de standaard is voor iedereen helder:
+<ul><li> De organisatiestructuur </li>
+<li> De rollen en taken van commissies en van de beheerder </li>
+<li> De benoeming een neutraliteit van voorzitters </li></ul>
+</aside>
+
+Het voorstel is, dat het [=Informatiemodel Verkeerstekens=] wordt onder de hoede geplaatst van de beheerorganisatie van IMBOR.
+
+<aside class="note" title="Besluitvorming door IMBOR beheerorganisatie">
+Dit architectuur framework voor het [=Informatiemodel Verkeerstekens=] wordt geagendeerd in de Stuurgroep IMBOR voor besluitvorming of dit informatiemodel in beheer wordt genomen binnen de beheerorganisatie IMBOR</aside>
 
 #### Stuurgroep IMBOR
 
-De Stuurgroep IMBOR is verantwoordelijk voor.....
+**Rol: Beheren** De Stuurgroep is verantwoordelijk voor het beheer van [=IMBOR=] en het [=Informatiemodel Verkeerstekens=]
 
-Welke overheidspartijen of partners moeten deelnemen in een sturend orgaan dat verantwoordelijk is voor besluitvorming en evenwichtige afweging van de belangen van de stakeholders?
+* Taak: De Stuurgroep beslist welke onderdelen aan IMBOR worden toegevoegd.
+* Taak: De Stuurgroep stelt nieuwe of gewijzigde onderdelen van het [=Informatiemodel Verkeerstekens=] vast.
 
-Een stuurgroep, gebruikersgroep, expertgroep, werkgroep dient een onafhankelijke voorzitter te hebben. De rol van de voorzitter is van cruciaal belang, en heeft veel invloed op het eindresultaat.
+#### CROW
+**Rol: Beheren** CROW is de uitvoerende partij voor het beheerd van het [=Informatiemodel Verkeerstekens=].
+* Taak: CROW werkt eisen en wensen inhoudelijk uit.
+* Taak: CROW is organisator en secretaris van strategische en tactische beheeractiviteiten.
+* Taak: CROW is uitvoerder van operationele beheeractiviteiten.
 
-Relevante typen stakeholders moeten een plek kunnen krijgen ergens in de gekozen structuur van de beheerorganisatie, en niet principieel worden buitengesloten. Dat wil niet zeggen dat elk type stakeholder per definitie dezelfde rechten en plichten heeft. Zorg
-daarnaast ervoor dat binnen die groepen vooral organisaties aangesloten zijn die zich committeren aan de standaard
+#### Participatie
+<aside class="note" title="Ken Krechmer eisen">
+<ul><li>Open meeting: alle stakeholders kunnen participeren</li>
+<li>Consensus: besluitvorming met brede consensus, draagvlak, belangenafweging</li></ul></aside>
 
-Welke overheidspartijen of partnerstandaarden moeten deelnemen in een gebruikerscommissie?
+Bij elke publicatie krijgen stakeholders de kans om de documentatie en het [=Informatiemodel Verkeerstekens=] te reviewen en hun wensen en eisen aan te geven. 
 
-Welke (soorten) marktpartijen moeten betrokken worden?
 
-Betrokkenheid van belangenorganisaties is van cruciaal belang vanwege het feit dat ze vaak optimaal hun achterban kunnen bereiken en vertegenwoordigen. Alle relevante belangenorganisaties moeten dan ook betrokken zijn, en waar mogelijk moeten partnerschappen worden gesloten op het gebied van communicatie.
+#### Ecosysteem
 
-Voor iedereen moet helder zijn op welke manier, binnen welk tijdskader en door wie beslissingen worden genomen. Dit geldt zowel voor de meer strategische besluiten als voor de operationele afstemming over een standaard. Voor elk type orgaan moet worden beschreven hoe de besluitvorming is ingericht. Daarbij is alleen meerderheid of consensus besluitvorming toegestaan. Waarbij aangegeven kan worden of er meerdere stemmingsronden mogelijk zijn.
-
-Beschreven moet zijn wie in welke groep kan participeren en hoe men zich er voor kan aanmelden en hoe over uiteindelijke deelname wordt besloten.
-
-Het sturende orgaan moet over zijn eigen benoemingen kunnen besluiten. Daarnaast moeten benoemingen in de tijd gelimiteerd zijn.
-
-### Ecosysteem
-
-Er zijn afspraken nodig met BIM loket over het afstemmen van de beheer- en publicatiecyclus van CB-NL en NLCS.
-Er zijn afspraken nodig met CROW over het afstemmen van de beheer- en publicatiecyclus van IMBOR en kennispublicaties.
+* Er zijn afspraken nodig met BIM loket over het afstemmen van de beheer- en publicatiecyclus van [=CB-NL=] en [=NLCS=].
+* Er zijn afspraken nodig met het NDW over het afstemmen van de beheer- en publicatiecyclus van het [=NWB=].
 
 ### Visie
 
-### Financiën
+### Doel standaard
 
-Er moet een structureel financieringsmodel beschreven zijn dat realistische garanties geeft dat er jaarlijks structureel voldoende budget is om op zijn minst de standaard te onderhouden. Een eenmalige subsidie voldoet dus zeker niet hieraan.
+<aside class="note" title="Eisen">
+<ul><li>BOMOS: De visie en missie van de standaard is voor iedereen duidelijk</li>
+<li>Ken Krechmer: One world - de standaard vult andere standaarden aan, concurreert niet</li></ul>
+</aside>
+Het voorliggend document geeft hier invulling aan.
 
-## Tactiek
+### Toepassingsgebieden
+<aside class="note" title="BOMOS">
+Het doel van de standaard en het toepassingsgebied (use cases) zijn voor iedereen duidelijk 
+</aside>
+Het voorliggend document geeft hier invulling aan.
 
-### Community
 
-De beheerder van een standaard dient zich actief op te stellen naar haar omgeving. De beheerder van de standaard participeert in werkgroepen van standaarden waarmee een afhankelijke relatie bestaat
+### Businesscase
 
-### Adoptie en erkenning
+<aside class="note" title="BOMOS">
+De business case van de standaard is voor iedereen duidelijk:
+<ul><li> De business case van de standaard (oftewel de keten)</li>
+<li> De business case van een individuele organisatie om de standaard te implementeren </li>
+<li> De business case voor de softwareleveranciers </li> </ul>
+</aside>
 
-### Rechtenbeleid
+#### Financiën
 
-Als onderdeel van het rechtenbeleid dient minimaal de licentie op de standaard, en in het bijzonder het specificatiedocument beschreven te zijn. Op zijn minst een creative commons licentie, en bij voorkeur creative commons zero (voor meer informatie:
-http://creativecommons.nl/licenties/uitleg/). Partijen die bijdragen aan de ontwikkeling van de standaard garanderen
-hun intellectueel eigendomsrecht onherroepelijk royalty-free voor eenieder beschikbaar te stellen.
+<aside class="note" title="BOMOS eisen">
+De standaard heeft een structurele financiering voor beheer en implementatieondersteuning</aside>
 
-### Architectuur
+
+# Tactiek
+
+## Community
+
+<aside class="note" title="BOMOS">
+<a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf">BOMOS</a> eist: De standaard heeft een degelijke, actieve community
+<ul><li> Het is duidelijk wie de doelgroep is van de standaard (primaire stakeholders) </li>
+<li> Het is duidelijk wie de gebruikers zijn (inclusief softwareleveranciers, opdrachtmers</li>
+  <li>Community: Gebruikers zijn actief betrokken bij het beheer</li></ul>
+</aside>
+
+
+## Adoptie en erkenning
+
+<aside class="note" title="BOMOS eisen">
+De standaard is voldoende ontwikkeld voor een hoge adoptiegraad
+<ul><li> De kwaliteit is voldoende hoog voor de beoogde toepassingen </li>
+<li> Proces en data zijn voldoende duidelijk voor implementatie </li>
+<li>De vereisten bij implementatie zijn duidelijk en (uitwissel)formaten zijn duidelijk gedefinieerd. Dit vraagt om specifieke use cases</li>
+</ul>
+</aside>
+
+## Rechtenbeleid
+
+<aside class="note" title="Eisen">
+<br>
+BOMOS:<br>
+De standaard heeft een duidelijk rechtenbeleid: Softwareleveranciers weten qua rechten waar ze aan toe zijn bij implementatie <br>
+<br>
+Ken Krechmer:<br>
+<li>Open PIR (eigendomsrechten): de standaard kan zonder beperkingen worden toegepast  door alle partijen</li>
+</aside>
+
+Als onderdeel van het rechtenbeleid dient minimaal de licentie op de standaard, en in het bijzonder het specificatiedocument beschreven te zijn. Op zijn minst een [creative commons](http://creativecommons.nl/licenties/uitleg/) licentie, en bij voorkeur creative commons zero. Partijen die bijdragen aan de ontwikkeling van de standaard garanderen hun intellectueel eigendomsrecht onherroepelijk royalty-free voor eenieder beschikbaar te stellen.
+
+
+## Architectuur
+
+
+<aside class="note" title="Eisen">
+<br>
+BOMOS: De standaard heeft duidelijke architectuuruitgangspunten
+<ul><li> Het ontwerpparadigma is helder: een filosofie over de oplossing, informatiemodel, berichten, services </li>
+<li> De methodieken en talen die gebruikt worden bij het ontwerp van de standaard zijn helder.  </li>
+<li> De publicatievormen van de standaard zijn helder </li>
+<li> De architectuur is duidelijk: de functionele en technische architectuur van de standaard en de relatie met andere standaarden. </li></ul>
+<br>
+Ken Krechmer:
+<ul><li>Open interface: de standaard is “backwards compatible” en laat voldoende ruimte voor tijdelijke uitbreidingen</li></ul>
+</aside>
 
 Alle afhankelijkheden met andere standaarden moeten expliciet benoemd zijn. De functionele afbakening dient expliciet beschreven te zijn. Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie
 
-### Kwaliteitsbeleid benchmarking
+## Kwaliteitsbeleid benchmarking
+
+<aside class="note" title="BOMOS">
+<br>
+De standaard heeft een hoge kwaliteit
+<ul><li> De standaard is effectief: de mate waarin de standaard in de specifieke situatie de functies biedt en implementeert die expliciet of impliciet vereist zijn. </li>
+<li> De standaard is bruikbaar: de mate waarin een standaard begrepen, geleerd en gebruikt/ toegepast kan worden door gebruikers in de specifieke situatie </li>
+<li> De standaard heeft portabiliteit: de mate waarin een standaard de mogelijkheid heeft om in verschillende omgevingen ingezet te worden. </li>
+<li>De standaard is betrouwbaar: de mate waarin een standaard een op een gespecificeerd niveau blijft presteren onder specifieke condities zoals foutieve implementaties of verschillen in implementaties tussen partijen.</li>
+<li> Onderhoudbaarheid: de mate waarin een standaard eenvoudig aangepast kan worden aan een veranderende situatie. </li></ul>
+</aside>
 
 Voordat een standaard uitgebracht wordt, moet de uitvoering van een kwaliteitscheck onderdeel van de procedure zijn.
-
-Methodiek informatiemodel: NEN 2660-2021
-
-NTB model voor de rest van de use case, vooral uitwisselformaat / API's
 
 De gebruikte methodiek dient expliciet beschreven te zijn, of een verwijzing naar een bestaande methodiek dient opgenomen te zijn.
 Het toepassen van een methodiek voor standaardisatie zal leiden tot een hogere kwaliteit.
 
-## Operationeel
+Methodiek informatiemodel en andere technische onderdelen: Zie het hoofdstuk met technische uitgangspunten. 
 
-### Wensen en eisen
 
-Beschreven moet worden hoe wijzigingen ingediend kunnen worden en hoe het verdere verloop van de procedure eruit ziet.
-Het wijzigingsprotocol geeft inzicht in het behandel- en besluitproces dat ten grondslag ligt aan het versiebeheer en daarmee in de aangeboden wijzigingsvoorstellen leiden tot zicht op de stabiliteit van de standaard en de continuïteit van de standaard.
-
-### Versiebeleid
-
-Versiebeleid met onderscheid tussen major (functionaliteit aanpassing), minor (kleine verbeteringen) en bug fixes is noodzakelijk.
-
-Oudere versies moeten uitgefaseerd worden, zodat de hoeveelheid operationele en ondersteunde versies ook gemaximaliseerd is op 2. Hiervoor moet een generieke procedure beschikbaar zijn.
-
-### Uitvoering
-
-### Documentatie
-
-Alle documentatie wordt op github gepltaatst:
-
-- Beheerplan
-- Agenda's en verslagen van commissies
-- Implementatiehandleidingen
-
-## Communicatie
-
-Communicatie naar alle stakeholders zal worden ingericht door de uitvoerende beheerorganisatie.
-
-### Promotie
-
-Promotie zal worden ingericht door de uitvoerende beheerorganisatie.
-
-### Publicatie
-
-De specificatie van het informatiemodel, afbeeldingen, codes, query's et cetera worden allemaal op Github gepubliceerd. Het [=Informatiemodel Verkeerstekens=] wordt gepubliceerd als linked open data.
-
-### Klachtenafhandeling
-
-Iedere belanghebbende kan formeel bezwaar aantekenen tegen de gevolgde procedure. Daarnaast kan informeel een klacht ingediend worden over de gevolgde procedure. Denk bij een bezwaar- en klachtenprocedure ook vooral aan de onafhankelijkheid van de beoordelaar en mogelijke escalatie als de case niet opgelost kan worden.
