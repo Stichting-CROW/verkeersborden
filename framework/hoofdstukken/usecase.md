@@ -142,7 +142,10 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
  
 
 
- 
+<figure>
+<img src="./hoofdstukken/media/verkeersregel.jpg">
+<figcaption>De informatiebehoefte bij een specifieke verkeersregel, voorbeeld: maximum snelheid. </caption>
+</figure> 
 
 
 
