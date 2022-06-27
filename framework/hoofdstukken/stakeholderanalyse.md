@@ -31,31 +31,37 @@ Het ontwerpproces start met de aanvraag van een [=verkeersbesluit=]. Dit kan geb
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
 
-#### Werkingsgebied
+#### Beïnvloedingsgebied
 
-Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een [=zone=] of een [=werkingsgebied=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
+Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een  [=Beïnvloedingsgebied=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
 
 <figure>
 <img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.jpg">
-<figcaption>De denkstappen van een wegbeheerder van verkeersbesluit naar [=verkeerskundige informatie=]. </caption>
+<figcaption>De denkstappen van een wegbeheerder van het verkeersmodel naar [=verkeerskundige informatie=]. </caption>
 </figure>
 
 
-<dfn data-lt="Werkingsgebied">Werkingsgebied</dfn>
-<dd>Een geografisch gebied waarvoor een [=verkeersregel=], [=waarschuwing=] en/of [=adviessnelheid=] geldt. Dit kan een polygoon zijn met meerdere aansluitende wegvakken, zoals bij een weg die over meerdere kruispunten heen een verlaagde maximum snelheid kent, of een [=zone=]. </dd>
+<dfn data-lt="Beïnvloedingsgebied">Beïnvloedingsgebied</dfn>
+<dd>Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersregel=], [=waarschuwing=] en/of [=adviessnelheid=] geldt. Dit kan resulteren in een [=werkingslengte=], [rijstrook=]aanduiding, een [=route=], of een [=zone=]. </dd>
 
 <dfn data-lt="Zone">Zone</dfn>
-<dd>Een geografisch gebied waarvoor een [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] met bijbehorende verkeersbord gelden in de vorm van een vlak waarbinnen meerdere wegvakken (gedeeltelijk) vallen, denk bijvoorbeeld aan een parkeerzone of een milieuzone.</dd>
+<dd>Een vlak waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een parkeerzone of een milieuzone.</dd>
 
-Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen worden [=zone=] en [=werkingsgebied=] opgenomen in het informatiemodel. Een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] kan dan een relatie met de [=zone=] of het [=werkingsgebied=] krijgen. Omdat de verkeersborden en de wegvakken al gerelateerd zijn aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], is het niet nodig om deze ook te koppelen aan een [=zone=] of [=werkingsgebied=]. Door te zoeken op welke [=NWB-wegvakken=] of verkeersborden de [=verkeersregel=] van toepassing is, kun je de bijbehorende wegvakken of verkeersborden bij het werkingsgebied of de zone vinden. De zone kan daarnaast worden verbonden met een geometrische representatie (een vlak). Het systeem van de weggebruiker heeft het vlak niet nodig om de verkeersregel te kunnen afleiden
+<dfn data-lt="Route">Route</dfn>
+<dd>Een polygoon met meerdere wegvakken waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt. </dd>
 
-* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=werkingsgebied=].
-* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] naar een een geometrische representatie (vlak).
+Een beïnvloedingsgebied kan voortkomen uit een specifieke situatie op een weg, bijvoorbeeld een verkeersdrempel. Ook kan een gedeelte van een wegvak een beperking in de snelheid kennen, bijvoorbeeld een snelheidsbeperking bij nadering van een kruising. Dit leidt tot het opnemen van een [=werkingslengte=], zoals al is beschreven bij de use case.
+
+Een beïnvloedingsgebied kan ook gaan over een deel van de weg, bijvoorbeeld een busstrook: in dit geval leidt het tot het toevoegen van een [=rijstrook=]aanduiding, zoals al is beschreven bij de use case.
+
+Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen worden [=zone=] en [=route=] opgenomen in het informatiemodel. Een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] kan dan een relatie met de [=zone=] of [=route=] krijgen. Omdat de verkeersborden en de wegvakken al gerelateerd zijn aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], is het niet nodig om deze ook te koppelen aan een [=zone=] of [=route=]. Door te zoeken op welke [=NWB-wegvakken=] of verkeersborden de [=verkeersregel=] van toepassing is, kun je de bijbehorende wegvakken of verkeersborden bij de [=zone=] of [=route=] vinden. De [=zone=] of [=route=] kan daarnaast worden verbonden met een geometrische representatie (een vlak of polygoon). Het systeem van de weggebruiker heeft het vlak niet nodig om de verkeersregel te kunnen afleiden
+
+* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=route=].
+* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] of een [=route=] naar een een geometrische representatie (vlak of polygoon).
 
 <aside class="note" title="Automatisering van zone naar netwerk">
 <p> Een zone die ingetekend is op een een GIS-kaart kan niet door een machine automatisch vertaald worden naar de juiste [=werkingslengte=] en [NWB-wegvakken=]. Dit komt onder andere, omdat in GIS de mate van in- en uitzoomen de breedte van de zonegrens bepaalt. Er kunnen dan grensfouten optreden die bij een machine tot verwerkingsfouten leidt. De werkingslengte van de zone is daarom met alleen een vlak in GIS niet nauwkeurig vast te stellen voor een systeem. Daarnaast komt het voor, dat een weg binnen een zone uitgezonderd is, bijvoorbeeld een doorgaande weg door het gebied, terwijl er maar één zone is getekend op de kaart. Voor de menselijke lezer goed te begrijpen, voor de machine niet. </p></aside>  
 
-<div class="issue" data-number="87"></div>
 
 #### Selecteren verkeersbord
 Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is. 
@@ -210,6 +216,16 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 <figcaption>Beheer- en gebruiksfase</caption>
 </figure>
 
+
+### Weggebruik
+
+*Stakeholders: [=Weggebruikers=]* 
+
+Zie de use case.
+
+<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
+<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
+
 ### Beheren
 
 *Stakeholders: Wegbeheerders*
@@ -223,17 +239,6 @@ In de beheerfase wordt informatie bijgehouden over de kwaliteit van de verkeersb
 </figure>
 
 Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of verkeersborden aanwezig zijn en markeringen niet te veel versleten. De [verkeerskundige informatie] kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een verkeersbord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. 
-
-
-### Weggebruik
-
-*Stakeholders: [=Weggebruikers=]* 
-
-De verkeersborden zijn in eerste instantie bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg. [=weggebruikers=] kunnen daarbij ondersteund worden door [=SMART Mobility=] systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig. 
-
-
-<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
-<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
 
 
 ### Handhaving

@@ -64,7 +64,7 @@ De hoofddoelgroepen zijn de beleidsambtenaren, managers en bestuurders die lokaa
 
 **Raakvlaktype: Te informeren groep**
 
-Deze groep MOET geinformeerd worden over de toepassing van het [=Informatiemodel Verkeerstekens=] bij de publicatie van verkeersbesluiten.
+Deze groep moet geinformeerd worden over de toepassing van het [=Informatiemodel Verkeerstekens=] bij de publicatie van verkeersbesluiten.
 
 
 ### PIANOO
@@ -104,7 +104,7 @@ De NEN beheert nationale standaarden en levert input voor CEN- en ISO normen.  D
 <dt><dfn data-lt="NDW|Nationaal Dataportaal Wegverkeer">NDW</dfn>
 <dd>Het Nationaal Dataportaal Wegverkeer. Onder vlag van het NDW werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert. Zie ook <a href="https://www.ndw.nu/">hun website</a>   </dd>
 
-Het NDW beheert de volgende relevante databronnen:
+NDW levert veel verkeersgegevens, zowel actuele verkeersgegevens als historische gegevens (intensiteiten, puntsnelheden, reistijden) als situatieberichten (wegwerkzaamheden, brugopeningen, status (open/dicht) van spitsstroken, plusstroken en rijtstroken). NDW maakt gebruik van DATEX-II, een Europese standaard. Het NDW beheert de volgende voor dit document relevante databronnen:
 
 * [=NWB=]
 * [=Verkeersbordendata=]
@@ -126,6 +126,11 @@ De eerste stap van de technische en inhoudelijke ontwikkeling van één samenhan
 **Raakvlaktype: Gezamenlijke ontwikkeling **
 
 Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het programma opgesteld.
+
+<figure>
+<img src="./hoofdstukken/media/programmanetwerkregistratie.png">
+<figcaption>Het Programma Netwerkregistratie.</caption>
+</figure>
 
 ### KOOP
 
@@ -210,7 +215,6 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 
 CB-NL is de logsiche plek om relaties tussen het [=Informatiemodel Verkeerstekens=] en andere standaarden zoals NLCS te publiceren, waarbij een afspraak moet worden gemaakt over het beheer van de relatie tussen beide standaarden. Voorwaarde is wel dat een standaard gepubliceerd is als ontologie in linked data.
 
-* De begrippen en definities uit het [=Informatiemodel Verkeerstekens=] en Verkeersbesluiten MOETEN worden gelinked aan concepten in CB-NL. 
 
 
 ### NLCS
@@ -302,7 +306,16 @@ Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbe
 Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel Verkeerstekens=] geagendeerd in de Stuurgroep IMBOR voor besluitvorming of dit informatiemodel in beheer wordt genomen binnen de beheerorganisatie IMBOR en of men inhoudelijk akkoord is met deze aansluiting.
 </aside>
 
+#### IMWV
+IMWV staat voor Informatie Model Wegen en Verkeer. 
 
+<dfn data-lt="IMWV|Informatie Model Wegen en Verkeer">IMWV</dfn>
+<dd> Het InformatieModel Wegen en Verkeer (IMWV) beschrijft de benamingen van verkeerskundige objecten en van verkeersgegevens, met de bijbehorende kenmerken en waarden. Het IMWV versie 2018 is de eerste publicatie van het IMWV en bevat een beschrijving van de fysieke objecten en statische gegevens die aan fysieke objecten gekoppeld kunnen worden. Het is gebaseerd op de gegevensbehoefte van drie verkeerskundige vraagstukken: verkeersveiligheid, wegontwerp/verkeerstechnisch ontwerp en verkeersmodellen. Het IMWV is sinds 2020 opgenomen in het [=IMBOR=] als de IMBOR Vakdiscipline Verkeer. </dd>
+
+<figure>
+<img src="./hoofdstukken/media/IMWV.jpg">
+<figcaption>Visualisatie alle objecttypen die tot het IMWV behoren.</caption>
+</figure>
 
 
 ### IMGeo
@@ -314,6 +327,12 @@ Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel V
 Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van het informatiemodel IMGEO. Aanvullend hierop voegen zij in hun areaalbeheerpakketten extra informatie toe aan deze wegvlakken, ten behoeve van beheer van de wegen. 
 
 **Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
+
+
+<figure>
+<img src="./hoofdstukken/media/domeinmodellen.png">
+<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [=NEN3610=].</caption>
+</figure>
 
 
 
@@ -341,6 +360,10 @@ Het NWB wordt actueel gehouden met ingewonnen data en (in mindere mate) door aan
 **Raakvlaktype: Gebruik informatiemodel**
 Het NWB gebruikt op dit moment een eigen informatiemodel, wat aansluit op de eigen database. Om het [=Informatiemodel Verkeerstekens=] toe te kunnen passen moet onderzocht worden hoe dit aansluit op de historische gegevens en wat er nodig is om de informatie in het NWB zoekbaar en vindbaar te maken op basis van het datamodel. Op dit moment wordt het NWB door [=SMART Mobility=] systemen niet live bevraagd, maar wordt een kopie verwerkt in de systemen.
 
+<figure>
+<img src="./hoofdstukken/media/nwb.png">
+<figcaption>Het Wegennetwerk: visualisatie van de informatie in het NWB+.</caption>
+</figure>
 
 
 #### NWB-Wegvak
@@ -374,6 +397,7 @@ De verkeersborden hebben, waar betrouwbaar mogelijk, een toewijzing aan een [=NW
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
 Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde verkeersborden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het [=Informatiemodel Verkeerstekens=].
+
 
 
 ### Data Top 15
@@ -415,17 +439,22 @@ De Data Top 15 verwijst weer door naar andere programma's waarbinnen deze data w
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak via informatiemodellen
 
+#### WKD
+
 <dfn data-lt="WKD|Wegkenmerken Database">WKD</dfn>
-<dd>De gegevens over de maximum snelheden op het Nederlandse onderliggende wegennet. De bestanden zijn beschikbaar als een landelijke webservices via het open data portaal van Rijkswaterstaat</p> </dd>
+<dd>De gegevens over de maximum snelheden op het Nederlandse onderliggende wegennet. De bestanden zijn beschikbaar als een landelijke webservices via het open data portaal van Rijkswaterstaat. Het bestaat uit de volgende onderdelen:<ul>
+<li>Een shape met alle wegvakken uit de NWB-wegenlaag, geldend op een bepaalde peildatum (daarmee de versie van het BN bepalend)</li>
+<li>Een tekstbestand waarin de snelheden geldig op peildatum, gekoppeld aan de gekozen versie van het BN-wegen zijn opgenomen.</li></ul></p> </dd>
+
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak via informatiemodellen
+
+#### WEGGEG
 
 <dfn data-lt="WEGGEG|Weggegevens">WEGGEG</dfn>
 <dd>De gegevens over de maximum snelheden op het Nederlandse hoofdwegennet. De bestanden zijn beschikbaar als een landelijke webservices via het open data portaal van Rijkswaterstaat </dd>
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak via informatiemodellen
-
-
 
 
 #### SOR

@@ -43,25 +43,6 @@ Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moete
 * Het informatiemodel MOET aansluiten op het informatiemodel van het [=NWB=] om te zorgen dat [=verkeerskundige informatie=] gekoppeld kan worden aan het juiste [=NWB-wegvak=] en de juiste richting in het [=NWB-wegvak=].
 
 
-### Verkeersregel
-De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] er gelden. Dit betekent, dat het systeem deze regels bij het [=NWB-wegvak=] moet kunnen vinden. 
-
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een of meerdere [=NWB-wegvakken=].
-
-
-<dfn data-lt="verkeersregel|verkeersregels">Verkeersregels</dfn>
-<dd>De wettelijk geldende verkeersregels op een locatie volgens de [=RVV 1990=]. Hieronder vallen de wettelijke maximum snelheid en de ge- en verboden. </dd>
-
-<dfn data-lt="waarschuwingen|waarschuwing">Waarschuwing</dfn>
-<dd>De waarschuwingen op een locatie volgens de [=RVV 1990=]</dd>
-
-<dfn data-lt="Adviessnelheden|Adviessnelheid">Adviessnelheid</dfn>
-<dd>Een lokaal lagere snelheid dan standaard op die weg toegestaan is volgens de [=RVV 1990=]</dd>
-
-<dfn data-lt="verkeerstekens|verkeersteken">Verkeersteken</dfn>
-<dd>Een wettelijk vastgesteld teken ter regeling, waarschuwing, geleiding of informering van het verkeer. Onder de verkeerstekens vallen verkeersborden en [=wegmarkeringen=].</dd>
-
-
 
 #### Rijrichting 
 Omdat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] zowel voor één als voor beide richtingen kan gelden, zal het systeem moet kunnen vinden voor welke richting de regel van toepassing is.
@@ -79,6 +60,12 @@ Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de n
 Verschillende <i>gebruikers</i> van de [=verkeerskundige informatie=] hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één hartlijn van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor [=SMART Mobility=] geldt dat het het netwerk het liefst gedetailleerder moet zijn met een polygoon per [=rijstrook=]. Omdat het [=NWB=] op dit moment geen rijstroken weergeeft, zal het systeem zelf visueel moeten vaststellen hoeveel rijstroken er zijn en op welke rijstrook het zich bevindt. Dit kan lastig zijn.
 
 Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
+
+<figure>
+<img src="./hoofdstukken/media/levelofdetail.jpg">
+<figcaption>Level of detail van een rotonde. Van links naar rechts: LOD0, LOD1, LOD2. Het NWB levert op dit moment LOD0. </caption>
+</figure>
+
 </aside>
 
 
@@ -103,7 +90,13 @@ Omdat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] zowel voor h
 <div class="issue" data-number="146"></div>
 
 
-#### Fysiek bord 
+### Verkeersregel
+De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] er gelden. Dit betekent, dat het systeem deze regels bij het [=NWB-wegvak=] moet kunnen vinden. 
+
+* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een of meerdere [=NWB-wegvakken=].
+
+
+### Fysiek bord 
 De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rijdt zien welk fysiek verkeersbord er staat.
 
 
@@ -114,13 +107,19 @@ De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rij
 
 <div class="issue" data-number="145"></div>
 
-#### Visualisatie bord
+### Onderbord
+De gebruiker wil bij de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weten, of deze met een [=onderbord=] nader gespecificeerd is:
+
+* Het informatiemodel MOET de mogelijkheid bieden om bij een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] en nadere aanduiding te geven met een type [=onderbord=] 
+* Het informatiemodel MOET de mogelijkheid bieden om bij een onderbord een keuzelijst te bieden van mogelijke inhoud van het [=onderbord=]
+
+### Visualisatie bord
 De [=weggebruikers=] willen door hun systeem visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. Dit betekent dat het systeem zal moeten weten, welk bord getoond moet worden om duidelijk te maken welke [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt. 
 
 Daarbij geldt als "complicatie" dat niet elke [=verkeersregel=] gepaard gaat met een fysiek bord, of niet met een specifiek bord. Bijvoorbeeld in het geval van de maximumsnelheid, wordt dit fysiek soms aangeduid door een bord over het wegtype, zoals een G3 ("autoweg"), terwijl de visuele ondersteuning beter van het type "A1" kan zijn (snelheidsbord).
 
 * Het informatiemodel moet onderscheid maken tussen de *fysiek aanwezige* verkeersborden en het type verkeersbord dat getoond kan worden ten behoeve van de *visuele ondersteuning van de weggebruiker*.
-* Het informatiemodel MOET voor elk type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord in combinatie met onderbord moet worden getoond ten behoeve van *de visuele ondersteuning van de weggebruiker*.
+* Het informatiemodel MOET voor elk type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord moet worden getoond ten behoeve van *de visuele ondersteuning van de weggebruiker*.
 * Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten ten behoeve van *de visuele ondersteuning van de weggebruiker*.
 
 

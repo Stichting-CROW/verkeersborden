@@ -73,15 +73,16 @@ In het informatiemodel wordt secundair rekening gehouden met het opstellen en be
 
 ### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. 
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk zoals dat gepubliceerd wordt bij het [=NWB=] met [NWB-wegvakken] en [NWB-juncties]. Het informatiemodel van het wegennetwerk zelf is wel buiten scope. 
+
 
 ### RVV 1990+ 
 [=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] die horen bij alle verkeersborden uit [=RVV 1990=] zijn binnen scope; aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de verkeersregel is. 
 
-* Het informatiemodel MOET de definities gebruiken uit het [=RVV 1990=].
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomen zijn in wetgeving, en welke nog niet.
+
 
 
 ### Statische verkeersborden
@@ -95,10 +96,6 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomen zijn in wetgeving, en welke nog niet.
 * Het informatiemodel MOET de types en definities van onderborden definiëren die volgen uit de [=RVV 1990=].
-
-<div class="issue" data-number="149"></div>
-
-
 
 
 ## Buiten scope
@@ -114,10 +111,6 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 ### Wegsoorten
 
 Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
-
-
-### Wegennetwerk
-Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk enmaakt het daarmee mogelijk om te verwijzen naar [NWB-wegvakken] en [NWB-juncties]. Deze laatsten worden niet binnen het informatiemodel gedefinieerd. 
 
 
 ### Dynamische verkeersborden
