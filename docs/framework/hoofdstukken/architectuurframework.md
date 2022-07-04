@@ -106,16 +106,18 @@ Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technolog
 
 ## Voorbeeld- of normafbeeldingen verkeersborden en onderborden
 
+<div class="issue" data-number="20"></div>
+
 Gaat niet om wat NBd (Nationale Bewegwijzeringsdienst) publiceert over concrete verkeersborden aan een concrete weg, maar om referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden.
 
-### Formaten
+#### Formaten
 
 - Het formaat is SVG, dat zijn schaalbare vectorafbeeldingen die op het web en in print altijd scherp blijven.
 - Merk op dat 
 
 ### Publicatieplatform
 
-Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimulren. 
+Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimuleren. Zie [hier](https://docs.crow.nl/verkeersborden/framework/#rechtenbeleid)
 
 
 

@@ -150,6 +150,10 @@ Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de inf
 
 Verkeerslichten zijn buiten scope. 
 
+### Zicht
+[RVV 1990 art 19](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01) geeft aan:       
+De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
+Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het informatiemodel, ook al kan een rechter, in het geval van een ongeluk, concluderen dat een bestuurder sneller heeft gereden dan wettelijk is toegestaan volgens deze regel.
 
 
 ### Procedure verkeersbesluit
