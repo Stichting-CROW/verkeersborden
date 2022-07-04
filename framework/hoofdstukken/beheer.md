@@ -128,8 +128,9 @@ Ken Krechmer:<br>
 <li>Open PIR (eigendomsrechten): de standaard kan zonder beperkingen worden toegepast  door alle partijen</li>
 </aside>
 
-Als onderdeel van het rechtenbeleid dient minimaal de licentie op de standaard, en in het bijzonder het specificatiedocument beschreven te zijn. Op zijn minst een [creative commons](http://creativecommons.nl/licenties/uitleg/) licentie, en bij voorkeur creative commons zero. Partijen die bijdragen aan de ontwikkeling van de standaard garanderen hun intellectueel eigendomsrecht onherroepelijk royalty-free voor eenieder beschikbaar te stellen.
+Het rechtenbeleid van IMBOR wordt gevolgd. 
 
+<div class="issue" data-number="156"></div>
 
 ## Architectuur
 

@@ -212,7 +212,7 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 
 
 <figure>
-<img src="./hoofdstukken/media/beheerfase.jpg">
+<img src="./hoofdstukken/media/Beheerfase.jpg">
 <figcaption>Beheer- en gebruiksfase</caption>
 </figure>
 
