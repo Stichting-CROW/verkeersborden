@@ -221,7 +221,7 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 
 *Stakeholders: [=Weggebruikers=]* 
 
-Zie de use case.
+Zie voor beschrijving van de informatiebehoefte van de weggebruikers het hoofdstuk over de [use case](https://docs.crow.nl/verkeersborden/framework/#use-case-0).
 
 <dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
 <dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
