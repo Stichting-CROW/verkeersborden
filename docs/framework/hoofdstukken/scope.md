@@ -83,6 +83,7 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomen zijn in wetgeving, en welke nog niet.
 
+<div class="issue" data-number="159"></div>
 
 
 ### Statische verkeersborden

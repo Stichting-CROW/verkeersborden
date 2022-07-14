@@ -13,7 +13,7 @@ De daadwerkelijke werking en inrichting van een systeem voor [=SMART Mobility=] 
 ## SMART Mobility
 
 <dfn data-lt="Smart Mobility">Smart Mobility</dfn>
-    <dd>Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatiesystemen, rijtaakondersteunende systemen, zelfrijdende voertuigen, intelligente verkeersregelinstallaties en systemen waarmee reizigers hun reis online kunnen plannen, reserveren, betalen en onderweg op de hoogte te blijven </dd>
+<dd>Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatiesystemen, rijtaakondersteunende systemen, zelfrijdende voertuigen, intelligente verkeersregelinstallaties en systemen waarmee reizigers hun reis online kunnen plannen, reserveren, betalen en onderweg op de hoogte te blijven </dd>
 
 Verkeersborden zijn bedoeld om de menselijke [=weggebruikers=] te informeren over het gebruik van de weg en de bijbehorende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=]. [=Weggebruikers=] kunnen daarbij ondersteund worden door digitale systemen die hen helpen de weg te vinden, of assisteren bij het besturen van het voertuig:
 1. In navigatiesystemen wordt informatie gegeven over de maximum snelheid en de beschikbare routes en verwachte rijtijden. Deze systemen zouden meer [=verkeerskundige informatie=] kunnen bieden als deze beschikbaar is. 
@@ -37,7 +37,6 @@ De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden wet
 Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: 
 <ol><li>Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna;
 <li>Als op een [=rijstrook=] een afwijkende [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, moet het duidelijk zijn voor het systeem op welke [=rijstrook=] het zich bevindt. Op dit moment wordt de geometrie van een rijstrook nog niet vastgelegd in het [=NWB=] en zal het systeem op basis van visuele input moeten kunnen bepalen op welke rijstrook het zich bevindt.  </li>
-<li>Voor de gebruikers is het noodzakelijk dat de actuele verkeersregels, waarschuwingen en adviezen die op de weg gelden visueel kunnen worden getoond in de systemen. Bijvoorbeeld het tonen van het snelheidsbord in het navigatiesysteem. Hiertoe dient het [=Informatiemodel Verkeerstekens=] een grafische weergave te bevatten van de verkeersborden. </li>
 </aside> 
 
 * Het informatiemodel MOET aansluiten op het informatiemodel van het [=NWB=] om te zorgen dat [=verkeerskundige informatie=] gekoppeld kan worden aan het juiste [=NWB-wegvak=] en de juiste richting in het [=NWB-wegvak=].
@@ -63,7 +62,8 @@ Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dba
 
 <figure>
 <img src="./hoofdstukken/media/levelofdetail.jpg">
-<figcaption>Level of detail van een rotonde. Van links naar rechts: LOD0, LOD1, LOD2. Het NWB levert op dit moment LOD0. </caption>
+<figcaption>Level of detail van een rotonde. Van links naar rechts: LOD0, LOD1, LOD2. Het NWB streeft op dit moment naar LOD1. Dat betekent dat alle nieuw ingebrachte rotondes dat hebben en dat er toegewerkt wordt naar op allerlei manieren uit bijvoorbeeld luchtfoto’s en verkeersborden  herkennen van rotondes om die op dat niveau te brengen. LOD2 vereist rijbaanscheiding en dat is er in het huidige NWB nog niet.
+. </caption>
 </figure>
 
 </aside>
@@ -103,6 +103,20 @@ De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rij
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat gemeten in meters vanaf de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat: boven de weg, of links of rechts naast de weg.
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWM-junctie] op het startpunt van de rijrichting aan te duiden bij het bord.
+
+<aside class="note" title="Locatieaanduiding verkeersbord">
+Argumenten voor x,y:<ul>
+<li>
+X, Y volgt uit een wegontwerp, daar leidt je minder makkelijk de afstand in de lengterichting uit. Voor 3D ontwerpen is de z ook nog nodig
+
+Om bestaande, in gebruik zijnde verkeersborden goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen. Een x,y is daarbij makkelijker te verwerken dan relatieve locaties. Voor 3D ontwerpen is de z ook nog nodig
+
+Om het bord te kunnen plaatsen is een x,y ook makkelijker te gebruiken dan de relatieve locatie ten opzichte van een theoretische junctie, deze is buiten niet te vinden.
+
+Argumenten voor lengterichting:
+
+Bij een lengterichting kun je een relatie leggen met het beginpunt van de verkeersregel en controleren of deze hetzelfde is
+</aside>
 
 
 <div class="issue" data-number="145"></div>
