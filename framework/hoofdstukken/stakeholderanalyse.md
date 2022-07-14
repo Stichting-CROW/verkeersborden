@@ -23,11 +23,11 @@ De informatie die wordt gepubliceerd over *wijzigingen* in de verkeerskundige si
 
 *Stakeholders: Wegbeheerder, omwonenden, bedrijven*
 
-Het ontwerpproces start met de aanvraag van een [=verkeersbesluit=]. Dit kan gebeuren omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of bijvoorbeeld omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere verkeersregels. Hoe dan ook, hierdoor ontstaat een aanvraag voor het nemen van een verkeersbesluit. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
+Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere verkeersregels. Hoe dan ook, hierdoor ontstaat een aanvraag voor het wijzigen van de verkeerskundige situatie. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
 
 ### Verkeersmodel
 
-*Stakeholders: Verkeerskundigen*
+*Stakeholders: Verkeerskundigen* maken gebruik van het [=IMWV=] voor begrippen en definities
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
 
@@ -48,7 +48,7 @@ Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeer
 <dd>Een vlak waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een parkeerzone of een milieuzone.</dd>
 
 <dfn data-lt="Route">Route</dfn>
-<dd>Een polygoon met meerdere wegvakken waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt. </dd>
+<dd>Een verzameling met meerdere wegvakken waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt. </dd>
 
 Een beïnvloedingsgebied kan voortkomen uit een specifieke situatie op een weg, bijvoorbeeld een verkeersdrempel. Ook kan een gedeelte van een wegvak een beperking in de snelheid kennen, bijvoorbeeld een snelheidsbeperking bij nadering van een kruising. Dit leidt tot het opnemen van een [=werkingslengte=], zoals al is beschreven bij de use case.
 
@@ -76,13 +76,13 @@ Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verk
 
 ### Wegontwerp
 
-*Stakeholders: Ontwerpers*
+*Stakeholders: Ontwerpers* maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=].
 
 Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van het wegennetwerk en de verkeersborden wordt bepaald. Ook kunnen extra verkeersborden en markeringen uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten. Tijdens het wegontwerp wordt niet het netwerk ontworpen, maar de fysieke ligging van de weg, met een alignement ("hartlijn") met bogen, overgangsbogen en rechtstanden en daarnaast de [=rijstrook=]breedte die breder wordt bij hogere snelheden of krappe bochten. Dit alignement wordt vaak gevisualiseerd in een CAD-tekening, met op tekening de markering van rijstroken of kanten van de stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
 
 #### Wegalignement
 
-Een wegontwerp beschrijft een weg in termen van een alignement, een aaneenschakeling van bogen, overgangsboden en rechte lijnen. Op basis van de maximale snelheid kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt.
+Een wegontwerp beschrijft een weg in termen van een alignement, een aaneenschakeling van bogen, overgangsboden en rechte lijnen. Op basis van de maximale snelheid kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt. Dit staat beschreven in het [=Handboek Wegontwerp=] en [=Wegontwerp RWS=].
 
 Om het geregistreerde netwerk te kunnen gebruiken als input voor een nieuw wegontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. Als het netwerk een hoger detailniveau krijgt om per [=rijstrook=] [=verkeerskundige informatie=] te kunnen vastleggen, is een standaard nodig waarmee het alignement wordt vastgelegd, omdat het alignement wordt ontworpen per gehele weg of per [=rijbaan=], niet per [=rijstrook=]. Het alignement valt buiten de scope van het voorliggende informatiemodel.
 

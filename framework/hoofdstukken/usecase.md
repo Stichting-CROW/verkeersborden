@@ -105,21 +105,19 @@ De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rij
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWM-junctie] op het startpunt van de rijrichting aan te duiden bij het bord.
 
 <aside class="note" title="Locatieaanduiding verkeersbord">
-Argumenten voor x,y:<ul>
-<li>
-X, Y volgt uit een wegontwerp, daar leidt je minder makkelijk de afstand in de lengterichting uit. Voor 3D ontwerpen is de z ook nog nodig
-
-Om bestaande, in gebruik zijnde verkeersborden goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen. Een x,y is daarbij makkelijker te verwerken dan relatieve locaties. Voor 3D ontwerpen is de z ook nog nodig
-
-Om het bord te kunnen plaatsen is een x,y ook makkelijker te gebruiken dan de relatieve locatie ten opzichte van een theoretische junctie, deze is buiten niet te vinden.
-
-Argumenten voor lengterichting:
-
-Bij een lengterichting kun je een relatie leggen met het beginpunt van de verkeersregel en controleren of deze hetzelfde is
+<br>
+<b>Argumenten voor x,y:</b><ul>
+<li>Doelgroep: wegontwerpers. X, Y volgt uit een wegontwerp, daar leidt je minder makkelijk de afstand in de lengterichting uit. Voor 3D ontwerpen is de z ook nog nodig</li>
+<li>Doelgroep: wegontwerpers. Om bestaande, in gebruik zijnde verkeersborden goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen. Een x,y is daarbij makkelijker te verwerken dan relatieve locaties. Voor 3D ontwerpen is de z ook nog nodig</li>
+<li>Doelgroep: bouwbedrijven: Om het bord te kunnen plaatsen is een x,y ook makkelijker te gebruiken dan de relatieve locatie ten opzichte van een theoretische junctie, deze is buiten niet te vinden.</li></ul>
+<b>Argumenten voor lengterichting, in meters of % vanaf het wegvak (dit maakt voor deze argumenten geen verschil):</b><ul>
+<li>Doelgroep: Weggebruikers. Voor een SMART mobility systeem is nauwkeurig bepalen op welk moment het [=NWB-wegvak=] in loodrechte lijn een verkeersbord tegenkomt in verhouding tot de eigen x,y locatie die daar ook iets van afwijkt minder eenvoudig dan bepalen op hoeveel meter van de [=NWB-junctie=] men zich bevindt.</li>
+<li>Doelgroep: Wegbeheerders. Bij het opstellen van verkeerskundige data kun je met de lengterichting een relatie leggen met het beginpunt van de verkeersregel en controleren of deze hetzelfde is</li></ul>
+Binnen de use case is lengterichting het meest voor de hand liggend. Dit betekent dat een wegontwerper of een bouwbedrijf een extra rekenslag moet maken om te bepalen waar het fysieke bord moet komen, en dat de informatie uit het ontwerp over de afstand tot de weg (standaard afstand versus locatiespecifieke afwijking) niet wordt gepubliceerd in de verkeerskundige data.
 </aside>
 
 
-<div class="issue" data-number="145"></div>
+<div class="issue" data-number="160"></div>
 
 ### Onderbord
 De gebruiker wil bij de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weten, of deze met een [=onderbord=] nader gespecificeerd is:
