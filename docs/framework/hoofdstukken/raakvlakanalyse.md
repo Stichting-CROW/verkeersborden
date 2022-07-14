@@ -261,7 +261,9 @@ Dit vraagt wel om open publicatie van het Handboek Wegontwerp en de ASVV, zodat 
 
 
 ### Wegontwerp RWS
-Rijkswaterstaat publiceert [op deze locatie](https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen) eigen handleidingen en richtlijnen voor wegontwerp. 
+<dt><dfn data-lt="Wegontwerp RWS">Wegontwerp RWS</dfn>
+<dd>Rijkswaterstaat publiceert op <a href="https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen">deze website</a> eigen handleidingen en richtlijnen voor wegontwerp.  </dd>
+
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
