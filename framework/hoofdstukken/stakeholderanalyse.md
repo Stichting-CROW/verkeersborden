@@ -104,11 +104,11 @@ Om met een wegontwerp aan te sluiten op een landelijke netwerkregistratie van we
 
 #### Weginrichting
 
-In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. De [=wegmarkering=] is buiten scope van het informatiemodel, het advies of gebod om niet in te halen zonder bijbehorend verkeersbord ook.
+In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. Dit kan leiden tot verkeerskundige informatie:
 
-<div class="issue" data-number="135"></div>
-
-In de digitale [=verkeerskundige informatie=] kan wel een [=adviessnelheid=] worden toegevoegd zonder verkeersbord. Een systeem kan daarmee de informatie die een mens visueel kan inschatten ook goed interpreteren.
+* In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. De [=wegmarkering=] is buiten scope van het informatiemodel. In de digitale [=verkeerskundige informatie=] kan wel een gebod worden opgenomen om niet in te halen, ook al staat er geen verkeersbord. Niet mogen inhalen is immers een [=verkeersregel=] uit de [=RVV 1990=].
+* In de digitale [=verkeerskundige informatie=] kan ook een [=adviessnelheid=] worden toegevoegd zonder verkeersbord. Een systeem kan daarmee de informatie die een mens visueel kan inschatten ook goed interpreteren, namelijk dat de weginrichting vraagt om een lagere snelheid ook al wordt dat niet verplicht gesteld. 
+* Op dezelfde manier kan een [=waarschuwing=] worden meegegeven, zonder dat een verkeersbord aanwezig is. 
 
 
 ### Omgevingsmanagement
@@ -147,12 +147,10 @@ Voor de primaire use case is het niet nodig om historische gegevens te kunnen vi
 
 Voor gebruik van de digitale [=Verkeerskundige informatie=] in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke verkeersregels gelden, en welke verkeersborden aanwezig zijn op een bepaald tijdstip.
 
-Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de verkeersregel van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. 
+Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de verkeersregel van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. Omdat een verkeersbord als herhaling kan worden geplaatst, kan deze later worden geplaatst dan het ingaan van de verkeersregel. Daarom kan een wegbeheerder een bord een begin- en einddatum geven. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende verkeersregel. 
 
 * Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=]
-* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor plaatsing en weghalen van een verkeersbord. 
-
-<div class="issue" data-number="150"></div>
+* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor plaatsing en weghalen van een verkeersbord. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende verkeersregel. 
 
 
 ### Registratie verkeerskundige informatie

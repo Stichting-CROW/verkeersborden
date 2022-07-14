@@ -1,10 +1,11 @@
 # Uitgangspunten beheer
 
 Het [=Informatiemodel Verkeerstekens=] zal in beheer genomen moet worden om up to date te blijven. Dit hoofdstuk beschrijft hiervoor de afspraken en randvoorwaarden.
+Zonder een goed beheerproces, waarin een informatiemodel in de eerste drie jaar uitgebreid wordt beproefd en verbeterd, kan geen goed werkend informatiemodel worden ontwikkeld. Zeker niet, als dit toekomstbestendig moet zijn en geschikt voor uitbreidingen. Dit vraagt om beproeving, wijziging en uitbreiding. Na drie jaar is een informatiemodel stabieler en gaat de beheerlast omlaag.
+De beproeving zit zowel in het opstellen en behereen van de verkeerskundige data, als in het gebruik ervan. Beide stakeholders, producenten en consumenten van [=verkeerskundige informatie=] kunnen hiermee feedbcak geven over de werkbaarheid en functionaliteit van het informatiemodel. 
 
-## Beheermodellen
 
-### BOMOS
+## BOMOS
 
 De beheerstrategie is open en transparant beheer conform het Beheermodel voor Open Standaarden, zie ook de [BOMOS-documentatie](https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf). Beheer volgens BOMOS heeft de volgende voordelen:
 * Belangen van stakeholders worden evenwichtig afgewogen bij ontwikkeling en beheer van de standaard.
@@ -17,8 +18,7 @@ De beheerstrategie is open en transparant beheer conform het Beheermodel voor Op
 <figcaption>Activiteitendiagram van Beheermodel voor Open Standaarden (BOMOS) van Forum voor standaardisatie</caption>
 </figure>
 
-### Ken Krechmer
-Voor digitale en informatiestandaarden gelden daarnaast de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf). Bij het PCB bevindt zich zowel inhoud in documentformats als in datavorm (eisensets). Deze inhoud wordt in digitale processen gebruikt, zoals bij het beheren van eisenbibliotheken (individuele eisensets van provincies), het opstellen en beheersen van contracten, ricicomanagement en het verder uitdetailleren van eisen, werkproces en kwaliteitsproces tijdens uitvoering van het project. Daarom is het van belang dat de informatieproducten van het PCB voldoen aan de criteria van Ken Krechmer.
+Voor digitale en informatiestandaarden gelden daarnaast de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf). Deze worden toegevoegd aan de standaard eisen vanuit BOMOS.
 
 
 ## Strategie
@@ -148,6 +148,30 @@ Ken Krechmer:
 </aside>
 
 Alle afhankelijkheden met andere standaarden moeten expliciet benoemd zijn. De functionele afbakening dient expliciet beschreven te zijn. Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie
+
+### Toegankelijk, duurzaamheid
+
+Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van toegangkelijkheid en duurzaamheid:
+
+* Zijn de specficiaties duidelijk genoeg en behapbaar genoeg dat grote en kleine spelers op gelijkwaardige voet informatie kunnen leveren volgens het informatiemodel? Een inspiratie voor het uitwerken van de specificaties is [hier](https://documentation.divio.com/) te lezen. Dit is verwerkt in de stappen voor de ontwikkelfase.
+* Zijn de specificaties geschikt alleen voor de Nederlandse context? In eerste instantie wordt het specifiek ontwikkeld voor de Nederlandse situatie, al worden internationale normen en voorbeelden waar mogelijk gevolgd. 
+* Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens? De specificaties zijn bedoeld voor de actuele situatie, alleen de begin- en eindtijd van een verkeersregel en verkeersbord zijn wel opgenomen. Er wordt niet beoogd een informatiemodel te maken waarmee de gehele ontwikkeling van het weggenet en de verkeerskundige kenmerken kan worden gevolgd. Ook de voorbeeld queries zijn gebaseerd op een actuele dataset.
+* Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is? Dit wordt bereikt door gebruik te maken van de modelleerregels uit de [=NEN2660-2:2022=].
+
+### Security en Privacy
+
+Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van security en privacy:
+
+* Stelt de specificatie niet te veel evt. privacygevoelige informatie verplicht?
+* Schrijft de specificatie voorzorgsmaatregelen voor t.b.v. informatiebeveiliging?
+* Worden privacygevoelige elementen van het informatiemodel expliciet genoemd?
+
+In het geval van het [=Informatiemodel Verkeerstekens=] gaat het om publiek toegankelijke, openbare en transparante data.
+
+### API's en uitwisselformaten 
+
+Het informatiemodel dient los te staan van specifieke uitwisselingsstandaarden, zoals API's en uitwisselformaten voor [=verkeerskundige informatie=].
+Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technologie-specifieke beperkingen zijn gemaakt.
 
 ## Kwaliteitsbeleid benchmarking
 

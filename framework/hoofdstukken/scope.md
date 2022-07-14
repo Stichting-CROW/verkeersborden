@@ -77,7 +77,9 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 
 
 ### RVV 1990+ 
-[=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] uit [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. aangevuld met een lijst verkeersregels die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. Hierbij worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de verkeersregel is. 
+[=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] uit [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
+Daarnaast is een lijst [=Verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en [=verkeersborden=] binnen scope die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. 
+Bij het verkeersbord worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de verkeersregel is. 
 
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die in de [=RVV 1990=] (Reglement verkeersregels en verkeerstekens 1990) staan. 
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
