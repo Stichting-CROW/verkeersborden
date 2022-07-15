@@ -157,7 +157,7 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 
 In onderstaande figuur wordt de manier van informatie opslaan over een verkeersregel gevisualiseerd. De onderdelen die voortkomen uit het volgende hoofdstuk, de stakeholderanalyse, en met name uit de use case "beheer van [=verkeerskundige informatie=] zijn ook in deze afbeelding opgenomen.
 <figure>
-<img src="./hoofdstukken/media/verkeersregel.jpg">
+<img src="./hoofdstukken/media/informatiebehoefte.jpg">
 <figcaption>De informatiebehoefte bij een specifieke verkeersregel, voorbeeld: maximum snelheid. </caption>
 </figure> 
 

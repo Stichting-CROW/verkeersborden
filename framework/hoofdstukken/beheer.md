@@ -128,9 +128,11 @@ Ken Krechmer:<br>
 <li>Open PIR (eigendomsrechten): de standaard kan zonder beperkingen worden toegepast  door alle partijen</li>
 </aside>
 
-Het rechtenbeleid van IMBOR wordt gevolgd. 
+Het rechtenbeleid van IMBOR wordt gevolgd voor de ontologie en de bijbehorende documentatie. 
 
 <div class="issue" data-number="156"></div>
+
+Een vrije licentie voor de afbeeldingen is noodzakelijk om hergebruik van de afbeeldingen te stimuleren.
 
 ## Architectuur
 
