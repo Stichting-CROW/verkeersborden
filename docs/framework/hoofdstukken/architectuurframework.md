@@ -1,12 +1,53 @@
-# Architectuur
+# Samenstelling informatiemodel
 
 ## Inleiding
 In dit hoofdstuk staan de onderdelen beschreven die in de eerste versie van het informatiemodel worden ontwikkeld. Zonder een goed beheerproces, waarin een informatiemodel in de eerste drie jaar uitgebreid wordt beproefd en verbeterd, kan geen goed werkend informatiemodel worden ontwikkeld. Zeker niet, als dit toekomstbestendig moet zijn en geschikt voor uitbreidingen. Dit vraagt om beproeving, wijziging en uitbreiding. Na drie jaar is een informatiemodel stabieler en gaat de beheerlast omlaag. Dit betekent, dat het informatiemodel ongeveer drie jaar na publicatie stabiel genoeg is voor grootschalige adoptie en toepassing. 
 
+<figure>
+<img src="./hoofdstukken/media/samenstelling Informatiemodel.jpg">
+<figcaption>De samenstelling van het informatiemodel</caption>
+</figure>
 
-## Informatiemodel
 
-### Publicatieplatform
+
+## Beheer
+
+<figure>
+<img src="./hoofdstukken/media/beheerinformatiemodel.PNG">
+<figcaption>Het beheer van het informatiemodel</caption>
+</figure>
+
+
+### Beheerplatform 
+
+
+### Wijzigingsbeheer
+
+
+### Technische documentatie
+
+
+
+### Code documentatie
+
+
+## Samenwerking
+
+De samenwerking en internationale aansluiting zijn beschreven in [Hoofdstuk 11](https://docs.crow.nl/verkeersborden/framework/#uitgangspunten-beheer). Voor dit onderdeel wordt een beheerplan opgesteld dat BOMOS uitwerkt op strategisch, tactisch en operationeel gebied. 
+
+
+
+## Publicatie
+
+<figure>
+<img src="./hoofdstukken/media/publicatieinformatiemodel.PNG">
+<figcaption>De publicatie van het informatiemodel</caption>
+</figure>
+
+### Website
+
+
+### Publicatieplatform ontologie
 
 Een informatiemodel kan pas marktadoptie krijgen als de specificaties ervan in verschillende vrije formaten vrij beschikbaar zijn.
 Dat houdt in dat het [=Informatiemodel Verkeerstekens=] open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd.
@@ -20,14 +61,14 @@ Voorbeelden van data conform het informatiemodel zijn essentieel om de implement
 
 
 
-## Visualisaties verkeersborden
+### Publicatieplatform afbeeldingen
 
 De visualisaties van de verkeersborden en - onderborden zijn referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden met als doel:
 * Visualisatie in SMART Mobility systemen
 * Een nationale standaard visualisatie voor toepassing van de productie van verkeersborden.
 
 
-Dit is een ander doel dan de publicatie van de Nationale Bewegwijzeringsdienst met concrete verkeersborden aan een concrete weg. , maar om 
+Dit is een ander doel dan de publicatie van de Nationale Bewegwijzeringsdienst met concrete verkeersborden aan een concrete weg.
 
 #### Formaten
 
@@ -36,7 +77,9 @@ Dit is een ander doel dan de publicatie van de Nationale Bewegwijzeringsdienst m
 
 ### Publicatieplatform verkeersborden
 
-Een vrije licentie is noodzakelijk om hergebruik van de afbeeldingen te stimuleren. Zie [hier](https://docs.crow.nl/verkeersborden/framework/#rechtenbeleid)
+
+
+
 
 
 
