@@ -132,7 +132,9 @@ Daarbij geldt als "complicatie" dat niet elke [=verkeersregel=] gepaard gaat met
 
 * Het informatiemodel moet onderscheid maken tussen de *fysiek aanwezige* verkeersborden en het type verkeersbord dat getoond kan worden ten behoeve van de *visuele ondersteuning van de weggebruiker*.
 * Het informatiemodel MOET voor elk type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord moet worden getoond ten behoeve van *de visuele ondersteuning van de weggebruiker*.
-* Het informatiemodel MOET een schaalbare afbeelding van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten ten behoeve van *de visuele ondersteuning van de weggebruiker*.
+* Het informatiemodel MOET een schaalbare afbeelding ([SVG](https://www.w3.org/TR/SVG/)) van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten ten behoeve van *de visuele ondersteuning van de weggebruiker*.
+
+<div class="issue" data-number="155"></div>
 
 
 ### Adviessnelheid+
@@ -155,7 +157,7 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 
 ## visualisatie informatiemodel
 
-In onderstaande figuur wordt de manier van informatie opslaan over een verkeersregel gevisualiseerd. De onderdelen die voortkomen uit het volgende hoofdstuk, de stakeholderanalyse, en met name uit de use case "beheer van [=verkeerskundige informatie=] zijn ook in deze afbeelding opgenomen.
+In onderstaande figuur wordt de manier van informatie opslaan over een verkeersregel gevisualiseerd. De onderdelen die voortkomen uit het volgende hoofdstuk, de stakeholderanalyse, en met name uit de use case "beheer van [=verkeerskundige informatie=]" zijn ook in deze afbeelding opgenomen.
 <figure>
 <img src="./hoofdstukken/media/informatiebehoefte.jpg">
 <figcaption>De informatiebehoefte bij een specifieke verkeersregel, voorbeeld: maximum snelheid. </caption>
