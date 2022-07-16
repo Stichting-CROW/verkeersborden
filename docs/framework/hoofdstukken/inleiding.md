@@ -84,7 +84,9 @@ Dit document beschrijft de volgende zaken:
 
 **11. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden. 
 
-**8. Technische uitwerking** De techische uitwerking beschrijft de architectuur van applicaites en API's die gebruikt worden om het [=Informatiemodel Verkeerstekens=] te publiceren en beheren, en om de transacties uit de use case af te kunnen handelen.
+**12. Samenstelling** In Samenstelling staan de onderdelen die ontwikkeld moeten worden om het informatiemodel te kunnen beheren, publiceren, en om verkeerskundige informatie conform het informatiemodel te kunnen opstellen, beheren en consumeren.
+
+**13. Vervolg** In Vervolg staat hoe verder gewerkt kan worden aan de ontwikeling en het in beheer nemen van het informatiemodel.
 
 
 

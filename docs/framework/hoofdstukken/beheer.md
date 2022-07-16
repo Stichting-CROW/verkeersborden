@@ -128,11 +128,15 @@ Ken Krechmer:<br>
 <li>Open PIR (eigendomsrechten): de standaard kan zonder beperkingen worden toegepast  door alle partijen</li>
 </aside>
 
-Het rechtenbeleid van IMBOR wordt gevolgd voor de ontologie en de bijbehorende documentatie. 
+Het [rechtenbeleid van IMBOR](https://docs.crow.nl/imbor/techdoc/#licenties) wordt gevolgd voor de ontologie en de bijbehorende documentatie:
 
-<div class="issue" data-number="156"></div>
+* de Ontologie wordt uitgegeven onder de [ODC BY](https://opendatacommons.org/licenses/by/summary/) licentie.
+* Alle documentatie wordt uitgegeven onder de [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.nl) licentie.
+* De (voorbeeld) query's worden uitgegeven onder de [MIT](https://opensource.org/licenses/MIT) licentie.
+* De randsoftware (zoals een viewer) wordt uitgegeven onder de [MIT](https://opensource.org/licenses/MIT) licentie.
+* De afbeeldingen van verkeersborden worden uitgegeven onder de [CC0](https://creativecommons.org/publicdomain/zero/1.0/) licentie. Een vrije licentie voor de afbeeldingen is noodzakelijk om hergebruik van de afbeeldingen te stimuleren.
 
-Een vrije licentie voor de afbeeldingen is noodzakelijk om hergebruik van de afbeeldingen te stimuleren.
+
 
 ## Architectuur
 

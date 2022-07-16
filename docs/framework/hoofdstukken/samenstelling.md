@@ -1,7 +1,7 @@
 # Samenstelling informatiemodel
 
 ## Inleiding
-In dit hoofdstuk staan de onderdelen beschreven die in de eerste versie van het informatiemodel worden ontwikkeld. Zonder een goed beheerproces, waarin een informatiemodel in de eerste drie jaar uitgebreid wordt beproefd en verbeterd, kan geen goed werkend informatiemodel worden ontwikkeld. Zeker niet, als dit toekomstbestendig moet zijn en geschikt voor uitbreidingen. Dit vraagt om beproeving, wijziging en uitbreiding. Na drie jaar is een informatiemodel stabieler en gaat de beheerlast omlaag. Dit betekent, dat het informatiemodel ongeveer drie jaar na publicatie stabiel genoeg is voor grootschalige adoptie en toepassing. 
+In dit hoofdstuk staan de onderdelen beschreven waaruit het informatiemodel zal bestaan. 
 
 <figure>
 <img src="./hoofdstukken/media/samenstelling Informatiemodel.jpg">
