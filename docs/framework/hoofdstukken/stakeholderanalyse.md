@@ -21,13 +21,13 @@ De informatie die wordt gepubliceerd over *wijzigingen* in de verkeerskundige si
 
 ### Aanvraag maatregel
 
-*Stakeholders: Wegbeheerder, omwonenden, bedrijven*
+*Stakeholders: Wegbeheerders, omwonenden, bedrijven*
 
 Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere verkeersregels. Hoe dan ook, hierdoor ontstaat een aanvraag voor het wijzigen van de verkeerskundige situatie. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
 
 ### Verkeersmodel
 
-*Stakeholders: Verkeerskundigen* maken gebruik van het [=IMWV=] voor begrippen en definities
+*Stakeholders: Wegbeheerders, verkeerskundigen* maken gebruik van het [=IMWV=] voor begrippen en definities
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
 
@@ -76,7 +76,7 @@ Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verk
 
 ### Wegontwerp
 
-*Stakeholders: Ontwerpers* maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=].
+*Stakeholders: Wegontwerpers* maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=].
 
 Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van het wegennetwerk en de verkeersborden wordt bepaald. Ook kunnen extra verkeersborden en markeringen uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten. Tijdens het wegontwerp wordt niet het netwerk ontworpen, maar de fysieke ligging van de weg, met een alignement ("hartlijn") met bogen, overgangsbogen en rechtstanden en daarnaast de [=rijstrook=]breedte die breder wordt bij hogere snelheden of krappe bochten. Dit alignement wordt vaak gevisualiseerd in een CAD-tekening, met op tekening de markering van rijstroken of kanten van de stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
 
@@ -236,7 +236,9 @@ In de beheerfase wordt informatie bijgehouden over de kwaliteit van de verkeersb
 <figcaption>Asset management proces volgens iAMPro</caption>
 </figure>
 
-Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of verkeersborden aanwezig zijn en markeringen niet te veel versleten. De [verkeerskundige informatie] kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een verkeersbord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. 
+Een wegbeheerder zal daarnaast moeten controleren of de volgens het verkeersbesluit geregistreerde *gewenste objecten* ook *fysiek* aanwezig zijn. Zowel na de bouw als tijdens het beheer zal regelmatige controle nodig zijn om te controleren of verkeersborden aanwezig zijn en markeringen niet te veel versleten. De [verkeerskundige informatie] kan daarbij helpen: een digitaal systeem krijgt hiermee de informatie waar een verkeersbord of markering aanwezig is en kan dit controleren op camerabeelden of in ingemeten puntenwolken uit een laserscanner. Dan moet wel bekend zijn welke verkeersborden op welk tijdstip aanwezig horen te zijn, dan wel wanneer het verkeersbord verwijderd moet worden:
+
+1. In het [=Informatiemodel Verkeerstekens=] moet een verkeersbesluit en daarmee de de bijbehorende verkeersborden en markeringen een begin- en eindtijd krijgen zodat duidelijk is of deze aanwezig zijn op een specifiek tijdstip of niet. 
 
 
 ### Handhaving
@@ -250,9 +252,12 @@ Bij handhaving in het verkeer is het beschikbaar hebben van digitale [=Verkeersk
 
 
 ### Circulair hergebruik
+
+*Stakeholders: Wegbeheerders, publieke opdrachtgevers, bouwaannemers, producenten, toeleveranciers*
+
 Bij nieuwbouw of renovatie worden verkeersborden en markeringen weggehaald of verplaatst. Hierbij is informatie nodig uit de bouw- en beheerfase die wel wordt aangeduid als een "materialenpaspoort" om te kunnen bepalen of de verkeersborden kunnen worden hergebruikt, en of zij hiertoe moeten worden gerestaureerd. 
 
-1. In het [=Informatiemodel Verkeerstekens=] moet een verkeersbesluit en daarmee de de bijbehorende verkeersborden en markeringen een begin- en eindtijd krijgen zodat duidelijk is of deze aanweizg zijn op een specifiek tijdstip of niet. 
+
 
 
 

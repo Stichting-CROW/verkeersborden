@@ -8,9 +8,15 @@ In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het 
 
 <dfn data-lt="NEN2660-2:2022">NEN2660-2:2022</dfn>
 <dd>NEN2660-2 is een praktische invulling van NEN2660_1. In deel 1 zijn meer theoretische/conceptuele en bouw- en taalonafhankelijke modelleerpatronen vastgelegd. Deze norm is vrij beschikbaar bij de NEN en is ontwikkeld in een samenwerking tussen overheden, adviesbureau's en kennisinstituten. Het heeft als doel de standaard te zijn voor de ontwikkeling van ontologieën in de gebouwde omgeving. Het bevat drie belangrijke (hoofd)onderdelen:
-<ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om IMBOR in uit te drukken.</li>
+<ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], in uit te drukken.</li>
 <li>Extensies hierop voor de meest gebruikt toepassingen in de gebouwde omgeving. </li>
-<li>Taalbinding naar (en daarmee de keuze voor) de semantisch web W3C talen: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]</li></dd>
+<li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li></dd>
+
+<figure>
+<img src="./hoofdstukken/media/NEN2660-2_scope.PNG">
+<figcaption>NEN2660-2 scope in grijs grijze vlakken (bron: TNO) </caption>
+</figure>
+
 
 * Het informatiemodel MOET worden opgesteld conform de [=NEN2660-2:2022=].
 * Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.
@@ -18,7 +24,9 @@ In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het 
 
 ### NEN 3610
 <dfn data-lt="NEN3610">NEN3610</dfn>
-<dd>NEN 3610 is de standaard voor het uitwisselen van geo-informatie, gebruikt Unified Modeling Language (UML) als formele taal voor het vastleggen van semantiek en beveelt Geography Markup Language (GML) aan als technisch uitwisselingsformat. NEN 3610 is hiermee nog niet geschikt om semantiek, gegevensdeling en uitwisseling middels Linked Data te realiseren. <a href="https://geonovum.github.io/NEN3610-Linkeddata/#inleiding">bron: Geonovum</a>  </dd>
+<dd>NEN 3610 is de standaard voor het uitwisselen van geo-informatie, gebruikt Unified Modeling Language (UML) als formele taal voor het vastleggen van semantiek en beveelt Geography Markup Language (GML) aan als technisch uitwisselingsformat. NEN 3610 is hiermee nog niet geschikt om semantiek, gegevensdeling en uitwisseling middels Linked Data te realiseren. De NEN3610 is in 2021 herzien (t.o.v. 2011) en vormt de basis van de Samenhangende objecten registratie (SOR) die binnen het DiSGeo programma wordt opgetuigd.  <a href="https://geonovum.github.io/NEN3610-Linkeddata/#inleiding">bron: Geonovum</a>  </dd>
+
+Binnen de NEN2660-2 is reeds een relatie tussen de NEN2660-2 en de NEN3610 aangegeven. Het gaat hier alleen om een afstemming tussen de begrippenkaders. 
 
 * Het informatiemodel MOET waar mogelijk aangesloten op de [=NEN3610=]. Bij tegenstrijdigheden geldt de [=NEN2660-2:2022=].
 
@@ -117,6 +125,16 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 
 ## Beheerfase
 
+### IMGeo
+
+<dfn data-lt="IMGeo|Informatiemodel Geografie">IMGeo</dfn>
+<dd> Het Informatiemodel ontwikkeld voor objectgerichte geografische informatie in de [=BGT=]. Wegen zijn hierin opgenomen als 2D vlakobject. Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".</dd>
+
+Welk type verkeersbord op de BGT kaart staat kan niet worden geregistreerd.
+Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van het informatiemodel IMGEO. Aanvullend hierop voegen zij in hun areaalbeheerpakketten extra informatie toe aan deze wegvlakken, ten behoeve van beheer van de wegen. 
+
+**Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
+
 ### IMBOR
 <dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR">IMBOR</dfn>
 <dd> Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://docs.crow.nl/onto-verkenner/imbor/#/view">deze viewer</a>  </dd>
@@ -141,7 +159,7 @@ Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbe
 Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel Verkeerstekens=] geagendeerd in de Stuurgroep IMBOR voor besluitvorming of dit informatiemodel in beheer wordt genomen binnen de beheerorganisatie IMBOR en of men inhoudelijk akkoord is met deze aansluiting.
 </aside>
 
-### IMWV
+#### _IMWV_
 IMWV staat voor Informatie Model Wegen en Verkeer. 
 
 <dfn data-lt="IMWV|Informatie Model Wegen en Verkeer">IMWV</dfn>
@@ -152,15 +170,7 @@ IMWV staat voor Informatie Model Wegen en Verkeer.
 <figcaption>Visualisatie alle objecttypen die tot het IMWV behoren.</caption>
 </figure>
 
-### IMGeo
 
-<dfn data-lt="IMGeo|Informatiemodel Geografie">IMGeo</dfn>
-<dd> Het Informatiemodel ontwikkeld voor objectgerichte geografische informatie ontwikkelt voor de [=BGT=]. Wegen zijn hierin opgenomen als 2D vlakobject. Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".</dd>
-
- Welk type verkeersbord op de BGT kaart staat kan niet worden geregistreerd.
-Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van het informatiemodel IMGEO. Aanvullend hierop voegen zij in hun areaalbeheerpakketten extra informatie toe aan deze wegvlakken, ten behoeve van beheer van de wegen. 
-
-**Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
 
 
 <figure>
@@ -177,68 +187,60 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 **Raakvlaktype: Buiten scope.** Potentiële geometrische representatievorm van de verkeersborden
 
 
+### Dataspecs INSPIRE 
 
-### TN-ITS
-
-Wijzigingen aan wegkenmerken worden beschreven voor het TN-ITS systeem o.b.v. de norm **CEN/TS 17268**:2018: 
-_Intelligent transport systems - ITS spatial data - Data exchange on changes in road attributes_.
-
-De norm is alleen via betaling beschikbaar bij de NEN. De GML schema's die eraan ten grondslag liggen zijn open beschikbaar op https://tn-its.eu/standardisation. 
-
-**Raakvlaktype: Bron voor informatiemodel** Bron voor de definitie van wegkenmerken die vanuit verkeerskundig perspectief moeten worden opgenomen in het informatiemodel.
-
-
-### Inspire
-
-De dataspecificaties van INSPIRE, infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op 
-https://inspire.ec.europa.eu/Themes/115/2892 met UML-diagrammen en uitgebreide technische documentatie.
+De dataspecificaties van [=INSPIRE=], infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op 
+[deze pagina](https://inspire.ec.europa.eu/Themes/115/2892) met UML-diagrammen en uitgebreide technische documentatie.
 
 Alleen het Wegennetwerk, uit het thema Transportnetwerken is hierbij relevant.
 De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
 
 **Raakvlaktype: Bron voor informatiemodel** Bron voor de definitie van wegkenmerken die vanuit verkeerskundig perspectief moeten worden opgenomen in het informatiemodel.
 
-### OSLO
+### Data.vlaanderen.be
 
-De Vlaamse overheid heeft binnen het OSLO-programma (Open standaarden voor linkende organisaties) en het project Lokale Besluiten als Gelinkte Open Data (LBLOD) verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het [=Informatiemodel Verkeerstekens=].
+De Vlaamse overheid heeft binnen het [=OSLO=]-programma (Open standaarden voor linkende organisaties) en het project Lokale Besluiten als Gelinkte Open Data (LBLOD) verschillende vocabulaira en applicatieprofielen ontwikkeld die (deels) overlappen met de doelen van het [=Informatiemodel Verkeerstekens=].
 
 Er wordt gebruik gemaakt van vocabularia die de herbruikbare concepten beschrijven. 
-De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties tussen die concepten.
+De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties tussen die concepten:
 
-- https://data.vlaanderen.be/ns/openbaardomein/infrastructuur
-- https://data.vlaanderen.be/ns/mobiliteit
-- https://data.vlaanderen.be/ns/besluit
+- [Infrastructuur](https://data.vlaanderen.be/ns/openbaardomein/infrastructuur)
+- [Mobiliteit](https://data.vlaanderen.be/ns/mobiliteit)
+- [Besluit](https://data.vlaanderen.be/ns/besluit)
 
 **Raakvlaktype: Potentiële internationale aansluiting** Indien de Vlaamse en Nederlandse situatie gelijkenissen vertonen kan gezocht worden naar een gemeenschappelijk vocabulair dat kan leiden tot internationale aansluiting van informatiemodellen en toegankelijker gebruik van informatiemodellen.
 
-#### _Besluiten Mobiliteit_
+#### Besluiten Mobiliteit
 
-https://data.vlaanderen.be/doc/applicatieprofiel/besluit-mobiliteit/
+Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/besluit-mobiliteit/)
 
 > Dit applicatieprofiel definieert een specificatie voor de publicatie van inname- en signalisatievergunningen en aanvullende reglementen van een bestuursorgaan .
 
-#### _Wegenregister_
+#### Wegenregister
 
-https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister/
+Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/wegenregister/)
 
 > De applicatie waarop dit profiel betrekking heeft is het Wegenregister. Het Wegenregister is het middenschalig referentiebestand van de wegen in Vlaanderen die beheerd zijn door het gewest, de provincies, de gemeenten of andere instanties en die openbaar toegankelijk zijn. Het moet alle (openbaar toegankelijke) wegen van Vlaanderen bevatten, met bijbehorende attribuutgegevens. Het bestand heeft een middenschalige precisie.
 
-####  _Verkeersborden_
+####  Verkeersborden
 
-https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborden/
+Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborden/)
 
 > Dit applicatieprofiel definieert een specificatie voor de uitwisseling van [statische, verticale] verkeersbordinformatie die geplaatst zijn of worden op het openbaar domein.
 
 > Doorheen de verschillende werkgroepen is gekomen tot een model dat bruikbaar is in de toepassingscontexten van zowel de regelgeving als technisch onderhoud.
 
+#### Vlaamse Wegen OTL 
+<dfn data-lt="AWV OTL">AWV OTL</dfn>
+<dd>Een uitwerking van [=OSLO=] is de objecttypenbibliotheek van alle weginfrastructuurobjecten van het Agentschap wegen en verkeer, zoals beschreven in de verschillende standaardbestekken. Elk objecttype heeft daarin een eenduidige definitie, een aantal vastgelegde eigenschappen en mogelijke relaties met andere objecttypes. Zie ook <a href="https://wegenenverkeer.be/zakelijk/bim">deze website</a> en meer specifiek <a href="https://wegenenverkeer.be/zakelijk/bim/otl">de startpagina over de OTL.</a></dd>
+
 
 ### Datex II
 
 https://www.datex2.eu/, Gepubliceerd als CEN 16157, deel 1 t/m 9. 
-Deze norm is niet vrij beschikbaar en zijn te koop bij NEN à ca. 100 p.s. tot ca. 250 EUR excl. BTW p.s. 
-Voor Nederlands is er door NDW een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
+Deze norm is niet openbeschikbaar. Voor Nederlands is er door NDW een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
 
-- beborde omleiding
-- snelheidsbeperkingen (`SpeedManagement`)
+* beborde omleiding
+* snelheidsbeperkingen (`SpeedManagement`)
 
-De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=].
+**Raakvlaktype: Bron voor informatiemodel** De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=]. Toch moet worden gecontroleerd of onderdelen van het informatiemodel al beschreven zijn in deze norm, zodat hier op kan worden aangesloten.
