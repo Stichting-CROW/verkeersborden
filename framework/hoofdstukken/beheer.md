@@ -58,10 +58,16 @@ Dit architectuur framework voor het [=Informatiemodel Verkeerstekens=] wordt gea
 Bij elke publicatie krijgen stakeholders de kans om de documentatie en het [=Informatiemodel Verkeerstekens=] te reviewen en hun wensen en eisen aan te geven. 
 
 
-#### Ecosysteem
+#### (Inter-)nationale samenwerking
 
-* Er zijn afspraken nodig met BIM loket over het afstemmen van de beheer- en publicatiecyclus van [=CB-NL=] en [=NLCS=].
-* Er zijn afspraken nodig met het NDW over het afstemmen van de beheer- en publicatiecyclus van het [=NWB=].
+Om het informatiemodel optimaal te ontwikkelen en beheren in samenhang met het ecosysteem wordt actief samengewerkt en afegstemd met:
+
+* BIM loket, voor [=CB-NL=] en [=NLCS=].
+* Het NDW, voor het [=NWB=].
+* Het [=OSLO=] initiatief, voor aansluiting op de vlaamsche mobiliteitsdata en de [=AWV OTL=].
+* De [=Zweedse netwerkregistratie=].
+
+
 
 ### Visie
 
@@ -117,6 +123,17 @@ De standaard is voldoende ontwikkeld voor een hoge adoptiegraad
 </ul>
 </aside>
 
+Een informatiemodel kan pas marktadoptie krijgen als de specificaties ervan in verschillende vrije formaten vrij beschikbaar zijn.
+Dat houdt in dat het [=Informatiemodel Verkeerstekens=] open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd.
+
+In de beschrijving van het informatiemodel moeten gemaakte keuzes beschreven worden, zodat implementaties en toekomstige uitbreidingen afgewogen keuzes kunnen maken.
+Het informatiemodel vermeldt expliciet welke onderdelen normatief zijn, en welke niet-normatief (informatief).
+
+Een voorbeeld van een vrij, machineleesbaar formaat is een RDF-ontologie.
+Een voorbeeldimplementatie is aanbevelenswaardig, omdat het aantoont dat de specificatie van het informatiemodel werkbaar is. 
+Voorbeelden van data conform het informatiemodel zijn essentieel om de implementatie ervan te ondersteunen. 
+
+
 ## Rechtenbeleid
 
 <aside class="note" title="Eisen">
@@ -153,7 +170,8 @@ Ken Krechmer:
 <ul><li>Open interface: de standaard is “backwards compatible” en laat voldoende ruimte voor tijdelijke uitbreidingen</li></ul>
 </aside>
 
-Alle afhankelijkheden met andere standaarden moeten expliciet benoemd zijn. De functionele afbakening dient expliciet beschreven te zijn. Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie
+Alle afhankelijkheden met andere standaarden moeten expliciet benoemd zijn. De functionele afbakening dient expliciet beschreven te zijn. Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie.
+
 
 ### Toegankelijk, duurzaamheid
 

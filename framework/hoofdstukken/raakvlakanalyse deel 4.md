@@ -111,11 +111,17 @@ WKD is volop in ontwikkeling en kent medio 2022 de volgende wegkenmerken: maximu
 
 ### SOR
 <dfn data-lt="Samenhangende Objectenregistratie|SOR">SOR</dfn>
-<dd>Een programma gecoördineerd door de [=Vereniging Nederlandse Gemeenten=] waarbinnen gewerkt wordt aan een Samenhangende Objecten Registratie: een nog te ontwikkelen uniforme registratie met basisgegevens over objecten in de fysieke werkelijkheid. Daaronder worden verstaan objecten die in het terrein zichtbaar zijn, zoals spoorlijnen, wegen, water, gebouwen en bomen. Ook worden basisgegevens over niet-zichtbare objecten opgenomen, zoals bestuurlijke gebieden, woonplaatsen en openbare ruimten. </dd>
+<dd>Een Samenhangende Objecten Registratie in ontwikkeling binnen het [=DisGeo=] programma: een nog te ontwikkelen uniforme registratie met basisgegevens over objecten in de fysieke werkelijkheid. Daaronder worden verstaan objecten die in het terrein zichtbaar zijn, zoals spoorlijnen, wegen, water, gebouwen en bomen. Ook worden basisgegevens over niet-zichtbare objecten opgenomen, zoals bestuurlijke gebieden, woonplaatsen en openbare ruimten. </dd>
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak van de informatiemodellen
 
 De ontwikkeling van de samenhangende objectenregistratie is een samenwerkingsverband van onder meer gemeenten, provincies, waterschappen, Rijkswaterstaat, Kadaster en de Waarderingskamer. Het traject maakt onderdeel uit van het regieprogramma Doorontwikkeling in Samenhang van de Geo-basisregistraties (DiS Geo) van het ministerie van BZK en heeft een relatie met het programma Centrale netwerkregistratie van het ministerie van I&W. Kennispartners zijn onder meer het Gemeentelijk Geo-Beraad (GGB), Geonovum en CROW.
+
+
+### Zweedse netwerkregistratie
+
+<dfn data-lt="Zweedse netwerkregistratie">Zweedse netwerkregistratie</dfn>
+<dd>Zweden heeft een netwerkregistratie live staanmet deze <a href="https://www.nvdb.se/sv">website</a>, deze <a href="https://dataut.vegvesen.no/en/dataset/nasjonal-vegdatabank">landingspagina voor datasets</a> en <a href="https://dce2.au.dk/pub/TR151.pdf">deze Engelstalige toelichting</a> </li></ul></dd>
 
 
 

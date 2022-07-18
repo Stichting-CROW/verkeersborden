@@ -80,6 +80,7 @@ var respecConfig = {
   specStatus: "DRAFT",
   pubDomain: "verkeersborden",
   shortName: "framework",
+  license: "CC-BY",
   subtitle: "Use-case, inhoudelijke en technische uitgangspunten",
   editors: [
     {
