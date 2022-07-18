@@ -73,7 +73,7 @@ In het informatiemodel wordt secundair rekening gehouden met het opstellen en be
 
 ### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk zoals dat gepubliceerd wordt bij het [=NWB=] met [NWB-wegvakken] en [NWB-juncties]. Het informatiemodel van het wegennetwerk zelf is wel buiten scope. 
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk zoals dat gepubliceerd wordt bij het [=NWB=] met [=NWB-wegvakken=] en [=NWB-juncties=]. Het informatiemodel van het wegennetwerk zelf is wel buiten scope. 
 
 
 ### RVV 1990+ 
@@ -154,8 +154,8 @@ Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de inf
 Verkeerslichten zijn buiten scope. 
 
 ### Zicht
-[RVV 1990 art 19](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01) geeft aan:       
-De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
+[RVV 1990 art 19](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01) geeft aan: De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
+
 Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het informatiemodel, ook al kan een rechter, in het geval van een ongeluk, concluderen dat een bestuurder sneller heeft gereden dan wettelijk is toegestaan volgens deze regel.
 
 
