@@ -87,7 +87,6 @@ Omdat een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] zowel voor h
 * Het informatiemodel MOET als default situatie hebben dat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] eindigt op de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te laten gelden tot een specifiek eindpunt op x lengte ná de [NWB-junctie]. 
 
-<div class="issue" data-number="146"></div>
 
 
 ### Verkeersregel
