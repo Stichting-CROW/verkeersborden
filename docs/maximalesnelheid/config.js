@@ -2,6 +2,7 @@ var respecConfig = {
   // => https://github.com/stichting-crow/respec/wiki
   specType: "CROW-DOC",
   specStatus: "DRAFT",
+  license: "CC-BY",
   pubDomain: "verkeersborden",
   shortName: "maximalesnelheid",
   subtitle: "Hoe hard mag ik hier?",
