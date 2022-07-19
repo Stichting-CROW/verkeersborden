@@ -22,6 +22,8 @@ In dit hoofdstuk staan de onderdelen beschreven waaruit het informatiemodel zal 
 
 Het Beheerplatform is nodig om het informatiemodel te kunnen beheren, op zodanige wijze dat verschillen tussen versies goed beheerst en gepubliceerd kunnen worden. In de ontwikkelingsfase moet een beheerplatform hiertoe worden ingericht. Dit zorgt ervoor dat een inhoudelijk deskundige op het gebied van verkeerskunde de inhoudelijke uitwerking van het informatiemodel kan opstellen en beheren. 
 
+Daarnaast wordt in het beheerplatform de relatie met de brondocumenten beheerd, in dit geval met de [=RVV 1990=] en de [=BABW=].
+
 
 ### Wijzigingsbeheer
 
