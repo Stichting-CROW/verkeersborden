@@ -13,7 +13,7 @@ In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het 
 <li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li></dd>
 
 <figure>
-<img src="./hoofdstukken/media/NEN2660-2_scope.PNG">
+<img src="./hoofdstukken/media/NEN2660-2_scope.png">
 <figcaption>NEN2660-2 scope in grijs grijze vlakken (bron: TNO) </caption>
 </figure>
 

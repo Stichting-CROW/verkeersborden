@@ -4,7 +4,7 @@
 In dit hoofdstuk staan de onderdelen beschreven waaruit het informatiemodel zal bestaan. 
 
 <figure>
-<img src="./hoofdstukken/media/samenstelling Informatiemodel.jpg">
+<img src="./hoofdstukken/media/SamenstellingInformatiemodel.jpg">
 <figcaption>De samenstelling van het informatiemodel</caption>
 </figure>
 

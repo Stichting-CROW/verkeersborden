@@ -1,1 +1,1 @@
-Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens en Verkeersbesluiten, met de wettelijke maximum snelheid.
+Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens, met de wettelijke maximum snelheid.
