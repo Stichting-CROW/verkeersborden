@@ -95,7 +95,7 @@ De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden wet
 * Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een of meerdere [=NWB-wegvakken=].
 
 
-### Fysiek bord 
+### Fysiek verkeersbord 
 De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rijdt zien welk fysiek verkeersbord er staat.
 
 
@@ -124,14 +124,24 @@ De gebruiker wil bij de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=
 * Het informatiemodel MOET de mogelijkheid bieden om bij een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] en nadere aanduiding te geven met een type [=onderbord=] 
 * Het informatiemodel MOET de mogelijkheid bieden om bij een onderbord een keuzelijst te bieden van mogelijke inhoud van het [=onderbord=]
 
-### Visualisatie bord
+### Visualisatie verkeersbord
 De [=weggebruikers=] willen door hun systeem visueel ondersteund worden met de afbeeldingen van bijbehorende verkeersborden om deze informatie tijdens het rijden zo eenvoudig mogelijk te kunnen opnemen. Dit betekent dat het systeem zal moeten weten, welk bord getoond moet worden om duidelijk te maken welke [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt. 
 
 Daarbij geldt als "complicatie" dat niet elke [=verkeersregel=] gepaard gaat met een fysiek bord, of niet met een specifiek bord. Bijvoorbeeld in het geval van de maximumsnelheid, wordt dit fysiek soms aangeduid door een bord over het wegtype, zoals een G3 ("autoweg"), terwijl de visuele ondersteuning beter van het type "A1" kan zijn (snelheidsbord).
 
-* Het informatiemodel moet onderscheid maken tussen de *fysiek aanwezige* verkeersborden en het type verkeersbord dat getoond kan worden ten behoeve van de *visuele ondersteuning van de weggebruiker*.
+* Het informatiemodel moet onderscheid maken tussen de *fysiek aanwezige* verkeersborden en onderborden en het type verkeersbord dat in een SMART Mobility systeem getoond kan worden ten behoeve van de *visuele ondersteuning van de weggebruiker*.
 * Het informatiemodel MOET voor elk type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] weergeven, welk type bord moet worden getoond ten behoeve van *de visuele ondersteuning van de weggebruiker*.
-* Het informatiemodel MOET een schaalbare afbeelding ([SVG](https://www.w3.org/TR/SVG/)) van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten ten behoeve van *de visuele ondersteuning van de weggebruiker*.
+
+
+#### Afbeeldingen verkeersborden
+* Het informatiemodel MOET een schaalbare afbeelding ([SVG](https://www.w3.org/TR/SVG/)) van de fysieke verschijningsvorm van verkeersborden en onderborden bevatten.
+
+De afbeeldingen van de verkeersborden en - onderborden zijn referentievectorbestanden van verkeersborden en -tekens niet zijnde wegwijzers en straatnaamborden met als doel:
+* Visualisatie in SMART Mobility systemen
+* Een nationale standaard visualisatie voor toepassing van de productie van verkeersborden.
+
+Dit is een ander doel dan de publicatie van de Nationale Bewegwijzeringsdienst met concrete verkeersborden aan een concrete weg.
+Het formaat is SVG, dat zijn schaalbare vectorafbeeldingen die op het web en in print altijd scherp blijven.
 
 <div class="issue" data-number="155"></div>
 

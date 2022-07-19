@@ -70,7 +70,7 @@ De VNG is kartrekker van het programma [=T3D=].
 ### T3D
 
 <dfn data-lt="Programma Totaal 3Dimensionaal|T3D|Totaal 3Dimensionaal">Totaal 3Dimensionaal</dfn>
-<dd>Een programma gecoördineerd door de [=Vereniging Nederlandse Gemeenten=] waarbinnen gewerkt wordt aan verbetering van het inwinnen, registratie en het gebruik van 3 dimensionale geo-informatie. </dd>
+<dd>De [=Vereniging Nederlandse Gemeenten=] heeft samen met drie grote gemeenten een project geformuleerd om het gebruik en de mogelijkheden van 3D geografische gegevens te verkennen. Het project heet “Totaal Driedimensionaal”, in het kort: T3D. In het programma wordt gewerkt aan verbetering van het inwinnen, registratie en het gebruik van driedimensionale geo-informatie. De drie gemeenten werken elk een van deze sporen uit in functionerende pilots. Daarbij wordt gezocht naar oplossingsrichtingen en standaarden die in te zetten zijn bij alle drie de gemeenten en toepasbaar zijn voor alle gemeenten. De resultaten worden <a href="https://alkem.io/digileefomgeving/challenges/t3d/dashboard">hier</a> gepubliceerd.</dd>
 
 Hierbij wordt [=CityGML=] gezien als een handig formaat om in te publiceren. 
 
