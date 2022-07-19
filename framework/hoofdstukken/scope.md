@@ -120,7 +120,7 @@ Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen sco
 Buiten scope zijn de dynamische verkeersborden.
 
 <dfn data-lt="dynamische verkeersborden|dynamisch verkeersbord">Dynamisch verkeersbord</dfn>
-<dd>Een verkeersbord weergegeven op een electronisch signaleriungsbord, waarmee telkens wisselende afbeedlingen dan we teksten getoond kunnen worden.</dd></dfn>
+<dd>Een verkeersbord weergegeven op een electronisch signaleringsbord, waarmee telkens wisselende afbeedlingen dan we teksten getoond kunnen worden.</dd></dfn>
 
 
 ### Wegmarkeringen
