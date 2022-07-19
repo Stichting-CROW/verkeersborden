@@ -20,6 +20,7 @@ De beheerstrategie is open en transparant beheer conform het Beheermodel voor Op
 
 Voor digitale en informatiestandaarden gelden daarnaast de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf). Deze worden toegevoegd aan de standaard eisen vanuit BOMOS.
 
+In dit document worden de eerste contouren geschetst voor het strategisch en tactisch beheer van het informatiemodel; bij verdere uitwerking en ontwikkeling van hety informatiemodel wordt een beheerplan uitgewerkt. 
 
 ## Strategie
 
@@ -101,9 +102,9 @@ De business case van de standaard is voor iedereen duidelijk:
 De standaard heeft een structurele financiering voor beheer en implementatieondersteuning</aside>
 
 
-# Tactiek
+## Tactiek
 
-## Community
+### Community
 
 <aside class="note" title="BOMOS">
 <a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf">BOMOS</a> eist: De standaard heeft een degelijke, actieve community
@@ -113,7 +114,7 @@ De standaard heeft een structurele financiering voor beheer en implementatieonde
 </aside>
 
 
-## Adoptie en erkenning
+### Adoptie en erkenning
 
 <aside class="note" title="BOMOS eisen">
 De standaard is voldoende ontwikkeld voor een hoge adoptiegraad
@@ -134,7 +135,7 @@ Een voorbeeldimplementatie is aanbevelenswaardig, omdat het aantoont dat de spec
 Voorbeelden van data conform het informatiemodel zijn essentieel om de implementatie ervan te ondersteunen. 
 
 
-## Rechtenbeleid
+### Rechtenbeleid
 
 <aside class="note" title="Eisen">
 <br>
@@ -155,7 +156,7 @@ Het [rechtenbeleid van IMBOR](https://docs.crow.nl/imbor/techdoc/#licenties) wor
 
 
 
-## Architectuur
+### Architectuur
 
 
 <aside class="note" title="Eisen">
@@ -173,7 +174,7 @@ Ken Krechmer:
 Alle afhankelijkheden met andere standaarden moeten expliciet benoemd zijn. De functionele afbakening dient expliciet beschreven te zijn. Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie.
 
 
-### Toegankelijk, duurzaamheid
+#### Toegankelijk, duurzaamheid
 
 Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van toegangkelijkheid en duurzaamheid:
 
@@ -182,7 +183,7 @@ Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied 
 * Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens? De specificaties zijn bedoeld voor de actuele situatie, alleen de begin- en eindtijd van een verkeersregel en verkeersbord zijn wel opgenomen. Er wordt niet beoogd een informatiemodel te maken waarmee de gehele ontwikkeling van het weggenet en de verkeerskundige kenmerken kan worden gevolgd. Ook de voorbeeld queries zijn gebaseerd op een actuele dataset.
 * Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is? Dit wordt bereikt door gebruik te maken van de modelleerregels uit de [=NEN2660-2:2022=].
 
-### Security en Privacy
+#### Security en Privacy
 
 Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van security en privacy:
 
@@ -192,12 +193,12 @@ Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied 
 
 In het geval van het [=Informatiemodel Verkeerstekens=] gaat het om publiek toegankelijke, openbare en transparante data.
 
-### API's en uitwisselformaten 
+#### API's en uitwisselformaten 
 
 Het informatiemodel dient los te staan van specifieke uitwisselingsstandaarden, zoals API's en uitwisselformaten voor [=verkeerskundige informatie=].
 Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technologie-specifieke beperkingen zijn gemaakt.
 
-## Kwaliteitsbeleid benchmarking
+### Kwaliteitsbeleid benchmarking
 
 <aside class="note" title="BOMOS">
 <br>
@@ -215,5 +216,9 @@ De gebruikte methodiek dient expliciet beschreven te zijn, of een verwijzing naa
 Het toepassen van een methodiek voor standaardisatie zal leiden tot een hogere kwaliteit.
 
 Methodiek informatiemodel en andere technische onderdelen: Zie het hoofdstuk met technische uitgangspunten. 
+
+## Operationeel
+
+De operationale inrichting wordt beschreven in hoofdstuk 12.
 
 
