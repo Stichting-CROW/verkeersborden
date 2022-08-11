@@ -1,0 +1,1849 @@
+<!DOCTYPE html><html lang="nl" class="js-focus-visible" data-js-focus-visible=""><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 32.1.9">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:MuseoSans,"Museo Sans",Museo,sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+<link rel="stylesheet" href="https://docs.crow.nl/webfonts/webfonts.css">
+<link rel="stylesheet" href="https://docs.crow.nl/respec-design/stichting-crow/base.min.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://docs.crow.nl/respec-design/stichting-crow/dark.min.css">
+  
+  
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+  
+  
+  
+<title>Wettelijke maximumsnelheid</title>
+  
+  
+  
+<style>
+
+@media ( prefers-reduced-motion: no-preference ) {
+  @keyframes animateheader {
+    0% { background-color: unset; }
+    20%   { background-color: #ffff0020; }
+    100% { background-color: unset; }
+  }
+}
+
+:target {
+  animation: animateheader 1s ease-in-out ;
+}
+.toc-labeled>li li {
+  margin-left: 0;
+  list-style: disc;
+  margin-left: 1rem;
+}
+:not(li)>.toc-labeled {
+  margin-left: 0;
+}
+.toc-labeled {
+  font-size: 0.9rem;
+  line-height: inherit;
+}
+
+</style>
+
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+code{color:#c63501}
+th code{color:inherit}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000;color:var(--toclink-text)}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<link rel="icon" href="https://docs.crow.nl/respec-design/logos/crow.ico">
+<style>
+ul.index{columns:30ch;column-gap:1.5em}
+ul.index li{list-style:inherit}
+ul.index li span{color:inherit;cursor:pointer;white-space:normal}
+#index-defined-here ul.index li{font-size:.9rem}
+ul.index code{color:inherit}
+#index-defined-here .print-only{display:none}
+@media print{
+#index-defined-here .print-only{display:initial}
+}
+</style>
+<meta name="description" content="Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens, met de wettelijke maximum snelheid.">
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specType": "CROW-DOC",
+  "specStatus": "IR",
+  "reviewDateEnd": "2022-08-15",
+  "license": "CC-BY",
+  "pubDomain": "verkeersborden",
+  "shortName": "maximalesnelheid",
+  "subtitle": "Hoe hard mag ik hier?",
+  "editors": [
+    {
+      "name": "Elisabeth Klören",
+      "company": "CROW"
+    },
+    {
+      "name": "Redmer Kronemeijer",
+      "company": "CROW"
+    }
+  ],
+  "github": "https://github.com/Stichting-CROW/verkeersborden",
+  "hypothesisComments": true,
+  "publishISODate": "2022-08-11T00:00:00.000Z",
+  "generatedSubtitle": "CROW CROW-DOC, referentieversie 11 augustus 2022"
+}</script>
+<link rel="sidebar" href="https://hypothes.is/app.html" type="application/annotator+html" data-hypothesis-asset="">
+<link rel="notebook" href="https://hypothes.is/notebook" type="application/annotator+html" data-hypothesis-asset="">
+<link rel="preload" as="style" href="https://cdn.hypothes.is/hypothesis/1.1088.0/build/styles/annotator.css?23ccbc" data-hypothesis-asset="">
+<link rel="hypothesis-client" href="https://cdn.hypothes.is/hypothesis/1.1088.0/build/boot.js" type="application/annotator+javascript" data-hypothesis-asset="">
+<script src="https://cdn.hypothes.is/hypothesis/1.1088.0/build/scripts/annotator.bundle.js?85c923" data-hypothesis-asset=""></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.hypothes.is/hypothesis/1.1088.0/build/styles/highlights.css?5dd56a" data-hypothesis-asset=""></head>
+
+<body style="background-image: url(&quot;https://docs.crow.nl/respec-design/stichting-crow/status-nl/IR.svg&quot;);" class="h-entry hypothesis-highlights-always-on"><div class="head">
+    <p class="logos"><a class="logo" href="https://www.crow.nl"><img crossorigin="" alt="CROW" height="75" src="https://docs.crow.nl/respec-design/stichting-crow/logo/crow.svg" width="150">
+  </a></p>
+    <h1 id="title" class="title">Wettelijke maximumsnelheid</h1> <h2 id="subtitle" class="subtitle">Hoe hard mag ik hier?</h2>
+    <p id="w3c-state">CROW CROW-DOC,
+  referentieversie <time style="white-space: pre;" class="dt-published" datetime="2022-08-11">11 augustus 2022</time></p>
+    <details open="">
+      <summary>Meer informatie over dit document</summary>
+      <dl>
+        
+        
+        
+        <dt>Laatste werkversie:</dt><dd><a href="https://docs.crow.nl/verkeersborden/maximalesnelheid">https://docs.crow.nl/verkeersborden/maximalesnelheid</a></dd>
+        <dt>Geschiedenis:</dt><dd>
+                    <a href="https://github.com/Stichting-CROW/verkeersborden/commits/">Wijzigingsgeschiedenis</a>
+                  </dd>
+        
+        
+        
+        <dt>Redacteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Elisabeth Klören</span> (<span class="p-org org h-org">CROW</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Redmer Kronemeijer</span> (<span class="p-org org h-org">CROW</span>)
+  </dd>
+        
+        
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/Stichting-CROW/verkeersborden/">GitHub Stichting-CROW/verkeersborden</a>
+        (<a href="https://github.com/Stichting-CROW/verkeersborden/pulls/">wijzigingsverzoeken</a>,
+        <a href="https://github.com/Stichting-CROW/verkeersborden/issues/new/choose">nieuw issue</a>,
+        <a href="https://github.com/Stichting-CROW/verkeersborden/issues/">openstaande issues</a>)
+      </dd><dd hidden="" id="annotation-service-placeholder">
+        <button type="button" data-load-annotation-service="" control-id="ControlID-8">
+          Laad annotaties
+        </button>
+        <span><small>Annotaties door <a href="https://web.hypothes.is">Hypothes.is</a> (<a href="https://web.hypothes.is/privacy">privacybeleid</a>).</small></span>
+      </dd><dd id="annotation-service-loaded">
+        <span data-hypothesis-annotation-count="">0</span> annotatie(s) met <em>Hypothes.is</em>
+        <button type="button" data-hypothesis-trigger="" control-id="ControlID-3">
+          Toon annotatiebalk
+        </button>
+        <button type="button" data-unload-annotation-service="" control-id="ControlID-4">
+          Verberg
+        </button>
+      </dd>
+        
+        
+      </dl>
+    </details>
+    
+    <p class="copyright">
+    Copyright ©
+    2022
+    
+    <a href="https://www.crow.nl">CROW</a>.
+    CROW
+    <a href="https://www.crow.nl/disclaimer">disclaimer</a>
+      van toepassing en gedistribueerd onder
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Naamsvermelding">CC BY 4.0</a>
+  </p>
+    <hr title="Separator for header">
+  </div>
+  
+  <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Proof of Concept: Eerste oefening van het Informatiemodel Verkeerstekens, met de wettelijke maximum snelheid.</p>
+</section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#wettelijke-maximumsnelheid"><bdi class="secno">2.1 </bdi><span><code>Wettelijke maximumsnelheid</code></span></a></li><li class="tocline"><a class="tocxref" href="#architectuur-framework"><bdi class="secno">2.2 </bdi>Architectuur framework</a></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">2.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#wettelijke-grondslag"><bdi class="secno">3. </bdi>Wettelijke grondslag</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rvv-1990"><bdi class="secno">3.1 </bdi>RVV 1990</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#zicht"><bdi class="secno">3.1.1 </bdi>Zicht</a></li><li class="tocline"><a class="tocxref" href="#standaard-wettelijke-maximumsnelheid"><bdi class="secno">3.1.2 </bdi><span><code>standaard wettelijke maximumsnelheid</code></span></a></li><li class="tocline"><a class="tocxref" href="#wegtype"><bdi class="secno">3.1.3 </bdi>Wegtype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verkeersborden"><bdi class="secno">3.1.3.1 </bdi>Verkeersborden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#rijbaantype"><bdi class="secno">3.1.4 </bdi>Rijbaantype</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verkeersborden-0"><bdi class="secno">3.1.4.1 </bdi>Verkeersborden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#weginrichting"><bdi class="secno">3.1.5 </bdi>Weginrichting</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verkeersborden-1"><bdi class="secno">3.1.5.1 </bdi>Verkeersborden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#voertuigtype"><bdi class="secno">3.1.6 </bdi>VoertuigType</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#speedpedelec"><bdi class="secno">3.1.6.1 </bdi>Speedpedelec</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#lokale-wettelijke-maximumsnelheid"><bdi class="secno">3.2 </bdi><span><code>lokale wettelijke maximumsnelheid</code></span></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#onderborden"><bdi class="secno">3.2.1 </bdi>Onderborden</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#weggebruiker"><bdi class="secno">3.2.1.1 </bdi>Weggebruiker</a></li><li class="tocline"><a class="tocxref" href="#aanvullende-instructie"><bdi class="secno">3.2.1.2 </bdi>Aanvullende instructie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#zone"><bdi class="secno">3.2.2 </bdi>Zone</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#verkeersborden-2"><bdi class="secno">3.2.2.1 </bdi>Verkeersborden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#olietekorten"><bdi class="secno">3.2.3 </bdi>Olietekorten</a></li><li class="tocline"><a class="tocxref" href="#welke-snelheid-geldt"><bdi class="secno">3.2.4 </bdi>Welke snelheid geldt</a></li></ol></li><li class="tocline"><a class="tocxref" href="#roekeloos-rijden"><bdi class="secno">3.3 </bdi>Roekeloos rijden</a></li></ol></li><li class="tocline"><a class="tocxref" href="#informatiemodel"><bdi class="secno">4. </bdi>Informatiemodel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#inleiding-0"><bdi class="secno">4.1 </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#verkeersregel"><bdi class="secno">4.2 </bdi>Verkeersregel</a></li><li class="tocline"><a class="tocxref" href="#enum-maximumsnelheden"><bdi class="secno">4.3 </bdi>Enum Maximumsnelheden</a></li><li class="tocline"><a class="tocxref" href="#typering-wegvak"><bdi class="secno">4.4 </bdi>Typering wegvak</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#enum-rvv1990-wegtype"><bdi class="secno">4.4.1 </bdi>Enum <span data-lt="RVV1990-WegType|RVV1990-WegTypen"><code>RVV1990-WegType</code></span></a></li><li class="tocline"><a class="tocxref" href="#enum-rvv1990-rijbaantype"><bdi class="secno">4.4.2 </bdi>Enum <span data-lt="RVV1990-RijbaanType|RVV1990-RijbaanTypen"><code>RVV1990-RijbaanType</code></span></a></li><li class="tocline"><a class="tocxref" href="#enum-rvv1990-weginrichtingstype"><bdi class="secno">4.4.3 </bdi>Enum <span data-lt="RVV1990-WeginrichtingsType|RVV1990-WeginrichtingsTypen"><code>RVV1990-WeginrichtingsType</code></span></a></li></ol></li><li class="tocline"><a class="tocxref" href="#kruispunt"><bdi class="secno">4.5 </bdi>Kruispunt</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#enum-rvv1990-zonetype"><bdi class="secno">4.5.1 </bdi>Enum <span data-lt="RVV1990-ZoneType|RVV1990-ZoneTypen"><code>RVV1990-ZoneType</code></span></a></li><li class="tocline"><a class="tocxref" href="#enum-rvv1990-verkeersborden"><bdi class="secno">4.5.2 </bdi>Enum <span data-lt="RVV1990-Verkeersbord|RVV1990-Verkeersborden"><code>RVV1990-Verkeersborden</code></span></a></li><li class="tocline"><a class="tocxref" href="#visualisatie-bord"><bdi class="secno">4.5.3 </bdi>Visualisatie bord</a></li><li class="tocline"><a class="tocxref" href="#onderbord"><bdi class="secno">4.5.4 </bdi>Onderbord</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#controlemechanismes"><bdi class="secno">5. </bdi>Controlemechanismes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gebruikersondersteuning-databeheer"><bdi class="secno">5.1 </bdi>Gebruikersondersteuning databeheer</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#statische-snelheid"><bdi class="secno">5.1.1 </bdi>Statische snelheid</a></li><li class="tocline"><a class="tocxref" href="#tijdelijke-snelheid"><bdi class="secno">5.1.2 </bdi>Tijdelijke snelheid</a></li><li class="tocline"><a class="tocxref" href="#dynamische-snelheid"><bdi class="secno">5.1.3 </bdi>Dynamische snelheid</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#zoekmechanismes"><bdi class="secno">6. </bdi>Zoekmechanismes</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#gebruikersondersteuning-datagebruik"><bdi class="secno">6.1 </bdi>Gebruikersondersteuning datagebruik</a></li></ol></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door referentie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#index-van-eisen"><bdi class="secno">B. </bdi>Index van eisen</a></li></ol></nav>
+  
+  
+  
+    <section id="conformance"><div class="header-wrapper"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 1."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn,
+      zijn ook alle diagrammen, voorbeelden, en noten in dit document niet
+      normatief. Verder is alles in dit document normatief.</p></section> 
+  
+  <section data-format="markdown" class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x2-inleiding"><bdi class="secno">2. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 2."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<p>Omdat het onderwerp verkeersbesluiten zoveel raakvlakken en stakeholders heeft, is het moeilijk om uitgangspunten goed op te stellen. Daarom is gekozen om een eerste proef op de som te nemen met de wettelijke maximumsnelheid. Daarom is dit document opgesteld</p>
+<section id="wettelijke-maximumsnelheid"><div class="header-wrapper"><h3 id="x2-1-wettelijke-maximumsnelheid"><bdi class="secno">2.1 </bdi><dfn id="dfn-wettelijke-maximumsnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>Wettelijke maximumsnelheid</code></dfn></h3><a class="self-link" href="#wettelijke-maximumsnelheid" aria-label="Permalink for Section 2.1"></a></div>
+<dd> De wettelijke maximumsnelheid is de hoogste snelheid die op een (gedeelte van een) weg is toegestaan voor een voertuigtype. </dd>
+
+</section><section id="architectuur-framework"><div class="header-wrapper"><h3 id="x2-2-architectuur-framework"><bdi class="secno">2.2 </bdi>Architectuur framework</h3><a class="self-link" href="#architectuur-framework" aria-label="Permalink for Section 2.2"></a></div>
+<p>In het <a href="https://docs.crow.nl/verkeersborden/framework/">architectuur framework</a> zijn de basisconcepten voor verkeerskundige informatie beschreven waarmee dit document verder gaat. De onderstaande afbeelding geeft een visuele weergave van deze basisconcepten en hun relaties voor het voorbeeld van de maximale snelheid. Deze zijn nog niet semantisch (met linked data) beschreven, maar wel tekstueel.</p>
+<figure id="fig-de-informatiebehoefte-bij-een-specifieke-verkeersregel-voorbeeld-maximum-snelheid">
+<img src="./hoofdstukken/media/Informatiebehoefte.jpg" height="768" width="1024">
+<figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">De informatiebehoefte bij een specifieke verkeersregel, voorbeeld: maximum snelheid. 
+</span></figcaption></figure> 
+
+</section><section id="leeswijzer"><div class="header-wrapper"><h3 id="x2-3-leeswijzer"><bdi class="secno">2.3 </bdi>Leeswijzer</h3><a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 2.3"></a></div>
+<p>In <strong>hoofdstuk 3</strong> wordt de relatie gelegd met wetgeving. </p>
+<p>In <strong>hoofdstuk 4</strong> wordt het informatiemodel uitgewerkt met de concepten en attributen die nodig zijn om de maximale snelheid op de weg te kunnen vastleggen in digitale verkeerskundige informatie.</p>
+<p>In <strong>hoofdstuk 5</strong> staat een lijst met controlemechanismes die kunnen worden opgesteld om het beheren van de verkeerskundige informatie over maximumsnelheden te ondersteunen.</p>
+<p>In <strong>hoofdstuk 6</strong> staat een lijst met zoekmechanismes die kunnen worden opgesteld om het gebruiken van de verkeerskundige informatie over maximumsnelheden in SMART Mobility applicaties te ondersteunen.
+</p>
+</section></section>
+  <section data-format="markdown" class="conformance" id="wettelijke-grondslag"><div class="header-wrapper"><h2 id="x3-wettelijke-grondslag"><bdi class="secno">3. </bdi>Wettelijke grondslag</h2><a class="self-link" href="#wettelijke-grondslag" aria-label="Permalink for Section 3."></a></div>
+<section id="rvv-1990"><div class="header-wrapper"><h3 id="x3-1-rvv-1990"><bdi class="secno">3.1 </bdi>RVV 1990</h3><a class="self-link" href="#rvv-1990" aria-label="Permalink for Section 3.1"></a></div>
+<p>Bron voor de wettelijke grondslag is het RVV 1990. Het Reglement verkeersregels en verkeerstekens 1990 is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn. Zie ook <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;z=2021-07-01&amp;g=2021-07-01">deze website</a></p>
+<section id="zicht"><div class="header-wrapper"><h4 id="x3-1-1-zicht"><bdi class="secno">3.1.1 </bdi>Zicht</h4><a class="self-link" href="#zicht" aria-label="Permalink for Section 3.1.1"></a></div>
+<p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;artikel=19&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 19</a> geeft aan: De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.</p>
+<p>Deze inschatting verschilt per voertuig en is daarom <em>buiten scope</em> van het informatiemodel, ook al kan een rechter, in het geval van een ongeluk, concluderen dat een bestuurder sneller heeft gereden dan wettelijk is toegestaan volgens deze regel.</p>
+</section><section id="standaard-wettelijke-maximumsnelheid"><div class="header-wrapper"><h4 id="x3-1-2-standaard-wettelijke-maximumsnelheid"><bdi class="secno">3.1.2 </bdi><dfn id="dfn-standaard-wettelijke-maximumsnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>standaard wettelijke maximumsnelheid</code></dfn></h4><a class="self-link" href="#standaard-wettelijke-maximumsnelheid" aria-label="Permalink for Section 3.1.2"></a></div>
+<p>De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 § 8. Maximumsnelheid</a>. De maximale wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype. </p>
+</section><section id="wegtype"><div class="header-wrapper"><h4 id="x3-1-3-wegtype"><bdi class="secno">3.1.3 </bdi>Wegtype</h4><a class="self-link" href="#wegtype" aria-label="Permalink for Section 3.1.3"></a></div>
+<p>Indien de snelheid niet staat aangegeven, geldt in heel Nederland een wettelijke maximum snelheid afhankelijk van het wegtype, het rijbaan en het voertuigtype conform <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2021-07-01&amp;g=2021-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>. Voorbeeld: binnen de bebouwde kom, op de rijbaan, geldt voor motorvoertuigen 50 km/h. </p>
+<p>In de RVV 1990 worden de volgende wegtypen worden benoemd:</p><ul><p></p>
+<li>Binnen de kom <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;artikel=20&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 20</a></li>
+<li> Buiten de kom <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;artikel=21&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 artikel 21</a></li>
+<ul><li>  Autowegen </li>
+<li>Autosnelwegen </li>
+<li>Andere wegen</li></ul>
+<li><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=17&amp;artikel=45&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 45</a>:
+op erven: 15 km/h.</li></ul>
+
+
+<p>Zie ook de vertaling in het informatiemodel naar de lijst met <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-1"><code>RVV1990-WegTypen</code></a>.</p>
+<section id="verkeersborden"><div class="header-wrapper"><h5 id="x3-1-3-1-verkeersborden"><bdi class="secno">3.1.3.1 </bdi>Verkeersborden</h5><a class="self-link" href="#verkeersborden" aria-label="Permalink for Section 3.1.3.1"></a></div>
+<p>Voor het <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-2"><code>RVV1990-Wegtype</code></a> zijn de volgende <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-1"><code>RVV1990-Verkeersborden</code></a> van belang uit het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;bijlage=1&amp;z=2021-07-01&amp;g=2021-07-01">Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a> </p>
+<p>Binnen de kom:</p>
+<figure id="fig-verkeersbord-h1rvv1990-verkeersbord-dat-de-start-van-de-bebouwde-kom-aangeeft"><img src="./hoofdstukken/media/h1.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">2</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-h1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord H1</dfn><dd><a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-2"><code>RVV1990-verkeersbord</code></a> dat de start van de bebouwde kom aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-h2rvv1990-verkeersbord-dat-het-einde-van-de-bebouwde-kom-aangeeft"><img src="./hoofdstukken/media/H2.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">3</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-h2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord H2</dfn><dd><a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-3"><code>RVV1990-verkeersbord</code></a> dat het einde van de bebouwde kom aangeeft</dd>
+</span></figcaption></figure>
+
+<ul>
+<li>Buiten de kom:<ul>
+<li>Autowegen <figure id="fig-verkeersbord-g3-rvv1990-verkeersbord-dat-de-start-van-de-autoweg-aangeeft"><img src="./hoofdstukken/media/G3.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">4</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g3" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G3</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-4"><code>RVV1990-verkeersbord</code></a> dat de start van de autoweg aangeeft</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g4-rvv1990-verkeersbord-dat-het-einde-van-de-autoweg-aangeeft"><img src="./hoofdstukken/media/G4.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">5</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g4" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G4</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-5"><code>RVV1990-verkeersbord</code></a> dat het einde van de autoweg aangeeft</dd>
+</span></figcaption></figure> </li>
+<li>Autosnelwegen:<figure id="fig-verkeersbord-g1-rvv1990-verkeersbord-dat-de-start-van-de-autosnelweg-aangeeft"><img src="./hoofdstukken/media/G1.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">6</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G1</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-6"><code>RVV1990-verkeersbord</code></a> dat de start van de autosnelweg aangeeft</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g2-rvv1990-verkeersbord-dat-het-einde-van-de-autosnelweg-aangeeft"><img src="./hoofdstukken/media/G2.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">7</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G2</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-7"><code>RVV1990-verkeersbord</code></a> dat het einde van de autosnelweg aangeeft</dd>
+</span></figcaption></figure></li>
+<li>Andere wegen: voor de andere wegen buiten de kom is geen bord. Als men de kom uitrijdt, is een <a data-link-type="dfn" href="#dfn-verkeersbord-h2" class="internalDFN" id="ref-for-dfn-verkeersbord-h2-1">Verkeersbord H2</a> aanwezig. Indien een andere anduiding van het wegtype ontbreekt, geldt dat men op "een andere weg buiten de bebouwde kom" rijdt.</li>
+</ul>
+</li>
+<li>Erf:<figure id="fig-verkeersbord-g5-rvv1990-verkeersbord-dat-de-start-van-het-erf-aangeeft"><img src="./hoofdstukken/media/G5.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">8</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g5" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G5</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-8"><code>RVV1990-verkeersbord</code></a> dat de start van het erf aangeeft</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g6-rvv1990-verkeersbord-dat-het-einde-van-het-erf-aangeeft"><img src="./hoofdstukken/media/G6.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">9</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g6" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G6</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-9"><code>RVV1990-verkeersbord</code></a> dat het einde van het erf aangeeft</dd>
+</span></figcaption></figure></li>
+</ul>
+</section></section><section id="rijbaantype"><div class="header-wrapper"><h4 id="x3-1-4-rijbaantype"><bdi class="secno">3.1.4 </bdi>Rijbaantype</h4><a class="self-link" href="#rijbaantype" aria-label="Permalink for Section 3.1.4"></a></div>
+<p>Zie ook de vertaling in het informatiemodel naar de lijst met <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-1"><code>RVV1990-RijbaanTypen</code></a>.</p>
+<p>Onderscheid tussen rijbanen geschikt voor verschillende soorten voertuigen zowel binnen als buiten de bebouwde kom volgens het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;z=2021-07-01&amp;g=2021-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990</a> waarin de volgende typen worden benoemd:</p>
+<ul>
+<li>het fiets/bromfietspad;</li>
+<li>de rijbaan; </li>
+<li>het fietspad;</li>
+<li>het troittoir.</li>
+</ul>
+<section id="verkeersborden-0"><div class="header-wrapper"><h5 id="x3-1-4-1-verkeersborden"><bdi class="secno">3.1.4.1 </bdi>Verkeersborden</h5><a class="self-link" href="#verkeersborden-0" aria-label="Permalink for Section 3.1.4.1"></a></div>
+<p>Voor het <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-2"><code>RVV1990-Rijbaantype</code></a> zijn de volgende <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-10"><code>RVV1990-Verkeersborden</code></a> van belang:</p>
+<ul>
+<li>het fiets/bromfietspad:<figure id="fig-verkeersbord-g12a-rvv1990-verkeersbord-dat-de-start-van-het-fiets-bromfietspad-aangeeft"><img src="./hoofdstukken/media/G12a.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">10</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g12a" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G12a</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-11"><code>RVV1990-verkeersbord</code></a> dat de start van het fiets/bromfietspad aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g12b-rvv1990-verkeersbord-dat-het-einde-van-het-fiets-bromfietspad-aangeeft"><img src="./hoofdstukken/media/G12b.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">11</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g12b" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G12b</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-12"><code>RVV1990-verkeersbord</code></a> dat het einde van het fiets/bromfietspad aangeeft.</dd>
+</span></figcaption></figure></li>
+<li>de rijbaan; deze wordt niet nader aangeduid met verkeersborden. </li>
+<li>het fietspad<figure id="fig-verkeersbord-g11-rvv1990-verkeersbord-dat-de-start-van-het-verplichte-fietspad-aangeeft"><img src="./hoofdstukken/media/G11.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">12</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g11" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G11</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-13"><code>RVV1990-verkeersbord</code></a> dat de start van het verplichte fietspad aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g12-rvv1990-verkeersbord-dat-het-einde-van-het-verplichte-fietspad-aangeeft"><img src="./hoofdstukken/media/G12.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">13</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g12" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G12</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-14"><code>RVV1990-verkeersbord</code></a> dat het einde van het verplichte fietspad aangeeft.</dd>
+</span></figcaption></figure>
+&lt;<figure id="fig-verkeersbord-g13-rvv1990-verkeersbord-dat-de-start-van-het-onverplichte-fietspad-aangeeft"><img src="./hoofdstukken/media/G13.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">14</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g13" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G13</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-15"><code>RVV1990-verkeersbord</code></a> dat de start van het onverplichte fietspad aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g14-rvv1990-verkeersbord-dat-het-einde-van-het-onverplichte-fietspad-aangeeft"><img src="./hoofdstukken/media/G14.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">15</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g14" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G14</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-16"><code>RVV1990-verkeersbord</code></a> dat het einde van het onverplichte fietspad aangeeft.</dd>
+</span></figcaption></figure>
+<div class="issue" id="issue-container-number-157"><div role="heading" class="issue-title marker" id="h-issue" aria-level="3"><a href="https://github.com/Stichting-CROW/verkeersborden/issues/157"><span class="issue-number">Issue 157</span></a><span class="issue-label">: Onverplicht fietspad <a class="respec-gh-label" href="https://github.com/Stichting-CROW/verkeersborden/issues/?q=is%3Aissue+is%3Aopen+label%3A%22Maximale+snelheid%22" style="background-color: rgb(0, 117, 202); color: rgb(255, 255, 255);" aria-label="GitHub label: Maximale snelheid">Maximale snelheid</a></span></div><p dir="auto">Els zegt: Het onverplichte fietspad (dat verboden is voor brommers) is een zwarte rechthoek met het woord fietspad erin en kent voor zover ik weet geen einde bord</p>
+<p dir="auto">Is er een aanvulling / wijziging ten opzichte van de RVV1990 die ik niet ken?</p></div></li>
+<li>het troittoir<figure id="fig-verkeersbord-g7-rvv1990-verkeersbord-dat-de-start-van-het-voetpad-aangeeft"><img src="./hoofdstukken/media/G7.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">16</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g7" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G7</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-17"><code>RVV1990-verkeersbord</code></a> dat de start van het voetpad aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-g8-rvv1990-verkeersbord-dat-het-einde-van-het-voetpad-aangeeft"><img src="./hoofdstukken/media/G8.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">17</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-g8" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord G8</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-18"><code>RVV1990-verkeersbord</code></a> dat het einde van het voetpad aangeeft.</dd>
+</span></figcaption></figure></li>
+</ul>
+<p>Zie ook de vertaling in het informatiemodel naar <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-3"><code>RVV1990-RijbaanType</code></a></p>
+</section></section><section id="weginrichting"><div class="header-wrapper"><h4 id="x3-1-5-weginrichting"><bdi class="secno">3.1.5 </bdi>Weginrichting</h4><a class="self-link" href="#weginrichting" aria-label="Permalink for Section 3.1.5"></a></div>
+<p>In <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;artikel=22a&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 Artikel 22a</a> worden extra voorwaarden genoemd bij het wegtype binnen de bebouwde kom, waarbij voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines, al dan niet met aanhangwagen, een andere snelheid geldt dan een "standaard 50 km/h weg in de bebouwde kom":</p><ul><p></p>
+<li>Binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad;</li>
+<li>Binnen de kom, die gesloten zijn voor fietsers</li>
+<li>Binnen de kom, waar een maximumsnelheid van 70 km per uur geldt (sic)</li></ul>
+
+<p>Zie ook de vertaling in het informatiemodel naar <a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-1"><code>RVV1990-WeginrichtingsType</code></a></p>
+<section id="verkeersborden-1"><div class="header-wrapper"><h5 id="x3-1-5-1-verkeersborden"><bdi class="secno">3.1.5.1 </bdi>Verkeersborden</h5><a class="self-link" href="#verkeersborden-1" aria-label="Permalink for Section 3.1.5.1"></a></div>
+<p>Voor de afwijkende weginrichting zijn de volgende <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-19"><code>RVV1990-Verkeersborden</code></a> van belang:</p>
+<ul>
+<li>Binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad; hiervoor is geen bord aanwezig, de weggebruiker herkent dat er een naastliggend fietspad aanwezig is. Zie hiervoor de rijbaantypes. </li>
+<li>Binnen de kom, die gesloten zijn voor fietsers:<figure id="fig-verkeersbord-c14-rvv1990-verkeersbord-dat-aangeeft-dat-een-weg-gesloten-is-voor-fietsen-en-voor-gehandicaptenvoertuigen-zonder-motor"><img src="./hoofdstukken/media/C14.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">18</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-c14" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord C14</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-20"><code>RVV1990-verkeersbord</code></a> dat aangeeft dat een weg gesloten is voor fietsen en voor gehandicaptenvoertuigen zonder motor
+</dd></span></figcaption></figure> 
+<figure id="fig-verkeersbord-c15-rvv1990-verkeersbord-dat-aangeeft-dat-een-weg-gesloten-is-voor-fietsen-bromfietsen-en-gehandicaptenvoertuigen"><img src="./hoofdstukken/media/C15.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">19</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-c15" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord C15</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-21"><code>RVV1990-verkeersbord</code></a> dat aangeeft dat een weg gesloten is voor fietsen, bromfietsen en gehandicaptenvoertuigen
+</dd></span></figcaption></figure></li>
+<li>Binnen de kom, waar een maximumsnelheid van 70 km per uur geldt, op de voorbeeldborden uit de RVV 1990 staat een andere snelheid <figure id="fig-verkeersbord-a1-rvv1990-verkeersbord-dat-de-wettelijke-maximumsnelheid-aangeeft"><img src="./hoofdstukken/media/A1.png" width="20%">
+<figcaption>Figuur <bdi class="figno">20</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-a1" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord A1</dfn><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-22"><code>RVV1990-verkeersbord</code></a> dat de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-1"><code>wettelijke maximumsnelheid</code></a> aangeeft 
+</dd></span></figcaption></figure>
+<figure id="fig-verkeersbord-a2-rvv1990-verkeersbord-dat-het-einde-van-de-wettelijke-maximumsnelheid-aangeeft"><img src="./hoofdstukken/media/A2.png" width="20%">
+<figcaption>Figuur <bdi class="figno">21</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-a2" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord A2</dfn> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-23"><code>RVV1990-verkeersbord</code></a> dat het einde van de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-2"><code>wettelijke maximumsnelheid</code></a> aangeeft
+</span></figcaption></figure> 
+<figure id="fig-verkeersbord-f8-rvv1990-verkeersbord-dat-het-einde-van-alle-lokale-ge-of-verboden-aangeeft"><img src="./hoofdstukken/media/F8.png" width="20%">
+<figcaption>Figuur <bdi class="figno">22</bdi> <span class="fig-title"><dfn id="dfn-verkeersbord-f8" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersbord F8</dfn> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-24"><code>RVV1990-verkeersbord</code></a> dat het einde van alle lokale ge- of verboden aangeeft
+</span></figcaption></figure> 
+<br></li>
+</ul>
+</section></section><section id="voertuigtype"><div class="header-wrapper"><h4 id="x3-1-6-voertuigtype"><bdi class="secno">3.1.6 </bdi>VoertuigType</h4><a class="self-link" href="#voertuigtype" aria-label="Permalink for Section 3.1.6"></a></div>
+<p><dfn data-lt="RVV1990-VoertuigType|RVV1990-VoertuigTypen|RVV1990-Voertuigtype" id="dfn-rvv1990-voertuigtype" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">RVV1990-Voertuigtype</dfn></p><dd>Per wegtype staat in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 § 8. Maximumsnelheid</a> de maximale snelheid beschreven voor elk RVV1990-VoertuigType. De volgende RVV1990-VoertuigTypen worden benoemd:<p></p>
+<ul>
+<li>Motorvoertuig</li>
+<li>Bromfiets</li>
+<li>Gehandicaptenvoertuig, uitgerust met een motor</li>
+<li>Snorfiets</li>
+<li>Kampeerwagen die volgens het kentekenbewijs behoort tot de categorie bedrijfsauto’s en waarvan de toegestane maximummassa meer bedraagt dan 3500 kg</li>
+<li>Vrachtauto</li>
+<li>Autobus, niet zijnde T100 bus</li>
+<li>T100 bus</li>
+<li>Brommobiel</li>
+<li>Snorfiets</li>
+<li>Personenauto, bestelauto, motorfiets, driewielig motorvoertuig en T100-bus, die een aanhangwagen met een toegestane maximummassa van niet meer dan 3500 kg voortbewegen</li>
+<li>Overig motorvoertuig met aanhangwagen</li>
+<li>Landbouwtrekker</li>
+<li>Bosbouwtrekker</li>
+<li>Motorrijtuig met beperkte snelheid;</li>
+<li>Mobiele machine, al dan niet met aanhangwagen.</li></ul></dd>
+
+<section id="speedpedelec"><div class="header-wrapper"><h5 id="x3-1-6-1-speedpedelec"><bdi class="secno">3.1.6.1 </bdi>Speedpedelec</h5><a class="self-link" href="#speedpedelec" aria-label="Permalink for Section 3.1.6.1"></a></div>
+<p>Een speedpedelec is wettelijk gezien een bromfiets. Veel wegbeheerders staan een speedpedelec toch toe op het fietspad binnen de bebouwde kom.
+Er is geen wettelijke maximumsnelheid op het fietspad, omdat er geen bromfiets mag rijden.</p>
+<p>Het aanduiden vanj de uitzonderingspositie voor speedpedelecs is buiten scope, omdat alleen de wettelijke verkeersregels opgenomen worden in het informatiemodel.</p>
+</section></section></section><section id="lokale-wettelijke-maximumsnelheid"><div class="header-wrapper"><h3 id="x3-2-lokale-wettelijke-maximumsnelheid"><bdi class="secno">3.2 </bdi><dfn id="dfn-lokale-wettelijke-maximumsnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>lokale wettelijke maximumsnelheid</code></dfn></h3><a class="self-link" href="#lokale-wettelijke-maximumsnelheid" aria-label="Permalink for Section 3.2"></a></div>
+<p>De verkeersborden <a data-link-type="dfn" href="#dfn-verkeersbord-a1" class="internalDFN" id="ref-for-dfn-verkeersbord-a1-1">Verkeersbord A1</a> en <a data-link-type="dfn" href="#dfn-verkeersbord-a2" class="internalDFN" id="ref-for-dfn-verkeersbord-a2-1">Verkeersbord A2</a> in geven aanvullend snelheidsbeperkingen aan, en het einde van de aanvullende snelheidsbeperking. Dit leidt tot een lokaal afwijkende maximumsnelheid ten opzichte van de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-1"><code>standaard wettelijke maximumsnelheid</code></a> uit de RVV 1990, de lokale wettelijke maximumsnelheid.</p>
+<section id="onderborden"><div class="header-wrapper"><h4 id="x3-2-1-onderborden"><bdi class="secno">3.2.1 </bdi>Onderborden</h4><a class="self-link" href="#onderborden" aria-label="Permalink for Section 3.2.1"></a></div>
+<section id="weggebruiker"><div class="header-wrapper"><h5 id="x3-2-1-1-weggebruiker"><bdi class="secno">3.2.1.1 </bdi>Weggebruiker</h5><a class="self-link" href="#weggebruiker" aria-label="Permalink for Section 3.2.1.1"></a></div>
+<p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=67&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 67</a> kan bij een bord, dus ook een snelheidsbord, op een onderbord staan aangegeven dat dit bord alleen geldt voor een of meer specifieke voertuigtypes of niet geldt voor een of meer specifieke voertuigtypes:</p>
+<blockquote>
+<p>b.ingeval op een onderbord uitsluitend symbolen voorkomen: het verkeersbord geldt slechts voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag; <br>c.ingeval op een onderbord het woord "uitgezonderd" in combinatie met symbolen voorkomt: het verkeersbord geldt niet voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag.</p>
+</blockquote>
+<p>In Nederland komt de combinatie van een snelheidsbord met een onderbord met aanduiding/uitzondering van het voertuigtype niet voor, daarom wordt deze optie niet uitgewerkt in voorliggend document.</p>
+<blockquote>
+<p>In België rondom grotere steden komt het wel voor, dat vrachtauto's langzamer moeten rijden dan personenwagens. Als een europese of internationale norm ontstaat, zal deze mogelijkheid worden toegevoegd. In dat geval kan voor de Nederlandse situatie juist een controlemechanisme worden opgesteld, om te controleren of een overijverige wegbeheerder deze mogelijkheid heeft gebruikt in de verkeerskungie informatie. Dan zal het gesprek ontstaan, of dit al dan niet wenselijk is (gezien de stellingen over onderborden in de RVV 1990 is de mogelijkheid nu wettelijk niet uitgesloten).</p>
+</blockquote>
+</section><section id="aanvullende-instructie"><div class="header-wrapper"><h5 id="x3-2-1-2-aanvullende-instructie"><bdi class="secno">3.2.1.2 </bdi>Aanvullende instructie</h5><a class="self-link" href="#aanvullende-instructie" aria-label="Permalink for Section 3.2.1.2"></a></div>
+<p>Volgens <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=67&amp;z=2021-07-01&amp;g=2021-07-01">RVV 1990 art 67</a> kan bij een bord, dus ook een snelheidsbord, op een onderbord een aanvullende instructie staan:</p>
+<blockquote>
+<p>Indien het beoogde verkeersgedrag wordt aangegeven door middel van teksten of tekens al dan niet in combinatie met symbolen, blijkt het beoogde verkeersgedrag uit het onderbord.</p>
+</blockquote>
+<p>De RVV 1990 geeft geen nadere invulling van welke instructie op het onderbord kan staan. Wel kunnen de symbolen op de <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-25"><code>RVV1990-Verkeersborden</code></a> ook gebruikt worden op onderborden. </p>
+</section></section><section id="zone"><div class="header-wrapper"><h4 id="x3-2-2-zone"><bdi class="secno">3.2.2 </bdi>Zone</h4><a class="self-link" href="#zone" aria-label="Permalink for Section 3.2.2"></a></div>
+<p>In artikel <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=2&amp;artikel=66&amp;z=2021-07-01&amp;g=2021-07-01">Artikel 66 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a> staat:</p>
+<blockquote>
+<p>Indien boven een verkeersbord het woord «zone» is aangebracht en een aanduiding van het gebied van de zone is toegevoegd, geldt het verkeersbord in het aldus aangeduide gebied.<br>Indien boven een verkeersbord het woord «zone» is aangebracht zonder aanduiding van het gebied van de zone, geldt het verkeersbord in een gebied dat wordt begrensd door het verkeersbord en een of meer in samenhang met dat verkeersbord geplaatste borden waarmee het einde van de zone wordt aangeduid.</p>
+</blockquote>
+<p>De verkeersborden <a data-link-type="dfn" href="#dfn-verkeersbord-a1" class="internalDFN" id="ref-for-dfn-verkeersbord-a1-2">Verkeersbord A1</a> en <a data-link-type="dfn" href="#dfn-verkeersbord-a2" class="internalDFN" id="ref-for-dfn-verkeersbord-a2-2">Verkeersbord A2</a> kunnen gecombineerd zijn met een zone-aanduiding waarmee de mens weet, dat er over meerdere wegvakken dezelfde snelheid geldt, tot er een einde-zone bord bij komt. Zoals beschreven in het architectuur framework, wordt in het informatiemodel uitgegaan van de koppeling van de verkeersregel (in dit geval <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-1"><code>lokale wettelijke maximumsnelheid</code></a>) aan elk wegvak. De informatie dat het een zone betreft is daarmee overbodig, behalve om de weggebruiker daarvan op de hoogte te kunnen stellen via een SMART Mobility systeem.</p>
+<section id="verkeersborden-2"><div class="header-wrapper"><h5 id="x3-2-2-1-verkeersborden"><bdi class="secno">3.2.2.1 </bdi>Verkeersborden</h5><a class="self-link" href="#verkeersborden-2" aria-label="Permalink for Section 3.2.2.1"></a></div>
+<p>Er is in de RVV 1990 geen afbeelding van een verkeersbord met een snelheidszone te vinden, wel een voorbeeld met een parkeerzone:</p>
+<figure id="fig-verkeersbord-e10-rvv1990-verkeersbord-dat-de-start-van-een-parkeerschijfzone-aangeeft"><img src="./hoofdstukken/media/E11.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">23</bdi> <span class="fig-title"><def>Verkeersbord E10</def><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-26"><code>RVV1990-verkeersbord</code></a> dat de start van een parkeerschijfzone aangeeft.</dd>
+</span></figcaption></figure>
+<figure id="fig-verkeersbord-e11-rvv1990-verkeersbord-dat-het-einde-van-een-parkeerschijfzone-aangeeft"><img src="./hoofdstukken/media/E11.PNG" width="20%">
+<figcaption>Figuur <bdi class="figno">24</bdi> <span class="fig-title"><def>Verkeersbord E11</def><dd> <a data-link-type="dfn" href="#dfn-rvv1990-verkeersbord" class="internalDFN" id="ref-for-dfn-rvv1990-verkeersbord-27"><code>RVV1990-verkeersbord</code></a> dat het einde van een parkeerschijfzone aangeeft.</dd>
+</span></figcaption></figure>
+
+<p>Zie ook de vertaling in het informatiemodel naar <a data-link-type="dfn" href="#dfn-rvv1990-zonetype" class="internalDFN" id="ref-for-dfn-rvv1990-zonetype-1"><code>RVV1990-ZoneType</code></a></p>
+</section></section><section id="olietekorten"><div class="header-wrapper"><h4 id="x3-2-3-olietekorten"><bdi class="secno">3.2.3 </bdi>Olietekorten</h4><a class="self-link" href="#olietekorten" aria-label="Permalink for Section 3.2.3"></a></div>
+<p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=VA&amp;artikel=86a&amp;z=2021-07-01&amp;g=2021-07-01">Artikel 86a Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a> geeft aan dat:</p>
+<blockquote>
+<p>In geval van een ernstige verstoring van de olieaanvoer kan bij regeling van Onze Minister worden bepaald dat op autosnelwegen en op autowegen, in afwijking van artikel 21, aanhef en onderdeel a, voor motorvoertuigen een maximumsnelheid geldt van 90 kilometer per uur.</p>
+</blockquote>
+</section><section id="welke-snelheid-geldt"><div class="header-wrapper"><h4 id="x3-2-4-welke-snelheid-geldt"><bdi class="secno">3.2.4 </bdi>Welke snelheid geldt</h4><a class="self-link" href="#welke-snelheid-geldt" aria-label="Permalink for Section 3.2.4"></a></div>
+<p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III%C2%B6graaf=1&amp;artikel=63b&amp;z=2021-07-01&amp;g=2021-07-01">Artikel 63b Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a> geeft aan dat:</p>
+<blockquote>
+<ol>
+<li>Wanneer verkeerstekens die een maximumsnelheid aanduiden een hogere snelheid aangeven dan:
+ a. de in de artikelen 20, onderdeel b, 21, onderdeel b, 22 en 22a vastgestelde maximumsnelheden (<em>op [=RVV1990-WegTypen</em>=]), of
+ b. de ingevolge een ministeriële regeling krachtens artikel 86a geldende maximumsnelheid (bij olietekorten), of
+ c. de in artikel 45 aangegeven snelheid (<em>op erven</em>),
+geldt de laagste aangegeven snelheid.</li>
+<li>Indien zowel door verkeerstekens op borden als door elektronische signaleringsborden een maximumsnelheid wordt aangegeven, geldt de laagste aangegeven maximumsnelheid.</li>
+</ol>
+</blockquote>
+</section></section><section id="roekeloos-rijden"><div class="header-wrapper"><h3 id="x3-3-roekeloos-rijden"><bdi class="secno">3.3 </bdi>Roekeloos rijden</h3><a class="self-link" href="#roekeloos-rijden" aria-label="Permalink for Section 3.3"></a></div>
+<p>Een voertuig hóeft niet de maximum snelheid te midneren, sterker: door jurisprudentie weten we dat "roekeloos gedrag" in het verkeer niet geaccepteerd wordt door een rechter. Bijvoorbeeld met de maximum snelheid op een kruispunt afrijden, terwijl er voorrang gegeven moet worden. In het informatiemodel wordt hier deels rekening gehouden doordat een "adviessnelheid" kan worden meegegeven door de wegbeheerder, ook al staat er geen bord.
+Omgekeerd: voor de meeste gevaarlijke punten staat wel een of ander waarschuwingsbord, dat een aanwijzing geeft ook voor een SMART Mobility systeem dat langzaam rijden mogelijk nodig is.</p>
+<p>Alleen het naderen van het kruispunt wordt niet altijd aangegeven, bijvoorbeeld in 30 km/h zones. In het NWB eindigt niet ieder wegvak in een kruising van wegen, het kan ook gaan om een administratieve knip van een wegvak, bijvoorbeeld bij de bebouwde kom grens. Een SMART Mobility systeem kan dit afleiden uit het feit dat een junctie maar twee aansluitende wegvakken kent; dit vraagt echter telkens rekenkracht. Daarom wordt in het informatiemodel een kenmerk opgenomen bij een junctie, waardoor duidelijk is dat hier sprake is van een kruispunt.</p>
+<p></p>
+</section></section>
+  <section data-format="markdown" class="conformance" id="informatiemodel"><div class="header-wrapper"><h2 id="x4-informatiemodel"><bdi class="secno">4. </bdi>Informatiemodel</h2><a class="self-link" href="#informatiemodel" aria-label="Permalink for Section 4."></a></div>
+<section id="inleiding-0"><div class="header-wrapper"><h3 id="x4-1-inleiding"><bdi class="secno">4.1 </bdi>Inleiding</h3><a class="self-link" href="#inleiding-0" aria-label="Permalink for Section 4.1"></a></div>
+<p>In het informatiemodel staat alle informatie die nodig is om digitaal te kunnen achterhalen wat de wettelijke maximum snelheid is, onder voorwaarden:</p>
+<ul>
+<li>Dat de informatie over een wegvak volgens dit informatiemodel is opgesteld en beschikbaar is voor een SMART Mobility systeem;</li>
+<li>Het SMART Mobility systeem weet waar de weggebruiker zich bevindt: in welk wegvak, op welke plek in de lengterichting van het wegvak, eventueel welke rijstrook en in welke richting.</li>
+</ul>
+<p>NB het informatiemodel in dit hoofdstuk geeft een overzicht van de onderdelen die gemodelleerd moeten worden; er is nog geen informatiemodel uitgewerkt op basis van de NEN 2660. </p>
+</section><section id="verkeersregel"><div class="header-wrapper"><h3 id="x4-2-verkeersregel"><bdi class="secno">4.2 </bdi>Verkeersregel</h3><a class="self-link" href="#verkeersregel" aria-label="Permalink for Section 4.2"></a></div>
+<p>De verkeersregel in kwestie is de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-3"><code>wettelijke maximumsnelheid</code></a>. Deze valt uiteen in de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-2"><code>standaard wettelijke maximumsnelheid</code></a> en de <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-2"><code>lokale wettelijke maximumsnelheid</code></a>.</p>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: twee maximumsnelheden?</span></div><aside class="">
+Vraag is, wat is het voor de SMART Mobility systemen beter werkbaar:
+
+<p><b>OPTIE 1</b>: De <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-3"><code>standaard wettelijke maximumsnelheid</code></a> via het <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-3"><code>RVV1990-WegType</code></a>/<a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-4"><code>RVV1990-RijbaanType</code></a>/<a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-2"><code>RVV1990-WeginrichtingsType</code></a> vinden, en daarnaast eventueel een <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-3"><code>lokale wettelijke maximumsnelheid</code></a>. Nadeel: complexe afleiding van de gewenste snelheid, die wel met query's kan worden ondersteund. Voordeel: de wegbeheerder legt meer informatie vast over de weg en kan controleren of de weginrichting klopt met de toegestane snelheid volgens de borden. 
+<br>
+<b>OPTIE 2</b>: In de verkeerskundige informatie wordt altijd de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-4"><code>standaard wettelijke maximumsnelheid</code></a> aangeduid, en daarnaast eventueel een <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-4"><code>lokale wettelijke maximumsnelheid</code></a>. Nadeel: Omdat er meer algemene verkeersregels gelden, moet echter sowieso het <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-4"><code>RVV1990-WegType</code></a> worden aangeduid. Denk bijvoorbeeld aan de regel, dat men op een autosnelweg niet mag stilstaan. Het opnemen van de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-4"><code>wettelijke maximumsnelheid</code></a> is, als alleen een <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-5"><code>standaard wettelijke maximumsnelheid</code></a> geldt, dubbele informatie met ook nog eens kans op tegenstrijdigheden. 
+<br>
+<b>OPTIE 3</b>: In de verkeerskundige informatie wordt de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-5"><code>wettelijke maximumsnelheid</code></a> opgenomen. Nadeel: een fout bij het opstellen van de informatie in de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-6"><code>standaard wettelijke maximumsnelheid</code></a> kan niet goed worden gevonden, omdat het een <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-5"><code>lokale wettelijke maximumsnelheid</code></a> kan betreffen; eventueel kan de fout worden gevonden via de afwezigheid van een verkeersbord.</p>
+</aside></div>
+
+<p>In deze eerste uitwerking van het informatiemodel is als uitgangspunt genomen, dat het SMART mobility systeem zelf via het wegtype, rijbaantype en eventueel weginrichtingstype kan achterhalen wat de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-7"><code>standaard wettelijke maximumsnelheid</code></a> is. Dit moet nog bij eindgebruikers worden geverifieerd. 
+Er blijft dan één verkeersregel over: de <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-6"><code>lokale wettelijke maximumsnelheid</code></a>.</p>
+</section><section id="enum-maximumsnelheden"><div class="header-wrapper"><h3 id="x4-3-enum-maximumsnelheden"><bdi class="secno">4.3 </bdi>Enum Maximumsnelheden</h3><a class="self-link" href="#enum-maximumsnelheden" aria-label="Permalink for Section 4.3"></a></div>
+<p>De lijst met toegestane waardes voor de maximumsnelheid:</p>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>Snelheid</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>15</code></td>
+</tr>
+<tr>
+<td><code>30</code></td>
+</tr>
+<tr>
+<td><code>50</code></td>
+</tr>
+<tr>
+<td><code>60</code></td>
+</tr>
+<tr>
+<td><code>70</code></td>
+</tr>
+<tr>
+<td><code>80</code></td>
+</tr>
+<tr>
+<td><code>90</code></td>
+</tr>
+<tr>
+<td><code>100</code></td>
+</tr>
+<tr>
+<td><code>110</code></td>
+</tr>
+<tr>
+<td><code>120</code></td>
+</tr>
+<tr>
+<td><code>130</code></td>
+</tr>
+
+</tbody></table></div>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: opties maximumsnelheden</span></div><aside class="">
+<b>Optie 1</b>: Moet het informatiemodel een beperkte lijst geven met de snelheden die je kunt gebruiken? Dit geeft als nadeel dat je met de wet mee moet bewegen en de lijst aanpassen als de wet wijzigt.
+<br>
+<b>Optie 2</b>: Je kunt alle gehele getallen gebruiken die je wilt. Dit geeft als nadeel dat een wegbeheerder fantasiesnelheden op kan geven die niet gehandhaafd kunnen worden en onduidelijkheid bij de weggebruiker geven.
+<br>
+<b>Optie 3</b>: Optie twee, maar je maakt een automatische controle erbij om te checken of het getal klopt met de snelheid die je volgens de wet mag aangeven. Die gebruik je bij het valideren van een dataset. Dan kan in elk geval niet per ongeluk een verkeerde waarde worden ingevuld. 
+Omdat het doel van het informatiemodel is, om verkeerskundige informatie op basis van de wet te kunnen publiceren, is gekozen voor optie 1.
+</aside></div>
+
+
+</section><section id="typering-wegvak"><div class="header-wrapper"><h3 id="x4-4-typering-wegvak"><bdi class="secno">4.4 </bdi>Typering wegvak</h3><a class="self-link" href="#typering-wegvak" aria-label="Permalink for Section 4.4"></a></div>
+<section id="enum-rvv1990-wegtype"><div class="header-wrapper"><h4 id="x4-4-1-enum-rvv1990-wegtype"><bdi class="secno">4.4.1 </bdi>Enum <dfn data-lt="RVV1990-WegType|RVV1990-WegTypen" id="dfn-rvv1990-wegtype" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>RVV1990-WegType</code></dfn></h4><a class="self-link" href="#enum-rvv1990-wegtype" aria-label="Permalink for Section 4.4.1"></a></div>
+<p>In onderstaande tabel staan de RVV1990-Wegtypen waarmee een NWB-wegvak kan worden getypeerd:</p>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>RVV1990-WegType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bibeko</code></td>
+<td>binnen de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>bubeko</code></td>
+<td>andere weg buiten de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>snelweg</code></td>
+<td>autosnelweg</td>
+</tr>
+<tr>
+<td><code>autoweg</code></td>
+<td>autoweg</td>
+</tr>
+<tr>
+<td><code>erf</code></td>
+<td>erf</td>
+</tr>
+
+</tbody></table></div>
+</section><section id="enum-rvv1990-rijbaantype"><div class="header-wrapper"><h4 id="x4-4-2-enum-rvv1990-rijbaantype"><bdi class="secno">4.4.2 </bdi>Enum <dfn data-lt="RVV1990-RijbaanType|RVV1990-RijbaanTypen" id="dfn-rvv1990-rijbaantype" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>RVV1990-RijbaanType</code></dfn></h4><a class="self-link" href="#enum-rvv1990-rijbaantype" aria-label="Permalink for Section 4.4.2"></a></div>
+<p>In onderstaande tabel staan de RVV1990-Rijbaantype waarmee een NWB-wegvak kan worden getypeerd:</p>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>RVV1990-RijbaanType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>rijbaan  </code></td>
+<td>rijbaan</td>
+</tr>
+<tr>
+<td><code>fietsbrom</code></td>
+<td>fiets/bromfietspad</td>
+</tr>
+<tr>
+<td><code>fiets</code></td>
+<td>fietspad</td>
+</tr>
+<tr>
+<td><code>troittoir</code></td>
+<td>troittoir</td>
+</tr>
+
+</tbody></table></div>
+<p>Als geen rijstrook type is aangegeven geldt dat dit een 'rijbaan' is.</p>
+</section><section id="enum-rvv1990-weginrichtingstype"><div class="header-wrapper"><h4 id="x4-4-3-enum-rvv1990-weginrichtingstype"><bdi class="secno">4.4.3 </bdi>Enum <dfn data-lt="RVV1990-WeginrichtingsType|RVV1990-WeginrichtingsTypen" id="dfn-rvv1990-weginrichtingstype" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>RVV1990-WeginrichtingsType</code></dfn></h4><a class="self-link" href="#enum-rvv1990-weginrichtingstype" aria-label="Permalink for Section 4.4.3"></a></div>
+<p>In onderstaande tabel staan de RVV1990-Wegtypen waarmee een NWB-wegvak kan worden getypeerd:</p>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>RVV1990-WeginrichtingsType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bibeko1</code></td>
+<td>Binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad</td>
+</tr>
+<tr>
+<td><code>bibeko2</code></td>
+<td>Binnen de kom, die gesloten zijn voor fietsers</td>
+</tr>
+<tr>
+<td><code>bibeko3</code></td>
+<td>Binnen de kom, waar een maximumsnelheid van 70 km per uur geldt</td>
+</tr>
+
+</tbody></table></div>
+<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Noot</span><span class="issue-label">: Wegtypen andere standaarden</span></div><aside class="">
+Zowel bij het NWB als bij IMBOR hebben wegbeheerders eigen definities gemaakt van wegtypen. Hierbij geldt dat men hierbij steeds een eigen doel voor ogen heeft: voor het NWB vanuit verkeerskundig oogpunt; in IMBOR vanuit beheer; in IMWV (onderdeel van IMBOR) vanuit wegontwerp. Onderstaande tabel vergelijkt de typeringen vanuit de snelheidsregels in de RVV 1990 met vergelijkbare termen bij NWB en IMBOR om de verschillen te laten zien. 
+<table class="wikitable" style="text-align:left; valign:top">
+<tbody><tr>
+<th> <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-5"><code>RVV1990-Wegtypen</code></a>
+</th>
+<th> <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-5"><code>RVV1990-Rijbaantypen</code></a>
+</th>
+<th> <a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-3"><code>RVV1990-Weginrichtingstypen</code></a>
+</th>
+<th> NWB
+</th>
+<th> IMBOR
+</th>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> rijbaan </td>
+<td> . </td>
+<td> . </td>
+<td> . </td>
+</tr><tr>
+<td> bibeko </td>
+<td> rijbaan </td>
+<td> bibeko1 </td>
+<td> . </td>
+<td> . </td>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> rijbaan </td>
+<td> bibeko2 </td>
+<td> . </td>
+<td> . </td>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> rijbaan </td>
+<td> bibeko3 </td>
+<td> stadshoofdweg </td>
+<td> . </td>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> fietsbrom </td>
+<td> b. </td>
+<td> bromfietspad </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fid%2Fdomeinwaarden%2F36d4903f-6a07-41f6-a66f-6567122f9e41">Fiets-/bromfietspad</a> </td>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> fiets </td>
+<td> . </td>
+<td> fietspad </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fdef%2Fd14fe879-40fe-414b-9fe3-89ad7d9b907b">fietspad</a> </td>
+</tr>
+<tr>
+<td> bibeko </td>
+<td> trottoir </td>
+<td> . </td>
+<td> voetpad </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fterm%2F3eff4c74-2c3e-494f-aae5-5f6edf4a8463">Voetpad</a> (de term voetpad wordt in totaal 4x gebruikt, semantisch gezien)  </td>
+</tr>
+<tr>
+<td> bubeko </td>
+<td> rijbaan </td>
+<td> . </td>
+<td> . </td>
+<td> . </td>
+</tr>
+<tr>
+<td> bubeko </td>
+<td> fietsbrom </td>
+<td> . </td>
+<td> bromfietspad </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fid%2Fdomeinwaarden%2F36d4903f-6a07-41f6-a66f-6567122f9e41">Fiets-/bromfietspad</a> </td>
+</tr>
+<tr>
+<td> bubeko </td>
+<td> fiets </td>
+<td> . </td>
+<td> fietspad </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fdef%2Fd14fe879-40fe-414b-9fe3-89ad7d9b907b">fietspad</a> </td>
+</tr>
+<tr>
+<td> bubeko </td>
+<td> trottoir </td>
+<td> . </td>
+<td> voetpad </td>
+<td> . </td>
+</tr>
+<tr>
+<td> snelweg </td>
+<td> . </td>
+<td> . </td>
+<td> autosnelweg </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor-ref%2Fid%2Ffbd62a95-243f-4e2d-9f59-5272dfaee892">rijbaan autosnelweg</a> </td>
+</tr>
+<tr>
+<td> autoweg </td>
+<td> . </td>
+<td> . </td>
+<td> autoweg </td>
+<td> <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor-ref%2Fid%2Fc77d9ada-1fc2-4d9d-896e-f87a11af10cc">rijbaan autoweg</a> </td>
+</tr>
+<tr>
+<td> erf </td>
+<td> . </td>
+<td> . </td>
+<td> . </td>
+<td>  <a href="https://docs.crow.nl/onto-verkenner/imbor/?#/view?uri=https%3A%2F%2Fdata.crow.nl%2Fimbor%2Fid%2Fdomeinwaarden%2Ff3305ac5-7215-4d6b-a70a-636801b74745">woonerf</a> </td>
+</tr>
+</tbody></table>
+Voor het NWB is de lijst gebruikt van typering van wegvakken, die recent is toegevoegd op basis van de Basisregistratie Topografie (BRT) en in overleg met de NWB gebruikers. Daarbij blijven de volgende typeringen nog even buiten beeld als het gaat om maximumsnelheid:<ul>
+<li>lokale weg</li>
+<li>onbekend</li>
+<li>onverharde weg</li>
+<li>OV-verbinding</li>
+<li>regionale weg</li>
+<li>ruiterpad</li>
+<li>straat</li>
+<li>verzorgingsplaats</li></ul>
+Om een voorbeeld te nemen van het verschil: In de RVV 1990 heeft men geen onderscheid gemaakt tussen een verharde en onverharde weg als het gaat om de <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-6"><code>wettelijke maximumsnelheid</code></a>. Voor de verkeersregel "voorrang verlening" is het wel degelijk van belang om te weten of een weg verhard is of onverhard. Of een onverharde weg daarentegen binnen of buiten de bebouwde kom is, maakt niet uit voor de voorrangverlening maar wel voor de maximumsnelheid. Om het informatiemodel per verkeersregel heel zuiver op te bouwen volgens de RVV 1990, krijgt de onverharde weg dus én een "verhardingstype" mee, en een "wegtype". Een wegbeheerder zal dit qua databeheer wel ingewikkeld en overmatig vinden, die is gewend om afleidingen over de data te maken op basis van visuele kaartbeelden. Een systeem zal echter de volledige, logische informatie ter beschikking moeten hebben om te kunnen afleiden met welke snelheid gereden kan worden. 
+</aside></div>
+
+</section></section><section id="kruispunt"><div class="header-wrapper"><h3 id="x4-5-kruispunt"><bdi class="secno">4.5 </bdi>Kruispunt</h3><a class="self-link" href="#kruispunt" aria-label="Permalink for Section 4.5"></a></div>
+<p>Een NWB-junctie kan worden aangeduid als "kruispunt" </p>
+<section id="enum-rvv1990-zonetype"><div class="header-wrapper"><h4 id="x4-5-1-enum-rvv1990-zonetype"><bdi class="secno">4.5.1 </bdi>Enum <dfn data-lt="RVV1990-ZoneType|RVV1990-ZoneTypen" id="dfn-rvv1990-zonetype" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>RVV1990-ZoneType</code></dfn></h4><a class="self-link" href="#enum-rvv1990-zonetype" aria-label="Permalink for Section 4.5.1"></a></div>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>spaceType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>bibeko</code></td>
+<td>zone binnen de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>bubeko</code></td>
+<td>zone buiten de bebouwde kom</td>
+</tr>
+<tr>
+<td><code>erf</code></td>
+<td>zone erf</td>
+</tr>
+<tr>
+<td><code>30</code></td>
+<td>30 km zone</td>
+</tr>
+<tr>
+<td><code>60</code></td>
+<td>60 km zone</td>
+</tr>
+
+</tbody></table></div>
+<p>Merk op, dat uit de analyse van andere verkeersregels aanvullende zonetypes kunnen worden gedefinieerd, zoals parkeerzone en milieuzone.</p>
+</section><section id="enum-rvv1990-verkeersborden"><div class="header-wrapper"><h4 id="x4-5-2-enum-rvv1990-verkeersborden"><bdi class="secno">4.5.2 </bdi>Enum <dfn data-lt="RVV1990-Verkeersbord|RVV1990-Verkeersborden" id="dfn-rvv1990-verkeersbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn"><code>RVV1990-Verkeersborden</code></dfn></h4><a class="self-link" href="#enum-rvv1990-verkeersborden" aria-label="Permalink for Section 4.5.2"></a></div>
+<p>In <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;bijlage=1&amp;z=2021-07-01&amp;g=2021-07-01">Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a> staan de volgende verkeersborden die relevantie hebben voor het bepalen van de maximale toegestane snelheid:</p>
+<div class="overlarge"><table class="data">
+<thead>
+<tr>
+<th>ID</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>A1</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-a1" class="internalDFN" id="ref-for-dfn-verkeersbord-a1-3">Verkeersbord A1</a></td>
+</tr>
+<tr>
+<td><code>A2</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-a2" class="internalDFN" id="ref-for-dfn-verkeersbord-a2-3">Verkeersbord A2</a></td>
+</tr>
+<tr>
+<td><code>C14</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-c14" class="internalDFN" id="ref-for-dfn-verkeersbord-c14-1">Verkeersbord C14</a></td>
+</tr>
+<tr>
+<td><code>C15</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-c15" class="internalDFN" id="ref-for-dfn-verkeersbord-c15-1">Verkeersbord C15</a></td>
+</tr>
+<tr>
+<td><code>F8</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-f8" class="internalDFN" id="ref-for-dfn-verkeersbord-f8-1">Verkeersbord F8</a></td>
+</tr>
+<tr>
+<td><code>G1</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g1" class="internalDFN" id="ref-for-dfn-verkeersbord-g1-1">Verkeersbord G1</a></td>
+</tr>
+<tr>
+<td><code>G2</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g2" class="internalDFN" id="ref-for-dfn-verkeersbord-g2-1">Verkeersbord G2</a></td>
+</tr>
+<tr>
+<td><code>G3</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g3" class="internalDFN" id="ref-for-dfn-verkeersbord-g3-1">Verkeersbord G3</a></td>
+</tr>
+<tr>
+<td><code>G4</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g4" class="internalDFN" id="ref-for-dfn-verkeersbord-g4-1">Verkeersbord G4</a></td>
+</tr>
+<tr>
+<td><code>G5</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g5" class="internalDFN" id="ref-for-dfn-verkeersbord-g5-1">Verkeersbord G5</a></td>
+</tr>
+<tr>
+<td><code>G6</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g6" class="internalDFN" id="ref-for-dfn-verkeersbord-g6-1">Verkeersbord G6</a></td>
+</tr>
+<tr>
+<td><code>G5</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g7" class="internalDFN" id="ref-for-dfn-verkeersbord-g7-1">Verkeersbord G7</a></td>
+</tr>
+<tr>
+<td><code>G6</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g8" class="internalDFN" id="ref-for-dfn-verkeersbord-g8-1">Verkeersbord G8</a></td>
+</tr>
+<tr>
+<td><code>H1</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-h1" class="internalDFN" id="ref-for-dfn-verkeersbord-h1-1">Verkeersbord H1</a></td>
+</tr>
+<tr>
+<td><code>H2</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-h2" class="internalDFN" id="ref-for-dfn-verkeersbord-h2-2">Verkeersbord H2</a></td>
+</tr>
+<tr>
+<td><code>G11</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g11" class="internalDFN" id="ref-for-dfn-verkeersbord-g11-1">Verkeersbord G11</a></td>
+</tr>
+<tr>
+<td><code>G12</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g12" class="internalDFN" id="ref-for-dfn-verkeersbord-g12-1">Verkeersbord G12</a></td>
+</tr>
+<tr>
+<td><code>G12a</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g12a" class="internalDFN" id="ref-for-dfn-verkeersbord-g12a-1">Verkeersbord G12a</a></td>
+</tr>
+<tr>
+<td><code>G12b</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g12b" class="internalDFN" id="ref-for-dfn-verkeersbord-g12b-1">Verkeersbord G12b</a></td>
+</tr>
+<tr>
+<td><code>G13</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g13" class="internalDFN" id="ref-for-dfn-verkeersbord-g13-1">Verkeersbord G13</a></td>
+</tr>
+<tr>
+<td><code>G14</code></td>
+<td><a data-link-type="dfn" href="#dfn-verkeersbord-g14" class="internalDFN" id="ref-for-dfn-verkeersbord-g14-1">Verkeersbord G14</a></td>
+</tr>
+
+</tbody></table></div>
+</section><section id="visualisatie-bord"><div class="header-wrapper"><h4 id="x4-5-3-visualisatie-bord"><bdi class="secno">4.5.3 </bdi>Visualisatie bord</h4><a class="self-link" href="#visualisatie-bord" aria-label="Permalink for Section 4.5.3"></a></div>
+<p>Als visualisatie van de verkeersregel geldt het [A1-verkeersbord].</p>
+</section><section id="onderbord"><div class="header-wrapper"><h4 id="x4-5-4-onderbord"><bdi class="secno">4.5.4 </bdi>Onderbord</h4><a class="self-link" href="#onderbord" aria-label="Permalink for Section 4.5.4"></a></div>
+<p>Onderstaande informatie op de onderborden moet nog worden uitgewerkt naar het informatiemodel, met keuzes tussen vrije teksten, enumeraties met alle mogelijke varianten van onderborden. Daarnaast moet bij de ontwikkeling van het informatiemodel worden uitgezocht welke onderborden in de praktrijk voorkomen om te kijken of deze opties volledig zijn: </p>
+<ul>
+<li>bij schemering en duisternis</li>
+<li>bij gladheid</li>
+<li>over een lengte van x meters</li>
+<li>tussen [tijdstip] en [tijdstip]</li>
+<li>op een of meer dagen</li>
+<li>bij "schoolopening en sluitingstijden"</li>
+</ul>
+<p>Gemodelleerd kan worden welke bovenstaande opties gecombineerd kunnen voorkomen.</p>
+</section></section></section>
+  <section data-format="markdown" class="conformance" id="controlemechanismes"><div class="header-wrapper"><h2 id="x5-controlemechanismes"><bdi class="secno">5. </bdi>Controlemechanismes</h2><a class="self-link" href="#controlemechanismes" aria-label="Permalink for Section 5."></a></div>
+<section id="gebruikersondersteuning-databeheer"><div class="header-wrapper"><h3 id="x5-1-gebruikersondersteuning-databeheer"><bdi class="secno">5.1 </bdi>Gebruikersondersteuning databeheer</h3><a class="self-link" href="#gebruikersondersteuning-databeheer" aria-label="Permalink for Section 5.1"></a></div>
+<p>De controlemechanismes voor de verkeerskundige informatie bestaan uit SPARQL queries waarmee onderzocht kan worden of de verkeerskundige informatie actueel, betrouwbaar en compleet is. Dit gaat om het eruit filteren van fouten, die door een systeem op logische wijze eruit gefilterd kunnen worden. Dit neemt niet weg, dat altijd een menselijke controle moet worden gedaan omdat een fout, zoals het volledig niet opnemen van een verkeersregel, niet ontdekt kan worden door een systeem, maar wel door de wegbeheerder die een gebied kent. </p>
+<section id="statische-snelheid"><div class="header-wrapper"><h4 id="x5-1-1-statische-snelheid"><bdi class="secno">5.1.1 </bdi>Statische snelheid</h4><a class="self-link" href="#statische-snelheid" aria-label="Permalink for Section 5.1.1"></a></div>
+<p>In eerste instantie bevat het informatiemodel de scope van "vaste verkeersborden met vaste verkeersregels". Dit is de informatie die de wegbeheerder zelf samenstelt. De wegbeheerder legt bij elk wegvak vast welk <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-6"><code>RVV1990-WegType</code></a> en <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-6"><code>RVV1990-RijbaanType</code></a> en <a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-4"><code>RVV1990-WeginrichtingsType</code></a> van toepassing zijn.</p>
+<p>Controlemechanismes bij maximumsnelheid: (geen uitputtende lijst)</p>
+<ul>
+<li>Het het wegvak een <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-7"><code>RVV1990-WegType</code></a>?</li>
+<li>Indien het wegtype bibeko of bubeko: heeft het wegvak een <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-7"><code>RVV1990-RijbaanType</code></a>?</li>
+<li>Indien het wegtype bibeko: heeft het wegvak een <a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-5"><code>RVV1990-WeginrichtingsType</code></a>?</li>
+<li>Hebben alle juncties met meer dan twee wegvakken eraan een attribuut "kruispunt"</li>
+</ul>
+</section><section id="tijdelijke-snelheid"><div class="header-wrapper"><h4 id="x5-1-2-tijdelijke-snelheid"><bdi class="secno">5.1.2 </bdi>Tijdelijke snelheid</h4><a class="self-link" href="#tijdelijke-snelheid" aria-label="Permalink for Section 5.1.2"></a></div>
+<p>In tijdelijke verkeerssituaties worden tijdelijk andere vaste verkeersregels gevolgd, deze kunnen in de verkeerskundige informatie worden opgenomen met een begin- of eindtijd. Zo kan de wegbeheerder een tijdfelijke snelheidssverlaging bij wegwerkzaamheden opnemen in de verkeerskundige informatie. </p>
+</section><section id="dynamische-snelheid"><div class="header-wrapper"><h4 id="x5-1-3-dynamische-snelheid"><bdi class="secno">5.1.3 </bdi>Dynamische snelheid</h4><a class="self-link" href="#dynamische-snelheid" aria-label="Permalink for Section 5.1.3"></a></div>
+<p>De dynamische verkeersborden en dito regels kunnen in principe dezelfde informatie bevatten als de statische verkeersborden en ook met dit informatiemodel gepubliceerd worden.</p>
+</section></section></section>
+  <section data-format="markdown" class="conformance" id="zoekmechanismes"><div class="header-wrapper"><h2 id="x6-zoekmechanismes"><bdi class="secno">6. </bdi>Zoekmechanismes</h2><a class="self-link" href="#zoekmechanismes" aria-label="Permalink for Section 6."></a></div>
+<section id="gebruikersondersteuning-datagebruik"><div class="header-wrapper"><h3 id="x6-1-gebruikersondersteuning-datagebruik"><bdi class="secno">6.1 </bdi>Gebruikersondersteuning datagebruik</h3><a class="self-link" href="#gebruikersondersteuning-datagebruik" aria-label="Permalink for Section 6.1"></a></div>
+<p>De zoekmechanismes bestaan uit SPARQL queries waarmee in verkeerskundige informatie gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De vraag "Wat is hier mijn <a data-link-type="dfn" href="#dfn-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-wettelijke-maximumsnelheid-7"><code>wettelijke maximumsnelheid</code></a>?" valt uiteen in verschillende queries. Uitgangspunt is dat het SMART Mobility systeem het voertuigtype kent waarin de bestuurder rijdt.</p>
+<ol>
+<li>"Welk <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-8"><code>RVV1990-Wegtype</code></a> is het?"</li>
+<li>Indien geen auto(snel)weg: "Welk <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-8"><code>RVV1990-Rijbaantype</code></a> is het?"</li>
+<li>Alleen voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines, al dan niet met aanhangwagen: Indien het rijbaantype binnen de bebouwde kom is, is één van de <a data-link-type="dfn" href="#dfn-rvv1990-weginrichtingstype" class="internalDFN" id="ref-for-dfn-rvv1990-weginrichtingstype-6"><code>RVV1990-WeginrichtingsTypen</code></a> van toepassing?</li>
+<li>Geldt hier een <a data-link-type="dfn" href="#dfn-lokale-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-lokale-wettelijke-maximumsnelheid-7"><code>lokale wettelijke maximumsnelheid</code></a>?</li>
+<li>Wat is hier de laagste snelheid?</li>
+</ol>
+<p>Hieruit leidt het SMART Mobility systeem de wettelijke maximumsnelheid af door zelf deze informatie te hebben geprogrammeerd:</p>
+<ol>
+<li>"Welke <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-8"><code>standaard wettelijke maximumsnelheid</code></a> er geldt voor mijn <a data-link-type="dfn" href="#dfn-rvv1990-voertuigtype" class="internalDFN" id="ref-for-dfn-rvv1990-voertuigtype-1">RVV1990-voertuigtype</a> op dit <a data-link-type="dfn" href="#dfn-rvv1990-wegtype" class="internalDFN" id="ref-for-dfn-rvv1990-wegtype-9"><code>RVV1990-WegType</code></a> X <a data-link-type="dfn" href="#dfn-rvv1990-rijbaantype" class="internalDFN" id="ref-for-dfn-rvv1990-rijbaantype-9"><code>RVV1990-RijbaanType</code></a>?<ul>
+<li>Merk op, dat hier een vraag aan voorafgaat: "mag ik hier rijden met mijn voertuigtype?". Deze vraag is buiten scope van dit document.</li>
+</ul>
+</li>
+</ol>
+</section></section>
+
+  
+  <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here"><div class="header-wrapper"><h3 id="a-1-termen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Termen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
+    
+    <ul class="index">
+    <li>
+      <a class="index-term" href="#dfn-lokale-wettelijke-maximumsnelheid">lokale wettelijke maximumsnelheid</a> 
+    <span class="print-only">§3.2</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-rijbaantype">RVV1990-RijbaanType</a> 
+    <span class="print-only">§4.4.2</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-verkeersbord">RVV1990-Verkeersborden</a> 
+    <span class="print-only">§4.5.2</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-voertuigtype">RVV1990-Voertuigtype</a> 
+    <span class="print-only">§3.1.6</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-weginrichtingstype">RVV1990-WeginrichtingsType</a> 
+    <span class="print-only">§4.4.3</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-wegtype">RVV1990-WegType</a> 
+    <span class="print-only">§4.4.1</span></li><li>
+      <a class="index-term" href="#dfn-rvv1990-zonetype">RVV1990-ZoneType</a> 
+    <span class="print-only">§4.5.1</span></li><li>
+      <a class="index-term" href="#dfn-standaard-wettelijke-maximumsnelheid">standaard wettelijke maximumsnelheid</a> 
+    <span class="print-only">§3.1.2</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-a1">Verkeersbord A1</a> 
+    <span class="print-only">§3.1.5.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-a2">Verkeersbord A2</a> 
+    <span class="print-only">§3.1.5.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-c14">Verkeersbord C14</a> 
+    <span class="print-only">§3.1.5.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-c15">Verkeersbord C15</a> 
+    <span class="print-only">§3.1.5.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-f8">Verkeersbord F8</a> 
+    <span class="print-only">§3.1.5.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g1">Verkeersbord G1</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g11">Verkeersbord G11</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g12">Verkeersbord G12</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g12a">Verkeersbord G12a</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g12b">Verkeersbord G12b</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g13">Verkeersbord G13</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g14">Verkeersbord G14</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g2">Verkeersbord G2</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g3">Verkeersbord G3</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g4">Verkeersbord G4</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g5">Verkeersbord G5</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g6">Verkeersbord G6</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g7">Verkeersbord G7</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-g8">Verkeersbord G8</a> 
+    <span class="print-only">§3.1.4.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-h1">Verkeersbord H1</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-verkeersbord-h2">Verkeersbord H2</a> 
+    <span class="print-only">§3.1.3.1</span></li><li>
+      <a class="index-term" href="#dfn-wettelijke-maximumsnelheid">Wettelijke maximumsnelheid</a> 
+    <span class="print-only">§2.1</span></li>
+  </ul>
+  </section><section id="index-defined-elsewhere"><div class="header-wrapper"><h3 id="a-2-termen-gedefinieerd-door-referentie"><bdi class="secno">A.2 </bdi>Termen gedefinieerd door referentie</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
+    
+    <ul class="index">
+    
+  </ul>
+  </section></section>
+  <section class="" id="index-van-eisen"><div class="header-wrapper"><h2 id="b-index-van-eisen"><bdi class="secno">B. </bdi>Index van eisen</h2><a class="self-link" href="#index-van-eisen" aria-label="Permalink for Section B."></a></div>
+    
+    <ol class="toc toc-column toc-labeled" id="index-of-requirements"></ol>
+  </section>
+
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<script id="annotation-service-runtime">(() => {
+// @ts-check
+const SETTING_KEY = "annotation-service-hypothesis";
+const SETTING_VALUE_ALLOWED = "allowed";
+const hClientDefault = {
+  openSidebar: false,
+  showHighlights: true,
+  theme: "classic",
+  branding: {
+    accentColor: "rgb(0, 157, 224)",
+    appBackgroundColor: "white",
+    ctaBackgroundColor: "rgb(255, 110, 26)",
+    ctaTextColor: "white",
+    selectionFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+    annotationFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+  },
+};
+
+if (document.respec) {
+  document.respec.ready.then(render);
+} else {
+  render();
+}
+
+/** Render the placeholder (Load Service Button) or annotation info (# annotations, Show Annotation Button). */
+function render() {
+  if (localStorage.getItem(SETTING_KEY) == SETTING_VALUE_ALLOWED) {
+    renderAnnotationServiceInfo();
+  } else {
+    renderPlaceholder();
+  }
+}
+
+/** Render Load Service Button, with privacy info. */
+function renderPlaceholder() {
+  localStorage.removeItem(SETTING_KEY);
+
+  /** @type {HTMLElement} */
+  const placeholder = document.querySelector("#annotation-service-placeholder");
+  placeholder.hidden = false;
+
+  const listener = loadButtonListener();
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("keydown", listener);
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("click", listener);
+
+  /** @type {HTMLElement} */
+  const serviceInfo = document.querySelector("#annotation-service-loaded");
+  serviceInfo.hidden = true;
+}
+
+function loadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.setItem(SETTING_KEY, SETTING_VALUE_ALLOWED);
+    renderAnnotationServiceInfo();
+  };
+}
+
+function unloadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.removeItem(SETTING_KEY);
+    removeHScript();
+  };
+}
+
+function renderAnnotationServiceInfo() {
+  addHConfig(document);
+  addHScript(document);
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHScript(doc, conf) {
+  const script = doc.createElement("script");
+  script.src = "https://hypothes.is/embed.js";
+  script.async = true;
+  doc.body.appendChild(script);
+
+  script.addEventListener("load", event => {
+    /** @type {HTMLElement} */
+    const placeholder = document.querySelector(
+      "#annotation-service-placeholder"
+    );
+    placeholder.hidden = true;
+
+    /** @type {HTMLElement} */
+    const serviceInfo = document.querySelector("#annotation-service-loaded");
+    serviceInfo.hidden = false;
+
+    const unloadListener = unloadButtonListener();
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("keydown", unloadListener);
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("click", unloadListener);
+  });
+}
+
+/**
+ * Retract Hypothesis permission.
+ */
+function removeHScript() {
+  // Deleting the hypothesis-script, does not undo its changes, listeners etc.
+  // Instead, reload the frame.
+  window.location.reload();
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHConfig(doc, conf) {
+  const script = doc.createElement("script");
+  script.className = "js-hypothesis-config";
+  script.type = "application/json";
+  script.innerText = JSON.stringify(hClientDefault);
+  doc.body.appendChild(script);
+}
+})()</script><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wettelijke-maximumsnelheid" aria-label="Links in this document to definition: Wettelijke maximumsnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wettelijke-maximumsnelheid" aria-label="Permalink for definition: Wettelijke maximumsnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-wettelijke-maximumsnelheid-1" title="§ 3.1.5.1 Verkeersborden">§ 3.1.5.1 Verkeersborden</a> <a href="#ref-for-dfn-wettelijke-maximumsnelheid-2" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-wettelijke-maximumsnelheid-3" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> <a href="#ref-for-dfn-wettelijke-maximumsnelheid-4" title="Reference 2">(2)</a> <a href="#ref-for-dfn-wettelijke-maximumsnelheid-5" title="Reference 3">(3)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-wettelijke-maximumsnelheid-6" title="§ 4.4.3 Enum RVV1990-WeginrichtingsType">§ 4.4.3 Enum RVV1990-WeginrichtingsType</a> 
+  </li><li>
+    <a href="#ref-for-dfn-wettelijke-maximumsnelheid-7" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-standaard-wettelijke-maximumsnelheid" aria-label="Links in this document to definition: standaard wettelijke maximumsnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-standaard-wettelijke-maximumsnelheid" aria-label="Permalink for definition: standaard wettelijke maximumsnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-1" title="§ 3.2 lokale wettelijke maximumsnelheid">§ 3.2 lokale wettelijke maximumsnelheid</a> 
+  </li><li>
+    <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-2" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-3" title="Reference 2">(2)</a> <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-4" title="Reference 3">(3)</a> <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-5" title="Reference 4">(4)</a> <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-6" title="Reference 5">(5)</a> <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-7" title="Reference 6">(6)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-8" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-h1" aria-label="Links in this document to definition: Verkeersbord H1">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-h1" aria-label="Permalink for definition: Verkeersbord H1. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-h1-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-h2" aria-label="Links in this document to definition: Verkeersbord H2">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-h2" aria-label="Permalink for definition: Verkeersbord H2. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-h2-1" title="§ 3.1.3.1 Verkeersborden">§ 3.1.3.1 Verkeersborden</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersbord-h2-2" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g3" aria-label="Links in this document to definition: Verkeersbord G3">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g3" aria-label="Permalink for definition: Verkeersbord G3. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g3-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g4" aria-label="Links in this document to definition: Verkeersbord G4">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g4" aria-label="Permalink for definition: Verkeersbord G4. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g4-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g1" aria-label="Links in this document to definition: Verkeersbord G1">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g1" aria-label="Permalink for definition: Verkeersbord G1. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g1-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g2" aria-label="Links in this document to definition: Verkeersbord G2">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g2" aria-label="Permalink for definition: Verkeersbord G2. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g2-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g5" aria-label="Links in this document to definition: Verkeersbord G5">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g5" aria-label="Permalink for definition: Verkeersbord G5. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g5-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g6" aria-label="Links in this document to definition: Verkeersbord G6">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g6" aria-label="Permalink for definition: Verkeersbord G6. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g6-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g12a" aria-label="Links in this document to definition: Verkeersbord G12a">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g12a" aria-label="Permalink for definition: Verkeersbord G12a. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g12a-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g12b" aria-label="Links in this document to definition: Verkeersbord G12b">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g12b" aria-label="Permalink for definition: Verkeersbord G12b. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g12b-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g11" aria-label="Links in this document to definition: Verkeersbord G11">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g11" aria-label="Permalink for definition: Verkeersbord G11. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g11-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g12" aria-label="Links in this document to definition: Verkeersbord G12">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g12" aria-label="Permalink for definition: Verkeersbord G12. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g12-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g13" aria-label="Links in this document to definition: Verkeersbord G13">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g13" aria-label="Permalink for definition: Verkeersbord G13. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g13-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g14" aria-label="Links in this document to definition: Verkeersbord G14">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g14" aria-label="Permalink for definition: Verkeersbord G14. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g14-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g7" aria-label="Links in this document to definition: Verkeersbord G7">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g7" aria-label="Permalink for definition: Verkeersbord G7. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g7-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-g8" aria-label="Links in this document to definition: Verkeersbord G8">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-g8" aria-label="Permalink for definition: Verkeersbord G8. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-g8-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-c14" aria-label="Links in this document to definition: Verkeersbord C14">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-c14" aria-label="Permalink for definition: Verkeersbord C14. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-c14-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-c15" aria-label="Links in this document to definition: Verkeersbord C15">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-c15" aria-label="Permalink for definition: Verkeersbord C15. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-c15-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-a1" aria-label="Links in this document to definition: Verkeersbord A1">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-a1" aria-label="Permalink for definition: Verkeersbord A1. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-a1-1" title="§ 3.2 lokale wettelijke maximumsnelheid">§ 3.2 lokale wettelijke maximumsnelheid</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersbord-a1-2" title="§ 3.2.2 Zone">§ 3.2.2 Zone</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersbord-a1-3" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-a2" aria-label="Links in this document to definition: Verkeersbord A2">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-a2" aria-label="Permalink for definition: Verkeersbord A2. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-a2-1" title="§ 3.2 lokale wettelijke maximumsnelheid">§ 3.2 lokale wettelijke maximumsnelheid</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersbord-a2-2" title="§ 3.2.2 Zone">§ 3.2.2 Zone</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersbord-a2-3" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord-f8" aria-label="Links in this document to definition: Verkeersbord F8">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord-f8" aria-label="Permalink for definition: Verkeersbord F8. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersbord-f8-1" title="§ 4.5.2 Enum RVV1990-Verkeersborden">§ 4.5.2 Enum RVV1990-Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-voertuigtype" aria-label="Links in this document to definition: RVV1990-Voertuigtype">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-voertuigtype" aria-label="Permalink for definition: RVV1990-Voertuigtype. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-voertuigtype-1" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-lokale-wettelijke-maximumsnelheid" aria-label="Links in this document to definition: lokale wettelijke maximumsnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-lokale-wettelijke-maximumsnelheid" aria-label="Permalink for definition: lokale wettelijke maximumsnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-1" title="§ 3.2.2 Zone">§ 3.2.2 Zone</a> 
+  </li><li>
+    <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-2" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-3" title="Reference 2">(2)</a> <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-4" title="Reference 3">(3)</a> <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-5" title="Reference 4">(4)</a> <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-6" title="Reference 5">(5)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-lokale-wettelijke-maximumsnelheid-7" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-wegtype" aria-label="Links in this document to definition: RVV1990-WegType">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-wegtype" aria-label="Permalink for definition: RVV1990-WegType. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-1" title="§ 3.1.3 Wegtype">§ 3.1.3 Wegtype</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-2" title="§ 3.1.3.1 Verkeersborden">§ 3.1.3.1 Verkeersborden</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-3" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> <a href="#ref-for-dfn-rvv1990-wegtype-4" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-5" title="§ 4.4.3 Enum RVV1990-WeginrichtingsType">§ 4.4.3 Enum RVV1990-WeginrichtingsType</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-6" title="§ 5.1.1 Statische snelheid">§ 5.1.1 Statische snelheid</a> <a href="#ref-for-dfn-rvv1990-wegtype-7" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-wegtype-8" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> <a href="#ref-for-dfn-rvv1990-wegtype-9" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-rijbaantype" aria-label="Links in this document to definition: RVV1990-RijbaanType">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-rijbaantype" aria-label="Permalink for definition: RVV1990-RijbaanType. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-1" title="§ 3.1.4 Rijbaantype">§ 3.1.4 Rijbaantype</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-2" title="§ 3.1.4.1 Verkeersborden">§ 3.1.4.1 Verkeersborden</a> <a href="#ref-for-dfn-rvv1990-rijbaantype-3" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-4" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-5" title="§ 4.4.3 Enum RVV1990-WeginrichtingsType">§ 4.4.3 Enum RVV1990-WeginrichtingsType</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-6" title="§ 5.1.1 Statische snelheid">§ 5.1.1 Statische snelheid</a> <a href="#ref-for-dfn-rvv1990-rijbaantype-7" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-rijbaantype-8" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> <a href="#ref-for-dfn-rvv1990-rijbaantype-9" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-weginrichtingstype" aria-label="Links in this document to definition: RVV1990-WeginrichtingsType">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-weginrichtingstype" aria-label="Permalink for definition: RVV1990-WeginrichtingsType. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-weginrichtingstype-1" title="§ 3.1.5 Weginrichting">§ 3.1.5 Weginrichting</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-weginrichtingstype-2" title="§ 4.2 Verkeersregel">§ 4.2 Verkeersregel</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-weginrichtingstype-3" title="§ 4.4.3 Enum RVV1990-WeginrichtingsType">§ 4.4.3 Enum RVV1990-WeginrichtingsType</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-weginrichtingstype-4" title="§ 5.1.1 Statische snelheid">§ 5.1.1 Statische snelheid</a> <a href="#ref-for-dfn-rvv1990-weginrichtingstype-5" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-weginrichtingstype-6" title="§ 6.1 Gebruikersondersteuning datagebruik">§ 6.1 Gebruikersondersteuning datagebruik</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-zonetype" aria-label="Links in this document to definition: RVV1990-ZoneType">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-zonetype" aria-label="Permalink for definition: RVV1990-ZoneType. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-zonetype-1" title="§ 3.2.2.1 Verkeersborden">§ 3.2.2.1 Verkeersborden</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990-verkeersbord" aria-label="Links in this document to definition: RVV1990-Verkeersborden">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990-verkeersbord" aria-label="Permalink for definition: RVV1990-Verkeersborden. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-verkeersbord-1" title="§ 3.1.3.1 Verkeersborden">§ 3.1.3.1 Verkeersborden</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-3" title="Reference 3">(3)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-4" title="Reference 4">(4)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-5" title="Reference 5">(5)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-6" title="Reference 6">(6)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-7" title="Reference 7">(7)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-8" title="Reference 8">(8)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-9" title="Reference 9">(9)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-verkeersbord-10" title="§ 3.1.4.1 Verkeersborden">§ 3.1.4.1 Verkeersborden</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-11" title="Reference 2">(2)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-12" title="Reference 3">(3)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-13" title="Reference 4">(4)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-14" title="Reference 5">(5)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-15" title="Reference 6">(6)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-16" title="Reference 7">(7)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-17" title="Reference 8">(8)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-18" title="Reference 9">(9)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-verkeersbord-19" title="§ 3.1.5.1 Verkeersborden">§ 3.1.5.1 Verkeersborden</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-20" title="Reference 2">(2)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-21" title="Reference 3">(3)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-22" title="Reference 4">(4)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-23" title="Reference 5">(5)</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-24" title="Reference 6">(6)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-verkeersbord-25" title="§ 3.2.1.2 Aanvullende instructie">§ 3.2.1.2 Aanvullende instructie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-rvv1990-verkeersbord-26" title="§ 3.2.2.1 Verkeersborden">§ 3.2.2.1 Verkeersborden</a> <a href="#ref-for-dfn-rvv1990-verkeersbord-27" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://docs.crow.nl/respec-design/fixup.js"></script><script class="js-hypothesis-config" type="application/json">{"openSidebar":false,"showHighlights":true,"theme":"classic","branding":{"accentColor":"rgb(0, 157, 224)","appBackgroundColor":"white","ctaBackgroundColor":"rgb(255, 110, 26)","ctaTextColor":"white","selectionFontFamily":"'Museo Sans', Museo, Helvetica, Arial, sans serif","annotationFontFamily":"'Museo Sans', Museo, Helvetica, Arial, sans serif"}}</script><script src="https://hypothes.is/embed.js" async=""></script><hypothesis-sidebar data-js-focus-visible=""></hypothesis-sidebar><hypothesis-notebook data-js-focus-visible=""></hypothesis-notebook><hypothesis-adder data-js-focus-visible="" style="position: absolute; top: 0px; left: 0px;"></hypothesis-adder></body></html>
