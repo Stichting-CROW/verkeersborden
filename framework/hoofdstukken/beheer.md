@@ -113,6 +113,7 @@ De standaard heeft een structurele financiering voor beheer en implementatieonde
   <li>Community: Gebruikers zijn actief betrokken bij het beheer</li></ul>
 </aside>
 
+Het is wenselijk als de eindgebruikers, in dit geval de fabrikanten van SMART Mobility systemen en de verkeerskundigen actief participeren als gebruikers zodat zij de ingebrachte wensen kunnen valideren en de stuurgroep kunnen adviseren over wijzigingen die in hun belang zijn. Dit zal georganiseerd moeten worden voordat overgegaan kan wqorden tot publicatie van een eerste versie van het informatiemodel.
 
 ### Adoptie en erkenning
 
