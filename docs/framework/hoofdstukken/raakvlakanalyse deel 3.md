@@ -150,8 +150,8 @@ In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien [=bebakenin
 
 Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbele definities kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
-1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze staan dan niet meer in IMBOR
-2. In IMBOR staan de verkeersborden, bewegwijzeringen  die buiten de scope van het [=Informatiemodel Verkeerstekens=] vallen. 
+1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze definities staan dan niet meer in IMBOR. De verkeersborden zijn wel opgenomen in IMBOR als beheerobject, waarbij IMBOR de attributen definieert die nodig zijn voor het beheren van de verkeersborden.
+2. In IMBOR worden de verkeersborden gedefinieerd die buiten de scope van het [=Informatiemodel Verkeerstekens=] vallen. 
 3. In het [=Informatiemodel Verkeerstekens=] komen verkeerskundige attributen te staan die bij het verkeersbord "-als-instantie-van-verkeerskundig ontwerp" (gewenst/gepland verkeersbord) informatie geven over datum van ingang van het besluit, en de geldigheidsperiode van het verkeersbord.
 4. In IMBOR komen voor beheer relevante attributen te staan die die bij het verkeersbord "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst verkeersbord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de verkeersborden.
 
