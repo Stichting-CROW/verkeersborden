@@ -10,6 +10,30 @@
 
 Het RVV 1990 is de primaire bron voor [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en bijbehorende verkeersborden die worden opgenomen in het [=Informatiemodel Verkeerstekens=].
 
+In de RVV staan de volgende in het [=Informatiemodel Verkeerstekens=] op te nemen verkeersregels:
+* Wettelijke maximum snelheid (2 borden)
+* Adviessnelheid (2 borden)
+* Voorrang verlening (6 borden)
+* Stoppen (2 borden)
+* Gesloten (1 bord) 
+* Toegestane rijrichting (4 borden)
+* Gesloten voor voertuigcategorie (13 borden)
+* Gesloten voor voertuigen met specificatie (6 borden)
+* Milieuzone (4 borden plus 11 onderborden)
+* Spitsstrook (3 borden)
+* Rijrichting (7 borden)
+* Parkeren en stilstaan (13 borden)
+* Inhaalverbod (4 borden)
+* Voorrang tegengestelde rijrichting (2 borden)
+* Keren (1 bord)
+* Toegestane voertuigcategorie op rijstrook (12 borden)
+* Wegtype (16 borden) / Bebouwde kom (2 borden)
+* Waarschuwingen (39 borden)
+* 1 bord voor alles: eind ge- en verboden
+
+Daarnaast op te nemen in het [=Informatiemodel Verkeerstekens=]
+* Informatieborden (sic): 24 stuks
+
 
 ## BABW
 
