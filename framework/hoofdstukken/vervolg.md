@@ -14,3 +14,11 @@ Een informatiemodel werpt pas vruchten af als het geimplementewerd is en de bijb
 
 ## Beheerfase
 Na de ontwikkel- en beproevingsfase gaat het informatiemodel een relatief stabiele fase in waarbij wijzigingen vooral bestaan uit aanvullingen, of eventueel updates op basis van wetswijzigingen.
+
+
+## Scope-ontwikkeling
+Indien de scope van het informatiemodel wordt uitgebreid, geldt voor deze uitbreiding weer bovenstaand traject van ontwikkeling, beproeving en beheer. 
+
+<figure><img src="./hoofdstukken/media/scopeuitbreiding.jpg" WIDTH="20%">
+<figcaption>Een voorbeeld van potentiële scope-uitbreidingen van het informatiemodel voor andere doelgroepen, zoals beschreven in hoofdstuk 5, de stakeholderanalyse</caption>
+</figure>
