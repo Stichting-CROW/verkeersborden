@@ -17,6 +17,8 @@ In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het 
 <figcaption>NEN2660-2 scope in grijs grijze vlakken (bron: TNO) </caption>
 </figure>
 
+Het NEN2660-2 topmodel focust op de gebouwde wereld. In deze specifieke use case is alleen het verkeersbord echt fysiek. Toch zorgt modellering op deze manier voor een mate van standaardisatie van het informatiemodel en de andere informatiemodellen in de gebouwde omgeving.
+
 
 * Het informatiemodel MOET worden opgesteld conform de [=NEN2660-2:2022=].
 * Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.
@@ -150,10 +152,11 @@ In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien [=bebakenin
 
 Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbele definities kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
 
-1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze definities staan dan niet meer in IMBOR. De verkeersborden zijn wel opgenomen in IMBOR als beheerobject, waarbij IMBOR de attributen definieert die nodig zijn voor het beheren van de verkeersborden.
+1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze definities staan dan niet meer in IMBOR. De verkeersborden zijn wel opgenomen in IMBOR als beheerobject, waarbij IMBOR de attributen definieert die nodig zijn voor het beheren van de verkeersborden. 
 2. In IMBOR worden de verkeersborden gedefinieerd die buiten de scope van het [=Informatiemodel Verkeerstekens=] vallen. 
 3. In het [=Informatiemodel Verkeerstekens=] komen verkeerskundige attributen te staan die bij het verkeersbord "-als-instantie-van-verkeerskundig ontwerp" (gewenst/gepland verkeersbord) informatie geven over datum van ingang van het besluit, en de geldigheidsperiode van het verkeersbord.
 4. In IMBOR komen voor beheer relevante attributen te staan die die bij het verkeersbord "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst verkeersbord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de verkeersborden.
+5. Of bovenstaande ordening overeind blijft staan moet blijken bi jde praktische toepassing; Als tweede mogelijkheid bestaat variant waarin het [=Informatiemodel Verkeerstekens=] op zichzelf kan functioneren en de concepten en attributen volledig zijn afgestemd op IMBOR.
 
 <aside class="note" title="Besluitvorming door IMBOR beheerorganisatie">
 Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel Verkeerstekens=] geagendeerd in de Stuurgroep IMBOR voor besluitvorming of dit informatiemodel in beheer wordt genomen binnen de beheerorganisatie IMBOR en of men inhoudelijk akkoord is met deze aansluiting.
