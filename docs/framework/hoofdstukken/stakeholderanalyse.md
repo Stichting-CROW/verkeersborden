@@ -29,7 +29,7 @@ Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er
 
 *Stakeholders: Wegbeheerders, verkeerskundigen* maken gebruik van het [=IMWV=] voor begrippen en definities
 
-Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het netwerk te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste netwerk ook ruimtelijk inpasbaar is.
+Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het [=verkeerskundige wegennetwerk=] te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste [=verkeerskundige wegennetwerk=] ook ruimtelijk inpasbaar is.
 
 #### Beïnvloedingsgebied
 
@@ -59,7 +59,7 @@ Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen w
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=route=].
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] of een [=route=] naar een een geometrische representatie (vlak of polygoon).
 
-<aside class="note" title="Automatisering van zone naar netwerk">
+<aside class="note" title="Automatisering van zone naar [=verkeerskundig wegennetwerk=]">
 <p> Een zone die ingetekend is op een een GIS-kaart kan niet door een machine automatisch vertaald worden naar de juiste [=werkingslengte=] en [NWB-wegvakken=]. Dit komt onder andere, omdat in GIS de mate van in- en uitzoomen de breedte van de zonegrens bepaalt. Er kunnen dan grensfouten optreden die bij een machine tot verwerkingsfouten leidt. De werkingslengte van de zone is daarom met alleen een vlak in GIS niet nauwkeurig vast te stellen voor een systeem. Daarnaast komt het voor, dat een weg binnen een zone uitgezonderd is, bijvoorbeeld een doorgaande weg door het gebied, terwijl er maar één zone is getekend op de kaart. Voor de menselijke lezer goed te begrijpen, voor de machine niet. </p></aside>  
 
 
@@ -76,28 +76,38 @@ Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verk
 
 ### Wegontwerp
 
-*Stakeholders: Wegontwerpers* maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=].
+*Stakeholders: Wegontwerpers* 
 
-Op basis van een verkeersmodel wordt de geometrische ligging van de wegen ontworpen, waarbij de ontwerplocatie van het wegennetwerk en de verkeersborden wordt bepaald. Ook kunnen extra verkeersborden en markeringen uit het ontwerp worden afgeleid, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten. Tijdens het wegontwerp wordt niet het netwerk ontworpen, maar de fysieke ligging van de weg, met een alignement ("hartlijn") met bogen, overgangsbogen en rechtstanden en daarnaast de [=rijstrook=]breedte die breder wordt bij hogere snelheden of krappe bochten. Dit alignement wordt vaak gevisualiseerd in een CAD-tekening, met op tekening de markering van rijstroken of kanten van de stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
+Wegontwerpers maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=] voor ontwerprichtlijnen.
 
-#### Wegalignement
+Op basis van een verkeersmodel wordt de ruimtelijke inpassing van de wegen en de verkeersborden gemodelleerd. Op basis van de inpassing kunnen extra verkeersborden en markeringen nodig zijn, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten of zijwegen. 
 
-Een wegontwerp beschrijft een weg in termen van een alignement, een aaneenschakeling van bogen, overgangsboden en rechte lijnen. Op basis van de maximale snelheid kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt. Dit staat beschreven in het [=Handboek Wegontwerp=] en [=Wegontwerp RWS=].
+Een wegontwerp wordt vaak gevisualiseerd in een CAD-tekening, met op tekening het [=wegalignement=], de markering van rijstroken of kanten van stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
 
-Om het geregistreerde netwerk te kunnen gebruiken als input voor een nieuw wegontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. Als het netwerk een hoger detailniveau krijgt om per [=rijstrook=] [=verkeerskundige informatie=] te kunnen vastleggen, is een standaard nodig waarmee het alignement wordt vastgelegd, omdat het alignement wordt ontworpen per gehele weg of per [=rijbaan=], niet per [=rijstrook=]. Het alignement valt buiten de scope van het voorliggende informatiemodel.
+
+#### <dfn data-lt="Wegalignement">Wegalignement</dfn>
+
+Een wegontwerp beschrijft de fysieke ligging van de weg in termen van een wegalignement, een aaneenschakeling van bogen, overgangsboden en rechte lijnen met daarbij vastgelegd de gebruikte ontwerpsnelheid en verkanting (hoe schuin de weg ligt in een boog). Op basis van de ontwerpsnelheid, die meestal gelijk is aan de gewenste wettelijke maximumsnelheid, kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt. Uit het alignement volgt de benodigde [=rijstrook=]breedte die toeneemt bij hogere snelheden of krappe bochten. 
+
+Het verschil tusen een wegalignement en een [=verkeerskundig wegennetwerk=]: 
+<ol><li>Een wegalignement bestaat vaak uit één lijn voor de gehele weg of per rijbaan, een [=verkeerskundig wegennetwerk=] kán meer details hebben, bijvoorbeeld een lijn op elke rijstrook;</li>
+<li>Een [=verkeerskundig wegennetwerk=] bestaat uit een benadering van de hartlijn van de weg/rijbaan/rijstrook in de vorm van lijn opgebouwd uit punten, het wegalignement vormt een wiskundige beschrijving met tussen een begin- en eindpunt met lijnen, overgangsbogen en bogen met daarbij extra informatie over ontwerpsnelheid en verkanting op elk punt.</li>
+<li>Een [=verkeerskundig wegennetwerk=] bevat juncties, het wegalignement bevat alleen de lijnen</li></ol>
+
+Om het geregistreerde [=verkeerskundige wegennetwerk=] te kunnen gebruiken als input voor een nieuw wegontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. Als het [=verkeerskundige wegennetwerk=] een hoger detailniveau krijgt om per [=rijstrook=] [=verkeerskundige informatie=] te kunnen vastleggen, is een standaard nodig waarmee het wegalignement wordt vastgelegd, omdat het wegalignement wordt ontworpen per gehele weg of per [=rijbaan=], niet per [=rijstrook=]. Het alignement valt buiten de scope van het voorliggende informatiemodel.
 
 <dfn data-lt="rijbaan|rijbanen">Rijbaan</dfn>
 <dd>Elk voor rijdende voertuigen bestemd weggedeelte met uitzondering van de fietspaden en de fiets/bromfietspaden. Definitie conform de [=RVV 1990=]. </dd>
 <dd>Een rijbaan is een aaneengesloten verhard deel van de totale weg dat bestemd is voor rijdend verkeer en dat begrensd wordt door twee opeenvolgende begrenzingen in de vorm van kantstreep, overgang verharding of overgang verhard/onverhard. <a href="https://data.crow.nl/thesaurus/term/B4CA5CA6-8CEA-455D-9467-6FAA36A12E4E">Bron: CROW thesaurus</a> Als er tussen twee gedeeltes van een weg een fysieke barriere is die het verkeer hindert om van baan te wisselen, worden deze twee gedeeltes elk als aparte rijbaan beschouwd door verkeerskundigen.  </dd>
 
 
-#### Wegennetwerk
-Als het wegennetwerk wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie wordt geregistreerd en gepubliceerd in het [=NWB=]. Omdat het netwerk buiten de scope van het [=Informatiemodel Verkeerstekens=] valt, komen hier geen eisen uit voort. Er wordt in het [=Informatiemodel Verkeerstekens=] uitgegaan van een sluitend netwerk op een specifiek tijdstip, waarmee de wegbeheerder vervolgens [=verkeerskundige informatie=] kan opstellen die verwijst naar de [=NWB-wegvakken=] en [NWB-juncties=] in het netwerk. 
+#### Netwerkregistratie
+Als het [=verkeerskundige wegennetwerk=] wijzigt, moet de wegbeheerder zorgen dat de nieuwe situatie wordt geregistreerd en gepubliceerd in het [=NWB=]. Omdat het [=verkeerskundige wegennetwerk=] buiten de scope van het [=Informatiemodel Verkeerstekens=] valt, komen hier geen eisen uit voort. Er wordt in het [=Informatiemodel Verkeerstekens=] uitgegaan van een sluitend [=verkeerskundig wegennetwerk=] op een specifiek tijdstip, waarmee de wegbeheerder vervolgens [=verkeerskundige informatie=] kan opstellen die verwijst naar de [=NWB-wegvakken=] en [NWB-juncties=] in het [=verkeerskundige wegennetwerk=]. 
 
-Om met een wegontwerp aan te sluiten op een landelijke netwerkregistratie van wegen zouden afspraken gemaakt moeten worden om ook het ontworpen netwerk in termen van juncties en wegvakken op te nemen in ontwerptekeningen of BIM modellen, naast de verkeersborden. Zo kan makkelijker de vertaling worden gemaakt tussen wegontwerp en netwerkregistratie. Deze afspraak zou goed passen bij de BIM standaard [=NLCS=]. 
+Om met een wegontwerp aan te sluiten op een landelijke netwerkregistratie van wegen zouden afspraken gemaakt moeten worden om ook het ontworpen [=verkeerskundig wegennetwerk=] in termen van juncties en wegvakken op te nemen in ontwerptekeningen of BIM modellen, naast de verkeersborden. Zo kan makkelijker de vertaling worden gemaakt tussen wegontwerp en netwerkregistratie. Deze afspraak zou goed passen bij de BIM standaard [=NLCS=]. 
 
-<aside class="note" title="Automatisering van CAD ontwerp naar netwerk">
-<p> Door wegbeheerders wordt een nieuw netwerk vaak ontwikkeld op basis van een 2D CAD-ontwerp, waar de nieuwe wegligging en locatie van verkeersborden op geplot worden; Als een ontwerp rechtstreeks door een 'Systeem' moeten worden ingelezen en verwerkt tot verkeersdata, gerelateerd aan een wegennetwerk, moeten door het systeem veel complexe puzzels worden gemaakt. Wegen zijn in een CAD-ontwerp vaak aangeduid met lijnen die de stroken en de kant van de verharding aangeven. Om van hieruit een wegennetwerk te kunnen afleiden met wegvakken ('hartlijn van een weg') en juncties ('knopen'), is niet goed programmeerbaar. Ook rekenfouten in het aansluiten op het bestaande netwerk worden door een computer niet begrepen - bijvoorbeeld de juncties verschillen 0.00001 mm van elkaar en het systeem loopt vast, waar een mens ze zo over elkaar plaatst wetend dat de afwijking minimaal is.</p><br>
+<aside class="note" title="Automatisering van CAD ontwerp naar [=verkeerskundige wegennetwerk=]">
+<p> Door wegbeheerders wordt een nieuw [=verkeerskundig wegennetwerk=] vaak ontwikkeld op basis van een 2D CAD-ontwerp, waar de nieuwe wegligging en locatie van verkeersborden op geplot worden; Als een ontwerp rechtstreeks door een 'Systeem' moeten worden ingelezen en verwerkt tot verkeersdata, gerelateerd aan een [=verkeerskundig wegennetwerk=], moeten door het systeem veel complexe puzzels worden gemaakt. Wegen zijn in een CAD-ontwerp vaak aangeduid met lijnen die de stroken en de kant van de verharding aangeven. Om van hieruit een [=verkeerskundig wegennetwerk=] te kunnen afleiden met lijnen en juncties, is niet goed programmeerbaar. Ook rekenfouten in het aansluiten op het bestaande [=verkeerskundige wegennetwerk=] worden door een computer niet begrepen - bijvoorbeeld de juncties verschillen 0.00001 mm van elkaar en het systeem loopt vast, waar een mens ze zo over elkaar plaatst wetend dat de afwijking minimaal is.</p><br>
 <p>Ook van een verkeersbord kent het systeem de reikweidte niet, al kan het ernaar raden: een waarschuwingsbord voor een drempel geldt voor maximaal 50 meter lengte, een verkeersbord "kijk uit herten" heeft een onderbord wat vertelt hoeveel meter deze waarschuwing geldt. Al met al zit er een verschil in de mens, die de kaart met wegen en verkeersborden 'in een oogopslag' begrijpt, en een systeem waarvoor dit te complex en tegenstrijdig is. Daarom moet aan een CAD ontwerp informatie worden toegevoegd om alle informatie, zoals de werkingslengte, van een verkeersbord te kunnen digitaliseren. </p><br>
 </aside>  
 
@@ -203,7 +213,7 @@ De *gewenste ligging* volgens het ontwerp en het verkeersbesluit komt niet per s
 
 *Stakeholders: Bouwbedrijven*
 
-Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of verkeersborden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale [=Verkeerskundige informatie=] gepubliceerd, zodat het netwerk, de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en verkeersborden altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
+Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of verkeersborden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale [=Verkeerskundige informatie=] gepubliceerd, zodat het [=verkeerskundige wegennetwerk=], de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en verkeersborden altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
 
 
 ## Gebruiksfase

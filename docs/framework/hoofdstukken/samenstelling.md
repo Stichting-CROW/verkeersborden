@@ -135,40 +135,29 @@ In de leermaterialen wordt het samenstellen en beheren van [=verkeerskundige inf
 
 
 ### Voorbeeld-implementatie
-De voorbeeld-implementatie bestaat uit een dataset waarin het informatiemodel is toegepast op een (fictief) wegennetwerk, met bijbehorende kaartvisualisaties van de wegen, zones, routes en fysiek aanwezige verkeersborden. 
+De voorbeeld-implementatie bestaat uit een dataset waarin het informatiemodel is toegepast op een (fictief) [=verkeerskundig wegennetwerk=], met bijbehorende kaartvisualisaties van de wegen, zones, routes en fysiek aanwezige verkeersborden. 
 
 In de voorbeeld dataset zitten gebreken (niet actueel / betrouwbaar / compleet), die met de controlemeachnismes gevonden kunnen worden. 
 
 ### Controlemechanismes
-De controlemechanismes voor de verkeerskundige informatie bestaan uit [=SPARQL=] queries waarmee onderzocht kan worden of de [=verkeerskundige informatie=] actueel, betrouwbaar en compleet is. Dit gaat om het eruit filteren van fouten, die door een systeem op logische wijze eruit gefilterd kunnen worden. Dit neemt niet weg, dat altijd een menselijke controle moet worden gedaan omdat een fout, zoals het volledig niet opnemen van een verkeersregel, niet ontdekt kan worden door een systeem, maar wel door de wegbeheerder die een gebied kent. Voorbeelden van fouten die er wel uitgehaald kunnen worden:
+Het doel van controlemechanismes is:
+* Regels geven voor het toepassen van het informatiemodel, bijvoorbeeld dat altijd informatie x,y en z nodig is zodat de de wettelijke maximumsnelheid kan worden afgeleid;
+* Een mechanisme aanbieden, waarmee een dataset met een wijziging in de [=verkeerskundige informatie=] kan worden gecontroleerd. Dit gaat er wel van uit, dat de informatie in linked data beschikbaar is. Dit mechanisme kan worden gebruikt door applicatiebouwers. 
+* Met ditzelfde mechanisme kan ook gebruikt worden om te onderzoeken welke informatie op dit moment niet beschikbaar is in bijvoorbeeld het [=NWB=] of in een systeem van een wegbeheerder, terwijl dit volgens het informatiemodel wel nodig is voor SMART Mobility systemen. Dit vraagt om een "vertaling" van de informatie uit de [=NWB=]-database naar het [=Informatiemodel Verkeerstekens=]. 
 
-* Een eindpunt is gegeven, dat niet binnen een wegvak valt;
-* Een wegvak waaraan wordt gerefereerd heeft geen "RVV 1990-wegtype" gekregen (autosnelweg/autoweg/binnen de kom / buiten de kom);
-* Een route is niet aaneensluitend gedefinieerd (er mist een wegvak)
+De controlemechanismes voor de verkeerskundige informatie bestaan uit [=SPARQL=] queries waarmee onderzocht kan worden of de [=verkeerskundige informatie=] voldoet aan de regels van het informatiemodel. Dit neemt niet weg, dat altijd een menselijke controle moet worden gedaan omdat niet alle fouten automatisch kunnen worden ontdekt. Bijvoorbeeld het volledig niet opnemen van een verkeersregel over een parkeerverbod kan niet ontdekt kan worden door een systeem, maar wel door de wegbeheerder die een gebied kent. Voorbeelden van fouten die er wel uitgehaald kunnen worden:
+
+* Een eindpunt is gegeven, dat niet aansluit op het wegvak;
+* Een wegvak waaraan wordt gerefereerd heeft geen informatie gekregen waaruit de wettelijke maximumsnelheid kan worden afgeleid (deze verkeersregel is altijd nodig);
+* Een route is niet aaneensluitend gedefinieerd (er mist een wegvak);
 * Bij een verkeersregel is geen fysiek bord aangegeven, terwijl dat wettelijk gezien wel aanwezig moet zijn. 
 
-Om de controlemechanismes eenvoudig te kunnen gebruiken als wegbeheerder is een applicatie nodig, die visueel ondersteunt bij het controleren van de [=verkeerskundige informatie=]. Dit is buiten scope van het informatiemodel. De geleverde code kan wel gebruikt worden bij het inrichten van een dergelijke applicatie.
+
+Om de controlemechanismes eenvoudig te kunnen gebruiken als wegbeheerder is een applicatie nodig, die visueel ondersteunt bij het controleren van de [=verkeerskundige informatie=]. Dit is buiten scope van het informatiemodel. 
+
 
 ### Helpdesk
-Voor eindgebruikers van het informatiemodel (databeheerders en gebruikers) wordt een helpdesk ingericht bij CROW. Omdat wegebeheerders ook via [=KOOP=] en het [=NWB=] ondersteund worden bij publicatie van de verkeerskundige informatie is de verwachte omvang van het aantal hulpvragen beperkt.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Voor eindgebruikers van het informatiemodel (databeheerders en gebruikers) wordt een helpdesk ingericht bij CROW. Omdat wegbeheerders ook via [=KOOP=] en het [=NWB=] ondersteund worden bij publicatie van de verkeerskundige informatie is de verwachte omvang van het aantal hulpvragen beperkt.
 
 
 ## Gebruikersondersteuning datagebruikers
@@ -180,7 +169,7 @@ Voor eindgebruikers van het informatiemodel (databeheerders en gebruikers) wordt
 
 
 ### Gids datagebruik
-In de gids voor datagebruyik wordt het gebruiken van [=verkeerskundige informatie=] in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen (["How-to guides"](https://documentation.divio.com/how-to-guides/)). De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van [=verkeerskundige informatie=]. Concepten worden niet toegelicht, dit staat al in de technische documentatie. Deze documentatie is beschreven voor beginners.
+In de gids voor datagebruik wordt het gebruiken van [=verkeerskundige informatie=] in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen (["How-to guides"](https://documentation.divio.com/how-to-guides/)). De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van [=verkeerskundige informatie=]. Concepten worden niet toegelicht, dit staat al in de technische documentatie. Deze documentatie is beschreven voor beginners.
 
 Om [=verkeerskundige informatie=] te kunnen gebruiken tijdens het rijden, is een SMART Mobility applicatie nodig. Dat is buiten de scolpe van het informatiemodel. Daarom is deze gids geschikt voor softwareontwikkelaars van SMART Mobility systemen.
 
@@ -189,7 +178,7 @@ Om [=verkeerskundige informatie=] te kunnen gebruiken tijdens het rijden, is een
 In de leermaterialen wordt het gebruiken van [=verkeerskundige informatie=] op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je [=verkeerskundige informatie=] gebruikt (["Tutorials"](https://documentation.divio.com/tutorials/)). De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen. 
 
 ### Zoekmechanismes
-De zoekmechanismes bestaan uit [=SPARQL=] queries waarmee in [=verkeerskundige informatie=] gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen.
+De zoekmechanismes bestaan uit [=SPARQL=] queries waarmee in [=verkeerskundige informatie=] gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de [=verkeerskundige informatie=] beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
 
 
 ## Sluit de feedback loop

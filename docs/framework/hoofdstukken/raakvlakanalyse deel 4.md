@@ -3,7 +3,7 @@
 ## NWB(+)
 
 <dfn data-lt="Nationaal Wegen Bestand|NWB">NWB</dfn>
-<dd> Nationaal Wegen Bestand. Een open geografisch databestand van een wegennetwerk bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals zoals Schiphol en Havenbedrijf Rotterdam. Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
+<dd> Nationaal Wegen Bestand. Een open geografisch databestand van een [=verkeerskundig wegennetwerk=] bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals Schiphol en Havenbedrijf Rotterdam. Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen. Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland. Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies. Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
 
 <dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">NWB+</dfn>
 <dd>Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a></dd>
@@ -15,24 +15,26 @@ Het NWB gebruikt op dit moment een eigen informatiemodel, wat aansluit op de eig
 
 <figure>
 <img src="./hoofdstukken/media/nwb.png">
-<figcaption>Het Wegennetwerk: visualisatie van de informatie in het NWB+.</caption>
+<figcaption>Het [=Verkeerskundig wegennetwerk=]: visualisatie van de informatie in het NWB+.</caption>
 </figure>
 
 
-### NWB-Wegvak
+### <dfn data-lt="NWB-Wegvak|NWB-wegvakken">NWB-Wegvak</dfn>
 
-<dfn data-lt="NWB-Wegvak|NWB-wegvakken">NWB-Wegvak</dfn>
-<dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. Verandering van een eigenschap van een wegvak resulteert in splitsing in twee of meerdere wegvakken. Juncties dus splitsingen van wegvakken komt voor bij gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen. </dd>
+<dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt. </dd>
+<dd>Een wegvak in het Nationaal Wegen Bestand (NWB) is Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files). </dd>
+<dd>Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting. Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig. 
+
 
 Daarbij gelden momenteel de volgende regels:
 * Wanneer een weg uit één [=rijbaan=] bestaat, ook als die in beide richtingen bereden kan worden, is deze in het NWB opgenomen als één wegvak. 
 * Wanneer een weg meerdere [=rijbanen=] heeft, wat vooral het geval is bij Rijkswegen, worden deze rijbanan als aparte wegvakken in het bestand verwerkt. 
 * Het Nationaal Wegen Bestand is mog niet tot op het niveau van een [=rijstrook=] gedifferentieerd; een rijbaan met meerdere rijstroken is als één wegvak opgenomen in het NWB. Op het hoofdwegennet wordt wel het aantal rijstroken gedefinieerd als attribuut van het wegvak.
 
-### NWB-Junctie
+### <dfn data-lt="NWB-Junctie|NWB-juncties">NWB-Junctie</dfn>
 
-<dfn data-lt="NWB-Junctie|NWB-juncties">NWB-Junctie</dfn>
-<dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale netwerk gekregen.</dd>
+<dd>het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB). In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale [=verkeerskundige wegennetwerk=] gekregen.</dd>
+<dd>Juncties komen voor bij kruispunten, gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen zoals straatnaamwijziging. </dd>
 
 
 

@@ -33,9 +33,9 @@ De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden wet
 <dd>Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de [=rijbaan=] van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken. Definitie conform de [=RVV 1990=]</dd>
 <dd>De rijstrook is het begrensde gedeelte van de rijbaan dat voldoende breed is voor een rij van het voor dat gedeelte bestemde verkeer. <a href="https://data.crow.nl/thesaurus/term/66A00E27-6E73-4385-A4AB-EC20413581D9">Bron: CROW thesaurus</a></dd>
 
-<aside class="note" title="Geometrische nauwkeurigheid netwerk">
-Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: 
-<ol><li>Het netwerk en de locaties van verkeersborden ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: een systeem moet wel vóór de drempel de snelheid verlagen, niet erna;
+<aside class="note" title="Geometrische nauwkeurigheid [=verkeerskundig wegennetwerk=]">
+Het [=verkeerskundige wegennetwerk=] en de locaties van verkeersborden ten opzichte van het netwerk moeten geometrisch vrij nauwkeurig overeen komen met de werkelijkheid: 
+<ol><li>Een systeem moet wel vóór de drempel de snelheid verlagen, niet erna;
 <li>Als op een [=rijstrook=] een afwijkende [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, moet het duidelijk zijn voor het systeem op welke [=rijstrook=] het zich bevindt. Op dit moment wordt de geometrie van een rijstrook nog niet vastgelegd in het [=NWB=] en zal het systeem op basis van visuele input moeten kunnen bepalen op welke rijstrook het zich bevindt.  </li>
 </aside> 
 
@@ -56,7 +56,7 @@ Als in de toekomst een [=NWB-Wegvak=] maar één rijstrook weergeeft, hoeft de n
 
 
 <aside class="note" title="Levels of Detail">
-Verschillende <i>gebruikers</i> van de [=verkeerskundige informatie=] hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één hartlijn van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor [=SMART Mobility=] geldt dat het het netwerk het liefst gedetailleerder moet zijn met een polygoon per [=rijstrook=]. Omdat het [=NWB=] op dit moment geen rijstroken weergeeft, zal het systeem zelf visueel moeten vaststellen hoeveel rijstroken er zijn en op welke rijstrook het zich bevindt. Dit kan lastig zijn.
+Verschillende <i>gebruikers</i> van de [=verkeerskundige informatie=] hebben een verschillend Level of Detail nodig. Een Wegontwerper heeft aan één hartlijn van de weg voldoende, vooral als informatie uit het alignement is toegevoegd. Hiermee kan de wegligging gereconstrueerd worden. Voor [=SMART Mobility=] geldt dat het het [=verkeerskundige wegennetwerk=] het liefst gedetailleerder moet zijn met een polygoon per [=rijstrook=]. Omdat het [=NWB=] op dit moment geen rijstroken weergeeft, zal het systeem zelf visueel moeten vaststellen hoeveel rijstroken er zijn en op welke rijstrook het zich bevindt. Dit kan lastig zijn.
 
 Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
 
@@ -101,7 +101,7 @@ De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rij
 
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat gemeten in meters vanaf de [NWB-junctie]. 
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat: boven de weg, of links of rechts naast de weg.
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWM-junctie] op het startpunt van de rijrichting aan te duiden bij het bord.
+* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWB-junctie] op het startpunt van de rijrichting aan te duiden bij het bord.
 
 <aside class="note" title="Locatieaanduiding verkeersbord">
 <br>
@@ -148,9 +148,9 @@ Het formaat is SVG, dat zijn schaalbare vectorafbeeldingen die op het web en in 
 
 ### Adviessnelheid+
 De wegbeheerder heeft de mogelijkheid een [=adviessnelheid] te geven met een A4 verkeersbord.
-Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over de gehele lengte van een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegevens, los van de individuele waarschuwingen bij de gevaarlijke punten.
+Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over (een deel van) een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegeven, los van de individuele waarschuwingen bij de gevaarlijke punten.
 
-* Het informatiemodel MOET de mogelijkheid bieden bij een (deel van) een [=NWB-wegvak=] een [=adviessnelheid=] mee te geven, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
+* Het informatiemodel MOET de mogelijkheid bieden bij (een deel van) een [=NWB-wegvak=] een [=adviessnelheid=] mee te geven, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
 
 <aside class="note" title="Machineleesbare informatie">
   <p> Een <b>wegbeheerder</b> die een drempel wil aanleggen, kan daarmee twee verschillende doelen hebben: </p>
