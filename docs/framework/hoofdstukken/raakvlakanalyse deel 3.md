@@ -1,7 +1,7 @@
 # Raakvlak: Standaarden
 
 
-## Informatiemodel
+## Informatiemodellering
 In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop technisch wordt aangesloten op andere informatiemodellen.
 
 ### NEN2660-2:2022
@@ -45,7 +45,9 @@ Het MIM gaat uit van een begrippenkader en een explicietere modellering van een 
 ### CB-NL
 
 <dfn data-lt="CB-NL|Conceptenbibliotheek Nederland">CB-NL</dfn>
-<dd>De Nederlandse Conceptenbibliotheek voor de gebouwde omgeving, een digitale, semantische bibliotheek beheerd door BIM loket. Deze bevat uniformerende definities en legt via beschrijvingen verbindingen tussen standaarden, normen, objecten en producten van bestaande bibliotheken. CB-NL is bedoeld om ontologien zoals het [=Informatiemodel Verkeerstekens=] of objecttypenbibliotheken van asset managers en bouwbedrijven met elkaar te kunnen verbinden. Een goedwerkende CB-NL kan informatie uitwisselen en delen tussen bouwdisciplines en -partijen aanzienlijk versnellen. CB-NL is gratis toegankelijk via internet. Zie ook <a href="https://www.bimloket.nl/p/98/CB-NL">deze website</a> </dd>
+<dd>De Nederlandse Conceptenbibliotheek voor de gebouwde omgeving, een digitale, semantische bibliotheek beheerd door BIM loket. Deze bevat uniformerende definities en legt via beschrijvingen verbindingen tussen standaarden, normen, objecten en producten van bestaande bibliotheken. CB-NL is bedoeld om ontologien zoals het [=Informatiemodel Verkeerstekens=] of objecttypenbibliotheken van asset managers en bouwbedrijven met elkaar te kunnen verbinden. Een goedwerkende CB-NL kan informatie uitwisselen en delen tussen bouwdisciplines en -partijen aanzienlijk versnellen. CB-NL is gratis toegankelijk via internet. Zie ook <a href="https://www.bimloket.nl/p/98/CB-NL">de website van CB-NL</a> </dd>
+
+CB-NL is nog in een pilot / ontwikkelingsfase en wordt nog niet toegepast. 
 
 
 **Raakvlaktype: Gezamenlijk beheer**
@@ -53,8 +55,8 @@ Het MIM gaat uit van een begrippenkader en een explicietere modellering van een 
 CB-NL is de logsiche plek om relaties tussen het [=Informatiemodel Verkeerstekens=] en andere standaarden zoals NLCS te publiceren, waarbij een afspraak moet worden gemaakt over het beheer van de relatie tussen beide standaarden. Voorwaarde is wel dat een standaard gepubliceerd is als ontologie in linked data.
 
 
-## Inhoudelijk
-Er bestaan verschillende andere informatiemodellen die wegkenmerken of verkeersborden beschrijven. Dat zijn raakvlakken of juist ijkingsbronnen om het [=Informatiemodel Verkeerstekens=] beter vorm te geven.
+## Domeinstandaarden
+Er bestaan verschillende andere domeinstandaarden of informatiemodellen die wegkenmerken of verkeersborden beschrijven. Dat zijn raakvlakken of juist ijkingsbronnen om het [=Informatiemodel Verkeerstekens=] beter vorm te geven.
 
 ## Ontwerpfase
 
@@ -71,7 +73,7 @@ Circa 30% van de ontwerptekeningen bij verkeersbesluiten komen uit CAD-systemen.
 
 **Raakvlaktype: Gebruik informatiemodel**
 
- BIM loket wil op verzoek van het Ministerie van Infrastructuur en Waterstaat de verkeersborden opnemen in de NLCS standaard zodra deze gepubliceerd worden in het [=Informatiemodel Verkeerstekens=]. Het betreft dan de kijkrichting, positie en het type verkeersbord met onderbord. Vervolgens wil het BIM-loket nadere afspraken maken met de leveranciers van CAD-systemen om digitale informatie over de verkeersborden beschikbaar te kunnen maken voor andere systemen, waaronder potentieel de [verkeersbesluiten applicatie] van [=KOOP=]. 
+ BIM loket wil op verzoek van het Ministerie van Infrastructuur en Waterstaat de verkeersborden opnemen in de NLCS standaard zodra deze gepubliceerd worden in het [=Informatiemodel Verkeerstekens=]. Het betreft dan de kijkrichting, positie en het type verkeersbord met onderbord. Vervolgens wil het BIM-loket nadere afspraken maken met de leveranciers van CAD-systemen om digitale informatie over de verkeersborden beschikbaar te kunnen maken voor andere systemen, waaronder potentieel de [=verkeersbesluiten applicatie=] van [=KOOP=]. 
 
 ### ASVV
 
@@ -119,8 +121,6 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 
 De NEN3381:2020 wordt beheerd door de [=normcommissie Verkeerstekens=]. 
 
-**Raakvlaktype: Bron voor informatiemodel** Bron voor de [=statische verkeersborden=] die genomineerd zijn om in de wet te worden opgenomen
-
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
 In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de NEN3381:2020 zodat duidelijk is op welk type [=verkeersteken=] de eisen in deze NEN-norm betrekking hebben. 
@@ -137,8 +137,7 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 
 **Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
 
-### IMBOR
-<dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR">IMBOR</dfn>
+### <dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR">IMBOR</dfn>
 <dd> Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden. De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://docs.crow.nl/onto-verkenner/imbor/#/view">deze viewer</a>  </dd>
 
 <aside class="note" title="Informatiemodel, data en applicaties"><ol><li><b>Informatiemodel</b>: IMBOR is alleen een informatiemodel, géén bron van gegevens over bijvoorbeeld de locatie van in beheer zijnde verkeersborden. </li>
@@ -147,6 +146,8 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 </aside>
 
 In IMBOR zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebakening=] en [=bewegwijzering=] en daarnaast ook [=wegmarkeringen=]. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van borden die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object. De soorten verkeerstekens zijn bepaald met gebruikers, op basis van hun bestaande areaalgegevens. 
+
+* Het Informatiemodel Verkeerstekens MOET aansluiten op IMBOR zodat wegbeheerders geen tegenstrijdigheden ervaren bij het gebruiken van de informatiemodellen.
 
 **Raakvlaktype: Gezamenlijk beheer**
 
@@ -192,13 +193,16 @@ IMWV staat voor Informatie Model Wegen en Verkeer.
 
 ### Dataspecs INSPIRE 
 
-De dataspecificaties van [=INSPIRE=], infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op 
-[deze pagina](https://inspire.ec.europa.eu/Themes/115/2892) met UML-diagrammen en uitgebreide technische documentatie.
+De dataspecificaties van [=INSPIRE=], infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op [deze pagina](https://inspire.ec.europa.eu/Themes/115/2892) met UML-diagrammen en uitgebreide technische documentatie.
 
-Alleen het Wegennetwerk, uit het thema Transportnetwerken is hierbij relevant.
-De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
+Voorbeelden van relevante specificaties:
+* Het Wegennetwerk, uit het thema Transportnetwerken
+* De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
+* Het [Linear reference system](https://inspire.ec.europa.eu/glossary/LinearReferenceSystem): "Reference system that identifies a location by reference to a segment of a linear spatial object and distance along that segment from a given point [ISO 19116 - modified]". 
 
 **Raakvlaktype: Bron voor informatiemodel** Bron voor de definitie van wegkenmerken die vanuit verkeerskundig perspectief moeten worden opgenomen in het informatiemodel.
+
+* Het Informatiemodel Verkeerstekens MOET waar relevant gebruik maken van de concepten en definities uit INSPIRE
 
 ### Data.vlaanderen.be
 
@@ -248,3 +252,5 @@ Deze norm is niet openbeschikbaar. Voor Nederlands is er door [=NDW=] een Nederl
 * Milieuzones
 
 **Raakvlaktype: Bron voor informatiemodel** De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=]. Toch moet worden gecontroleerd of onderdelen van het informatiemodel al beschreven zijn in deze norm, zodat hier op kan worden aangesloten.
+
+* Het Informatiemodel Verkeerstekens MOET waar relevant gebruik maken van de concepten en definities uit DATEX II
