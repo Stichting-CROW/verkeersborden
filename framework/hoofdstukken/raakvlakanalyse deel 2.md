@@ -11,7 +11,7 @@
 Het RVV 1990 is de primaire bron voor [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en bijbehorende verkeersborden die worden opgenomen in het [=Informatiemodel Verkeerstekens=].
 
 In de RVV staan de volgende in het [=Informatiemodel Verkeerstekens=] op te nemen verkeersregels:
-* Wettelijke maximum snelheid (2 borden)
+* Wettelijke maximum snelheid (2 borden met 11 snelheden )
 * Adviessnelheid (2 borden)
 * Voorrang verlening (6 borden)
 * Stoppen (2 borden)
@@ -38,12 +38,15 @@ Daarnaast op te nemen in het [=Informatiemodel Verkeerstekens=]
 ## BABW
 
 <dfn data-lt="BABW|Uitvoeringsvoorschriften BABW inzake verkeerstekens">BABW</dfn>
-<dd> Besluit Administratieve Bepalingen inzake het Wegverkeer. De Algemene maatregel van bestuur waarbij regels worden gesteld voor het nemen van verkeersbesluiten en verkeersmaatregelen <a href="https://data.crow.nl/thesaurus/term/5BB62D05-7691-4A69-8950-740AA16AFD45">bron:CROW thesaurus</a>. De BABW bevat regels over de plaatsing en uitvoering/materialisatie van verkeersborden. BABW verwijst naar de [=NEN3381:2020=] voor visualisaties.  Zie ook <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01">deze website</a></dd>   
+<dd> Besluit Administratieve Bepalingen inzake het Wegverkeer. De Algemene maatregel van bestuur waarbij regels worden gesteld voor het nemen van verkeersbesluiten en verkeersmaatregelen <a href="https://data.crow.nl/thesaurus/term/5BB62D05-7691-4A69-8950-740AA16AFD45">bron:CROW thesaurus</a>. <a href="https://wetten.overheid.nl/BWBR0004826/2021-07-01">Lees hier de wetteksten</a></dd>
+<dd>De BABW bevat regels over de plaatsing en uitvoering/materialisatie van verkeersborden. BABW verwijst naar de [=NEN3381:2020=] voor visualisaties van de fysiek te plaatsen verkeersborden.  Zie ook <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3&z=2012-07-01&g=2012-07-01">Paragraaf 3. Algemene bepalingen ten aanzien van uitvoering van verkeersborden</a></dd>   
 
 
 **Raakvlaktype: Bron voor informatiemodel**
 
-* De afbeeldingen van de verkeersborden in het informatiemodel MOETEN gevisualiseerd zijn conform de [=BABW=]
+* Verkeersborden MOETEN voldoen aan [§ 1 Besluit administratieve bepalingen inzake het wegverkeer (BABW)](https://wetten.overheid.nl/jci1.3:c:BWBR0004826&hoofdstuk=II&paragraaf=1&z=2021-07-01&g=2021-07-01)
+* Onderborden MOETEN voldoen aan [§ 2 Besluit administratieve bepalingen inzake het wegverkeer (BABW)](https://wetten.overheid.nl/jci1.3:c:BWBR0004826&hoofdstuk=II&paragraaf=2&z=2021-07-01&g=2021-07-01)
+* Zoneborden MOETEN voldoen aan [§ 3 Besluit administratieve bepalingen inzake het wegverkeer (BABW)](https://wetten.overheid.nl/jci1.3:c:BWBR0004826&hoofdstuk=II&paragraaf=3&z=2021-07-01&g=2021-07-01)
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden of een bord bedoeld is als [=voorwaarschuwingsbord=].
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden of een bord bedoeld is als [=herhalingsbord=].
 

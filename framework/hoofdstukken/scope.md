@@ -4,7 +4,7 @@
 
 Korte termijn doel van het [=Informatiemodel Verkeerstekens=] is:
 
-> Zorgen dat **verkeersregels, waarschuwingen, snelheidsadviezen en verkeersborden** op eenduidige manier gepubliceerd kunnen worden in relatie tot het wegennetwerk, **zodat deze informatie machine-verwerkbaar is**. 
+> Zorgen dat **verkeersregels, waarschuwingen, snelheidsadviezen en verkeersborden** op eenduidige manier gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], **zodat deze informatie machine-verwerkbaar is**. 
 
 In de toekomst, na 2023, wordt de horizon verbreed naar [=SMART mobility=], met als doel dat auto en automobilist veilig en zuinig kunnen rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende, digitaal beschikbare, verkeersregels. Alle na 2022 gefabriceerde auto's voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/).
 
@@ -73,7 +73,7 @@ In het informatiemodel wordt secundair rekening gehouden met het opstellen en be
 
 ### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het wegennetwerk bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het wegennetwerk zoals dat gepubliceerd wordt bij het [=NWB=] met [=NWB-wegvakken=] en [=NWB-juncties=]. Het informatiemodel van het wegennetwerk zelf is wel buiten scope. 
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het [=verkeerskundige wegennetwerk=] bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het [=verkeerskundige wegennetwerk=] zoals dat gepubliceerd wordt bij het [=NWB=] met [=NWB-wegvakken=] en [=NWB-juncties=]. Het informatiemodel van het [=verkeerskundige wegennetwerk=] zelf is wel buiten scope. 
 
 
 ### RVV 1990+ 
@@ -120,7 +120,7 @@ Vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen sco
 Buiten scope zijn de dynamische verkeersborden.
 
 <dfn data-lt="dynamische verkeersborden|dynamisch verkeersbord">Dynamisch verkeersbord</dfn>
-<dd>Een verkeersbord weergegeven op een electronisch signaleringsbord, waarmee telkens wisselende afbeedlingen dan we teksten getoond kunnen worden.</dd></dfn>
+<dd>Een verkeersbord weergegeven op een electronisch signaleringsbord, waarmee telkens wisselende afbeedlingen dan wel teksten getoond kunnen worden.</dd></dfn>
 
 
 ### Wegmarkeringen
@@ -174,29 +174,30 @@ Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijz
 
 <aside class="note" title="Informatieleveringsspecificatie">
 In een Informatieleveringsspecificatie staat:<ul>
-<li>Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
-<li>Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het verkeersnetwerk. </li>
+<li>Welke informatie minimaal verplicht is uit het [=Informatiemodel Verkeerstekens=] of het model van het [=verkeerskundige wegennetwerk=]. </li>
+<li>Welke informatie mag worden toegevoegd uit het [=Informatiemodel Verkeerstekens=] of het model van het [=verkeerskundige wegennetwerk=] </li>
 <li>In welk formaat of welke taal de wijziging kan worden aangeleverd</li>
 <li>Of informatie mag worden toegevoegd uit een eigen informatiemodel</li> </ul> 
 </aside> 
 
 
 ### Transactie
-Als steeds de actuele verkeerskundige informatie gepubliceerd wordt, moeten wijzigingen door de wegbeheerder aan het publicatieplatform worden aangeboden. De wegbeheerder moet hiervoor een wijzigingstransactie starten.
+Als de actuele verkeerskundige informatie gepubliceerd wordt bij een landelijke registratie, moet het systeem van de wegbeheerder (of het systeem dat verkeersbesluiten officiëel publiceert) een wijzigingstransactie kunnen aangaan met de landelijke registratie.
 
-De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=] zijn **buiten scope**
+De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=] zijn **buiten scope**, het informatiemodel beschrijft dus niet transactie-informatie zoals organisaties, rollen, personen en communicatieflows met berichten.
 
 <aside class="note" title="Transactie bij een datalevering">
-Een hapy flow van een transactie is bijvoorbeeld als volgt:
-<ul>
-<li>De wegbeheerder biedt de wijziging aan en vraagt om deze te publiceren.</li> 
-<li>De beheerder van de landelijke registratie belooft dit te zullen doen na validatie.</li> 
-<li>Het Systeem controleert of aan alle leveringsvoorwaarden is voldaan en of de aangeboden wijziging aansluit op de ongewijzigde netwerkdelen.</li> 
-<li>De beheerder van de landelijke registratie geeft aan dat de dataset voldoet aan alle voorwaarden en toont welke wijzigingen worden doorgevoerd.</li> 
-<li>De wegbeheerder accepteert de wijzigingsvoorstellen van de beheerder van de landelijke registratie.</li> </ul> 
-
-Daarnaast is voor een transactie een "Aanleverinstructie" nodig waarin staat:
-- Hoe een wijziging kan worden aangeleverd: via VISI, een website, via een API, met adressering van de afnemer en het te volgen transactieprotocol
+Een hapy flow van een transactie is bijvoorbeeld als onderstaand, de meeste stappen zijn volledig geautomatiseerd.
+<ol>
+<li>Het systeem van de wegbeheerder levert de wijziging aan de landelijke registratie en vraagt om deze te publiceren.</li> 
+<li>De landelijke registratie bevestigt het verzoek te hebben ontvangen.</li> 
+<li>De landelijke registratie controleert of aan alle leveringsvoorwaarden is voldaan. </li> 
+<li>De landelijke registratie accepteert de dataset.</li> </ol>
+Daarnaast is voor een transactie een "Aanleverinstructie" nodig waarin staat hoe een wijziging kan worden aangeleverd
+<ul><li> Via welke API (Application Programming Interface) het systeem van de wegbeheerder kan communiceren met de landelijke registratie</li>
+<li>Welke informatie geleverd moet worden (zowel van de verkeerskundige informatie als de transactie-informatie) </li>
+<li>In welk uitwisselformaat de informatie geleverd moet worden</li>
+<li>Of eerst de wijziging in het [=verkeerskundige wegennetwerk=] en dan de wijziging in de verkeersregels en verkeersborden moet worden geleverd of dat dit gelijktijdig kan. </li></ul>
 </aside> 
 
 

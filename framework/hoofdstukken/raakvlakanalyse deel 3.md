@@ -95,7 +95,7 @@ CROW publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijne
 In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen het Handboek Wegontwerp zodat op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van het handboek naar de website met definites en afbeeldingen van verkeersborden worden verwezen. 
 
 <aside class="note" title="Vanuit [=Informatiemodel Verkeerstekens=] verwijzen naar Handboek Wegontwerp en ASVV">
-Om een betere, samenhangende digitale informatievoorziening te creëren zou het een goede aanvulling kunnen zijn, om vanuit het [=Informatiemodel Verkeerstekens=] en Verkeersbesluiten te kunnen verwijzen (met links) naar het Handboek Wegontwerp en de ASVV voor instructies (eisen) over het nemen van verkeersbesluiten, het afwegingskader voor een specifiek type besluit enzovoorts. Wegbeheerders worden door deze links geholpen met het vinden van de juiste informatie of kunnen bij een verkeersbesluit vastleggen of en hoe ze zich aan deze instructies hebben gehouden (verificatie van de eisen, vastleggen van de afwegingen bij het verkeersbesluit). Dit verrijkt de netwerkdata met gegevens over de reden waarom deze verkeersbesluiten genomen worden, op een gestructureerde manier. In combinatie met andere gegevens, bijvoorbeeld over files of ongelukken, kan dit leiden tot steeds betere inzichten, eisen en afwegingskaders.<br>
+Om een betere, samenhangende digitale informatievoorziening te creëren zou het een goede aanvulling kunnen zijn, om vanuit het [=Informatiemodel Verkeerstekens=] en Verkeersbesluiten te kunnen verwijzen (met links) naar het Handboek Wegontwerp en de ASVV voor instructies (eisen) over het nemen van verkeersbesluiten, het afwegingskader voor een specifiek type besluit enzovoorts. Wegbeheerders worden door deze links geholpen met het vinden van de juiste informatie of kunnen bij een verkeersbesluit vastleggen of en hoe ze zich aan deze instructies hebben gehouden (verificatie van de eisen, vastleggen van de afwegingen bij het verkeersbesluit). Dit verrijkt de [=verkeerskundige wegennetwerk=]informatie met gegevens over de reden waarom deze verkeersbesluiten genomen worden, op een gestructureerde manier. In combinatie met andere gegevens, bijvoorbeeld over files of ongelukken, kan dit leiden tot steeds betere inzichten, eisen en afwegingskaders.<br>
 <br>
 Dit vraagt wel om open publicatie van het Handboek Wegontwerp en de ASVV, zodat de informatie achter de links gevonden kan worden. Wat vraagt om een andere, structurele financiering van het beheer van Handboek Wegontwerp. Ook moet onderzocht worden of de systemen van gebruikers klaar zijn om gelinkte informatie goed weer te geven en wat de gebruikers nodig hebben.
 </aside>
@@ -146,7 +146,7 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 <li><b>Applicaties</b>: De met IMBOR gemodelleerde data over bijvoorbeeld wegvakken en verkeersborden kan worden gebruikt in applicaties. IMBOR is specifiek opgesteld voor de informatiebehoefte in areaalbeheerpakketten. Deze pakketten zijn gericht op het tactische en operationele beheer van de buitenruimte. Als een beheerder de verkeersborden in zijn/haar areaalbeheerapplicatie wil zien, kan de applicatie de bron waar de informatie wordt opgeslagen raadplegen.</li></ol>
 </aside>
 
-In IMBOR zijn 1331 soorten verkeersborden opgenomen in de categorien [=bebakening=] en [=bewegwijzering=] en daarnaast ook [=wegmarkeringen=]. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van boren  die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object.  
+In IMBOR zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebakening=] en [=bewegwijzering=] en daarnaast ook [=wegmarkeringen=]. Bij al deze objecten zijn attributen opgenomen opgenomen en waardelijsten. Het gaat dan om de gegevens van borden die in de beheerfase nodig zijn, zoals bijvoorbeeld datum plaatsing, beheerder of gewenst kwaliteitsniveau van het object. De soorten verkeerstekens zijn bepaald met gebruikers, op basis van hun bestaande areaalgegevens. 
 
 **Raakvlaktype: Gezamenlijk beheer**
 
@@ -241,9 +241,10 @@ Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborde
 ### Datex II
 
 https://www.datex2.eu/, Gepubliceerd als CEN 16157, deel 1 t/m 9. 
-Deze norm is niet openbeschikbaar. Voor Nederlands is er door NDW een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
+Deze norm is niet openbeschikbaar. Voor Nederlands is er door [=NDW=] een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
 
-* beborde omleiding
-* snelheidsbeperkingen (`SpeedManagement`)
+* Beborde omleiding
+* Snelheidsbeperkingen (`SpeedManagement`)
+* Milieuzones
 
 **Raakvlaktype: Bron voor informatiemodel** De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=]. Toch moet worden gecontroleerd of onderdelen van het informatiemodel al beschreven zijn in deze norm, zodat hier op kan worden aangesloten.

@@ -2,18 +2,18 @@
 
 De raakvlakanalyse beschijft in drie hoofdstukken welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
 
-1. Het functionele wegennetwerk en de fysieke ligging van de wegen.
+1. Het [=verkeerskundige wegennetwerk=] en de fysieke ligging van de wegen.
 2. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 ## Programma Netwerkregistratie
 
 <dfn data-lt="Programma Netwerkregistraties">Programma Netwerkregistraties</dfn>
-<dd>Het Programma Netwerkmanagement is een samenwerkingsverband; niet alleen van bronhouders en wegbeheerders van Gemeenten, Provincies, Waterschappen, RWS en het Ministerie van IenW, maar ook van een scala aan publieke en private makers en gebruikers van verkeerskundige wegendata.
+<dd>Het Programma Netwerkregistratie is een samenwerkingsverband; niet alleen van bronhouders en wegbeheerders van Gemeenten, Provincies, Waterschappen, RWS en het Ministerie van IenW, maar ook van een scala aan publieke en private makers en gebruikers van verkeerskundige wegendata.
 
-Het Programma Netwerkregistratie werkt aan het op orde brengen van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken. <a href="https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing">hun website</a></dd>
+Het Programma Netwerkregistratie werkt aan het op orde brengen van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken. <a href="https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing">Website Programma Netwerkregistratie</a></dd>
 
-Het verband met de [=NWB=]
-De eerste stap van de technische en inhoudelijke ontwikkeling van één samenhangende Netwerkregistratie Wegen zal zijn om samen met het NDW het bestaande Nationaal Wegen Bestand (NWB) door te ontwikkelen naar een NWB+ om alle wegbeheerders optimaal van de juiste, volledige en actuele verkeerskundige data te kunnen voorzien. 
+Het verband met het [=NWB=]:<br>
+De eerste stap van de technische en inhoudelijke ontwikkeling van één samenhangende Netwerkregistratie Wegen zal zijn om samen met het [=NDW=] het bestaande Nationaal Wegen Bestand (NWB) door te ontwikkelen naar een NWB+ om alle wegbeheerders optimaal van de juiste, volledige en actuele verkeerskundige data te kunnen voorzien. 
 
 **Raakvlaktype: Gezamenlijke ontwikkeling **
 
@@ -27,9 +27,18 @@ Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het programma o
 ## NDW
 
 <dt><dfn data-lt="NDW|Nationaal Dataportaal Wegverkeer">NDW</dfn>
-<dd>Het Nationaal Dataportaal Wegverkeer. Onder vlag van het NDW werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert. Zie ook <a href="https://www.ndw.nu/">hun website</a>   </dd>
+<dd>Het Nationaal Dataportaal Wegverkeer. Onder vlag van het NDW werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata. Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land. NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert. Zie ook <a href="https://www.ndw.nu/">De website van het NDW</a>   </dd>
 
-NDW levert veel verkeersgegevens, zowel actuele verkeersgegevens als historische gegevens (intensiteiten, puntsnelheden, reistijden) als situatieberichten (wegwerkzaamheden, brugopeningen, status (open/dicht) van spitsstroken, plusstroken en rijtstroken). NDW maakt gebruik van DATEX-II, een Europese standaard. Het NDW beheert de volgende voor dit document relevante databronnen:
+NDW levert veel verkeersgegevens:
+* Het actuele [=verkeerskundige wegennetwerk=]: het Nationaal Wegen Bestand ([=NWB=])
+* De actuele verkeersborden: [=Verkeersbordendata=]
+* Zowel actuele als historische verkeersgegevens over intensiteiten, puntsnelheden en reistijden;
+* Situatieberichten over wegwerkzaamheden
+* Status (open/dicht) van bruggen, spitsstroken, plusstroken en rijtstroken. 
+
+NDW maakt gebruik van DATEX-II, een Europese standaard. 
+
+Het NDW beheert de volgende voor dit document relevante databronnen:
 
 * [=NWB=]
 * [=Verkeersbordendata=]
@@ -45,7 +54,7 @@ Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het NDW opgeste
 <dfn data-lt="Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties|KOOP">KOOP</dfn>
 <dd>Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties. De primaire taak van KOOP is het rechtsgeldig bekendmaken en beschikbaar stellen van wet- en regelgeving van alle overheden van Nederland.  </dd>
 
-Verkeersbesluiten zijn dit zijn officiële overheidspublicaties. KOOP publiceert verkeersbesluiten en ontwikkelt een [=verkeersbesluiten applicatie=] voor het publiceren van (eenvoudige) [=Verkeerskundige informatie=] bij verkeersbesluiten.
+Verkeersbesluiten zijn officiële overheidspublicaties. KOOP levert de infrastructuur/website om onder andere verkeersbesluiten op te publiceren en ontwikkelt en beheert een [=verkeersbesluiten applicatie=] waarmee de wegbeheerder verkeersbesluiten kan aanmaken en publiceren. De [=verkeerskundige informatie=] bij een verkeersbesluit is in het algemeen in tekst of als PDF bijlage aanwezig en minder gestructureerd.
 
 **Raakvlaktype: Gebruik informatiemodel**
 KOOP kan bij het publiceren van verkeersbesluiten en bij het inrichten van een verkeersbesluiten applicatie het [=Informatiemodel Verkeerstekens=] gebruiken. KOOP denkt mee in een samenwerkingsverband waarin ook de ontwikkeling van het [=Informatiemodel Verkeerstekens=] besproken wordt.
