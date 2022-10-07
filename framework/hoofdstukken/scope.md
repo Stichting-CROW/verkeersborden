@@ -85,7 +85,11 @@ Bij het verkeersbord worden zaken vastgelegd die voor de [=weggebruiker=] van be
 * Het informatiemodel MOET de types en definities van de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] al opgenomen zijn in wetgeving, en welke nog niet.
 
-<div class="issue" data-number="159"></div>
+"Fantasieborden" zonder wettelijke basis zijn buiten scope. 
+
+<aside class="note" title="Nominaties voor verkeersborden">
+Openstaande vraag: Wie bepaalt wat de lijst is met issues die op de nominatie staan om opgenomen te worden in RVV1990?
+</aside>
 
 
 ### Statische verkeersborden
