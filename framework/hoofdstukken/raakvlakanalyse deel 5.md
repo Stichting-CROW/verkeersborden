@@ -24,6 +24,19 @@ Het [Voorbeeld gewenste situatie](https://verkeersbesluiten-demo.overheid.nl/dem
 <img src="./hoofdstukken/media/verkeersbesluitendemo.png">
 <figcaption>Gewenste situatie verkeersbesluit</caption>
 </figure>
+
+
+## ISA
+
+<dfn data-lt="Intelligente snelheidsondersteuning|ISA">Intelligente snelheidsondersteuning (ISA)</dfn>
+<dd> Een systeem om de bestuurder te helpen de juiste snelheid voor de wegomgeving aan te houden door hem specifieke en gepaste feedback te geven
+<dd> Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex%3A32019R2144">EU 2019/2144, art 3, lid 3</a></dd>
+
+Een ISA gebruikt een snelheidsbord-herkenning met behulp van een camera of GPS gebaseerde snelheidslimiet data van wegbeheerders. Een gebruiker wordt in de auto ondersteund, doordat het voertuig geen extra gas bijgeeft als de snelheidslimiet wordt bereikt, tenzij dat actief wordt gedaan door de gebruiker. Er is geen sprake van automatisch remmen. 
+
+De Europese Unie heeft in [=EU 2019-2144=] besloten om wel een snelheidsbeperking afdwingende versie te gaan voorschrijven, samen met een aantal andere veiligheidsmaatregelen voor voertuigen, verplicht in voertuigen die verkocht worden vanaf 2022. Dit zal van Wegbeheerders gaan vragen, om de [=verkeerskundige informatie=] beter actueel en compleet beschikbaar te maken. 
+
+Meer Nederlandstalige informatie kan worden gevonden in de (open) CROW Publicatie [Handreiking Intelligente Snelheids Assistent (ISA) voor wegbeheerders](https://www.crow.nl/kennis/bibliotheek-verkeer-en-vervoer/kennisdocumenten/handreiking-intelligente-snelheids-assistent-isa-v)
  
 
 
