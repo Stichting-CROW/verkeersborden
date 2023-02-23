@@ -243,9 +243,11 @@ Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborde
 
 
 ### Datex II
+<dfn data-lt="Datex II">Datex II</dfn>
+<dd> DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's</dd>
 
 https://www.datex2.eu/, Gepubliceerd als CEN 16157, deel 1 t/m 9. 
-Deze norm is niet openbeschikbaar. Voor Nederlands is er door [=NDW=] een Nederlands profiel opgesteld. Mogelijke relevante aspecten:
+Deze norm is niet openbeschikbaar. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. Mogelijke relevante aspecten:
 
 * Beborde omleiding
 * Snelheidsbeperkingen (`SpeedManagement`)
