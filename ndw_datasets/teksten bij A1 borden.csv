@@ -1,23 +1,23 @@
-﻿tekst sign;Aantal voorkomens bij A1 rvvCode;;
-560;1;;
-2699;1;;
-5007;1;;
-16837;1;;
-6 - 19;2;;
-6-19;1;;
-19-6;2;;
-!LET OP! Voetgangers;1;;
-(BROM) FIETSERS OP RIJBAAN;2;;
-(brom)fietsers geef ze de ruimte;1;;
-dit zijn borden met een pictogram;;21;;
-6 - 19 h";1;;
-6-19h;6-19h";1;;
-geen openbare parkeerplaats";1;;
-herhaling";1;;
-onleesbaar";1;;
-onleesbaar;alleen in de vakken";1;;
-wegsleepregeling van kracht";1;;
-06-19 h;06-19 h";1;;
+tekst sign,Aantal voorkomens bij A1,rvvCode
+560,1,
+2699,1,
+5007,1,
+16837,1,
+6 - 19,2,
+6-19,1,
+19-6,2,
+!LET OP! Voetgangers,1,
+(BROM) FIETSERS OP RIJBAAN,2,
+(brom)fietsers geef ze de ruimte,1,
+dit zijn borden met een pictogram,21,
+6 - 19 h,1,
+6-19h,"6-19h""",
+geen openbare parkeerplaats,1,
+herhaling,1,
+onleesbaar,1,
+onleesbaar;alleen in de vakken,1,
+wegsleepregeling van kracht,1,
+06-19 h,"06-19 h""",1,
 06-19h;1;;
 1 km;bij nat wegdek";1;;
 1,5 km;1;;
