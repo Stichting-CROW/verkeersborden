@@ -18,16 +18,16 @@ onleesbaar,1,
 onleesbaar;alleen in de vakken,1,
 wegsleepregeling van kracht,1,
 06-19 h,"06-19 h""",1,
-06-19h;1;;
-1 km;bij nat wegdek";1;;
-1,5 km;1;;
-100 m;5;;
-1000 m;bij nat wegdek";2;;
-1000m;bij nat wegdek";2;;
-1000m;bij nat wegdek;bij nat wegdek 1000m";1;;
-100m;bij nat wegdek";2;;
-1200 m;1200m";1;;
-150 m;4;;
+06-19h,1,
+1 km;bij nat wegdek,1,
+1,5 km,1,
+100 m,5,
+1000 m;bij nat wegdek,2,
+1000m;bij nat wegdek,2,
+1000m;bij nat wegdek;bij nat wegdek 1000m,1,
+100m;bij nat wegdek,2,
+1200 m,"1200m""",
+150 m,4,
 150m;1;;
 19 - 6 h;39;;
 "19 - 6 h;19-6 h";2;;
