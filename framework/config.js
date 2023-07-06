@@ -94,5 +94,5 @@ var respecConfig = {
   ],
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
-  hypothesisComments: true,
+  hypothesisComments: false,
 };
