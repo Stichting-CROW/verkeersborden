@@ -24,7 +24,7 @@ De volgende onderdelen zijn in 2023 en 2024 in de maak:
     <area target="_blank" alt="Viewer" title="Viewer" href="https://docs.crow.nl/verkeersborden/viewer" coords="2358,2974,3217,3145" shape="rect">
     <area target="_blank" alt="Gids Datagebruik" title="Gids Datagebruik" href="https://docs.crow.nl/verkeersborden/datauserguide" coords="3457,1805,4410,1988" shape="rect">
     <area target="_blank" alt="Leermaterialen Datagebruik" title="Leermaterialen Datagebruik" href="https://docs.crow.nl/verkeersborden/howtousedata" coords="3453,2086,4385,2281" shape="rect">
-    <area target="_blank" alt="Datazoekmechanismes" title="Datazoekmechanismes" href="https://github.com/Stichting-CROW/verkeersborden/tree/main/dataquery's" coords="3457,2356,4357,2616" shape="rect">
+    <area target="_blank" alt="Datazoekmechanismes" title="Datazoekmechanismes" href="https://github.com/Stichting-CROW/verkeersborden/tree/main/dataquerys" coords="3457,2356,4357,2616" shape="rect">
 </map>
 
 
