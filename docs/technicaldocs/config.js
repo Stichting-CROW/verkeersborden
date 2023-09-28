@@ -58,7 +58,6 @@ function indexOfRequirements(config) {
       sectionNumber: sectionNumberText,
     });
   });
-
   // Create the index of RFC 2119 references
   for (const [__, requirements] of Object.entries(requirementsPerSection)) {
     const entryForSection = document.createElement("li");
@@ -82,6 +81,7 @@ var respecConfig = {
   shortName: "technicaldocs",
   license: "CC-BY",
   subtitle: "Toelichting op het informatiemodel",
+  lint: { "no-unused-dfns": false },
   editors: [
     {
       name: "Elisabeth Klören",
