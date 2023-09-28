@@ -11,8 +11,7 @@
 <dd>Een geometrische beschrijving van de wegen op basis van lijnen en knopen, waarmee de routes die gereden kunnen worden vastliggen. Deze beschrijving kan zich op verschillende abstratieniveau's bevinden: op wegniveau, op rijbaanniveau en op rijstrookniveau.</dd>
 
 
-<dfn data-lt="verkeersregel|verkeersregels">Verkeersregel</dfn>
-<dd>De wettelijk geldende ge- en verboden op een locatie volgens de [=RVV 1990=].</dd>
+
 
 <dfn data-lt="waarschuwingen|waarschuwing">Waarschuwing</dfn>
 <dd>De waarschuwingen op een locatie volgens de [=RVV 1990=], Bijlage 1 Verkeersborden, Hoofdstuk J. Waarschuwing. </dd>
@@ -23,8 +22,6 @@
 <dfn data-lt="verkeerstekens|verkeersteken">Verkeersteken</dfn>
 <dd>Een teken ter regeling, waarschuwing, geleiding of informering van het verkeer. Onder de verkeerstekens vallen verkeersborden en [=wegmarkeringen=]. Wettelijk vastgestelde verkeerstekens staan in de [=RVV 1990=].</dd>
 
-<dfn data-lt="verkeersbord|verkeersborden">Verkeersbord</dfn>
-<dd>Een bord ter regeling, waarschuwing, geleiding of informering van het verkeer. Wettelijk vastgestelde borden staan in de [=RVV 1990=], Bijlage 1 Verkeersborden.</dd>
 
 <dfn data-lt="onderbord|onderborden">Onderbord</dfn>
 <dd>Een bord onder het verkeersbord met een van de volgende inhouden: <ol>
