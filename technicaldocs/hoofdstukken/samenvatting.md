@@ -2,12 +2,11 @@
 
 Dit document bevat de technische documentatie van het informatiemodel verkeersborden, met de toelichting bij het informatiemodel op het gebied van:
 
-* De modelopbouw;
-* De samenhang met IMBOR
+* De modelopbouw met daarin een vocabulaire, en een ontologie;
+* De samenhang met IMBOR en andere informatiemodellen alsmede met landelijke standaarden en referentiemodellen ;
 * De hiërarchie in de begrippen;
 * Modelleringsconstructies;
 * Distributievormen;
-* Gebruikte referentiemodellen / standaarden;
 * Toepassing van de MIM;
 * Relatie met [=geometrische objectrepresentaties=], waaronder de relatie met het NWB wegennetwerk en CAD-ontwerptekeningen op basis van NLCS.
 * De licenties.
