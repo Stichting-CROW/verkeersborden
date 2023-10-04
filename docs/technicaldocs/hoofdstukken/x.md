@@ -29,3 +29,15 @@
 <li>ingeval op een onderbord uitsluitend symbolen voorkomen: het verkeersbord geldt slechts voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag;</li>
 <li>ingeval op een onderbord het woord "uitgezonderd" in combinatie met symbolen voorkomt: het verkeersbord geldt niet voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag.</li> <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=III&paragraaf=2&artikel=67&z=2021-07-01&g=2021-07-01">Bron: RVV 1990, Artikel 67</a>
 </dd>
+
+
+<dfn>rijstrooknummer</dfn> De geldigheid van het verkeersbord voor deze rijstrook, met oplopende nummering vanaf één vanuit het midden van de weg naar de zijkant, in één rijrichting. Dit is alleen nodig als het NWB-Wegvak nog niet is gesplitst in rijstroken maar het bord niet geldt voor alle rijstroken.
+
+<dfn>Wettelijk verkeersbord</dfn> Verkeersbord met een wettelijke basis in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) of daarop aanvullende wetten
+
+
+<dfn>Niet-wettelijk verkeersbord<dfn> Verkeersbord waarvoor geen wettelijke basis is in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) of daarop aanvullende wetten
+<br><br>
+
+<dfn data lt="Geometrische objectrepresentatie|Geometrische objectrepresentaties">Geometrische objectrepresentatie</dfn> De weergave van een object, zoals een verkeersbord of een weg, in een GIS of CAD model. Dit kan een punt, vlak of lijn zijn, maar ook een 3D vorm. Een object zoals een verkeersbord kan meerdere representaties hebben.
+<br><br>
