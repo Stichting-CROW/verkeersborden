@@ -1,0 +1,4 @@
+Verkeersbord,omschrijving,waarde,datatype
+A01,maximumsnelheid,xsd:int
+A02,einde maximumsnelheid,xsd:int
+A03,maximumsnelheid op een electronisch signaleringsbord,xsd:int
