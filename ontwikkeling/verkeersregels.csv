@@ -1,3 +1,6 @@
 verkeersregel,omschrijving
-"standaard wettelijke maximumsnelheid","De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype" 
-"lokale wettelijke maximumsnelheid",een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype"
+standaard wettelijke maximumsnelheid,"De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype" 
+lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype
+voorrang verlenen, verleen voorrang aan bestuurders op de kruisende weg
+stoppen, stoppen en verleen voorrang aan bestuurders op de kruisende weg
+geslotenverklaring, "gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee"

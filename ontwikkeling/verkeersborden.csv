@@ -1,4 +1,16 @@
-Verkeersbord,omschrijving,waarde,datatype
-A01,maximumsnelheid,xsd:int
-A02,einde maximumsnelheid,xsd:int
-A03,maximumsnelheid op een electronisch signaleringsbord,xsd:int
+Code,naam,waarde,datatype
+A01,verkeersbord maximumsnelheid,waardelijst snelheden,xsd:int
+A02,verkeersbord einde maximumsnelheid,waardelijst snelheden,xsd:int,
+A04,verkeersbord adviessnelheid,waardelijst snelheden,xsd:int,
+A05,verkeersbord einde adviessnelheid,waardelijst snelheden,xsd:int,
+B01,verkeersbord voorrangsweg,,
+B02,verkeersbord einde voorrangsweg,,
+B03,verkeersbord voorrangskruispunt,,
+B04,verkeersbord voorrangskruispunt zijweg links,,
+B05,verkeersbord voorrangskruispunt zijweg rechts,,
+B06,verkeersbord verleen voorrang aan bestuurders op de kruisende weg,,
+B07,stopbord,,
+
+
+Geparkeerd:
+A03,verkeersbord maximumsnelheid op een electronisch signaleringsbord,waardelijst snelheden,xsd:int,
