@@ -1,7 +1,10 @@
 # Definities
 
-<dfn data-lt="Informatiemodel verkeerstekens">Informatiemodel verkeerstekens</dfn>
-<dd> Een informatiemodel waarmee <b>[=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en [=verkeerstekens=]</b> op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], <b>zodat deze informatie machine-verwerkbaar is</b>. </dd>
+## Toelichting
+Dit document geeft de definities gebruikt in de **documentatie** van het informatiemodel verkeerstekens.
+
+## <dfn data-lt="Informatiemodel verkeerstekens">Informatiemodel verkeerstekens</dfn>
+en informatiemodel waarmee <b>[=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en [=verkeerstekens=]</b> op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], <b>zodat deze informatie machine-verwerkbaar is</b>.
 
 <dfn data-lt="verkeerskundige informatie">Verkeerskundige informatie</dfn>
 <dd>Informatie over de op een weg geldende [=verkeersregels=], [=waarschuwingen=] en [=adviessnelheden=] en de bijbehorende [=verkeerstekens=].</dd>
