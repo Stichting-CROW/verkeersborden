@@ -1,9 +1,9 @@
-naam,omschrijving,waarde,datatype
-A1,Maximumsnelheid,waardelijst snelheden,xsd:int
-A2,Einde maximumsnelheid,waardelijst snelheden,xsd:int
-A4,Adviessnelheid,waardelijst snelheden,xsd:int
-A5,Einde adviessnelheid,waardelijst snelheden,xsd:int
-B1,Voorrangsweg
+naam,omschrijving,attribuut,eenheid,datatype
+A1,Maximumsnelheid,snelheid,km/h,xsd:int
+A2,Einde maximumsnelheid,snelheid,km/h,xsd:int
+A4,Adviessnelheid,snelheidkm/h,xsd:int
+A5,Einde adviessnelheid,snelheid,km/h,xsd:int
+B1,Voorrangsweg,
 B2,Einde voorrangsweg
 B3,Voorrangskruispunt
 B4,Voorrangskruispunt Zijweg links
@@ -28,25 +28,15 @@ C13,"Gesloten voor bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in w
 C14,Gesloten voor fietsen en voor gehandicaptenvoertuigen zonder motor
 C15,"Gesloten voor fietsen, bromfietsen en gehandicaptenvoertuigen"
 C16,Gesloten voor voetgangers
-C17,"Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven"
-C18,"Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven"
-C19,"Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven"
-C20,Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven
-C21,"Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa of de som van de aslasten hoger is dan op het bord is aangegeven"
+C17,"Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven",voertuiglengte,m,xsd:decimal
+C18,"Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven",voertuigbreedte,m,xsd:decimal
+C19,"Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven",voertuighoogte,m,xsd:decimal
+C20,Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven,aslast voertuig,t,xsd:decimal
+C21,"Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa of de som van de aslasten hoger is dan op het bord is aangegeven",massa voertuigsamenstelling,t,xsd:decimal
 C22,Gesloten voor voertuigen met bepaalde gevaarlijke stoffen
 C22a,"Gesloten voor personen- en bedrijfsauto's, vrachtauto's of bussen met een dieselmotor vanwege milieuzone"
-C22a1,Onderbord bij bord C22a: milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6
-C22a2,Onderbord bij bord C22a: milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6
-C22a3,Onderbord bij bord C22a: milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6
-C22a4,Onderbord bij bord C22a: milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6
-C22a5,Onderbord bij bord C22a: milieuzone toegankelijk voor vrachtauto's emissieklasse 6
-C22a6,Onderbord bij bord C22a: milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6
-C22a7,Onderbord bij bord C22a: milieuzone toegankelijk voor bussen emissieklasse 6
-C22a8,Onderbord bij bord C22a: milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6
-C22a9,Onderbord bij bord C22a: milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6
 C22b,Einde geslotenverklaring milieuzone
 C22c,Gesloten voor bedrijfs- en vrachtauto's vanwege nul-emissiezone
-C22c1,Onderbord bij bord C22c: nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's
 C22d,Einde geslotenverklaring nul-emissiezone
 C23-01,Spitsstrook open
 C23-02,Spitsstrook vrijmaken

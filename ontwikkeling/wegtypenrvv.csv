@@ -1,3 +1,6 @@
-wegtype,omschrijving
-voorrangsweg,weg waarop bestuurders voorrang hebben op bestuurders van kruisende wegen
-voorrangskruispunt,kruispunt waarop bestuurders voorrang hebben op bestuurders van kruisende wegen 
+wegtype,omschrijving,relatie met bord
+voorrangsweg,weg waarop bestuurders voorrang hebben op bestuurders van kruisende wegen,B1
+voorrangsweg,,B2
+voorrangskruispunt,kruispunt waarop bestuurders voorrang hebben op bestuurders van kruisende wegen,B3
+voorrangskruispunt,,B4
+voorrangskruispunt,,B5

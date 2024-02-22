@@ -1,7 +1,69 @@
-verkeersregel,omschrijving
-standaard wettelijke maximumsnelheid,"De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype" 
-lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype
-voorrang verlenen, verleen voorrang aan bestuurders op de kruisende weg
-stoppen, stoppen en verleen voorrang aan bestuurders op de kruisende weg
-geslotenverklaring, "gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee"
-eenrichtingsverkeer,"in een richting is de weg gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee"
+verkeersregel,omschrijving,relatie met bord,relatie met zone
+verkeersregel,de wettelijk geldende ge- en verboden op een locatie volgens het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990),F8
+standaard wettelijke maximumsnelheid,"De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype",A1
+standaard wettelijke maximumsnelheid,,A2
+lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
+lokale wettelijke maximumsnelheid,,A2
+voorrang verlenen, verleen voorrang aan bestuurders op de kruisende weg,B6
+stoppen, stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
+geslotenverklaring, "gesloten in beide richtingen voor alle verkeer of in onderbord aangeduid verkeer",C1
+geslotenverklaring,,C6
+geslotenverklaring,,C7
+geslotenverklaring,,C7a
+geslotenverklaring,,C7b
+geslotenverklaring,,C8
+geslotenverklaring,,C9
+geslotenverklaring,,C10
+geslotenverklaring,,C11
+geslotenverklaring,,C12
+geslotenverklaring,,C13
+geslotenverklaring,,C14
+geslotenverklaring,,C15
+geslotenverklaring,,C16
+geslotenverklaring,,C17
+geslotenverklaring,,C18
+geslotenverklaring,,C19
+geslotenverklaring,,C20
+geslotenverklaring,,C21
+geslotenverklaring,,C22
+eenrichtingsverkeer,"in een richting is de weg gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",C2
+eenrichtingsverkeer,,C3
+eenrichtingsverkeer,,C4
+inrijden toegestaan,weg inrijden is toegestaan onder voorwaarden zoals weergegeven in een onderbord,C5
+milieuzone,"Gesloten voor personen- en bedrijfsauto’s, vrachtauto’s of bussen met een dieselmotor vanwege milieuzone",C22a
+milieuzone,,C22b
+milieuzone,,C22c
+milieuzone,,C22d
+spitsstrook open,rijden op spitsstrook toegestaan,C23-01
+spitsstrook open,,C23-02
+spitsstrook open,,C23-03
+rijrichting aanhouden,rijden in de aangegeven rijrichting,D1
+rijrichting aanhouden,,D2
+rijrichting aanhouden,,D3
+rijrichting aanhouden,,D4
+rijrichting aanhouden,,D5
+rijrichting aanhouden,,D6
+rijrichting aanhouden,,D7
+Parkeerverbod,verbod om te parkeren,E1
+Plaatsingsverbod fietsen/bromfietsen,verboden om fietsen en bromfietsen te plaatsen,E3
+Verbod stil te staan,Verbod stil te staan,E2
+Parkeergelegenheid,aanduiding gelegenheid om te parkeren,E4
+Parkeergelegenheid,,E5
+Parkeergelegenheid,,E6
+Parkeergelegenheid,,E7
+Parkeergelegenheid,,E8
+Parkeergelegenheid,,E8a
+Parkeergelegenheid,,E8b
+Parkeergelegenheid,,E8c
+Parkeergelegenheid,,E9
+Parkeergelegenheid,,E12
+Parkeergelegenheid,,E13
+Inhaalverbod,Verbod voor voertuigen om elkaar onderling in te halen,F1
+Inhaalverbod,,F2
+Inhaalverbod,,F3
+Inhaalverbod,,F4
+Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,F6
+Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,F7
+Keerverbod,verbod om om te keren,F7
+
+
