@@ -4,7 +4,8 @@ standaard wettelijke maximumsnelheid,"De standaard wettelijke maximumsnelheid is
 standaard wettelijke maximumsnelheid,,A2
 lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
 lokale wettelijke maximumsnelheid,,A2
-voorrang verlenen, verleen voorrang aan bestuurders op de kruisende weg,B6
+adviessnelheid,,A5
+voorrang verlenen,het de betrokken bestuurders op de kruisende weg in staat stellen ongehinderd hun weg te vervolgen,B6
 stoppen,stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
 stoppen,F10
 geslotenverklaring,"verbod de betrokken weg in te rijden of in te gaan alsmede de betrokken weg te gebruiken",C1
@@ -78,3 +79,4 @@ Rijbaan of rijstrook uitsluitend voor voertuigtype,,F19
 Rijbaan of rijstrook uitsluitend voor voertuigtype,,F20
 Rijbaan of rijstrook uitsluitend voor voertuigtype,,F21
 Rijbaan of rijstrook uitsluitend voor voertuigtype,,F22
+adviessnelheid,geadviseerde maximum snelheid,A4
