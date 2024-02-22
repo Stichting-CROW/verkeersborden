@@ -5,8 +5,9 @@ standaard wettelijke maximumsnelheid,,A2
 lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
 lokale wettelijke maximumsnelheid,,A2
 voorrang verlenen, verleen voorrang aan bestuurders op de kruisende weg,B6
-stoppen, stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
-geslotenverklaring, "gesloten in beide richtingen voor alle verkeer of in onderbord aangeduid verkeer",C1
+stoppen,stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
+stoppen,F10
+geslotenverklaring,"verbod de betrokken weg in te rijden of in te gaan alsmede de betrokken weg te gebruiken",C1
 geslotenverklaring,,C6
 geslotenverklaring,,C7
 geslotenverklaring,,C7a
@@ -44,7 +45,7 @@ rijrichting aanhouden,,D4
 rijrichting aanhouden,,D5
 rijrichting aanhouden,,D6
 rijrichting aanhouden,,D7
-Parkeerverbod,verbod om te parkeren,E1
+Parkeerverbod,verbod van het laten stilstaan van een voertuig anders dan gedurende de tijd die nodig is voor en gebruikt wordt tot het onmiddellijk in- of uitstappen van passagiers of voor het onmiddellijk laden of lossen van goederen,E1
 Plaatsingsverbod fietsen/bromfietsen,verboden om fietsen en bromfietsen te plaatsen,E3
 Verbod stil te staan,Verbod stil te staan,E2
 Parkeergelegenheid,aanduiding gelegenheid om te parkeren,E4
@@ -62,8 +63,18 @@ Inhaalverbod,Verbod voor voertuigen om elkaar onderling in te halen,F1
 Inhaalverbod,,F2
 Inhaalverbod,,F3
 Inhaalverbod,,F4
-Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,F6
+Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,F5
 Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,F7
 Keerverbod,verbod om om te keren,F7
-
-
+Verplicht gebruik passeerbaan,"Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines",F11
+Verplicht gebruik passeerbaan,,F12
+Rijbaan of rijstrook uitsluitend voor voertuigtype,Rijbaan of rijstrook uitsluitend voor voertuigtype,F13
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F14
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F15
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F16
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F17
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F18
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F19
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F20
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F21
+Rijbaan of rijstrook uitsluitend voor voertuigtype,,F22

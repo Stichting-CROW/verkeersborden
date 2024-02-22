@@ -1,3 +1,9 @@
 zone,omschrijving,relatie met bord
 parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,E10
 parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,E11
+milieuzone,zone met voorwaarden aan de uitstoot van voertuigen
+bibeko,zone binnen de bebouwde kom
+bubeko,zone buiten de bebouwde kom
+erf,zone erf
+30 km zone, 30 km zone
+60 km zone, 30 km zone
