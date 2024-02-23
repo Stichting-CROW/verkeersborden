@@ -1,5 +1,60 @@
-naam,omschrijving,attribuut,eenheid,datatype
-A1,Maximumsnelheid,snelheid,km/h,xsd:int
+naam,bovenliggend,omschrijving,attribuut,eenheid,datatype,waarde
+Verkeersbord,FysiekObject,
+A1,Verkeersbord,Maximumsnelheid,snelheid,km/h,xsd:int
+A1,,,,,,5
+A1,,,,,,10
+A1,,,,,,15
+A1,,,,,,30
+A1,,,,,,50
+A1,,,,,,60
+A1,,,,,,70
+A1,,,,,,80
+A1,,,,,,90
+A1,,,,,,100
+A1,,,,,,120
+A1,,,,,,130
+A2,Verkeersbord,Einde maximumsnelheid,snelheid,km/h,xsd:int
+A2,,,,,,5
+A2,,,,,,10
+A2,,,,,,15
+A2,,,,,,30
+A2,,,,,,50
+A2,,,,,,60
+A2,,,,,,70
+A2,,,,,,80
+A2,,,,,,90
+A2,,,,,,100
+A2,,,,,,120
+A2,,,,,,130
+A4,Verkeersbord,Adviessnelheid,snelheidkm/h,xsd:int
+A5,Verkeersbord,Einde adviessnelheid,snelheid,km/h,xsd:int
+B1,Verkeersbord,Voorrangsweg,,
+B2,Verkeersbord,Einde voorrangsweg,,
+B3,Verkeersbord,Voorrangskruispunt,,
+B4,Verkeersbord,Voorrangskruispunt Zijweg links,,
+B5,Verkeersbord,Voorrangskruispunt Zijweg rechts,,
+B6,Verkeersbord,Verleen voorrang aan bestuurders op de kruisende weg,,
+B7,Verkeersbord,Stop,,
+C1,Verkeersbord,"Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",,
+C2,Verkeersbord,"Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",,
+C3,Verkeersbord,Eenrichtingsweg,,
+C4,Verkeersbord,Eenrichtingsweg,,
+C5,Verkeersbord,Inrijden toegestaan,,
+C6,Verkeersbord,Gesloten voor motorvoertuigen op meer dan twee wielen,,
+C7,Verkeersbord,Gesloten voor vrachtauto's,,
+C7a,Verkeersbord,Gesloten voor autobussen,,
+C7b,Verkeersbord,Gesloten voor autobussen en vrachtauto's,,
+
+
+
+
+
+
+
+
+
+
+
 A2,Einde maximumsnelheid,snelheid,km/h,xsd:int
 A4,Adviessnelheid,snelheidkm/h,xsd:int
 A5,Einde adviessnelheid,snelheid,km/h,xsd:int
@@ -93,8 +148,8 @@ J2,Bocht naar rechts
 J3,Bocht naar links
 J4,"S-bocht(en), eerst naar rechts"
 J5,"S-bocht(en), eerst naar links"
-J6,Steile helling
-J7,Gevaarlijke daling
+J6,Steile helling,hellingspercentage,%,xsd:int
+J7,Gevaarlijke daling,hellingspercentage,%,xsd:int
 J8,Gevaarlijk kruispunt
 J9,Rotonde
 J10,Overweg met slagbomen
