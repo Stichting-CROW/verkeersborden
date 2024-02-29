@@ -1,187 +1,189 @@
 naam,bovenliggend,omschrijving,attribuut,eenheid,datatype,waarde
-Verkeersbord,FysiekObject,
-A1,Verkeersbord,Maximumsnelheid,snelheid,km/h,xsd:int
-A1,,,,,,5
-A1,,,,,,10
-A1,,,,,,15
-A1,,,,,,30
-A1,,,,,,50
-A1,,,,,,60
-A1,,,,,,70
-A1,,,,,,80
-A1,,,,,,90
-A1,,,,,,100
-A1,,,,,,120
-A1,,,,,,130
-A2,Verkeersbord,Einde maximumsnelheid,snelheid,km/h,xsd:int
-A2,,,,,,5
-A2,,,,,,10
-A2,,,,,,15
-A2,,,,,,30
-A2,,,,,,50
-A2,,,,,,60
-A2,,,,,,70
-A2,,,,,,80
-A2,,,,,,90
-A2,,,,,,100
-A2,,,,,,120
-A2,,,,,,130
-A4,Verkeersbord,Adviessnelheid,snelheidkm/h,xsd:int
-A5,Verkeersbord,Einde adviessnelheid,snelheid,km/h,xsd:int
-B1,Verkeersbord,Voorrangsweg,,
-B2,Verkeersbord,Einde voorrangsweg,,
-B3,Verkeersbord,Voorrangskruispunt,,
-B4,Verkeersbord,Voorrangskruispunt Zijweg links,,
-B5,Verkeersbord,Voorrangskruispunt Zijweg rechts,,
-B6,Verkeersbord,Verleen voorrang aan bestuurders op de kruisende weg,,
-B7,Verkeersbord,Stop,,
-C1,Verkeersbord,"Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",,
-C2,Verkeersbord,"Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",,
-C3,Verkeersbord,Eenrichtingsweg,,
-C4,Verkeersbord,Eenrichtingsweg,,
-C5,Verkeersbord,Inrijden toegestaan,,
-C6,Verkeersbord,Gesloten voor motorvoertuigen op meer dan twee wielen,,
-C7,Verkeersbord,Gesloten voor vrachtauto's,,
-C7a,Verkeersbord,Gesloten voor autobussen,,
-C7b,Verkeersbord,Gesloten voor autobussen en vrachtauto's,,
+Verkeersbord,FysiekObject,Verkeersbord,,,
+A,Verkeersbord,Snelheidsbord,snelheid,km/h,xsd:int,
+A1,A,Maximumsnelheidsbord,,,,
+A0105,A1,Maximumsnelheidsbord 5 km/h,,,,5
+A0110,A1,Maximumsnelheidsbord 10 km/h,,,,10
+A0115,A1,Maximumsnelheidsbord 15 km/h,,,,15
+A0130,A1,Maximumsnelheidsbord 30 km/h,,,,30
+A0150,A1,Maximumsnelheidsbord 50 km/h,,,,50
+A0160,A1,Maximumsnelheidsbord 60 km/h,,,,60
+A0170,A1,Maximumsnelheidsbord 70 km/h,,,,70
+A0180,A1,Maximumsnelheidsbord 80 km/h,,,,80
+A0190,A1,Maximumsnelheidsbord 90 km/h,,,,90
+A01100,A1,Maximumsnelheidsbord 100 km/h,,,,100
+A01120,A1,Maximumsnelheidsbord 120 km/h,,,,120
+A01130,A1,Maximumsnelheidsbord 130 km/h,,,,130
+A2,A,Einde maximumsnelheidsbord
+A0205,A2,Einde maximumsnelheidsbord 5 km/h,,,,5
+A0210,A2,Einde maximumsnelheidsbord 10 km/h,,,,10
+A0215,A2,Einde maximumsnelheidsbord 15 km/h,,,,15
+A0230,A2,Einde maximumsnelheidsbord 30 km/h,,,,30
+A0250,A2,Einde maximumsnelheidsbord 50 km/h,,,,50
+A0260,A2,Einde maximumsnelheidsbord 60 km/h,,,,60
+A0270,A2,Einde maximumsnelheidsbord 70 km/h,,,,70
+A0280,A2,Einde maximumsnelheidsbord 80 km/h,,,,80
+A0290,A2,Einde maximumsnelheidsbord 90 km/h,,,,90
+A02100,A2,Einde maximumsnelheidsbord 100 km/h,,,,100
+A02120,A2,Einde maximumsnelheidsbord 120 km/h,,,,120
+A02130,A2,Einde maximumsnelheidsbord 130 km/h,,,,130
+A4,A,Adviessnelheidsbord 5 km/h,,,,
+naam,bovenliggend,omschrijving,attribuut,eenheid,datatype,waarde
+A0405,A4,Adviessnelheidsbord 5 km/h,,,,5
+A0410,A4,Adviessnelheidsbord 10 km/h,,,,10
+A0415,A4,Adviessnelheidsbord 15 km/h,,,,15
+A0430,A4,Adviessnelheidsbord 30 km/h,,,,30
+A0450,A4,Adviessnelheidsbord 50 km/h,,,,50
+A0460,A4,Adviessnelheidsbord 60 km/h,,,,60
+A0470,A4,Adviessnelheidsbord 70 km/h,,,,70
+A0480,A4,Adviessnelheidsbord 80 km/h,,,,80
+A0490,A4,Adviessnelheidsbord 90 km/h,,,,90
+A04100,A4,Adviessnelheidsbord 100 km/h,,,,100
+A04120,A4,Adviessnelheidsbord 120 km/h,,,,120
+A04130,A4,Adviessnelheidsbord 130 km/h,,,,130
+A5,A,Einde adviessnelheid
+A0505,A5,Einde adviessnelheid 5 km/h,,,,5
+A0510,A5,Einde adviessnelheid 10 km/h,,,,10
+A0515,A5,Einde adviessnelheid 15 km/h,,,,15
+A0530,A5,Einde adviessnelheid 30 km/h,,,,30
+A0550,A5,Einde adviessnelheid 50 km/h,,,,50
+A0560,A5,Einde adviessnelheid 60 km/h,,,,60
+A0570,A5,Einde adviessnelheid 70 km/h,,,,70
+A0580,A5,Einde adviessnelheid 80 km/h,,,,80
+A0590,A5,Einde adviessnelheid 90 km/h,,,,90
+A05100,A5,Einde adviessnelheid 100 km/h,,,,100
+A05120,A5,Einde adviessnelheid 120 km/h,,,,120
+A05130,A5,Einde adviessnelheid 130 km/h,,,,130
+B,Verkeersbord,Voorrangsbord
+B1,B,Voorrangsweg,,
+B2,B,Einde voorrangsweg,,
+B3,B,Voorrangskruispunt,,
+B4,B,Voorrangskruispunt Zijweg links,,
+B5,B,Voorrangskruispunt Zijweg rechts,,
+B6,B,Verleen voorrang aan bestuurders op de kruisende weg,,
+B7,B,Stop,,
+C,Verkeersbord,Geslotenverklaringsbord
+C1,C,"Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+C2,C,"Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",
+C3,C,Eenrichtingsweg,
+C4,C,Eenrichtingsweg,
+C5,C,Inrijden toegestaan,
+C6,C,Gesloten voor motorvoertuigen op meer dan twee wielen,
+C7,C,Gesloten voor vrachtauto's,
+C7a,C,Gesloten voor autobussen,
+C7b,C,Gesloten voor autobussen en vrachtauto's,
+C8,C,"Gesloten voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines",
+C9,C,"Gesloten voor ruiters, vee, wagens, landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid, mobiele machines, brommobielen, fietsen, snorfietsen, bromfietsen en gehandicaptenvoertuigen",
+C10,C,Gesloten voor motorvoertuigen met aanhangwagen,
+C11,C,Gesloten voor motorfietsen,
+C12,C,Gesloten voor alle motorvoertuigen,
+C13,C,"Gesloten voor bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor",
+C14,C,Gesloten voor fietsen en voor gehandicaptenvoertuigen zonder motor,
+C15,C,"Gesloten voor fietsen, bromfietsen en gehandicaptenvoertuigen",
+C16,C,Gesloten voor voetgangers,
+C17,C,"Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven",
+C18,C,"Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven",
+C19,C,"Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven",
+C20,C,Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven,
+C21,C,"Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa of de som van de aslasten hoger is dan op het bord is aangegeven",
+C22,C,Gesloten voor voertuigen met bepaalde gevaarlijke stoffen,
+C22a,C,"Gesloten voor personen- en bedrijfsauto's, vrachtauto's of bussen met een dieselmotor vanwege milieuzone",
+C22b,C,Einde geslotenverklaring milieuzone,
+C22c,C,Gesloten voor bedrijfs- en vrachtauto's vanwege nul-emissiezone,
+C22d,C,Einde geslotenverklaring nul-emissiezone,
+C23-01,C,Spitsstrook open,
+C23-02,C,Spitsstrook vrijmaken,
+C23-03,C,Einde spitsstrook,
+D,Verkeersbord,Rijrichtingsbord
+D1,D,Rotonde
+D2,D,Gebod voor alle bestuurders het bord voorbij te gaan aan de zijde die de pijl aangeeft
+D3,D,Bord mag aan beide zijden worden voorbijgegaan
+D4,D,Gebod tot het volgen van de rijrichting die op het bord is aangegeven
+D5,D,Gebod tot het volgen van de rijrichting die op het bord is aangegeven
+D6,D,Gebod tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven
+D7,D,Gebod tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven
+E,Verkeersbord,Bord parkeren en stilstaan
+E1,Verkeersbord,Parkeerverbod
+E2,Verkeersbord,Verbod stil te staan
+E3,Verkeersbord,Verbod fietsen en bromfietsen te plaatsen
+E4,Verkeersbord,Parkeergelegenheid
+E5,Verkeersbord,Taxistandplaats
+E6,Verkeersbord,Gehandicaptenparkeerplaats
+E7,Verkeersbord,Gelegenheid bestemd voor het onmiddellijk laden en lossen van goederen
+E8,Verkeersbord,Parkeergelegenheid alleen bestemd voor de voertuigcategorie of groep voertuigen die op het bord is aangegeven
+E8a,Verkeersbord,Parkeergelegenheid alleen bestemd voor kampeerwagens
+E8b,Verkeersbord,Parkeergelegenheid voor het parkeren met twee wielen op het trottoir
+E8c,Verkeersbord,Parkeergelegenheid alleen bestemd voor het opladen van elektrische voertuigen
+E9,Verkeersbord,Parkeergelegenheid alleen bestemd voor vergunninghouders
+E10,Verkeersbord,"Parkeerschijf-zone met verplicht gebruik van parkeerschijf, tevens parkeerverbod indien er langer wordt geparkeerd dan de parkeerduur die op het bord is aangegeven"
+E11,Verkeersbord,Einde parkeerschijf-zone met verplicht gebruik van parkeerschijf
+E12,Verkeersbord,Parkeergelegenheid ten behoeve van overstappers op het openbaar vervoer
+E13,Verkeersbord,Parkeergelegenheid ten behoeve van carpoolers
+F1,Verkeersbord,Verbod voor motorvoertuigen om elkaar onderling in te halen
+F2,Verkeersbord,Einde verbod voor motorvoertuigen om elkaar onderling in te halen
+F3,Verkeersbord,Verbod voor vrachtauto's om motorvoertuigen in te halen
+F4,Verkeersbord,Einde verbod voor vrachtauto's om motorvoertuigen in te halen
+F5,Verkeersbord,Verbod voor bestuurders door te gaan bij nadering van verkeer uit tegengestelde richting
+F6,Verkeersbord,Bestuurders uit tegengestelde richting moeten verkeer dat van deze richting nadert voor laten gaan
+F7,Verkeersbord,Keerverbod
+F8,Verkeersbord,Einde van alle door verkeersborden aangegeven verboden
+F9,Verkeersbord,Einde van alle op een elektronisch signaleringsbord aangegeven verboden
+F10,Verkeersbord,Stop. In het bord kan worden aangegeven door wie of waarom het bord wordt toegepast
+F11,Verkeersbord,"Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines"
+F12,Verkeersbord,"Einde verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines"
+F13,Verkeersbord,Rijbaan of -strook uitsluitend ten behoeve van lijnbussen
+F14,Verkeersbord,Einde busbaan of -strook
+F15,Verkeersbord,Rijbaan of -strook uitsluitend ten behoeve van trams
+F16,Verkeersbord,Einde trambaan of -strook
+F17,Verkeersbord,Rijbaan of -strook uitsluitend ten behoeve van lijnbussen en trams
+F18,Verkeersbord,Einde bus- en trambaan of -strook
+F19,Verkeersbord,Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's en lijnbussen
+F20,Verkeersbord,Einde rijbaan of -strook voor vrachtauto's en lijnbussen
+F21,Verkeersbord,Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's
+F22,Verkeersbord,Einde rijbaan of -strook voor vrachtauto's
+H1,Verkeersbord,Bebouwde kom
+H2,Verkeersbord,Einde bebouwde kom
+J1,Verkeersbord,Slecht wegdek
+J2,Verkeersbord,Bocht naar rechts
+J3,Verkeersbord,Bocht naar links
+J4,Verkeersbord,"S-bocht(en), eerst naar rechts"
+J5,Verkeersbord,"S-bocht(en), eerst naar links"
+J6,Verkeersbord,Steile helling,hellingspercentage,%,xsd:int
+J7,Verkeersbord,Gevaarlijke daling,hellingspercentage,%,xsd:int
+J8,Verkeersbord,Gevaarlijk kruispunt
+J9,Verkeersbord,Rotonde
+J10,Verkeersbord,Overweg met slagbomen
+J11,Verkeersbord,Overweg zonder slagbomen
+J12,Verkeersbord,Overweg met enkel spoor
+J13,Verkeersbord,Overweg met twee of meer sporen
+J14,Verkeersbord,Tram(kruising)
+J15,Verkeersbord,Beweegbare brug
+J16,Verkeersbord,Werk in uitvoering
+J17,Verkeersbord,Rijbaanversmalling
+J18,Verkeersbord,Rijbaanversmalling rechts
+J19,Verkeersbord,Rijbaanversmalling links
+J20,Verkeersbord,Slipgevaar
+J21,Verkeersbord,Kinderen
+J22,Verkeersbord,Voetgangersoversteekplaats
+J23,Verkeersbord,Voetgangers
+J24,Verkeersbord,Fietsers en bromfietsers
+J25,Verkeersbord,Losliggende stenen
+J26,Verkeersbord,Kade of rivieroever
+J27,Verkeersbord,Groot wild
+J28,Verkeersbord,Vee
+J29,Verkeersbord,Tegenliggers
+J30,Verkeersbord,Laagvliegende vliegtuigen
+J31,Verkeersbord,Zijwind
+J32,Verkeersbord,Verkeerslichten
+J33,Verkeersbord,File
+J34,Verkeersbord,Ongeval
+J35,Verkeersbord,"Slecht zicht door sneeuw, regen of mist"
+J36,Verkeersbord,IJzel of sneeuw
+J37,Verkeersbord,Gevaar (de aard van het gevaar is aangegeven op het onderbord)
+J38,Verkeersbord,Verkeersdrempel
+J39,Verkeersbord,Waarschuwing voor elektrische in- en uitschuifbare paal in de rijbaan (poller) waarmee toegankelijkheid van straten en gebieden kan worden geregeld.
 
 
-
-
-
-
-
-
-
-
-
-A2,Einde maximumsnelheid,snelheid,km/h,xsd:int
-A4,Adviessnelheid,snelheidkm/h,xsd:int
-A5,Einde adviessnelheid,snelheid,km/h,xsd:int
-B1,Voorrangsweg,
-B2,Einde voorrangsweg
-B3,Voorrangskruispunt
-B4,Voorrangskruispunt Zijweg links
-B5,Voorrangskruispunt Zijweg rechts
-B6,Verleen voorrang aan bestuurders op de kruisende weg
-B7,Stop
-C1,"Gesloten in beide richtingen voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee"
-C2,"Eenrichtingsweg, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee"
-C3,Eenrichtingsweg
-C4,Eenrichtingsweg
-C5,Inrijden toegestaan
-C6,Gesloten voor motorvoertuigen op meer dan twee wielen
-C7,Gesloten voor vrachtauto's
-C7a,Gesloten voor autobussen
-C7b,Gesloten voor autobussen en vrachtauto's
-C8,"Gesloten voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines"
-C9,"Gesloten voor ruiters, vee, wagens, landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid, mobiele machines, brommobielen, fietsen, snorfietsen, bromfietsen en gehandicaptenvoertuigen"
-C10,Gesloten voor motorvoertuigen met aanhangwagen
-C11,Gesloten voor motorfietsen
-C12,Gesloten voor alle motorvoertuigen
-C13,"Gesloten voor bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor"
-C14,Gesloten voor fietsen en voor gehandicaptenvoertuigen zonder motor
-C15,"Gesloten voor fietsen, bromfietsen en gehandicaptenvoertuigen"
-C16,Gesloten voor voetgangers
-C17,"Gesloten voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven",voertuiglengte,m,xsd:decimal
-C18,"Gesloten voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven",voertuigbreedte,m,xsd:decimal
-C19,"Gesloten voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven",voertuighoogte,m,xsd:decimal
-C20,Gesloten voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven,aslast voertuig,t,xsd:decimal
-C21,"Gesloten voor voertuigen en samenstellen van voertuigen, waarvan de totaalmassa of de som van de aslasten hoger is dan op het bord is aangegeven",massa voertuigsamenstelling,t,xsd:decimal
-C22,Gesloten voor voertuigen met bepaalde gevaarlijke stoffen
-C22a,"Gesloten voor personen- en bedrijfsauto's, vrachtauto's of bussen met een dieselmotor vanwege milieuzone"
-C22b,Einde geslotenverklaring milieuzone
-C22c,Gesloten voor bedrijfs- en vrachtauto's vanwege nul-emissiezone
-C22d,Einde geslotenverklaring nul-emissiezone
-C23-01,Spitsstrook open
-C23-02,Spitsstrook vrijmaken
-C23-03,Einde spitsstrook
-D1,Rotonde
-D2,Gebod voor alle bestuurders het bord voorbij te gaan aan de zijde die de pijl aangeeft
-D3,Bord mag aan beide zijden worden voorbijgegaan
-D4,Gebod tot het volgen van de rijrichting die op het bord is aangegeven
-D5,Gebod tot het volgen van de rijrichting die op het bord is aangegeven
-D6,Gebod tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven
-D7,Gebod tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven
-E1,Parkeerverbod
-E2,Verbod stil te staan
-E3,Verbod fietsen en bromfietsen te plaatsen
-E4,Parkeergelegenheid
-E5,Taxistandplaats
-E6,Gehandicaptenparkeerplaats
-E7,Gelegenheid bestemd voor het onmiddellijk laden en lossen van goederen
-E8,Parkeergelegenheid alleen bestemd voor de voertuigcategorie of groep voertuigen die op het bord is aangegeven
-E8a,Parkeergelegenheid alleen bestemd voor kampeerwagens
-E8b,Parkeergelegenheid voor het parkeren met twee wielen op het trottoir
-E8c,Parkeergelegenheid alleen bestemd voor het opladen van elektrische voertuigen
-E9,Parkeergelegenheid alleen bestemd voor vergunninghouders
-E10,"Parkeerschijf-zone met verplicht gebruik van parkeerschijf, tevens parkeerverbod indien er langer wordt geparkeerd dan de parkeerduur die op het bord is aangegeven"
-E11,Einde parkeerschijf-zone met verplicht gebruik van parkeerschijf
-E12,Parkeergelegenheid ten behoeve van overstappers op het openbaar vervoer
-E13,Parkeergelegenheid ten behoeve van carpoolers
-F1,Verbod voor motorvoertuigen om elkaar onderling in te halen
-F2,Einde verbod voor motorvoertuigen om elkaar onderling in te halen
-F3,Verbod voor vrachtauto's om motorvoertuigen in te halen
-F4,Einde verbod voor vrachtauto's om motorvoertuigen in te halen
-F5,Verbod voor bestuurders door te gaan bij nadering van verkeer uit tegengestelde richting
-F6,Bestuurders uit tegengestelde richting moeten verkeer dat van deze richting nadert voor laten gaan
-F7,Keerverbod
-F8,Einde van alle door verkeersborden aangegeven verboden
-F9,Einde van alle op een elektronisch signaleringsbord aangegeven verboden
-F10,Stop. In het bord kan worden aangegeven door wie of waarom het bord wordt toegepast
-F11,"Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines"
-F12,"Einde verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines"
-F13,Rijbaan of -strook uitsluitend ten behoeve van lijnbussen
-F14,Einde busbaan of -strook
-F15,Rijbaan of -strook uitsluitend ten behoeve van trams
-F16,Einde trambaan of -strook
-F17,Rijbaan of -strook uitsluitend ten behoeve van lijnbussen en trams
-F18,Einde bus- en trambaan of -strook
-F19,Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's en lijnbussen
-F20,Einde rijbaan of -strook voor vrachtauto's en lijnbussen
-F21,Rijbaan of -strook uitsluitend ten behoeve van vrachtauto's
-F22,Einde rijbaan of -strook voor vrachtauto's
-H1,Bebouwde kom
-H2,Einde bebouwde kom
-J1,Slecht wegdek
-J2,Bocht naar rechts
-J3,Bocht naar links
-J4,"S-bocht(en), eerst naar rechts"
-J5,"S-bocht(en), eerst naar links"
-J6,Steile helling,hellingspercentage,%,xsd:int
-J7,Gevaarlijke daling,hellingspercentage,%,xsd:int
-J8,Gevaarlijk kruispunt
-J9,Rotonde
-J10,Overweg met slagbomen
-J11,Overweg zonder slagbomen
-J12,Overweg met enkel spoor
-J13,Overweg met twee of meer sporen
-J14,Tram(kruising)
-J15,Beweegbare brug
-J16,Werk in uitvoering
-J17,Rijbaanversmalling
-J18,Rijbaanversmalling rechts
-J19,Rijbaanversmalling links
-J20,Slipgevaar
-J21,Kinderen
-J22,Voetgangersoversteekplaats
-J23,Voetgangers
-J24,Fietsers en bromfietsers
-J25,Losliggende stenen
-J26,Kade of rivieroever
-J27,Groot wild
-J28,Vee
-J29,Tegenliggers
-J30,Laagvliegende vliegtuigen
-J31,Zijwind
-J32,Verkeerslichten
-J33,File
-J34,Ongeval
-J35,"Slecht zicht door sneeuw, regen of mist"
-J36,IJzel of sneeuw
-J37,Gevaar (de aard van het gevaar is aangegeven op het onderbord)
-J38,Verkeersdrempel
-J39,Waarschuwing voor elektrische in- en uitschuifbare paal in de rijbaan (poller) waarmee toegankelijkheid van straten en gebieden kan worden geregeld.
 
 
 

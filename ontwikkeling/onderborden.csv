@@ -1,11 +1,23 @@
-naam,relatie met verkeersbord,omschrijving
-C22a1,C22a,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6
-C22a2,C22a,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6
-C22a3,C22a,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6
-C22a4,C22a,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6
-C22a5,C22a,milieuzone toegankelijk voor vrachtauto's emissieklasse 6
-C22a6,C22a,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6
-C22a7,C22a,milieuzone toegankelijk voor bussen emissieklasse 6
-C22a8,C22a,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6
-C22a9,C22a,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6
-C22c1,C22c,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's
+naam,omschrijving,relatie met verkeersbord,attribuut,eenheid,datatype,waarde
+C22a1,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,C22a,
+C22a2,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,C22a,
+C22a3,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,C22a,
+C22a4,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,C22a,
+C22a5,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,C22a,
+C22a6,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,C22a,
+C22a7,milieuzone toegankelijk voor bussen emissieklasse 6,C22a,
+C22a8,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,C22a,
+C22a9,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,C22a,
+C22c1,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,C22c
+Herhaling,Onderbord met aanduiding herhaling,A1
+Vrije tekst,Onderbord met vrije tekst,A1,omschrijving,,xsd:string,
+Waarschuwing verkeer,Onderbord met waarschuwing voor overige verkeersdeelnemers,A1,omschrijving,,xsd:string
+Waarschuwing,Onderbord met waarschuwing,A1,omschrijving,,xsd:string,
+Tijdstipaanduiding,Onderbord met aanduiding uren van geldigheid,A1,starttijd,time,xsd:time,
+Tijdstipaanduiding,,A1,eindtijd,time,xsd:time,
+Datumaanduiding,Onderbord met aanduiding geldige kalenderdagen van het verkeersbord,A1,startdatum,time,xsd:gMonthDay,
+Datumaanduiding,,A1,einddatum,time,xsd:gMonthDay,
+Werkingslengte,Onderbord met aanduiding van de werkingslengte van het verkeersbord,A1,werkingslengte,m,xsd:decimal
+Afrit,Onderbord met aanduiding van rijbaantype afrit,A1,omschrijving,,xsd:string,
+Parkeerinstructie,Onderbord met parkeerinstructie,A1,omschrijving,,xsd:string,
+Bestemmingsverkeer,Onderbord met aanduiding over bestemmingsverkeer,A1,omschrijving,,xsd:string,
