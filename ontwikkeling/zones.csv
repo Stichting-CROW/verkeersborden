@@ -1,10 +1,13 @@
-zone,omschrijving,relatie met bord
-parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,E10
-parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,E11
+zone,omschrijving,bovenliggend,relatie met bord
+parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,,E10
+parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,,E11
 milieuzone,zone met voorwaarden aan de uitstoot van voertuigen
-bibeko,zone binnen de bebouwde kom,H1
-bibeko,,H2
-bubeko,zone buiten de bebouwde kom
-erf,zone erf
-30 km zone, 30 km zone
-60 km zone, 30 km zone
+bibeko,zone binnen de bebouwde kom,,H1
+bibeko,,,H2
+bubeko,zone buiten de bebouwde kom,,
+erf,zone erf,,
+snelheidszone,snelheidszone,,zone,A1
+30 km zone, 30 km zone,snelheidszone,A1
+60 km zone, 30 km zone,snelheidszone,A1
+einde zone,einde snelheidszone,A2
+einde zone,einde snelheidszone,A1

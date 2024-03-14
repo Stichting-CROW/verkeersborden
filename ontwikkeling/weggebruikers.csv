@@ -1,0 +1,41 @@
+Naam
+Voetgangers
+Bromfietsers
+Fietsers
+Snorfietsers
+Brommobielen
+Bestemmingsverkeer
+Aanwonenden
+Vergunninghouders
+Ontheffinghouders
+Lijndienst
+Landbouwvoertuigen
+Bevoorradingsverkeer
+Taxi's
+Dienstvoertuigen
+Werkverkeer
+Gehandicaptenvoertuigen
+Hulpdiensten
+Vrachtverkeer
+Vuilniswagens
+Doorgaand verkeer
+Anders
+
+
+naam,definitie checken gemaakt door chatgpt
+Aanhangwagen,"Voertuig wat door een voertuig worden voortbewogen of kennelijk bestemd zijn om aldus te worden voortbewogen, alsmede opleggers"
+Ambulance,"Een voor het verlenen van zorg aan en vervoer van zieken en gewonden ingericht motorvoertuig"
+Autobus,"Motorvoertuig, ingericht voor het vervoer van meer dan acht personen, de bestuurder daaronder niet begrepen"
+Bedrijfsauto,"Bedrijfsauto zoals gedefinieerd in de Regeling voertuigen"
+Bestelauto,"Motorvoertuig, bestemd voor het vervoer van goederen, waarvan de toegestane maximum massa niet meer bedraagt dan 3500 kg"
+Brombakfiets,"Bromfiets op drie wielen, met twee voorwielen, ingericht voor het vervoer van goederen en eventueel een passagier"
+Brommobiel,"Bromfiets op meer dan twee wielen, die is voorzien van een carrosserie"
+Dierenambulance,"Motorvoertuig, ingericht en bestemd om te worden gebruikt voor het vervoer van zieke en gewonde dieren"
+Driewielig motorvoertuig,"Driewielig motorrijtuig zoals gedefinieerd in de Regeling voertuigen"
+Gehandicaptenvoertuig,"Voertuig ingericht voor het vervoer van een gehandicapte, niet breder dan 1,10 meter, met een maximumsnelheid van niet meer dan 45 km/u"
+Kampeerwagen,"Kampeerwagen zoals gedefinieerd in de Regeling voertuigen"
+Lijnbus,"Motorvoertuig gebruikt voor openbaar vervoer"
+Motorfiets,"Motorvoertuig op twee wielen, al dan niet met zijspan- of aanhangwagen"
+Personenauto,"Personenauto zoals gedefinieerd in de Regeling voertuigen"
+Snorfiets,"Bromfiets geconstrueerd voor een maximumsnelheid van niet meer dan 25 km/u"
+Speed-pedelec,"Elektrische bromfiets met trapondersteuning die sneller kan dan 25 km/u"
