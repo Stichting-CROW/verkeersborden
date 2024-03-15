@@ -1,24 +1,25 @@
-naam,Omschrijving,attribuut,eenheid,datatype,waarde,Verkeersregel,Snelheid
-Onderbord,Onderbord,Omschrijving,,xsd:string,Verkeersregel
-C22a1,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a2,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a3,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a4,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a5,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a6,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a7,milieuzone toegankelijk voor bussen emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor bussen emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a8,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22a9,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
-C22c1,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,Omschrijving,,xsd:string,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22c
-OB401,Onderbord met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal
-OB401-100,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,100,,Snelheid
-OB401-150,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
-OB401-200,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
-OB401-250,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
-OB401-300,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
-OB401-500,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
-OB401-1km,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,1000,,Snelheid
-
+naam,bovenliggend,Omschrijving,attribuut,eenheid,datatype,waarde,Verkeersregel,Snelheid
+Onderbord,,Onderbord,Omschrijving,,xsd:string,Verkeersregel
+OBMilieuzone,Onderbord,Onderbord bij milieuzone
+C22a1,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a2,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a3,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a4,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a5,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a6,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a7,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor bussen emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a8,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22a9,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
+C22c1,OBMilieuzone,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,Omschrijving,,xsd:string,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22c
+OB401,Onderbord,Onderbord met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal
+OB401-100,OB401,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,100,,Snelheid
+OB401-150,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
+OB401-200,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
+OB401-250,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
+OB401-300,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
+OB401-500,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,150,,Snelheid
+OB401-1km,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,m,xsd:decimal,1000,,Snelheid
+OB108,Onderbord,Onderbord met aanduiding uitgezonderd bestemmingsverkeer
 
 
 Waarschuwing,Onderbord met tekstuele waarschuwing,Omschrijving,,xsd:string,,A1,A2,A4,A5,B1,B2,B3,B4,B5,B6,B7,C

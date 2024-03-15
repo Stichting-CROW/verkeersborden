@@ -1,1 +1,4 @@
-naam,Omschrijving,attribuut,eenheid,datatype,waarde,Verkeersregel,
+naam,Omschrijving,eenheid,datatype,waarde,Verkeersregel,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,
+snelheid,de standaard wettelijke of lokale wettelijke maximumsnelheid,km/h,xsd:decimal,,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid
+uitgezonderd,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,
+geldt voor,de verkeersregel is alleen van toepassing op gespecificeerd voertuigtype,,waardelijst,,

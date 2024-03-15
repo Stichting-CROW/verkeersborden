@@ -2,8 +2,10 @@
 
 Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen publiceren ten behoeve van SMART mobility systemen.
 
-## Uitgangspunten
-In [dit document](https://docs.crow.nl/verkeersborden/framework/) zijn in 2022 uitgangspunten opgesteld voor een Informatiemodel Verkeerstekens. Deze uitgangspunten zijn vervolgens gebruikt om te onderzoeken hoie dit zou werken voor de [wettelijke maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/). 
+## Context
+Voor de context van het informatiemodel wordt verwezen naar het [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework) waarin de doelstellingen van het informatiemodel, de use cases en alle mogelijke raakvlakken met wetten, standaarden, datasets, applicaties en bijbehorende organisaties beschreven zijn. 
+
+In het architectuur framework zijn in 2022 uitgangspunten opgesteld voor een Informatiemodel Verkeerstekens. Deze uitgangspunten zijn vervolgens gebruikt om te onderzoeken hoe dit zou werken voor de [wettelijke maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/). 
 
 
 ## Uitwerking
