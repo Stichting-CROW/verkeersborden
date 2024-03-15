@@ -1,3 +1,5 @@
 # samenvatting
 
-lalala
+Voorliggende documentatie betreft de gids voor databeheer, bedoeld voor assetdatabeheerders en wegbeheerders. In de gids voor databeheer wordt het samenstellen en beheren van verkeerskundige informatie stapsgewijs beschreven, met als doel de toepassing te ondersteunen voor beginnende gebruikers. Om op eenvoudige wijze verkeerskundige informatie te kunnen samenstellen en beheren, is een applicatie nodig die het geheel beter visueel ondersteunt. Dat is buiten de scope van het informatiemodel. Daarom is deze gids geschikt voor databeheerders met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
+
+Voor een overzicht van alle documentatie van het Informatiemodel Verkeerstekens wordt verwezen naar de [Reeadme op GitHub](https://github.com/Stichting-CROW/verkeersborden/blob/main/README.md).
