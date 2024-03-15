@@ -2,7 +2,46 @@
 
 Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen publiceren ten behoeve van SMART mobility systemen.
 
-De volgende onderdelen zijn in 2023 en 2024 in de maak:
+## Uitgangspunten
+In [dit document](https://docs.crow.nl/verkeersborden/framework/) zijn in 2022 uitgangspunten opgesteld voor een Informatiemodel Verkeerstekens. Deze uitgangspunten zijn vervolgens gebruikt om te onderzoeken hoie dit zou werken voor de [wettelijke maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/). 
+
+
+## Uitwerking
+
+De volgende onderdelen zijn in 2024 in de maak:
+
+
+### Beheerplan
+
+* Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het strategische beheer en de beheerorganisatie, met verdere uitwerking naar tactische en operationele invulling van het beheer
+* Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen. Bij de concept-release van de documentatie wordt de mogelijkheid geboden om deze online te reviewen met annotaties in de kantlijn.
+
+
+### Gebruikersondersteuning
+Gebruikers worden op weg geholpen met:
+
+* [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement): voor wegbeheerders. In de gids voor databeheer wordt het samenstellen en beheren van verkeerskundige informatie stapsgewijs beschreven, met als doel de toepassing te ondersteunen voor beginnende gebruikers. Om op eenvoudige wijze verkeerskundige informatie te kunnen samenstellen en beheren, is een applicatie nodig die het geheel beter visueel ondersteunt. Dat is buiten de scope van het informatiemodel. Daarom is deze gids geschikt voor databeheerders met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
+* [Leermaterialen voor assetdatabeheerders en wegbeheerders](datamanagementguide). In de leermaterialen wordt het samenstellen en beheren van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie samenstelt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een databeheerder met technische kennis op weg te helpen.
+* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): voor ontwikkelaars. In de gids voor datagebruik wordt het gebruiken van verkeerskundige informatie in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen. De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van verkeerskundige informatie.
+* [Leermaterialen voor ontwikkelaars](datauserguide). In de leermaterialen wordt het gebruiken van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie gebruikt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen.
+* Een viewer van het informatiemodel
+* Een voorbeeld-implementatie (dataset). De voorbeeld-implementatie bestaat uit een dataset waarin het informatiemodel is toegepast op een (fictief) verkeerskundig wegennetwerk, met bijbehorende kaartvisualisaties van de wegen, zones, routes en fysiek aanwezige verkeersborden. In de voorbeeld dataset zitten gebreken (niet actueel / betrouwbaar / compleet), die met de controlemeachnismes gevonden kunnen worden.
+* Controlemechanismes (kwaliteitstoetsen dataset). De controlemechanismes voor de verkeerskundige informatie bestaan uit SPARQL queries waarmee onderzocht kan worden of de verkeerskundige informatie voldoet aan de regels van het informatiemodel. 
+* Zoekmechanismes (verkeerskundige informatie zoeken bij een wegvak). De zoekmechanismes bestaan uit SPARQL queries waarmee in verkeerskundige informatie gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de verkeerskundige informatie beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
+
+Daarnaast kunnen gebruikers bij de [helpdesk van CROW](https://www.crow.nl/ondersteuning/helpdesk) terecht voor vragen over het informatiemodel. 
+
+
+### Technische documentatie
+De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de uitleg van het informatiemodel op het gebied van de modelopbouw; de hiërarchie in de begrippen; modelleringsconstructies; distributievormen; gebruikte referentiemodellen / standaarden; toepassing van de MIM; relatie met geometrische objectrepresentaties, waaronder de NWB-wegvakken en NWB-juncties en licenties. De technische documentatie geeft de context weer; geeft alternatieven weer en onderbouwingen van keuzes. 
+[br]
+[br]
+Daarnaast wordt de mapping 
+
+
+### Code documentatie
+De [Code Documentatie](https://docs.crow.nl/verkeersborden/codedocs) zorgt ervoor dat de codes van het informatiemodel, datasets en queries begrepen kan worden. Dit wordt gedaan door toelichtingen op te schrijven in dezelfde structuur als de code. Dit moet consistent zijn en beschrijvend, een letterlijke uitleg van wat een deel van de code bewerkstelligt. 
+
 
 <!-- Image Map Generated by http://www.image-map.net/ -->
 <img src="https://github.com/Stichting-CROW/verkeersborden/blob/main/imagemapdocumentatie.png" usemap="#image-map">
@@ -28,6 +67,3 @@ De volgende onderdelen zijn in 2023 en 2024 in de maak:
 </map>
 
 
-In [dit document](https://docs.crow.nl/verkeersborden/framework/) zijn uitgangspunten opgesteld voor een Informatiemodel Verkeerstekens.
-
-Proef op de som met de uitwerking voor de [wettelijke maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/)
