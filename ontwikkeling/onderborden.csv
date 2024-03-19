@@ -1,6 +1,7 @@
 naam,bovenliggend,Omschrijving,attribuut,eenheid,datatype,waarde,Verkeersregel,Snelheid
-Onderbord,,Onderbord,Omschrijving,,xsd:string,Verkeersregel
-OBMilieuzone,Onderbord,Onderbord bij milieuzone
+Onderbord,,Onderbord,Omschrijving,,xsd:string,,Verkeersregel
+OB311,Onderbord,Onderbord met aanduiding herhaling,,,xsd:string,Herhaling,
+Milieuzone,Onderbord,Onderbord bij milieuzone,Omschrijving,,xsd:string,
 C22a1,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22a2,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22a3,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
@@ -19,23 +20,15 @@ OB401-250,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter van
 OB401-300,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
 OB401-500,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,500 m
 OB401-1km,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,1 km
-OB401-na,Onderbord,Onderbord met aanduiding van de geldigheid na x meter van het verkeersbord,Geldig na,,,xsd:string,
+OB401-na,Onderbord,Onderbord met vooraankondiging van de geldigheid na x meter vanaf het verkeersbord,Lengte vooraankondiging,,,xsd:string,
 OB108,Onderbord,Onderbord met aanduiding uitgezonderd bestemmingsverkeer
 OBParkeren,Onderbord,Onderbord met thema parkeren
-ntb,OBParkeren,Onderbord met aanduiding parkeerplaats alleen bestemd voor opladen electrische voertuigen,Omschrijving,,xsd:string,alleen voor het opladen van elektrische voertuigen
+OB19,OBParkeren,Onderbord met aanduiding parkeerplaats alleen bestemd voor opladen electrische voertuigen,Omschrijving,,xsd:string,alleen voor het opladen van elektrische voertuigen
 ntb,OBParkeren,Onderbord met waarschuwing over wegsleepregeling,Omschrijving,,xsd:string,Wegsleepregeling van kracht
-
-
-Waarschuwing,Onderbord met tekstuele waarschuwing,Omschrijving,,xsd:string,,A1,A2,A4,A5,B1,B2,B3,B4,B5,B6,B7,C
-Herhaling,Onderbord met aanduiding herhaling,Omschrijving,,xsd:string,Herhaling,A1,A2 (raar!),A4,,B1,,
+ntb,OBParkeren,Onderbord met aanduiding dat parkeren in de vakken wel is toegestaan,Omschrijving,,xsd:string,Wegsleepregeling van kracht
 Bij nat wegdek,Onderbord met aanduiding geldigheid bij nat wegdek,Omschrijving,,xsd:string,Bij nat wegdek,A1,,,,,,
-Tijdstipaanduiding,Onderbord met aanduiding uren van geldigheid van het verkeersbord,Starttijd,time,xsd:time,,A1,,,,,,
-Tijdstipaanduiding,,Eindtijd,time,xsd:time,,A1,,,,,,
-Datumaanduiding,Onderbord met aanduiding geldige kalenderdagen van het verkeersbord,Startdatum,time,xsd:gMonthDay,,A1,,,,,,
-Datumaanduiding,,Einddatum,time,xsd:gMonthDay,,,,,,,,
-Dagaanduiding,Onderbord met aanduiding wanneer het verkeersbord geldt op een of meer weekdagen,Dag,xsd:string,,,A1,,A4,,,,
-Dagaanduiding niet,Onderbord met aanduiding wanneer het verkeersbord niet geldt op een of meer weekdagen,Dag,xsd:string,,,A1,,A4,,,,
-Tijdsbeperking,Onderbord met aanduiding wanneer het verkeersbord geldt of niet geldt qua dagen én tijden,Omschrijving,,xsd:string,,A1,A2(raar!),A4,,,,
+Tijdsbeperking,Onderbord,Omschrijving,,xsd:string,
+
 
 Na lengte,
 Afrit,Onderbord met aanduiding van rijbaantype afrit,Omschrijving,,xsd:string,Afrit,A1,,A4,,,,,

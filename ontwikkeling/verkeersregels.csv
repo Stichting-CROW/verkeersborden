@@ -1,42 +1,42 @@
-verkeersregel,omschrijving,relatie met bord,relatie met zone
-verkeersregel,de wettelijk geldende ge- en verboden op een locatie volgens het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990),F8
-standaard wettelijke maximumsnelheid,"De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype",A1
-standaard wettelijke maximumsnelheid,,A2
-lokale wettelijke maximumsnelheid,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
-lokale wettelijke maximumsnelheid,,A2
-adviessnelheid,geadviseerde maximum snelheid,A4
-adviessnelheid,,A5
-voorrang verlenen,het de betrokken bestuurders op de kruisende weg in staat stellen ongehinderd hun weg te vervolgen,B6
-stoppen,stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
-stoppen,F10
-geslotenverklaring,"verbod de betrokken weg in te rijden of in te gaan alsmede de betrokken weg te gebruiken",C1
-geslotenverklaring,,C6
-geslotenverklaring,,C7
-geslotenverklaring,,C7a
-geslotenverklaring,,C7b
-geslotenverklaring,,C8
-geslotenverklaring,,C9
-geslotenverklaring,,C10
-geslotenverklaring,,C11
-geslotenverklaring,,C12
-geslotenverklaring,,C13
-geslotenverklaring,,C14
-geslotenverklaring,,C15
-geslotenverklaring,,C16
-geslotenverklaring,,C17
-geslotenverklaring,,C18
-geslotenverklaring,,C19
-geslotenverklaring,,C20
-geslotenverklaring,,C21
-geslotenverklaring,,C22
-eenrichtingsverkeer,"in een richting is de weg gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",C2
-eenrichtingsverkeer,,C3
-eenrichtingsverkeer,,C4
-inrijden toegestaan,weg inrijden is toegestaan onder voorwaarden zoals weergegeven in een onderbord,C5
-milieuzone,"Gesloten voor personen- en bedrijfsauto’s, vrachtauto’s of bussen met een dieselmotor vanwege milieuzone",C22a
-milieuzone,,C22b
-milieuzone,,C22c
-milieuzone,,C22d
+verkeersregel,bovenliggend,omschrijving,relatie met bord,relatie met zone
+verkeersregel,,de wettelijk geldende ge- en verboden op een locatie volgens het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990),F8
+standaard wettelijke maximumsnelheid,verkeersregel,"De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype",A1
+standaard wettelijke maximumsnelheid,verkeersregel,,A2
+lokale wettelijke maximumsnelheid,verkeersregel,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
+lokale wettelijke maximumsnelheid,verkeersregel,,A2
+adviessnelheid,verkeersregel,geadviseerde maximum snelheid,A4
+adviessnelheid,verkeersregel,,A5
+voorrang verlenen,verkeersregel,het de betrokken bestuurders op de kruisende weg in staat stellen ongehinderd hun weg te vervolgen,B6
+stoppen,verkeersregel,stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
+stoppen,verkeersregel,F10
+geslotenverklaring,verkeersregel,"verbod de betrokken weg in te rijden of in te gaan alsmede de betrokken weg te gebruiken",C1
+geslotenverklaring,geslotenverklaring,,C6
+geslotenverklaring,geslotenverklaring,,C7
+geslotenverklaring,geslotenverklaring,,C7a
+geslotenverklaring,geslotenverklaring,,C7b
+geslotenverklaring,geslotenverklaring,,C8
+geslotenverklaring,geslotenverklaring,,C9
+geslotenverklaring,geslotenverklaring,,C10
+geslotenverklaring,geslotenverklaring,,C11
+geslotenverklaring,geslotenverklaring,,C12
+geslotenverklaring,geslotenverklaring,,C13
+geslotenverklaring,geslotenverklaring,,C14
+geslotenverklaring,geslotenverklaring,,C15
+geslotenverklaring,geslotenverklaring,,C16
+geslotenverklaring,geslotenverklaring,,C17
+geslotenverklaring,geslotenverklaring,,C18
+geslotenverklaring,geslotenverklaring,,C19
+geslotenverklaring,geslotenverklaring,,C20
+geslotenverklaring,geslotenverklaring,,C21
+geslotenverklaring,geslotenverklaring,,C22
+eenrichtingsverkeer,verkeersregel,"in een richting is de weg gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee",C2
+eenrichtingsverkeer,verkeersregel,,C3
+eenrichtingsverkeer,verkeersregel,,C4
+inrijden toegestaan,verkeersregel,weg inrijden is toegestaan onder voorwaarden zoals weergegeven in een onderbord,C5
+milieuzone,verkeersregel,"Gesloten voor personen- en bedrijfsauto’s, vrachtauto’s of bussen met een dieselmotor vanwege milieuzone",C22a
+milieuzone,milieuzone,,C22b
+milieuzone,milieuzone,,C22c
+milieuzone,milieuzone,,C22d
 spitsstrook open,rijden op spitsstrook toegestaan,C23-01
 spitsstrook open,,C23-02
 spitsstrook open,,C23-03

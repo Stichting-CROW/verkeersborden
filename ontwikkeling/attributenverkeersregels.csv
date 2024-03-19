@@ -1,4 +1,12 @@
-naam,Omschrijving,eenheid,datatype,waarde,Verkeersregel,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,
+naam,Omschrijving,eenheid,datatype,waarde,verkeersregel,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,voorrang verlenen,stoppen,geslotenverklaring
 snelheid,de standaard wettelijke of lokale wettelijke maximumsnelheid,km/h,xsd:decimal,,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid
-uitgezonderd,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,
-geldt voor,de verkeersregel is alleen van toepassing op gespecificeerd voertuigtype,,waardelijst,,
+uitgezonderd,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,verkeersregel
+uitgezonderd parkeervakken,de verkeersregel is niet van toepassing op de parkeervakken,,waardelijst,,verkeersregel
+geldt voor,de verkeersregel is alleen van toepassing op gespecificeerd voertuigtype,,waardelijst,,verkeersregel
+gesloten voor,de geslotenverklaring geldt alleen voor gespecificeerd voertuigtype,,waardelijst,,,,,,,,geslotenverklaring
+Bij nat wegdek,geldigheid van verkeersregel bij nat wegdek,Omschrijving,,xsd:string,Bij nat wegdek,A1,,,,,,
+Tijdstipaanduiding,geldigheid van verkeersregel op specifieke tijden,Starttijd,time,xsd:time,,A1,,,,,,
+Tijdstipaanduiding,,Eindtijd,time,xsd:time,,A1,,,,,,
+Datumaanduiding,geldigheid van verkeersregel op specifieke kalenderdagen,Startdatum,time,xsd:gMonthDay,,A1,,,,,,
+Datumaanduiding,,Einddatum,time,xsd:gMonthDay,,,,,,,,
+Dagaanduiding,geldigheid van verkeersregel op een of meer specifieke weekdagen,Dag,xsd:string,,,A1,,A4,,,,

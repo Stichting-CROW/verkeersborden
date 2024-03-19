@@ -1,42 +1,40 @@
 Naam,Definitie,Bron
-Voetganger
-Bromfietser
-Fietser
-Snorfietser
-Brommobiel
-Bestemmingsverkeer
-Aanwonende
-Vergunninghouder
-Ontheffinghouder
-Lijndienst
-Landbouwvoertuig
-Bevoorradingsverkeer
-Taxi
-Dienstvoertuig
-Werkverkeer
-Gehandicaptenvoertuig
-Hulpdienst
-Vrachtverkeer
-Vuilniswagens
-Doorgaand verkeer
-Elektrische voertuig
-Anders
-
-
-naam,definitie checken gemaakt door chatgpt
 Aanhangwagen,"Voertuig wat door een voertuig worden voortbewogen of kennelijk bestemd zijn om aldus te worden voortbewogen, alsmede opleggers"
+Aanwonende
 Ambulance,"Een voor het verlenen van zorg aan en vervoer van zieken en gewonden ingericht motorvoertuig"
+Anders,een ander voertuigtype dan gespecificeerd in deze lijst
 Autobus,"Motorvoertuig, ingericht voor het vervoer van meer dan acht personen, de bestuurder daaronder niet begrepen"
 Bedrijfsauto,"Bedrijfsauto zoals gedefinieerd in de Regeling voertuigen"
 Bestelauto,"Motorvoertuig, bestemd voor het vervoer van goederen, waarvan de toegestane maximum massa niet meer bedraagt dan 3500 kg"
+Bestemmingsverkeer
+Bevoorradingsverkeer
 Brombakfiets,"Bromfiets op drie wielen, met twee voorwielen, ingericht voor het vervoer van goederen en eventueel een passagier"
+Bromfiets
 Brommobiel,"Bromfiets op meer dan twee wielen, die is voorzien van een carrosserie"
+Dienstvoertuig
 Dierenambulance,"Motorvoertuig, ingericht en bestemd om te worden gebruikt voor het vervoer van zieke en gewonde dieren"
+Doorgaand verkeer
 Driewielig motorvoertuig,"Driewielig motorrijtuig zoals gedefinieerd in de Regeling voertuigen"
+Elektrisch voertuig
+Fietser
 Gehandicaptenvoertuig,"Voertuig ingericht voor het vervoer van een gehandicapte, niet breder dan 1,10 meter, met een maximumsnelheid van niet meer dan 45 km/u"
+Hulpdienst
 Kampeerwagen,"Kampeerwagen zoals gedefinieerd in de Regeling voertuigen"
+Landbouwvoertuig
 Lijnbus,"Motorvoertuig gebruikt voor openbaar vervoer"
 Motorfiets,"Motorvoertuig op twee wielen, al dan niet met zijspan- of aanhangwagen"
+naam,definitie checken gemaakt door chatgpt
+Ontheffinghouder
 Personenauto,"Personenauto zoals gedefinieerd in de Regeling voertuigen"
+Rijpaard
+Ruiter
 Snorfiets,"Bromfiets geconstrueerd voor een maximumsnelheid van niet meer dan 25 km/u"
+Snorfiets met verbrandingsmotor,"Bromfiets met verbrandingsmotor geconstrueerd voor een maximumsnelheid van niet meer dan 25 km/u"
 Speed-pedelec,"Elektrische bromfiets met trapondersteuning die sneller kan dan 25 km/u"
+Taxi
+Vergunninghouder
+Voetganger
+Vrachtverkeer
+Vuilniswagens
+Werkverkeer
+
