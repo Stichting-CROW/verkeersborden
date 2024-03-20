@@ -1,7 +1,7 @@
 naam,bovenliggend,Omschrijving,attribuut,eenheid,datatype,waarde,Verkeersregel,Snelheid
 Onderbord,,Onderbord,Omschrijving,,xsd:string,,Verkeersregel
 OB311,Onderbord,Onderbord met aanduiding herhaling,,,xsd:string,Herhaling,
-Milieuzone,Onderbord,Onderbord bij milieuzone,Omschrijving,,xsd:string,
+OBMilieuzone,Onderbord,Onderbord bij milieuzone,Omschrijving,,xsd:string,
 C22a1,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22a2,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22a3,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
@@ -12,22 +12,26 @@ C22a7,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 6,Omschrijv
 C22a8,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22a9,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,Omschrijving,,xsd:string,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22a
 C22c1,OBMilieuzone,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,Omschrijving,,xsd:string,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C22c
-OB401,Onderbord,Onderbord met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,,Werkingslengte,,xsd:string,
-OB401-100,OB401,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,100 m
-OB401-150,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,150 m
-OB401-200,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,200 m
-OB401-250,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,250 m
-OB401-300,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
-OB401-500,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,500 m
-OB401-1km,OB401,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,1 km
+OBWerkingslengte,Onderbord,Onderbord OB401 met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,,Werkingslengte,,xsd:string,
+OB401-100,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,100 m
+OB401-150,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,150 m
+OB401-200,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,200 m
+OB401-250,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,250 m
+OB401-300,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
+OB401-500,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,500 m
+OB401-1km,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,1 km
 OB401-na,Onderbord,Onderbord met vooraankondiging van de geldigheid na x meter vanaf het verkeersbord,Lengte vooraankondiging,,,xsd:string,
 OB108,Onderbord,Onderbord met aanduiding uitgezonderd bestemmingsverkeer
 OBParkeren,Onderbord,Onderbord met thema parkeren
 OB19,OBParkeren,Onderbord met aanduiding parkeerplaats alleen bestemd voor opladen electrische voertuigen,Omschrijving,,xsd:string,alleen voor het opladen van elektrische voertuigen
 ntb,OBParkeren,Onderbord met waarschuwing over wegsleepregeling,Omschrijving,,xsd:string,Wegsleepregeling van kracht
-ntb,OBParkeren,Onderbord met aanduiding dat parkeren in de vakken wel is toegestaan,Omschrijving,,xsd:string,Wegsleepregeling van kracht
+ntb,OBParkeren,Onderbord met aanduiding dat parkeren in de vakken wel is toegestaan,Omschrijving,,xsd:string,Parkeren alleen in de vakken
 Bij nat wegdek,Onderbord met aanduiding geldigheid bij nat wegdek,Omschrijving,,xsd:string,Bij nat wegdek,A1,,,,,,
 Tijdsbeperking,Onderbord,Omschrijving,,xsd:string,
+Waarschuwing,Onderbord,onderbord met waarschwuing voor automobilist
+Verhoogde rijbaanscheiding,Waarschuwing,Onderbord met waarschuwing voor verhoogde rijbaanscheiding,Omschrijving,,xsd:string,Verhoogde rijbaanscheiding
+Verboden voor onbevoegden
+Parkeren verboden voor onbevoegden
 
 
 Na lengte,

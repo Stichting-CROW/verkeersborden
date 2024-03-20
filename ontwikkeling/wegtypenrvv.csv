@@ -22,6 +22,7 @@ Voetpad,"Trottoir, verkeersbaan, voetgangersvoorziening, wandelpad",G7
 Voetpad,G8
 Ruiterpad,Ruiterpad,G10
 Ruiterpad,,G11
+Trambaan,
 Verplicht Fietspad,"de weg, verkeersbaan of rijbaan, bestemd voor fietsers.",G11
 Verplicht Fietspad,,G12
 Fiets/bromfietspad,"de weg, verkeersbaan of rijbaan, bestemd voor fietsersen bromfietsers.",G12a
@@ -31,3 +32,10 @@ Onverplicht fietspad,,G14
 Afrit
 Bussluis
 Parkeerplaats
+Privéweg openbaar
+Privéweg niet-openbaar
+
+?
+Inrit
+Uitrit 
+Doorgang
