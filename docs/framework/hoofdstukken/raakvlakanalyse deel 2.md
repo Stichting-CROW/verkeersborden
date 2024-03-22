@@ -66,3 +66,6 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 <dfn data-lt="EU 2019-2144">EU 2019/2144</dfn>
 <dd> De Europese Unie heeft in deze wet besloten om voor [=ISA=] een snelheidsbeperking afdwingende versie te gaan voorschrijven, samen met een aantal andere veiligheidsmaatregelen voor voertuigen, verplicht in voertuigen die verkocht worden vanaf 2022. 
 <dd> Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex%3A32019R2144">EU 2019/2144, art 3, lid 3</a></dd>
+
+* [Link naar informatie van ETSC](https://etsc.eu/intelligent-speed-assistance-isa/)
+* [CROW publicatie ISA](https://www.crow.nl/kennis/bibliotheek-verkeer-en-vervoer/kennisdocumenten/handreiking-intelligente-snelheids-assistent-isa-v)

@@ -1,14 +1,15 @@
 zone,omschrijving,bovenliggend,relatie met bord
+zone,zone waarbinnen specifieke verkeersregels gelden
 parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,,E10
 parkeerzone,zone waarbinnen onder voorwaarden geparkeerd mag worden,,E11
 milieuzone,zone met voorwaarden aan de uitstoot van voertuigen
-bibeko,zone binnen de bebouwde kom,,H1
-bibeko,,,H2
-bubeko,zone buiten de bebouwde kom,,
-erf,zone erf,,
-snelheidszone,snelheidszone,,zone,A1
-30 km zone, 30 km zone,snelheidszone,A1
-60 km zone, 30 km zone,snelheidszone,A1
-einde zone,einde snelheidszone,A2
-einde zone,einde snelheidszone,A1
+bibekozone,zone binnen de bebouwde kom,,H1
+bibekozone,,,H2
+bubekozone,zone buiten de bebouwde kom,,
+erfzone,zone erf,,
+snelheidszone,snelheidszone,,A1
+snelheidszone,,,A2
+30-zone,zone waarbinnen het verkeer maximaal 30 km/h mag rijden,snelheidszone,A1
+60-zone,zone waarbinnen het verkeer maximaal 60 km/h mag rijden,snelheidszone,A1
 schoolzone
+
