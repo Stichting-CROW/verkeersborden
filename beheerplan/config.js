@@ -95,4 +95,24 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
+  localBiblio: {
+    BOMOS_fundament: {
+      title: "BOMOS, het fundament",
+      href: "https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/",
+      status: "Actueel",
+      publisher: "Logius",
+    },
+    BOMOS_verdieping: {
+      title: "BOMOS, de verdieping",
+      href: "https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/",
+      status: "Actueel",
+      publisher: "Logius",
+    },
+    kenkrechmer: {
+      title: "Open standaards call for action",
+      href: "https://www.csrstds.com/OpnStdsCallforAction.pdf",
+      status: "Actueel",
+      publisher: "University of Colorado",
+    },  
+    },
 };
