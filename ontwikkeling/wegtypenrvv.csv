@@ -1,41 +1,66 @@
-WegtypeRVV1990,omschrijving,relatie met bord
-WegtypeRVV1990,wegtype dat genoemd wordt in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) 
+naam,bovenliggend,omschrijving,relatie met bord
+WegtypeRVV1990,,wegtype dat genoemd wordt in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) 
+WegtypeSnelheid,WegtypeRVV1990,wegtype voor het bepalen van de maximumsnelheid voor voertuigtypen
+Erf,WegtypeSnelheid,Weg in een gebied waarin de verblijfsfunctie domineert en waarin niet harder dan stapvoets mag worden gereden,G5
+Erf,,,G6
+Bibeko,WegtypeSnelheid,Weg binnen de bebouwde kom
+Bibeko1,WegtypeSnelheid,"weg binnen de kom, voorzien van een vrijliggend fietspad of fiets/bromfietspad"
+Bibeko2,WegtypeSnelheid,"Weg binnen de kom, die gesloten is voor fietsers"
+Bibeko3,WegtypeSnelheid,"Weg binnen de kom, waar een maximumsnelheid van 70 km per uur geldt"
+Bubeko,WegtypeSnelheid,Weg buiten de bebouwde kom
+Snelweg,WegtypeSnelheid,"Weg met gescheiden hoofdrijbanen, waarvan het gebruik slechts is toegestaan voor bestuurders van motorvoertuigen die harder kunnen en mogen rijden dan 80 km/h, met uitsluitend ongelijkvloerse kruispunten.",G1
+Snelweg,,,G2
+Autoweg,WegtypeSnelheid,"Weg met al dan niet gescheiden hoofdrijbanen, waarvan het gebruik slechts is toegestaan voor snelverkeer",G3
+Autoweg,,,G4
+Erfweg,WegtypeSnelheid,Weg in een gebied waarin de verblijfsfunctie domineert en waarin niet harder dan stapvoets mag worden gereden  |
+Fiets/bromfietspad,WegtypeSnelheid,"de weg, verkeersbaan of rijbaan, bestemd voor fietsersen bromfietsers.",G12a
+Fiets/bromfietspad,,,G12b
+Fietsbrombibeko,WegtypeSnelheid,"de weg, verkeersbaan of rijbaan, bestemd voor fietsersen bromfietsers binnen de bebouwde kom",G12a
+Fietsbrombubeko,WegtypeSnelheid,"de weg, verkeersbaan of rijbaan, bestemd voor fietsersen bromfietsers buiten de bebouwde kom.",G12a
+Fietsbrombibeko,,,G12b
+Fietsbrombubeko,,,G12b
+Fietsbibeko,WegtypeSnelheid,"de weg, verkeersbaan of rijbaan, bestemd voor fietsers binnen de bebouwde kom",G11  
+Fietsbubeko,WegtypeSnelheid,"de weg, verkeersbaan of rijbaan, bestemd voor fietsers buiten de bebouwde kom",G11 
+Fietsbibeko,,,G12
+Fietsbubeko,,,G12
+Fietsbibeko,,,G13 
+Fietsbubeko,,,G13
+Fietsbibeko,,,G14
+Fietsbubeko,,,G14
+Trottoir,WegtypeSnelheid,"Trottoir, verkeersbaan, voetgangersvoorziening, wandelpad",G7
+Trottoir,,,G8        
+
+WegtypeVoertuigspecifiek,WegtypeRVV1990,Wegtype dat specifiek bestemd is voor een bepaald voertuigtype
+VerplichtFietspad,"Fietspad verplicht bestemd voor fietsers",G11
+VerplichtFietspad,,,G12
+OnverplichtFietspad,"de weg, verkeersbaan of rijbaan, onverplicht bestemd voor fietsers binnen de bebouwde kom.",G13
+OnverplichtFietspad,,G14
+Weg voor bestemmingsverkeer,"Weg voor bestuurders wier reisdoel één of meer bepaalde percelen betreft die zijn gelegen aan of in de directe nabijheid van een weg met een door verkeerstekens aangegeven geslotenverklaring voor bepaalde categorieën bestuurders en die slechts via deze weg zijn te bereiken alsmede bestuurders van lijnbussen;",G3
+Busbaan,Rijbaan waarop het woord «BUS» of «LIJNBUS» is aangebracht
+Busstrook,Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan waarop het woord «BUS» of «LIJNBUS» is aangebracht.
+Fietsstrook,Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan waarop afbeeldingen van een fiets zijn aangebracht.
+Bussluis
+Ruiterpad,Ruiterpad,G10
+Ruiterpad,,G11
+Trambaan,
+
+
+
 Voorrangsweg,Weg waarop bestuurders voorrang hebben op bestuurders van kruisende wegen,B1
 Voorrangsweg,,B2
 Voorrangskruispunt,Kruispunt waarop bestuurders voorrang hebben op bestuurders van kruisende wegen,B3
 Voorrangskruispunt,,B4
 Voorrangskruispunt,,B5
-Autosnelweg,"Weg met gescheiden hoofdrijbanen, waarvan het gebruik slechts is toegestaan voor bestuurders van motorvoertuigen die harder kunnen en mogen rijden dan 80 km/h, met uitsluitend ongelijkvloerse kruispunten.",G1
-Autosnelweg,,G2
-Autoweg,"Weg met al dan niet gescheiden hoofdrijbanen, waarvan het gebruik slechts is toegestaan voor snelverkeer",G3
-Autoweg,,G4
-Erf,Gebied waarin de verblijfsfunctie domineert en waarin niet harder dan stapvoets mag worden gereden,G5
-Erf,,G6
-Weg voor bestemmingsverkeer,"Weg voor bestuurders wier reisdoel één of meer bepaalde percelen betreft die zijn gelegen aan of in de directe nabijheid van een weg met een door verkeerstekens aangegeven geslotenverklaring voor bepaalde categorieën bestuurders en die slechts via deze weg zijn te bereiken alsmede bestuurders van lijnbussen;",G3
-Busbaan,Rijbaan waarop het woord «BUS» of «LIJNBUS» is aangebracht
-Busstrook,Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan waarop het woord «BUS» of «LIJNBUS» is aangebracht.
-Fietsstrook,Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan waarop afbeeldingen van een fiets zijn aangebracht.
-Invoegstrook,Door een blokmarkering van de doorgaande rijbaan afgescheiden weggedeelte dat is bestemd voor bestuurders die de doorgaande rijbaan oprijden.
-Spitsstrook,De vluchtstrook die als rijstrook is aangewezen blijkens bord C23-01,C23-01
-Uitrijstrook,Door een blokmarkering van de doorgaande rijbaan afgescheiden weggedeelte dat is bestemd voor bestuurders die de doorgaande rijbaan verlaten.
-Voetpad,"Trottoir, verkeersbaan, voetgangersvoorziening, wandelpad",G7
-Voetpad,G8
-Ruiterpad,Ruiterpad,G10
-Ruiterpad,,G11
-Trambaan,
-Verplicht Fietspad,"de weg, verkeersbaan of rijbaan, bestemd voor fietsers.",G11
-Verplicht Fietspad,,G12
-Fiets/bromfietspad,"de weg, verkeersbaan of rijbaan, bestemd voor fietsersen bromfietsers.",G12a
-Fiets/bromfietspad,,G12b
-Onverplicht fietspad,Onverplicht fietspad,G13
-Onverplicht fietspad,,G14
-Afrit
-Bussluis
-Parkeerplaats
-Privéweg openbaar
-Privéweg niet-openbaar
 
-?
-Inrit
-Uitrit 
-Doorgang
+Dit dan ook soms rijbaantypen maken?
+WegtypeSpecialeFunctie,WegtypeRVV1990,Wegtype dat een specifieke functie heeft
+Invoegstrook,WegtypeSpecialeFunctie,Door een blokmarkering van de doorgaande rijbaan afgescheiden weggedeelte dat is bestemd voor bestuurders die de doorgaande rijbaan oprijden.
+Spitsstrook,WegtypeSpecialeFunctie,De vluchtstrook die als rijstrook is aangewezen blijkens bord C23-01,C23-01
+Uitrijstrook,WegtypeSpecialeFunctie,Door een blokmarkering van de doorgaande rijbaan afgescheiden weggedeelte dat is bestemd voor bestuurders die de doorgaande rijbaan verlaten.
+Afrit,WegtypeSpecialeFunctie
+Parkeerplaats,WegtypeSpecialeFunctie
+Privéweg openbaar,WegtypeSpecialeFunctie
+Privéweg niet-openbaar,WegtypeSpecialeFunctie
+Inrit,WegtypeSpecialeFunctie
+Uitrit,WegtypeSpecialeFunctie
+Doorgang,WegtypeSpecialeFunctie

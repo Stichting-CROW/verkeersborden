@@ -1,7 +1,7 @@
 var respecConfig = {
   // => https://github.com/stichting-crow/respec/wiki
   specType: "CROW-DOC",
-  specStatus: "DEF",
+  specStatus: "RESC",
   license: "CC-BY",
   pubDomain: "verkeersborden",
   shortName: "maximalesnelheid",

@@ -1,7 +1,9 @@
-| `rijbaan  ` | rijbaan                            |
-| `fietsbrom` | fiets/bromfietspad                 |
-| `fiets`     | fietspad                           |
-| `trottoir`  | trottoir                          |
-| `bibeko1`   | binnen de kom, die zijn voorzien van een vrijliggend fietspad of fiets/bromfietspad |
-| `bibeko2`   | binnen de kom, die gesloten zijn voor fietsers |
-| `bibeko3`   | binnen de kom, waar een maximumsnelheid van 70 km per uur geldt |
+| Naam          | Omschrijving                  |   Standaard wettelijke maximumsnelheid   |
+| ----------- | ---------------------------------- | ---------------------------------- | 
+| `rijbaanbibeko  ` | rijstrook binnen de bebouwde kom    | voor motorvoertuigen 50 km per uur <br>voor brommobielen: 45 km/h  <br>voor snorfietsen: 25 km/h |
+| `rijbaanbubeko  ` | rijstrook buiten de bebouwde kom  | voor motorvoertuigen: 80 km/h   <br>  voor bromfietsen en gehandicaptenvoertuigen, uitgerust met een motor: 45 km/h  |
+| `fietsbrombibeko` | fiets/bromfietspad binnen de bebouwde kom |  voor bromfietsen en gehandicaptenvoertuigen, uitgerust met een motor: 30 km/h   |
+| `fietsbrombibeko` | fiets/bromfietspad buiten de bebouwde kom |  voor bromfietsen en gehandicaptenvoertuigen, uitgerust met een motor: 40 km/h   |
+| `fietsbibeko`     | fietspad binnen de bebouwde kom                          |  voor gehandicaptenvoertuigen, uitgerust met een motor: 30 km/h   |
+| `fietsbubeko`     | fietspad buiten de bebouwde kom                          |  voor gehandicaptenvoertuigen, uitgerust met een motor: 40 km/h   |
+| `trottoir`  | trottoir                          |   voor gehandicaptenvoertuigen, uitgerust met een motor, en snorfietsen als bedoeld in artikel 1, eerste lid, onderdeel e, subonderdeel d, van de wet: 6 km/h  |
