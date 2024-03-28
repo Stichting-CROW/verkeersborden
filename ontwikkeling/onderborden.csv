@@ -27,63 +27,14 @@ OB19,OBVoertuigType,Onderbord met visuele aanduiding dat het bord alleen geldt v
 OB20-A,OBVoertuigType,Onderbord met tekstuele aanduiding dat het bord alleen geldt voor electrische voertuigen,Omschrijving,,,elektrische-voertuigen
 OB20-B,OBVoertuigType,Onderbord met tekstuele aanduiding dat het bord alleen geldt voor opladen electrische voertuigen,Omschrijving,,,alleen voor opladen elektrische voertuigen
 OB21,OBVoertuigType,Onderbord met visuele aanduiding dat het bord alleen geldt voor bestelbus en bedrijfsauto,Omschrijving,,,{bestelbus}
-InstructiefOnderbord,Onderbord,Onderbord dat een instructie geeft aan het verkeer,,,,
-(brom)fietsers oversteken,InstructiefOnderbord,Onderbord met aanduiding (brom)fietsers oversteken,Omschrijving,,,(brom)fietsers oversteken
-OB401-na,Onderbord,Onderbord met vooraankondiging van de geldigheid na x meter vanaf het verkeersbord,Lengte vooraankondiging,,xsd:string,
-OB402-Sp11-20km,OB401-na,Onderbord met vooraankondiging van een benzinestation na 20 km,Omschrijving,,,{benzinepomp} na 20 km
-C22a1,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6
-C22a2,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6
-C22a3,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6
-C22a4,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6
-C22a5,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's emissieklasse 6
-C22a6,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6
-C22a7,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor bussen emissieklasse 6
-C22a8,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6
-C22a9,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6
-C22c1,OBMilieuzone,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,Omschrijving,,,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's
-ntb,OBParkeren,Onderbord met waarschuwing over wegsleepregeling,Omschrijving,,,Wegsleepregeling van kracht
-ntb,OBParkeren,Onderbord met aanduiding dat parkeren in de vakken wel is toegestaan,Omschrijving,,,Parkeren alleen in de vakken
-Parkeren verboden voor onbevoegden,OBParkeren,Parkeren verboden voor onbevoegden,Omschrijving,,,parkeren verboden voor onbevoegden
-OB401-100,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,100 m
-OB401-150,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,150 m
-OB401-1km,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,1 km
-OB401-200,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,200 m
-OB401-250,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,250 m
-OB401-300,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
-OB401-500,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:decimal,500 m
-OB411-100m,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord met pijlen,Omschrijving,,,{pijl} 100 m {pijl}
-
-
-OB101,Onderbord,Onderbord met visuele en tekstuele aanduiding dat inhalen tractoren is toegestaan,Omschrijving,,,inhalen {tractoren} toegestaan
-OB102,Onderbord,Onderbord met tekstuele aanduiding uitgezonderd berm,Omschrijving,,,uitgezonderd berm
-OB201,Onderbord,Onderbord met tekstuele aanduiding geldigheid op datum, ---- afleiden uit verkeersregel?,,,
-OB202,Onderbord,Onderbord met tekstuele aanduiding geldigheid op dag, ---- afleiden uit verkeersregel?,,,
-OB311,Onderbord,Onderbord met aanduiding herhaling,Omschrijving,,,Herhaling
-OB612,Onderbord,Onderbord met aanduiding geldigheid bij nat wegdek,Omschrijving,,,Bij nat wegdek
-OB613,Onderbord,Bij nat wegdek,Omschrijving,,,Bij nat wegdek
-OBMilieuzone,Onderbord,Onderbord bij milieuzone,Omschrijving,,,
-OBParkeren,Onderbord,Onderbord met thema parkeren,,,,
-OBWerkingslengte,Onderbord,Onderbord OB401 met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,Werkingslengte,m,xsd:string,
-Onderbordrijrichting,Onderbord,Onderbord met pijlen die aanduiden in welke richting men mag rijden,,,,
-Parkeerinstructie,Onderbord,Onderbord met parkeerinstructie,,,,
-TijdenOnderbord,Onderbord,Onderbord dat een beperkte geldigheid van het bord aanduidt in een beperkte periode,,,,
 Uitgezonderd voertuigtype,Onderbord,Onderbord met tekstuele of visuele aanduiding uitgezonderd voertype,,,xsd:string,
-Waarschuwingsbord,Onderbord,Onderbord met waarschuwing,,,,
-WegtyperingsOnderbord,Onderbord,Onderbord dat het type wegvak of kruising aangeeft,,,,
-B501-L,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar links mag rijden,Omschrijving,,,{links}
-OB501-R,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar rechts mag rijden,Omschrijving,,,{rechts}
-OB502,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts-in2richtingen}
-OB503,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar echts en linksmag rijden,Omschrijving,,,{rechts-links-in2richtingen}
-OB504,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts}
-OB611,Slipgevaar,,,,,
-Zonsopkomst,Tijdenonderbord,Onderbord dat aangeeft dat het verkeersbord niet geldt van zonsopkomst tot zonsondergang,,,,
 OB103,Uitgezonderd voertuigtype,Onderbord met tekstuele aanduiding uitgezonderd politie,Omschrijving,,,Uitgezonderd politie
 OB104,Uitgezonderd voertuigtype,Onderbord met tekstuele aanduiding uitgezonderd lijnbussen,Omschrijving,,,Uitgezonderd lijnbussen
 OB108,Uitgezonderd voertuigtype,Onderbord met tekstuele aanduiding uitgezonderd bestemmingsverkeer,Omschrijving,,,Uitgezonderd bestemmingsverkeer
 OB109,Uitgezonderd voertuigtype,Onderbord met tekstuele aanduiding uitgezonderd aangrenzende percelen,Omschrijving,,,Uitgezonderd aangrenzende percelen
 OB113,Uitgezonderd voertuigtype,Onderbord met visuele en tekstuele aanduiding uitgezonderd vrachtwagens voorzien van gezichtsveldverbeterende voorzieningen,,,,
 OB113,Uitgezonderd voertuigtype,Onderbord dat uitzondering aangeeft voor vrachtwagens voorzien van gezichtsveldverbeterende voorzieningen,Omschrijving,,,Uitgezonderd {vrachtwagens} voorzien van gezichtsveldverbeterende voorzieningen
-OB305,Uitgezonderd voertuigtype,Onderbord met aanduiding kenteken,,,,
+OB305,Uitgezonderd voertuigtype,Onderbord met aanduiding kenteken,Omschrijving,,,
 OB51,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype ruiters,Omschrijving,,,{uitgezonderd-ruiter}
 OB52,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype fietsers,Omschrijving,,,{uitgezonderd-fietser}
 OB53,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype bromfietsers,Omschrijving,,,{uitgezonderd-bromfietser}
@@ -100,29 +51,110 @@ OB63,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voe
 OB64,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype trams,Omschrijving,,,{uitgezonderd-tram}
 OB65,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype brommobielen,Omschrijving,,,Uitgezonderd brommobielen
 OB66,Uitgezonderd voertuigtype,Onderbord met visuele aanduiding uitgezonderd voertype gehandicaptenvoertuigen,Omschrijving,,,Uitgezonderd-gehandicaptenvoertuigen
+OB1006,Uitgezonderd voertuigtype,Onderbord met tekstuele aanduiding Snorfiets niet toegestaan,,,,Snorfiets niet toegestaan
+OBMilieuzone,Onderbord,Onderbord bij milieuzone,Omschrijving,,,
+C22a1,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 3 tot en met 6
+C22a2,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 4 tot en met 6
+C22a3,OBMilieuzone,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6,Omschrijving,,,milieuzone toegankelijk voor personen- en bedrijfsauto's emissieklasse 5 en 6
+C22a4,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's emissieklasse 4 tot en met 6
+C22a5,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's emissieklasse 6
+C22a6,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor bussen emissieklasse 4 tot en met 6
+C22a7,OBMilieuzone,milieuzone toegankelijk voor bussen emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor bussen emissieklasse 6
+C22a8,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 4 tot en met 6
+C22a9,OBMilieuzone,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6,Omschrijving,,,milieuzone toegankelijk voor vrachtauto's en bussen emissieklasse 6
+C22c1,OBMilieuzone,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's,Omschrijving,,,nul-emissiezone toegankelijk voor emissieloze bedrijfs- en vrachtauto's
+Waarschuwingsbord,Onderbord,Onderbord met waarschuwing,,,,
 OB17,Waarschuwingsonderbord,Onderbord met waarschuwing voor overhangende takken,Omschrijving,,,{overhangende-takken}
 OB18,Waarschuwingsonderbord,Onderbord met waarschuwing voor zachte berm rechts,Omschrijving,,,{zachte-berm-rechts}
 OB19,Waarschuwingsonderbord,Onderbord met waarschuwing voor zachte berm links,Omschrijving,,,{zachte-berm-links}
-OB301,Waarschuwingsonderbord,Onderbord met visuele waarschuwing voor wielklemregeling,Omschrijving,,,{wielklemregeling}
-OB302,Waarschuwingsonderbord,Onderbord met visuele waarschuwing voor wielklem- en wegsleepregeling,Omschrijving,,,{wielklemregeling-wegslepen}
-OB303,Waarschuwingsonderbord,Onderbord met visuele waarschuwing voor wegsleepregeling,Omschrijving,,,{wegslepen}
-OB304,Waarschuwingsonderbord,Onderbord met visuele en tekstuele waarschuwing voor wegsleepregeling,Omschrijving,,,{wegslepen} Wegsleepregeling van kracht 
-OB305,Waarschuwingsonderbord,Onderbord met visuele en tekstuele waarschuwing voor fietsen worden verwijderd,Omschrijving,,,{fiets} worden verwijderd,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C17,,,,,,,,
 OB307,Waarschuwingsonderbord,Onderbord met visuele en tekstuele waarschuwing voor alleen chipknip,Omschrijving,,,{chipknip} alleen chipknip,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C18,,,,,,,,
 OB308,Waarschuwingsonderbord,Onderbord met visuele en tekstuele waarschuwing voor alleen pinpas,Omschrijving,,,{pinpas} alleen pinpas,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C19,,,,,,,
-OB505,Waarschuwingsonderbord,Tegenliggers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C20,,,,,,
+OB505,Waarschuwingsonderbord,Onderbord met waarschuwing Tegenliggers,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C20,,,,,,
 OB601,Waarschuwingsonderbord,Onderbord met waarschuwing voor zachte berm,Omschrijving,,,Zachte berm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,C21,,,,,,
-OB614,Waarschuwingsonderbord,Slecht wegdek,Omschrijving,,,Slecht wegdek,,,,,,,,,,,,,,C,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-OB620,Waarschuwingsonderbord,Asverspringingen,Omschrijving,,,Asverspringingen
-OB621,Waarschuwingsonderbord,Verhoogde rijbaanscheiding,Omschrijving,,,Verhoogde rijbaanscheiding
-OB622,Waarschuwingsonderbord,Uitrit,Omschrijving,,,Uitrit
-Verhoogde rijbaanscheiding,Waarschuwingsonderbord,Onderbord met waarschuwing voor verhoogde rijbaanscheiding,Omschrijving,,,Verhoogde rijbaanscheiding
-Afrit,Wegtyperingsonderbord,Onderbord met aanduiding van rijbaantype afrit,Omschrijving,,,Afrit
-Eigen weg,Wegtyperingsonderbord,Eigen weg,Omschrijving,,,
+OB614,Waarschuwingsonderbord,Onderbord met waarschuwing Slecht wegdek,Omschrijving,,,Slecht wegdek,,,,,,,,,,,,,,C,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+OB620,Waarschuwingsonderbord,Onderbord met waarschuwing Asverspringingen,Omschrijving,,,Asverspringingen
+OB621,Waarschuwingsonderbord,Onderbord met waarschuwing Verhoogde rijbaanscheiding,Omschrijving,,,Verhoogde rijbaanscheiding
+OB1005,Waarschuwingsonderbord,Onderbord met waarschuwing Verhoogde rijbaanscheiding voor bromfietsers,,,,{bromfiets} Verhoogde rijbaanscheiding
+OB622,Waarschuwingsonderbord,Onderbord met waarschuwing Uitrit,Omschrijving,,,Uitrit
+OB611,Waarschuwingsonderbord,Onderbord met waarschuwing voor slipgevaar,,,,Slipgevaar
+OB627,Waarschuwingsonderbord,Onderbord met waarschuwing voor een beweegbaar obstakel,,,,{Beweegbaar obstakel}
+OB710,Waarschuwingsonderbord,Onderbord met waarschuwing doseerlichten,,,,doseerlichten
+OB711-B,Waarschuwingsonderbord,Onderbord met waarschuwing slagbomen dalen automatisch,,,,Slagbomen dalen automatisch
+OB712-B,Waarschuwingsonderbord,Onderbord met waarschuwing slagbomen worden op afstand bediend,,,,Slagbomen worden op afstand bediend
+OB713-B,Waarschuwingsonderbord,Onderbord met waarschuwing verkeer op rotonde heeft voorrang,,,,Verkeer op rotonde heeft voorrang
+OB714,Waarschuwingsonderbord,Onderbord met waarschuwing hoevel keer iets voorkomt,Aantal,,xsd:decimal,
+OB1003,Waarschuwingsonderbord,Onderbord met waarschuwing Verhoogde drempel,,,,Verhoogde drempel
+WegtyperingsOnderbord,Onderbord,Onderbord dat het type wegvak of kruising aangeeft,,,,
 OB617,Wegtyperingsonderbord,Verhoogde overweg met overwegnummer,Omschrijving,,,Verhoogde overweg met overwegnummer
 OB618,Wegtyperingsonderbord,Bussluis,Omschrijving,,,Bussluis
 OB619,Wegtyperingsonderbord,Busbaan,Omschrijving,,,Busbaan
 OB626,Wegtyperingsonderbord,Korte invoegstrook,Omschrijving,,,Korte invoegstrook
-Verboden toegang,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare priv�weg betreft,Omschrijving,,,verboden toegang
-Verboden voor onbevoegden,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare priv�weg betreft,Omschrijving,,,verboden voor onbevoegden
-
+OB1004,Wegtyperingsonderbord,Onderbord met aanduiding van Schoolzone,,,,Schoolzone	
+Verboden toegang,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare privéweg betreft,Omschrijving,,,verboden toegang
+Verboden voor onbevoegden,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare privéweg betreft,Omschrijving,,,verboden voor onbevoegden
+OB401-100,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,100 m
+OB401-150,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,150 m
+OB401-1km,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,1 km
+OB401-200,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,200 m
+OB401-250,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,250 m
+OB401-300,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
+OB401-500,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,500 m
+OB411-100m,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord met pijlen,Omschrijving,,,{pijl} 100 m {pijl}
+TijdenOnderbord,Onderbord,Onderbord dat een beperkte geldigheid van het bord aanduidt in een beperkte periode,,,,
+Zonsopkomst,Tijdenonderbord,Onderbord dat aangeeft dat het verkeersbord niet geldt van zonsopkomst tot zonsondergang,,,,
+OB201,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid op datum, ---- afleiden uit verkeersregel?,,,
+OB202,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid op dag, ---- afleiden uit verkeersregel?,,,
+OB311,Tijdenonderbord,Onderbord met aanduiding herhaling,Omschrijving,,,Herhaling
+Onderbordrijrichting,Onderbord,Onderbord met pijlen die aanduiden in welke richting men mag rijden,,,,
+B501-L,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar links mag rijden,Omschrijving,,,{links}
+OB501-R,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar rechts mag rijden,Omschrijving,,,{rechts}
+OB502,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts-in2richtingen}
+OB503,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar echts en linksmag rijden,Omschrijving,,,{rechts-links-in2richtingen}
+OB504,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts}
+OBParkeren,Onderbord,Onderbord met parkeerinstructie,,,,
+ntb,OBParkeren,Onderbord met waarschuwing over wegsleepregeling,Omschrijving,,,Wegsleepregeling van kracht
+ntb,OBParkeren,Onderbord met aanduiding dat parkeren in de vakken wel is toegestaan,Omschrijving,,,Parkeren alleen in de vakken
+Parkeren verboden voor onbevoegden,OBParkeren,Parkeren verboden voor onbevoegden,Omschrijving,,,parkeren verboden voor onbevoegden
+OB301,OBParkeren,Onderbord met visuele waarschuwing voor wielklemregeling,Omschrijving,,,{wielklemregeling}
+OB302,OBParkeren,Onderbord met visuele waarschuwing voor wielklem- en wegsleepregeling,Omschrijving,,,{wielklemregeling-wegslepen}
+OB303,OBParkeren,Onderbord met visuele waarschuwing voor wegsleepregeling,Omschrijving,,,{wegslepen}
+OB304,OBParkeren,Onderbord met visuele en tekstuele waarschuwing voor wegsleepregeling,Omschrijving,,,{wegslepen} Wegsleepregeling van kracht 
+OB305,OBParkeren,Onderbord met visuele en tekstuele waarschuwing voor fietsen worden verwijderd,Omschrijving,,,{fiets} worden verwijderd
+OB901-A,OBParkeren,Onderbord met categorie I voor bewaakte parkeerplaatsen??,,,,I	
+OB901-B,OBParkeren,Onderbord met categorie II voor bewaakte parkeerplaatsen??,,,,II	
+OB902-A,OBParkeren,Onderbord met categorie II voor bewaakte parkeerplaatsen??,,,,Categorie 1
+OB902-B,OBParkeren,Onderbord met categorie II voor bewaakte parkeerplaatsen??,,,,Categorie 2
+OB903-A,OBParkeren,Onderbord met sector voor parkeren??
+OnderbordVoorwaarde,Onderbord,Onderbord met beperkende voorwaarde voor geldigheid
+OB612,OnderbordVoorwaarde,Onderbord met aanduiding geldigheid bij nat wegdek,Omschrijving,,,Bij nat wegdek
+OB613,Onderbord,Bij nat wegdek,Omschrijving,,,Bij nat wegdek
+OBWerkingslengte,Onderbord,Onderbord OB401 met aanduiding van de werkingslengte van x meter vanaf het verkeersbord,Werkingslengte,m,xsd:string,
+InstructiefOnderbord,Onderbord,Onderbord dat een instructie geeft aan het verkeer,,,,
+(brom)fietsers oversteken,InstructiefOnderbord,Onderbord met aanduiding (brom)fietsers oversteken,Omschrijving,,,(brom)fietsers oversteken
+OB101,InstructiefOnderbord,Onderbord met visuele en tekstuele aanduiding dat inhalen tractoren is toegestaan,Omschrijving,,,inhalen {tractoren} toegestaan
+OB102,InstructiefOnderbord,Onderbord met tekstuele aanduiding uitgezonderd berm,Omschrijving,,,uitgezonderd berm
+OB701-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg,,,,{Verloop voorrangsweg1}
+OB711-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg,,,,{Verloop voorrangsweg2}
+OB702-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg bij een T-splitsing,,,,{Verloop voorrangsweg-t-splitsing1}
+OB712-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg bij een T-splitsing,,,,{Verloop voorrangsweg-t-splitsing2}	
+OB703-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg bij een zijweg,,,,{Verloop voorrangsweg-zijweg1}
+OB713-A,InstructiefOnderbord,Onderbord met verloop van de voorrangsweg bij een zijweg,,,,{Verloop voorrangsweg-zijweg2}
+OB705,InstructiefOnderbord,Onderbord met instructie ga terug,,,,Ga terug
+OB704-100m,InstructiefOnderbord,Onderbord met vooraankondiging van verplichte stop,,,,stop 100 m
+OB715,InstructiefOnderbord,Onderbord met instructie Ritsen vanaf hier,,,,Ritsen vanaf hier	
+OB717,InstructiefOnderbord,Onderbord met instructie Ritsen na 300 m,,,,Ritsen na 300 m 	
+OB718,InstructiefOnderbord,Onderbord met instructie Ritsen over 600 m,,,,Ritsen over 600 m	
+OB719,InstructiefOnderbord,Onderbord met instructie Spitsstrook open,,,,Spitsstrook open
+OB720,InstructiefOnderbord,Onderbord met instructie Plusstrook open,,,,Plusstrook open
+OB721,InstructiefOnderbord,Onderbord met instructie Lijnbussen op vluchtstrook,,,,Lijnbussen op vluchtstrook
+OB722InstructiefOnderbord,Onderbord met instructie Einde lijnbussen op vluchtstrook,,,,,Einde lijnbussen op vluchtstrook
+OB754,InstructiefOnderbord,Onderbord met instructie Fietsers op rijbaan,,,,Fietsers op rijbaan
+OB755,InstructiefOnderbord,Onderbord met instructie (Brom)fietsers op rijbaan,,,,(Brom)fietsers op rijbaan	
+OB758,InstructiefOnderbord,Onderbord met instructie (Brom)fietsers doorrijden tot fietslicht,,,,(Brom)fietsers doorrijden tot fietslicht	
+OB759,InstructiefOnderbord,Onderbord met instructie Dus niet brommen,,,,Dus niet brommen	
+OB1000,InstructiefOnderbord,Onderbord met visuele aanduiding brandblusser en noodtelefoon,,,,{Brandblusser-S.O.S.-noodtelefoon}		
+OB1001,InstructiefOnderbord,Onderbord met visuele aanduiding brandblusser,,,,{Brandblusser}		
+OB1002,InstructiefOnderbord,Onderbord met visuele aanduiding noodtelefoon,,,,{noodtelefoon}	
+OB1007,InstructiefOnderbord,Onderbord met instructie Bij belsignaal brugdek vrijmaken,,,,Bij belsignaal brugdek vrijmaken
+OB401-na,Onderbord,Onderbord met vooraankondiging van de geldigheid na x meter vanaf het verkeersbord,Lengte vooraankondiging,,xsd:decimal,
+OB402-Sp11-20km,OB401-na,Onderbord met vooraankondiging van een benzinestation na 20 km,Omschrijving,,,{benzinepomp} na 20 km
