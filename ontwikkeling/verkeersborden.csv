@@ -182,10 +182,3 @@ J36,Verkeersbord,IJzel of sneeuw
 J37,Verkeersbord,Gevaar (de aard van het gevaar is aangegeven op het onderbord)
 J38,Verkeersbord,Verkeersdrempel
 J39,Verkeersbord,Waarschuwing voor elektrische in- en uitschuifbare paal in de rijbaan (poller) waarmee toegankelijkheid van straten en gebieden kan worden geregeld.
-
-
-
-
-
-Geparkeerd:
-A3,Maximumsnelheid op een electronisch signaleringsbord,waardelijst snelheden,xsd:int
