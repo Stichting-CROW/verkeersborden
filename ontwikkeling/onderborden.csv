@@ -6,6 +6,7 @@ Totaalmassa,BordwaardenOnderbord,Onderbord met de maximale totaalmassa van voert
 Voertuigbreedte,BordwaardenOnderbord,Onderbord met de maximale breedte van voertuigen met inbegrip van de lading,Voertuigbreedte,m,xsd:decimal,
 Voertuighoogte,BordwaardenOnderbord,Onderbord met de maximale hoogte van voertuigen met inbegrip van de lading,Voertuighoogte,m,xsd:decimal
 Voertuiglengte,BordwaardenOnderbord,Onderbord met de maximale lengte van voertuigen en samenstellen van voertuigen, met inbegrip van de lading,Voertuiglengte,m,xsd:decimal
+OB311,Onderbord,Onderbord met aanduiding herhaling,Omschrijving,,,Herhaling
 OBVoertuigType,Onderbord,Onderbord met tekstuele of visuele aanduiding dat het bord alleen geldt voor specifieke voertype,,,,
 OB01,OBVoertuigType,Onderbord met visuele aanduiding dat het bord alleen geldt voor ruiters te paard,Omschrijving,,,Geldt alleen voor {ruiter te paard}
 OB02,OBVoertuigType,Onderbord met visuele aanduiding dat het bord alleen geldt voor fietsers,Omschrijving,,,Geldt alleen voor {fietser}
@@ -84,6 +85,7 @@ OB712-B,Waarschuwingsonderbord,Onderbord met waarschuwing slagbomen worden op af
 OB713-B,Waarschuwingsonderbord,Onderbord met waarschuwing verkeer op rotonde heeft voorrang,,,,Verkeer op rotonde heeft voorrang
 OB714,Waarschuwingsonderbord,Onderbord met waarschuwing hoevel keer iets voorkomt,Aantal,,xsd:decimal,
 OB1003,Waarschuwingsonderbord,Onderbord met waarschuwing Verhoogde drempel,,,,Verhoogde drempel
+OBGlad,Waarschuwingsonderbord,Onderbord met waarschuwing voor gladheid,,,,
 WegtyperingsOnderbord,Onderbord,Onderbord dat het type wegvak of kruising aangeeft,,,,
 OB617,Wegtyperingsonderbord,Verhoogde overweg met overwegnummer,Omschrijving,,,Verhoogde overweg met overwegnummer
 OB618,Wegtyperingsonderbord,Bussluis,Omschrijving,,,Bussluis
@@ -104,7 +106,9 @@ TijdenOnderbord,Onderbord,Onderbord dat een beperkte geldigheid van het bord aan
 Zonsopkomst,Tijdenonderbord,Onderbord dat aangeeft dat het verkeersbord niet geldt van zonsopkomst tot zonsondergang,,,,
 OB201,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid op datum, ---- afleiden uit verkeersregel?,,,
 OB202,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid op dag, ---- afleiden uit verkeersregel?,,,
-OB311,Tijdenonderbord,Onderbord met aanduiding herhaling,Omschrijving,,,Herhaling
+OBuren,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid op uren van de dag, ---- afleiden uit verkeersregel?,,,
+OBmaxh,Tijdenonderbord,Onderbord met tekstuele aanduiding maximaal aantal uren parkeren, ---- afleiden uit verkeersregel?,,,
+OBzons,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid van zonsondergang tot zonsopkomst,,,,van zonsondergang tot zonsopkomst
 Onderbordrijrichting,Onderbord,Onderbord met pijlen die aanduiden in welke richting men mag rijden,,,,
 B501-L,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar links mag rijden,Omschrijving,,,{links}
 OB501-R,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar rechts mag rijden,Omschrijving,,,{rechts}

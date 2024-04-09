@@ -7,11 +7,11 @@ Eindtijd,Eindtijd van de geldigheid van verkeersregel op specifieke tijden,time,
 Startdatum,Geldigheid van verkeersregel op specifieke kalenderdagen beginnend bij de startdatum,Startdatum,time,xsd:gMonthDay,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,,,,
 Einddatum,Geldigheid van verkeersregel op specifieke kalenderdagen eindigend op de einddatum,Einddatum,time,xsd:gMonthDay,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,,,,
 Dagaanduiding,geldigheid van verkeersregel op een of meer specifieke weekdagen,Dag,xsd:string,,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,,,,
-
+Zonsop- tot zonsondergang,geldigheid van verkeersregel van zonsopkomst tot zonsondergang,,xsd:string,Van zonsondergang tot zonsopkomst
 
 
 
 UitgezonderdVoertuigtype,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,geslotenverklaring
 UitgezonderdParkeervakken,de verkeersregel is niet van toepassing op de parkeervakken,,waardelijst,,,,,,,,
 GeldtVoorVoertuigtype,de verkeersregel is alleen van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,
-Zonsop- tot zonsondergang,geldigheid van verkeersregel 
+GeldtAls,"de verkeersregel is alleen van toepassing indien voldaan wordt aan de voorwaarden in de tekst, bijvoorbeeld bij nat wegdek",Omschrijving,,xsd:string,
