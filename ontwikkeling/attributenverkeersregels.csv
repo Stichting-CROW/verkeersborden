@@ -8,7 +8,7 @@ Startdatum,Geldigheid van verkeersregel op specifieke kalenderdagen beginnend bi
 Einddatum,Geldigheid van verkeersregel op specifieke kalenderdagen eindigend op de einddatum,Einddatum,time,xsd:gMonthDay,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,,,,
 Dagaanduiding,geldigheid van verkeersregel op een of meer specifieke weekdagen,Dag,xsd:string,,,standaard wettelijke maximumsnelheid,lokale wettelijke maximumsnelheid,adviessnelheid,,,,
 Zonsop- tot zonsondergang,geldigheid van verkeersregel van zonsopkomst tot zonsondergang,,xsd:string,Van zonsondergang tot zonsopkomst
-
+Maxtijd,maximale duur van parkeren of onbetaald parkeren,uren/minuten
 
 
 UitgezonderdVoertuigtype,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,geslotenverklaring

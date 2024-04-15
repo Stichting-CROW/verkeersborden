@@ -112,8 +112,8 @@ OBzons,Tijdenonderbord,Onderbord met tekstuele aanduiding geldigheid van zonsond
 Onderbordrijrichting,Onderbord,Onderbord met pijlen die aanduiden in welke richting men mag rijden,,,,
 B501-L,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar links mag rijden,Omschrijving,,,{links}
 OB501-R,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men alleen naar rechts mag rijden,Omschrijving,,,{rechts}
-OB502,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts-in2richtingen}
-OB503,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar echts en linksmag rijden,Omschrijving,,,{rechts-links-in2richtingen}
+OB502,Onderbordrijrichting,Onderbord met pijlen naar links en naar rechts,Omschrijving,,,{links-rechts-in2richtingen}
+OB503,Onderbordrijrichting,Onderbord met pijlen naar rechts en naar links,Omschrijving,,,{rechts-links-in2richtingen}
 OB504,Onderbordrijrichting,Onderbord met pijlen die aanduiden dat men naar links en naar rechts mag rijden,Omschrijving,,,{links-rechts}
 OBParkeren,Onderbord,Onderbord met parkeerinstructie,,,,
 ntb,OBParkeren,Onderbord met waarschuwing over wegsleepregeling,Omschrijving,,,Wegsleepregeling van kracht
