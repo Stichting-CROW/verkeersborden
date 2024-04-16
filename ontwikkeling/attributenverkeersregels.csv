@@ -11,7 +11,8 @@ Zonsop- tot zonsondergang,geldigheid van verkeersregel van zonsopkomst tot zonso
 Maxtijd,maximale duur van parkeren of onbetaald parkeren,uren/minuten
 
 
-UitgezonderdVoertuigtype,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,geslotenverklaring
+Uitzondering-inhaalverbod,de verkeersregel inhalen verboden geldt niet voor inhalen van een specifiek voertuigtype zoals tractoren,xsd:string,waardelijst voertuigtypen
 UitgezonderdParkeervakken,de verkeersregel is niet van toepassing op de parkeervakken,,waardelijst,,,,,,,,
 GeldtVoorVoertuigtype,de verkeersregel is alleen van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,
+UitgezonderdVoertuigtype,de verkeersregel is niet van toepassing op gespecificeerd voertuigtype,,waardelijst,,,,,,,,geslotenverklaring
 GeldtAls,"de verkeersregel is alleen van toepassing indien voldaan wordt aan de voorwaarden in de tekst, bijvoorbeeld bij nat wegdek",Omschrijving,,xsd:string,

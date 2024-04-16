@@ -86,6 +86,8 @@ OB713-B,Waarschuwingsonderbord,Onderbord met waarschuwing verkeer op rotonde hee
 OB714,Waarschuwingsonderbord,Onderbord met waarschuwing hoevel keer iets voorkomt,Aantal,,xsd:decimal,
 OB1003,Waarschuwingsonderbord,Onderbord met waarschuwing Verhoogde drempel,,,,Verhoogde drempel
 OBGlad,Waarschuwingsonderbord,Onderbord met waarschuwing voor gladheid,,,,
+OB754,Waarschuwingsonderbord,Onderbord met waarschuwing Fietsers op rijbaan,,,,Fietsers op rijbaan
+OB755,Waarschuwingsonderbord,Onderbord met waarschuwing (Brom)fietsers op rijbaan,,,,(Brom)fietsers op rijbaan	
 WegtyperingsOnderbord,Onderbord,Onderbord dat het type wegvak of kruising aangeeft,,,,
 OB617,Wegtyperingsonderbord,Verhoogde overweg met overwegnummer,Omschrijving,,,Verhoogde overweg met overwegnummer
 OB618,Wegtyperingsonderbord,Bussluis,Omschrijving,,,Bussluis
@@ -94,6 +96,7 @@ OB626,Wegtyperingsonderbord,Korte invoegstrook,Omschrijving,,,Korte invoegstrook
 OB1004,Wegtyperingsonderbord,Onderbord met aanduiding van Schoolzone,,,,Schoolzone	
 Verboden toegang,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare privéweg betreft,Omschrijving,,,verboden toegang
 Verboden voor onbevoegden,Wegtyperingsonderbord,Onderbord dat aangeeft dat het een niet-openbare privéweg betreft,Omschrijving,,,verboden voor onbevoegden
+OB401,Onderbord met aanduiding van de werkingslengte van NTB meter vanaf het verkeersbord,Werkingslengte,,xsd:string,
 OB401-100,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,100 m
 OB401-150,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,150 m
 OB401-1km,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,1 km
@@ -101,6 +104,7 @@ OB401-200,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 15
 OB401-250,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,250 m
 OB401-300,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,300 m
 OB401-500,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 150 meter vanaf het verkeersbord,Werkingslengte,,xsd:string,500 m
+OB411,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van NTB meter vanaf het verkeersbord met pijlen,Omschrijving,,,{pijl} NTB m {pijl}
 OB411-100m,OBWerkingslengte,Onderbord met aanduiding van de werkingslengte van 100 meter vanaf het verkeersbord met pijlen,Omschrijving,,,{pijl} 100 m {pijl}
 TijdenOnderbord,Onderbord,Onderbord dat een beperkte geldigheid van het bord aanduidt in een beperkte periode,,,,
 Zonsopkomst,Tijdenonderbord,Onderbord dat aangeeft dat het verkeersbord niet geldt van zonsopkomst tot zonsondergang,,,,
@@ -152,8 +156,6 @@ OB719,InstructiefOnderbord,Onderbord met instructie Spitsstrook open,,,,Spitsstr
 OB720,InstructiefOnderbord,Onderbord met instructie Plusstrook open,,,,Plusstrook open
 OB721,InstructiefOnderbord,Onderbord met instructie Lijnbussen op vluchtstrook,,,,Lijnbussen op vluchtstrook
 OB722InstructiefOnderbord,Onderbord met instructie Einde lijnbussen op vluchtstrook,,,,,Einde lijnbussen op vluchtstrook
-OB754,InstructiefOnderbord,Onderbord met instructie Fietsers op rijbaan,,,,Fietsers op rijbaan
-OB755,InstructiefOnderbord,Onderbord met instructie (Brom)fietsers op rijbaan,,,,(Brom)fietsers op rijbaan	
 OB758,InstructiefOnderbord,Onderbord met instructie (Brom)fietsers doorrijden tot fietslicht,,,,(Brom)fietsers doorrijden tot fietslicht	
 OB759,InstructiefOnderbord,Onderbord met instructie Dus niet brommen,,,,Dus niet brommen	
 OB1000,InstructiefOnderbord,Onderbord met visuele aanduiding brandblusser en noodtelefoon,,,,{Brandblusser-S.O.S.-noodtelefoon}		
