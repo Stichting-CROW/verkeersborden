@@ -164,5 +164,11 @@ href: "https://www.nen.nl/nen-en-iso-19650-4-2022-en-301119",
 status: "Actueel",
 publisher: "NEN",
 },
+NEN3381:2020: {
+  title: "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden",
+  href: "https://www.nen.nl/nen-3381-2020-nl-267378",
+  status: "Actueel",
+  publisher: "NEN",
+  },
 },
 }
