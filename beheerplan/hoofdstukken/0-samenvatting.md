@@ -1,3 +1,3 @@
-Dit document beschrijft het beheer van het Informatiewmodel Verkeerstekens volgens het <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> model zoals beschreven in [[BOMOS_fundament]] en [[BOMOS_verdieping]].
+Dit document beschrijft het beheer van het Informatiemodel Verkeerstekens volgens het <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> model zoals beschreven in [[BOMOS_fundament]] en [[BOMOS_verdieping]].
 
 Voor een overzicht van alle documentatie van het Informatiemodel Verkeerstekens wordt verwezen naar de [Readme op GitHub](https://github.com/Stichting-CROW/verkeersborden/blob/main/README.md).
