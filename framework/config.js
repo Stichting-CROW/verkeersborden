@@ -77,7 +77,7 @@ function indexOfRequirements(config) {
 
 var respecConfig = {
   // => https://github.com/stichting-crow/respec/wiki
-  specStatus: "DEF",
+  specStatus: "LD",
   pubDomain: "verkeersborden",
   shortName: "framework",
   license: "CC-BY",
@@ -95,4 +95,5 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
+  previousPublishDate: "2022-08-11"
 };
