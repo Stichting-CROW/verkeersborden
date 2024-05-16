@@ -5,8 +5,8 @@ Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Infor
 ## Context
 Voor de context van het informatiemodel wordt verwezen naar het [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework) waarin de doelstellingen van het informatiemodel, de use cases en alle mogelijke raakvlakken met wetten, standaarden, datasets, applicaties en bijbehorende organisaties beschreven zijn.
 * Levend document: [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework)
-* [Reviewversie met mogelijkheid tot commentaar via Hypothes.is](https://docs.crow.nl/verkeersborden/framework/IR-verkeersborden_framework-20220811.html)
-* [Baseline 2022](https://docs.crow.nl/verkeersborden/framework/DEF-verkeersborden_framework-20240513.html)
+* [Reviewversie met mogelijkheid tot commentaar via Hypothes.is](https://docs.crow.nl/verkeersborden/v/IR-verkeersborden_framework-20220811.html)
+* [Baseline 2022](https://docs.crow.nl/verkeersborden/v/DEF-verkeersborden_framework-20240513.html)
 
 
 In het architectuur framework zijn in 2022 uitgangspunten opgesteld voor een Informatiemodel Verkeerstekens. Deze uitgangspunten zijn vervolgens gebruikt om te onderzoeken hoe dit zou werken voor de [wettelijke maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/). 
