@@ -23,7 +23,7 @@ De informatie die wordt gepubliceerd over *wijzigingen* in de verkeerskundige si
 
 *Stakeholders: Wegbeheerders, omwonenden, bedrijven*
 
-Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere verkeersregels. Hoe dan ook, hierdoor ontstaat een aanvraag voor het wijzigen van de verkeerskundige situatie. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
+Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er een (nieuw)bouwproject wordt uitgevoerd en de inrichting van de wegen wijzigen, of omdat een omwonende of bedrijf een melding doet van een onveilige situatie of onwenselijke parkeersituatie die vraagt om andere [=verkeersmaatregelen=]. Hoe dan ook, hierdoor ontstaat een aanvraag voor het wijzigen van de verkeerskundige situatie. Dit leidt tot een inhoudelijke behandeling van de aanvraag door een verkeerskundige en waar nodig tot uitwerking in een ontwerp van de nieuwe situatie. 
 
 ### Verkeersmodel
 
@@ -33,7 +33,7 @@ Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer 
 
 #### Beïnvloedingsgebied
 
-Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een  [=Beïnvloedingsgebied=], daarna aan de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
+Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersmaatregelen=] of [=waarschuwingen=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een  [=Beïnvloedingsgebied=], daarna aan de [=verkeersmaatregelen=] of [=waarschuwingen=]  die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
 
 <figure>
 <img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.jpg">
@@ -41,22 +41,13 @@ Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeer
 </figure>
 
 
-<dfn data-lt="Beïnvloedingsgebied">Beïnvloedingsgebied</dfn>
-<dd>Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersregel=], [=waarschuwing=] en/of [=adviessnelheid=] geldt. Dit kan resulteren in een [=werkingslengte=], [rijstrook=]aanduiding, een [=route=], of een [=zone=]. </dd>
-
-<dfn data-lt="Zone">Zone</dfn>
-<dd>Een vlak waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een parkeerzone of een milieuzone.</dd>
-
-<dfn data-lt="Route">Route</dfn>
-<dd>Een verzameling met meerdere wegvakken waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt. </dd>
-
-Een beïnvloedingsgebied kan voortkomen uit een specifieke situatie op een weg, bijvoorbeeld een verkeersdrempel. Ook kan een gedeelte van een wegvak een beperking in de snelheid kennen, bijvoorbeeld een snelheidsbeperking bij nadering van een kruising. Dit leidt tot het opnemen van een [=werkingslengte=], zoals al is beschreven bij de use case.
+Een [=beïnvloedingsgebied=] kan voortkomen uit een specifieke situatie op een weg, bijvoorbeeld een verkeersdrempel. Ook kan een gedeelte van een wegvak een beperking in de snelheid kennen, bijvoorbeeld een snelheidsbeperking bij nadering van een kruising. Dit leidt tot het opnemen van een [=werkingslengte=], zoals al is beschreven bij de use case.
 
 Een beïnvloedingsgebied kan ook gaan over een deel van de weg, bijvoorbeeld een busstrook: in dit geval leidt het tot het toevoegen van een [=rijstrook=]aanduiding, zoals al is beschreven bij de use case.
 
-Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen worden [=zone=] en [=route=] opgenomen in het informatiemodel. Een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] kan dan een relatie met de [=zone=] of [=route=] krijgen. Omdat de verkeersborden en de wegvakken al gerelateerd zijn aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=], is het niet nodig om deze ook te koppelen aan een [=zone=] of [=route=]. Door te zoeken op welke [=NWB-wegvakken=] of verkeersborden de [=verkeersregel=] van toepassing is, kun je de bijbehorende wegvakken of verkeersborden bij de [=zone=] of [=route=] vinden. De [=zone=] of [=route=] kan daarnaast worden verbonden met een geometrische representatie (een vlak of polygoon). Het systeem van de weggebruiker heeft het vlak niet nodig om de verkeersregel te kunnen afleiden
+Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen worden [=zone=] en [=route=] opgenomen in het informatiemodel. Een [=verkeersmaatregelen=] of [=waarschuwingen=] kan dan een relatie met de [=zone=] of [=route=] krijgen. Omdat de verkeersborden en de wegvakken al gerelateerd zijn aan een [=verkeersmaatregel=] of [=waarschuwing=] is het niet nodig om deze ook te koppelen aan een [=zone=] of [=route=]. Door te zoeken op welke [=NWB-wegvakken=] of verkeersborden de [=verkeersmaatregel=] van toepassing is, kun je de bijbehorende wegvakken of verkeersborden bij de [=zone=] of [=route=] vinden. De [=zone=] of [=route=] kan daarnaast worden verbonden met een geometrische representatie (een vlak of polygoon). Het systeem van de weggebruiker heeft het vlak niet nodig om de [=verkeersmaatregel=] te kunnen afleiden
 
-* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] van toepassing te laten zijn op een [=zone=] of een [=route=].
+* Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om een [=verkeersmaatregelen=] of [=waarschuwing=] van toepassing te laten zijn op een [=zone=] of een [=route=].
 * Het informatiemodel MOET de mogelijkheid bieden, maar niet verplichten, om met een link te verwijzen van een [=zone=] of een [=route=] naar een een geometrische representatie (vlak of polygoon).
 
 <aside class="note" title="Automatisering van zone naar [=verkeerskundig wegennetwerk=]">
@@ -64,15 +55,15 @@ Om het opstellen en beheren van [=verkeerskundige informatie=] te ondersteunen w
 
 
 #### Selecteren verkeersbord
-Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] is. 
+Om het opstellen van [=verkeerskundige informatie=] te ondersteunen is het handig als het systeem waarin de verkeerskundige werkt, een voorselectie kan maken van het type verkeersbord en vervolgens het type onderbord dat mogelijk geplaatst moet worden als eenmaal is vastgesteld wat de [=verkeersmaatregel=] of [=waarschuwing=] is. 
 
-* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] die kunnen voorkomen. 
-* Het informatiemodel MOET bij een type [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] aanduiden, welke verkeersborden hier bij toegepast kunnen worden.
+* Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types [=verkeersmaatregelen=] en [=waarschuwingen=] die kunnen voorkomen. 
+* Het informatiemodel MOET bij een type [=verkeersmaatregel=] of [=waarschuwing=] aanduiden, welke verkeersborden hier bij toegepast kunnen worden.
 * Het informatiemodel MOET de relaties bevatten tussen de types verkeersborden en de bijbehorende types onderborden.
 
-Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] te kunnen controleren welke verkeersborden daar op dit moment bij horen:
+Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verkeersmaatregelen=] en [=waarschuwingen=] te kunnen controleren welke verkeersborden daar op dit moment bij horen:
 
-* Het informatiemodel MOET de mogelijkheid bieden om aan een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] een of meerdere verkeersborden te verbinden.
+* Het informatiemodel MOET de mogelijkheid bieden om aan een [=verkeersmaatregel=] en [=waarschuwing=] een of meerdere verkeersborden te verbinden.
 
 ### Wegontwerp
 
@@ -85,9 +76,8 @@ Op basis van een verkeersmodel wordt de ruimtelijke inpassing van de wegen en de
 Een wegontwerp wordt vaak gevisualiseerd in een CAD-tekening, met op tekening het [=wegalignement=], de markering van rijstroken of kanten van stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
 
 
-#### <dfn data-lt="Wegalignement">Wegalignement</dfn>
-
-Een wegontwerp beschrijft de fysieke ligging van de weg in termen van een wegalignement, een aaneenschakeling van bogen, overgangsboden en rechte lijnen met daarbij vastgelegd de gebruikte ontwerpsnelheid en verkanting (hoe schuin de weg ligt in een boog). Op basis van de ontwerpsnelheid, die meestal gelijk is aan de gewenste wettelijke maximumsnelheid, kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt. Uit het alignement volgt de benodigde [=rijstrook=]breedte die toeneemt bij hogere snelheden of krappe bochten. 
+#### 
+Een wegontwerp beschrijft de fysieke ligging van de weg in termen van een [=wegalignement=],  
 
 Het verschil tusen een wegalignement en een [=verkeerskundig wegennetwerk=]: 
 <ol><li>Een wegalignement bestaat vaak uit één lijn voor de gehele weg of per rijbaan, een [=verkeerskundig wegennetwerk=] kán meer details hebben, bijvoorbeeld een lijn op elke rijstrook;</li>
@@ -95,10 +85,6 @@ Het verschil tusen een wegalignement en een [=verkeerskundig wegennetwerk=]:
 <li>Een [=verkeerskundig wegennetwerk=] bevat juncties, het wegalignement bevat alleen de lijnen</li></ol>
 
 Om het geregistreerde [=verkeerskundige wegennetwerk=] te kunnen gebruiken als input voor een nieuw wegontwerp is het bijhouden van de alignementskenmerken van de weg aan te raden. Als het [=verkeerskundige wegennetwerk=] een hoger detailniveau krijgt om per [=rijstrook=] [=verkeerskundige informatie=] te kunnen vastleggen, is een standaard nodig waarmee het wegalignement wordt vastgelegd, omdat het wegalignement wordt ontworpen per gehele weg of per [=rijbaan=], niet per [=rijstrook=]. Het alignement valt buiten de scope van het voorliggende informatiemodel.
-
-<dfn data-lt="rijbaan|rijbanen">Rijbaan</dfn>
-<dd>Elk voor rijdende voertuigen bestemd weggedeelte met uitzondering van de fietspaden en de fiets/bromfietspaden. Definitie conform de [=RVV 1990=]. </dd>
-<dd>Een rijbaan is een aaneengesloten verhard deel van de totale weg dat bestemd is voor rijdend verkeer en dat begrensd wordt door twee opeenvolgende begrenzingen in de vorm van kantstreep, overgang verharding of overgang verhard/onverhard. <a href="https://data.crow.nl/thesaurus/term/B4CA5CA6-8CEA-455D-9467-6FAA36A12E4E">Bron: CROW thesaurus</a> Als er tussen twee gedeeltes van een weg een fysieke barriere is die het verkeer hindert om van baan te wisselen, worden deze twee gedeeltes elk als aparte rijbaan beschouwd door verkeerskundigen.  </dd>
 
 
 #### Netwerkregistratie
@@ -116,7 +102,7 @@ Om met een wegontwerp aan te sluiten op een landelijke netwerkregistratie van we
 
 In het wegontwerp worden zaken onderzocht die niet altijd op een ontwerptekening staan. Dit kan leiden tot verkeerskundige informatie:
 
-* In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. De [=wegmarkering=] is buiten scope van het informatiemodel. In de digitale [=verkeerskundige informatie=] kan wel een gebod worden opgenomen om niet in te halen, ook al staat er geen verkeersbord. Niet mogen inhalen is immers een [=verkeersregel=] uit de [=RVV 1990=].
+* In een BIM model kunnen bijvoorbeeld zichtlijnen zijn onderzocht. Bij een beperkt zicht mag niet worden ingehaald. Dit resulteert niet altijd in een verkeersbord, soms wel in een [=wegmarkering=] zoals een doorgetrokken streep op het midden van de [=rijbaan=]. De menselijke [=weggebruiker=] kan dit op zicht inschatten, een systeem wellicht niet. De [=wegmarkering=] is buiten scope van het informatiemodel. In de digitale [=verkeerskundige informatie=] kan wel een gebod worden opgenomen om niet in te halen, ook al staat er geen verkeersbord. Niet mogen inhalen is immers een [=verkeersmaatregel=] uit de [=RVV 1990=].
 * In de digitale [=verkeerskundige informatie=] kan ook een [=adviessnelheid=] worden toegevoegd zonder verkeersbord. Een systeem kan daarmee de informatie die een mens visueel kan inschatten ook goed interpreteren, namelijk dat de weginrichting vraagt om een lagere snelheid ook al wordt dat niet verplicht gesteld. 
 * Op dezelfde manier kan een [=waarschuwing=] worden meegegeven, zonder dat een verkeersbord aanwezig is. 
 
@@ -137,30 +123,29 @@ De wegbeheerder volgt een juridische procedure vanaf de aanvraag van een maatreg
 
 *Stakeholders: Wegbeheerders*
 
-<dfn data-lt="Verkeersbesluit|Verkeersbesluiten">Verkeersbesluit</dfn>
-<dd> Wegbeheerders zijn per 01072021 wettelijk verplicht om verkeersbesluiten over nieuwe en langdurende (>4 maanden) tijdelijke verkeerskundige situaties digitaal te publiceren in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op www.overheid.nl, conform <a href="https://wetten.overheid.nl/BWBR0006622/2021-10-19/#HoofdstukII_Paragraaf2_Artikel15">Wegenverkeerswet 1994 artikel 15</a>.
-</dd>
+
+Wegbeheerders zijn per 01072021 wettelijk verplicht om [=verkeersbesluiten=] digitaal te publiceren.
 
 Daarbij publiceert de wegbeheerder zowel de tekst van het besluit, eventuele externe bijlagen met daarin de geschetste veranderingen van de verkeerssituatie als ook de metadata over dat besluit. In de huidige situatie is echter het formaat van verkeersbesluiten niet geschikt om deze op een eenvoudige wijze te verwerken tot digitale [=verkeerskundige informatie=].
  
 Verkeersbesluiten zijn de bron voor (een deel van) de wijzigingen in de digitale [=verkeerskundige informatie=]. Een deel van de wijzigingen is niet verkeersbesluitplichtig, waaronder tijdelijke wijzigingen van minder dan 4 maanden en een deel van de verkeersborden. 
 
- De officiële publicatie van het verkeersbesluit geeft een verkeersbord de wettelijke status waarmee gehandhaaft kan worden op overtreding van de [=verkeersregel=]. 
+ De officiële publicatie van het verkeersbesluit geeft een verkeersbord de wettelijke status waarmee gehandhaaft kan worden op overtreding van de [=verkeersmaatregel=]. 
  
  De juridische informatie in het verkeersbesluit valt buiten de scope van het informatiemodel. Om het opstellen en beheren van verkeerskundige informatie te ondersteunen wordt de relatie met het verkeersbesluit wel opgenomen in het informatiemodel. 
 
-* Het informatiemodel MOET de mogelijkheid bieden om een link te leggen van een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] naar het [=verkeersbesluit=] waarin deze is gepubliceerd.
+* Het informatiemodel MOET de mogelijkheid bieden om een link te leggen van een [=verkeersmaatregelen=] en [=waarschuwingen=] naar het [=verkeersbesluit=] waarin deze is gepubliceerd.
 
 
 #### Ingangsdatum
 Voor de primaire use case is het niet nodig om historische gegevens te kunnen vinden - alle actuele verkeerskundige gegevens zijn voldoende.
 
-Voor gebruik van de digitale [=Verkeerskundige informatie=] in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke verkeersregels gelden, en welke verkeersborden aanwezig zijn op een bepaald tijdstip.
+Voor gebruik van de digitale [=Verkeerskundige informatie=] in verkeersberekeningen en wegontwerpen is het wel noodzakelijk om te kunnen bepalen welke [=verkeersmaatregelen=] en [=waarschuwingen=] gelden, en welke verkeersborden aanwezig zijn op een bepaald tijdstip.
 
-Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de verkeersregel van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. Omdat een verkeersbord als herhaling kan worden geplaatst, kan deze later worden geplaatst dan het ingaan van de verkeersregel. Daarom kan een wegbeheerder een bord een begin- en einddatum geven. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende verkeersregel. 
+Ook voor publicatie van een verkeersbesluit is het handig, om een datum in de toekomst te kunnen vastleggen, waarop de [=verkeersmaatregel=] van toepassing wordt. Daarmee kan gezorgd worden dat de data actueel en beschikbaar is op het moment van ingaan van het verkeersbesluit. Omdat een verkeersbord als herhaling kan worden geplaatst, kan deze later worden geplaatst dan het ingaan van de [=verkeersmaatregel=]. Daarom kan een wegbeheerder een bord een begin- en einddatum geven. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende [=verkeersmaatregel=]. 
 
-* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=]
-* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor plaatsing en weghalen van een verkeersbord. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende verkeersregel. 
+* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor een [=verkeersmaatregel=] of [=waarschuwing=]
+* Het informatiemodel MOET de mogelijkheid bieden om een begin- en einddatum en -tijdstip aan te duiden voor plaatsing en weghalen van een verkeersbord. Als geen datum is aangegeven, gelden de begin- en einddatum van de bijbehorende [=verkeersmaatregel=]. 
 
 
 ### Registratie verkeerskundige informatie
@@ -213,7 +198,7 @@ De *gewenste ligging* volgens het ontwerp en het verkeersbesluit komt niet per s
 
 *Stakeholders: Bouwbedrijven*
 
-Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of verkeersborden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale [=Verkeerskundige informatie=] gepubliceerd, zodat het [=verkeerskundige wegennetwerk=], de [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en verkeersborden altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
+Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpassen of verkeersborden plaatsen. Bij een situatie langer dan vier maanden is een tijdelijke situatie ook verkeersbesluitplichting. In de ideale wereld worden alle tijdelijke situaties als digitale [=Verkeerskundige informatie=] gepubliceerd, zodat het [=verkeerskundige wegennetwerk=], de [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=] altijd overeen komen met de fysieke situatie. Als dit niet het geval is worden digitale systemen van weggebruikers niet altijd van de juiste informatie voorzien.
 
 
 ## Gebruiksfase
@@ -230,9 +215,6 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 *Stakeholders: [=Weggebruikers=]* 
 
 Zie voor beschrijving van de informatiebehoefte van de weggebruikers het hoofdstuk over de [use case](https://docs.crow.nl/verkeersborden/framework/#use-case-0).
-
-<dfn data-lt="weggebruiker|weggebruikers">Weggebruiker</dfn>
-<dd>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen. Definitie conform de [=RVV 1990=]</dd>
 
 ### Beheren
 

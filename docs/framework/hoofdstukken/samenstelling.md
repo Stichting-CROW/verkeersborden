@@ -47,7 +47,7 @@ De technische documentatie (net zoals voorliggend document geschreven in ReSpec)
 
 De technische documentatie geeft de context weer; geeft alternatieven weer en onderbouwingen van keuzes. Er zitten geen gebruikersinstructies bij, dat is een ander soort documentatie.
 
-Per verkeersregel wordt het informatiemodel gedocumenteerd op de wijze van [voorbeeld: Maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/), met daaraan toegevoegd:
+Per [=verkeersmaatregel=] wordt het informatiemodel gedocumenteerd op de wijze van [voorbeeld: Maximale snelheid](https://docs.crow.nl/verkeersborden/maximalesnelheid/), met daaraan toegevoegd:
 * Een voorbeeld-implementatie (dataset)
 * Controlemechanismes (kwaliteitstoetsen dataset)
 * Zoekmechanismes (verkeerskundige informatie zoeken bij een wegvak)
@@ -92,10 +92,7 @@ Om toegankelijk te zijn voor niet-technische gebruikers, samenwerkpartners en st
 
 #### Sparql-endpoint
 
-Voor rechtstreeks vanuit systemen of het internet zoeken in het informatiemodel wordt deze gepubliceerd op een SPARQL-endpoint. 
-
-<dfn>SPARQL</dfn>
-<dd> SPARQL (S PARQL P rotocol A nd R DF Q uery L anguage) is een RDF-zoektaal ( querytaal) die gebruikt wordt om RDF-gebaseerde data te bevragen door middel van zoekopdrachten (queries). Met deze zoektaal is het mogelijk om informatie op te vragen voor applicaties op het semantisch web. (<aheref="https://nl.wikipedia.org/wiki/SPARQL">Bron:Wikipedia</a>))</dd>
+Voor rechtstreeks vanuit systemen of het internet zoeken in het informatiemodel wordt deze gepubliceerd op een [=SPARQL=]-endpoint. 
 
 
 #### Downloads
@@ -145,12 +142,12 @@ Het doel van controlemechanismes is:
 * Een mechanisme aanbieden, waarmee een dataset met een wijziging in de [=verkeerskundige informatie=] kan worden gecontroleerd. Dit gaat er wel van uit, dat de informatie in linked data beschikbaar is. Dit mechanisme kan worden gebruikt door applicatiebouwers. 
 * Met ditzelfde mechanisme kan ook gebruikt worden om te onderzoeken welke informatie op dit moment niet beschikbaar is in bijvoorbeeld het [=NWB=] of in een systeem van een wegbeheerder, terwijl dit volgens het informatiemodel wel nodig is voor SMART Mobility systemen. Dit vraagt om een "vertaling" van de informatie uit de [=NWB=]-database naar het [=Informatiemodel Verkeerstekens=]. 
 
-De controlemechanismes voor de verkeerskundige informatie bestaan uit [=SPARQL=] queries waarmee onderzocht kan worden of de [=verkeerskundige informatie=] voldoet aan de regels van het informatiemodel. Dit neemt niet weg, dat altijd een menselijke controle moet worden gedaan omdat niet alle fouten automatisch kunnen worden ontdekt. Bijvoorbeeld het volledig niet opnemen van een verkeersregel over een parkeerverbod kan niet ontdekt kan worden door een systeem, maar wel door de wegbeheerder die een gebied kent. Voorbeelden van fouten die er wel uitgehaald kunnen worden:
+De controlemechanismes voor de verkeerskundige informatie bestaan uit [=SPARQL=] queries waarmee onderzocht kan worden of de [=verkeerskundige informatie=] voldoet aan de regels van het informatiemodel. Dit neemt niet weg, dat altijd een menselijke controle moet worden gedaan omdat niet alle fouten automatisch kunnen worden ontdekt. Bijvoorbeeld het volledig niet opnemen van een [=verkeersmaatregel=]l over een parkeerverbod kan niet ontdekt kan worden door een systeem, maar wel door de wegbeheerder die een gebied kent. Voorbeelden van fouten die er wel uitgehaald kunnen worden:
 
 * Een eindpunt is gegeven, dat niet aansluit op het wegvak;
-* Een wegvak waaraan wordt gerefereerd heeft geen informatie gekregen waaruit de wettelijke maximumsnelheid kan worden afgeleid (deze verkeersregel is altijd nodig);
+* Een wegvak waaraan wordt gerefereerd heeft geen informatie gekregen waaruit de wettelijke maximumsnelheid kan worden afgeleid (het [=snelheidsregime=]);
 * Een route is niet aaneensluitend gedefinieerd (er mist een wegvak);
-* Bij een verkeersregel is geen fysiek bord aangegeven, terwijl dat wettelijk gezien wel aanwezig moet zijn. 
+* Bij een [=verkeersmaatregel=] is geen fysiek bord aangegeven, terwijl dat wettelijk gezien wel aanwezig moet zijn. 
 
 
 Om de controlemechanismes eenvoudig te kunnen gebruiken als wegbeheerder is een applicatie nodig, die visueel ondersteunt bij het controleren van de [=verkeerskundige informatie=]. Dit is buiten scope van het informatiemodel. 
@@ -178,7 +175,7 @@ Om [=verkeerskundige informatie=] te kunnen gebruiken tijdens het rijden, is een
 In de leermaterialen wordt het gebruiken van [=verkeerskundige informatie=] op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je [=verkeerskundige informatie=] gebruikt (["Tutorials"](https://documentation.divio.com/tutorials/)). De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen. 
 
 ### Zoekmechanismes
-De zoekmechanismes bestaan uit [=SPARQL=] queries waarmee in [=verkeerskundige informatie=] gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de [=verkeerskundige informatie=] beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
+De zoekmechanismes bestaan uit [=SPARQL=] queries waarmee in [=verkeerskundige informatie=] gezocht kan worden naar de op een wegvak van toepassing zijnde [=verkeersmaatregelen=]. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de [=verkeerskundige informatie=] beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
 
 
 ## Sluit de feedback loop

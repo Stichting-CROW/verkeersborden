@@ -10,7 +10,7 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom [=verkeersk
 
 1. In het [=Programma Netwerkregistraties=] wordt samen met het [=NDW=] gewerkt aan het uitbreiden van het [=Nationaal Wegen Bestand=] voor het [=verkeerskundig wegennetwerk=] en de bijgehorende verkeerskundige situatie, het [=NWB+=]
 2. In het [=Programma Netwerkregistraties=] wordt samen met [=KOOP=] gewerkt aan het uitbreiden van een [=verkeersbesluiten applicatie=] waarmee wegbeheerders hun [=verkeersbesluit=] kunnen publiceren als digitale [=verkeerskundige informatie=]
-3. Samen met [=BIM loket=] wordt gewerkt aan het uitbreiden van NLCS met [=verkeerskundige wegennetwerk=]informatie en verkeersborden om het verkeerskundige CAD-ontwerp beter te kunnen overdragen naar digitale [=verkeerskundige informatie=] voor invoer in het [=Nationaal Wegen Bestand=].
+3. Samen met [=DigiGO=] wordt gewerkt aan het uitbreiden van [=NLCS=] met verkeersborden om het verkeerskundige CAD-ontwerp beter te kunnen overdragen naar digitale [=verkeerskundige informatie=] voor invoer in het [=Nationaal Wegen Bestand=].
 4. In het landelijke [=Programma Digitalisering Overheden=]] werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een [=Data Top 15=] opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
 
 Alle trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van [=verkeerskundige informatie=] toe te kunnen werken is een [=Informatiemodel Verkeerstekens=] essentieel. Het ministerie heeft [=CROW=] gevraagd om hiervoor dit framework op te stellen.
@@ -19,7 +19,7 @@ Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld va
 
 <figure>
 <img src="./hoofdstukken/media/maximalesnelheid.PNG">
-<figcaption>Maximale snelheid voor navigatiesystemen, van rechts naar links: Een wegbeheerder neemt een [=verkeersbesluit=]; het [=NDW=] registreert een nieuwe verkeerskundige situatie; in het [=NTM=] wordt de actuele verkeerskundige informatie gepubliceerd; [=SMART Mobility=] systemen kunnen de juiste verkeerskundige situatie afleiden uit de informatie en daarmee [=weggebruikers=] ondersteunen. </caption>
+<figcaption>Maximale snelheid voor navigatiesystemen, van rechts naar links: Een wegbeheerder neemt een [=verkeersbesluit=]; het [=NDW=] registreert een nieuwe verkeerskundige situatie; in het [=DMI-ecosysteem=] wordt de actuele verkeerskundige informatie gepubliceerd; [=SMART Mobility=] systemen kunnen de juiste verkeerskundige situatie afleiden uit de informatie en daarmee [=weggebruikers=] ondersteunen. </caption>
 </figure>
 
 
@@ -56,7 +56,7 @@ Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek a
 
 ### Registraties
 
-In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur ([=BGT=], [=BRT=]), het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]) en adressen en gebouwen ([=BAG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestande rijrichting. 
+In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (o.a. [=BGT=]) en het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestande rijrichting. 
 
 
 ## Doel document

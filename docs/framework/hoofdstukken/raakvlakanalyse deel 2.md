@@ -7,11 +7,11 @@ In Reglement verkeersregels en verkeerstekens 1990 ([=RVV1990=]) zijn de verkeer
 
 **Raakvlaktype: Bron voor informatiemodel**
 
-Het RVV 1990 is de primaire bron voor [=verkeersregels=], [=waarschuwingen=], [=adviessnelheden=] en bijbehorende verkeersborden die worden opgenomen in het [=Informatiemodel Verkeerstekens=].
+Het RVV 1990 is de primaire bron voor [=verkeersmaatregelen=], [=waarschuwingen=] en bijbehorende verkeersborden die worden opgenomen in het [=Informatiemodel Verkeerstekens=].
 
 In de RVV staan de volgende in het [=Informatiemodel Verkeerstekens=] op te nemen verkeersregels:
 * Wettelijke maximum snelheid (2 borden met 11 snelheden )
-* Adviessnelheid (2 borden)
+* [=Adviessnelheid=] (2 borden)
 * Voorrang verlening (6 borden)
 * Stoppen (2 borden)
 * Gesloten (1 bord) 

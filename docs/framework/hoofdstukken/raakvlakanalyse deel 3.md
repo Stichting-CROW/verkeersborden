@@ -52,8 +52,7 @@ Circa 30% van de ontwerptekeningen bij verkeersbesluiten komen uit CAD-systemen.
 
 ### ASVV
 
-<dfn data-lt="ASVV|Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom">ASVV</dfn>
-<dd> [=CROW=] publiceert de ASVV, de Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom. De kennis uit de ASVV wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is op dit moment geen open standaard, er moet een abonnement voor worden afgesloten. Zie ook <a href="https://www.crow.nl/publicaties/asvv-2021">deze website</a> </dd>
+[=CROW=] publiceert de [=ASVV=], de Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom. De kennis uit de ASVV wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
