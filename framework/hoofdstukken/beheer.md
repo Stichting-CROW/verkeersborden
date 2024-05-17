@@ -63,7 +63,7 @@ Bij elke publicatie krijgen stakeholders de kans om de documentatie en het [=Inf
 
 Om het informatiemodel optimaal te ontwikkelen en beheren in samenhang met het ecosysteem wordt actief samengewerkt en afegstemd met:
 
-* BIM loket, voor [=CB-NL=] en [=NLCS=].
+* [=DigiGO=] voor [=NLCS=].
 * Het NDW, voor het [=NWB=].
 * Het [=OSLO=] initiatief, voor aansluiting op de vlaamsche mobiliteitsdata en de [=AWV OTL=].
 * De [=Zweedse netwerkregistratie=].
@@ -181,7 +181,7 @@ Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied 
 
 * Zijn de specficiaties duidelijk genoeg en behapbaar genoeg dat grote en kleine spelers op gelijkwaardige voet informatie kunnen leveren volgens het informatiemodel? Een inspiratie voor het uitwerken van de specificaties is [hier](https://documentation.divio.com/) te lezen. Dit is verwerkt in de stappen voor de ontwikkelfase.
 * Zijn de specificaties geschikt alleen voor de Nederlandse context? In eerste instantie wordt het specifiek ontwikkeld voor de Nederlandse situatie, al worden internationale normen en voorbeelden waar mogelijk gevolgd. 
-* Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens? De specificaties zijn bedoeld voor de actuele situatie, alleen de begin- en eindtijd van een verkeersregel en verkeersbord zijn wel opgenomen. Er wordt niet beoogd een informatiemodel te maken waarmee de gehele ontwikkeling van het weggenet en de verkeerskundige kenmerken kan worden gevolgd. Ook de voorbeeld queries zijn gebaseerd op een actuele dataset.
+* Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens? De specificaties zijn bedoeld voor de actuele situatie, alleen de begin- en eindtijd van een [=verkeersmaatregel=] en verkeersbord zijn wel opgenomen. Er wordt niet beoogd een informatiemodel te maken waarmee de gehele ontwikkeling van het weggenet en de verkeerskundige kenmerken kan worden gevolgd. Ook de voorbeeld queries zijn gebaseerd op een actuele dataset.
 * Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is? Dit wordt bereikt door gebruik te maken van de modelleerregels uit de [=NEN2660-2:2022=].
 
 #### Security en Privacy
