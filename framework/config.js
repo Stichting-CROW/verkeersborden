@@ -95,6 +95,7 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
+  lint: { "no-unused-dfns": false }
   localBiblio: {
     NEN_2660_2_2022: {
       title:

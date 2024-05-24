@@ -95,6 +95,7 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
+  lint: { "no-unused-dfns": false },
   localBiblio: {
     BOMOS_fundament: {
       title: "BOMOS, het fundament",
