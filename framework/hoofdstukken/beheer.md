@@ -20,7 +20,7 @@ Beheer volgens BOMOS heeft de volgende voordelen:
 <figcaption>Activiteitendiagram van Beheermodel voor Open Standaarden (BOMOS) van Forum voor standaardisatie</caption>
 </figure>
 
-Het [=Informatiemodel Verkeestekens=] MOET voldoen aan de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf) voor digitale en informatiestandaarden. Deze zijn aanvullend op de standaard eisen vanuit BOMOS.
+Het [=Informatiemodel Verkeerstekens=] MOET voldoen aan de criteria van [Ken Krechmer](https://www.csrstds.com/OpnStdsCallforAction.pdf) voor digitale en informatiestandaarden. Deze zijn aanvullend op de standaard eisen vanuit BOMOS.
 
 
 Voor de verdere invulling van de Beheerstrategie is inmiddels een apart document opgesteld: [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan/)

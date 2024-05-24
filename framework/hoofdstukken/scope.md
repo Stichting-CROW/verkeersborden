@@ -77,19 +77,14 @@ Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige inform
 
 
 ### RVV 1990+ 
-[=verkeersmaatregelen=]en [=waarschuwingen=] uit [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
+[=verkeersmaatregelen=] en [=waarschuwingen=] uit [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
 Daarnaast is een lijst [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=] binnen scope die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. 
 Bij het verkeersbord worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de [=verkeersmaatregel=] is. 
 
 * Het informatiemodel MOET de types en definities van de [=verkeersmaatregelen=], [=waarschuwingen=] bevatten die in de [=RVV 1990=] staan. 
 * Het informatiemodel MOET de types en definities van de [=verkeersmaatregelen=], [=waarschuwingen=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=verkeersmaatregelen=] of [=waarschuwingen=] al opgenomen zijn in wetgeving, en welke nog niet.
-
-"Fantasieborden" zonder wettelijke basis zijn buiten scope. 
-
-<aside class="note" title="Nominaties voor verkeersborden">
-Openstaande vraag: Wie bepaalt wat de lijst is met issues die op de nominatie staan om opgenomen te worden in RVV1990?
-</aside>
+* Het informatiemodel MOET mogelijk maken om niet-wettelijke borden, die wel buiten aanwezig zijn of die slechts genomineerd zijn om opgenomen te worden, te registreren. 
 
 
 ### Statische verkeersborden
@@ -144,7 +139,10 @@ Wegmarkeringen ondersteunen het rijden en geven een visuele herhaling van de inf
 
 Verkeerslichten zijn buiten scope. 
 
-### Zicht
+### Voorwaarden voor verkeersregels
+In de RVV 1990 staan soms voorwaarden bij verkeersregels. Indien deze niet worden aangeduid met een verkeersbord, zijn deze buiten scope. Om duidelijk te maken wat we hier bedoelen werken we hieronder het voorbeeld van "zicht" uit.
+
+#### Zicht
 [RVV 1990 art 19](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01) geeft aan: De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
 
 Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het informatiemodel, ook al kan een rechter, in het geval van een ongeluk, concluderen dat een bestuurder sneller heeft gereden dan wettelijk is toegestaan volgens deze regel.

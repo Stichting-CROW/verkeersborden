@@ -453,6 +453,14 @@ Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatie
 
 </dd>
 
+<dt><dfn data-lt="Snelheidsregime">Snelheidsregime</dfn></dt>
+<dd>
+
+Snelheidsregime voor verkeer conform [§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&z=2023-07-01&g=2023-07-01)
+
+</dd>
+
+
 <dt><dfn>SPARQL</dfn></dt>
 <dd>
 

@@ -48,7 +48,7 @@ De Data Top 15, met onder andere maximumsnelheden, verkeersborden en andere data
 
 ## DMI-ecosysteem
 
-<Het Dutch Metropolitan Innovations [=DMI-ecosysteem=] voorziet de domeinen van mobiliteit, openbare ruimte en woningbouw van nieuwe instrumenten vanuit de digitale wereld. 
+Het Dutch Metropolitan Innovations [=DMI-ecosysteem=] voorziet de domeinen van mobiliteit, openbare ruimte en woningbouw van nieuwe instrumenten vanuit de digitale wereld. 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 

@@ -74,7 +74,6 @@ function indexOfRequirements(config) {
     ul.appendChild(entryForSection);
   }
 }
-
 var respecConfig = {
   // => https://github.com/stichting-crow/respec/wiki
   specStatus: "LD",
@@ -84,7 +83,7 @@ var respecConfig = {
   subtitle: "Use-case, inhoudelijke en technische uitgangspunten",
   editors: [
     {
-      name: "Elisabeth Klören",
+      name: "Elisabeth De Vries",
       company: "CROW",
     },
     {
@@ -95,52 +94,52 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
-  lint: { "no-unused-dfns": false }
+  lint: { "no-unused-dfns": false },
   localBiblio: {
     NEN_2660_2_2022: {
-      title:
-        "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
+      title: "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
       href: "https://www.nen.nl/en/nen-2660-2-2022-nl-291667",
       status: "Actueel",
       publisher: "NEN",
     },
     NEN_2660_1_2022: {
-      title:
-        "NEN 2660-1 Rules for information modelling of the built environment - Part 1: Conceptual models",
+      title: "NEN 2660-1 Rules for information modelling of the built environment - Part 1: Conceptual models",
       href: "https://www.nen.nl/en/nen-2660-1-2022-nl-291666",
       status: "Actueel",
       publisher: "NEN",
     },
     NEN_3610: {
-      title: "",
-      href: "",
+      title: "Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten",
+      href: "https://www.nen.nl/nen-3610-2022-nl-296137",
       status: "Actueel",
       publisher: "NEN",
     },
+    NEN3381_2020: {
+      title: "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden",
+      href: "https://www.nen.nl/nen-3381-2020-nl-267378",
+      status: "Actueel",
+      publisher: "NEN",  
+    },
     NEN_EN_ISO_19650_1_2019: {
-      title:
-        "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van bouw informatie modelling - Deel 1: Concepten en beginselen",
+      title: "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van bouw informatie modelling - Deel 1: Concepten en beginselen",
       href: "https://www.nen.nl/nen-en-iso-19650-1-2019-nl-275305",
       status: "Actueel",
       publisher: "NEN",
     },
     NEN_EN_ISO_19650_2_2019: {
-      title:
-        "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van building information modelling - Deel 2: Leveringsfase van de assets",
+      title: "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van building information modelling - Deel 2: Leveringsfase van de assets",
       href: "https://www.nen.nl/nen-en-iso-19650-2-2019-nl-275518",
       status: "Actueel",
       publisher: "NEN",
     },
     NEN_EN_ISO_19650_3_2020: {
-      title:
-        "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 3: Operational phase of the assets",
+      title: "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 3: Operational phase of the assets",
       href: "https://www.nen.nl/nen-en-iso-19650-3-2020-en-275488",
       status: "Actueel",
       publisher: "NEN",
     },
     NEN_EN_ISO_19650_4_2022: {
-      title:
-        "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 4: Information exchange",
+      title: "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 4: Information exchange",
       href: "https://www.nen.nl/nen-en-iso-19650-4-2022-en-301119",
       status: "Actueel",
       publisher: "NEN",

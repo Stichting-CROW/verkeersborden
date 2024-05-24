@@ -66,8 +66,6 @@ De [=VNG=] is kartrekker van het programma [=T3D=].
 ### T3D
 Het [=Programma Totaal 3Dimensionaal=] werkt aan verbetering van het inwinnen, registratie en het gebruik van driedimensionale geo-informatie. Drie gemeenten werken elk een van deze sporen uit in functionerende pilots. Daarbij wordt gezocht naar oplossingsrichtingen en standaarden die in te zetten zijn bij alle drie de gemeenten en toepasbaar zijn voor alle gemeenten. De resultaten worden <a href="https://alkem.io/digileefomgeving/challenges/t3d/dashboard">hier</a> gepubliceerd.
 
-Hierbij wordt [=CityGML=] gezien als een handig formaat om in te publiceren. 
-
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel.
 
 Dit betreft een representatie van de verkeersborden in een andere levensfase, namelijk de in beheer/gebruik zijnde verkeersborden. In het ideale geval wordt vanuit deze data een link gelegd met het type verkeersbord dat wordt gedefinieerd in het [=Informatiemodel Verkeerstekens=].
@@ -138,7 +136,7 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 ### NEN
 De NEN beheert nationale standaarden en levert input voor CEN- en ISO normen.  De NEN beheert in dit kader de relevante standaarden:
 
-* [=NEN3381:2020=] De NEN3381:2020 wordt beheerd door de normcommissie Verkeerstekens.
+* De [=NEN3381_2020=], beheerd door de [=normcommissie Verkeerstekens=].
 
 
 ### Normcommissie Verkeerstekens
