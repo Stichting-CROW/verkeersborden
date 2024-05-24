@@ -15,53 +15,36 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom [=verkeersk
 
 Alle trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van [=verkeerskundige informatie=] toe te kunnen werken is een [=Informatiemodel Verkeerstekens=] essentieel. Het ministerie heeft [=CROW=] gevraagd om hiervoor dit framework op te stellen.
 
-Onderstaande afbeelding geeft aan wat het toekomstbeeld is voor het voorbeeld van maximumsnelheden. 
-
-<figure>
-<img src="./hoofdstukken/media/maximalesnelheid.PNG">
-<figcaption>Maximale snelheid voor navigatiesystemen, van rechts naar links: Een wegbeheerder neemt een [=verkeersbesluit=]; het [=NDW=] registreert een nieuwe verkeerskundige situatie; in het [=DMI-ecosysteem=] wordt de actuele verkeerskundige informatie gepubliceerd; [=SMART Mobility=] systemen kunnen de juiste verkeerskundige situatie afleiden uit de informatie en daarmee [=weggebruikers=] ondersteunen. </caption>
-</figure>
-
-
-## Probleemstelling
+### Probleemstelling
 
 Vanuit [=weggebruikers=] die ondersteund worden door [=Smart Mobility=] systemen is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per [=rijstrook=] en rijrichting. 
-
-
+<br>
+<br>
 Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden. De digitale [=verkeerskundige informatie=] van de wegen in Nederland is incompleet, vaak niet actueel en niet accuraat, en zijn opgeslagen in meerdere bronnen die niet altijd vindbaar en combineerbaar zijn. Hierdoor moeten gebruikers van deze informatie allerlei dure en tijdrovende “work-arounds” en provisorische oplossingen vinden om hun échte werk goed te kunnen doen.  De behoefte is om dit centraal te organiseren in een landelijke registratie, beheerd door het [=NDW=].
 
-
-De actuele digitale [=verkeerskundige informatie=] over de weg moet makkelijk te wijzigen zijn door de wegbeheerder, eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. Het [=Informatiemodel Verkeerstekens=] moet daarbij helpen.
-
-
-### SMART Mobility
-
-Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen, zodat een systeem zoals een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
-
-### Bronhouders
-
-Het [=Informatiemodel Verkeerstekens=] kan door wegbeheerders gebruikt worden bij het registreren en publiceren van de actuele verkeerskundige situatie op de weg. Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=] op:
-
-1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelike netwerkregistratie.
-2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt. De informatie wordt gepubliceerd door KOOP. Vastlegging van de informatie wordt ondersteund in een verkeersbesluitenapplicatie.
-3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
-
-
-#### Twee barrières voor data delen
+#### Barrières voor data delen
 
 Voor het delen van data in de mobiliteitssector bestaan op dit moment twee belangrijke barrières. Allereerst moeten organisaties steeds opnieuw bilaterale afspraken maken voordat ze kunnen starten met een data-integratie. Dat is tijdrovend en kost geld. Op projectniveau is dat niet altijd haalbaar waardoor het veelal niet komt tot data delen en schaalvoordelen blijven liggen.
-
-
+<br>
+<br>
 Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
 
-### Registraties
+
+#### Tekortkoming bestaande Registraties
 
 In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (o.a. [=BGT=]) en het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestande rijrichting. 
+
+## Hoog over doel informatiemodel
+
+Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen, zodat een systeem zoals een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
+<br>
+<br>
+De actuele digitale [=verkeerskundige informatie=] over de weg moet makkelijk te wijzigen zijn door de wegbeheerder, eenduidig te interpreteren zijn voor de systemen van de weggebruiker en het liefst openbaar beschikbaar komen. Het [=Informatiemodel Verkeerstekens=] moet daarbij helpen.
 
 
 ## Doel document
 
-Dit document beschrijft de use case, inhoudelijke en technische uitgangspunten voor een nationaal [=Informatiemodel Verkeerstekens=].
+Dit document beschrijft de context, raakvlakken, use case, inhoudelijke en technische uitgangspunten voor een nationaal [=Informatiemodel Verkeerstekens=].
 
 
 
@@ -82,9 +65,9 @@ Dit document beschrijft de volgende zaken:
 3. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 
-**11. Beheer** In Beheer staat beschreven hoe het beheer van het informatiemodel en de samenwerking met andere partijen wordt ingericht, zowel partijen die standaarden beheren als degenen die openbare digitale informatie publiceren over verkeersborden. 
+**11. Beheer** In Beheer staat beschreven aan welke eisen het beheer van het informatiemodel moet voldoen.
 
-**12. Samenstelling** In Samenstelling staan de onderdelen die ontwikkeld moeten worden om het informatiemodel te kunnen beheren, publiceren, en om verkeerskundige informatie conform het informatiemodel te kunnen opstellen, beheren en consumeren.
+**12. Samenstelling** In Samenstelling staat een overzicht van de onderdelen waaruit het informatiemodel bestaat, inclusief documentatie en implementatieondersteuning. 
 
 **13. Vervolg** In Vervolg staat hoe verder gewerkt kan worden aan de ontwikeling en het in beheer nemen van het informatiemodel.
 
