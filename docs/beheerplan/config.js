@@ -113,6 +113,13 @@ var respecConfig = {
       href: "https://www.csrstds.com/OpnStdsCallforAction.pdf",
       status: "Actueel",
       publisher: "University of Colorado",
-    },  
+    }, 
+    NEN_2660_2_2022: {
+      title: "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
+      href: "https://www.nen.nl/en/nen-2660-2-2022-nl-291667",
+      status: "Actueel",
+      publisher: "NEN",
+    }, 
     },
 };
+
