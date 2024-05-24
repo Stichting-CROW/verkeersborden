@@ -5,7 +5,7 @@
 In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop technisch wordt aangesloten op andere informatiemodellen.
 
 ### NEN2660-2:2022
-De [=NEN2660-2:2022=] bevat drie belangrijke (hoofd)onderdelen:
+De [=NEN_2660_2_2022=] bevat drie belangrijke (hoofd)onderdelen:
 <ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], in uit te drukken.</li>
 <li>Extensies hierop voor de meest gebruikt toepassingen in de gebouwde omgeving. </li>
 <li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li>
@@ -18,7 +18,7 @@ De [=NEN2660-2:2022=] bevat drie belangrijke (hoofd)onderdelen:
 Het NEN2660-2 topmodel focust op de gebouwde wereld. In deze specifieke use case is alleen het verkeersbord echt fysiek. Toch zorgt modellering op deze manier voor een mate van standaardisatie van het informatiemodel en de andere informatiemodellen in de gebouwde omgeving.
 
 
-* Het informatiemodel MOET worden opgesteld conform de [[NEN2660-2:2022]].
+* Het informatiemodel MOET worden opgesteld conform de [[NEN_2660_2_2022]].
 * Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.
 * Het informatiemodel MOET van alle concepten een definitie geven of verwijzen naar een definitie in wetten of andere informatiemodellen.
 
@@ -27,12 +27,12 @@ Het NEN2660-2 topmodel focust op de gebouwde wereld. In deze specifieke use case
 
 Binnen de NEN2660-2 is reeds een relatie tussen de NEN2660-2 en de NEN3610 aangegeven. Het gaat hier alleen om een afstemming tussen de begrippenkaders. 
 
-* Het informatiemodel MOET waar mogelijk aangesloten op de [[NEN_3610] Bij tegenstrijdigheden geldt de [[NEN2660-2:2022]].
+* Het informatiemodel MOET waar mogelijk aangesloten op de [[NEN_3610]] Bij tegenstrijdigheden geldt de [[NEN_2660_2_2022]].
 
 ### MIM
 Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen. 
 
-* Het informatiemodel MOET waar mogelijk aangesloten op de [=MIM=]. Bij tegenstrijdigheden geldt de [=NEN2660-2:2022=].
+* Het informatiemodel MOET waar mogelijk aangesloten op de [=MIM=]. Bij tegenstrijdigheden geldt de [=NEN_2660_2_2022=].
 
 
 
@@ -86,9 +86,9 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 ## Bouwfase
 
 ### NEN3381:2020
-De [[NEN3381:2020]] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. 
+De [[NEN3381_2020]] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. 
 
-De [[NEN3381:2020]] wordt beheerd door de [=normcommissie Verkeerstekens=]. 
+De [[NEN3381_2020]] wordt beheerd door de [=normcommissie Verkeerstekens=]. 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
@@ -138,7 +138,7 @@ Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel V
 
 <figure>
 <img src="./hoofdstukken/media/domeinmodellen.png">
-<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [=NEN3610=].</caption>
+<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [=NEN_3610=].</caption>
 </figure>
 
 

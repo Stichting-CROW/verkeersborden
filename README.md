@@ -17,20 +17,40 @@ In het architectuur framework zijn in 2022 uitgangspunten opgesteld voor een Inf
 De volgende onderdelen zijn in 2024 in de maak:
 
 
-### Beheerplan
+## Beheer
+
+<figure>
+<img src="./hoofdstukken/media/beheerinformatiemodel.PNG">
+<figcaption>Het beheer van het informatiemodel</caption>
+</figure>
 
 * Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het strategische beheer en de beheerorganisatie, met verdere uitwerking naar tactische en operationele invulling van het beheer
 * Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen. Bij de concept-release van de documentatie wordt de mogelijkheid geboden om deze online te reviewen met annotaties in de kantlijn.
+* Beheerplatform: Een beheerplatform wordt gebruikt om het informatiemodel te kunnen beheren, op zodanige wijze dat verschillen tussen versies goed beheerst en gepubliceerd kunnen worden. Dit zorgt ervoor dat een inhoudelijk deskundige op het gebied van verkeerskunde de inhoudelijke informatie kan opstellen en beheren. Daarnaast wordt in het beheerplatform de relatie met de brondocumenten beheerd, in dit geval met de [=RVV 1990=] en de [=BABW=].
+* De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de uitleg van het informatiemodel op het gebied van de modelopbouw; de hiërarchie in de begrippen; modelleringsconstructies; distributievormen; gebruikte referentiemodellen / standaarden; toepassing van de MIM; relatie met geometrische objectrepresentaties, waaronder de NWB-wegvakken en NWB-juncties en licenties. De technische documentatie geeft de context weer; geeft alternatieven weer en onderbouwingen van keuzes. 
+* De [Code Documentatie](https://docs.crow.nl/verkeersborden/codedocs) zorgt ervoor dat de codes van het informatiemodel, datasets en queries begrepen kan worden. Dit wordt gedaan door toelichtingen op te schrijven in dezelfde structuur als de code. Dit moet consistent zijn en beschrijvend, een letterlijke uitleg van wat een deel van de code bewerkstelligt. 
+
+### Publicatie
+<figure>
+<img src="./hoofdstukken/media/publicatieinformatiemodel.PNG">
+<figcaption>De publicatie van het informatiemodel</caption>
+</figure>
+
+* Een webpagina wordt ingericht met informatie over het doel en de samenwerkingsverbanden rondom het informatiemodel.
+* Voor rechtstreeks vanuit systemen of het internet zoeken in het informatiemodel wordt deze gepubliceerd op een SPARQL-endpoint. 
+* De visualisaties van de verkeersborden en - onderborden worden dereferencable ("te vinden met een link") en downloadbaar gepubliceerd.
+* Er komt een techische viewer van het informatiemodel beschikbaar voor databeheerders en datagebruikers.
+* Voor het verkennen van het informatiemodel en sommige toepassingen kan het handig zijn om de code rechtstreeks te kunnen inzien en downloaden, daarom wordt het informatiemodel samen met de andere code op de Github_Verkeersborden omgeving geplaatst in het Turtle formaat:
+> "Terse RDF Triple Language", een bestandsformaat (Informatie technologie) ([Bron:Wikipedia](https://nl.wikipedia.org/wiki/Turtle_(syntaxis))). Turtle is een serialisatieformaat voor het Resource Description Framework (RDF), een universele taal ("Linked Data") voor het weergeven van informatie op het Web.
 
 
 ### Gebruikersondersteuning
-Gebruikers worden op weg geholpen met:
+Technische gebruikers worden op weg geholpen met:
 
 * [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement): voor wegbeheerders. In de gids voor databeheer wordt het samenstellen en beheren van verkeerskundige informatie stapsgewijs beschreven, met als doel de toepassing te ondersteunen voor beginnende gebruikers. Om op eenvoudige wijze verkeerskundige informatie te kunnen samenstellen en beheren, is een applicatie nodig die het geheel beter visueel ondersteunt. Dat is buiten de scope van het informatiemodel. Daarom is deze gids geschikt voor databeheerders met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
 * [Leermaterialen voor assetdatabeheerders en wegbeheerders](datamanagementguide). In de leermaterialen wordt het samenstellen en beheren van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie samenstelt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een databeheerder met technische kennis op weg te helpen.
 * [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): voor ontwikkelaars. In de gids voor datagebruik wordt het gebruiken van verkeerskundige informatie in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen. De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van verkeerskundige informatie.
 * [Leermaterialen voor ontwikkelaars](datauserguide). In de leermaterialen wordt het gebruiken van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie gebruikt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen.
-* Een viewer van het informatiemodel
 * Een voorbeeld-implementatie (dataset). De voorbeeld-implementatie bestaat uit een dataset waarin het informatiemodel is toegepast op een (fictief) verkeerskundig wegennetwerk, met bijbehorende kaartvisualisaties van de wegen, zones, routes en fysiek aanwezige verkeersborden. In de voorbeeld dataset zitten gebreken (niet actueel / betrouwbaar / compleet), die met de controlemeachnismes gevonden kunnen worden.
 * Controlemechanismes (kwaliteitstoetsen dataset). De controlemechanismes voor de verkeerskundige informatie bestaan uit SPARQL queries waarmee onderzocht kan worden of de verkeerskundige informatie voldoet aan de regels van het informatiemodel. 
 * Zoekmechanismes (verkeerskundige informatie zoeken bij een wegvak). De zoekmechanismes bestaan uit SPARQL queries waarmee in verkeerskundige informatie gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de verkeerskundige informatie beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
@@ -38,15 +58,7 @@ Gebruikers worden op weg geholpen met:
 Daarnaast kunnen gebruikers bij de [helpdesk van CROW](https://www.crow.nl/ondersteuning/helpdesk) terecht voor vragen over het informatiemodel. 
 
 
-### Technische documentatie
-De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de uitleg van het informatiemodel op het gebied van de modelopbouw; de hiërarchie in de begrippen; modelleringsconstructies; distributievormen; gebruikte referentiemodellen / standaarden; toepassing van de MIM; relatie met geometrische objectrepresentaties, waaronder de NWB-wegvakken en NWB-juncties en licenties. De technische documentatie geeft de context weer; geeft alternatieven weer en onderbouwingen van keuzes. 
-[br]
-[br]
-Daarnaast wordt de mapping 
 
-
-### Code documentatie
-De [Code Documentatie](https://docs.crow.nl/verkeersborden/codedocs) zorgt ervoor dat de codes van het informatiemodel, datasets en queries begrepen kan worden. Dit wordt gedaan door toelichtingen op te schrijven in dezelfde structuur als de code. Dit moet consistent zijn en beschrijvend, een letterlijke uitleg van wat een deel van de code bewerkstelligt. 
 
 
 <!-- Image Map Generated by http://www.image-map.net/ -->
