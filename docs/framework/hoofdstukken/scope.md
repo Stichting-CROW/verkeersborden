@@ -1,4 +1,4 @@
-# Scope
+# Doel en scope 
 
 ## Doel informatiemodel
 
@@ -11,6 +11,32 @@ In de toekomst, na 2023, wordt de horizon verbreed naar [=SMART mobility=], met 
 > Als tweede doel moet het informatiemodel het *opstellen en beheren* van de [=verkeerskundige informatie=] ondersteunen.
 
 > Als derde doel moet het in de toekomst mogelijk zijn om voor het werkproces van het maken van verkeersmodellen en wegontwerpen de actuele [=verkeerskundige informatie=] te kunnen gebruiken als basis voor het ontwerp van een nieuwe verkeerskundige situatie.
+
+## Beoogde architectuur
+
+De stip op de horizon is het federatief data delen, waarbij de wegbeheerders de bronhouder zijn van verkeerskundige informatie, en het NDW een toegangspoort vormt tot die data. Onderstaande afbeelding geeft dat principe weer. Het informatiemodel wordt gepubliceerd door CROW; de wegbeheerder is de bronhouder voor [=verkeerskundige informatie=] op basis van het informatiemodel en deelt deze federatief met het [=NDW=], daarnaast deelt de wegbeheerder federatief data over verkeersbesluiten bij het KOOP (hiervoor is een ander informatiemodel nodig); de SMART Mobility systemen kunnen via het NDW de informatie van alle wegbeheerders vinden.
+
+<figure>
+<img src="./hoofdstukken/media/beoogdearchitectuur.jpg" width=100%>
+<figcaption>De beoogde architectuur</caption>
+</figure>
+
+
+### Informatieketen verkeerskundige informatie
+
+Het [=Informatiemodel Verkeerstekens=] kan door wegbeheerders gebruikt worden bij het registreren en publiceren van de actuele verkeerskundige situatie op de weg. Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=] op:
+
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelike netwerkregistratie.
+2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt. De informatie wordt gepubliceerd door KOOP. Vastlegging van de informatie wordt ondersteund in een verkeersbesluitenapplicatie.
+3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+
+De wegbeheerder moet daarvoor informatie kunnen delen met opdrachtnemers zoals ingenieursbureaus die de verkeerskundige situatie ontwerpen en uitvoeren. De beoogde informatieketen wordt weergegeven in onderstaande afbeelding. Het informatiemodel wordt gepubliceerd door CROW. Deze is gerelateerd aan de verkeersborden in [=NLCS=]. Een opdrachtnemer kan de gewenste nieuwe situatie ontwerpen in een ontwerpapplicatie en na uitvoering gegevens leveren aan de wegbeheerder, die zijn brondata kan beheren. 
+
+<figure>
+<img src="./hoofdstukken/media/informatieketen.jpg" width=100%>
+<figcaption>De informatieketen bij wijzigingen in de verkeerskundige situatie.  </caption>
+</figure>
+
 
 <aside class="note" title="Representatie">
 Voor een juiste interpretatie van het doel van een informatiemodel is het begrip van 'representatie' van belang. Een manier om dit toe te lichten is de 'Betekenisdriehoek', zoals gedefinieerd in de NEN 2660-1 (2020). Hier staat: 'De betekenisdriehoek visualiseert de relatie tussen 'dingen', 'concepten' en 'symbolen'. De rechterbenedenhoek vertegenwoordigt 'iets dat waarneembaar of voorstelbaar is in de werkelijkheid'. De bovenhoek staat 'de gedachte aan iets uit de werkelijkheid', kortweg 'concept'. De concepten worden gedefinieerd in een informatiemodel. De linkerbenedenhoek staat voor het symbool dat de gedachte symboliseert en het 'iets' representeert.  
