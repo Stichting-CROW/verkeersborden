@@ -44,21 +44,35 @@ De volgende onderdelen zijn in 2024 in de maak:
 > "Terse RDF Triple Language", een bestandsformaat (Informatie technologie) ([Bron:Wikipedia](https://nl.wikipedia.org/wiki/Turtle_(syntaxis))). Turtle is een serialisatieformaat voor het Resource Description Framework (RDF), een universele taal ("Linked Data") voor het weergeven van informatie op het Web.
 
 
-### Gebruikersondersteuning
-Technische gebruikers worden op weg geholpen met:
+### Gebruikersondersteuning databeheerders
+
+<figure>
+<img src="./gebruikersondersteuningdatabeheer.PNG">
+<figcaption>Gebruikersondersteuning databeheerders</caption>
+</figure>
+
+Databeheerders worden op weg geholpen met:
 
 * [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement): voor wegbeheerders. In de gids voor databeheer wordt het samenstellen en beheren van verkeerskundige informatie stapsgewijs beschreven, met als doel de toepassing te ondersteunen voor beginnende gebruikers. Om op eenvoudige wijze verkeerskundige informatie te kunnen samenstellen en beheren, is een applicatie nodig die het geheel beter visueel ondersteunt. Dat is buiten de scope van het informatiemodel. Daarom is deze gids geschikt voor databeheerders met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
 * [Leermaterialen voor assetdatabeheerders en wegbeheerders](datamanagementguide). In de leermaterialen wordt het samenstellen en beheren van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie samenstelt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een databeheerder met technische kennis op weg te helpen.
-* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): voor ontwikkelaars. In de gids voor datagebruik wordt het gebruiken van verkeerskundige informatie in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen. De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van verkeerskundige informatie.
-* [Leermaterialen voor ontwikkelaars](datauserguide). In de leermaterialen wordt het gebruiken van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie gebruikt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen.
 * Een voorbeeld-implementatie (dataset). De voorbeeld-implementatie bestaat uit een dataset waarin het informatiemodel is toegepast op een (fictief) verkeerskundig wegennetwerk, met bijbehorende kaartvisualisaties van de wegen, zones, routes en fysiek aanwezige verkeersborden. In de voorbeeld dataset zitten gebreken (niet actueel / betrouwbaar / compleet), die met de controlemeachnismes gevonden kunnen worden.
 * Controlemechanismes (kwaliteitstoetsen dataset). De controlemechanismes voor de verkeerskundige informatie bestaan uit SPARQL queries waarmee onderzocht kan worden of de verkeerskundige informatie voldoet aan de regels van het informatiemodel. 
+
+Daarnaast kunnen databeheerders bij de [helpdesk van CROW](https://www.crow.nl/ondersteuning/helpdesk) terecht voor vragen over het informatiemodel. 
+
+
+### Gebruikersondersteuning datagebruikers
+
+<figure>
+<img src="./gebruikersondersteuningdatagebruik.PNG">
+<figcaption>Gebruikersondersteuning datagebruikers (smart mobility fabrikanten)</caption>
+</figure>
+
+DataDastagebruikers worden op weg geholpen met:
+
+* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): voor ontwikkelaars. In de gids voor datagebruik wordt het gebruiken van verkeerskundige informatie in SMART Mobility stapsgewijs beschreven, met als doel het gebruik te ondersteunen. De focus ligt op het resultaat en het oplossen van specifieke problemen in het gebruiken van verkeerskundige informatie.
+* [Leermaterialen voor ontwikkelaars](datauserguide). In de leermaterialen wordt het gebruiken van verkeerskundige informatie op educatief verantwoorde wijze uitgelegd, met als leerdoel het begrijpen en kunnen uitleggen hoe je verkeerskundige informatie gebruikt. De gebruiker wordt ondersteund bij het leren door oefeningen. Doel is om een een softwareontwikkelaar op weg te helpen.
 * Zoekmechanismes (verkeerskundige informatie zoeken bij een wegvak). De zoekmechanismes bestaan uit SPARQL queries waarmee in verkeerskundige informatie gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de verkeerskundige informatie beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.
-
-Daarnaast kunnen gebruikers bij de [helpdesk van CROW](https://www.crow.nl/ondersteuning/helpdesk) terecht voor vragen over het informatiemodel. 
-
-
-
 
 
 <!-- Image Map Generated by http://www.image-map.net/ -->
