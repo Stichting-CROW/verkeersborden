@@ -25,7 +25,7 @@ De Algemene maatregel van bestuur waarbij regels worden gesteld voor het nemen v
 Bron: [CROW thesaurus](https://data.crow.nl/thesaurus/term/5BB62D05-7691-4A69-8950-740AA16AFD45)
 
 De BABW bevat regels over de plaatsing en uitvoering/materialisatie van verkeersborden.
-BABW verwijst naar de [=NEN3381:2020=] voor visualisaties van de fysiek te plaatsen verkeersborden.
+BABW verwijst naar de NEN3381:2020 voor visualisaties van de fysiek te plaatsen verkeersborden.
 
 Zie ook [§ 3 _Algemene bepalingen ten aanzien van uitvoering van verkeersborden_](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3) van [=Uitvoeringsvoorschriften BABW inzake verkeerstekens=].
 
@@ -49,7 +49,7 @@ Bebakening is het samenstel van op, in en naast de verharding aangebrachte verke
 <dt><dfn>beïnvloedingsgebied</dfn></dt>
 <dd>
 
-Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersregel=], [=waarschuwing=] en/of [=adviessnelheid=] geldt. Dit kan resulteren in een [=werkingslengte=], [rijstrook=]aanduiding, een [=route=], of een [=zone=].
+Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersmaatregel=] of [=waarschuwing=] geldt. Dit kan resulteren in een [=werkingslengte=], [rijstrook=]aanduiding, een [=route=], of een [=zone=].
 
 </dd>
 
@@ -142,7 +142,7 @@ Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex:32019R2
 <dt><dfn data-lt="fysieke plaat|fysieke platen">fysieke plaat</dfn></dt>
 <dd>
 
-De fysieke uiting van verkeersregels zijn de platen die de weggebruiker buiten aantreft. Op een plaat staat informatie, in de vorm van een schild met een kleur en teksten en verkeersborden en/of onderborden die elk een eigen waarde kunnen hebben.
+De fysieke uiting van verkeersmaatregelen zijn de platen die de weggebruiker buiten aantreft. Op een plaat staat informatie, in de vorm van een schild met een kleur en teksten en verkeersborden en/of onderborden die elk een eigen waarde kunnen hebben.
 
 </dd>
 
@@ -171,7 +171,7 @@ Definitie conform de [=BABW=].
 <dt><dfn>Informatiemodel verkeerstekens</dfn></dt>
 <dd>
 
-Een informatiemodel waarmee verkeersregels, waarschuwingen, adviessnelheden en verkeerstekens op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het verkeerskundige wegennetwerk, zodat deze informatie machine-verwerkbaar is.
+Een informatiemodel waarmee verkeersmaatregelen, waarschuwingen en verkeerstekens op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het verkeerskundige wegennetwerk, zodat deze informatie machine-verwerkbaar is.
 
 </dd>
 
@@ -243,7 +243,7 @@ De primaire taak van KOOP is het rechtsgeldig bekendmaken en beschikbaar stellen
 
 Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen.
 Het model bevat duidelijke afspraken over het vastleggen van gegevensspecificaties en biedt tegelijkertijd ruimte aan de verschillende niveaus van modellering.
-Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel, ondanks enkele tegenstrijdigheden met de [[NEN2660-2:2022]].
+Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel, ondanks enkele tegenstrijdigheden met de [[NEN_2660_2_2022]].
 
 Het MIM gaat uit van:
 
@@ -387,7 +387,7 @@ Het Programma Netwerkregistratie is een samenwerkingsverband; niet alleen van br
 <dt><dfn data-lt="Programma Totaal 3Dimensionaal|T3D|Totaal 3Dimensionaal">Totaal 3Dimensionaal</dfn></dt>
 <dd>
 
-Project van de [=Vereniging Nederlandse Gemeenten=] samen met drie grote gemeenten om het gebruik en de mogelijkheden van 3D geografische gegevens te verkennen.
+Project van de Vereniging Nederlandse Gemeenten samen met drie grote gemeenten om het gebruik en de mogelijkheden van 3D geografische gegevens te verkennen.
 
 </dd>
 
@@ -402,7 +402,7 @@ Bron: [=RVV1990=].
 <dt><dfn>route</dfn></dt>
 <dd>
 
-Een verzameling met meerdere wegvakken waarvoor een [=verkeersregel=], [=waarschuwing=] of [=adviessnelheid=] geldt, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt.
+Een verzameling met meerdere wegvakken waarvoor een [=verkeersmaatregelen=] of [=waarschuwingen=] gelden, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt.
 
 </dd>
 
@@ -518,7 +518,7 @@ Deze beschrijving kan zich op verschillende abstratieniveau's bevinden: op wegni
 <dt><dfn data-lt="verkeerskundige informatie">verkeerskundige informatie</dfn></dt>
 <dd>
 
-Informatie over de op een weg geldende verkeersregels, waarschuwingen en adviessnelheden en de bijbehorende verkeerstekens.
+Informatie over de op een weg geldende [=verkeersmaatregelen=], [=waarschuwingen=] en de bijbehorende verkeersborden.
 
 </dd>
 
@@ -627,7 +627,7 @@ Verkeersbord met een wettelijke basis in het Reglement verkeersregels en verkeer
 <dt><dfn >werkingslengte</dfn></dt>
 <dd>
 
-De werkingssfeer van punt a naar punt b op een NWB-wegvak waarvoor een verkeersregel, waarschuwing of adviessnelheden van toepassing is.
+De werkingssfeer van punt a naar punt b op een NWB-wegvak waarvoor een verkeersmaatregel of waarschuwing van toepassing is.
 
 </dd>
 
