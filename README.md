@@ -20,7 +20,7 @@ De volgende onderdelen zijn in 2024 in de maak:
 ## Beheer
 
 <figure>
-<img src="./hoofdstukken/media/beheerinformatiemodel.PNG">
+<img src="./beheerinformatiemodel.PNG">
 <figcaption>Het beheer van het informatiemodel</caption>
 </figure>
 
@@ -32,7 +32,7 @@ De volgende onderdelen zijn in 2024 in de maak:
 
 ### Publicatie
 <figure>
-<img src="./hoofdstukken/media/publicatieinformatiemodel.PNG">
+<img src="./publicatieinformatiemodel.PNG">
 <figcaption>De publicatie van het informatiemodel</caption>
 </figure>
 
