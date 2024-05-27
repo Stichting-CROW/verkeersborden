@@ -2,15 +2,16 @@
 
 ## Doel informatiemodel
 
-Korte termijn doel van het [=Informatiemodel Verkeerstekens=] is:
+Korte termijn doel is:
 
-> Zorgen dat **[=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=]** op eenduidige manier gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], **zodat deze informatie machine-verwerkbaar is**. 
+* Het  [=Informatiemodel Verkeerstekens=] MOET zorgen dat **[=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=]** op eenduidige manier gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], **zodat deze informatie machine-verwerkbaar is**. 
 
 In de toekomst, na 2023, wordt de horizon verbreed naar [=SMART mobility=], met als doel dat auto en automobilist veilig en zuinig kunnen rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende, digitaal beschikbare, [=verkeersmaatregelen=]. Alle na 2022 gefabriceerde auto's voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/).
 
-> Als tweede doel moet het informatiemodel het *opstellen en beheren* van de [=verkeerskundige informatie=] ondersteunen.
+Het secundaire doel is:
+* Het  [=Informatiemodel Verkeerstekens=] MOET het *opstellen en beheren* van de [=verkeerskundige informatie=] ondersteunen: de wegbeheerder moet daarvoor herkenbare informatievelden invullen en de informatie kunnen beheren als aanvulling op, en passend bij, de asset informatie voor beheer en voor andere landelijke registraties.
 
-> Als derde doel moet het in de toekomst mogelijk zijn om voor het werkproces van het maken van verkeersmodellen en wegontwerpen de actuele [=verkeerskundige informatie=] te kunnen gebruiken als basis voor het ontwerp van een nieuwe verkeerskundige situatie.
+In de toekomst moet het ook mogelijk zijn om voor het werkproces van het maken van verkeersmodellen en wegontwerpen de actuele [=verkeerskundige informatie=] te kunnen gebruiken als basis voor het ontwerp van een nieuwe verkeerskundige situatie.
 
 ## Beoogde architectuur
 
@@ -37,51 +38,6 @@ De wegbeheerder moet daarvoor informatie kunnen delen met opdrachtnemers zoals i
 <figcaption>De informatieketen bij wijzigingen in de verkeerskundige situatie.  </caption>
 </figure>
 
-
-<aside class="note" title="Representatie">
-Voor een juiste interpretatie van het doel van een informatiemodel is het begrip van 'representatie' van belang. Een manier om dit toe te lichten is de 'Betekenisdriehoek', zoals gedefinieerd in de NEN 2660-1 (2020). Hier staat: 'De betekenisdriehoek visualiseert de relatie tussen 'dingen', 'concepten' en 'symbolen'. De rechterbenedenhoek vertegenwoordigt 'iets dat waarneembaar of voorstelbaar is in de werkelijkheid'. De bovenhoek staat 'de gedachte aan iets uit de werkelijkheid', kortweg 'concept'. De concepten worden gedefinieerd in een informatiemodel. De linkerbenedenhoek staat voor het symbool dat de gedachte symboliseert en het 'iets' representeert.  
-
-
-<figure>
-<img src="./hoofdstukken/media/representatie.png">
-<figcaption>De betekenisdriehoek conform NEN 2660-1 (2020)</caption>
-</figure>
-
-
-Wanneer in de context van het [=Informatiemodel Verkeerstekens=] toegepast krijgen we de volgende tabel:
-
-<table class="wikitable">
-<tr>
-<th> 
-</th>
-<th> 
-</th>
-<th> 
-</th></tr>
-<tr>
-<td> Individueel concept </td>
-<td> Objecttype </td>
-<td> 'Wegvak'
-</td></tr>
-<tr>
-<td> Individueel ding </td>
-<td> Object </td>
-<td> 'Maasdamstraat'
-</td></tr>
- <tr>
-<td> Individueel symbool </td>
-<td> Geometrische representatie </td>
-<td> 'Geometrie van Maasdamstraat in de netwerkregistratie'
-</td></tr>
-</table>
-
-<p> De gegevens van een object zitten zodoende in de rechterbenedenhoek. Van de 'Maasdamstraat' wordt vast gelegd van welke objecttype ('Weg') hij is. Hierdoor is duidelijke welke gegevens er vastgelegd moeten worden (bijvoorbeeld wat zijn naam is, wat het bouwjaar is, welke constructie het is, etc.). Er kunnen dan ook een of meerdere representaties vastgelegd worden. Het object kan gerepresenteerd worden in een GIS bestand, op een CAD tekening, maar ook in een 3D model en zelfs alleen in een spreadsheet. Er zijn dus meerdere representaties (of 'symbolen') mogelijk van een individueel object.</p>
-
-<p> Dit is nodig om te weten, omdat vanuit de GIS gedachte de geometrie leidend is. Er wordt een feature (polygoon bijvoorbeeld) gemaakt, deze krijgt allerlei attributen en daar worden de waarden ingevuld. Dit werkt prima, totdat men vraagt om een 3D model of CAD tekening erbij. Dan zullen veel van de gegevens herhaald moeten worden en het 3D model kan niet gelinkt worden aan de geo-feature. </p> 
-
-<p> Het is toekomstvaster om te redeneren vanuit het object. Het object heeft een uniek ID en heeft allemaal attributen (in bijvoorbeeld in spreadsheet). De representaties van het object hebben alleen de gegevens benodigd voor die representatie (de geometrie) en het zelfde unieke ID. Zo is het makkelijk te matchen. </p>
-
-</aside>
 
 ## Use case
 
