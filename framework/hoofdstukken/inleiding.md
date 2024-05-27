@@ -2,8 +2,6 @@
 
 Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een [=Informatiemodel Verkeerstekens=] op te stellen. Dit document beschrijft de uitgangspunten, use-case en architectuurframework voor het informatiemodel. Om de inhoud van het informatiemodel te verkennen is daarnaast een beschrijving opgesteld van de informatie die nodig is om de wettelijke maximum snelheid op de weg te kunnen herleiden. Zie daarvoor [dit document](https://docs.crow.nl/verkeersborden/maximalesnelheid/)
 
-## Aanleiding
-
 ### Context
 
 Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom [=verkeerskundige informatie=] meerdere digitaliseringstrajecten en samenwerkingsverbanden lopen: 
@@ -15,26 +13,29 @@ Het Ministerie van Infrastructuur en Waterstaat heeft in 2021 rondom [=verkeersk
 
 Alle trajecten lopen tegen de uitdaging aan dat er meerdere bestanden zijn voor verkeersborden en dat deze bestanden ook nog eens zijn opgesteld vanuit verschillende contexten. Om uiteindelijk richting een goede sectorregistratie van [=verkeerskundige informatie=] toe te kunnen werken is een [=Informatiemodel Verkeerstekens=] essentieel. Het ministerie heeft [=CROW=] gevraagd om hiervoor dit framework op te stellen.
 
-### Probleemstelling
+## Probleemstelling
 
 Vanuit [=weggebruikers=] die ondersteund worden door [=Smart Mobility=] systemen is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per [=rijstrook=] en rijrichting. 
 <br>
 <br>
 Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden. De digitale [=verkeerskundige informatie=] van de wegen in Nederland is incompleet, vaak niet actueel en niet accuraat, en zijn opgeslagen in meerdere bronnen die niet altijd vindbaar en combineerbaar zijn. Hierdoor moeten gebruikers van deze informatie allerlei dure en tijdrovende “work-arounds” en provisorische oplossingen vinden om hun échte werk goed te kunnen doen.  De behoefte is om dit centraal te organiseren in een landelijke registratie, beheerd door het [=NDW=].
-
-#### Barrières voor data delen
-
+<br>
+<br>
+<b>Barrières voor data delen</b>
+<br>
+<br>
 Voor het delen van data in de mobiliteitssector bestaan op dit moment twee belangrijke barrières. Allereerst moeten organisaties steeds opnieuw bilaterale afspraken maken voordat ze kunnen starten met een data-integratie. Dat is tijdrovend en kost geld. Op projectniveau is dat niet altijd haalbaar waardoor het veelal niet komt tot data delen en schaalvoordelen blijven liggen.
 <br>
 <br>
 Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek aan vertrouwen dat ketenpartners zorgvuldig omgaan met hun data en men is bang voor aansprakelijkheden. Met het verstrekken van data denken ze de controle daarover kwijt te raken.
+<br>
+<br>
 
-
-#### Tekortkoming bestaande Registraties
+<b>Tekortkoming bestaande Registraties</b>
 
 In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (o.a. [=BGT=]) en het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestande rijrichting. 
 
-## Hoog over doel informatiemodel
+## Hoog over doel 
 
 Het [=Informatiemodel Verkeerstekens=] is primair bedoeld om de informatiebehoefte vanuit [=SMART Mobility=] vast te leggen, zodat een systeem zoals een rij-assistent of navigatie-assistent de [=weggebruiker=] op het juiste moment kan informeren over het juiste gebruik van de weg, of een autonoom rijdend voertuig deze informatie kan gebruiken. 
 <br>
@@ -52,7 +53,7 @@ Dit document beschrijft de context, raakvlakken, use case, inhoudelijke en techn
 
 Dit document beschrijft de volgende zaken: 
 
-**2. Scope** Beschrijft de inhoudelijke scope van de [=verkeerskundige informatie=] in het [=Informatiemodel Verkeerstekens=]
+**2. Doel en scope** Beschrijft het doel en de inhoudelijke scope van de [=verkeerskundige informatie=] in het [=Informatiemodel Verkeerstekens=]
 
 **3. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een [=SMART Mobility=] systeem van een [=weggebruiker=]. Hieruit volgen eisen voor het [=Informatiemodel Verkeerstekens=].
 
