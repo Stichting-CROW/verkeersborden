@@ -5,7 +5,7 @@
 In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het Informatiemodel Verkeerstekens dient te voldoen, en de wijze waarop technisch wordt aangesloten op andere informatiemodellen.
 
 ### NEN2660-2:2022
-De [=NEN_2660_2_2022=] bevat drie belangrijke (hoofd)onderdelen:
+De [[NEN_2660_2_2022]] bevat drie belangrijke (hoofd)onderdelen:
 <ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], in uit te drukken.</li>
 <li>Extensies hierop voor de meest gebruikt toepassingen in de gebouwde omgeving. </li>
 <li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li>
@@ -32,7 +32,7 @@ Binnen de NEN2660-2 is reeds een relatie tussen de NEN2660-2 en de NEN3610 aange
 ### MIM
 Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen. 
 
-* Het informatiemodel MOET waar mogelijk aangesloten op de [=MIM=]. Bij tegenstrijdigheden geldt de [=NEN_2660_2_2022=].
+* Het informatiemodel MOET waar mogelijk aangesloten op de [=MIM=]. Bij tegenstrijdigheden geldt de [[NEN_2660_2_2022]].
 
 
 
@@ -46,9 +46,13 @@ Met [=De Nederlandse CAD Standaard=] (NLCS) worden de objecten op een tekening h
 
 Circa 30% van de ontwerptekeningen bij verkeersbesluiten komen uit CAD-systemen. Tijdens het ontwerpproces wordt veel onderliggende digitale informatie gemaakt, maar deze informatie wordt niet optimaal ontsloten voor bijvoorbeeld publicatie van de [=verkeerskundige informatie=] in de gebruiksfase. NLCS kan verbeterd worden zodat de informatie uit het ontwerp handiger kan worden overgenomen naar de volgende fase, bijvoorbeeld voor het publiceren van de actuele verkeerskundige situatie op een weg.
 
+* Het [=Informatiemodel Verkeerstekens=] MOET een definitie bevatten van elke [=Fysieke Plaat=] in de [=NLCS=], om een zo eenvoudig mogelijke alignment te kunnen maken tussen beide standaarden.
+
 **Raakvlaktype: Gebruik informatiemodel**
 
- BIM loket wil op verzoek van het Ministerie van Infrastructuur en Waterstaat de verkeersborden opnemen in de NLCS standaard zodra deze gepubliceerd worden in het [=Informatiemodel Verkeerstekens=]. Het betreft dan de kijkrichting, positie en het type verkeersbord met onderbord. Vervolgens wil het BIM-loket nadere afspraken maken met de leveranciers van CAD-systemen om digitale informatie over de verkeersborden beschikbaar te kunnen maken voor andere systemen, waaronder potentieel de [=verkeersbesluiten applicatie=] van [=KOOP=]. 
+[=DigiGO=] wil op verzoek van het Ministerie van Infrastructuur en Waterstaat de verkeersborden opnemen in de NLCS standaard zodra deze gepubliceerd worden in het [=Informatiemodel Verkeerstekens=]. Het betreft dan de kijkrichting, positie en het type verkeersbord met onderbord. Vervolgens wil DigiGO nadere afspraken maken met de leveranciers van CAD-systemen om digitale informatie over de verkeersborden beschikbaar te kunnen maken voor andere systemen, waaronder potentieel de [=verkeersbesluiten applicatie=] van [=KOOP=].
+
+Bij NLCS wordt een ontology alignment gepubliceerd naar het [=Informatiemodel Verkeerstekens=].
 
 ### ASVV
 
@@ -86,15 +90,47 @@ In het ideale geval worden de concepten en definites uit het [=Informatiemodel V
 ## Bouwfase
 
 ### NEN3381:2020
-De [[NEN3381_2020]] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" geeft de eisen, classificatie en beproevingsmethoden voor verkeersborden inclusief de ondersteuningsconstructie. Het gaat daarbij om de fysieke productie, plaatsing en beheer van de verkeersborden. 
+De [[NEN3381_2020]] "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden" richt zich specifiek op de functionele en visuele eigenschappen van verkeersborden in Nederland.
+
 
 De [[NEN3381_2020]] wordt beheerd door de [=normcommissie Verkeerstekens=]. 
 
 **Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
 
-In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de NEN3381:2020 zodat duidelijk is op welk type [=verkeersteken=] de eisen in deze NEN-norm betrekking hebben. 
+In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de norm zodat duidelijk is op welk type [=verkeersborden=] de eisen in deze norm betrekking hebben. 
 
-## Beheerfase
+
+### NEN_EN_12899_1_2007
+De [[NEN_EN_12899_1_2007]] "Fixed, vertical road traffic signs - Part 1: Fixed signs" is een norm gericht op het bieden van algemene richtlijnen voor de constructie en prestatie van verkeersborden in diverse Europese landen.
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
+
+In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de norm zodat duidelijk is op welk type [=verkeersborden=] de eisen in deze norm betrekking hebben. 
+
+
+### DIN_67520_2013_10
+De [[DIN_67520_2013_10]] wordt beheerd door het Deutsches Institut für Normung e.V. (DIN), wat de Duitse nationale organisatie voor normalisatie is. Deze norm betreft de retroreflecterende eigenschappen van materialen die worden gebruikt in verkeerssignalisatie, zoals verkeersborden en wegmarkeringen. Deze norm specificeert de prestatie-eisen voor retroreflectie, wat essentieel is voor de zichtbaarheid van verkeersborden en -markeringen in het donker.
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
+
+In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de norm zodat duidelijk is op welk type [=verkeersborden=] de eisen in deze norm betrekking hebben. 
+
+### CROW_96a_en_96b
+De [[CROW_96a_en_96b]] Werk in Uitvoering geeft normen voor het ontwerpen en inrichten van tijdelijke verkeersmaatregelen op wegen binnen en buiten de bebouwde kom; autosnelwegen en niet autosnelwegen. Hiermee kun je het veiligheidsniveau acceptabel houden met passende verkeersmaatregelen en tijdelijke bewegwijzering.
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
+
+In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de norm zodat duidelijk is op welk type [=verkeersborden=] de eisen in deze norm betrekking hebben. 
+
+## Beheer- en gebruiksfase
+
+### CROW_279
+De [[CROW_279]] bevat de basisgegevens voor voertuigen. Ook de menselijke kant is meegenomen, omdat voertuigen niet over de weg rijden zonder invloed van de mens als bestuurder.
+
+**Raakvlaktype: Buiten scope** Potentieel gebruik informatiemodel
+
+In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen de norm zodat duidelijk is op welk type [=verkeersborden=] de eisen in deze norm betrekking hebben. 
+
 
 ### IMGeo
 [=IMGeo=] definieert een verkeersbord, als punt op de kaart. Welk type verkeersbord op de BGT kaart staat kan niet worden geregistreerd.
@@ -114,20 +150,11 @@ In [=IMBOR=] zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebak
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] moet aansluiten op IMBOR, maar geen dubbele definities kennen. Daarvoor is een besluit nodig waar welke informatie komt te staan. Voorstel:
+Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=Programma CORE-BORius=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
 
-1. In het [=Informatiemodel Verkeerstekens=] staan de definities van wettelijk erkende of daarvoor genomineerde verkeersborden. Deze definities staan dan niet meer in IMBOR. De verkeersborden zijn wel opgenomen in IMBOR als beheerobject, waarbij IMBOR de attributen definieert die nodig zijn voor het beheren van de verkeersborden. 
-2. In IMBOR worden de verkeersborden gedefinieerd die buiten de scope van het [=Informatiemodel Verkeerstekens=] vallen. 
-3. In het [=Informatiemodel Verkeerstekens=] komen verkeerskundige attributen te staan die bij het verkeersbord "-als-instantie-van-verkeerskundig ontwerp" (gewenst/gepland verkeersbord) informatie geven over datum van ingang van het besluit, en de geldigheidsperiode van het verkeersbord.
-4. In IMBOR komen voor beheer relevante attributen te staan die die bij het verkeersbord "-als-instantie-van-een-beheerobject" (fysiek / bestaand / geplaatst verkeersbord) informatie geven over de datum van aanleg, beheerder en overige informatie die gegenereerd wordt tijdens bouwen en beheren van de verkeersborden.
-5. Of bovenstaande ordening overeind blijft staan moet blijken bi jde praktische toepassing; Als tweede mogelijkheid bestaat variant waarin het [=Informatiemodel Verkeerstekens=] op zichzelf kan functioneren en de concepten en attributen volledig zijn afgestemd op IMBOR.
-
-<aside class="note" title="Besluitvorming door IMBOR beheerorganisatie">
-Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel Verkeerstekens=] geagendeerd in de Stuurgroep IMBOR voor besluitvorming of dit informatiemodel in beheer wordt genomen binnen de beheerorganisatie IMBOR en of men inhoudelijk akkoord is met deze aansluiting.
-</aside>
 
 #### IMWV
-[=IMWV=] staat voor Informatie Model Wegen en Verkeer. 
+[=IMWV=] staat voor Informatie Model Wegen en Verkeer. Het IMWV is onderdeel van IMBOR.
 
 <figure>
 <img src="./hoofdstukken/media/IMWV.jpg">
@@ -138,8 +165,19 @@ Dit voorstel wordt samen met architectuur framework voor het [=Informatiemodel V
 
 <figure>
 <img src="./hoofdstukken/media/domeinmodellen.png">
-<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [=NEN_3610=].</caption>
+<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [[NEN_3610]].</caption>
 </figure>
+
+### Datex II
+
+[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's</dd>
+
+https://www.datex2.eu/ is inmiddels open gepubliceerd. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. 
+
+
+
+* **Raakvlaktype: Bron voor informatiemodel**  Het Informatiemodel Verkeerstekens MOET gebruik maken van de concepten en definities uit DATEX II
+
 
 
 ### Dataspecs INSPIRE 
@@ -191,17 +229,13 @@ Zie [deze pagina](https://data.vlaanderen.be/doc/applicatieprofiel/verkeersborde
 #### Vlaamse Wegen OTL 
 De [=Vlaamse wegen OTL=], een uitwerking van [=OSLO=], is de objecttypenbibliotheek van alle weginfrastructuurobjecten van het Agentschap wegen en verkeer. 
 
-### Datex II
 
-[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's</dd>
+### Verkeersbordenoverzicht.nl
+Het https://verkeersbordenoverzicht.nl/ is een de facto standaard in Nederland, waarbij een individuele wegbeheerder de meest voorkomende [=fysieke platen=] publiceert en daarbij, soms foutief, de bestelcodes van de verkeersbordenfabrikanten weergeeft. Veel wegbeheerders kijken op deze site om snel een code op te zoeken. 
 
-https://www.datex2.eu/, Gepubliceerd als CEN 16157, deel 1 t/m 9. 
-Deze norm is niet openbeschikbaar. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. Mogelijke relevante aspecten:
 
-* Beborde omleiding
-* Snelheidsbeperkingen (`SpeedManagement`)
-* Milieuzones
 
-**Raakvlaktype: Bron voor informatiemodel** De focus bij Datex ligt eerder op incidenten, [=dynamische verkeersborden=] en de huidige situatie, niet op de besluitvorming en [=statische verkeersborden=]. Toch moet worden gecontroleerd of onderdelen van het informatiemodel al beschreven zijn in deze norm, zodat hier op kan worden aangesloten.
+### Bordenboekje VNVF
+De [=VNVF=] publiceerde tot nu toe een bordenboekje met bestelcodes van verkeersborden. VNVF is bezig met het maken van een nieuwe, logische bestelcodering voor het samenstellen van de informatie die op een [=fysieke plaat=] komt. 
 
-* Het Informatiemodel Verkeerstekens MOET waar relevant gebruik maken van de concepten en definities uit DATEX II
+**Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit odnerdelen van het informatiemodel. 

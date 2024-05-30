@@ -107,16 +107,29 @@ DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeer
 
 </dd>
 
+<dt><dfn data lt="Digitaal Stelsel|Digitale Stelsels">Digitaal Stelsel</dfn></dt>
+
+<dd> Een geïntegreerd systeem dat technologieën, gegevens, processen en standaarden combineert om informatie-uitwisseling en samenwerking binnen een bepaald domein te faciliteren. 
+</dd>
+
 <dt><dfn>DigiGO</dfn></dt>
 <dd>
 
-Het programma Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving.
-Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data.
-Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken.
-Zie voor meer informatie de [website van DigiGO](https://www.digigo.nu).
+([=DigiGO=]) maakt en beheert standaarden voor de gebouwde omgeving, waaronder de met het informatiemodel samenhangende standaard [=NLCS=] en het [DSGO], een digitaal stelsel uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. 
+
+
+</dd>
+
+<dt><dfn>DSGO</dfn></dt>
+<dd>
+
+ Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Dit stelsel wordt ontwikkeld en beheerd door [=DigiGO=]
+Doel: Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken.Het
+Zie voor meer informatie de <a href="https://www.digigo.nu">website van DigiGO</a>.
 Bestuurlijke aanjager is de Bouwdigitaliseringsraad, waarin ook het ministerie van BZK deelneemt.
 
 </dd>
+
 
 <dt><dfn>DMI-ecosysteem</dfn></dt>
 <dd>
@@ -660,5 +673,46 @@ Gebied bestaande uit meerdere (delen van) wegvakken waarvoor een verkeersmaatreg
 Zweden heeft een netwerkregistratie live staan met deze <a href="https://www.nvdb.se/sv">website</a>, deze <a href="https://dataut.vegvesen.no/en/dataset/nasjonal-vegdatabank">landingspagina voor datasets</a> en <a href="https://dce2.au.dk/pub/TR151.pdf">deze Engelstalige toelichting</a>
 
 </dd>
+
+
+
+<dt><dfn data-lt="NORA">NORA</dfn></dt>
+<dd>
+
+Nederlandse Overheid Referentie Architectuur, set van voor overheden bindende afspraken over interoperabiliteit en kwaliteit van digitale dienstverlening in de publieke sector. <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nora/">Startpagina</a>
+
+
+
+</dd>
+
+<dt><dfn data-lt="GEBORA">GEBORA</dfn></dt>
+<dd>
+
+GEBouwde Omgeving Referentie Architectuur, dit is één van de families binnen het digitale stelsel [=NORA=]. Deze referentie architectuur beschrijft de manier van werken in de gebouwde omgeving. Daartoe is een ketenbenadering gekozen: de waardeketens vormen het hoogste niveau van beschrijving in de organisatielaag. De waardeketens worden gebaseerd op de asset life cycle. GEBORA wordt ontwikkeld en beheerd door [=DigiGO=], zie deze <a href="https://www.digigo.nu/referentiearchitectuur">website</a>.
+
+</dd>
+
+<dt><dfn data-lt="NDTFL">NDTFL</dfn></dt>
+<dd>
+De Nationale Digitale Tweeling voor de fysieke Leefomgeving, waarmee de referentie-architectuur wordt gegeven voor een ecosysteem van digitale tweelingen van de gebouwde omgevingen. NDTFL wordt ontwikkeld en beheerd door [=Geonovum=], zie dit <a href="https://www.geonovum.nl/uploads/documents/Samenvatting%20Investeringsvoorstel%20Nationale%20Digitale%20Tweeling%20Infrastructuur.pdf">ontwikkelvoorstel</a> Hierbij horen architectuur uitgangspunten.
+</dd>
+
+<dt><dfn data-lt="Geonovum">Geonovum</dfn></dt>
+<dd>
+Geonovum beheert de Nederlandse geo-standaarden waaronder [=IMgeo=], en is trekker van het [=DMI-ecosysteem=], het [=NDTFL=] en de [=SOR=].
+</dd>
+
+<dt><dfn data-lt="VNVF">VNVF</dfn></dt>
+<dd>
+De Vereniging voor Nederlandse Verkeersbordenfabrikanten. Deze fabrikanten maken gezamelijk afspraken over de bestelcodes voor nieuwe verkeersborden, die logisch zijn opgebouwd uit borden, onderborden, eigen afbeeldingen en eigen teksten.
+
+</dd>
+
+<dt><dfn data-lt="Programma CORE-BORius">Programma CORE-BORius</dfn></dt>
+<dd>
+CORE staat voor samenwerkende gemeenten die een eigen centrale objectenregistratie willen hebben om informatie eenmalig op te slaan en meervoudig te delen. BORius staat voor Beheer Openbare Ruimte Informatie en Uitwissel Standaard. Het is de werktitel voor een nieuw initiatief dat ervoor zorgt dat assetmanagement organisaties hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor/borius-initiatief-voor-een-betere-uitwisseling-van">deze website</a>.
+
+</dd>
+
 
 </dl>

@@ -1,6 +1,14 @@
 # Raakvlak: Applicaties
 
 
+## GEORGE
+
+Kort voor: GEOgrafische Registratie van GEgevens. Applicatie van het [=NDW=], waarmee wegbeheerders ondersteund worden om de [=verkeerskundige informatie=] in het [=NWB+=] aan te passen. Daarnaast biedt George [deze viewer](https://wegkenmerken.ndw.nu/verkeersborden) waarmee iedereen de [=verkeerskundige informatie=] in het NWB kan inzien. 
+
+* **Raakvlaktype** Gebruik van het informatiemodel 
+
+Als het [=Informatiemodel Verkeerstekens=] wordt vastgesteld, zal George moeten worden aangepast om hierop aan te sluiten. De verantwoordelijke hiervoor is het [=NDW=].
+
 ## Verkeersbesluiten applicatie
 
 De [=verkeersbesluiten applicatie=]" is een applicatie van [=KOOP=] voor het publiceren van (eenvoudige) [=Verkeerskundige informatie=] bij verkeersbesluiten.

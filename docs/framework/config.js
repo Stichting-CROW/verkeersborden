@@ -144,5 +144,29 @@ var respecConfig = {
       status: "Actueel",
       publisher: "NEN",
     },
+    NEN_EN_12899_1_2007: {
+      title: "Fixed, vertical road traffic signs - Part 1: Fixed signs",
+      href: "https://www.nen.nl/en/nen-en-12899-1-2007-nl-144673",
+      status: "Actueel",
+      publisher: "NEN",
+    },
+    DIN_67520_2013_10: {
+      title: "Retroreflektierende Materialien zur Verkehrssicherung - Lichttechnische Mindestanforderungen an Reflexstoffe",
+      href: "https://www.baunormenlexikon.de/norm/din-67520/014ab8f6-7c8e-4f96-be3c-d91ca3d39355",
+      status: "Actueel",
+      publisher: "Bauwnormen Institut DeutschlandN",
+    },
+    CROW_96a_en_96b: {
+      title: "Werk in uitvoering",
+      href: "https://www.crow.nl/online-kennis-tools/kennismodule-wiu",
+      status: "Actueel",
+      publisher: "CROW",
+    },
+    CROW_279: {
+      title: "Karakteristieken van voertuigen en mensen",
+      href: "https://www.crow.nl/publicaties/karakteristieken-van-voertuigen-en-mensen",
+      status: "Actueel",
+      publisher: "CROW",
+    },
   },
 };

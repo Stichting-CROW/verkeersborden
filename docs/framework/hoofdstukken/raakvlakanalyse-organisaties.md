@@ -80,15 +80,10 @@ In het kader van [=INSPIRE=] realiseren de Europese lidstaten een digitaal netwe
 
 
 ## DigiGO
-([=DigiGO=]) maakt en beheert standaarden voor de gebouwde omgeving en een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. 
+([=DigiGO=]) maakt en beheert standaarden voor de gebouwde omgeving, waaronder de met het informatiemodel samenhangende standaard [=NLCS=] en het [DSGO], een digitaal stelsel uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. 
 
 **Raakvlaktype: Uitgangspunten voor het informatiemodel**
 
-Wegbeheerders hebben te maken met een hele keten aan samenwerkingspartners en toeleveranciers, die informatie moeten uitwisselen. Daarom zal het informatiemodel moeten passen in een groter stelsel van informatiemodellen, die onderdeel zijn van het Digitaal Stelsel Gebouwde Omgeving. 
-
-DigiGO beheert in dit kader deze relevante standaarden:
-
-* [=NLCS=]
 
 **Raakvlaktype: Gezamenlijk beheer / samenhangende standaarden**
 
@@ -106,6 +101,18 @@ CROW is daarnaast de facilitator van [=KPVV=]
 
 **Raakvlaktype: Gezamenlijk beheer**
 
+### Programma CORE-BORius
+CORE staat voor samenwerkende gemeenten die een eigen centrale objectenregistratie willen hebben om informatie eenmalig op te slaan en meervoudig te delen. BORius staat voor Beheer Openbare Ruimte Informatie en Uitwissel Standaard. Het is de werktitel voor een nieuw initiatief dat ervoor zorgt dat assetmanagement organisaties hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor/borius-initiatief-voor-een-betere-uitwisseling-van">deze website</a>.
+
+
+**Raakvlaktype: Gezamenlijk beheer / samenhangende standaarden** Het [=Informatiemodel Verkeerstekens=] sluit aan op [=IMBOR=], een van de standaarden die in het CORE-BORius programma doorontwikkeld worden.
+
+
+
+## Geonovum
+Geonovum beheert de Nederlandse geo-standaarden waaronder [=IMgeo=], en is trekker van het [=DMI-ecosysteem=], het [=NDTFL=] en de [=SOR=].
+
+**Raakvlaktype: Gezamenlijk beheer**
 
 ### KPVV
 
@@ -133,10 +140,10 @@ De [=Buyer Group verkeersborden=] en [=bewegwijzering=] bij PIANOo werkt aan het
 
 In het ideale geval worden de concepten en definites uit het [=Informatiemodel Verkeerstekens=] toegepast binnen producten van de Buyer Group Verkeersborden / PIANOO zodat duidelijk is over welke verkeerstekens het gaat en op alle locaties voor mensen herkenbare termen ontstaan. Met links kunnen gebruikers van de eisen naar de website met definites en afbeeldingen van verkeerstekens worden verwezen. 
 
-### NEN
-De NEN beheert nationale standaarden en levert input voor CEN- en ISO normen.  De NEN beheert in dit kader de relevante standaarden:
-
-* De [=NEN3381_2020=], beheerd door de [=normcommissie Verkeerstekens=].
+## NEN
+De NEN beheert nationale standaarden en levert input voor CEN- en ISO normen.  De NEN, specifiek de normcommissie verkeerstekens, beheert in dit kader de relevante standaarden:
+* [[NEN3381_2020]]
+* [[NEN_EN_12899_1_2007]]
 
 
 ### Normcommissie Verkeerstekens
@@ -146,7 +153,10 @@ De [=normcommissie Verkeerstekens=] houdt zich onder de vlag van de NEN bezig me
 **Raakvlaktype: Gezamenlijk beheer** Potentieel gezamenlijk beheer van de de [=statische verkeersborden=] die genomineerd zijn om in de wet te worden opgenomen. Hiervoor moeten nog afspraken worden gemaakt.
 
 
+## VNVF
+De Vereniging voor Nederlandse Verkeersbordenfabrikanten. Deze fabrikanten maken gezamelijk afspraken over de bestelcodes voor nieuwe verkeersborden, die logisch zijn opgebouwd uit borden, onderborden, eigen afbeeldingen en eigen teksten. De wegbeheerder zou vanuit de [=verkeerskundige informatie=] een bord moeten kunnen bestellen zonder dubbelop ook een bestelcode te hoeven registreren, immers, de inhoud van het bord is al geregistreerd. 
 
+**Raakvlaktype: Gezamenlijk beheer**  Daarom is het uitgangspunt, dat het [=Informatiemodel Verkeerstekens=] aansluit op de bestelcodering van het VNVF, op zo'n manier dat de bestelcode kan worden afgeleid uit de [=verkeerskundige informatie=].
 
 ## Internationaal
 
