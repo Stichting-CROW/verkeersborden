@@ -59,7 +59,7 @@ Dit document beschrijft de volgende zaken:
 
 **4. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er 'gebruiker', 'leverancier' en 'afnemer' zijn van [=verkeerskundige informatie=], gemodelleerd met het [=Informatiemodel Verkeerstekens=]. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. Door in de gehele keten te denken kan duidelijk worden welke aanvullende eisen er gelden voor het informatiemodel, om gebruik en beheer van de [=verkeerskundige informatie=] te faciliteren.
 
-**5-10. Raakvlakanalyse** De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
+**5-10. Raakvlakanalyse** De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, digitale stelsels, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
 
 1. Regels voor informatiemodellen
 2. Het [=verkeerskundig wegennetwerk=] en de fysieke ligging van de wegen.

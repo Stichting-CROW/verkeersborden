@@ -76,7 +76,7 @@ Op basis van een verkeersmodel wordt de ruimtelijke inpassing van de wegen en de
 Een wegontwerp wordt vaak gevisualiseerd in een CAD-tekening, met op tekening het [=wegalignement=], de markering van rijstroken of kanten van stoepbanden, en de verkeersborden. Hierbij wordt de BIM standaard [=NLCS=] gebruikt. Ook kan het wegontwerp onderdeel zijn van een BIM model.
 
 
-#### 
+#### Wegalignement
 Een wegontwerp beschrijft de fysieke ligging van de weg in termen van een [=wegalignement=],  
 
 Het verschil tusen een wegalignement en een [=verkeerskundig wegennetwerk=]: 
