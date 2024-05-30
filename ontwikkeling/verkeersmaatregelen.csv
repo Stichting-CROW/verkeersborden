@@ -1,0 +1,101 @@
+verkeersmaatregel-en,verkeersmaatregel-nl,bovenliggend,omschrijving-en,omschrijving-nl,
+Datex:OvertakingBan,Inhaalverbod,,an overtaking ban,een inhaalverbod,Inhaalverbod,
+Datex:RushHourLaneRestriction,Beperking spitsstrook,,restriction of the rush hour lane (e.g. clear rush hour lane),beperking van de spitsstrook (bijv. vrije spitsstrook),Beperking spitsstrook,
+Datex:MinimumDistanceRestriction,Minimum afstand beperking,,specification of a minimum distance between two vehicles,specificatie van een minimumafstand tussen twee voertuigen,Minimum afstand beperking,
+Datex:DirectionRestriction,Richting beperking,,restriction of the direction in which the vehicle may travel and information on who to respect when following the specified direction,beperking van de rijrichting en informatie over wie te respecteren bij het volgen van de aangegeven richting,Richting beperking,
+Datex:AccessRestriction,Toegangsbeperking,,access restrictions,toegangsbeperkingen,Toegangsbeperking,
+Datex:SpeedLimit,Snelheidslimiet,,speed limits (e.g. maximum speed),snelheidslimieten (bijv. maximum snelheid),Snelheidslimiet,
+Datex:AlternateRoadOrCarriagewayOrLaneLayout,Alternatieve weg of rijstrookindeling,,specification of alternate layouts for roads, carriageways or lanes (e.g. deviation to hard shoulder),specificatie van alternatieve indelingen voor wegen, rijbanen of rijstroken (bijv. afwijking naar vluchtstrook),Alternatieve weg of rijstrookindeling,
+Datex:StandingOrParkingRestriction,Stilstands- of parkeerbeperking,,standing and or parking restrictions (e.g. no standing for more than two minutes),stilstands- en/of parkeerbeperkingen (bijv. niet langer dan twee minuten stilstaand),Stilstands- of parkeerbeperking,
+Datex:PriorityRule,Voorrangsregel,,different priority rules (e.g. give way to oncoming vehicle, priority at next junction),verschillende voorrangsregels (bijv. voorrang geven aan tegemoetkomend verkeer, voorrang bij volgende kruising),Voorrangsregel,
+Datex:MandatoryRoadOrCarriagewayOrLaneUsage,Verplichte weg- of rijstrookgebruik,,mandatory roads or carriageways or lanes (e.g. mandatory bus road or carriageway or lane),verplichte wegen of rijbanen of rijstroken (bijv. verplichte busbaan of rijbaan of rijstrook),Verplichte weg- of rijstrookgebruik,
+Datex:Rerouting,Omleiding,,specification of rerouting,specificatie van omleidingen,Omleiding,
+
+
+verkeersmaatregel-en,verkeersmaatregel-nl,bovenliggend,omschrijving en,omschrijving-nl,relatie met bord
+,verkeersregel,,de wettelijk geldende ge- en verboden op een locatie volgens het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990),,F8
+,standaard wettelijke maximumsnelheid,Datex:SpeedLimit,,De standaard wettelijke maximumsnelheid is de hoogste snelheid die op een wegvak is toegestaan of op een bepaald gedeelte van een wegvak is toegestaan op basis van de RVV 1990 § 8. Maximumsnelheid. De standaard wettelijke maximumsnelheid is afhankelijk van het wegtype, het rijbaantype en het voertuigtype,A1
+,standaard wettelijke maximumsnelheid,,,,A2
+,lokale wettelijke maximumsnelheid,Datex:SpeedLimit,,een lokaal toegestane maximumsnelheid die afwijkt van de standaard wettelijke maximumsnelheid op het betreffende wegtype of rijbaantype,A1
+,lokale wettelijke maximumsnelheid,,,,A2
+,adviessnelheid,verkeersregel,,geadviseerde maximum snelheid,A4
+,adviessnelheid,verkeersregel,,,A5
+,voorrang verlenen,verkeersregel,,het de betrokken bestuurders op de kruisende weg in staat stellen ongehinderd hun weg te vervolgen,B6
+,stoppen,verkeersregel,,stoppen en verleen voorrang aan bestuurders op de kruisende weg,B7
+,stoppen,verkeersregel,,,F10
+,geslotenverklaring,verkeersregel,,verbod de betrokken weg in te rijden of in te gaan alsmede de betrokken weg te gebruiken,C1
+,geslotenverklaring,geslotenverklaring,,,C6
+,geslotenverklaring,geslotenverklaring,,,C7
+,geslotenverklaring,geslotenverklaring,,,C7a
+,geslotenverklaring,geslotenverklaring,,,C7b
+,geslotenverklaring,geslotenverklaring,,,C8
+,geslotenverklaring,geslotenverklaring,,,C9
+,geslotenverklaring,geslotenverklaring,,,C10
+,geslotenverklaring,geslotenverklaring,,,C11
+,geslotenverklaring,geslotenverklaring,,,C12
+,geslotenverklaring,geslotenverklaring,,,C13
+,geslotenverklaring,geslotenverklaring,,,C14
+,geslotenverklaring,geslotenverklaring,,,C15
+,geslotenverklaring,geslotenverklaring,,,C16
+,geslotenverklaring,geslotenverklaring,,,C17
+,geslotenverklaring,geslotenverklaring,,,C18
+,geslotenverklaring,geslotenverklaring,,,C19
+,geslotenverklaring,geslotenverklaring,,,C20
+,geslotenverklaring,geslotenverklaring,,,C21
+,geslotenverklaring,geslotenverklaring,,,C22
+,eenrichtingsverkeer,verkeersregel,,in een richting is de weg gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee,C2
+,eenrichtingsverkeer,verkeersregel,,,C3
+,eenrichtingsverkeer,verkeersregel,,,C4
+,inrijden toegestaan,verkeersregel,,weg inrijden is toegestaan onder voorwaarden zoals weergegeven in een onderbord,C5
+,milieuzone,verkeersregel,,Gesloten voor personen- en bedrijfsauto’s, vrachtauto’s of bussen met een dieselmotor vanwege milieuzone,C22a
+,milieuzone,milieuzone,,,C22b
+,milieuzone,milieuzone,,,C22c
+,milieuzone,milieuzone,,,C22d
+,spitsstrook open,rijden op spitsstrook toegestaan,,,C23-01
+,spitsstrook open,,,,C23-02
+,spitsstrook open,,,,C23-03
+,rijrichting aanhouden,rijden in de aangegeven rijrichting,,,D1
+,rijrichting aanhouden,,,,D2
+,rijrichting aanhouden,,,,D3
+,rijrichting aanhouden,,,,D4
+,rijrichting aanhouden,,,,D5
+,rijrichting aanhouden,,,,D6
+,rijrichting aanhouden,,,,D7
+,Parkeerverbod,verbod van het laten stilstaan van een voertuig anders dan gedurende de tijd die nodig is voor en gebruikt wordt tot het onmiddellijk in- of uitstappen van passagiers of voor het onmiddellijk laden of lossen van goederen,,,E1
+,Plaatsingsverbod fietsen/bromfietsen,verboden om fietsen en bromfietsen te plaatsen,,,E3
+,Verbod stil te staan,Verbod stil te staan,,,E2
+,Parkeergelegenheid,aanduiding gelegenheid om te parkeren,,,E4
+,Parkeergelegenheid,,,,E5
+,Parkeergelegenheid,,,,E6
+,Parkeergelegenheid,,,,E7
+,Parkeergelegenheid,,,,E8
+,Parkeergelegenheid,,,,E8a
+,Parkeergelegenheid,,,,E8b
+,Parkeergelegenheid,,,,E8c
+,Parkeren-met-schijf,,,,,E10
+,Parkeergelegenheid,,,,E9
+,Parkeergelegenheid,,,,E12
+,Parkeergelegenheid,,,,E13
+,Inhaalverbod,Verbod voor voertuigen om elkaar onderling in te halen,,,F1
+,Inhaalverbod,,,,F2
+,Inhaalverbod,,,,F3
+,Inhaalverbod,,,,F4
+,Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,,,F5
+,Voorrang verlenen aan tegemoetkomend verkeer,verkeer uit één van de rijrichtingen moet voorrang verlenen aan de andere rijrichting,,,F7
+,Keerverbod,verbod om om te keren,,,F7
+,Verplicht gebruik passeerbaan,Verplicht gebruik passeerbaan of passeerstrook (rijbaan of -strook om ingehaald te kunnen worden), uitsluitend bestemd voor landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines,,,F11
+,Verplicht gebruik passeerbaan,,,,F12
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,F13
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F14
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F15
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F16
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F17
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F18
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F19
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F20
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F21
+,Rijbaan of rijstrook uitsluitend voor voertuigtype,,,,F22
+,Inrit vrijlaten,,,,,
+,Uitrit vrijlaten,,,,,
+,Doorgang vrijlaten,,,,,
+,Ritsen,instructie voor het verkeer over ritsen,,,,

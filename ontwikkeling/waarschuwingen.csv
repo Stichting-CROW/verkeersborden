@@ -1,46 +1,64 @@
-Waarschuwing,omschrijving,relatie met bord
-Waarschuwing,"Waarschuwingen aan het verkeer op een locatie volgens het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990), Bijlage 1 Verkeersborden, Hoofdstuk J. Waarschuwing."
-WS-voorrangskruispunt,"Waarschuwing voor een naderend kruispunt waarbij de bestuurder voorrang heeft",B3
-WS-voorrangskruispunt,,B4
-WS-voorrangskruispunt,,B5
-WS-wegdek,"Waarschuwing voor slecht wegdek","J1"
-WS-Slechte-berm,"waarschuwing voor zachte, slechte of gevaarlijke berm"
-WS-Bocht,Waarschuwing voor bocht of s-bocht,"J2"
-WS-Bocht,,"J3"
-WS-Bocht,,"J4"
-WS-Bocht,,"J5"
-WS-Steile helling,"Waarschuwing voor steile helling","J6"
-WS-Gevaarlijke daling,"Waarschuwing voor gevaarlijke daling","J7"
-WS-Gevaarlijk kruispunt,"Waarschuwing voor gevaarlijk kruispunt","J8"
-WS-Rotonde,"Waarschuwing voor rotonde","J9"
-WS-Overweg,"Waarschuwing voor overweg","J10"
-WS-Overweg,,"J11"
-WS-Overweg,,"J12"
-WS-Overweg,,"J13"
-WS-Tram,"Waarschuwing voor tram(kruising)","J14"
-WS-Beweegbare-brug,"Waarschuwing voor beweegbare brug","J15"
-WS-Werk-in-uitvoering,"Waarschuwing voor werk in uitvoering","J16"
-WS-Rijbaanversmalling,"Waarschuwing voor rijbaanversmalling","J17"
-WS-Rijbaanversmalling,,"J18"
-WS-Rijbaanversmalling,,"J19"
-WS-Slipgevaar,"Waarschuwing voor slipgevaar","J20"
-WS-Kinderen,"Waarschuwing voor kinderen","J21"
-WS-Voetgangersoversteekplaats,"Waarschuwing voor voetgangersoversteekplaats","J22"
-WS-Voetgangers,"Waarschuwing voor voetgangers","J23"
-WS-Fietsers en bromfietsers,"Waarschuwing voor fietsers en bromfietsers","J24"
-WS-Losliggende stenen,"Waarschuwing voor losliggende stenen","J25"
-WS-Kade of rivieroever,"Waarschuwing voor kade of rivieroever","J26"
-WS-Groot wild,"Waarschuwing voor groot wild","J27"
-WS-Vee,"Waarschuwing voor vee","J28"
-WS-Tegenliggers,"Waarschuwing voor tegenliggers","J29"
-WS-Laagvliegende vliegtuigen,"Waarschuwing voor laagvliegende vliegtuigen","J30"
-WS-Zijwind,"Waarschuwing voor zijwind","J31"
-WS-Verkeerslichten,"Waarschuwing voor verkeerslichten","J32"
-WS-File,"Waarschuwing voor file","J33"
-WS-Ongeval,"Waarschuwing voor ongeval","J34"
-WS-Slecht-zicht,"Waarschuwing voor slecht zicht door sneeuw, regen of mist","J35"
-WS-IJzel-sneeuw,"Waarschuwing voor ijzel of sneeuw","J36"
-WS-Gevaar,"Waarschuwing voor gevaar (de aard van het gevaar is aangegeven op het onderbord)","J37"
-WS-Verkeersdrempel,"Waarschuwing voor verkeersdrempel","J38"
-WS-Poller,"Waarschuwing voor elektrische in- en uitschuifbare paal in de rijbaan (poller) waarmee toegankelijkheid van straten en gebieden kan worden geregeld","J39"
-WS-kruisen,"Waarschuwing voor kruisend verkeer"
+verkeersmaatregel-en,verkeersmaatregel-nl,bovenliggend,omschrijving-en,omschrijving-nl
+Datex:Warning,Waarschuwing,,see paragraph on “Warning” package,zie paragraaf over het “Waarschuwing” pakket
+Datex:TrafficAhead,Verkeer voor,Datex:Warning,warnings for traffic ahead (e.g. traffic queues),waarschuwingen voor verkeer voor (bijv. verkeersopstoppingen)
+WS-oncoming-traffic,WS-Tegenliggers,Datex:TrafficAhead,Warning for oncoming traffic,Waarschuwing voor tegenliggers,J29
+Datex:SteepHill,Steile heuvel,Datex:Warning,steep hill warnings,waarschuwingen voor steile heuvels
+WS-steep-incline,WS-Steile helling,Datex:SteepHill,Warning for steep incline,Waarschuwing voor steile helling,J6
+WS-dangerous-descent,WS-Gevaarlijke daling,Datex:SteepHill,Warning for dangerous descent,Waarschuwing voor gevaarlijke daling,J7
+Datex:RoadWarning,Weg waarschuwing,Datex:Warning,"warnings concerning the road or condition or the road (e.g. road narrows both sides, slippery road)","waarschuwingen betreffende de weg of de toestand van de weg (bijv. weg versmalt aan beide zijden, gladde weg)"
+WS-priority-intersection,WS-voorrangskruispunt,Datex:RoadWarning,Warning for an approaching intersection where the driver has priority,Waarschuwing voor een naderend kruispunt waarbij de bestuurder voorrang heeft,B3
+WS-priority-intersection,WS-voorrangskruispunt,,,,B4
+WS-priority-intersection,WS-voorrangskruispunt,,,,B5
+WS-poor-road-surface,WS-wegdek,Datex:RoadWarning,Warning for poor road surface,Waarschuwing voor slecht wegdek,J1
+WS-curve,WS-Bocht,Datex:RoadWarning,Warning for curve or s-curve,Waarschuwing voor bocht of s-bocht,J2
+WS-curve,WS-Bocht,,,,J3
+WS-curve,WS-Bocht,,,,J4
+WS-curve,WS-Bocht,,,,J5
+WS-accident,WS-Ongeval,Datex:RoadWarning,Warning for accident,Waarschuwing voor ongeval,J34
+WS-traffic-lights,WS-Verkeerslichten,Datex:RoadWarning,Warning for traffic lights,Waarschuwing voor verkeerslichten,J32
+WS-traffic-jam,WS-File,Datex:RoadWarning,Warning for traffic jam,Waarschuwing voor file,J33
+WS-dangerous-intersection,WS-Gevaarlijk kruispunt,Datex:RoadWarning,Warning for dangerous intersection,Waarschuwing voor gevaarlijk kruispunt,J8
+WS-poor-visibility,WS-Slecht-zicht,Datex:RoadWarning,Warning for poor visibility due to snow, rain or fog,Waarschuwing voor slecht zicht door sneeuw, regen of mist,J35
+WS-ice-or-snow,WS-IJzel-sneeuw,Datex:RoadWarning,Warning for ice or snow,Waarschuwing voor ijzel of sneeuw,J36
+WS-speed-bump,WS-Verkeersdrempel,Datex:RoadWarning,Warning for speed bump,Waarschuwing voor verkeersdrempel,J38
+WS-poller,WS-Poller,Datex:RoadWarning,Warning for electric retractable bollard in the roadway (poller) used to control access to streets and areas,Waarschuwing voor elektrische in- en uitschuifbare paal in de rijbaan (poller) waarmee toegankelijkheid van straten en gebieden kan worden geregeld,J39
+WS-movable-bridge,WS-Beweegbare-brug,Datex:RoadWarning,Warning for movable bridge,Waarschuwing voor beweegbare brug,J15
+WS-road-work,WS-Werk-in-uiWS-roundabout,WS-Rotonde,Datex:RoadWarning,Warning for roundabout,Waarschuwing voor rotonde,J9
+WS-level-crossing,WS-Overweg,Datex:RoadWarning,Warning for level crossing,Waarschuwing voor overweg,J10
+WS-level-crossing,WS-Overweg,Datex:RoadWarning,,,J11
+WS-level-crossing,WS-Overweg,Datex:RoadWarning,,,J12
+WS-level-crossing,WS-Overweg,Datex:RoadWarning,,,J13
+WS-tram,WS-Tram,Datex:RoadWarning,Warning for tram (crossing),Waarschuwing voor tram(kruising),J14
+WS-road-work,WS werk in uitvoering,Datex:RoadWarning,Warning for road work,Waarschuwing voor werk in uitvoering,J16
+WS-lane-narrowing,WS-Rijbaanversmalling,Datex:RoadWarning,Warning for lane narrowing,Waarschuwing voor rijbaanversmalling,J17
+WS-lane-narrowing,WS-Rijbaanversmalling,Datex:RoadWarning,,,J18
+WS-lane-narrowing,WS-Rijbaanversmalling,Datex:RoadWarning,,,J19
+WS-slip-danger,WS-Slipgevaar,Datex:RoadWarning,Warning for slip danger,Waarschuwing voor slipgevaar,J20
+WS-pedestrian-crossing,WS-Voetgangersoversteekplaats,Datex:RoadWarning,Warning for pedestrian crossing,Waarschuwing voor voetgangersoversteekplaats,J22
+WS-pedestrians,WS-Voetgangers,Datex:RoadWarning,Warning for pedestrians,Waarschuwing voor voetgangers,J23
+WS-cyclists-and-moped-riders,WS-Fietsers en bromfietsers,Datex:RoadWarning,Warning for cyclists and moped riders,Waarschuwing voor fietsers en bromfietsers,J24
+WS-loose-stones,WS-Losliggende stenen,Datex:RoadWarning,Warning for loose stones,Waarschuwing voor losliggende stenen,J25
+WS-quay-or-riverside,WS-Kade of rivieroever,Datex:RoadWarning,Warning for quay or riverside,Waarschuwing voor kade of rivieroever,J26
+Datex:AmbientWarning,Omgevingswaarschuwing,Datex:Warning,warnings about ambient factors (e.g. falling rocks),waarschuwingen over omgevingsfactoren (bijv. vallende rotsen)
+WS-poor-shoulder,WS-Slechte-berm,Datex:AmbientWarning,"Warning for soft, poor or dangerous shoulder","waarschuwing voor zachte, slechte of gevaarlijke berm",
+WS-large-wild-animals,WS-Groot wild,Datex:AmbientWarning,Warning for large wild animals,Waarschuwing voor groot wild,J27
+WS-cattle,WS-Vee,Datex:AmbientWarning,Warning for cattle,Waarschuwing voor vee,J28
+WS-low-flying-aircraft,WS-Laagvliegende vliegtuigen,Datex:AmbientWarning,Warning for low-flying aircraft,Waarschuwing voor laagvliegende vliegtuigen,J30
+WS-crosswind,WS-Zijwind,Datex:AmbientWarning,Warning for crosswind,Waarschuwing voor zijwind,J31
+WS-danger,WS-Gevaar,Datex:AmbientWarning,Warning for danger (the nature of the danger is indicated on the sub-sign),Waarschuwing voor gevaar (de aard van het gevaar is aangegeven op het onderbord),J37
+WS-children,WS-Kinderen,Datex:AmbientWarning,Warning for children,Waarschuwing voor kinderen,J21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
