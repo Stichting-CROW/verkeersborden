@@ -251,8 +251,23 @@ De primaire taak van KOOP is het rechtsgeldig bekendmaken en beschikbaar stellen
 
 </dd>
 
+<dt><dfn data lt="lokale wettelijke maximumsnelheid|lokale wettelijke maximumsnelheden">lokale wettelijke maximumsnelheid</dfn></dt>
+<dd>
+Een lokaal afwijkende maximumsnelheid ten opzichte van de [=standaard wettelijke maximumsnelheid=] die bij het snelheidsregime van de weg hoort volgens het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&z=2023-07-01&g=2023-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
+<dt><dfn data lt="standaard wettelijke maximumsnelheid|standaard wettelijke maximumsnelheden">standaard wettelijke maximumsnelheid</dfn></dt>
+<dd>
+De maximumsnelheid die bij het snelheidsregime van de weg hoort volgens het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&z=2023-07-01&g=2023-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
 <dt><dfn data-lt="MIM">MIM: Metamodel informatiemodellering</dfn></dt>
 <dd>
+
+<dt><dfn dta lt ="Schild|Schilden">Schild</dfn></dt>
+<dd>
+De achtergrond van een Fysieke Plaat, waar verkeersborden en onderborden op kunnen staan. Een schild heeft een kleur en kan woorden bevatten zoals Zone of Herhaling
+</dd>
 
 Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen.
 Het model bevat duidelijke afspraken over het vastleggen van gegevensspecificaties en biedt tegelijkertijd ruimte aan de verschillende niveaus van modellering.
@@ -407,8 +422,7 @@ Project van de Vereniging Nederlandse Gemeenten samen met drie grote gemeenten o
 <dt><dfn data-lt="rijstrook|rijstroken">rijstrook</dfn></dt>
 <dd>
 
-Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken.
-Bron: [=RVV1990=].
+Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken. Bron: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01">Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>. Merk op, dat in deze definitie de fietsstrook niet als rijstrook is gedefinieerd. 
 
 </dd>
 
@@ -507,8 +521,8 @@ Een applicatie van [=KOOP=] voor het publiceren van (eenvoudige) [=Verkeerskundi
 <dt><dfn data-lt="verkeersbord|verkeersborden">verkeersbord</dfn></dt>
 <dd>
 
-Een bord ter regeling, waarschuwing, geleiding of informering van het verkeer.
-Wettelijk vastgestelde borden staan in <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#Bijlage1">RVV 1990, bijlage 1</a>
+In het informatiemodel wordt hier specifiek bedoeld de afbeeldingen (InformatieObjecten) zoals bekend uit de <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#Bijlage1">RVV 1990, bijlage 1</a> bedoeld om op een [=fysieke plaat=] weer te geven ter regeling, waarschuwing, geleiding of informering van het verkeer.
+
 
 <dt><dfn data-lt="verkeersbordendata">verkeersbordendata</dfn></dt>
 <dd>
@@ -550,6 +564,11 @@ Een gebod en/of verbod of adviessnelheid dat kan worden gevisualiseerd met een v
 
 </dd>
 
+<dt><dfn data lt="Verkeersregel|Verkeersregels">Verkeersregel</dfn></dt>
+<dd>
+De regels voor verkeer uit <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&z=2023-07-01&g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
 <dt><dfn data-lt="Vlaamse wegen OTL|AWV OTL">Vlaamse wegen OTL</dfn></dt>
 <dd>
 
@@ -585,6 +604,13 @@ De waarschuwingen aan het verkeer op een locatie volgens de <a href="https://wet
 <dd>
 
 Alle voor het openbaar verkeer openstaande wegen of paden met inbegrip van de daarin liggende bruggen en duikers en de tot die wegen behorende paden en bermen of zijkanten. Bron: <a href="https://wetten.overheid.nl/BWBR0006622/2024-01-01#HoofdstukaIA">Wegenverkeerswet</a>
+
+</dd>
+
+<dt><dfn data-lt="wegdeel|wegdelen">wegdeel</dfn></dt>
+<dd>
+
+Delen van de [=weg=] waarvoor aparte verkeersregels bestaan in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&z=2023-07-01&g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>, voorbeelden: rijbaan, voetpad, fietspad, ruiterpad
 
 </dd>
 
