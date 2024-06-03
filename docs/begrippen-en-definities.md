@@ -614,6 +614,14 @@ Delen van de [=weg=] waarvoor aparte verkeersregels bestaan in <a href="https://
 
 </dd>
 
+<dt><dfn data-lt="rijbaandeel|rijbaandelen">rijbaandeel</dfn></dt>
+<dd>
+
+Delen van de [=rijbaan=] waarvoor aparte verkeersregels bestaan in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&z=2023-07-01&g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>, dit betreft rijstroken en fietsstroken
+
+</dd>
+
+
 <dt><dfn >wegalignement</dfn></dt>
 <dd>
 
