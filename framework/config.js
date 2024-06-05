@@ -168,5 +168,11 @@ var respecConfig = {
       status: "Actueel",
       publisher: "CROW",
     },
+    whitepaper_ontology_alignment: {
+      title: "Ontology Matching trough alignment and extension: a Best Practice",
+      href: "https://docs.crow.nl/ontology-alignment/whitepaper/",
+      status: "Actueel",
+      publisher: "CROW",
   },
+ },
 };
