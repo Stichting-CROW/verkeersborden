@@ -1,0 +1,521 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_ApplicableDaysWithinMonthEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/ApplicableDaysWithinMonthEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EmissionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/EmissionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EuSpecialPurposeVehicleEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/EuSpecialPurposeVehicleEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EuVehicleCategoryEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/EuVehicleCategoryEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FuzzyTimeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/FuzzyTimeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OwnerTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/OwnerTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PowerUnitOfMeasureEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/PowerUnitOfMeasureEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "ADRClass": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "AgeCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "vehicleAge": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "yearOfFirstRegistration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Year"
+        },
+        "yearOfLastRegistration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Year"
+        },
+        "_ageCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator"
+      ]
+    },
+    "ApplicableDaysWithinMonthEnum": {
+      "type": "string",
+      "enum": [
+        "daysFromOneToFifteen",
+        "daysFromSixteenToThirtyOne",
+        "evenDay",
+        "oddDay",
+        "_extended"
+      ]
+    },
+    "DangerousGoodsExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "adrClassValue": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/ADRClass"
+          },
+          "minItems": 0,
+          "maxItems": 13
+        },
+        "_dangerousGoodsExtendedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/HazardousMaterials"
+        }
+      ]
+    },
+    "DayWeekMonthExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicableDaysWithinMonth": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_ApplicableDaysWithinMonthEnum"
+        }
+      },
+      "required": [
+        "applicableDaysWithinMonth"
+      ]
+    },
+    "EmissionsExtension": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        }
+      },
+      "required": [
+        "comparisonOperator"
+      ]
+    },
+    "EmissionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "co2",
+        "nox",
+        "pm",
+        "_extended"
+      ]
+    },
+    "EnginePowerCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "enginePower": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "unitOfMeasure": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_PowerUnitOfMeasureEnum"
+        },
+        "_enginePowerCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "enginePower",
+        "unitOfMeasure"
+      ]
+    },
+    "EuSpecialPurposeVehicleEnum": {
+      "type": "string",
+      "enum": [
+        "motorCaravan",
+        "armouredVehicle",
+        "ambulance",
+        "hearse",
+        "trailerCaravan",
+        "mobileCrane",
+        "otherSpecialPurposeVehicle",
+        "wheelChairAccessibleVehicle",
+        "_extended"
+      ]
+    },
+    "EuVehicleCategoryEnum": {
+      "type": "string",
+      "enum": [
+        "l1",
+        "l2",
+        "l3",
+        "l4",
+        "l5",
+        "l6",
+        "l7",
+        "m",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t41",
+        "t42",
+        "t43",
+        "m1",
+        "m2",
+        "m3",
+        "n",
+        "n1",
+        "n2",
+        "n3",
+        "o",
+        "o1",
+        "o2",
+        "o3",
+        "o4",
+        "_extended"
+      ]
+    },
+    "FuzzyPeriod": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "beginOrDuration": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_FuzzyTimeEnum"
+        },
+        "endOrDuration": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_FuzzyTimeEnum"
+        },
+        "_fuzzyPeriodExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "FuzzyTimeEnum": {
+      "type": "string",
+      "enum": [
+        "dawn",
+        "sunset",
+        "_extended"
+      ]
+    },
+    "GrossTrailerWeightCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "grossTrailerWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "typeOfWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_WeightTypeEnum"
+        },
+        "_grossTrailerWeightCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "grossTrailerWeight",
+        "typeOfWeight"
+      ]
+    },
+    "IpAddress": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "NumberPlateCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "countryOfRegistration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "startOfNumericCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_numberPlateCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "NumericalEmissionValues": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "emissionType": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_EmissionTypeEnum"
+        },
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "_numericalEmissionValuesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "OwnerCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "ownerType": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_OwnerTypeEnum"
+        },
+        "locationOfResidency": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "_ownerCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "ownerType"
+      ]
+    },
+    "OwnerTypeEnum": {
+      "type": "string",
+      "enum": [
+        "localBusiness",
+        "ownerOfLocalProperty",
+        "permanentResident",
+        "_extended"
+      ]
+    },
+    "PeriodExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "fuzzyPeriod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/FuzzyPeriod"
+          },
+          "minItems": 0
+        }
+      }
+    },
+    "PortNumber": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "PowerUnitOfMeasureEnum": {
+      "type": "string",
+      "enum": [
+        "horsepower",
+        "kilowatt",
+        "_extended"
+      ]
+    },
+    "RegulatedCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "euVehicleCategory": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/_EuVehicleCategoryEnum"
+          },
+          "minItems": 0
+        },
+        "euSpecialPurposeVehicle": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/_EuSpecialPurposeVehicleEnum"
+        },
+        "nationalSpecialPurposeVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "offroadVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "specialPurposeVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_regulatedCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "TrailerCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "grossTrailerWeightCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/GrossTrailerWeightCharacteristics"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "_trailerCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VehicleCharacteristicsExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "ageCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/AgeCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "maximumDesignSpeed": {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/Speed"
+        },
+        "trailerCharacteristics": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/TrailerCharacteristics"
+        },
+        "hazardousMaterials": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_HazardousMaterials"
+        },
+        "ownerCharacteristic": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/OwnerCharacteristic"
+        },
+        "numberPlateCharacteristics": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/NumberPlateCharacteristics"
+        },
+        "enginePowerCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/EnginePowerCharacteristics"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "numericalEmissionValues": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/NumericalEmissionValues"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "vehicleRegistrationCharacteristics": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/VehicleRegistrationCharacteristics"
+        },
+        "regulatedCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_CommonExtension.json#/definitions/RegulatedCharacteristics"
+          },
+          "minItems": 0
+        }
+      }
+    },
+    "VehicleRegistrationCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "registeredHistoricVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_vehicleRegistrationCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    }
+  }
+}

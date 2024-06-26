@@ -1,0 +1,1833 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_ColourEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ColourEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CompositePictogramEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/CompositePictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DedicatedUsageEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DedicatedUsageEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DisplayArea": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "vmsSupplementaryPanelArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPanelArea"
+        },
+        "vmsPictogramDisplayArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramDisplayArea"
+        },
+        "vmsTextDisplayArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextDisplayArea"
+        }
+      }
+    },
+    "_DisplayAreaSettings": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "vmsTextDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextDisplay"
+        },
+        "vmsSupplementaryPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPictogram"
+        },
+        "vmsSupplementaryText": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryText"
+        },
+        "vmsPictogramDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramDisplay"
+        },
+        "vmsMultiPageDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/MultiPageDisplay"
+        }
+      }
+    },
+    "_DisplayedNumericalInformationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayedNumericalInformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GddServiceCategoryEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddServiceCategoryEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ImageFormatEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ImageFormatEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InformationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/InformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MessageInformationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/MessageInformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MultiPageDisplayPageNumberDisplayAreaSettings": {
+      "type": "object",
+      "properties": {
+        "displayAreaSettings": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayAreaSettings"
+        },
+        "pageNumber": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayAreaSettings",
+        "pageNumber"
+      ]
+    },
+    "_PhysicalSupportEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PhysicalSupportEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Pictogram": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "vmsCompositePictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/CompositePictogram"
+        },
+        "vmsRegularPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/RegularPictogram"
+        }
+      }
+    },
+    "_PictogramEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionXAbsoluteEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionXAbsoluteEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionXRelativeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionXRelativeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionYAbsoluteEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionYAbsoluteEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionYRelativeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionYRelativeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SettingReasonEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SettingReasonEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SituationRecordVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SituationRecord"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SituationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Situation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SupplementalPictogramEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementalPictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SupplementaryInformationDisplay": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "vmsSupplementaryPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPictogram"
+        },
+        "vmsSupplementaryText": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryText"
+        }
+      }
+    },
+    "_TextDisplayLineIndexTextLine": {
+      "type": "object",
+      "properties": {
+        "textLine": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextLine"
+        },
+        "lineIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "textLine",
+        "lineIndex"
+      ]
+    },
+    "_UnitOfMeasureEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/UnitOfMeasureEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsConfigurationDisplayAreaIndexDisplayArea": {
+      "type": "object",
+      "properties": {
+        "displayArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayArea"
+        },
+        "displayAreaIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayArea",
+        "displayAreaIndex"
+      ]
+    },
+    "_VmsControllerFaultEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsControllerStatusVmsIndexVmsStatus": {
+      "type": "object",
+      "properties": {
+        "vmsStatus": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsStatus"
+        },
+        "vmsIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vmsStatus",
+        "vmsIndex"
+      ]
+    },
+    "_VmsControllerTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsControllerTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_VmsControllerVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsController"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_VmsControllerVmsIndexVms": {
+      "type": "object",
+      "properties": {
+        "vms": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Vms"
+        },
+        "vmsIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vms",
+        "vmsIndex"
+      ]
+    },
+    "_VmsFaultEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsMessageDisplayAreaIndexDisplayAreaSettings": {
+      "type": "object",
+      "properties": {
+        "displayAreaSettings": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayAreaSettings"
+        },
+        "displayAreaIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayAreaSettings",
+        "displayAreaIndex"
+      ]
+    },
+    "_VmsStatusMessageIndexVmsMessage": {
+      "type": "object",
+      "properties": {
+        "vmsMessage": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsMessage"
+        },
+        "messageIndex": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vmsMessage",
+        "messageIndex"
+      ]
+    },
+    "_VmsTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_WorkingStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/WorkingStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "ColourEnum": {
+      "type": "string",
+      "enum": [
+        "amber",
+        "blue",
+        "green",
+        "red",
+        "white",
+        "whiteYellow",
+        "_extended"
+      ]
+    },
+    "CompositePictogram": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pictogramDescription": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_CompositePictogramEnum"
+        },
+        "regularPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/RegularPictogram"
+        },
+        "_compositePictogramExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pictogramDescription",
+        "regularPictogram"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Pictogram"
+        }
+      ]
+    },
+    "CompositePictogramEnum": {
+      "type": "string",
+      "enum": [
+        "conditionOnCurrentSectionAfterNextExit",
+        "conditionAtNextExit",
+        "conditionOnCurrentSectionAfterSecondtExit",
+        "conditionAtSecondExit",
+        "restrictionOnCurrentSectionAfterNextExit",
+        "restrictionAtNextExit",
+        "restrictionOnCurrentSectionAfterSecondExit",
+        "restrictionAtSecondtExit",
+        "_extended"
+      ]
+    },
+    "DedicatedUsageEnum": {
+      "type": "string",
+      "enum": [
+        "energyInformation",
+        "inspectionArea",
+        "laneControlSystem",
+        "parkingInformation",
+        "rampMetering",
+        "tunnelManagement",
+        "other",
+        "_extended"
+      ]
+    },
+    "DisplayArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sequencingCapable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "maxNumberOfSequentialPages": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "positionXAbsolute": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionXAbsoluteEnum"
+        },
+        "positionXRelativeToPrevious": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionXRelativeEnum"
+        },
+        "positionYAbsolute": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionYAbsoluteEnum"
+        },
+        "positionYRelativeToPrevious": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionYRelativeEnum"
+        },
+        "displayGeometry": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayGeometry"
+        },
+        "overriddenLaneAssociation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/Lane"
+          },
+          "minItems": 0
+        },
+        "_displayAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisplayAreaSettings": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "isBlank": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "legallyBinding": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "legalBasis": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_displayAreaSettingsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisplayedNumericalInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numericalInformationType": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayedNumericalInformationTypeEnum"
+        },
+        "numericValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Decimal"
+        },
+        "unitOfMeasure": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_UnitOfMeasureEnum"
+        },
+        "_displayedNumericalInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "numericalInformationType",
+        "numericValue",
+        "unitOfMeasure"
+      ]
+    },
+    "DisplayedNumericalInformationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "distance",
+        "height",
+        "length",
+        "rateOfIncline",
+        "sectionLength",
+        "speed",
+        "weight",
+        "weightPerAxle",
+        "width",
+        "_extended"
+      ]
+    },
+    "DisplayGeometry": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pixelsAcross": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "pixelsDown": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "displayWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "positionX": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "positionY": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_displayGeometryExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "GddPictogramAttributes": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "attributes": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "_gddPictogramAttributesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "attributes"
+      ]
+    },
+    "GddPictogramCategoryCode": {
+      "type": "integer",
+      "minimum": 0.0,
+      "exclusiveMinimum": true
+    },
+    "GddPictogramIdentification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "country": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "serviceCategory": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_GddServiceCategoryEnum"
+        },
+        "pictogramCategoryCode": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramCategoryCode"
+        },
+        "_gddPictogramIdentificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "country",
+        "pictogramCategoryCode",
+        "serviceCategory"
+      ]
+    },
+    "GddServiceCategoryEnum": {
+      "type": "string",
+      "enum": [
+        "dangerWarning",
+        "regulatory",
+        "informative",
+        "publicFacilities",
+        "ambientConditions",
+        "roadConditions",
+        "_extended"
+      ]
+    },
+    "GddStructure": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "gddPictogramIdentification": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramIdentification"
+        },
+        "gddPictogramAttributes": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramAttributes"
+        },
+        "_gddStructureExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "gddPictogramIdentification"
+      ]
+    },
+    "Image": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "imageData": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "imageFormat": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_ImageFormatEnum"
+        },
+        "_imageExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "imageData",
+        "imageFormat"
+      ]
+    },
+    "ImageFormatEnum": {
+      "type": "string",
+      "enum": [
+        "bmp",
+        "gif",
+        "jpeg",
+        "png",
+        "tiff",
+        "_extended"
+      ]
+    },
+    "InformationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "situationInformation",
+        "warning",
+        "prohibition",
+        "obligation",
+        "destination",
+        "travelTime",
+        "delay",
+        "location",
+        "vehicleType",
+        "generalInformation",
+        "blank",
+        "other",
+        "_extended"
+      ]
+    },
+    "ManagedLogicalLocation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "managedLogicalLocation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "distanceFromLogicalLocation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "managedLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "_managedLogicalLocationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "MessageInformationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "campaignMessage",
+        "dateTime",
+        "futureInformation",
+        "instructionOrMessage",
+        "situationWarning",
+        "temperature",
+        "trafficManagement",
+        "travelTime",
+        "_extended"
+      ]
+    },
+    "MultiPageDisplay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sequenceGroupNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayAreaSettings": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_MultiPageDisplayPageNumberDisplayAreaSettings"
+          },
+          "minItems": 0
+        },
+        "_multiPageDisplayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "PhysicalSupportEnum": {
+      "type": "string",
+      "enum": [
+        "centralReservationMounted",
+        "gantryMounted",
+        "overheadBridgeMounted",
+        "roadsideCantileverMounted",
+        "roadsideMounted",
+        "trailerMounted",
+        "tunnelEntranceMounted",
+        "vehicleMounted",
+        "_extended"
+      ]
+    },
+    "Pictogram": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "customPictogramCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "additionalDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "pictogramFlashing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInInverseColour": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "viennaConventionCompliant": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInformationType": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+        },
+        "gddStructure": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddStructure"
+        },
+        "_pictogramExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PictogramDisplay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "isPrimaryPictogram": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramDisplayUrl": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "pictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_Pictogram"
+        },
+        "supplementaryInformationDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SupplementaryInformationDisplay"
+        },
+        "image": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Image"
+        },
+        "_pictogramDisplayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pictogram"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "PictogramDisplayArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pictogramCodeListIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "pictogramNumberOfColours": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_pictogramDisplayAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "PictogramEnum": {
+      "type": "string",
+      "enum": [
+        "blankVoid",
+        "bridgeClosed",
+        "carParkFull",
+        "carParkSpacesAvailable",
+        "corridorForEmergencyVehicleAccess",
+        "curveArrowToLeft",
+        "curveArrowToRight",
+        "dangerOfFire",
+        "doubleExitToLeft",
+        "doubleExitToRight",
+        "endOfAdvisorySpeed",
+        "fastenChildrensSeatBelts",
+        "fastenYourSeatBelt",
+        "fire",
+        "footballMatch",
+        "hardShoulderNotRunning",
+        "hardShoulderRunning",
+        "horizontalDiversionToLeft",
+        "horizontalDiversionToRight",
+        "keepASafeDistance",
+        "keepLeft",
+        "keepRight",
+        "lane1ClosedOf2",
+        "lane2ClosedOf2",
+        "lane1ClosedOf3",
+        "lane3ClosedOf3",
+        "lanes1And2ClosedOf3",
+        "lanes2And3ClosedOf3",
+        "lane1ClosedOf4",
+        "lane4ClosedOf4",
+        "lanes1And2ClosedOf4",
+        "lanes3And4ClosedOf4",
+        "lanes1And2And3ClosedOf4",
+        "lanes2And3And4ClosedOf4",
+        "leftHandLaneClosed",
+        "narrowLanesAhead",
+        "obliqueArrowToLeft",
+        "obliqueArrowToRight",
+        "pollutionOrSmogAlert",
+        "rightHandLaneClosed",
+        "singleExitToLeft",
+        "singleExitToRight",
+        "smoke",
+        "snowPloughInAction",
+        "speedCamerasInAction",
+        "straightVerticalArrow",
+        "trafficDeviatedToOppositeCarriagewayAhead",
+        "trafficPartiallyDeviatedToOppositeCarriagewayAhead",
+        "tunnelClosed",
+        "verticalDiversion",
+        "other",
+        "_extended"
+      ]
+    },
+    "PositionXAbsoluteEnum": {
+      "type": "string",
+      "enum": [
+        "onLeft",
+        "inTheMiddle",
+        "onRight",
+        "_extended"
+      ]
+    },
+    "PositionXRelativeEnum": {
+      "type": "string",
+      "enum": [
+        "toTheLeft",
+        "alignedOnTheLeftSide",
+        "centred",
+        "alignedOnTheRightSide",
+        "toTheRight",
+        "_extended"
+      ]
+    },
+    "PositionYAbsoluteEnum": {
+      "type": "string",
+      "enum": [
+        "atTop",
+        "inTheMiddle",
+        "atBottom",
+        "_extended"
+      ]
+    },
+    "PositionYRelativeEnum": {
+      "type": "string",
+      "enum": [
+        "above",
+        "alignedOnTheTopSide",
+        "centred",
+        "alignedOnTheBottomSide",
+        "below",
+        "_extended"
+      ]
+    },
+    "RegularPictogram": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pictogramDescription": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_PictogramEnum"
+          },
+          "minItems": 0
+        },
+        "presenceOfRedTriangle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "displayedNumericalInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/DisplayedNumericalInformation"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "_regularPictogramExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Pictogram"
+        }
+      ]
+    },
+    "SettingReasonEnum": {
+      "type": "string",
+      "enum": [
+        "situation",
+        "operatorCreated",
+        "trafficManagement",
+        "travelTime",
+        "campaign",
+        "default",
+        "_extended"
+      ]
+    },
+    "SupplementalPictogramEnum": {
+      "type": "string",
+      "enum": [
+        "distanceToTheBeginningOfTheApplicationZone",
+        "exceptAnyPowerDrivenVehicleDrawingTrailer",
+        "exceptBus",
+        "exceptGoodsVehicles",
+        "exceptSemitrailer",
+        "exceptVehiclesCarryingDangerousGoods",
+        "inCaseOfIceOrSnow",
+        "lengthOfTheApplicationZone",
+        "restrictedToAnyPowerDrivenVehicleDrawingTrailer",
+        "restrictedToBus",
+        "restrictedToGoodsVehicles",
+        "restrictedToSemiTrailer",
+        "restrictedToVehiclesCarryingDangerousGoods",
+        "maintenanceVehicles",
+        "snowPloughs",
+        "other",
+        "_extended"
+      ]
+    },
+    "SupplementaryInformationDisplay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_supplementaryInformationDisplayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "SupplementaryPanelArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "supplementaryPictogramCodeListIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "relatedPictogramArea": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "_supplementaryPanelAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "SupplementaryPictogram": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pictogramDescription": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SupplementalPictogramEnum"
+        },
+        "pictogramCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "pictogramUrl": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "additionalDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "pictogramFlashing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInformationType": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+        },
+        "_supplementaryPictogramExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryInformationDisplay"
+        }
+      ]
+    },
+    "SupplementaryText": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "textLine": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextLine"
+        },
+        "_supplementaryTextExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "textLine"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryInformationDisplay"
+        }
+      ]
+    },
+    "TextDisplay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "textCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "textImageUrl": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "textLine": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_TextDisplayLineIndexTextLine"
+          },
+          "minItems": 0
+        },
+        "_textDisplayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "TextDisplayArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "proportionalFont": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "maxNumberOfCharacters": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxNumberOfRows": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "textCodeListIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "maxFontHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxFontWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxFontSpacing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontSpacing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_textDisplayAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "TextLine": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "textLine": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "lineLanguage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Language"
+        },
+        "lineColour": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_ColourEnum"
+        },
+        "lineFlashing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "lineHtml": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "isExactTextOnSign": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "textInformationType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+          },
+          "minItems": 0
+        },
+        "_textLineExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "textLine"
+      ]
+    },
+    "UnitOfMeasureEnum": {
+      "type": "string",
+      "enum": [
+        "feet",
+        "feetAndInches",
+        "kilometres",
+        "kilometresPerHour",
+        "metres",
+        "miles",
+        "milesPerHour",
+        "percentage",
+        "tonnes",
+        "yards",
+        "_extended"
+      ]
+    },
+    "Vms": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "lanternsPresent": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "owner": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "physicalSupport": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PhysicalSupportEnum"
+        },
+        "vmsType": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsTypeEnum"
+        },
+        "vmsTypeCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "dynamicallyConfigurable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "displayHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "displayWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "heightAboveCarriageway": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "dedicatedUsage": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DedicatedUsageEnum"
+        },
+        "vmsConfiguration": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsConfiguration"
+        },
+        "vmsLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "managedLogicalLocation": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ManagedLogicalLocation"
+        },
+        "imageLink": {
+          "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+        },
+        "_vmsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsConfiguration"
+      ]
+    },
+    "VmsConfiguration": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfDisplayAreas": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayArea": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsConfigurationDisplayAreaIndexDisplayArea"
+          },
+          "minItems": 0
+        },
+        "_vmsConfigurationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VmsController": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "numberOfVms": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "externalIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "ipAddress": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "electronicAddress": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vms": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerVmsIndexVms"
+          },
+          "minItems": 0
+        },
+        "_vmsControllerExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ]
+    },
+    "VmsControllerFault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsControllerFault": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerFaultEnum"
+        },
+        "_vmsControllerFaultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsControllerFault"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "VmsControllerFaultEnum": {
+      "type": "string",
+      "enum": [
+        "communicationsFailure",
+        "powerFailure",
+        "other",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "VmsControllerStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsControllerTableReference": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerTableVersionedReference"
+        },
+        "vmsControllerReference": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerVersionedReference"
+        },
+        "statusUpdateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManagerOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "vmsStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerStatusVmsIndexVmsStatus"
+          },
+          "minItems": 0
+        },
+        "vmsControllerFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerFault"
+          },
+          "minItems": 0
+        },
+        "_vmsControllerStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsControllerReference",
+        "vmsControllerTableReference"
+      ]
+    },
+    "VmsControllerTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "vmsControllerTableIdentification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "vmsController": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsController"
+          },
+          "minItems": 1
+        },
+        "_vmsControllerTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "vmsController"
+      ]
+    },
+    "VmsFault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsFault": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsFaultEnum"
+        },
+        "_vmsFaultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsFault"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "VmsFaultEnum": {
+      "type": "string",
+      "enum": [
+        "incorrectMessageDisplayed",
+        "incorrectPictogramDisplayed",
+        "outOfService",
+        "unableToClearDown",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "VmsMessage": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "associatedTrafficManagementPlan": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "messageSetBy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "setBySystem": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "reasonForSetting": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "codedReasonForSetting": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SettingReasonEnum"
+        },
+        "messageInformationType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_MessageInformationTypeEnum"
+          },
+          "minItems": 0
+        },
+        "primarySetting": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "mareNostrumCompliant": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "timeLastSet": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "requestedBy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "relatedSituation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_SituationVersionedReference"
+          },
+          "minItems": 0
+        },
+        "relatedSituationRecord": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_SituationRecordVersionedReference"
+          },
+          "minItems": 0
+        },
+        "distanceFromClosestSituationRecord": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "sequencingInterval": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "displayAreaSettings": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsMessageDisplayAreaIndexDisplayAreaSettings"
+          },
+          "minItems": 0
+        },
+        "image": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Image"
+        },
+        "_vmsMessageExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "timeLastSet"
+      ]
+    },
+    "VmsPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "vmsControllerStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerStatus"
+          },
+          "minItems": 1
+        },
+        "_vmsPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "vmsControllerStatus"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "VmsStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "flashingLightsOn": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "remainingPowerCapacity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "statusUpdateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "sequencingInterval": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "workingStatus": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/_WorkingStatusEnum"
+        },
+        "vmsDynamicConfiguration": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsConfiguration"
+        },
+        "vmsMessage": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsStatusMessageIndexVmsMessage"
+          },
+          "minItems": 0
+        },
+        "vmsLocationOverride": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "managedLogicalLocationOverride": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ManagedLogicalLocation"
+        },
+        "vmsFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsFault"
+          },
+          "minItems": 0
+        },
+        "_vmsStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VmsTablePublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "vmsControllerTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerTable"
+          },
+          "minItems": 1
+        },
+        "_vmsTablePublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "vmsControllerTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "VmsTypeEnum": {
+      "type": "string",
+      "enum": [
+        "colourGraphic",
+        "rotatingPrismSign",
+        "monochromeGraphic",
+        "simpleMatrixSign",
+        "fullMatrixSign",
+        "rollerBlindSign",
+        "virtualVms",
+        "other",
+        "_extended"
+      ]
+    },
+    "WorkingStatusEnum": {
+      "type": "string",
+      "enum": [
+        "blank",
+        "covered",
+        "notWorking",
+        "working",
+        "_extended"
+      ]
+    }
+  }
+}

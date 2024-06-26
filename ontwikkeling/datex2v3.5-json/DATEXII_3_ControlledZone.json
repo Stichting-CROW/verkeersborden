@@ -1,0 +1,664 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_AccessZoneEnforcementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/AccessZoneEnforcementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ConditionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/ConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ConditionVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Condition"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_ControlledZoneTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ControlledZoneVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "ControlledZone"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_CzActivation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "controlledZonePredefinedConditionActivation": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/PredefinedConditionActivation"
+        },
+        "controlledZoneNonPredefinedConditionActivation": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/NonPredefinedConditionActivation"
+        },
+        "controlledZoneTrafficRegulationActivation": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/TrafficRegulationActivation"
+        },
+        "controlledZoneControlledZoneActivation": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneActivation"
+        }
+      }
+    },
+    "_RestrictionActivationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/RestrictionActivationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficRegulationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "TrafficRegulation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "AccessZoneEnforcementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "camera",
+        "manualStickerInspection",
+        "checkingVehiclePapers",
+        "mobileLicensePlateControls",
+        "other",
+        "_extended"
+      ]
+    },
+    "AlternativeMobilityOptions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "url": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "_alternativeMobilityOptionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ConditionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accessCondition",
+        "driverCondition",
+        "locationCondition",
+        "nonVehicularRoadUserCondition",
+        "occupantConditions",
+        "other",
+        "permitCondition",
+        "registrationCondition",
+        "retrofittingCondition",
+        "roadCondition",
+        "stickerCondition",
+        "validityCondition",
+        "vehicleCondition",
+        "_extended"
+      ]
+    },
+    "ControlledZone": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "controlledZoneType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ControlledZoneTypeEnum"
+          },
+          "minItems": 0
+        },
+        "controlledZoneDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "controlledZoneRecordVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "urlForFurtherInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "status": {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/_ActivationStatusEnum"
+        },
+        "controlledZoneSummary": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneSummary"
+        },
+        "trafficRegulationOrder": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/TrafficRegulationOrder"
+          },
+          "minItems": 0
+        },
+        "controlledZoneRegulation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneRegulation"
+          },
+          "minItems": 0
+        },
+        "tariffInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/Rates"
+          },
+          "minItems": 0
+        },
+        "alternativeMobilityOptions": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/AlternativeMobilityOptions"
+          },
+          "minItems": 0
+        },
+        "_controlledZoneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "controlledZoneRecordVersionTime",
+        "status"
+      ]
+    },
+    "ControlledZoneActivation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controlledZoneReference": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ControlledZoneVersionedReference"
+        },
+        "_controlledZoneActivationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "controlledZoneReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzActivation"
+        }
+      ]
+    },
+    "ControlledZoneRegulation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "penalty": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/Penalty"
+          },
+          "minItems": 0
+        },
+        "czRegulationOperationalCharacteristics": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzRegulationOperationalCharacteristics"
+        },
+        "_controlledZoneRegulationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/TrafficRegulation"
+        }
+      ]
+    },
+    "ControlledZoneSummary": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "cityName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "informalName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "locationForDisplay": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointCoordinates"
+        },
+        "_controlledZoneSummaryExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ControlledZoneTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controlledZoneTableName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "tableVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "controlledZone": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZone"
+          },
+          "minItems": 0
+        },
+        "urbanVehicleAccessRegulation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZone"
+          },
+          "minItems": 0
+        },
+        "_controlledZoneTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "tableVersionTime"
+      ]
+    },
+    "ControlledZoneTablePublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "controlledZoneTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneTable"
+          },
+          "minItems": 1
+        },
+        "_controlledZoneTablePublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "controlledZoneTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "ControlledZoneTypeEnum": {
+      "type": "string",
+      "enum": [
+        "limittedTrafficZone",
+        "lowEmissionZone",
+        "pedestrianZone",
+        "restrictedParkingZone",
+        "_extended"
+      ]
+    },
+    "CzActivation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "czActivationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "czActivationVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "validity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Validity"
+        },
+        "_czActivationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "czActivationTime",
+        "czActivationVersionTime",
+        "validity"
+      ]
+    },
+    "CzDynamicActivationPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "czActivation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/_CzActivation"
+          },
+          "minItems": 0
+        },
+        "_czDynamicActivationPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "CzRegulationOperationalCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "restrictionActivationType": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_RestrictionActivationTypeEnum"
+        },
+        "dynamicActivationPublicationSource": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "enforcementMethod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ControlledZone.json#/definitions/_AccessZoneEnforcementTypeEnum"
+          },
+          "minItems": 0
+        },
+        "_czRegulationOperationalCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "restrictionActivationType"
+      ]
+    },
+    "NonCodableCondition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "condition": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "type": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ConditionTypeEnum"
+        },
+        "_nonCodableConditionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/Condition"
+        }
+      ]
+    },
+    "NonPredefinedConditionActivation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controlledZoneReference": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ControlledZoneVersionedReference"
+        },
+        "condition": {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/_Condition"
+        },
+        "_nonPredefinedConditionActivationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "controlledZoneReference",
+        "condition"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzActivation"
+        }
+      ]
+    },
+    "Penalty": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "amountDue": {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/AmountOfMoney"
+        },
+        "penaltyDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_penaltyExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "amountDue"
+      ]
+    },
+    "PeriodCondition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "period": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Period"
+          },
+          "minItems": 1
+        },
+        "_periodConditionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "period"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/Condition"
+        }
+      ]
+    },
+    "PredefinedConditionActivation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "controlledZoneReference": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ControlledZoneVersionedReference"
+        },
+        "dynamicConditionReference": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_ConditionVersionedReference"
+        },
+        "_predefinedConditionActivationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "controlledZoneReference",
+        "dynamicConditionReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzActivation"
+        }
+      ]
+    },
+    "Rates": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_ratesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RestrictionActivationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "dynamicallyActivated",
+        "permanent",
+        "_extended"
+      ]
+    },
+    "RetrofittingCondition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "retrofittingPossible": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "urlForFurtherInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "_retrofittingConditionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "retrofittingPossible"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/Condition"
+        }
+      ]
+    },
+    "TariffCondition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "tariffPaid": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_tariffConditionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "tariffPaid"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/Condition"
+        }
+      ]
+    },
+    "TrafficRegulationActivation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "trafficRegulationReference": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/_TrafficRegulationVersionedReference"
+        },
+        "_trafficRegulationActivationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "trafficRegulationReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzActivation"
+        }
+      ]
+    }
+  }
+}

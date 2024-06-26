@@ -1,0 +1,351 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_Origin": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "reroutingManagementEnhancedPointOrigin": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/PointOrigin"
+        },
+        "reroutingManagementEnhancedAreaOrigin": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/AreaOrigin"
+        }
+      }
+    },
+    "_RouteCapacityManagementMeasureIndexTrafficSignal": {
+      "type": "object",
+      "properties": {
+        "trafficSignal": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/TrafficSignal"
+        },
+        "index": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "trafficSignal",
+        "index"
+      ]
+    },
+    "_RouteCapacityManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/RouteCapacityManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RouteDescriptionIndexRouteAllocation": {
+      "type": "object",
+      "properties": {
+        "routeAllocation": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/RouteAllocation"
+        },
+        "index": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "routeAllocation",
+        "index"
+      ]
+    },
+    "_SignalHeadLocationReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SignalHeadLocation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "AreaOrigin": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "areaLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/AreaLocation"
+        },
+        "_areaOriginExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "areaLocation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/Origin"
+        }
+      ]
+    },
+    "NetworkManagementExtendedRerouting": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "reroutingManagementEnhanced": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/ReroutingManagementEnhanced"
+        }
+      },
+      "required": [
+        "reroutingManagementEnhanced"
+      ]
+    },
+    "Origin": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_originExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PointOrigin": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pointLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_PointLocation"
+        },
+        "_pointOriginExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pointLocation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/Origin"
+        }
+      ]
+    },
+    "ReroutingManagementEnhanced": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nameOfReroutingManagement": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "preventiveMeasure": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "routingOrigin": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/_Origin"
+          },
+          "minItems": 0
+        },
+        "routingDestination": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Destination"
+          },
+          "minItems": 0
+        },
+        "originalRoute": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/RouteDescription"
+        },
+        "alternativeRoute": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/RouteDescription"
+          },
+          "minItems": 1
+        },
+        "_reroutingManagementEnhancedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "preventiveMeasure",
+        "alternativeRoute"
+      ]
+    },
+    "RouteAllocation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "routeProportion": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "reroutingAdvice": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ReroutingManagementTypeEnum"
+        },
+        "complianceOptionOverride": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ComplianceOptionEnum"
+        },
+        "validForVehiclesWithCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "validForVehiclesWithoutCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "_routeAllocationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RouteCapacityManagementMeasure": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/_RouteCapacityManagementTypeEnum"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "defaultGreenTimeAdjustment": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "defaultCycleLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "recommendedSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "trafficSignal": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/_RouteCapacityManagementMeasureIndexTrafficSignal"
+          },
+          "minItems": 0
+        },
+        "_routeCapacityManagementMeasureExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "RouteCapacityManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "capacitiesAvailable",
+        "openedExtraLane",
+        "modifiedGreenPeriod",
+        "modifiedCycleLength",
+        "synchronizedTrafficSignals",
+        "alteredSignalPhasing",
+        "reducingLocalAccess",
+        "additionalParkingBan",
+        "other",
+        "_extended"
+      ]
+    },
+    "RouteDescription": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nameOfRoute": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "reroutingItineraryDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "signedRerouting": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "entry": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "exit": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "roadOrJunctionNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "routeCompletelyBlocked": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "routeLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "itinerary": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Itinerary"
+        },
+        "travelTimeData": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TravelTimeData"
+          },
+          "minItems": 0
+        },
+        "routeAllocation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/_RouteDescriptionIndexRouteAllocation"
+          },
+          "minItems": 0
+        },
+        "routeCapacityManagementMeasure": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/RouteCapacityManagementMeasure"
+          },
+          "minItems": 0
+        },
+        "trafficStatus": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficStatusValue"
+        },
+        "_routeDescriptionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "itinerary"
+      ]
+    },
+    "TrafficSignal": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "externalId": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "greenTimeAdjustmentOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "cycleLengthOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "signalGroup": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/_SignalHeadLocationReference"
+        },
+        "notionalMidPoint": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_PointLocation"
+        },
+        "_trafficSignalExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    }
+  }
+}

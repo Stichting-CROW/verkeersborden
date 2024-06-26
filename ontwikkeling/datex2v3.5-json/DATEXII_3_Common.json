@@ -1,0 +1,3082 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_CalendarWeekWithinMonthEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CalendarWeekWithinMonthEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ComparisonOperatorEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ComparisonOperatorEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ComputationMethodEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ComputationMethodEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ConfidentialityValueEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ConfidentialityValueEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DangerousGoodsRegulationsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DangerousGoodsRegulationsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DataValue": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "commonKilogramsConcentrationValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilogramsConcentrationValue"
+        },
+        "commonApplicationRateValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ApplicationRateValue"
+        },
+        "roadTrafficDataDailyTrafficFlowValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DailyTrafficFlowValue"
+        },
+        "roadTrafficDataTrafficStatusValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficStatusValue"
+        },
+        "roadTrafficDataDurationValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "facilitiesDurationValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/DurationValue"
+        },
+        "parkingVehicleCountValue": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicleCountValue"
+        },
+        "commonPercentageValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "commonFrictionValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FrictionValue"
+        },
+        "commonMicrogramsConcentrationValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MicrogramsConcentrationValue"
+        },
+        "commonWindSpeedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WindSpeedValue"
+        },
+        "commonTemperatureValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "roadTrafficDataTrafficDensityValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficDensityValue"
+        },
+        "parkingOccupancyChangeValue": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OccupancyChangeValue"
+        },
+        "roadTrafficDataAxleFlowValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/AxleFlowValue"
+        },
+        "commonVehicleFlowValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "roadTrafficDataDateTimeValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DateTimeValue"
+        },
+        "commonSpeedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "commonDirectionCompassValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionCompassValue"
+        },
+        "roadTrafficDataPcuFlowValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PcuFlowValue"
+        },
+        "commonDirectionBearingValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionBearingValue"
+        },
+        "commonIntegerMetreDistanceValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/IntegerMetreDistanceValue"
+        },
+        "commonPressureValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PressureValue"
+        },
+        "commonFloatingPointMetreDistanceValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "commonPrecipitationIntensityValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationIntensityValue"
+        }
+      }
+    },
+    "_DayEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DayEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DayWeekMonthExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "DayWeekMonthExtended": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/DayWeekMonthExtended",
+          "type": "object"
+        }
+      }
+    },
+    "_DirectionCompassEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionCompassEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EmissionClassificationEuroEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/EmissionClassificationEuroEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_EmissionClassificationEuroEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EmissionClassificationEuroEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "euro0",
+        "euro1",
+        "euro2",
+        "euro3",
+        "euro4",
+        "euro6d",
+        "euro6dTemp",
+        "euroIV",
+        "euroUnknown",
+        "euroI",
+        "euroII",
+        "euroIII"
+      ]
+    },
+    "_EmissionsExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "EmissionsExtension": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/EmissionsExtension",
+          "type": "object"
+        }
+      }
+    },
+    "_ExtensionType": {
+      "title": "_ExtensionType",
+      "type": "object",
+      "additionalItems": true
+    },
+    "_Fault": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "faultAndStatusDeviceFault": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceFault"
+        },
+        "roadTrafficDataPhysicalQuantityFault": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PhysicalQuantityFault"
+        },
+        "vmsVmsFault": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsFault"
+        },
+        "vmsVmsControllerFault": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerFault"
+        }
+      }
+    },
+    "_FaultSeverityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FaultSeverityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FaultUrgencyEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FaultUrgencyEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FuelTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FuelTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_FuelTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FuelTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "cng",
+        "fuelCell",
+        "ng",
+        "phev",
+        "reev"
+      ]
+    },
+    "_GenericPublicationExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "MapDataPublication": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MapDataPublication",
+          "type": "object"
+        },
+        "TmplanOperationPublication": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/TmplanOperationPublication",
+          "type": "object"
+        },
+        "SignalPhaseAndTimingPublication": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SignalPhaseAndTimingPublication",
+          "type": "object"
+        },
+        "TmplanTablePublication": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/TmplanTablePublication",
+          "type": "object"
+        }
+      }
+    },
+    "_GlobalReference": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationSituationReference": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationReference"
+        },
+        "faultAndStatusVmsUnitReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/VmsUnitReference"
+        },
+        "faultAndStatusMeasurementSiteReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/MeasurementSiteReference"
+        },
+        "faultAndStatusGeneralDeviceReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/GeneralDeviceReference"
+        },
+        "situationSituationRecordReference": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecordReference"
+        },
+        "faultAndStatusMeasurementSiteTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/MeasurementSiteTableReference"
+        },
+        "faultAndStatusGeneralDeviceTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/GeneralDeviceTableReference"
+        },
+        "faultAndStatusVmsUnitTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/VmsUnitTableReference"
+        }
+      }
+    },
+    "_HazardousMaterials": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "commonExtensionDangerousGoodsExtended": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/DangerousGoodsExtended"
+        }
+      }
+    },
+    "_InformationDeliveryServicesEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InformationDeliveryServicesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InformationStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InformationStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InstanceOfDayEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InstanceOfDayEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_LoadTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/LoadTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_LoadTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_LoadTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "dangerousGoods",
+        "mailItems",
+        "medicalSupplies",
+        "moneyAndValuables",
+        "passenger",
+        "personWithDisability"
+      ]
+    },
+    "_LowEmissionLevelEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/LowEmissionLevelEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MonthOfYearEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MonthOfYearEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_NamedArea": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "locationReferencingNamedArea": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/NamedArea"
+        },
+        "locationReferencingNutsNamedArea": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/NutsNamedArea"
+        },
+        "locationReferencingIsoNamedArea": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/IsoNamedArea"
+        },
+        "locationExtensionNamedAreaExtended": {
+          "$ref": "DATEXII_3_LocationExtension.json#/definitions/NamedAreaExtended"
+        }
+      }
+    },
+    "_PayloadPublication": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "_version": {
+          "type": "string",
+          "default": "3.4"
+        },
+        "_modelBaseVersion": {
+          "type": "string",
+          "default": "3"
+        },
+        "_extensionName": {
+          "type": "string"
+        },
+        "_extensionVersion": {
+          "type": "string"
+        },
+        "_profileName": {
+          "type": "string"
+        },
+        "_profileVersion": {
+          "type": "string"
+        },
+        "facilitiesRatesPublication": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RatesPublication"
+        },
+        "roadTrafficDataElaboratedDataPublication": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/ElaboratedDataPublication"
+        },
+        "roadTrafficDataMeasuredDataPublication": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasuredDataPublication"
+        },
+        "faultAndStatusDevicePublication": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DevicePublication"
+        },
+        "controlledZoneControlledZoneTablePublication": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/ControlledZoneTablePublication"
+        },
+        "faultAndStatusFaultPublication": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/FaultPublication"
+        },
+        "roadTrafficDataMeasurementSiteTablePublication": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementSiteTablePublication"
+        },
+        "controlledZoneCzDynamicActivationPublication": {
+          "$ref": "DATEXII_3_ControlledZone.json#/definitions/CzDynamicActivationPublication"
+        },
+        "parkingParkingTablePublication": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingTablePublication"
+        },
+        "energyInfrastructureEnergyInfrastructureStatusPublication": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureStatusPublication"
+        },
+        "faultAndStatusStatusPublication": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/StatusPublication"
+        },
+        "energyInfrastructureEnergyInfrastructureTablePublication": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureTablePublication"
+        },
+        "facilitiesOperatingHoursPublication": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHoursPublication"
+        },
+        "facilitiesOrganisationPublication": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationPublication"
+        },
+        "vmsVmsPublication": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsPublication"
+        },
+        "vmsVmsTablePublication": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsTablePublication"
+        },
+        "locationReferencingPredefinedLocationsPublication": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PredefinedLocationsPublication"
+        },
+        "parkingParkingStatusPublication": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusPublication"
+        },
+        "situationSituationPublication": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationPublication"
+        },
+        "commonGenericPublication": {
+          "$ref": "DATEXII_3_Common.json#/definitions/GenericPublication"
+        },
+        "trafficSignalsMapDataPublication": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MapDataPublication"
+        },
+        "trafficManagementPlanTmplanOperationPublication": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/TmplanOperationPublication"
+        },
+        "trafficSignalsSignalPhaseAndTimingPublication": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SignalPhaseAndTimingPublication"
+        },
+        "trafficManagementPlanTmplanTablePublication": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/TmplanTablePublication"
+        },
+        "trafficRegulationTrafficRegulationPublication": {
+          "$ref": "DATEXII_3_TrafficRegulation.json#/definitions/TrafficRegulationPublication"
+        }
+      },
+      "required": [
+        "_modelBaseVersion"
+      ]
+    },
+    "_PeriodExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "PeriodExtended": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/PeriodExtended",
+          "type": "object"
+        }
+      }
+    },
+    "_PollutantTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PollutantTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PrecipitationIntensityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationIntensityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PrecipitationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PublicEventTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PublicEventTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SourceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SourceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SpecialDay": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "commonPublicHoliday": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PublicHoliday"
+        }
+      }
+    },
+    "_SpecialDayTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpecialDayTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TimePrecisionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TimePrecisionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficTrendTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TrafficTrendTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_UrlLinkTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/UrlLinkTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ValidityStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ValidityStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleCharacteristicsExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "VehicleCharacteristicsExtended": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/VehicleCharacteristicsExtended",
+          "type": "object"
+        }
+      }
+    },
+    "_VehicleEquipmentEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleEquipmentEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleEquipmentEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleEquipmentEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "dippedHeadlightsInUse",
+        "electronicTollEquipment",
+        "filterInUse",
+        "speedLimiterInUse",
+        "studdedTyresInUse",
+        "weelchairSystem"
+      ]
+    },
+    "_VehicleStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "electricBike",
+        "electricScooter",
+        "personalLightElectricVehicle",
+        "animalDrawnVehicles",
+        "coach",
+        "electricVehicles",
+        "extendedCabDualPurposePickup",
+        "fireEngine",
+        "fourStrokeEngineVehicle",
+        "fourWheeledVehicle",
+        "goodsVehicles",
+        "gritter",
+        "handcarts",
+        "motorisedHorseBox",
+        "motorisedPersonalTransportDevices",
+        "motorizedVehicles",
+        "motorizedVehiclesWithoutNumberPlate",
+        "motorQuadricycles",
+        "nonMotorizedVehicles",
+        "passengerCarWithTrailer",
+        "pickup",
+        "quadricycle",
+        "snowPlough",
+        "soloMotorcycle",
+        "tipper",
+        "tractor",
+        "twoStrokeEngineVehicle",
+        "withEvenFirstNumberRegistrationPlate",
+        "withOddFirstNumberRegistrationPlate"
+      ]
+    },
+    "_VehicleUsageEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleUsageEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleUsageEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleUsageEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "deliveryServices",
+        "funeralProcession",
+        "government",
+        "marketVehicle",
+        "nightlySurveillance",
+        "publicTransportation",
+        "removals",
+        "transportOfDisabledPeople",
+        "circus",
+        "funFair"
+      ]
+    },
+    "_WeatherRelatedRoadConditionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WeatherRelatedRoadConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_WeightTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WeightTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_WeightTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_WeightTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "combinedMaximumPermitted",
+        "unladen"
+      ]
+    },
+    "_WinterEquipmentManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WinterEquipmentManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AngleInDegrees": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "ApplicationRateValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicationRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/IntensityKilogramsPerSquareMetre"
+        },
+        "_applicationRateValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "applicationRate"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "AxleSpacing": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "axleSpacing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "axleSpacingSequenceIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_axleSpacingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "axleSpacing",
+        "axleSpacingSequenceIdentifier"
+      ]
+    },
+    "AxlesPerHour": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "AxleWeight": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "axlePositionIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "axleWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "maximumPermittedAxleWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "_axleWeightExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "axlePositionIdentifier"
+      ]
+    },
+    "Base64Binary": {
+      "type": "string"
+    },
+    "Boolean": {
+      "type": "boolean"
+    },
+    "CalendarWeekWithinMonth": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicableCalenderWeekWithinMonth": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_CalendarWeekWithinMonthEnum"
+          },
+          "minItems": 1,
+          "maxItems": 6
+        },
+        "_calendarWeekWithinMonthExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "applicableCalenderWeekWithinMonth"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DayWeekMonth"
+        }
+      ]
+    },
+    "CalendarWeekWithinMonthEnum": {
+      "type": "string",
+      "enum": [
+        "firstWeek",
+        "secondWeek",
+        "thirdWeek",
+        "fourthWeek",
+        "fifthWeek",
+        "sixthWeek",
+        "lastWeek",
+        "_extended"
+      ]
+    },
+    "ComparisonOperatorEnum": {
+      "type": "string",
+      "enum": [
+        "equalTo",
+        "greaterThan",
+        "greaterThanOrEqualTo",
+        "lessThan",
+        "lessThanOrEqualTo",
+        "_extended"
+      ]
+    },
+    "ComputationMethodEnum": {
+      "type": "string",
+      "enum": [
+        "arithmeticAverageOfSamplesBasedOnAFixedNumberOfSamples",
+        "arithmeticAverageOfSamplesInATimePeriod",
+        "harmonicAverageOfSamplesInATimePeriod",
+        "medianOfSamplesInATimePeriod",
+        "movingAverageOfSamples",
+        "_extended"
+      ]
+    },
+    "ConcentrationKilogramsPerCubicMetre": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "ConcentrationMicrogramsPerCubicMetre": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "ConfidentialityValueEnum": {
+      "type": "string",
+      "enum": [
+        "internalUse",
+        "noRestriction",
+        "restrictedToAuthorities",
+        "restrictedToAuthoritiesAndTrafficOperators",
+        "_extended"
+      ]
+    },
+    "CountryCode": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "CubicMetres": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "DangerousGoodsRegulationsEnum": {
+      "type": "string",
+      "enum": [
+        "adr",
+        "iataIcao",
+        "imoImdg",
+        "railroadDangerousGoodsBook",
+        "_extended"
+      ]
+    },
+    "DataValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dataError": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "reasonForDataError": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "accuracy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "computationalMethod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComputationMethodEnum"
+        },
+        "numberOfIncompleteInputs": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfInputValuesUsed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "smoothingFactor": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "standardDeviation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "supplierCalculatedDataQuality": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "_dataValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Date": {
+      "type": "string"
+    },
+    "DateTime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "DayEnum": {
+      "type": "string",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday",
+        "_extended"
+      ]
+    },
+    "DayWeekMonth": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicableDay": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_DayEnum"
+          },
+          "minItems": 0,
+          "maxItems": 7
+        },
+        "applicableMonth": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_MonthOfYearEnum"
+          },
+          "minItems": 0,
+          "maxItems": 12
+        },
+        "_dayWeekMonthExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_DayWeekMonthExtensionType",
+          "type": "object"
+        }
+      }
+    },
+    "Decimal": {
+      "type": "number"
+    },
+    "DirectionBearingValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "directionBearing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/AngleInDegrees"
+        },
+        "_directionBearingValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "directionBearing"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "DirectionCompassEnum": {
+      "type": "string",
+      "enum": [
+        "east",
+        "eastNorthEast",
+        "eastSouthEast",
+        "north",
+        "northEast",
+        "northNorthEast",
+        "northNorthWest",
+        "northWest",
+        "south",
+        "southEast",
+        "southSouthEast",
+        "southSouthWest",
+        "southWest",
+        "west",
+        "westNorthWest",
+        "westSouthWest",
+        "_extended"
+      ]
+    },
+    "DirectionCompassValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "directionCompass": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_DirectionCompassEnum"
+        },
+        "_directionCompassValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "directionCompass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "EmissionClassificationEuroEnum": {
+      "type": "string",
+      "enum": [
+        "euro5",
+        "euro5a",
+        "euro5b",
+        "euro6",
+        "euro6a",
+        "euro6b",
+        "euro6c",
+        "euroV",
+        "euroVI",
+        "other",
+        "_extended"
+      ]
+    },
+    "Emissions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "emissionClassificationEuro": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_EmissionClassificationEuroEnum"
+        },
+        "emissionClassificationOther": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/String"
+          },
+          "minItems": 0
+        },
+        "emissionLevel": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_LowEmissionLevelEnum"
+        },
+        "_emissionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_EmissionsExtensionType",
+          "type": "object"
+        }
+      }
+    },
+    "Fault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "faultIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "faultDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "faultCreationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "faultLastUpdateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "faultImpactSeverity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_FaultSeverityEnum"
+        },
+        "faultUrgencyToRectify": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_FaultUrgencyEnum"
+        },
+        "manufacturerFaultCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_faultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "faultLastUpdateTime"
+      ]
+    },
+    "FaultSeverityEnum": {
+      "type": "string",
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "FaultUrgencyEnum": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "urgent",
+        "extremelyUrgent",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Float": {
+      "type": "number"
+    },
+    "FloatingPointMetreDistanceValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "distance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_floatingPointMetreDistanceValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "distance"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "FrictionValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "friction": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "_frictionValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "friction"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "FuelTypeEnum": {
+      "type": "string",
+      "enum": [
+        "all",
+        "battery",
+        "biodiesel",
+        "diesel",
+        "dieselBatteryHybrid",
+        "ethanol",
+        "hydrogen",
+        "liquidGas",
+        "lpg",
+        "methane",
+        "petrol",
+        "petrol95Octane",
+        "petrol98Octane",
+        "petrolBatteryHybrid",
+        "petrolLeaded",
+        "petrolUnleaded",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "GenericPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "genericPublicationName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_genericPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_GenericPublicationExtensionType",
+          "type": "object"
+        }
+      },
+      "required": [
+        "genericPublicationName"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "GlobalReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "externalPublicationIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "externalPublisher": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_globalReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "GrossWeightCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "grossVehicleWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "typeOfWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_WeightTypeEnum"
+        },
+        "_grossWeightCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "grossVehicleWeight",
+        "typeOfWeight"
+      ]
+    },
+    "GroupOfVehiclesInvolved": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "vehicleStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleStatusEnum"
+        },
+        "vehicleCharacteristics": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "_groupOfVehiclesInvolvedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "HazardousMaterials": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "chemicalName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "dangerousGoodsFlashPoint": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureCelsius"
+        },
+        "dangerousGoodsRegulations": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_DangerousGoodsRegulationsEnum"
+        },
+        "hazardCodeIdentification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "hazardCodeVersionNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "hazardSubstanceItemPageNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "tremCardNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "undgNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "volumeOfDangerousGoods": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CubicMetres"
+        },
+        "weightOfDangerousGoods": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "_hazardousMaterialsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "chemicalName"
+      ]
+    },
+    "HeaderInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "confidentiality": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ConfidentialityValueEnum"
+        },
+        "allowedDeliveryChannel": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_InformationDeliveryServicesEnum"
+          },
+          "minItems": 0
+        },
+        "informationStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_InformationStatusEnum"
+        },
+        "_headerInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "informationStatus"
+      ]
+    },
+    "HeaviestAxleWeightCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "heaviestAxleWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "_heaviestAxleWeightCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "heaviestAxleWeight"
+      ]
+    },
+    "Hectopascal": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "HeightCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "vehicleHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_heightCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "vehicleHeight"
+      ]
+    },
+    "Humidity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "relativeHumidity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "_humidityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "relativeHumidity"
+      ]
+    },
+    "InformationDeliveryServicesEnum": {
+      "type": "string",
+      "enum": [
+        "anyGeneralDeliveryService",
+        "safetyServices",
+        "vms",
+        "_extended"
+      ]
+    },
+    "InformationStatusEnum": {
+      "type": "string",
+      "enum": [
+        "real",
+        "securityExercise",
+        "technicalExercise",
+        "test",
+        "_extended"
+      ]
+    },
+    "InstanceOfDayEnum": {
+      "type": "string",
+      "enum": [
+        "firstInstance",
+        "secondInstance",
+        "thirdInstance",
+        "fourthInstance",
+        "fifthInstance",
+        "lastInstance",
+        "_extended"
+      ]
+    },
+    "InstanceOfDayWithinMonth": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicableInstanceOfDayWithinMonth": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_InstanceOfDayEnum"
+          },
+          "minItems": 1,
+          "maxItems": 5
+        },
+        "_instanceOfDayWithinMonthExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "applicableInstanceOfDayWithinMonth"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DayWeekMonth"
+        }
+      ]
+    },
+    "Integer": {
+      "type": "string"
+    },
+    "IntegerMetreDistanceValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "integerMetreDistance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "_integerMetreDistanceValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "integerMetreDistance"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "IntensityKilogramsPerSquareMetre": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "IntensityMillimetresPerHour": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "InternationalIdentifier": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "country": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "nationalIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_internationalIdentifierExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "country",
+        "nationalIdentifier"
+      ]
+    },
+    "KilogramsConcentrationValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "kilogramsConcentration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ConcentrationKilogramsPerCubicMetre"
+        },
+        "_kilogramsConcentrationValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "kilogramsConcentration"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "KilometresPerHour": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "Language": {
+      "type": "string"
+    },
+    "LengthCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "vehicleLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_lengthCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "vehicleLength"
+      ]
+    },
+    "LoadTypeEnum": {
+      "type": "string",
+      "enum": [
+        "abnormalLoad",
+        "ammunition",
+        "chemicals",
+        "combustibleMaterials",
+        "corrosiveMaterials",
+        "debris",
+        "empty",
+        "explosiveMaterials",
+        "extraHighLoad",
+        "extraLongLoad",
+        "extraWideLoad",
+        "fuel",
+        "glass",
+        "goods",
+        "hazardousMaterials",
+        "liquid",
+        "livestock",
+        "materials",
+        "materialsDangerousForPeople",
+        "materialsDangerousForTheEnvironment",
+        "materialsDangerousForWater",
+        "oil",
+        "ordinary",
+        "perishableProducts",
+        "petrol",
+        "pharmaceuticalMaterials",
+        "radioactiveMaterials",
+        "refrigeratedGoods",
+        "refuse",
+        "toxicMaterials",
+        "vehicles",
+        "other",
+        "_extended"
+      ]
+    },
+    "LongString": {
+      "type": "string"
+    },
+    "LowEmissionLevelEnum": {
+      "type": "string",
+      "enum": [
+        "lowLevelEmission",
+        "freeOfEmission",
+        "_extended"
+      ]
+    },
+    "MetresAsFloat": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "MetresAsNonNegativeInteger": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "MetresPerSecond": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "MicrogramsConcentrationValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "microgramsConcentration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ConcentrationMicrogramsPerCubicMetre"
+        },
+        "_microgramsConcentrationValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "microgramsConcentration"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "MonthOfYearEnum": {
+      "type": "string",
+      "enum": [
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+        "_extended"
+      ]
+    },
+    "MultilingualString": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "values": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultiLingualStringValue"
+          }
+        }
+      }
+    },
+    "MultiLingualStringValue": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lang": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lang",
+        "value"
+      ]
+    },
+    "NamedArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_namedAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "NonNegativeInteger": {
+      "type": "integer",
+      "minimum": 0.0
+    },
+    "NumberOfAxlesCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "numberOfAxles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_numberOfAxlesCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "numberOfAxles"
+      ]
+    },
+    "OverallPeriod": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "overallStartTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "overallEndTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "validPeriod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Period"
+          },
+          "minItems": 0
+        },
+        "exceptionPeriod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Period"
+          },
+          "minItems": 0
+        },
+        "_overallPeriodExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "overallStartTime"
+      ]
+    },
+    "PayloadPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "lang": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Language"
+        },
+        "feedDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "feedType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "publicationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "publicationCreator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_payloadPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "lang",
+        "publicationTime",
+        "publicationCreator"
+      ]
+    },
+    "Percentage": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "PercentageValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "percentage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "_percentageValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "percentage"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "Period": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "startOfPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "endOfPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "periodName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "recurringTimePeriodOfDay": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/TimePeriodOfDay"
+          },
+          "minItems": 0
+        },
+        "recurringDayWeekMonthPeriod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/DayWeekMonth"
+          },
+          "minItems": 0
+        },
+        "recurringSpecialDay": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_SpecialDay"
+          },
+          "minItems": 0
+        },
+        "_periodExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PeriodExtensionType",
+          "type": "object"
+        }
+      }
+    },
+    "PollutantTypeEnum": {
+      "type": "string",
+      "enum": [
+        "benzeneTolueneXylene",
+        "carbonMonoxide",
+        "lead",
+        "methane",
+        "nitricOxide",
+        "nitrogenDioxide",
+        "nitrogenMonoxide",
+        "nitrogenOxides",
+        "nonMethaneHydrocarbons",
+        "ozone",
+        "particulates10",
+        "polycyclicAromaticHydrocarbons",
+        "primaryParticulate",
+        "sulphurDioxide",
+        "totalHydrocarbons",
+        "_extended"
+      ]
+    },
+    "Pollution": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pollutantType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PollutantTypeEnum"
+        },
+        "pollutantConcentration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MicrogramsConcentrationValue"
+        },
+        "_pollutionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pollutantType"
+      ]
+    },
+    "PrecipitationDetail": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "precipitationType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PrecipitationTypeEnum"
+        },
+        "precipitationIntensityGrade": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PrecipitationIntensityEnum"
+        },
+        "precipitationIntensity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationIntensityValue"
+        },
+        "depositionDepth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "_precipitationDetailExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PrecipitationIntensityEnum": {
+      "type": "string",
+      "enum": [
+        "light",
+        "noPhenomena",
+        "moderate",
+        "heavy",
+        "violent",
+        "severe",
+        "_extended"
+      ]
+    },
+    "PrecipitationIntensityValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "millimetresPerHourIntensity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/IntensityMillimetresPerHour"
+        },
+        "_precipitationIntensityValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "millimetresPerHourIntensity"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "PrecipitationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "clearIce",
+        "dew",
+        "diamondDust",
+        "drizzle",
+        "freezingRain",
+        "glaze",
+        "hail",
+        "hardRime",
+        "hoarFrost",
+        "iceCrystals",
+        "icePellets",
+        "liquidFreezing",
+        "liquidNotFreezing",
+        "noPrecipitation",
+        "rain",
+        "rime",
+        "sleet",
+        "smallHail",
+        "snow",
+        "snowGrains",
+        "snowPellets",
+        "softRime",
+        "solid",
+        "wetSnow",
+        "whiteDev",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Pressure": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pressureValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PressureValue"
+        },
+        "_pressureExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pressureValue"
+      ]
+    },
+    "PressureValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pressure": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Hectopascal"
+        },
+        "_pressureValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pressure"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "PublicEventTypeEnum": {
+      "type": "string",
+      "enum": [
+        "agriculturalShow",
+        "airShow",
+        "artEvent",
+        "athleticsMeeting",
+        "commercialEvent",
+        "culturalEvent",
+        "ballGame",
+        "baseballGame",
+        "basketballGame",
+        "beerFestival",
+        "bicycleRace",
+        "boatRace",
+        "boatShow",
+        "boxingTournament",
+        "bullFight",
+        "ceremonialEvent",
+        "concert",
+        "cricketMatch",
+        "exhibition",
+        "fair",
+        "festival",
+        "filmFestival",
+        "filmTVMaking",
+        "fireworkDisplay",
+        "flowerEvent",
+        "foodFestival",
+        "footballMatch",
+        "funfair",
+        "gardeningOrFlowerShow",
+        "golfTournament",
+        "hockeyGame",
+        "horseRaceMeeting",
+        "internationalSportsMeeting",
+        "majorEvent",
+        "marathon",
+        "market",
+        "match",
+        "motorShow",
+        "motorSportRaceMeeting",
+        "openAirConcert",
+        "parade",
+        "procession",
+        "raceMeeting",
+        "rugbyMatch",
+        "severalMajorEvents",
+        "show",
+        "showJumping",
+        "soundAndLightShow",
+        "sportsMeeting",
+        "stateOccasion",
+        "streetFestival",
+        "tennisTournament",
+        "theatricalEvent",
+        "tournament",
+        "tradeFair",
+        "waterSportsMeeting",
+        "wineFestival",
+        "winterSportsMeeting",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "PublicHoliday": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "publicHolidayName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_publicHolidayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "publicHolidayName"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpecialDay"
+        }
+      ]
+    },
+    "Reference": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id"
+      ]
+    },
+    "RoadSurfaceConditionMeasurements": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "temperatureBelowOrAboveRoadSurface": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/TemperatureBelowOrAboveRoadSurface"
+          },
+          "minItems": 0
+        },
+        "roadSurfaceTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "protectionTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "deIcingApplicationRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/ApplicationRateValue"
+        },
+        "deIcingConcentration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilogramsConcentrationValue"
+        },
+        "friction": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FrictionValue"
+        },
+        "depthOfSnow": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "waterFilmThickness": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "iceLayerThickness": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "icePercentage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "_roadSurfaceConditionMeasurementsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Seconds": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "Source": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sourceCountry": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "sourceIdentification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "sourceName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "sourceType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_SourceTypeEnum"
+        },
+        "reliable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_sourceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "SourceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "automobileClubPatrol",
+        "cameraObservation",
+        "freightVehicleOperator",
+        "inductionLoopMonitoringStation",
+        "infraredMonitoringStation",
+        "microwaveMonitoringStation",
+        "mobileTelephoneCaller",
+        "nonPoliceEmergencyServicePatrol",
+        "otherInformation",
+        "otherOfficialVehicle",
+        "policePatrol",
+        "privateBreakdownService",
+        "publicAndPrivateUtilities",
+        "registeredMotoristObserver",
+        "roadAuthorities",
+        "roadOperatorPatrol",
+        "roadsideTelephoneCaller",
+        "spotterAircraft",
+        "trafficMonitoringStation",
+        "transitOperator",
+        "vehicleProbeMeasurement",
+        "videoProcessingMonitoringStation",
+        "_extended"
+      ]
+    },
+    "SpecialDay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "intersectWithApplicableDays": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "specialDayType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_SpecialDayTypeEnum"
+        },
+        "publicEvent": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "namedArea": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_NamedArea"
+          },
+          "minItems": 0
+        },
+        "_specialDayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "intersectWithApplicableDays",
+        "specialDayType"
+      ]
+    },
+    "SpecialDayTypeEnum": {
+      "type": "string",
+      "enum": [
+        "dayBeforePublicHoliday",
+        "publicHoliday",
+        "dayFollowingPublicHoliday",
+        "longWeekendDay",
+        "inLieuOfPublicHoliday",
+        "schoolDay",
+        "schoolHolidays",
+        "publicEventDay",
+        "other",
+        "_extended"
+      ]
+    },
+    "SpeedValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "speed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "_speedValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "speed"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "String": {
+      "type": "string"
+    },
+    "Temperature": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "airTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "dewPointTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "maximumTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "minimumTemperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "_temperatureExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "TemperatureBelowOrAboveRoadSurface": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "heightBelowOrAboveRoadSurface": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "temperatureBelowOrAboveRoadSurface": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureValue"
+        },
+        "_temperatureBelowOrAboveRoadSurfaceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "heightBelowOrAboveRoadSurface",
+        "temperatureBelowOrAboveRoadSurface"
+      ]
+    },
+    "TemperatureCelsius": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "TemperatureValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "temperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/TemperatureCelsius"
+        },
+        "_temperatureValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "temperature"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "Time": {
+      "type": "string"
+    },
+    "TimePeriodOfDay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "startTimeOfPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Time"
+        },
+        "endTimeOfPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Time"
+        },
+        "_timePeriodOfDayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "endTimeOfPeriod",
+        "startTimeOfPeriod"
+      ]
+    },
+    "TimePrecisionEnum": {
+      "type": "string",
+      "enum": [
+        "tenthsOfSecond",
+        "second",
+        "minute",
+        "quarterHour",
+        "halfHour",
+        "hour",
+        "_extended"
+      ]
+    },
+    "Tonnes": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "TrafficTrendTypeEnum": {
+      "type": "string",
+      "enum": [
+        "trafficBuildingUp",
+        "trafficEasing",
+        "trafficStable",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Url": {
+      "type": "string"
+    },
+    "UrlLink": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "urlLinkAddress": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "urlLinkDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "urlLinkType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_UrlLinkTypeEnum"
+        },
+        "_urlLinkExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "urlLinkAddress"
+      ]
+    },
+    "UrlLinkTypeEnum": {
+      "type": "string",
+      "enum": [
+        "documentPdf",
+        "html",
+        "image",
+        "rss",
+        "videoStream",
+        "voiceStream",
+        "other",
+        "_extended"
+      ]
+    },
+    "Validity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "validityStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ValidityStatusEnum"
+        },
+        "overrunning": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "validityTimeSpecification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "_validityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "validityStatus",
+        "validityTimeSpecification"
+      ]
+    },
+    "ValidityStatusEnum": {
+      "type": "string",
+      "enum": [
+        "active",
+        "planned",
+        "suspended",
+        "definedByValidityTimeSpec",
+        "_extended"
+      ]
+    },
+    "Vehicle": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "anonymizedVehicleReference": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vehicleColour": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "vehicleCountryOfOrigin": {
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "vehicleIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vehicleManufacturer": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vehicleModel": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vehicleRegistrationPlateIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vehicleStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleStatusEnum"
+        },
+        "vehicleCharacteristics": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "axleSpacingOnVehicle": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/AxleSpacing"
+          },
+          "minItems": 0
+        },
+        "specificAxleWeight": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/AxleWeight"
+          },
+          "minItems": 0
+        },
+        "hazardousGoodsAssociatedWithVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_HazardousMaterials"
+        },
+        "_vehicleExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VehicleCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "fuelType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_FuelTypeEnum"
+          },
+          "minItems": 0
+        },
+        "loadType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_LoadTypeEnum"
+        },
+        "vehicleEquipment": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleEquipmentEnum"
+        },
+        "vehicleType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_VehicleTypeEnum"
+          },
+          "minItems": 0
+        },
+        "vehicleUsage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleUsageEnum"
+        },
+        "yearOfFirstRegistration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Year"
+        },
+        "grossWeightCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/GrossWeightCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "heightCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/HeightCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "lengthCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/LengthCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "widthCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/WidthCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "heaviestAxleWeightCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/HeaviestAxleWeightCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "numberOfAxlesCharacteristic": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/NumberOfAxlesCharacteristic"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "emissions": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Emissions"
+        },
+        "_vehicleCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleCharacteristicsExtensionType",
+          "type": "object"
+        }
+      }
+    },
+    "VehicleEquipmentEnum": {
+      "type": "string",
+      "enum": [
+        "notUsingSnowChains",
+        "notUsingSnowChainsOrTyres",
+        "snowChainsInUse",
+        "snowTyresInUse",
+        "snowChainsOrTyresInUse",
+        "withoutSnowTyresOrChainsOnBoard",
+        "_extended"
+      ]
+    },
+    "VehicleFlowValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehicleFlowRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehiclesPerHour"
+        },
+        "_vehicleFlowValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleFlowRate"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "VehiclesPerHour": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "VehicleStatusEnum": {
+      "type": "string",
+      "enum": [
+        "abandoned",
+        "brokenDown",
+        "burntOut",
+        "damaged",
+        "damagedAndImmobilized",
+        "inDitch",
+        "jacknifed",
+        "offRoad",
+        "onFire",
+        "onTopOfCrashBarrier",
+        "onWheels",
+        "overturned",
+        "rollable",
+        "spunAround",
+        "_extended"
+      ]
+    },
+    "VehicleTypeEnum": {
+      "type": "string",
+      "enum": [
+        "agriculturalVehicle",
+        "anyVehicle",
+        "articulatedBus",
+        "articulatedTrolleyBus",
+        "articulatedVehicle",
+        "bicycle",
+        "bus",
+        "car",
+        "caravan",
+        "carOrLightVehicle",
+        "carWithCaravan",
+        "carWithTrailer",
+        "constructionOrMaintenanceVehicle",
+        "fourWheelDrive",
+        "heavyGoodsVehicle",
+        "heavyGoodsVehicleWithTrailer",
+        "heavyDutyTransporter",
+        "heavyVehicle",
+        "highSidedVehicle",
+        "lightCommercialVehicle",
+        "largeCar",
+        "largeGoodsVehicle",
+        "lightCommercialVehicleWithTrailer",
+        "longHeavyLorry",
+        "lorry",
+        "metro",
+        "minibus",
+        "moped",
+        "motorcycle",
+        "motorcycleWithSideCar",
+        "motorhome",
+        "motorscooter",
+        "passengerCar",
+        "smallCar",
+        "tanker",
+        "threeWheeledVehicle",
+        "trailer",
+        "tram",
+        "trolleyBus",
+        "twoWheeledVehicle",
+        "van",
+        "vehicleWithCaravan",
+        "vehicleWithCatalyticConverter",
+        "vehicleWithoutCatalyticConverter",
+        "vehicleWithTrailer",
+        "withEvenNumberedRegistrationPlates",
+        "withOddNumberedRegistrationPlates",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "VehicleUsageEnum": {
+      "type": "string",
+      "enum": [
+        "agricultural",
+        "carSharing",
+        "cityLogistics",
+        "commercial",
+        "emergencyServices",
+        "military",
+        "nonCommercial",
+        "patrol",
+        "recoveryServices",
+        "roadMaintenanceOrConstruction",
+        "roadOperator",
+        "taxi",
+        "_extended"
+      ]
+    },
+    "VersionedReference": {
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "_id"
+      ]
+    },
+    "Visibility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "minimumVisibilityDistance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/IntegerMetreDistanceValue"
+        },
+        "_visibilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "minimumVisibilityDistance"
+      ]
+    },
+    "WeatherRelatedRoadConditionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "blackIce",
+        "deepSnow",
+        "dry",
+        "freezingOfWetRoads",
+        "freezingPavements",
+        "freezingRain",
+        "freshSnow",
+        "glaze",
+        "ice",
+        "iceBuildUp",
+        "iceWithWheelBarTracks",
+        "icyPatches",
+        "looseSnow",
+        "moist",
+        "normalWinterConditionsForPedestrians",
+        "notDry",
+        "packedSnow",
+        "rime",
+        "roadSurfaceMelting",
+        "slippery",
+        "slushOnRoad",
+        "slushStrings",
+        "snow",
+        "snowDrifts",
+        "snowOnPavement",
+        "wetAndIcyRoad",
+        "snowOnTheRoad",
+        "wetIcyPavement",
+        "streamingWater",
+        "surfaceWater",
+        "wet",
+        "other",
+        "_extended"
+      ]
+    },
+    "WeightTypeEnum": {
+      "type": "string",
+      "enum": [
+        "actual",
+        "maximumPermitted",
+        "_extended"
+      ]
+    },
+    "WidthCharacteristic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comparisonOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComparisonOperatorEnum"
+        },
+        "vehicleWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_widthCharacteristicExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comparisonOperator",
+        "vehicleWidth"
+      ]
+    },
+    "Wind": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "windMeasurementHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "windSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WindSpeedValue"
+        },
+        "maximumWindSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/WindSpeedValue"
+        },
+        "windDirectionBearing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionBearingValue"
+        },
+        "maximumWindDirectionBearing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionBearingValue"
+        },
+        "windDirectionCompass": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionCompassValue"
+        },
+        "maximumWindDirectionCompass": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DirectionCompassValue"
+        },
+        "_windExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "WindSpeedValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "windSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresPerSecond"
+        },
+        "_windSpeedValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "windSpeed"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "WinterEquipmentManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "doNotUseStudTyres",
+        "useSnowChains",
+        "useSnowChainsOrTyres",
+        "useSnowTyres",
+        "winterEquipmentOnBoardRequired",
+        "other",
+        "_extended"
+      ]
+    },
+    "Year": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    }
+  }
+}

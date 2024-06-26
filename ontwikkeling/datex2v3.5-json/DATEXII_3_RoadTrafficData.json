@@ -1,0 +1,1399 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_BasicData": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "roadTrafficDataTrafficStatus": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficStatus"
+        },
+        "roadTrafficDataTravelTimeData": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TravelTimeData"
+        },
+        "roadTrafficDataPrecipitationInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PrecipitationInformation"
+        },
+        "roadTrafficDataHumidityInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/HumidityInformation"
+        },
+        "roadTrafficDataWindInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WindInformation"
+        },
+        "roadTrafficDataVisibilityInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/VisibilityInformation"
+        },
+        "roadTrafficDataPollutionInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PollutionInformation"
+        },
+        "roadTrafficDataRoadSurfaceConditionInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/RoadSurfaceConditionInformation"
+        },
+        "roadTrafficDataTemperatureInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TemperatureInformation"
+        },
+        "roadTrafficDataPressureInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PressureInformation"
+        },
+        "roadTrafficDataTrafficGap": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficGap"
+        },
+        "roadTrafficDataTrafficFlow": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficFlow"
+        },
+        "roadTrafficDataTrafficSpeed": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficSpeed"
+        },
+        "roadTrafficDataTrafficHeadway": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficHeadway"
+        },
+        "roadTrafficDataTrafficConcentration": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficConcentration"
+        },
+        "roadTrafficDataIndividualVehicleDataValues": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/IndividualVehicleDataValues"
+        }
+      }
+    },
+    "_MeasuredOrDerivedDataTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasuredOrDerivedDataTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MeasurementSiteIndexMeasurementSpecificCharacteristics": {
+      "type": "object",
+      "properties": {
+        "measurementSpecificCharacteristics": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementSpecificCharacteristics"
+        },
+        "index": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "measurementSpecificCharacteristics",
+        "index"
+      ]
+    },
+    "_MeasurementSiteTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MeasurementSiteTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_MeasurementSiteVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MeasurementSite"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_PhysicalQuantity": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "roadTrafficDataTimeProfiledPhysicalQuantity": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TimeProfiledPhysicalQuantity"
+        },
+        "roadTrafficDataSinglePhysicalQuantity": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/SinglePhysicalQuantity"
+        }
+      }
+    },
+    "_PhysicalQuantityFaultEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PhysicalQuantityFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PredefinedLocationGroupVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "PredefinedLocationGroup"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SiteMeasurementsIndexPhysicalQuantity": {
+      "type": "object",
+      "properties": {
+        "physicalQuantity": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_PhysicalQuantity"
+        },
+        "index": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "physicalQuantity",
+        "index"
+      ]
+    },
+    "_TimeMeaningEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TimeMeaningEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficData": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "roadTrafficDataTrafficGap": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficGap"
+        },
+        "roadTrafficDataTrafficFlow": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficFlow"
+        },
+        "roadTrafficDataTrafficSpeed": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficSpeed"
+        },
+        "roadTrafficDataTrafficHeadway": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficHeadway"
+        },
+        "roadTrafficDataTrafficConcentration": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficConcentration"
+        },
+        "roadTrafficDataIndividualVehicleDataValues": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/IndividualVehicleDataValues"
+        }
+      }
+    },
+    "_TrafficStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TravelTimeTrendTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TravelTimeTrendTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TravelTimeTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TravelTimeTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_WeatherData": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "roadTrafficDataPrecipitationInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PrecipitationInformation"
+        },
+        "roadTrafficDataHumidityInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/HumidityInformation"
+        },
+        "roadTrafficDataWindInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WindInformation"
+        },
+        "roadTrafficDataVisibilityInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/VisibilityInformation"
+        },
+        "roadTrafficDataPollutionInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PollutionInformation"
+        },
+        "roadTrafficDataRoadSurfaceConditionInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/RoadSurfaceConditionInformation"
+        },
+        "roadTrafficDataTemperatureInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TemperatureInformation"
+        },
+        "roadTrafficDataPressureInformation": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PressureInformation"
+        }
+      }
+    },
+    "AxleCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "maximumWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "minimumWeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "_axleCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "AxleFlowValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "axleFlowRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/AxlesPerHour"
+        },
+        "_axleFlowValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "axleFlowRate"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "BasicData": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementOrCalculationTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementOrCalculationTime"
+        },
+        "_basicDataExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DailyTrafficFlowValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehicleFlowRate": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/VehiclesPerDay"
+        },
+        "_dailyTrafficFlowValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleFlowRate"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "DateTimeValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_dateTimeValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "dateTime"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "DensityVehiclesPerKilometre": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "DurationValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "duration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_durationValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "duration"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "ElaboratedDataPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "forecastDefault": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "periodDefault": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "timeDefault": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "referenceSettings": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/ReferenceSettings"
+        },
+        "physicalQuantity": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_PhysicalQuantity"
+          },
+          "minItems": 1
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_elaboratedDataPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "physicalQuantity"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "HumidityInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "humidity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Humidity"
+        },
+        "_humidityInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "humidity"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "IndividualVehicleDataValues": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "arrivalTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "distanceGap": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "distanceHeadway": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "exitTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "passageDuration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "presenceDuration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "speed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "timeGap": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "timeHeadway": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "individualVehicle": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Vehicle"
+        },
+        "_individualVehicleDataValuesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "MeasuredDataPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementSiteTableReference": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_MeasurementSiteTableVersionedReference"
+          },
+          "minItems": 1
+        },
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "siteMeasurements": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/SiteMeasurements"
+          },
+          "minItems": 1
+        },
+        "_measuredDataPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "measurementSiteTableReference",
+        "headerInformation",
+        "siteMeasurements"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "MeasuredOrDerivedDataTypeEnum": {
+      "type": "string",
+      "enum": [
+        "humidityInformation",
+        "individualVehicleMeasurements",
+        "pollutionInformation",
+        "precipitationInformation",
+        "pressureInformation",
+        "roadSurfaceConditionInformation",
+        "temperatureInformation",
+        "trafficConcentration",
+        "trafficFlow",
+        "trafficGap",
+        "trafficHeadway",
+        "trafficSpeed",
+        "trafficStatusInformation",
+        "travelTimeInformation",
+        "visibilityInformation",
+        "windInformation",
+        "_extended"
+      ]
+    },
+    "MeasurementOrCalculationTime": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "timeMeaning": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_TimeMeaningEnum"
+        },
+        "timePrecision": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_TimePrecisionEnum"
+        },
+        "timeValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "period": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Period"
+        },
+        "_measurementOrCalculationTimeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "MeasurementSite": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "measurementSiteRecordVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "measurementEquipmentReference": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "measurementEquipmentTypeUsed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "measurementSiteName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "measurementSiteNumberOfLanes": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "measurementSiteIdentification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "measurementSpecificCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_MeasurementSiteIndexMeasurementSpecificCharacteristics"
+          },
+          "minItems": 0
+        },
+        "measurementSiteLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "informationManagerOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_measurementSiteExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "measurementSiteLocation"
+      ]
+    },
+    "MeasurementSiteTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "measurementSiteTableIdentification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "measurementSite": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementSite"
+          },
+          "minItems": 1
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_measurementSiteTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "measurementSite"
+      ]
+    },
+    "MeasurementSiteTablePublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "measurementSiteTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementSiteTable"
+          },
+          "minItems": 1
+        },
+        "_measurementSiteTablePublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "measurementSiteTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "MeasurementSpecificCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accuracy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "computationMethod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ComputationMethodEnum"
+        },
+        "defaultMeasurementHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "measurementSide": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_DirectionEnum"
+        },
+        "period": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "smoothingFactor": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "specificMeasurementValueType": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_MeasuredOrDerivedDataTypeEnum"
+        },
+        "specificVehicleCharacteristics": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "specificLane": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/Lane"
+          },
+          "minItems": 0
+        },
+        "axleCharacteristics": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/AxleCharacteristics"
+        },
+        "_measurementSpecificCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "specificMeasurementValueType"
+      ]
+    },
+    "PassengerCarUnitsPerHour": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "PcuFlowValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pcuFlowRate": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PassengerCarUnitsPerHour"
+        },
+        "_pcuFlowValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pcuFlowRate"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "PhysicalQuantity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "forecast": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "measurementEquipmentTypeUsed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "pertinentLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "physicalQuantityFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PhysicalQuantityFault"
+          },
+          "minItems": 0
+        },
+        "source": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Source"
+        },
+        "informationManagerOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "_physicalQuantityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PhysicalQuantityFault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "physicalQuantityFaultType": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_PhysicalQuantityFaultEnum"
+        },
+        "_physicalQuantityFaultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "physicalQuantityFaultType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "PhysicalQuantityFaultEnum": {
+      "type": "string",
+      "enum": [
+        "intermittentDataValues",
+        "noDataValuesAvailable",
+        "spuriousUnreliableDataValues",
+        "unspecifiedOrUnknownFault",
+        "other",
+        "_extended"
+      ]
+    },
+    "PollutionInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pollution": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Pollution"
+          },
+          "minItems": 1
+        },
+        "_pollutionInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pollution"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "PrecipitationInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "noPrecipitation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "precipitationDetail": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationDetail"
+        },
+        "_precipitationInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "PressureInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pressure": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Pressure"
+        },
+        "_pressureInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pressure"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "ReferenceSettings": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "predefinedLocationGroupReference": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_PredefinedLocationGroupVersionedReference"
+        },
+        "trafficStatusDefault": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_TrafficStatusEnum"
+        },
+        "_referenceSettingsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "predefinedLocationGroupReference"
+      ]
+    },
+    "RoadSurfaceConditionInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "weatherRelatedRoadConditionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadSurfaceConditionMeasurements": {
+          "$ref": "DATEXII_3_Common.json#/definitions/RoadSurfaceConditionMeasurements"
+        },
+        "_roadSurfaceConditionInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadSurfaceConditionMeasurements"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "SinglePhysicalQuantity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "basicData": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_BasicData"
+        },
+        "_singlePhysicalQuantityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PhysicalQuantity"
+        }
+      ]
+    },
+    "SiteMeasurements": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementSiteReference": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_MeasurementSiteVersionedReference"
+        },
+        "physicalQuantity": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_SiteMeasurementsIndexPhysicalQuantity"
+          },
+          "minItems": 0
+        },
+        "measurementTimeDefault": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementOrCalculationTime"
+        },
+        "_siteMeasurementsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "measurementSiteReference",
+        "measurementTimeDefault"
+      ]
+    },
+    "SpeedPercentile": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehiclePercentage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "speedPercentile": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "_speedPercentileExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehiclePercentage",
+        "speedPercentile"
+      ]
+    },
+    "TemperatureInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "temperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Temperature"
+        },
+        "_temperatureInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "temperature"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "TimeMeaningEnum": {
+      "type": "string",
+      "enum": [
+        "beginTime",
+        "endTime",
+        "middleTime",
+        "_extended"
+      ]
+    },
+    "TimeProfiledPhysicalQuantity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "basicData": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_BasicData"
+          },
+          "minItems": 0
+        },
+        "_timeProfiledPhysicalQuantityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PhysicalQuantity"
+        }
+      ]
+    },
+    "TrafficConcentration": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "density": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficDensityValue"
+        },
+        "occupancy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "_trafficConcentrationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "TrafficData": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "forVehiclesWithCharacteristicsOf": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "_trafficDataExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/BasicData"
+        }
+      ]
+    },
+    "TrafficDensityValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "densityOfVehicles": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DensityVehiclesPerKilometre"
+        },
+        "_trafficDensityValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "densityOfVehicles"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "TrafficFlow": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "axleFlow": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/AxleFlowValue"
+        },
+        "pcuFlow": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/PcuFlowValue"
+        },
+        "percentageLongVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "vehicleFlow": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "normallyExpectedFlow": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "annualAverageDailyTraffic": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DailyTrafficFlowValue"
+        },
+        "monthlyAverageDailyTraffic": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DailyTrafficFlowValue"
+        },
+        "axleCharacteristics": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/AxleCharacteristics"
+        },
+        "_trafficFlowExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "TrafficGap": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "averageDistanceGap": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "averageTimeGap": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "_trafficGapExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "TrafficHeadway": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "averageDistanceHeadway": {
+          "$ref": "DATEXII_3_Common.json#/definitions/FloatingPointMetreDistanceValue"
+        },
+        "averageTimeHeadway": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "_trafficHeadwayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "TrafficSpeed": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "averageVehicleSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "speedPercentile": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/SpeedPercentile"
+          },
+          "minItems": 0
+        },
+        "normallyExpectedSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "minimumSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "maximumSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "_trafficSpeedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficData"
+        }
+      ]
+    },
+    "TrafficStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "trafficTrendType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_TrafficTrendTypeEnum"
+        },
+        "trafficStatus": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TrafficStatusValue"
+        },
+        "_trafficStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/BasicData"
+        }
+      ]
+    },
+    "TrafficStatusEnum": {
+      "type": "string",
+      "enum": [
+        "stationary",
+        "queuing",
+        "slow",
+        "heavy",
+        "unspecifiedAbnormal",
+        "freeFlow",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "TrafficStatusValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "trafficStatusValue": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_TrafficStatusEnum"
+        },
+        "_trafficStatusValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "trafficStatusValue"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "TravelTimeData": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "travelTimeTrendType": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_TravelTimeTrendTypeEnum"
+        },
+        "travelTimeType": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/_TravelTimeTypeEnum"
+        },
+        "vehicleType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_VehicleTypeEnum"
+          },
+          "minItems": 0
+        },
+        "travelTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "freeFlowTravelTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "normallyExpectedTravelTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "travelTimeDelay": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/DurationValue"
+        },
+        "freeFlowSpeed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        },
+        "_travelTimeDataExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/BasicData"
+        }
+      ]
+    },
+    "TravelTimeTrendTypeEnum": {
+      "type": "string",
+      "enum": [
+        "decreasing",
+        "increasing",
+        "stable",
+        "_extended"
+      ]
+    },
+    "TravelTimeTypeEnum": {
+      "type": "string",
+      "enum": [
+        "best",
+        "estimated",
+        "instantaneous",
+        "reconstituted",
+        "predictor",
+        "profile",
+        "sum",
+        "_extended"
+      ]
+    },
+    "VehiclesPerDay": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "VisibilityInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "visibility": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Visibility"
+        },
+        "_visibilityInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "visibility"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    },
+    "WeatherData": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_weatherDataExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/BasicData"
+        }
+      ]
+    },
+    "WindInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "wind": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Wind"
+        },
+        "_windInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "wind"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/WeatherData"
+        }
+      ]
+    }
+  }
+}

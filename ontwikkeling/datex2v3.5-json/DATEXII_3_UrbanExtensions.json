@@ -1,0 +1,157 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_NonVehicularRoadUserTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/NonVehicularRoadUserTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_StreetWorksTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/StreetWorksTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AccidentExtendedUrban": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "groupOfNonVehicularRoadUsersInvolved": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/GroupOfNonVehicularRoadUsersInvolved"
+          },
+          "minItems": 0
+        }
+      }
+    },
+    "ClassifiedDelay": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "delays": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Delays"
+        },
+        "vehicleCharacteristics": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "_classifiedDelayExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleCharacteristics",
+        "delays"
+      ]
+    },
+    "GroupOfNonVehicularRoadUsersInvolved": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfNonVehicularRoadUsers": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "injuryStatusType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InjuryStatusTypeEnum"
+        },
+        "nonVehicularRoadUsers": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/NonVehicularRoadUsers"
+        },
+        "_groupOfNonVehicularRoadUsersInvolvedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ImpactExtendedUrban": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "classifiedDelay": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/ClassifiedDelay"
+          },
+          "minItems": 0
+        }
+      }
+    },
+    "NetworkManagementExtendedUrban": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "forNonMotorisedRoadUsers": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/NonVehicularRoadUsers"
+        }
+      }
+    },
+    "NonVehicularRoadUsers": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nonVehicularRoadUser": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/_NonVehicularRoadUserTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_nonVehicularRoadUsersExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "nonVehicularRoadUser"
+      ]
+    },
+    "NonVehicularRoadUserTypeEnum": {
+      "type": "string",
+      "enum": [
+        "pedestrian",
+        "skater",
+        "animalUnderGuidance",
+        "other",
+        "_extended"
+      ]
+    },
+    "StreetWorks": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "streetWorksType": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/_StreetWorksTypeEnum"
+        }
+      },
+      "required": [
+        "streetWorksType"
+      ]
+    },
+    "StreetWorksTypeEnum": {
+      "type": "string",
+      "enum": [
+        "buildingWork",
+        "trenchingWork",
+        "utilityWork",
+        "_extended"
+      ]
+    }
+  }
+}

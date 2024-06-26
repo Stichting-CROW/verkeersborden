@@ -1,0 +1,301 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_NmaStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/NmaStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PseudoRangeUnitEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/PseudoRangeUnitEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SatelliteConstellation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "gnssExtensionTrackedSatellite": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/TrackedSatellite"
+        },
+        "gnssExtensionSbasCorrectionAndAuthenticationPerConstellation": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/SbasCorrectionAndAuthenticationPerConstellation"
+        }
+      }
+    },
+    "_SbasCorrectionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/SbasCorrectionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "DecibelHertz": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+    },
+    "HeightCoordinateExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vpl": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        }
+      }
+    },
+    "Hertz": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "NmaStatusEnum": {
+      "type": "string",
+      "enum": [
+        "reserved",
+        "test",
+        "operational",
+        "doNotUse",
+        "_extended"
+      ]
+    },
+    "PointByCoordinatesExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "speedGivenByGnss": {
+          "$ref": "DATEXII_3_Common.json#/definitions/SpeedValue"
+        }
+      }
+    },
+    "PointCoordinatesExtended": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "srsName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "authenticationStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "dateTimeGivenByReceiver": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "hpl": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "sbasCorrectionApplied": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/_SbasCorrectionEnum"
+        },
+        "signature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "rawDataMessage": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/RawDataMessage"
+        }
+      }
+    },
+    "PseudoRangeUnitEnum": {
+      "type": "string",
+      "enum": [
+        "metre",
+        "millisecond",
+        "_extended"
+      ]
+    },
+    "RawDataMessage": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "extendedGpsWeekNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "gpsTimeOfWeek": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "x": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "y": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "z": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "sbasCorrectionAndAuthenticationPerConstellation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_GnssExtension.json#/definitions/SbasCorrectionAndAuthenticationPerConstellation"
+          },
+          "minItems": 0
+        },
+        "trackedSatellite": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_GnssExtension.json#/definitions/TrackedSatellite"
+          },
+          "minItems": 4
+        },
+        "_rawDataMessageExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "extendedGpsWeekNumber",
+        "gpsTimeOfWeek",
+        "x",
+        "y",
+        "z",
+        "trackedSatellite"
+      ]
+    },
+    "SatelliteConstellation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "gnssSystemId": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "gnssSystemName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_satelliteConstellationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "gnssSystemId"
+      ]
+    },
+    "SbasCorrectionAndAuthenticationPerConstellation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "authenticationResult": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "numberOfSatellitesTracked": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "sbasCorrectionStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_sbasCorrectionAndAuthenticationPerConstellationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "authenticationResult",
+        "numberOfSatellitesTracked",
+        "sbasCorrectionStatus"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/SatelliteConstellation"
+        }
+      ]
+    },
+    "SbasCorrectionEnum": {
+      "type": "string",
+      "enum": [
+        "noSbasCorrection",
+        "sbasCorrectionAppliedByTerminal",
+        "sbasCorrectionAppliedByServiceCentre",
+        "_extended"
+      ]
+    },
+    "TrackedSatellite": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nmaStatus": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/_NmaStatusEnum"
+        },
+        "prnAuthenticationStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "prnSatelliteId": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "trackedSignal": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_GnssExtension.json#/definitions/TrackedSignal"
+          },
+          "minItems": 1
+        },
+        "_trackedSatelliteExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "prnSatelliteId",
+        "trackedSignal"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/SatelliteConstellation"
+        }
+      ]
+    },
+    "TrackedSignal": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "signalType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "signalStrength": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/DecibelHertz"
+        },
+        "pseudoRangeValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Float"
+        },
+        "pseudoRangeUnit": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/_PseudoRangeUnitEnum"
+        },
+        "doppler": {
+          "$ref": "DATEXII_3_GnssExtension.json#/definitions/Hertz"
+        },
+        "phase": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_trackedSignalExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "doppler",
+        "phase",
+        "pseudoRangeUnit",
+        "pseudoRangeValue",
+        "signalStrength",
+        "signalType"
+      ]
+    }
+  }
+}

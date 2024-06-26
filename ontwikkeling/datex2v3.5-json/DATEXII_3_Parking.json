@@ -1,0 +1,3512 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_Access": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingVehicularAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicularAccess"
+        },
+        "parkingPedestrianAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccess"
+        }
+      }
+    },
+    "_AccessEquipmentEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessEquipmentEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccessLaneTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessLaneTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccessTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ActivityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ActivityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CalculationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CalculationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CampusStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CampusStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ContactTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ContactTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CoveredEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CoveredEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ElementDescriptorEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ElementDescriptorEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EsporgStandardLevelEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/EsporgStandardLevelEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FacilityObjectReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "FacilityObject"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "_FacilityObjectVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "FacilityObject"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_HierarchyElementGeneral": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingSpace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Space"
+        },
+        "parkingSupplementalFacility": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SupplementalFacility"
+        },
+        "parkingVehicularAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicularAccess"
+        },
+        "parkingPedestrianAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccess"
+        },
+        "parkingSpecificArea": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpecificArea"
+        },
+        "parkingSubplaceElement": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SubplaceElement"
+        },
+        "parkingCampus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Campus"
+        },
+        "parkingPlace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Place"
+        }
+      }
+    },
+    "_HierarchyElementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_IdentifiedArea": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingSupplementalFacility": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SupplementalFacility"
+        },
+        "parkingVehicularAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicularAccess"
+        },
+        "parkingPedestrianAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccess"
+        },
+        "parkingSpecificArea": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpecificArea"
+        }
+      }
+    },
+    "_JunctionClassificationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/JunctionClassificationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_LayoutEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/LayoutEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MeasurementSiteVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MeasurementSite"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OperatingPattern": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingUsageScenario": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/UsageScenario"
+        },
+        "parkingOperatingRestriction": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OperatingRestriction"
+        }
+      }
+    },
+    "_OperatingRestrictionsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OperatingRestrictionsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OperatorDefinedPlaceVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "OperatorDefinedPlace"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_ParkingConditionsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingConditionsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingFaultEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingModeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingModeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingOccupancyEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingOccupancyEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingOccupancyTrendEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingOccupancyTrendEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingPlaceStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingPlaceStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingRoute": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingParkingRouteDetails": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRouteDetails"
+        },
+        "parkingParkingRouteByReference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRouteByReference"
+        }
+      }
+    },
+    "_ParkingRouteDetailsVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "ParkingRouteDetails"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_ParkingRouteOrientationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRouteOrientationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingRouteTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRouteTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingSafetyEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingSafetyEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingSecurityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingSecurityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingSpaceConvenienceEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingSpaceConvenienceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingSpaceOccupancyDetectionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingSpaceOccupancyDetectionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingStatusInformation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingPlaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PlaceStatus"
+        },
+        "parkingAccessStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessStatus"
+        },
+        "parkingCampusStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CampusStatus"
+        },
+        "parkingSpaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpaceStatus"
+        }
+      }
+    },
+    "_ParkingStructuralCharacteristicsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStructuralCharacteristicsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingSupervisionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingSupervisionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "ParkingTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_ParkingUsageScenarioEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingUsageScenarioEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ParkingVacantSpacesEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingVacantSpacesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PedestrianAccessStyleEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccessStyleEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PublicTransportTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PublicTransportTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PublicTransportVehicleType": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PublicTransportVehicleType"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RegulationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RegulationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RelatedLocation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingPointOfInterest": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PointOfInterest"
+        },
+        "parkingPublicTransportStop": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PublicTransportStop"
+        }
+      }
+    },
+    "_RoadTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RoadTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SessionActivationModeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SessionActivationModeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SpecialLocationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpecialLocationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_StaffEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StaffEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_StatusValidity": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingValidityByPeriod": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ValidityByPeriod"
+        },
+        "parkingValidityByTime": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ValidityByTime"
+        },
+        "parkingValidityByOffset": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ValidityByOffset"
+        }
+      }
+    },
+    "_StructureGradeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StructureGradeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_StructureTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StructureTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SupplyViewTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SupplyViewTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Thresholds": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "parkingAvailableSpacesThresholds": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AvailableSpacesThresholds"
+        },
+        "parkingVehiclesOnSiteThresholds": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehiclesOnSiteThresholds"
+        },
+        "parkingOccupiedSpacesThresholds": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OccupiedSpacesThresholds"
+        }
+      }
+    },
+    "_TruckParkingDynamicManagementEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/TruckParkingDynamicManagementEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsControllerVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsController"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "Access": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accessType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_AccessTypeEnum"
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_AccessEquipmentEnum"
+          },
+          "minItems": 0
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_DirectionCompassEnum"
+          },
+          "minItems": 0
+        },
+        "accessAndEgress": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessAndEgress"
+        },
+        "primaryRoad": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/AccessRoad"
+          },
+          "minItems": 0
+        },
+        "_accessExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "accessType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/IdentifiedArea"
+        }
+      ]
+    },
+    "AccessAndEgress": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "exitPossibleAtAnyTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "openTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "entranceOpenTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "exitOpenTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "_accessAndEgressExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "AccessEquipmentEnum": {
+      "type": "string",
+      "enum": [
+        "barrier",
+        "trafficSignal",
+        "ticketButtonMachine",
+        "ticketCardMachine",
+        "payAndExitMachine",
+        "staircase",
+        "elevator",
+        "other",
+        "_extended"
+      ]
+    },
+    "AccessJunction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "distance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "junctionInformation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/JunctionInformation"
+        },
+        "_accessJunctionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "junctionInformation"
+      ]
+    },
+    "AccessLaneSpecific": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sequenceNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "laneType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_AccessLaneTypeEnum"
+        },
+        "maxDimension": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "entranceOpenTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "exitOpenTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "_accessLaneSpecificExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "laneType",
+        "sequenceNumber"
+      ]
+    },
+    "AccessLaneTypeEnum": {
+      "type": "string",
+      "enum": [
+        "entryOnly",
+        "exitOnly",
+        "reversibleLane",
+        "serviceVehicleLane",
+        "_extended"
+      ]
+    },
+    "AccessRoad": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "distance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "roadInformation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_RoadInformation"
+        },
+        "_accessRoadExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadInformation"
+      ]
+    },
+    "AccessStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "entranceFull": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_accessStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        }
+      ]
+    },
+    "AccessTypeEnum": {
+      "type": "string",
+      "enum": [
+        "entryAndExit",
+        "entryOnly",
+        "exitOnly",
+        "reversible",
+        "_extended"
+      ]
+    },
+    "ActivityEnum": {
+      "type": "string",
+      "enum": [
+        "openFire",
+        "overnightParking",
+        "picnic",
+        "smoking",
+        "camping",
+        "handlingHazardousMaterial",
+        "barbecue",
+        "other",
+        "_extended"
+      ]
+    },
+    "AdditionalCharacteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "floor": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "weightLimit": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "additionalConvenience": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingSpaceConvenienceEnum"
+          },
+          "minItems": 0
+        },
+        "structuralCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingStructuralCharacteristicsEnum"
+          },
+          "minItems": 0
+        },
+        "parkingMode": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingModeEnum"
+        },
+        "occupancyDetection": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingSpaceOccupancyDetectionEnum"
+        },
+        "temporarilyParking": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "distanceFromPrimaryRoad": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "assignment": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/Assignment"
+          },
+          "minItems": 0
+        },
+        "dedicatedAccess": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/DedicatedAccess"
+          },
+          "minItems": 0
+        },
+        "totalDimension": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "minimumParkingSpaceDimension": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "maximumParkingSpaceDimension": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "_additionalCharacteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Assignment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "maximumParkingDuration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "minimumParkingDuration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "parkingAllowed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "reservation": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_ReservationTypeEnum"
+        },
+        "assignmentValidity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "exclusivelyAssignedFor": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Eligibility"
+        },
+        "prohibitedFor": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Eligibility"
+        },
+        "applicableFor": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Eligibility"
+        },
+        "_assignmentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "AvailableSpacesThresholds": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_availableSpacesThresholdsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Thresholds"
+        }
+      ]
+    },
+    "CalculationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "counted",
+        "derived",
+        "expected",
+        "verified",
+        "_extended"
+      ]
+    },
+    "Campus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "commonComponents": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CommonComponents"
+        },
+        "_campusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementGeneral"
+        }
+      ]
+    },
+    "CampusStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "status": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_CampusStatusEnum"
+        },
+        "_campusStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        }
+      ]
+    },
+    "CampusStatusEnum": {
+      "type": "string",
+      "enum": [
+        "allParkingsFull",
+        "multiStoreyParkingsFull",
+        "noMoreParkingSpacesAvailable",
+        "enoughSpacesAvailable",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "CertifiedSecureParking": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "typeOfCertification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "dateOfCertification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Date"
+        },
+        "_certifiedSecureParkingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "dateOfCertification",
+        "typeOfCertification"
+      ]
+    },
+    "Characteristics": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activationMode": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_SessionActivationModeEnum"
+          },
+          "minItems": 0
+        },
+        "structureGrade": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_StructureGradeEnum"
+        },
+        "robotic": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "accessControlled": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "staffed": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_StaffEnum"
+        },
+        "structureType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_StructureTypeEnum"
+        },
+        "coveredType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_CoveredEnum"
+        },
+        "openToPublic": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "spacesNonDedicated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "spacesTotal": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "accessForPersonsWithDisabilities": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+          },
+          "minItems": 0
+        },
+        "_characteristicsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "structureType"
+      ]
+    },
+    "CommonComponents": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "rgbColour": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/RgbColour"
+          },
+          "minItems": 0
+        },
+        "characteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/Characteristics"
+          },
+          "minItems": 0
+        },
+        "parkingRoute": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingRoute"
+          },
+          "minItems": 0
+        },
+        "marketing": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Marketing"
+        },
+        "safetyStandardClassification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/SafetyStandardClassification"
+          },
+          "minItems": 0
+        },
+        "parkingVms": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ParkingVms"
+          },
+          "minItems": 0
+        },
+        "permitsAndProhibitions": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/PermitsAndProhibitions"
+          },
+          "minItems": 0
+        },
+        "additionalCharacteristics": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AdditionalCharacteristics"
+        },
+        "operatingPattern": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_OperatingPattern"
+          },
+          "minItems": 0
+        },
+        "thresholdConfiguration": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ThresholdConfiguration"
+        },
+        "_commonComponentsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ContactTypeEnum": {
+      "type": "string",
+      "enum": [
+        "operator",
+        "owner",
+        "emergencyContact",
+        "securityService",
+        "customerService",
+        "propertyManager",
+        "reservationService",
+        "responsibleAuthority",
+        "servicePartner",
+        "_extended"
+      ]
+    },
+    "CoveredEnum": {
+      "type": "string",
+      "enum": [
+        "covered",
+        "notCovered",
+        "partiallyCovered",
+        "topLevelNotCovered",
+        "_extended"
+      ]
+    },
+    "DedicatedAccess": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "dedicatedAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "distanceFromParkingSpace": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "_dedicatedAccessExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "dedicatedAccess"
+      ]
+    },
+    "DemandSpaceType": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "spaceId": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectReference"
+          },
+          "minItems": 0
+        },
+        "actualStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "actualEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "detectionUpdateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "estimatedStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "estimatedEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "occupancyLevel": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OccupancyLevel"
+        },
+        "_demandSpaceTypeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "detectionUpdateTime"
+      ]
+    },
+    "DemandTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "frequency": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Duration"
+        },
+        "timestamp": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "demandType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/DemandType"
+          },
+          "minItems": 0
+        },
+        "demandSpaceType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/DemandSpaceType"
+          },
+          "minItems": 0
+        },
+        "_demandTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "timestamp"
+      ]
+    },
+    "DemandType": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "creationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "occupancyCalculation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_CalculationTypeEnum"
+          },
+          "minItems": 1
+        },
+        "count": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "percentage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "_demandTypeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "creationTime",
+        "occupancyCalculation"
+      ]
+    },
+    "ElementDescriptorEnum": {
+      "type": "string",
+      "enum": [
+        "floorOrLevel",
+        "row",
+        "street",
+        "building",
+        "statisticsOnly",
+        "mixedUsage",
+        "singleParameters",
+        "logicalStructure",
+        "other",
+        "_extended"
+      ]
+    },
+    "EsporgStandardLevelEnum": {
+      "type": "string",
+      "enum": [
+        "bronze",
+        "silver",
+        "gold",
+        "platinum",
+        "_extended"
+      ]
+    },
+    "HierarchyElementGeneral": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "layer": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "type": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_HierarchyElementTypeEnum"
+        },
+        "parentId": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "childId": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+          },
+          "minItems": 0
+        },
+        "operatorDefinedReference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_OperatorDefinedPlaceVersionedReference"
+        },
+        "occupancyLevel": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OccupancyLevel"
+        },
+        "operatorDefinedPlace": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/OperatorDefinedPlace"
+          },
+          "minItems": 0
+        },
+        "responsibilityRoleAssignment": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ResponsibilityRoleAssignment"
+          },
+          "minItems": 0
+        },
+        "supply": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Supply"
+        },
+        "_hierarchyElementGeneralExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "layer",
+        "type"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Facility"
+        }
+      ]
+    },
+    "HierarchyElementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "campus",
+        "place",
+        "subplaceElement",
+        "identifiedArea",
+        "space",
+        "_extended"
+      ]
+    },
+    "IdentifiedArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operatingPattern": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_OperatingPattern"
+          },
+          "minItems": 0
+        },
+        "additionalCharacteristics": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AdditionalCharacteristics"
+        },
+        "_identifiedAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementGeneral"
+        }
+      ]
+    },
+    "ImageAlbum": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "logoImage": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Url"
+          },
+          "minItems": 0
+        },
+        "photo": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "caption": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "_imageAlbumExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "JunctionClassificationEnum": {
+      "type": "string",
+      "enum": [
+        "threeWayInterchange",
+        "interchange",
+        "motorwayConnection",
+        "junction",
+        "temporarilyJunction",
+        "borderCrossing",
+        "junctionInOneDirection",
+        "operationalServiceJunction",
+        "other",
+        "_extended"
+      ]
+    },
+    "JunctionInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "junctionClassification": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_JunctionClassificationEnum"
+        },
+        "junctionName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "junctionNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "motorway": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_RoadInformation"
+        },
+        "intersectionDestinationMotorway": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_RoadInformation"
+          },
+          "minItems": 0
+        },
+        "_junctionInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "junctionName"
+      ]
+    },
+    "LayoutEnum": {
+      "type": "string",
+      "enum": [
+        "layBy",
+        "openSpace",
+        "nested",
+        "field",
+        "building",
+        "_extended"
+      ]
+    },
+    "Marketing": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "webUrl": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Url"
+          },
+          "minItems": 0
+        },
+        "imageAlbum": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ImageAlbum"
+          },
+          "minItems": 0
+        },
+        "_marketingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Occupancy": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfSpacesOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfVacantSpaces": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfVacantSpacesLowerThan": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfVacantSpacesHigherThan": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfVacantSpacesGraded": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingVacantSpacesEnum"
+        },
+        "numberOfOccupiedSpaces": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "occupancy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "occupancyGraded": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingOccupancyEnum"
+        },
+        "occupancyTrend": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingOccupancyTrendEnum"
+        },
+        "parkingNotAllowed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "probability": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PercentageValue"
+        },
+        "vehicleCountAndRate": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/VehicleCountAndRate"
+          },
+          "minItems": 0
+        },
+        "overrideThresholdConfiguration": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ThresholdConfiguration"
+        },
+        "_occupancyExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "OccupancyChangeValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "occupancyChange": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "_occupancyChangeValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "occupancyChange"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "OccupancyLevel": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "occupanyIndicator": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingOccupancyEnum"
+        },
+        "_occupancyLevelExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "occupanyIndicator"
+      ]
+    },
+    "OccupiedSpacesThresholds": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_occupiedSpacesThresholdsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Thresholds"
+        }
+      ]
+    },
+    "OperatingPattern": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operatingPatternIndex": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "relatedLocation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_RelatedLocation"
+          },
+          "minItems": 0
+        },
+        "validity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "_operatingPatternExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "operatingPatternIndex"
+      ]
+    },
+    "OperatingPatternStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operatingPatternIndex": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "operationStatus": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperationStatusEnum"
+        },
+        "ptScheduleUpdate": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/PublicTransportSchedule"
+          },
+          "minItems": 0
+        },
+        "_operatingPatternStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "operatingPatternIndex",
+        "operationStatus"
+      ]
+    },
+    "OperatingRestriction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "context": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "type": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_OperatingRestrictionsEnum"
+        },
+        "_operatingRestrictionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OperatingPattern"
+        }
+      ]
+    },
+    "OperatingRestrictionsEnum": {
+      "type": "string",
+      "enum": [
+        "carpoolOnly",
+        "commercialVehicleOnly",
+        "freeParking",
+        "busOnly",
+        "busStop",
+        "disabledPersonPermitOnly",
+        "electricVehicleOnly",
+        "governmentVehicleOnly",
+        "loadingZone",
+        "loadingZoneCommercial",
+        "media",
+        "residentialPermitOnly",
+        "snow",
+        "streetCleaning",
+        "parkingTimeLimit",
+        "taxiOnly",
+        "valetOnly",
+        "noParking",
+        "noWaiting",
+        "temporaryParking",
+        "_extended"
+      ]
+    },
+    "OperatorDefinedPlace": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "identifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "organisation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+          },
+          "minItems": 0
+        },
+        "_operatorDefinedPlaceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "identifier"
+      ]
+    },
+    "ParkingConditionsEnum": {
+      "type": "string",
+      "enum": [
+        "normalParkingConditionsSuspended",
+        "specialParkingConditionsInForce",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingFaultEnum": {
+      "type": "string",
+      "enum": [
+        "communicationsFailure",
+        "barrierMalfunction",
+        "entranceExitObstructed",
+        "erroneousOccupancyInformation",
+        "erroneousOccupancyDisplayed",
+        "paymentMachinesInoperative",
+        "reservationServiceOutOfOrder",
+        "noParkingInformationAvailable",
+        "unspecified",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingModeEnum": {
+      "type": "string",
+      "enum": [
+        "perpendicularParking",
+        "parallelParking",
+        "echelonParking",
+        "parkingOnOppositeSideOfRoad",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingOccupancyEnum": {
+      "type": "string",
+      "enum": [
+        "expectCarParkToBeFull",
+        "percentage10",
+        "percentage20",
+        "percentage30",
+        "percentage40",
+        "percentage50",
+        "percentage60",
+        "percentage70",
+        "percentage80",
+        "percentage90",
+        "full",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "ParkingOccupancyTrendEnum": {
+      "type": "string",
+      "enum": [
+        "decreasing",
+        "increasing",
+        "stable",
+        "increasingQuickly",
+        "increasingSlowly",
+        "decreasingQuickly",
+        "decreasingSlowly",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingPlaceStatusEnum": {
+      "type": "string",
+      "enum": [
+        "full",
+        "fullAtEntrance",
+        "spacesAvailable",
+        "almostFull",
+        "overcrowding",
+        "overcrowdingLevel1",
+        "overcrowdingLevel2",
+        "noOvercrowding",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingRoute": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingRouteColour": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RgbColour"
+        },
+        "_parkingRouteExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ParkingRouteByReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingRouteReference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingRouteDetailsVersionedReference"
+        },
+        "_parkingRouteByReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingRouteReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRoute"
+        }
+      ]
+    },
+    "ParkingRouteDetails": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "type": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingRouteTypeEnum"
+        },
+        "dynamicRouteManagement": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "iconIndex": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "direction": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_DirectionEnum"
+        },
+        "orientation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingRouteOrientationEnum"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "locationReference": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "parkingVms": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ParkingVms"
+          },
+          "minItems": 0
+        },
+        "_parkingRouteDetailsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRoute"
+        }
+      ]
+    },
+    "ParkingRouteOrientationEnum": {
+      "type": "string",
+      "enum": [
+        "towardsParkingSite",
+        "awayFromParkingSite",
+        "_extended"
+      ]
+    },
+    "ParkingRouteStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingRouteReference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingRouteDetailsVersionedReference"
+        },
+        "parkingRouteActive": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "travelTimeData": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/TravelTimeData"
+          },
+          "minItems": 0
+        },
+        "_parkingRouteStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingRouteActive",
+        "parkingRouteReference"
+      ]
+    },
+    "ParkingRouteTypeEnum": {
+      "type": "string",
+      "enum": [
+        "pedestrian",
+        "bicycle",
+        "lorry",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingSafetyEnum": {
+      "type": "string",
+      "enum": [
+        "clearDistinctionCarsHGV",
+        "clearSafetySigns",
+        "emergencySafety",
+        "pedestrianSafety",
+        "safeDecelerationAndAcceleration",
+        "seperatedDangerousGood",
+        "_extended"
+      ]
+    },
+    "ParkingSecurityEnum": {
+      "type": "string",
+      "enum": [
+        "socialControl",
+        "securityStaff",
+        "externalSecurity",
+        "cctv",
+        "dog",
+        "guard24hours",
+        "lighting",
+        "floodLight",
+        "fences",
+        "areaSeperatedFromSurroundings",
+        "none",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingSpaceConvenienceEnum": {
+      "type": "string",
+      "enum": [
+        "extraSpaceLeftSide",
+        "extraSpaceRightSide",
+        "nearbyPedestrianExit",
+        "bordersMarked",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingSpaceOccupancyDetectionEnum": {
+      "type": "string",
+      "enum": [
+        "visual",
+        "anpr",
+        "imageAnalytics",
+        "videoAnalytics",
+        "videoSpace",
+        "spaceSensor",
+        "userDeclaration",
+        "balancing",
+        "modelBased",
+        "none",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingStatusInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "queueingTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "parkingConditions": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingConditionsEnum"
+        },
+        "blurredAvailability": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "parkingFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingFaultEnum"
+          },
+          "minItems": 0
+        },
+        "winterEquipmentManagementType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WinterEquipmentManagementTypeEnum"
+          },
+          "minItems": 0
+        },
+        "parkingRouteStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ParkingRouteStatus"
+          },
+          "minItems": 0
+        },
+        "occupancy": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Occupancy"
+        },
+        "statusValidity": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_StatusValidity"
+        },
+        "operatingPatternStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/OperatingPatternStatus"
+          },
+          "minItems": 0
+        },
+        "supply": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Supply"
+        },
+        "demandTable": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/DemandTable"
+        },
+        "_parkingStatusInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityStatus"
+        }
+      ]
+    },
+    "ParkingStatusPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingTableReference": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingTableVersionedReference"
+          },
+          "minItems": 0
+        },
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "parkingStatusInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingStatusInformation"
+          },
+          "minItems": 1
+        },
+        "_parkingStatusPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingStatusInformation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "ParkingStructuralCharacteristicsEnum": {
+      "type": "string",
+      "enum": [
+        "driveThrough",
+        "openAir",
+        "evenSurface",
+        "kerbside",
+        "softShoulder",
+        "_extended"
+      ]
+    },
+    "ParkingSupervisionEnum": {
+      "type": "string",
+      "enum": [
+        "remote",
+        "onSite",
+        "controlCentreOnSite",
+        "controlCentreOffSite",
+        "patrol",
+        "none",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "versionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "hierarchyElementGeneral": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_HierarchyElementGeneral"
+          },
+          "minItems": 1
+        },
+        "_parkingTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "versionTime",
+        "hierarchyElementGeneral"
+      ]
+    },
+    "ParkingTablePublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "parkingTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/ParkingTable"
+          },
+          "minItems": 1
+        },
+        "_parkingTablePublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "ParkingUsageScenarioEnum": {
+      "type": "string",
+      "enum": [
+        "automatedParkingGarage",
+        "carSharing",
+        "delivery",
+        "dropOff",
+        "dropOffMechanical",
+        "dropOffWithValet",
+        "eventParking",
+        "guidanceToAvailableSpaces",
+        "kissAndRide",
+        "liftshare",
+        "motorwayParking",
+        "nearbyMotorwayParking",
+        "overnightParking",
+        "parkAndCycle",
+        "parkAndDrive",
+        "parkAndRide",
+        "parkAndWalk",
+        "poiParking",
+        "restArea",
+        "serviceArea",
+        "specialLocation",
+        "staffGuidesToSpace",
+        "truckParking",
+        "vehicleLift",
+        "zone",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingVacantSpacesEnum": {
+      "type": "string",
+      "enum": [
+        "noParkingSpacesAvailable",
+        "expectNoSpacesAvailable",
+        "onlyAFewSpacesAvailable",
+        "lessThan10SpacesAvailable",
+        "lessThan20SpacesAvailable",
+        "lessThan30SpacesAvailable",
+        "lessThan40SpacesAvailable",
+        "lessThan50SpacesAvailable",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "ParkingVms": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsUsedToManageParking": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_VmsControllerVersionedReference"
+        },
+        "vmsOperator": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+        },
+        "_parkingVmsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsUsedToManageParking"
+      ]
+    },
+    "PedestrianAccess": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "style": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_PedestrianAccessStyleEnum"
+        },
+        "numberOfPortals": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_pedestrianAccessExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Access"
+        }
+      ]
+    },
+    "PedestrianAccessStyleEnum": {
+      "type": "string",
+      "enum": [
+        "cargoShippingDoor",
+        "door",
+        "doorWithAccessCredential",
+        "doorWithSecurityReview",
+        "emergencyExitDoor",
+        "_extended"
+      ]
+    },
+    "PermitsAndProhibitions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "activity": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ActivityEnum"
+        },
+        "regulation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_RegulationEnum"
+        },
+        "_permitsAndProhibitionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "activity",
+        "regulation"
+      ]
+    },
+    "Place": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "layout": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_LayoutEnum"
+        },
+        "availableFloors": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "commonComponents": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CommonComponents"
+        },
+        "_placeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementGeneral"
+        }
+      ]
+    },
+    "PlaceStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "status": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingPlaceStatusEnum"
+          },
+          "minItems": 0
+        },
+        "parkingPlaceFullAtFloor": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/String"
+          },
+          "minItems": 0
+        },
+        "declarationValidNow": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_placeStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        }
+      ]
+    },
+    "PointLocationForParking": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "junctionInformation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/JunctionInformation"
+        },
+        "_pointLocationForParkingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointLocation"
+        }
+      ]
+    },
+    "PointOfInterest": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_pointOfInterestExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RelatedLocation"
+        }
+      ]
+    },
+    "PublicTransportSchedule": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "line": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/String"
+          },
+          "minItems": 0
+        },
+        "nextDepartures": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Time"
+          },
+          "minItems": 0
+        },
+        "destination": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "interval": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "travelTimeToDestination": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "ptType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_PublicTransportTypeEnum"
+          },
+          "minItems": 0
+        },
+        "ptVehicleType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_PublicTransportVehicleType"
+        },
+        "ptVehicleName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "ptOperator": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "validity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Validity"
+        },
+        "_publicTransportScheduleExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "lastUpdated"
+      ]
+    },
+    "PublicTransportStop": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "publicTransportSchedule": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/PublicTransportSchedule"
+          },
+          "minItems": 0
+        },
+        "_publicTransportStopExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RelatedLocation"
+        }
+      ]
+    },
+    "PublicTransportTypeEnum": {
+      "type": "string",
+      "enum": [
+        "freePublicTransport",
+        "nonFreePublicTransport",
+        "onDemandTraffic",
+        "railReplacementService",
+        "shuttleService",
+        "_extended"
+      ]
+    },
+    "PublicTransportVehicleType": {
+      "type": "string",
+      "enum": [
+        "bus",
+        "coach",
+        "miniBus",
+        "subway",
+        "taxi",
+        "train",
+        "tram",
+        "_extended"
+      ]
+    },
+    "RegulationEnum": {
+      "type": "string",
+      "enum": [
+        "permitted",
+        "prohibited",
+        "punishable",
+        "seasonalHeterogeneous",
+        "permittedOnlyAtParticularTimes",
+        "permittedOnlyOnParticularAreas",
+        "prohibitedAtParticularTimes",
+        "prohibitedOnParticularAreas",
+        "onlyOnRequest",
+        "heterogeneous",
+        "onlyOutsideBuildings",
+        "onlyInsideBuildings",
+        "unspecified",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "RelatedLocation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "specialLocation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_SpecialLocationEnum"
+        },
+        "locationReference": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "distanceFromOrigin": {
+          "$ref": "DATEXII_3_Common.json#/definitions/IntegerMetreDistanceValue"
+        },
+        "_relatedLocationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "ResponsibilityRoleAssignment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ContactTypeEnum"
+        },
+        "organisation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+          },
+          "minItems": 1
+        },
+        "_responsibilityRoleAssignmentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type",
+        "organisation"
+      ]
+    },
+    "RgbColour": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "red": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "green": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "blue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "colourName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_rgbColourExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "blue",
+        "green",
+        "red"
+      ]
+    },
+    "RoadInformationEnhanced": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "typeOfRoad": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_RoadTypeEnum"
+        },
+        "roadOrigination": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "_roadInformationEnhancedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/RoadInformation"
+        }
+      ]
+    },
+    "RoadTypeEnum": {
+      "type": "string",
+      "enum": [
+        "motorway",
+        "trunkRoad",
+        "mainRoad",
+        "other",
+        "_extended"
+      ]
+    },
+    "SafetyStandardClassification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "securityFeature": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingSecurityEnum"
+        },
+        "securityLevel": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_EsporgStandardLevelEnum"
+        },
+        "additionalSecurity": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "safety": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingSafetyEnum"
+          },
+          "minItems": 0
+        },
+        "additionalSafety": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "supervision": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingSupervisionEnum"
+          },
+          "minItems": 0
+        },
+        "securityNationalClassification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "certifiedSecureParking": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/CertifiedSecureParking"
+          },
+          "minItems": 0
+        },
+        "_safetyStandardClassificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "SessionActivationModeEnum": {
+      "type": "string",
+      "enum": [
+        "payByPlate",
+        "payBySpace",
+        "payAndDisplay",
+        "ticket",
+        "permit",
+        "app",
+        "_extended"
+      ]
+    },
+    "Space": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "spaceMaximumUsableDimensions": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "operatingPattern": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_OperatingPattern"
+          },
+          "minItems": 0
+        },
+        "additionalCharacteristics": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AdditionalCharacteristics"
+        },
+        "_spaceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementGeneral"
+        }
+      ]
+    },
+    "SpaceStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "occupied": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "declarationValidNow": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "measurementOrCalculationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "lastCalibration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_spaceStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "occupied"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        }
+      ]
+    },
+    "SpecialLocationEnum": {
+      "type": "string",
+      "enum": [
+        "airportTerminal",
+        "exhibitonCentre",
+        "shoppingCentre",
+        "specificFacility",
+        "trainStation",
+        "campGround",
+        "themePark",
+        "ferryTerminal",
+        "vehicleOnRailTerminal",
+        "coachStation",
+        "cableCarStation",
+        "publicTransportStation",
+        "market",
+        "religiousCentre",
+        "conventionCentre",
+        "cinema",
+        "skiLift",
+        "other",
+        "_extended"
+      ]
+    },
+    "SpecificArea": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "characteristics": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Characteristics"
+        },
+        "_specificAreaExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/IdentifiedArea"
+        }
+      ]
+    },
+    "StaffEnum": {
+      "type": "string",
+      "enum": [
+        "staffed",
+        "unstaffed",
+        "temporary",
+        "_extended"
+      ]
+    },
+    "StatusConfiguration": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingPlaceStatusEnum"
+        },
+        "thresholds": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_Thresholds"
+        },
+        "statusColourMapping": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/RgbColour"
+        },
+        "_statusConfigurationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingStatus",
+        "thresholds"
+      ]
+    },
+    "StatusValidity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_statusValidityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "StructureGradeEnum": {
+      "type": "string",
+      "enum": [
+        "groundLevel",
+        "aboveGround",
+        "underground",
+        "_extended"
+      ]
+    },
+    "StructureTypeEnum": {
+      "type": "string",
+      "enum": [
+        "onStreet",
+        "offStreetSurface",
+        "offStreetStructure",
+        "_extended"
+      ]
+    },
+    "SubplaceElement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "subplaceType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_ElementDescriptorEnum"
+        },
+        "commonComponents": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CommonComponents"
+        },
+        "_subplaceElementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/HierarchyElementGeneral"
+        }
+      ]
+    },
+    "SupplementalFacility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "reference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "_supplementalFacilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "reference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/IdentifiedArea"
+        }
+      ]
+    },
+    "Supply": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "quantity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "viewType": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_SupplyViewTypeEnum"
+        },
+        "startValidUsagePeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "endValidUsagePeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "spacesReference": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+          },
+          "minItems": 0
+        },
+        "_supplyExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "quantity",
+        "viewType"
+      ]
+    },
+    "SupplyViewTypeEnum": {
+      "type": "string",
+      "enum": [
+        "spaceView",
+        "vehicleView",
+        "_extended"
+      ]
+    },
+    "ThresholdConfiguration": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "lastMaximumOccupancy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "statusConfiguration": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/StatusConfiguration"
+          },
+          "minItems": 1
+        },
+        "_thresholdConfigurationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "statusConfiguration"
+      ]
+    },
+    "Thresholds": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "lowerThreshold": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "upperThreshold": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "lowerThresholdInPercent": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "upperThresholdInPercent": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "boundaryValuesExcluded": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_thresholdsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "TruckParkingDynamicManagementEnum": {
+      "type": "string",
+      "enum": [
+        "compactParking",
+        "queueParking",
+        "noDynamicParkingManagement",
+        "other",
+        "_extended"
+      ]
+    },
+    "UsageScenario": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_ParkingUsageScenarioEnum"
+          },
+          "minItems": 1
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "truckParkingDynamicManagement": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/_TruckParkingDynamicManagementEnum"
+          },
+          "minItems": 0
+        },
+        "eventParkingType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "_usageScenarioExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OperatingPattern"
+        }
+      ]
+    },
+    "ValidityByOffset": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "statusTimeOffsetToOrigin": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_validityByOffsetExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "statusTimeOffsetToOrigin"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StatusValidity"
+        }
+      ]
+    },
+    "ValidityByPeriod": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "validityTimeSpecification": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "_validityByPeriodExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "validityTimeSpecification"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StatusValidity"
+        }
+      ]
+    },
+    "ValidityByTime": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "statusTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_validityByTimeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "statusTime"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/StatusValidity"
+        }
+      ]
+    },
+    "VehicleCountAndRate": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementSiteReference": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_MeasurementSiteVersionedReference"
+        },
+        "measuredValueIndex": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "dedicatedAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "lastCalibration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "coveringPetrolStationArea": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "vehicleCountWithinInterval": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/VehicleCountWithinInterval"
+          },
+          "minItems": 0
+        },
+        "vehicleRate": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/VehicleRate"
+          },
+          "minItems": 0
+        },
+        "measurementTimeDefault": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementOrCalculationTime"
+        },
+        "_vehicleCountAndRateExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VehicleCountValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehicleCount": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_vehicleCountValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleCount"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "VehicleCountWithinInterval": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementInterval": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "numberOfIncomingVehicles": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicleCountValue"
+        },
+        "numberOfOutgoingVehicles": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicleCountValue"
+        },
+        "changeOfOccupiedSpaces": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/OccupancyChangeValue"
+        },
+        "countedVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "measurementOrCalculationTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementOrCalculationTime"
+        },
+        "_vehicleCountWithinIntervalExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VehicleRate": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "fillRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "exitRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "vehicleFlowRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleFlowValue"
+        },
+        "measuredVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+        },
+        "measurementOrCalculationTime": {
+          "$ref": "DATEXII_3_RoadTrafficData.json#/definitions/MeasurementOrCalculationTime"
+        },
+        "_vehicleRateExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VehiclesOnSiteThresholds": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_vehiclesOnSiteThresholdsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Thresholds"
+        }
+      ]
+    },
+    "VehicularAccess": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "rentalCarReturn": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "usableForPedestrian": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "accessLaneSpecific": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Parking.json#/definitions/AccessLaneSpecific"
+          },
+          "minItems": 0
+        },
+        "correspondingJunction": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessJunction"
+        },
+        "_vehicularAccessExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Access"
+        }
+      ]
+    }
+  }
+}

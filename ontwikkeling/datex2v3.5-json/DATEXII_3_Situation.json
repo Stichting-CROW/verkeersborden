@@ -1,0 +1,3601 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_AbnormalTrafficTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTrafficTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccidentCauseEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AccidentCauseEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccidentExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "AccidentExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/AccidentExtendedUrban",
+          "type": "object"
+        }
+      }
+    },
+    "_AccidentTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AccidentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Activity": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationDisturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "situationPublicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "situationAuthorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        }
+      }
+    },
+    "_AnimalPresenceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AuthorityOperationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CauseTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CauseTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CollisionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CollisionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CommentTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CommentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ComplianceOptionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ComplianceOptionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Conditions": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationNonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "situationWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "situationPoorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        }
+      }
+    },
+    "_ConstructionWorkTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorkTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DelayBandEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DelayBandEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DelaysTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DelaysTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DisturbanceActivityTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DrivingConditionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DrivingConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EnvironmentalObstructionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentOrSystemFaultTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFaultTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentOrSystemTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentOrSystemTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "accessControlSystem",
+        "parkingSensors",
+        "trafficSensors"
+      ]
+    },
+    "_GeneralInstructionToRoadUsersTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralInstructionToRoadUsersTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GeneralInstructionToRoadUsersTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "cyclistsMustDismount",
+        "pedestriansMustUseOtherSide"
+      ]
+    },
+    "_GeneralNetworkManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralNetworkManagementTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GeneralNetworkManagementTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "restrictedAreasAccessInOperation",
+        "tollingInOperation",
+        "tollingNotInOperation"
+      ]
+    },
+    "_ImpactExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "ImpactExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/ImpactExtendedUrban",
+          "type": "object"
+        }
+      }
+    },
+    "_InfrastructureDamageTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InfrastructureDamageTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InfrastructureDamageTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "collapsedRoadSurface"
+      ]
+    },
+    "_InjuryStatusTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InjuryStatusTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InvolvementRolesEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InvolvementRolesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MaintenanceVehicleActionsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceVehicleActionsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MobilityTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MobilityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_NetworkManagementExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "NetworkManagementExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/NetworkManagementExtendedUrban",
+          "type": "object"
+        },
+        "NetworkManagementExtendedRerouting": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/NetworkManagementExtendedRerouting",
+          "type": "object"
+        }
+      }
+    },
+    "_NonWeatherRelatedRoadConditionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Obstruction": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationInfrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "situationEnvironmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "situationAnimalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "situationGeneralObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "situationVehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        }
+      }
+    },
+    "_ObstructionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ObstructionTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ObstructionTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "buildingWork",
+        "firefightersInOperation",
+        "policeInOperation"
+      ]
+    },
+    "_OperatorActionExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "SignSetting": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/SignSetting",
+          "type": "object"
+        },
+        "OperatorActionExtendedTmplan": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/OperatorActionExtendedTmplan",
+          "type": "object"
+        }
+      }
+    },
+    "_OperatorActionOriginEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorActionOriginEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OperatorActionStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorActionStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PersonCategoryEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PersonCategoryEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PlacesEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PlacesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PoorEnvironmentTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ProbabilityOfOccurrenceEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ProbabilityOfOccurrenceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RelativeTrafficFlowEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RelativeTrafficFlowEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ReroutingManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadMaintenanceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadMaintenanceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadOperatorServiceDisruptionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruptionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadOrCarriagewayOrLaneManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOrCarriagewayOrLaneManagementTypeEnumExtensionType"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadOrCarriagewayOrLaneManagementTypeEnumExtensionType": {
+      "type": "string",
+      "enum": [
+        "createOneDirectionWay",
+        "createTwoDirectionWay",
+        "laneInOperation",
+        "laneMoved",
+        "laneNotInOperation",
+        "laneRestrictionInOperation",
+        "parkingProhibitionInOperation",
+        "reverseTrafficDirection",
+        "waitingProhibitionInOperation"
+      ]
+    },
+    "_RoadsideAssistanceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadsideAssistanceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadSurfaceConditions": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationNonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "situationWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        }
+      }
+    },
+    "_RoadworksDurationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadworksDurationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadworksExtensionType": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "StreetWorks": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/StreetWorks",
+          "type": "object"
+        }
+      }
+    },
+    "_RoadworksScaleEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadworksScaleEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ServiceDisruptionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruptionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ServiceInformation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationRoadOperatorServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruption"
+        },
+        "situationServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruption"
+        },
+        "situationTransitInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitInformation"
+        }
+      }
+    },
+    "_SeverityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SeverityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SituationRecord": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationInfrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "situationEnvironmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "situationAnimalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "situationGeneralObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "situationVehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        },
+        "situationDisturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "situationPublicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "situationAuthorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        },
+        "situationAbnormalTraffic": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTraffic"
+        },
+        "situationEquipmentOrSystemFault": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFault"
+        },
+        "situationAccident": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Accident"
+        },
+        "urbanExtensionsAccidentExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/AccidentExtendedUrban"
+        },
+        "situationConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        },
+        "situationNonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "situationWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "situationPoorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        },
+        "situationGenericSituationRecord": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GenericSituationRecord"
+        },
+        "situationRoadOperatorServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruption"
+        },
+        "situationServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruption"
+        },
+        "situationTransitInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitInformation"
+        },
+        "urbanExtensionsNetworkManagementExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/NetworkManagementExtendedUrban"
+        },
+        "situationReroutingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagement"
+        },
+        "situationRoadOrCarriagewayOrLaneManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagement"
+        },
+        "situationSpeedManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagement"
+        },
+        "situationGeneralInstructionOrMessageToRoadUsers": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionOrMessageToRoadUsers"
+        },
+        "situationWinterDrivingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WinterDrivingManagement"
+        },
+        "situationGeneralNetworkManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagement"
+        },
+        "reroutingManagementEnhancedNetworkManagementExtendedRerouting": {
+          "$ref": "DATEXII_3_ReroutingManagementEnhanced.json#/definitions/NetworkManagementExtendedRerouting"
+        },
+        "trafficManagementPlanSignSetting": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/SignSetting"
+        },
+        "trafficManagementPlanOperatorActionExtendedTmplan": {
+          "$ref": "DATEXII_3_TrafficManagementPlan.json#/definitions/OperatorActionExtendedTmplan"
+        },
+        "situationConstructionWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorks"
+        },
+        "situationMaintenanceWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceWorks"
+        },
+        "urbanExtensionsStreetWorks": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/StreetWorks"
+        },
+        "situationRoadsideAssistance": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadsideAssistance"
+        }
+      }
+    },
+    "_SituationRecordVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SituationRecord"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SituationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Situation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SpeedManagementTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SubjectTypeOfWorksEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SubjectTypeOfWorksEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficConstrictionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficConstrictionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficElement": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "situationInfrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "situationEnvironmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "situationAnimalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "situationGeneralObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "situationVehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        },
+        "situationDisturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "situationPublicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "situationAuthorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        },
+        "situationAbnormalTraffic": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTraffic"
+        },
+        "situationEquipmentOrSystemFault": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFault"
+        },
+        "situationAccident": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Accident"
+        },
+        "urbanExtensionsAccidentExtendedUrban": {
+          "$ref": "DATEXII_3_UrbanExtensions.json#/definitions/AccidentExtendedUrban"
+        },
+        "situationConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        },
+        "situationNonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "situationWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "situationPoorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        }
+      }
+    },
+    "_TrafficFlowCharacteristicsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficFlowCharacteristicsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TransitServiceInformationEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitServiceInformationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TransitServiceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitServiceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleObstructionTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleProblemCauseEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleProblemCauseEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AbnormalTraffic": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "abnormalTrafficType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AbnormalTrafficTypeEnum"
+        },
+        "numberOfVehiclesWaiting": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "queueLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "relativeTrafficFlow": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RelativeTrafficFlowEnum"
+        },
+        "trafficFlowCharacteristics": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficFlowCharacteristicsEnum"
+        },
+        "trafficTrendType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_TrafficTrendTypeEnum"
+        },
+        "_abnormalTrafficExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AbnormalTrafficTypeEnum": {
+      "type": "string",
+      "enum": [
+        "stationaryTraffic",
+        "queuingTraffic",
+        "slowTraffic",
+        "heavyTraffic",
+        "unspecifiedAbnormalTraffic",
+        "other",
+        "_extended"
+      ]
+    },
+    "Accident": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "accidentCause": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentCauseEnum"
+        },
+        "accidentType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentTypeEnum"
+          },
+          "minItems": 1
+        },
+        "collisionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CollisionTypeEnum"
+        },
+        "totalNumberOfPeopleInvolved": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "totalNumberOfVehiclesInvolved": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "vehicleInvolved": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Vehicle"
+          },
+          "minItems": 0
+        },
+        "groupOfVehiclesInvolved": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/GroupOfVehiclesInvolved"
+          },
+          "minItems": 0
+        },
+        "groupOfPeopleInvolved": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/GroupOfPeopleInvolved"
+          },
+          "minItems": 0
+        },
+        "_accidentExtension": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentExtensionType",
+          "type": "object"
+        }
+      },
+      "required": [
+        "accidentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AccidentCauseEnum": {
+      "type": "string",
+      "enum": [
+        "avoidanceOfObstacles",
+        "driverDistraction",
+        "driverDrugAbuse",
+        "driverIllness",
+        "exceedingSpeedsLimits",
+        "excessAlcohol",
+        "excessiveDriverTiredness",
+        "impermissibleManoeuvre",
+        "limitedVisibility",
+        "notKeepingASafeDistance",
+        "onTheWrongSideOfTheRoad",
+        "pedestrianInRoad",
+        "poorLaneAdherence",
+        "poorMergeEntryOrExitJudgement",
+        "poorRoadSurfaceCondition",
+        "poorSurfaceAdherence",
+        "undisclosed",
+        "unknown",
+        "vehicleFailure",
+        "other",
+        "_extended"
+      ]
+    },
+    "AccidentTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accident",
+        "accidentInvolvingHazardousMaterials",
+        "accidentInvolvingHeavyLorries",
+        "accidentInvolvingMassTransitVehicle",
+        "accidentInvolvingPublicTransport",
+        "accidentInvolvingRadioactiveMaterial",
+        "accidentInvolvingTrain",
+        "collision",
+        "multipleVehicleAccident",
+        "secondaryAccident",
+        "seriousInjuryOrFatalAccident",
+        "vehicleStuckUnderBridge",
+        "other",
+        "_extended"
+      ]
+    },
+    "Activity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "mobilityOfActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "_activityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AnimalPresenceObstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "alive": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "animalPresenceType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AnimalPresenceTypeEnum"
+        },
+        "_animalPresenceObstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "animalPresenceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "AnimalPresenceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "animalsOnTheRoad",
+        "herdOfAnimalsOnTheRoad",
+        "largeAnimalsOnTheRoad",
+        "smallAnimalsOnTheRoad",
+        "wildAnimalsOnTheRoad",
+        "_extended"
+      ]
+    },
+    "AuthorityOperation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "authorityOperationType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AuthorityOperationTypeEnum"
+        },
+        "_authorityOperationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "authorityOperationType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "AuthorityOperationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accidentInvestigationWork",
+        "bombSquadInAction",
+        "civilEmergency",
+        "customsOperation",
+        "juridicalReconstruction",
+        "policeCheckPoint",
+        "policeInvestigation",
+        "roadOperatorCheckPoint",
+        "snowChainOnBoardOrSnowTyresMountedCheck",
+        "snowChainOrSnowTyresMountedCheck",
+        "survey",
+        "undefinedAuthorityActivity",
+        "transportOfVip",
+        "vehicleInspectionCheckPoint",
+        "vehicleWeighing",
+        "weighInMotion",
+        "other",
+        "_extended"
+      ]
+    },
+    "Cause": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "causeDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "causeType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CauseTypeEnum"
+        },
+        "detailedCauseType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DetailedCauseType"
+        },
+        "managedCause": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecordReference"
+        },
+        "_causeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "CauseTypeEnum": {
+      "type": "string",
+      "enum": [
+        "abnormalTraffic",
+        "accident",
+        "animalPresence",
+        "authorityOperation",
+        "constructionWork",
+        "disturbance",
+        "drivingConditions",
+        "environmentalObstruction",
+        "equipmentOrSystemFault",
+        "infrastructureDamageObstruction",
+        "instructionToRoadUsers",
+        "networkManagement",
+        "nonWeatherRelatedRoadConditions",
+        "obstruction",
+        "poorEnvironment",
+        "publicEvent",
+        "rerouting",
+        "roadMaintenance",
+        "roadOperatorServiceDisruption",
+        "roadOrCarriagewayOrLaneManagement",
+        "roadsideAssistance",
+        "roadsideServiceDisruption",
+        "speedManagement",
+        "transitServiceDisruption",
+        "vehicleObstruction",
+        "weatherRelatedRoadConditions",
+        "winterEquipmentManagement",
+        "earlierEvent",
+        "earlierIncident",
+        "holidayTraffic",
+        "problemsAtBorderPost",
+        "problemsAtCustomPost",
+        "problemsOnLocalRoads",
+        "roadsideEvent",
+        "rubberNecking",
+        "technicalProblems",
+        "vandalism",
+        "other",
+        "_extended"
+      ]
+    },
+    "CollisionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "collisionWithAnimal",
+        "collisionWithObstacle",
+        "collisionWithPerson",
+        "headOnCollision",
+        "headOnOrSideCollision",
+        "multipleVehicleCollision",
+        "rearCollision",
+        "sideCollision",
+        "_extended"
+      ]
+    },
+    "Comment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "comment": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "commentDateTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "commentType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CommentTypeEnum"
+        },
+        "_commentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comment"
+      ]
+    },
+    "CommentTypeEnum": {
+      "type": "string",
+      "enum": [
+        "abnormalLoadMovementNote",
+        "dataProcessingNote",
+        "description",
+        "internalNote",
+        "roadworksName",
+        "warning",
+        "other",
+        "_extended"
+      ]
+    },
+    "ComplianceOptionEnum": {
+      "type": "string",
+      "enum": [
+        "advisory",
+        "mandatory",
+        "_extended"
+      ]
+    },
+    "Conditions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "drivingConditionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DrivingConditionTypeEnum"
+        },
+        "_conditionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "ConstructionWorks": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "constructionWorkType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ConstructionWorkTypeEnum"
+        },
+        "_constructionWorksExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "constructionWorkType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Roadworks"
+        }
+      ]
+    },
+    "ConstructionWorkTypeEnum": {
+      "type": "string",
+      "enum": [
+        "blastingWork",
+        "constructionWork",
+        "demolitionWork",
+        "roadImprovementOrUpgrading",
+        "roadWideningWork",
+        "_extended"
+      ]
+    },
+    "DelayBandEnum": {
+      "type": "string",
+      "enum": [
+        "negligible",
+        "upToTenMinutes",
+        "betweenTenMinutesAndThirtyMinutes",
+        "betweenThirtyMinutesAndOneHour",
+        "betweenOneHourAndThreeHours",
+        "betweenThreeHoursAndSixHours",
+        "longerThanSixHours",
+        "_extended"
+      ]
+    },
+    "Delays": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "delayBand": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DelayBandEnum"
+        },
+        "delaysType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DelaysTypeEnum"
+        },
+        "delayTimeValue": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_delaysExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DelaysTypeEnum": {
+      "type": "string",
+      "enum": [
+        "delays",
+        "delaysOfUncertainDuration",
+        "longDelays",
+        "veryLongDelays",
+        "_extended"
+      ]
+    },
+    "DetailedCauseType": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "abnormalTrafficType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AbnormalTrafficTypeEnum"
+        },
+        "accidentType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentTypeEnum"
+          },
+          "minItems": 0
+        },
+        "animalPresenceType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AnimalPresenceTypeEnum"
+        },
+        "authorityOperationType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AuthorityOperationTypeEnum"
+        },
+        "constructionWorkType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ConstructionWorkTypeEnum"
+        },
+        "disturbanceActivityType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DisturbanceActivityTypeEnum"
+        },
+        "drivingConditionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DrivingConditionTypeEnum"
+        },
+        "environmentalObstructionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EnvironmentalObstructionTypeEnum"
+        },
+        "equipmentOrSystemFaultType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemFaultTypeEnum"
+        },
+        "generalInstructionToRoadUsersType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "generalNetworkManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralNetworkManagementTypeEnum"
+        },
+        "infrastructureDamageType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InfrastructureDamageTypeEnum"
+        },
+        "nonWeatherRelatedRoadConditionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_NonWeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "obstructionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ObstructionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "poorEnvironmentType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PoorEnvironmentTypeEnum"
+          },
+          "minItems": 0
+        },
+        "publicEventType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "reroutingManagementType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ReroutingManagementTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadMaintenanceType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadMaintenanceTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadOperatorServiceDisruptionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOperatorServiceDisruptionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadOrCarriagewayOrLaneManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "roadsideAssistanceType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadsideAssistanceTypeEnum"
+        },
+        "roadsideServiceDisruptionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ServiceDisruptionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "speedManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SpeedManagementTypeEnum"
+        },
+        "transitServiceInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceInformationEnum"
+        },
+        "vehicleObstructionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleObstructionTypeEnum"
+        },
+        "weatherRelatedRoadConditionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "winterEquipmentManagementType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_WinterEquipmentManagementTypeEnum"
+        },
+        "_detailedCauseTypeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisturbanceActivity": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "disturbanceActivityType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DisturbanceActivityTypeEnum"
+        },
+        "_disturbanceActivityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "disturbanceActivityType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "DisturbanceActivityTypeEnum": {
+      "type": "string",
+      "enum": [
+        "airRaid",
+        "altercationOfVehicleOccupants",
+        "assault",
+        "assetDestruction",
+        "attack",
+        "attackOnVehicle",
+        "blockadeOrBarrier",
+        "bombAlert",
+        "crowd",
+        "demonstration",
+        "evacuation",
+        "filterBlockade",
+        "goSlowOperation",
+        "gunfireOnRoadway",
+        "illVehicleOccupants",
+        "march",
+        "peopleThrowingObjectsOnTheRoad",
+        "publicDisturbance",
+        "radioactiveLeakAlert",
+        "riot",
+        "sabotage",
+        "securityAlert",
+        "securityIncident",
+        "sightseersObstructingAccess",
+        "strike",
+        "terroristIncident",
+        "theft",
+        "toxicCloudAlert",
+        "unspecifiedAlert",
+        "other",
+        "_extended"
+      ]
+    },
+    "DrivingConditionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "impossible",
+        "hazardous",
+        "normal",
+        "passableWithCare",
+        "unknown",
+        "veryHazardous",
+        "winterConditions",
+        "other",
+        "_extended"
+      ]
+    },
+    "EnvironmentalObstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "depth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "environmentalObstructionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EnvironmentalObstructionTypeEnum"
+        },
+        "_environmentalObstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "environmentalObstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "EnvironmentalObstructionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "avalanches",
+        "earthquakeDamage",
+        "fallenTrees",
+        "fallingIce",
+        "fallingLightIceOrSnow",
+        "flashFloods",
+        "flooding",
+        "forestFire",
+        "grassFire",
+        "landslips",
+        "mudSlide",
+        "sewerOverflow",
+        "rockfalls",
+        "seriousFire",
+        "smokeOrFumes",
+        "stormDamage",
+        "subsidence",
+        "other",
+        "_extended"
+      ]
+    },
+    "EquipmentOrSystemFault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "equipmentOrSystemFaultType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemFaultTypeEnum"
+        },
+        "faultyEquipmentOrSystemType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemTypeEnum"
+        },
+        "_equipmentOrSystemFaultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "equipmentOrSystemFaultType",
+        "faultyEquipmentOrSystemType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "EquipmentOrSystemFaultTypeEnum": {
+      "type": "string",
+      "enum": [
+        "notWorking",
+        "outOfService",
+        "workingIncorrectly",
+        "workingIntermittently",
+        "_extended"
+      ]
+    },
+    "EquipmentOrSystemTypeEnum": {
+      "type": "string",
+      "enum": [
+        "anprCameras",
+        "automatedTollSystem",
+        "cctvCameras",
+        "emergencyRoadsideTelephones",
+        "fireDetectionEquipment",
+        "galleryLights",
+        "laneControlSigns",
+        "levelCrossing",
+        "matrixSigns",
+        "rampControls",
+        "roadsideCommunicationsSystem",
+        "roadsidePowerSystem",
+        "speedControlSigns",
+        "streetLighting",
+        "temporaryTrafficLights",
+        "tollGates",
+        "trafficLightSets",
+        "trafficSignals",
+        "tunnelEmergencyPhones",
+        "tunnelFireFightingEquipment",
+        "tunnelLights",
+        "tunnelMobileCommunication",
+        "tunnelRadioCommunication",
+        "tunnelSafetySystem",
+        "tunnelVentilation",
+        "variableMessageSigns",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralInstructionOrMessageToRoadUsers": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "generalInstructionToRoadUsersType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "generalMessageToRoadUsers": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_generalInstructionOrMessageToRoadUsersExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "GeneralInstructionToRoadUsersTypeEnum": {
+      "type": "string",
+      "enum": [
+        "allowEmergencyVehiclesToPass",
+        "approachWithCare",
+        "avoidTheArea",
+        "closeAllWindowsTurnOffHeaterAndVents",
+        "crossJunctionWithCare",
+        "doNotAllowUnnecessaryGaps",
+        "doNotLeaveYourVehicle",
+        "doNotThrowOutAnyBurningObjects",
+        "doNotUseNavigationSystems",
+        "driveCarefully",
+        "driveWithExtremeCaution",
+        "flashYourLights",
+        "followTheVehicleInFrontSmoothly",
+        "increaseNormalFollowingDistance",
+        "inEmergencyWaitForPatrolService",
+        "keepYourDistance",
+        "leaveYourVehicleProceedToNextSafePlace",
+        "noNakedFlames",
+        "noOvertaking",
+        "noSmoking",
+        "noStopping",
+        "noUturns",
+        "observeAmberAlert",
+        "observeSignals",
+        "observeSigns",
+        "onlyTravelIfAbsolutelyNecessary",
+        "overtakeWithCare",
+        "pullOverToTheEdgeOfTheRoadway",
+        "stopAtNextSafePlace",
+        "stopAtNextServiceArea",
+        "switchOffEngine",
+        "switchOffMobilePhonesAndTwoWayRadios",
+        "testYourBrakes",
+        "useBusService",
+        "useFogLights",
+        "useHazardWarningLights",
+        "useHeadlights",
+        "useRailService",
+        "useTramService",
+        "useUndergroundService",
+        "waitForEscortVehicle",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralNetworkManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "generalNetworkManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralNetworkManagementTypeEnum"
+        },
+        "trafficManuallyDirectedBy": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_PersonCategoryEnum"
+        },
+        "_generalNetworkManagementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "generalNetworkManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "GeneralNetworkManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "bridgeSwingInOperation",
+        "convoyService",
+        "obstacleSignalling",
+        "rampMeteringInOperation",
+        "temporaryTrafficLights",
+        "tollGatesOpen",
+        "trafficBeingManuallyDirected",
+        "trafficHeld",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralObstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "obstructionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ObstructionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "groupOfPeopleInvolved": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/GroupOfPeopleInvolved"
+          },
+          "minItems": 0
+        },
+        "_generalObstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "obstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "GenericSituationRecord": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "genericSituationRecordName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_genericSituationRecordExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "genericSituationRecordName"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "GroupOfPeopleInvolved": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfPeople": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "injuryStatusType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InjuryStatusTypeEnum"
+        },
+        "involvementRole": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InvolvementRolesEnum"
+        },
+        "categoryOfPeopleInvolved": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_PersonCategoryEnum"
+        },
+        "_groupOfPeopleInvolvedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Impact": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "capacityRemaining": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "numberOfLanesRestricted": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfOperationalLanes": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "residualLaneWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "residualRoadWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "delays": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Delays"
+        },
+        "_impactExtension": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ImpactExtensionType",
+          "type": "object"
+        }
+      }
+    },
+    "InfrastructureDamageObstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "infrastructureDamageType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InfrastructureDamageTypeEnum"
+        },
+        "_infrastructureDamageObstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "infrastructureDamageType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "InfrastructureDamageTypeEnum": {
+      "type": "string",
+      "enum": [
+        "burstPipe",
+        "burstWaterMain",
+        "collapsedSewer",
+        "damagedBridge",
+        "damagedCrashBarrier",
+        "damagedFlyover",
+        "damagedGallery",
+        "damagedGantry",
+        "damagedRoadSurface",
+        "damagedTunnel",
+        "damagedViaduct",
+        "fallenPowerCables",
+        "gasLeak",
+        "weakBridge",
+        "other",
+        "_extended"
+      ]
+    },
+    "InjuryStatusTypeEnum": {
+      "type": "string",
+      "enum": [
+        "dead",
+        "injured",
+        "seriouslyInjured",
+        "slightlyInjured",
+        "uninjured",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "InvolvementRolesEnum": {
+      "type": "string",
+      "enum": [
+        "cyclist",
+        "motorcyclist",
+        "pedestrian",
+        "unknown",
+        "vehicleDriver",
+        "vehicleOccupant",
+        "vehiclePassenger",
+        "witness",
+        "_extended"
+      ]
+    },
+    "MaintenanceVehicleActionsEnum": {
+      "type": "string",
+      "enum": [
+        "maintenanceAction",
+        "maintenanceVehiclesMergingIntoTrafficFlow",
+        "slowMoving",
+        "stoppingToServiceEquipments",
+        "_extended"
+      ]
+    },
+    "MaintenanceVehicles": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfMaintenanceVehicles": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maintenanceVehicleActions": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_MaintenanceVehicleActionsEnum"
+          },
+          "minItems": 0
+        },
+        "_maintenanceVehiclesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "MaintenanceWorks": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roadMaintenanceType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadMaintenanceTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_maintenanceWorksExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadMaintenanceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Roadworks"
+        }
+      ]
+    },
+    "Mobility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "mobilityType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_MobilityTypeEnum"
+        },
+        "speed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "_mobilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "mobilityType"
+      ]
+    },
+    "MobilityTypeEnum": {
+      "type": "string",
+      "enum": [
+        "mobile",
+        "stationary",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "NetworkManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "complianceOption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ComplianceOptionEnum"
+        },
+        "applicableForTrafficDirection": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_DirectionEnum"
+          },
+          "minItems": 0
+        },
+        "applicableForTrafficType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficTypeEnum"
+          },
+          "minItems": 0
+        },
+        "placesAtWhichApplicable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PlacesEnum"
+          },
+          "minItems": 0
+        },
+        "automaticallyInitiated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "forVehiclesWithCharacteristicsOf": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "_networkManagementExtension": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_NetworkManagementExtensionType",
+          "type": "object"
+        }
+      },
+      "required": [
+        "complianceOption"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "NonWeatherRelatedRoadConditions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nonWeatherRelatedRoadConditionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_NonWeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_nonWeatherRelatedRoadConditionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "nonWeatherRelatedRoadConditionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadSurfaceConditions"
+        }
+      ]
+    },
+    "NonWeatherRelatedRoadConditionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "dieselOnRoad",
+        "leavesOnRoad",
+        "looseChippings",
+        "looseSandOnRoad",
+        "mudOnRoad",
+        "oilOnRoad",
+        "petrolOnRoad",
+        "roadMarkingNotPresent",
+        "roadSurfaceInPoorCondition",
+        "slipperyRoad",
+        "other",
+        "_extended"
+      ]
+    },
+    "Obstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "numberOfObstructions": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "mobilityOfObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "_obstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "ObstructionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "airCrash",
+        "childrenOnRoadway",
+        "clearanceWork",
+        "craneOperating",
+        "cyclistsOnRoadway",
+        "debris",
+        "explosion",
+        "explosionHazard",
+        "hazardsOnTheRoad",
+        "incident",
+        "industrialAccident",
+        "objectOnTheRoad",
+        "objectsFallingFromMovingVehicle",
+        "obstructionOnTheRoad",
+        "peopleOnRoadway",
+        "railCrash",
+        "rescueAndRecoveryWork",
+        "severeFrostDamagedRoadway",
+        "shedLoad",
+        "snowAndIceDebris",
+        "spillageOccurringFromMovingVehicle",
+        "spillageOnTheRoad",
+        "unprotectedAccidentArea",
+        "other",
+        "_extended"
+      ]
+    },
+    "OperatorAction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "actionOrigin": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_OperatorActionOriginEnum"
+        },
+        "actionPlanIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "operatorActionStatus": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_OperatorActionStatusEnum"
+        },
+        "_operatorActionExtension": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_OperatorActionExtensionType",
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "OperatorActionOriginEnum": {
+      "type": "string",
+      "enum": [
+        "external",
+        "internal",
+        "_extended"
+      ]
+    },
+    "OperatorActionStatusEnum": {
+      "type": "string",
+      "enum": [
+        "requested",
+        "approved",
+        "beingImplemented",
+        "implemented",
+        "rejected",
+        "terminationRequested",
+        "beingTerminated",
+        "_extended"
+      ]
+    },
+    "PersonCategoryEnum": {
+      "type": "string",
+      "enum": [
+        "adult",
+        "child",
+        "emergencyServicesPerson",
+        "fireman",
+        "infant",
+        "medicalStaff",
+        "memberOfThePublic",
+        "policeman",
+        "politician",
+        "publicTransportPassenger",
+        "sickPerson",
+        "trafficOfficer",
+        "trafficWarden",
+        "veryImportantPerson",
+        "_extended"
+      ]
+    },
+    "PlacesEnum": {
+      "type": "string",
+      "enum": [
+        "aroundBendsInTheRoad",
+        "atCustomsPosts",
+        "atHighAltitudes",
+        "atRestAreas",
+        "atServiceAreas",
+        "atTollPlazas",
+        "inBuiltUpAreas",
+        "inContraflowSections",
+        "inForestedAreas",
+        "inGalleries",
+        "inLowLyingAreas",
+        "inRoadworksAreas",
+        "inRuralAreas",
+        "inShadedAreas",
+        "inTheInnerCityAreas",
+        "inTheCityCentre",
+        "inTunnels",
+        "onBridges",
+        "onDownHillSections",
+        "onDualCarriagewaySections",
+        "onElevatedSections",
+        "onEnteringOrLeavingTunnels",
+        "onEnteringTheCountry",
+        "onFlyovers",
+        "onLeavingTheCountry",
+        "onMotorways",
+        "onNonMotorways",
+        "onPasses",
+        "onRoundabouts",
+        "onSingleCarriagewaySections",
+        "onSlipRoads",
+        "onUndergroundSections",
+        "onUnderpasses",
+        "onUpHillSections",
+        "overTheCrestOfHills",
+        "other",
+        "_extended"
+      ]
+    },
+    "PoorEnvironmentConditions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "poorEnvironmentType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PoorEnvironmentTypeEnum"
+          },
+          "minItems": 1
+        },
+        "precipitationDetail": {
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationDetail"
+        },
+        "visibility": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Visibility"
+        },
+        "pollution": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Pollution"
+        },
+        "temperature": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Temperature"
+        },
+        "wind": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Wind"
+        },
+        "humidity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Humidity"
+        },
+        "pressure": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Pressure"
+        },
+        "_poorEnvironmentConditionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "poorEnvironmentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        }
+      ]
+    },
+    "PoorEnvironmentTypeEnum": {
+      "type": "string",
+      "enum": [
+        "badWeather",
+        "blizzard",
+        "blowingDust",
+        "blowingSnow",
+        "crosswinds",
+        "damagingHail",
+        "denseFog",
+        "eclipse",
+        "extremeCold",
+        "extremeHeat",
+        "fog",
+        "freezingFog",
+        "frost",
+        "gales",
+        "gustyWinds",
+        "hail",
+        "heavyFrost",
+        "heavyRain",
+        "heavySnowfall",
+        "hurricaneForceWinds",
+        "lowSunGlare",
+        "moderateFog",
+        "nearbyFire",
+        "nearbyFlooding",
+        "ozonePollution",
+        "pollution",
+        "patchyFog",
+        "precipitationInTheArea",
+        "rain",
+        "rainChangingToSnow",
+        "sandStorms",
+        "severeExhaustPollution",
+        "severeSmog",
+        "showers",
+        "sleet",
+        "smogAlert",
+        "smokeHazard",
+        "snowChangingToRain",
+        "snowfall",
+        "sprayHazard",
+        "stormForceWinds",
+        "strongGustsOfWind",
+        "strongWinds",
+        "swarmsOfInsects",
+        "temperatureFalling",
+        "thunderstorms",
+        "tornadoes",
+        "veryStrongGustsOfWind",
+        "visibilityReduced",
+        "whiteOut",
+        "winterStorm",
+        "_extended"
+      ]
+    },
+    "ProbabilityOfOccurrenceEnum": {
+      "type": "string",
+      "enum": [
+        "certain",
+        "probable",
+        "riskOf",
+        "_extended"
+      ]
+    },
+    "PublicEvent": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "publicEventType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "venueName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_publicEventExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "publicEventType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "RelativeTrafficFlowEnum": {
+      "type": "string",
+      "enum": [
+        "trafficVeryMuchHeavierThanNormal",
+        "trafficHeavierThanNormal",
+        "trafficFlowNormal",
+        "trafficLighterThanNormal",
+        "trafficVeryMuchLighterThanNormal",
+        "_extended"
+      ]
+    },
+    "ReroutingManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "reroutingManagementType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ReroutingManagementTypeEnum"
+          },
+          "minItems": 1
+        },
+        "reroutingItineraryDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "signedRerouting": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "alternativeRouteIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "entry": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "exit": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "roadOrJunctionNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "alternativeRoute": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Itinerary"
+          },
+          "minItems": 0
+        },
+        "destination": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Destination"
+        },
+        "_reroutingManagementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "reroutingManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "ReroutingManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "doNotFollowDiversionSigns",
+        "doNotUseEntry",
+        "doNotUseExit",
+        "doNotUseIntersectionOrJunction",
+        "followDiversionSigns",
+        "followLocalDiversion",
+        "followSpecialMarkers",
+        "useEntry",
+        "useExit",
+        "useIntersectionOrJunction",
+        "_extended"
+      ]
+    },
+    "RoadMaintenanceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accidentRepairWork",
+        "clearanceWork",
+        "controlledAvalanche",
+        "installationWork",
+        "grassCuttingWork",
+        "litterClearance",
+        "maintenanceWork",
+        "maintenancePeopleOnRoad",
+        "overheadWorks",
+        "repairWork",
+        "resurfacingWork",
+        "roadMarkingWork",
+        "roadsideWork",
+        "roadworksClearance",
+        "roadworks",
+        "rockFallPreventativeMaintenance",
+        "saltingInProgress",
+        "snowploughsInUse",
+        "sweepingOfRoad",
+        "treeAndVegetationCuttingWork",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadOperatorServiceDisruption": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roadOperatorServiceDisruptionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOperatorServiceDisruptionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_roadOperatorServiceDisruptionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadOperatorServiceDisruptionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "RoadOperatorServiceDisruptionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "emergencyTelephoneNumberOutOfService",
+        "informationServiceTelephoneNumberOutOfService",
+        "noTrafficOfficerPatrolService",
+        "_extended"
+      ]
+    },
+    "RoadOrCarriagewayOrLaneManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roadOrCarriagewayOrLaneManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "minimumCarOccupancy": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_roadOrCarriagewayOrLaneManagementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadOrCarriagewayOrLaneManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "RoadOrCarriagewayOrLaneManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "carPoolLaneInOperation",
+        "carriagewayClosures",
+        "clearALaneForEmergencyVehicles",
+        "clearALaneForSnowploughsAndGrittingVehicles",
+        "closedPermanentlyForTheWinter",
+        "contraflow",
+        "doNotUseSpecifiedLanesOrCarriageways",
+        "hardShoulderRunningInOperation",
+        "hardShoulderRunningNotInOperation",
+        "heightRestrictionInOperation",
+        "intermittentShortTermClosures",
+        "keepToTheLeft",
+        "keepToTheRight",
+        "laneClosures",
+        "lanesDeviated",
+        "narrowLanes",
+        "newRoadworksLayout",
+        "overnightClosures",
+        "roadCleared",
+        "roadClosed",
+        "rollingRoadBlock",
+        "rushHourLaneInOperation",
+        "singleAlternateLineTraffic",
+        "tidalFlowLaneInOperation",
+        "turnAroundInOperation",
+        "useOfSpecifiedLanesOrCarriagewaysAllowed",
+        "useSpecifiedLanesOrCarriageways",
+        "vehicleStorageInOperation",
+        "weightRestrictionInOperation",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadsideAssistance": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "roadsideAssistanceType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadsideAssistanceTypeEnum"
+        },
+        "_roadsideAssistanceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadsideAssistanceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "RoadsideAssistanceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "airAmbulance",
+        "busPassengerAssistance",
+        "emergencyServices",
+        "firstAid",
+        "foodDelivery",
+        "helicopterRescue",
+        "vehicleRepair",
+        "vehicleRecovery",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadSurfaceConditions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_roadSurfaceConditionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        }
+      ]
+    },
+    "Roadworks": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "publicTransportAlternative": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "roadworksDurationClassification": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadworksDurationEnum"
+        },
+        "roadworksIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "roadworksScale": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadworksScaleEnum"
+        },
+        "underTraffic": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "urgentRoadworks": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "mobility": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "subjects": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Subjects"
+        },
+        "maintenanceVehicles": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceVehicles"
+        },
+        "_roadworksExtension": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadworksExtensionType",
+          "type": "object"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "RoadworksDurationEnum": {
+      "type": "string",
+      "enum": [
+        "longTerm",
+        "mediumTerm",
+        "shortTerm",
+        "_extended"
+      ]
+    },
+    "RoadworksScaleEnum": {
+      "type": "string",
+      "enum": [
+        "major",
+        "medium",
+        "minor",
+        "_extended"
+      ]
+    },
+    "ServiceDisruption": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "serviceDisruptionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ServiceDisruptionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_serviceDisruptionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "serviceDisruptionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "ServiceDisruptionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "barClosed",
+        "dieselShortage",
+        "fuelShortage",
+        "lpgShortage",
+        "methaneShortage",
+        "noDieselForHeavyVehicles",
+        "noDieselForLightVehicles",
+        "noParkingAvailability",
+        "noPublicTelephones",
+        "noToiletFacilities",
+        "noVehicleRepairFacilities",
+        "petrolShortage",
+        "restAreaBusy",
+        "restAreaClosed",
+        "restAreaOvercrowdedDriveToAnotherRestArea",
+        "serviceAreaBusy",
+        "serviceAreaClosed",
+        "serviceAreaFuelStationClosed",
+        "serviceAreaOvercrowdedDriveToAnotherServiceArea",
+        "serviceAreaRestaurantClosed",
+        "someCommercialServicesClosed",
+        "waterShortage",
+        "_extended"
+      ]
+    },
+    "ServiceInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_serviceInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "SeverityEnum": {
+      "type": "string",
+      "enum": [
+        "highest",
+        "high",
+        "medium",
+        "low",
+        "lowest",
+        "none",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Situation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "overallSeverity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SeverityEnum"
+        },
+        "situationVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "situationRecord": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecord"
+          },
+          "minItems": 1
+        },
+        "relatedSituation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/SituationReference"
+          },
+          "minItems": 0
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "situationSummary": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecord"
+        },
+        "_situationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "headerInformation",
+        "situationRecord"
+      ]
+    },
+    "SituationPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "situation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Situation"
+          },
+          "minItems": 0
+        },
+        "_situationPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "SituationRecord": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "situationRecordCreationReference": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "situationRecordCreationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordObservationTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordFirstSupplierVersionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "confidentialityOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ConfidentialityValueEnum"
+        },
+        "probabilityOfOccurrence": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ProbabilityOfOccurrenceEnum"
+        },
+        "severity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SeverityEnum"
+        },
+        "safetyRelatedMessage": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "source": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Source"
+        },
+        "validity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Validity"
+        },
+        "impact": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Impact"
+        },
+        "cause": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Cause"
+        },
+        "generalPublicComment": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Comment"
+          },
+          "minItems": 0
+        },
+        "nonGeneralPublicComment": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Comment"
+          },
+          "minItems": 0
+        },
+        "urlLink": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+          },
+          "minItems": 0
+        },
+        "locationReference": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "informationManagerOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "impactOnOppositeDirection": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Impact"
+        },
+        "_situationRecordExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "probabilityOfOccurrence",
+        "situationRecordCreationTime",
+        "situationRecordVersionTime",
+        "validity",
+        "locationReference"
+      ]
+    },
+    "SituationRecordReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "objectReference": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecordVersionedReference"
+        },
+        "_situationRecordReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "objectReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "SituationReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "objectReference": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationVersionedReference"
+        },
+        "_situationReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "objectReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "SpeedManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "speedManagementType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SpeedManagementTypeEnum"
+        },
+        "temporarySpeedLimit": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "_speedManagementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "SpeedManagementTypeEnum": {
+      "type": "string",
+      "enum": [
+        "activeSpeedControlInOperation",
+        "doNotSlowdownUnnecessarily",
+        "observeSpeedLimit",
+        "policeSpeedChecksInOperation",
+        "reduceYourSpeed",
+        "speedRestrictionInOperation",
+        "other",
+        "_extended"
+      ]
+    },
+    "Subjects": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "subjectTypeOfWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SubjectTypeOfWorksEnum"
+        },
+        "numberOfSubjects": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_subjectsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "subjectTypeOfWorks"
+      ]
+    },
+    "SubjectTypeOfWorksEnum": {
+      "type": "string",
+      "enum": [
+        "bridge",
+        "buriedCables",
+        "buriedServices",
+        "crashBarrier",
+        "cycleTrack",
+        "footpath",
+        "gallery",
+        "gantry",
+        "gasMainWork",
+        "heatingPipe",
+        "interchange",
+        "junction",
+        "levelCrossing",
+        "lightingSystem",
+        "lock",
+        "measurementEquipment",
+        "metro",
+        "noiseProtection",
+        "parking",
+        "publicTransportInfrastructure",
+        "publicTransportStop",
+        "road",
+        "roadSigns",
+        "roadsideDrains",
+        "roadsideEmbankment",
+        "roadsideEquipment",
+        "roundabout",
+        "sewer",
+        "streetParking",
+        "tollGate",
+        "trafficSignals",
+        "tunnel",
+        "waterBank",
+        "waterMain",
+        "other",
+        "_extended"
+      ]
+    },
+    "TrafficConstrictionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "carriagewayBlocked",
+        "carriagewayPartiallyObstructed",
+        "lanesBlocked",
+        "lanesPartiallyObstructed",
+        "roadBlocked",
+        "roadPartiallyObstructed",
+        "_extended"
+      ]
+    },
+    "TrafficElement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "trafficConstrictionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficConstrictionTypeEnum"
+        },
+        "_trafficElementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "TrafficFlowCharacteristicsEnum": {
+      "type": "string",
+      "enum": [
+        "erraticFlow",
+        "smoothFlow",
+        "stopAndGo",
+        "trafficBlocked",
+        "_extended"
+      ]
+    },
+    "TrafficTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accessOnlyTraffic",
+        "destinedForAirport",
+        "destinedForAirportArrivals",
+        "destinedForAirportDepartures",
+        "destinedForFerryService",
+        "destinedForRailService",
+        "holidayTraffic",
+        "localTraffic",
+        "longDistanceTraffic",
+        "regionalTraffic",
+        "residentsOnlyTraffic",
+        "throughTraffic",
+        "visitorTraffic",
+        "_extended"
+      ]
+    },
+    "TransitInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "journeyDestination": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "journeyOrigin": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "journeyReference": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "transitServiceInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceInformationEnum"
+        },
+        "transitServiceType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceTypeEnum"
+        },
+        "scheduledDepartureTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_transitInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "transitServiceInformation",
+        "transitServiceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "TransitServiceInformationEnum": {
+      "type": "string",
+      "enum": [
+        "cancellations",
+        "delayDueToBadWeather",
+        "delayDueToRepairs",
+        "delayedUntilFurtherNotice",
+        "delaysDueToFlotsam",
+        "departureOnSchedule",
+        "ferryReplacedByIceRoad",
+        "freeShuttleServiceOperating",
+        "informationServiceNotAvailable",
+        "irregularServiceDelays",
+        "loadCapacityChanged",
+        "restrictionsForLongerVehicles",
+        "serviceDelays",
+        "serviceDelaysOfUncertainDuration",
+        "serviceFullyBooked",
+        "serviceNotOperating",
+        "serviceNotOperatingSubstituteServiceAvailable",
+        "serviceSuspended",
+        "serviceWithdrawn",
+        "shuttleServiceOperating",
+        "temporaryChangesToTimetables",
+        "other",
+        "_extended"
+      ]
+    },
+    "TransitServiceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "air",
+        "bus",
+        "ferry",
+        "hydrofoil",
+        "rail",
+        "tram",
+        "undergroundMetro",
+        "_extended"
+      ]
+    },
+    "VehicleObstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehicleObstructionType": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleObstructionTypeEnum"
+        },
+        "involvedVehicleType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleTypeEnum"
+        },
+        "vehicleProblemCause": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleProblemCauseEnum"
+        },
+        "obstructingVehicle": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Vehicle"
+          },
+          "minItems": 0
+        },
+        "_vehicleObstructionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleObstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "VehicleObstructionTypeEnum": {
+      "type": "string",
+      "enum": [
+        "abandonedVehicle",
+        "abnormalLoad",
+        "brokenDownVehicle",
+        "convoy",
+        "damagedVehicle",
+        "dangerousSlowMovingVehicle",
+        "emergencyVehicle",
+        "highSpeedEmergencyVehicle",
+        "longLoad",
+        "highSpeedChase",
+        "medicalEmergency",
+        "militaryConvoy",
+        "overheightVehicle",
+        "prohibitedVehicleOnTheRoad",
+        "recklessDriver",
+        "slowVehicle",
+        "specialPermitTransport",
+        "trackedVehicle",
+        "unlitVehicleOnTheRoad",
+        "vehicleOnFire",
+        "vehicleCarryingHazardousMaterials",
+        "vehicleInDifficulty",
+        "vehicleOnWrongCarriageway",
+        "vehicleStuck",
+        "vehicleWithOverheightLoad",
+        "vehicleWithOverwideLoad",
+        "winterMaintetanceVehicleInTransfer",
+        "other",
+        "_extended"
+      ]
+    },
+    "VehicleProblemCauseEnum": {
+      "type": "string",
+      "enum": [
+        "airSystem",
+        "battery",
+        "brakingSystem",
+        "coolingSystem",
+        "decoupledTrailer",
+        "diverProblem",
+        "electricalSystem",
+        "flatTyre",
+        "fuelSystem",
+        "gear",
+        "loadProblem",
+        "lostWheel",
+        "motorMechanics",
+        "oilLeakage",
+        "suspension",
+        "other",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "WeatherRelatedRoadConditions": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "weatherRelatedRoadConditionType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "roadSurfaceConditionMeasurements": {
+          "$ref": "DATEXII_3_Common.json#/definitions/RoadSurfaceConditionMeasurements"
+        },
+        "_weatherRelatedRoadConditionsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "weatherRelatedRoadConditionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadSurfaceConditions"
+        }
+      ]
+    },
+    "WinterDrivingManagement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "winterEquipmentManagementType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_WinterEquipmentManagementTypeEnum"
+        },
+        "_winterDrivingManagementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "winterEquipmentManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    }
+  }
+}

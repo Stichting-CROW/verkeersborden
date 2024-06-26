@@ -1,0 +1,2809 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_AccessibilityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AccessibilityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AssociatedFacility": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "energyInfrastructureAssociatedParking": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/AssociatedParking"
+        }
+      }
+    },
+    "_AvailabilityEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AvailabilityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ContactInformation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesContactPerson": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ContactPerson"
+        }
+      }
+    },
+    "_Credential": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesCredentialAssigned": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/CredentialAssigned"
+        }
+      }
+    },
+    "_CredentialTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/CredentialTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EnergySourceEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/EnergySourceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/EquipmentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Facility": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "energyInfrastructureHydrogenRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/HydrogenRefillPoint"
+        },
+        "energyInfrastructurePetrolRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/PetrolRefillPoint"
+        },
+        "energyInfrastructureOrganicGasRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/OrganicGasRefillPoint"
+        },
+        "energyInfrastructureElectricChargingPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingPoint"
+        },
+        "energyInfrastructureDieselRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/DieselRefillPoint"
+        },
+        "energyInfrastructureEnergyInfrastructureStation": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureStation"
+        },
+        "energyInfrastructureEnergyInfrastructureSite": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureSite"
+        },
+        "parkingSpace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Space"
+        },
+        "parkingSupplementalFacility": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SupplementalFacility"
+        },
+        "parkingVehicularAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicularAccess"
+        },
+        "parkingPedestrianAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccess"
+        },
+        "parkingSpecificArea": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpecificArea"
+        },
+        "parkingSubplaceElement": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SubplaceElement"
+        },
+        "parkingCampus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Campus"
+        },
+        "parkingPlace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Place"
+        },
+        "energyInfrastructureVehicleSpace": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/VehicleSpace"
+        }
+      }
+    },
+    "_FacilityObject": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "energyInfrastructureHydrogenRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/HydrogenRefillPoint"
+        },
+        "energyInfrastructurePetrolRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/PetrolRefillPoint"
+        },
+        "energyInfrastructureOrganicGasRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/OrganicGasRefillPoint"
+        },
+        "energyInfrastructureElectricChargingPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingPoint"
+        },
+        "energyInfrastructureDieselRefillPoint": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/DieselRefillPoint"
+        },
+        "energyInfrastructureEnergyInfrastructureStation": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureStation"
+        },
+        "energyInfrastructureEnergyInfrastructureSite": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureSite"
+        },
+        "parkingSpace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Space"
+        },
+        "parkingSupplementalFacility": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SupplementalFacility"
+        },
+        "parkingVehicularAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/VehicularAccess"
+        },
+        "parkingPedestrianAccess": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PedestrianAccess"
+        },
+        "parkingSpecificArea": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpecificArea"
+        },
+        "parkingSubplaceElement": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SubplaceElement"
+        },
+        "parkingCampus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Campus"
+        },
+        "parkingPlace": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/Place"
+        },
+        "energyInfrastructureVehicleSpace": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/VehicleSpace"
+        },
+        "facilitiesSupplementalServiceFacility": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalServiceFacility"
+        },
+        "facilitiesSupplementalEquipment": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalEquipment"
+        },
+        "energyInfrastructureElectricChargingEquipment": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingEquipment"
+        }
+      }
+    },
+    "_FacilityObjectStatus": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesFacilityStatus": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityStatus"
+        },
+        "energyInfrastructureRefillPointStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/RefillPointStatus"
+        },
+        "energyInfrastructureElectricChargingPointStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingPointStatus"
+        },
+        "energyInfrastructureEnergyInfrastructureStationStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureStationStatus"
+        },
+        "energyInfrastructureEnergyInfrastructureSiteStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureSiteStatus"
+        },
+        "parkingParkingStatusInformation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        },
+        "parkingPlaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PlaceStatus"
+        },
+        "parkingAccessStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessStatus"
+        },
+        "parkingCampusStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CampusStatus"
+        },
+        "parkingSpaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpaceStatus"
+        },
+        "facilitiesSupplementalFacilityStatus": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalFacilityStatus"
+        }
+      }
+    },
+    "_FacilityObjectVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "FacilityObject"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_FacilityStatus": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "energyInfrastructureRefillPointStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/RefillPointStatus"
+        },
+        "energyInfrastructureElectricChargingPointStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingPointStatus"
+        },
+        "energyInfrastructureEnergyInfrastructureStationStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureStationStatus"
+        },
+        "energyInfrastructureEnergyInfrastructureSiteStatus": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyInfrastructureSiteStatus"
+        },
+        "parkingParkingStatusInformation": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/ParkingStatusInformation"
+        },
+        "parkingPlaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/PlaceStatus"
+        },
+        "parkingAccessStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/AccessStatus"
+        },
+        "parkingCampusStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/CampusStatus"
+        },
+        "parkingSpaceStatus": {
+          "$ref": "DATEXII_3_Parking.json#/definitions/SpaceStatus"
+        }
+      }
+    },
+    "_FacilityTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ImageFormatEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ImageFormatEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MeansOfPaymentEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/MeansOfPaymentEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OpeningStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OpeningStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OperatingHours": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesOperatingHoursSpecification": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHoursSpecification"
+        },
+        "facilitiesUnknownOperatingHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UnknownOperatingHours"
+        },
+        "facilitiesOperatingHoursByReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHoursByReference"
+        },
+        "facilitiesOpenAllHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OpenAllHours"
+        },
+        "facilitiesUndefinedOperatingHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UndefinedOperatingHours"
+        }
+      }
+    },
+    "_OperatingHoursSpecificationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "OperatingHoursSpecification"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OperatingHoursTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "OperatingHoursTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OperationStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperationStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Organisation": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesOrganisationSpecification": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationSpecification"
+        },
+        "facilitiesUndefinedOrganisation": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UndefinedOrganisation"
+        },
+        "facilitiesUnknownOrganisation": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UnknownOrganisation"
+        },
+        "facilitiesOrganisationByReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationByReference"
+        }
+      }
+    },
+    "_OrganisationSpecificationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "OrganisationSpecification"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OrganisationTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "OrganisationTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OrganisationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OrganisationVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Organisation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_PaymentBrandsEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/PaymentBrandsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PaymentTimingEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/PaymentTimingEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RateAvailabilityTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateAvailabilityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RateLineCollection": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesRelativeTimeRates": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RelativeTimeRates"
+        }
+      }
+    },
+    "_RateLineTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateLineTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RateMatrixVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "RateMatrix"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_Rates": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesUnknownRates": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UnknownRates"
+        },
+        "facilitiesGeneralRateInformation": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/GeneralRateInformation"
+        },
+        "facilitiesRatesByReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RatesByReference"
+        },
+        "facilitiesUnspecifiedRates": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UnspecifiedRates"
+        },
+        "facilitiesRateTable": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateTable"
+        },
+        "facilitiesFreeOfCharge": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FreeOfCharge"
+        }
+      }
+    },
+    "_RateTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "RateTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_RateTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RateUsageConditionsTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateUsageConditionsTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RefundTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RefundTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ReservationTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ReservationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RightTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RightTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ServiceFacilityTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ServiceFacilityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SupplementalFacility": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "facilitiesSupplementalServiceFacility": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalServiceFacility"
+        },
+        "facilitiesSupplementalEquipment": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalEquipment"
+        },
+        "energyInfrastructureElectricChargingEquipment": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/ElectricChargingEquipment"
+        }
+      }
+    },
+    "_SurchargeTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SurchargeTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_UserTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/UserTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AccessibilityEnum": {
+      "type": "string",
+      "enum": [
+        "barrierFreeAccessible",
+        "disabilityAccessible",
+        "wheelChairAccessible",
+        "disabilityFacilities",
+        "orientationSystemForBlindPeople",
+        "marking",
+        "none",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "AmountInCurrency": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "currencyValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "currencyType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/CurrencyCode"
+        },
+        "_amountInCurrencyExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "currencyType",
+        "currencyValue"
+      ]
+    },
+    "AmountOfMoney": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Decimal"
+    },
+    "AssociatedFacility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_FacilityTypeEnum"
+        },
+        "facilityReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_associatedFacilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "AvailabilityEnum": {
+      "type": "string",
+      "enum": [
+        "available",
+        "notAvailable",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "BrandsAcceptedCodeList": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "brandsAcceptedList": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_PaymentBrandsEnum"
+        },
+        "_brandsAcceptedCodeListExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "brandsAcceptedList"
+      ]
+    },
+    "BrandsAcceptedText": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "brandsAccepted": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_brandsAcceptedTextExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "brandsAccepted"
+      ]
+    },
+    "ClosureInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "permananentlyClosed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "temporarilyClosed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "closedFrom": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "temporarilyClosedUntil": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_closureInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ContactInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "language": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Language"
+          },
+          "minItems": 0
+        },
+        "telephoneNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "faxNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "eMail": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_contactInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "ContactPerson": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "firstName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "title": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "position": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_contactPersonExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "name"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ContactInformation"
+        }
+      ]
+    },
+    "Credential": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_CredentialTypeEnum"
+        },
+        "otherType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_credentialExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "type"
+      ]
+    },
+    "CredentialAssigned": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "localIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "issuer": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationVersionedReference"
+        },
+        "_credentialAssignedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "issuer"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Credential"
+        }
+      ]
+    },
+    "CredentialTypeEnum": {
+      "type": "string",
+      "enum": [
+        "hangtag",
+        "permit",
+        "licensePlate",
+        "ticket",
+        "eticket",
+        "barcode",
+        "bluetooth",
+        "rfid",
+        "qrCode",
+        "other",
+        "_extended"
+      ]
+    },
+    "CurrencyCode": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "Dimension": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "length": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "width": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "height": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "usableArea": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SquareMetres"
+        },
+        "_dimensionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Duration": {
+      "type": "string"
+    },
+    "DurationValue": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "duration": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_durationValueExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "duration"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/DataValue"
+        }
+      ]
+    },
+    "Eligibility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "eligibilityName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "qualification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/Qualification"
+          },
+          "minItems": 0
+        },
+        "_eligibilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "EnergySourceEnum": {
+      "type": "string",
+      "enum": [
+        "all",
+        "battery",
+        "biodiesel",
+        "diesel",
+        "dieselBatteryHybrid",
+        "ethanol",
+        "hydrogen",
+        "liquidGas",
+        "lpg",
+        "methane",
+        "petrol",
+        "petrol95Octane",
+        "petrol98Octane",
+        "petrolBatteryHybrid",
+        "petrolLeaded",
+        "petrolUnleaded",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "EquipmentTypeEnum": {
+      "type": "string",
+      "enum": [
+        "bikeParking",
+        "cashMachine",
+        "copyMachineOrService",
+        "defibrillator",
+        "dsrcReceiver",
+        "dumpingStation",
+        "electricChargingStation",
+        "elevator",
+        "faxMachineOrService",
+        "fireExtinguisher",
+        "fireHose",
+        "fireHydrant",
+        "firstAidEquipment",
+        "iceFreeScaffold",
+        "informationPoint",
+        "informationStele",
+        "internetTerminal",
+        "internetWireless",
+        "luggageLocker",
+        "paymentMachine",
+        "picnicFacilities",
+        "playground",
+        "publicCardPhone",
+        "publicCoinPhone",
+        "publicPhone",
+        "refuseBin",
+        "safeDeposit",
+        "shelter",
+        "shower",
+        "snowAndIceRemovalEquipment",
+        "toilet",
+        "tollTerminal",
+        "tyreAirPressureEquipment",
+        "waterBasin",
+        "vendingMachine",
+        "waterSupply",
+        "wasteDisposal",
+        "waterTap",
+        "none",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "Facility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "supplementalFacility": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_SupplementalFacility"
+          },
+          "minItems": 0
+        },
+        "_facilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityObject"
+        }
+      ]
+    },
+    "FacilityObject": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "alias": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "externalIdentifier": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "accessibility": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_AccessibilityEnum"
+          },
+          "minItems": 0
+        },
+        "additionalInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "informationWebsite": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+          },
+          "minItems": 0
+        },
+        "photoUrl": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+          },
+          "minItems": 0
+        },
+        "photo": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/Image"
+          },
+          "minItems": 0
+        },
+        "operatingHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "locationReference": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "owner": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+        },
+        "operator": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+        },
+        "associatedFacility": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_AssociatedFacility"
+          },
+          "minItems": 0
+        },
+        "rates": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_Rates"
+        },
+        "applicableForVehicles": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "dimension": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Dimension"
+        },
+        "_facilityObjectExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ]
+    },
+    "FacilityObjectStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "reference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_FacilityObjectVersionedReference"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "openingStatus": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OpeningStatusEnum"
+        },
+        "regularOperatingHoursInForce": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "statusDescription": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "newOperatingHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "newRates": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_Rates"
+        },
+        "fault": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_Fault"
+        },
+        "_facilityObjectStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "reference"
+      ]
+    },
+    "FacilityStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "supplementalFacilityStatus": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalFacilityStatus"
+          },
+          "minItems": 0
+        },
+        "_facilityStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityObjectStatus"
+        }
+      ]
+    },
+    "FacilityTypeEnum": {
+      "type": "string",
+      "enum": [
+        "airport",
+        "carPark",
+        "carRentalStation",
+        "electricChargingStation",
+        "energyInfrastructureSite",
+        "lorryParkingSite",
+        "parkingSite",
+        "petrolStation",
+        "publicTransportDepot",
+        "publicTransportHub",
+        "shoppingCentre",
+        "trainStation",
+        "other",
+        "_extended"
+      ]
+    },
+    "FreeOfCharge": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_freeOfChargeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "GeneralRateInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_generalRateInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "Image": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "imageData": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "imageFormat": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_ImageFormatEnum"
+        },
+        "_imageExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "imageData",
+        "imageFormat"
+      ]
+    },
+    "ImageFormatEnum": {
+      "type": "string",
+      "enum": [
+        "bmp",
+        "gif",
+        "jpeg",
+        "png",
+        "_extended"
+      ]
+    },
+    "MeansOfPaymentEnum": {
+      "type": "string",
+      "enum": [
+        "paymentCreditCard",
+        "cashBillsOnly",
+        "cashCoinsOnly",
+        "tollTag",
+        "mobileAccount",
+        "cashCoinsAndBills",
+        "prepay",
+        "paymentDebitCard",
+        "paymentValueCard",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "OpenAllHours": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_openAllHoursExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHours"
+        }
+      ]
+    },
+    "OpeningStatusEnum": {
+      "type": "string",
+      "enum": [
+        "open",
+        "openWithServiceLimitation",
+        "closed",
+        "closedOnHoliday",
+        "closedOnMaintenance",
+        "temporarilyClosed",
+        "statusUnknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "OperatingHours": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "closureInformation": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/ClosureInformation"
+        },
+        "_operatingHoursExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "OperatingHoursByReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operatingHoursReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHoursSpecificationVersionedReference"
+        },
+        "operatingHoursTableReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHoursTableVersionedReference"
+        },
+        "_operatingHoursByReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "operatingHoursReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHours"
+        }
+      ]
+    },
+    "OperatingHoursPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "operatingHoursTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHoursTable"
+          },
+          "minItems": 1
+        },
+        "_operatingHoursPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "operatingHoursTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "OperatingHoursSpecification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "label": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "operatingAllYear": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "urlLinkAddress": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "overallPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "_operatingHoursSpecificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "overallPeriod"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHours"
+        }
+      ]
+    },
+    "OperatingHoursTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "versionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "operatingHoursSpecification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHoursSpecification"
+          },
+          "minItems": 1
+        },
+        "_operatingHoursTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "versionTime",
+        "operatingHoursSpecification"
+      ]
+    },
+    "OperationStatusEnum": {
+      "type": "string",
+      "enum": [
+        "inOperation",
+        "limitedOperation",
+        "notInOperation",
+        "notInOperationAbnormal",
+        "technicalDefect",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Organisation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "generalTimeValidity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "_organisationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "OrganisationByReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "organisationReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationSpecificationVersionedReference"
+        },
+        "organisationTableReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationTableVersionedReference"
+        },
+        "_organisationByReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "organisationReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Organisation"
+        }
+      ]
+    },
+    "OrganisationPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "organisationTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationTable"
+          },
+          "minItems": 1
+        },
+        "_organisationPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "organisationTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "OrganisationSpecification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "externalCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "legalName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "linkToGeneralInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "linkToLogo": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "linkToWebform": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "available24hours": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "responsibility": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "publishingAgreement": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "type": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationTypeEnum"
+        },
+        "nationalOrganisationNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "nationalRegister": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vatIdentificationNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "organisationUnit": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationUnit"
+          },
+          "minItems": 1
+        },
+        "subOrganisation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_Organisation"
+          },
+          "minItems": 0
+        },
+        "_organisationSpecificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "name",
+        "organisationUnit"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Organisation"
+        }
+      ]
+    },
+    "OrganisationTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "versionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "organisationSpecification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/OrganisationSpecification"
+          },
+          "minItems": 1
+        },
+        "_organisationTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "versionTime",
+        "organisationSpecification"
+      ]
+    },
+    "OrganisationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "publicSector",
+        "privateSector",
+        "_extended"
+      ]
+    },
+    "OrganisationUnit": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "function": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "locationReference": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/LocationReference"
+        },
+        "contactInformation": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_ContactInformation"
+          },
+          "minItems": 0
+        },
+        "operatingHours": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperatingHours"
+        },
+        "_organisationUnitExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PaymentBrandsEnum": {
+      "type": "string",
+      "enum": [
+        "americanExpress",
+        "applePay",
+        "cirrus",
+        "dinersClub",
+        "discoverCard",
+        "giroCard",
+        "maestro",
+        "masterCard",
+        "visa",
+        "vpay",
+        "other",
+        "_extended"
+      ]
+    },
+    "PaymentMethod": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "paymentMeans": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_MeansOfPaymentEnum"
+          },
+          "minItems": 0
+        },
+        "paymentMode": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_PaymentTimingEnum"
+          },
+          "minItems": 0
+        },
+        "brandsAcceptedText": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/BrandsAcceptedText"
+          },
+          "minItems": 0
+        },
+        "brandsAcceptedCodeList": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/BrandsAcceptedCodeList"
+          },
+          "minItems": 0
+        },
+        "_paymentMethodExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PaymentTimingEnum": {
+      "type": "string",
+      "enum": [
+        "prepay",
+        "payOnEntry",
+        "payPriorToExit",
+        "payAndExit",
+        "payAfterExit",
+        "other",
+        "_extended"
+      ]
+    },
+    "Qualification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "withReservation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "propulsionEnergyType": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_EnergySourceEnum"
+          },
+          "minItems": 0
+        },
+        "noFeeToUse": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "withMembership": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "membershipName": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "memberOfOtherRateTable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "rateTableMember": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_RateTableVersionedReference"
+          },
+          "minItems": 0
+        },
+        "activeAssignedRight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "paymentMethod": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/PaymentMethod"
+          },
+          "minItems": 0
+        },
+        "vehicleCharacteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "userQualification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/UserQualification"
+          },
+          "minItems": 0
+        },
+        "_qualificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RateAvailabilityTypeEnum": {
+      "type": "string",
+      "enum": [
+        "private",
+        "public",
+        "restricted",
+        "_extended"
+      ]
+    },
+    "RateDiscount": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "discountRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "fixedValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountInCurrency"
+        },
+        "_rateDiscountExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RateEligibility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "priority": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "combinable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "rateDiscount": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateDiscount"
+        },
+        "eligibility": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Eligibility"
+        },
+        "rightSpecification": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/RightSpecification"
+          },
+          "minItems": 0
+        },
+        "_rateEligibilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "eligibility"
+      ]
+    },
+    "RateLine": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "sequence": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "rateLineType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateLineTypeEnum"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "durationStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Time"
+        },
+        "durationEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Time"
+        },
+        "incrementPeriod": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Duration"
+        },
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "minValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "maxValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "usageCondition": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateUsageConditionsTypeEnum"
+        },
+        "surcharge": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/Surcharge"
+          },
+          "minItems": 0
+        },
+        "rateLineTax": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/RateLineTax"
+          },
+          "minItems": 0
+        },
+        "_rateLineExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "rateLineType",
+        "sequence",
+        "value"
+      ]
+    },
+    "RateLineCollection": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "collectionSequence": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "applicableCurrency": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/CurrencyCode"
+        },
+        "minValueCollection": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "maxValueCollection": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "validStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "validEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "minTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Duration"
+        },
+        "maxTime": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Duration"
+        },
+        "resetTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Time"
+        },
+        "taxIncluded": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "taxRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "taxValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "relativeTimes": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "rateLine": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/RateLine"
+          },
+          "minItems": 1
+        },
+        "_rateLineCollectionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "collectionSequence",
+        "rateLine"
+      ]
+    },
+    "RateLineTax": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "taxValue": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "taxRate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "taxIncluded": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "trigger": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "labelForDisplay": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_rateLineTaxExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "taxIncluded"
+      ]
+    },
+    "RateLineTypeEnum": {
+      "type": "string",
+      "enum": [
+        "flatRate",
+        "incrementingRate",
+        "flatRateTier",
+        "perUnit",
+        "_extended"
+      ]
+    },
+    "RateMatrix": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "description": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "versionTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManager": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "rateTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/RateTable"
+          },
+          "minItems": 1
+        },
+        "_rateMatrixExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "versionTime",
+        "rateTable"
+      ]
+    },
+    "Rates": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "applicableCurrency": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/CurrencyCode"
+          },
+          "minItems": 0
+        },
+        "paymentMethod": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/PaymentMethod"
+        },
+        "overallPeriod": {
+          "$ref": "DATEXII_3_Common.json#/definitions/OverallPeriod"
+        },
+        "energyPricingPolicy": {
+          "$ref": "DATEXII_3_EnergyInfrastructure.json#/definitions/EnergyPricingPolicy"
+        },
+        "_ratesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RatesByReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "rateTableReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateTableVersionedReference"
+        },
+        "rateMatrixReference": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateMatrixVersionedReference"
+        },
+        "_ratesByReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "rateTableReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "RatesPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "rateMatrix": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/RateMatrix"
+          },
+          "minItems": 1
+        },
+        "_ratesPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "rateMatrix"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "RateTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "lastUpdated": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "rateTableName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "activeTimes": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/Duration"
+          },
+          "minItems": 0
+        },
+        "availability": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateAvailabilityTypeEnum"
+        },
+        "rateResponsibleParty": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationVersionedReference"
+        },
+        "rateSupersedeLink": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateTableVersionedReference"
+        },
+        "validation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "rateType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RateTypeEnum"
+        },
+        "validityStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "validityEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "additionalInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "rateLineCollection": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_RateLineCollection"
+          },
+          "minItems": 0
+        },
+        "rateEligibility": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateEligibility"
+        },
+        "_rateTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "RateTypeEnum": {
+      "type": "string",
+      "enum": [
+        "contract",
+        "daily",
+        "event",
+        "hourly",
+        "_extended"
+      ]
+    },
+    "RateUsageConditionsTypeEnum": {
+      "type": "string",
+      "enum": [
+        "fixedDuration",
+        "fixedNumber",
+        "once",
+        "unlimited",
+        "_extended"
+      ]
+    },
+    "RefundTypeEnum": {
+      "type": "string",
+      "enum": [
+        "surchargeNonRefundable",
+        "surchargePartiallyRefundable",
+        "surchargeFullyRefundable",
+        "_extended"
+      ]
+    },
+    "RelativeTimeRates": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "referenceTimeStart": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "referenceTimeEnd": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_relativeTimeRatesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/RateLineCollection"
+        }
+      ]
+    },
+    "ReservationTypeEnum": {
+      "type": "string",
+      "enum": [
+        "optional",
+        "mandatory",
+        "notAvailable",
+        "partly",
+        "unknown",
+        "unspecified",
+        "_extended"
+      ]
+    },
+    "RightSpecification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RightTypeEnum"
+        },
+        "description": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "expiry": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "financialReference": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "issuer": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OrganisationVersionedReference"
+        },
+        "noFeeToUse": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "credential": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_Credential"
+          },
+          "minItems": 0
+        },
+        "validity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Validity"
+        },
+        "_rightSpecificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "RightTypeEnum": {
+      "type": "string",
+      "enum": [
+        "oneTimeUseParking",
+        "permitParking",
+        "loadingUnloading",
+        "setdownPickup",
+        "waiting",
+        "accessPermission",
+        "doingReservation",
+        "electricCharging",
+        "_extended"
+      ]
+    },
+    "ServiceFacilityTypeEnum": {
+      "type": "string",
+      "enum": [
+        "bikeGarage",
+        "bikeSharing",
+        "cafe",
+        "carWash",
+        "docstop",
+        "foodShopping",
+        "hotel",
+        "kiosk",
+        "laundry",
+        "leisureActivities",
+        "medicalFacility",
+        "motel",
+        "motorcycleGarage",
+        "motorwayRestaurant",
+        "motorwayRestaurantSmall",
+        "overnightAccommodation",
+        "petrolStation",
+        "pharmacy",
+        "payDesk",
+        "police",
+        "restaurant",
+        "restaurantSelfService",
+        "shop",
+        "snackBar",
+        "sparePartsShopping",
+        "touristInformation",
+        "truckRepair",
+        "truckWash",
+        "tyreRepair",
+        "vehicleMaintenance",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "SquareMetres": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "SupplementalEquipment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "equipmentType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_EquipmentTypeEnum"
+        },
+        "_supplementalEquipmentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "equipmentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalFacility"
+        }
+      ]
+    },
+    "SupplementalFacility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "availability": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_AvailabilityEnum"
+        },
+        "quantity": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "regularlyCleaned": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "applicableForUser": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Facilities.json#/definitions/_UserTypeEnum"
+          },
+          "minItems": 0
+        },
+        "_supplementalFacilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityObject"
+        }
+      ]
+    },
+    "SupplementalFacilityStatus": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "quantityOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfSubitemsOverride": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "vacantSubitems": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "equipmentOperationStatus": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_OperationStatusEnum"
+        },
+        "_supplementalFacilityStatusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/FacilityObjectStatus"
+        }
+      ]
+    },
+    "SupplementalServiceFacility": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "serviceFacilityType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_ServiceFacilityTypeEnum"
+        },
+        "numberOfSubitems": {
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "distanceFromOriginFacility": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "_supplementalServiceFacilityExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "serviceFacilityType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/SupplementalFacility"
+        }
+      ]
+    },
+    "Surcharge": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "surchargeType": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_SurchargeTypeEnum"
+        },
+        "value": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/AmountOfMoney"
+        },
+        "rate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "trigger": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "refund": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_RefundTypeEnum"
+        },
+        "labelForDisplay": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_surchargeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "surchargeType"
+      ]
+    },
+    "SurchargeTypeEnum": {
+      "type": "string",
+      "enum": [
+        "reservation",
+        "mobilePayment",
+        "deposit",
+        "membershipFee",
+        "_extended"
+      ]
+    },
+    "TimeZone": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "UndefinedOperatingHours": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_undefinedOperatingHoursExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHours"
+        }
+      ]
+    },
+    "UndefinedOrganisation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_undefinedOrganisationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Organisation"
+        }
+      ]
+    },
+    "UnknownOperatingHours": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_unknownOperatingHoursExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/OperatingHours"
+        }
+      ]
+    },
+    "UnknownOrganisation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_unknownOrganisationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Organisation"
+        }
+      ]
+    },
+    "UnknownRates": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_unknownRatesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "UnspecifiedRates": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_unspecifiedRatesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/Rates"
+        }
+      ]
+    },
+    "UserQualification": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "userGroup": {
+          "$ref": "DATEXII_3_Facilities.json#/definitions/_UserTypeEnum"
+        },
+        "_userQualificationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "userGroup"
+      ]
+    },
+    "UserTypeEnum": {
+      "type": "string",
+      "enum": [
+        "allUsers",
+        "commuters",
+        "customers",
+        "elderlyUsers",
+        "employees",
+        "families",
+        "personsWithDisabilities",
+        "hearingImpaired",
+        "hotelGuests",
+        "longTermParkers",
+        "members",
+        "men",
+        "overnightParkers",
+        "parkAndCycleUser",
+        "parkAndRideUsers",
+        "parkAndWalkUser",
+        "pensioners",
+        "pregnantWomen",
+        "registeredDisabledUsers",
+        "reservationHolders",
+        "residents",
+        "seasonTicketHolders",
+        "shoppers",
+        "shortTermParkers",
+        "sportEventAwaySupporters",
+        "sportEventHomeSupporters",
+        "students",
+        "staff",
+        "subscribers",
+        "visitors",
+        "visuallyImpaired",
+        "wheelchairUsers",
+        "women",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    }
+  }
+}

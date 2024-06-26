@@ -1,0 +1,1020 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_Device": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "faultAndStatusComponent": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/Component"
+        }
+      }
+    },
+    "_DeviceComponentEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceComponentEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DeviceHealthEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceHealthEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DeviceReference": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "faultAndStatusVmsUnitReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/VmsUnitReference"
+        },
+        "faultAndStatusMeasurementSiteReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/MeasurementSiteReference"
+        },
+        "faultAndStatusGeneralDeviceReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/GeneralDeviceReference"
+        }
+      }
+    },
+    "_DeviceTableReference": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "faultAndStatusMeasurementSiteTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/MeasurementSiteTableReference"
+        },
+        "faultAndStatusGeneralDeviceTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/GeneralDeviceTableReference"
+        },
+        "faultAndStatusVmsUnitTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/VmsUnitTableReference"
+        }
+      }
+    },
+    "_DeviceTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "DeviceTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_DeviceTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DeviceVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Device"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_FaultImpactOnDataEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/FaultImpactOnDataEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_FaultTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/FaultTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MeasurementSiteTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MeasurementSiteTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_MeasurementSiteVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MeasurementSite"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_OperationalDeviceStateEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/OperationalDeviceStateEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PowerSourceEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/PowerSourceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsControllerTableVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsControllerTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_VmsControllerVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsController"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "AllFaultsOfSingleDevice": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operatingProperlySince": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "deviceReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceReference"
+        },
+        "deviceFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceFault"
+          },
+          "minItems": 0
+        },
+        "_allFaultsOfSingleDeviceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "deviceReference"
+      ]
+    },
+    "CatalogueInformation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "catalogueReferenceByOID": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/ObjectIdentifier"
+        },
+        "catalogueElement": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_catalogueInformationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "catalogueElement",
+        "catalogueReferenceByOID"
+      ]
+    },
+    "Component": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "componentType": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceComponentEnum"
+        },
+        "_componentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "componentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/Device"
+        }
+      ]
+    },
+    "Device": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "typeOfDevice": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceTypeEnum"
+        },
+        "lastUpdateOfDeviceInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "externalDeviceId": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "lastDeviceCheck": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "softwareVersion": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "softwareVersionDate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "additionalDeviceInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "ipAddress": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/IpAddress"
+        },
+        "portNumber": {
+          "$ref": "DATEXII_3_CommonExtension.json#/definitions/PortNumber"
+        },
+        "accountableAuthority": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "pointLocation": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_PointLocation"
+        },
+        "physicalDeviceDetails": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/PhysicalDeviceDetails"
+        },
+        "component": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/Component"
+          },
+          "minItems": 0
+        },
+        "dependsOn": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceReference"
+          },
+          "minItems": 0
+        },
+        "_deviceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "lastUpdateOfDeviceInformation",
+        "typeOfDevice",
+        "pointLocation"
+      ]
+    },
+    "DeviceComponentEnum": {
+      "type": "string",
+      "enum": [
+        "ambientLightMonitor",
+        "cabinet",
+        "communicationsEquipment",
+        "controller",
+        "display",
+        "fan",
+        "generalPurposeIoPort",
+        "heater",
+        "other",
+        "powerSupply",
+        "processor",
+        "sensor",
+        "_extended"
+      ]
+    },
+    "DeviceFault": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "faultType": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_FaultTypeEnum"
+        },
+        "faultInstructions": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "faultImpactOnData": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_FaultImpactOnDataEnum"
+          },
+          "minItems": 0
+        },
+        "faultComponent": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "faultComponentType": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceComponentEnum"
+        },
+        "faultObjectInformation": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/CatalogueInformation"
+        },
+        "_deviceFaultExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "faultType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "DeviceHealthEnum": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "notOk",
+        "functionalityPartlyOk",
+        "intermittentlyOk",
+        "alarm",
+        "notResponding",
+        "offline",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "DevicePower": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "health": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceHealthEnum"
+        },
+        "sourceType": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_PowerSourceEnum"
+        },
+        "_devicePowerExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "health",
+        "sourceType"
+      ]
+    },
+    "DevicePublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "device": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_Device"
+          },
+          "minItems": 0
+        },
+        "deviceTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceTable"
+          },
+          "minItems": 0
+        },
+        "_devicePublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "DeviceReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_deviceReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "DeviceTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "deviceTableName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "accountableAuthority": {
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "device": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_Device"
+          },
+          "minItems": 1
+        },
+        "_deviceTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "device"
+      ]
+    },
+    "DeviceTableReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_deviceTableReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "DeviceTypeEnum": {
+      "type": "string",
+      "enum": [
+        "accessControl",
+        "camera",
+        "fireDetection",
+        "firefightingDevice",
+        "itsStation",
+        "lighting",
+        "meteorological",
+        "roadsideTelephone",
+        "tollingDevice",
+        "trafficDetector",
+        "ventilation",
+        "parkingGuidance",
+        "parkingManagement",
+        "roadsideEquipment",
+        "trafficSignal",
+        "transportLink",
+        "transportRoute",
+        "tunnel",
+        "vehicle",
+        "vms",
+        "other",
+        "_extended"
+      ]
+    },
+    "FaultImpactOnDataEnum": {
+      "type": "string",
+      "enum": [
+        "downloadFailed",
+        "intermittentData",
+        "noData",
+        "unreliableData",
+        "unspecified",
+        "_extended"
+      ]
+    },
+    "FaultPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "allFaultsOfSingleDevice": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/AllFaultsOfSingleDevice"
+          },
+          "minItems": 0
+        },
+        "faultsOfAllDevicesFromTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/FaultsOfAllDevicesFromTable"
+          },
+          "minItems": 0
+        },
+        "_faultPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "FaultsOfAllDevicesFromTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "deviceTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceTableReference"
+        },
+        "allFaultsOfSingleDevice": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/AllFaultsOfSingleDevice"
+          },
+          "minItems": 1
+        },
+        "_faultsOfAllDevicesFromTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "deviceTableReference",
+        "allFaultsOfSingleDevice"
+      ]
+    },
+    "FaultTypeEnum": {
+      "type": "string",
+      "enum": [
+        "internalCommunicationFault",
+        "synchronizationFault",
+        "componentFault",
+        "configurationError",
+        "disconnected",
+        "electronicsFault",
+        "generalSystemError",
+        "hardwareFault",
+        "controlFault",
+        "intermittentlyWorking",
+        "mechanicalFault",
+        "notWorking",
+        "operatingSystemFault",
+        "powerFailure",
+        "securityFault",
+        "softwareFault",
+        "timeOrClockFault",
+        "unspecifiedFault",
+        "unknownFault",
+        "otherFault",
+        "_extended"
+      ]
+    },
+    "GeneralDeviceReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "deviceReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceVersionedReference"
+        },
+        "_generalDeviceReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "deviceReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceReference"
+        }
+      ]
+    },
+    "GeneralDeviceTableReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "deviceTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceTableVersionedReference"
+        },
+        "_generalDeviceTableReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "deviceTableReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceTableReference"
+        }
+      ]
+    },
+    "MeasurementSiteReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementSiteReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_MeasurementSiteVersionedReference"
+        },
+        "_measurementSiteReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "measurementSiteReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceReference"
+        }
+      ]
+    },
+    "MeasurementSiteTableReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "measurementSiteTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_MeasurementSiteTableVersionedReference"
+        },
+        "_measurementSiteTableReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "measurementSiteTableReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceTableReference"
+        }
+      ]
+    },
+    "ObjectIdentifier": {
+      "$ref": "DATEXII_3_Common.json#/definitions/String"
+    },
+    "OperationalDeviceStateEnum": {
+      "type": "string",
+      "enum": [
+        "maintenanceMode",
+        "on",
+        "off",
+        "powerSafeMode",
+        "specialMode",
+        "temporarilyDeactivated",
+        "permanentlyDeactivated",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "OperationalState": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "operationalDeviceState": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_OperationalDeviceStateEnum"
+        },
+        "stateDescription": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "lastStateChange": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "lastStateUpdate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "operationalStateCatalogueInformation": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/CatalogueInformation"
+        },
+        "_operationalStateExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "operationalDeviceState"
+      ]
+    },
+    "PhysicalDeviceDetails": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "barcode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "installationDate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Date"
+        },
+        "manufactureDate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Date"
+        },
+        "manufacturer": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "model": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "serialNumber": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "stockCode": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_physicalDeviceDetailsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PowerSourceEnum": {
+      "type": "string",
+      "enum": [
+        "battery",
+        "generator",
+        "hydro",
+        "mains",
+        "solar",
+        "wind",
+        "_extended"
+      ]
+    },
+    "Status": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "health": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceHealthEnum"
+        },
+        "statusDescription": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+          },
+          "minItems": 0
+        },
+        "lastStatusChange": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "lastStatusUpdate": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "relatedFault": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+          },
+          "minItems": 0
+        },
+        "deviceReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceReference"
+        },
+        "operationalState": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/OperationalState"
+        },
+        "statusCatalogueInformation": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/CatalogueInformation"
+        },
+        "devicePower": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DevicePower"
+          },
+          "minItems": 0
+        },
+        "_statusExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "health",
+        "lastStatusUpdate",
+        "deviceReference"
+      ]
+    },
+    "StatusOfAllDevicesFromTable": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "deviceTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_DeviceTableReference"
+        },
+        "status": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/Status"
+          },
+          "minItems": 1
+        },
+        "_statusOfAllDevicesFromTableExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "deviceTableReference",
+        "status"
+      ]
+    },
+    "StatusPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "status": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/Status"
+          },
+          "minItems": 0
+        },
+        "statusOfAllDevicesFromTable": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/StatusOfAllDevicesFromTable"
+          },
+          "minItems": 0
+        },
+        "_statusPublicationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "VmsUnitReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsUnitReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_VmsControllerVersionedReference"
+        },
+        "_vmsUnitReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsUnitReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceReference"
+        }
+      ]
+    },
+    "VmsUnitTableReference": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vmsUnitTableReference": {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/_VmsControllerTableVersionedReference"
+        },
+        "_vmsUnitTableReferenceExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsUnitTableReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_FaultAndStatus.json#/definitions/DeviceTableReference"
+        }
+      ]
+    }
+  }
+}

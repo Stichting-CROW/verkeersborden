@@ -1,0 +1,1875 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_AdvisorySpeedTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/AdvisorySpeedTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ExceptionalConditionEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ExceptionalConditionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GenericLaneReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "GenericLane"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "_Geometry": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "trafficSignalsIntersectionGeometry": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/IntersectionGeometry"
+        },
+        "trafficSignalsRoadSegment": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RoadSegment"
+        }
+      }
+    },
+    "_IntersectionGeometryVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "IntersectionGeometry"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_LaneConnectionReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "LaneConnection"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "_LaneDataAttribute": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "trafficSignalsSpeedLimitList": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SpeedLimitList"
+        },
+        "trafficSignalsLaneCrownPoint": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneCrownPoint"
+        },
+        "trafficSignalsLaneAngle": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAngle"
+        },
+        "trafficSignalsPathEndPointAngle": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/PathEndPointAngle"
+        }
+      }
+    },
+    "_LanePositioningEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LanePositioningEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_LaneTypeAttributes": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "trafficSignalsRailVehicleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RailVehicleLane"
+        },
+        "trafficSignalsPavement": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/Pavement"
+        },
+        "trafficSignalsPedestrianCrossing": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/PedestrianCrossing"
+        },
+        "trafficSignalsStriping": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/Striping"
+        },
+        "trafficSignalsBicycleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/BicycleLane"
+        },
+        "trafficSignalsVehicleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/VehicleLane"
+        },
+        "trafficSignalsParkingLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ParkingLane"
+        },
+        "trafficSignalsCentralReservation": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/CentralReservation"
+        }
+      }
+    },
+    "_MapDataVersionedReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "MapData"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_MovementPhaseStateEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MovementPhaseStateEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_NodeAttributeXYEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeAttributeXYEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_NodeListXY": {
+      "type": "object",
+      "additionalItems": true,
+      "properties": {
+        "trafficSignalsNodeSetXY": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeSetXY"
+        },
+        "trafficSignalsComputedLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ComputedLane"
+        }
+      }
+    },
+    "_PrioritisationResponseStatusEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/PrioritisationResponseStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PtvRequestTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/PtvRequestTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RestrictionClassAssignmentReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "RestrictionClassAssignment"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "_RestrictionsAppliesToEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RestrictionsAppliesToEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SegmentAttributeXYEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SegmentAttributeXYEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SignalHeadLocationReference": {
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SignalHeadLocation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Reference"
+        }
+      ]
+    },
+    "_SpeedLimitTypeEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SpeedLimitTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TimeIntervalConfidenceEnum": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/TimeIntervalConfidenceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AdvisorySpeed": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_AdvisorySpeedTypeEnum"
+        },
+        "speedAdvice": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresPerSecond"
+        },
+        "speedAdviceUnavailable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "confidence": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresPerSecond"
+        },
+        "confidenceOutOfRange": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "distance": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "class": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_RestrictionClassAssignmentReference"
+        },
+        "_advisorySpeedExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "speedAdvice",
+        "speedAdviceUnavailable",
+        "type"
+      ]
+    },
+    "AdvisorySpeedTypeEnum": {
+      "type": "string",
+      "enum": [
+        "none",
+        "greenwave",
+        "ecoDrive",
+        "publicTransport",
+        "_extended"
+      ]
+    },
+    "AllowedManoeuvres": {
+      "type": "string"
+    },
+    "AngleInDecimalDegrees": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "BicycleLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "bicycleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesBicycle"
+        },
+        "_bicycleLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "bicycleLane"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "CarriagewayCrownAngleInDecimalDegrees": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "CentralReservation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "centralReservation": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesBarrier"
+        },
+        "_centralReservationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "centralReservation"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "ComputedLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "referenceLaneId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "rotateXY": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/AngleInDecimalDegrees"
+        },
+        "scaleXAxis": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "scaleYAxis": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "offsetXAxis": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "offsetYAxis": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_computedLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "offsetXAxis",
+        "offsetYAxis",
+        "referenceLaneId"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeListXY"
+        }
+      ]
+    },
+    "ConnectingLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "lane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "manoeuvre": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/AllowedManoeuvres"
+        },
+        "_connectingLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "lane"
+      ]
+    },
+    "Connection": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "signalGroup": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SignalHeadLocationReference"
+        },
+        "userClass": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_RestrictionClassAssignmentReference"
+        },
+        "connectingLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ConnectingLane"
+        },
+        "connectionId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneConnection"
+        },
+        "_connectionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "connectingLane"
+      ]
+    },
+    "ConnectionManoeuvreAssist": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "connectionId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_LaneConnectionReference"
+        },
+        "queueLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "availableStorageLength": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "waitOnStop": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pedestrianBicycleDetection": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "itsStationPosition": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ItsStationPosition"
+          },
+          "minItems": 0,
+          "maxItems": 5
+        },
+        "_connectionManoeuvreAssistExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "connectionId"
+      ]
+    },
+    "ConnectionTrajectory": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nodes": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeSetXY"
+        },
+        "connectionId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneConnection"
+        },
+        "_connectionTrajectoryExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "connectionId",
+        "nodes"
+      ]
+    },
+    "DeltaAngleInDegrees": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+    },
+    "EnabledLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "enabledLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "_enabledLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "enabledLane"
+      ]
+    },
+    "ExceptionalConditionEnum": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "publicTransportPriority",
+        "emergencyVehiclePriority",
+        "trainPriority",
+        "bridgeOpen",
+        "vehicleHeight",
+        "weather",
+        "trafficJam",
+        "tunnelClosure",
+        "meteringActive",
+        "truckPriority",
+        "bicycleBunchPriority",
+        "_extended"
+      ]
+    },
+    "GenericLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "laneId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneOrSignalId"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "manoeuvres": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/AllowedManoeuvres"
+        },
+        "laneAttributes": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributes"
+        },
+        "nodeList": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_NodeListXY"
+        },
+        "connectsTo": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/Connection"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "overlays": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/OverlayLane"
+          },
+          "minItems": 0,
+          "maxItems": 5
+        },
+        "connectionTrajectory": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ConnectionTrajectory"
+          },
+          "minItems": 0,
+          "maxItems": 4
+        },
+        "_genericLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "laneAttributes",
+        "nodeList"
+      ]
+    },
+    "Geometry": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "revision": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MsgCount"
+        },
+        "laneWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "id": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/GeometryReferenceId"
+        },
+        "refPoint": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointByCoordinates"
+        },
+        "speedLimits": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RegulatorySpeedLimit"
+          },
+          "minItems": 0,
+          "maxItems": 9
+        },
+        "laneSet": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/GenericLane"
+          },
+          "minItems": 1,
+          "maxItems": 255
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "revision",
+        "refPoint",
+        "id",
+        "laneSet"
+      ]
+    },
+    "GeometryId": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "GeometryReferenceId": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "region": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RoadRegulatoryId"
+        },
+        "id": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/GeometryId"
+        },
+        "testing": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_geometryReferenceIdExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "id",
+        "region",
+        "testing"
+      ]
+    },
+    "IntersectionGeometry": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_intersectionGeometryExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/Geometry"
+        }
+      ]
+    },
+    "IntersectionState": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "revision": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_IntersectionGeometryVersionedReference"
+        },
+        "status": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/IntersectionStatusObject"
+        },
+        "timeStamp": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "enabledLanes": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/EnabledLane"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "states": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MovementState"
+          },
+          "minItems": 1,
+          "maxItems": 255
+        },
+        "manoeuvreAssistListGlobal": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ConnectionManoeuvreAssist"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "activePrioritisations": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/PrioritisationResponse"
+          },
+          "minItems": 0,
+          "maxItems": 10
+        },
+        "_intersectionStateExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "revision",
+        "status",
+        "states"
+      ]
+    },
+    "IntersectionStatusObject": {
+      "type": "string"
+    },
+    "ItsStationPosition": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "stationId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/StationId"
+        },
+        "laneId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "timeReference": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/TimeReference"
+        },
+        "nodeXY": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointByCoordinates"
+        },
+        "_itsStationPositionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "stationId"
+      ]
+    },
+    "LaneAngle": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "laneAngle": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MergeDivergeNodeAngleInDecimalDegrees"
+        },
+        "laneAngleUnavailableOrUnknown": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_laneAngleExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "laneAngle",
+        "laneAngleUnavailableOrUnknown"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneDataAttribute"
+        }
+      ]
+    },
+    "LaneAttributes": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "directionalUse": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneDirection"
+        },
+        "sharedWith": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneSharing"
+        },
+        "maxVehicleHeight": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "maxVehicleMass": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Tonnes"
+        },
+        "laneType": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_LaneTypeAttributes"
+        },
+        "_laneAttributesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "directionalUse",
+        "sharedWith",
+        "laneType"
+      ]
+    },
+    "LaneAttributesBarrier": {
+      "type": "string"
+    },
+    "LaneAttributesBicycle": {
+      "type": "string"
+    },
+    "LaneAttributesParking": {
+      "type": "string"
+    },
+    "LaneAttributesPavement": {
+      "type": "string"
+    },
+    "LaneAttributesPedestrianCrossing": {
+      "type": "string"
+    },
+    "LaneAttributesRailVehicle": {
+      "type": "string"
+    },
+    "LaneAttributesStriping": {
+      "type": "string"
+    },
+    "LaneAttributesVehicle": {
+      "type": "string"
+    },
+    "LaneConnection": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "connectionId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RestrictionOrConnectionId"
+        },
+        "_laneConnectionExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "connectionId"
+      ]
+    },
+    "LaneCrownPoint": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "laneCrownPoint": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/CarriagewayCrownAngleInDecimalDegrees"
+        },
+        "crownPointPositioning": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_LanePositioningEnum"
+        },
+        "laneCrownUnknown": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_laneCrownPointExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "crownPointPositioning",
+        "laneCrownPoint",
+        "laneCrownUnknown"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneDataAttribute"
+        }
+      ]
+    },
+    "LaneDataAttribute": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_laneDataAttributeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "LaneDirection": {
+      "type": "string"
+    },
+    "LaneOrSignalId": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "LanePositioningEnum": {
+      "type": "string",
+      "enum": [
+        "inTheCentre",
+        "onTheLeft",
+        "onTheRight",
+        "_extended"
+      ]
+    },
+    "LaneSharing": {
+      "type": "string"
+    },
+    "LaneTypeAttributes": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_laneTypeAttributesExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "LayerId": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "MapData": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "timeStamp": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "layerId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LayerId"
+        },
+        "intersections": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/IntersectionGeometry"
+          },
+          "minItems": 0,
+          "maxItems": 32
+        },
+        "roadSegments": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RoadSegment"
+          },
+          "minItems": 0,
+          "maxItems": 32
+        },
+        "restrictionList": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RestrictionClassAssignment"
+          },
+          "minItems": 0,
+          "maxItems": 254
+        },
+        "signalHeadLocations": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SignalHeadLocation"
+          },
+          "minItems": 0,
+          "maxItems": 64
+        },
+        "_mapDataExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ]
+    },
+    "MapDataPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "mapData": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MapData"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "mapData"
+      ]
+    },
+    "MergeDivergeNodeAngleInDecimalDegrees": {
+      "$ref": "DATEXII_3_Common.json#/definitions/Float"
+    },
+    "MovementEvent": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "eventState": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_MovementPhaseStateEnum"
+        },
+        "stateChangeReason": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_ExceptionalConditionEnum"
+        },
+        "timing": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/TimeChangeDetails"
+        },
+        "speeds": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/AdvisorySpeed"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "_movementEventExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "eventState"
+      ]
+    },
+    "MovementPhaseStateEnum": {
+      "type": "string",
+      "enum": [
+        "unavailable",
+        "dark",
+        "stopThenProceed",
+        "stopAndRemain",
+        "preMovement",
+        "permissibleMovementAllowed",
+        "protectedMovementAllowed",
+        "permissibleClearance",
+        "protectedClearance",
+        "cautionConflictingTraffic",
+        "_extended"
+      ]
+    },
+    "MovementState": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "movementName": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "signalGroup": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SignalHeadLocationReference"
+        },
+        "signalGroupUnknownOrUnavailable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "permanentGreenMovementStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "stateTimeSpeed": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/MovementEvent"
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "manoeuvreAssistListByLane": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/ConnectionManoeuvreAssist"
+          },
+          "minItems": 0,
+          "maxItems": 16
+        },
+        "_movementStateExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "permanentGreenMovementStatus",
+        "signalGroup",
+        "signalGroupUnknownOrUnavailable",
+        "stateTimeSpeed"
+      ]
+    },
+    "MsgCount": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "NodeAttributeSetXY": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "localNode": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_NodeAttributeXYEnum"
+          },
+          "minItems": 0,
+          "maxItems": 8
+        },
+        "disabled": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SegmentAttributeXYEnum"
+          },
+          "minItems": 0,
+          "maxItems": 8
+        },
+        "enabled": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SegmentAttributeXYEnum"
+          },
+          "minItems": 0,
+          "maxItems": 8
+        },
+        "dWidth": {
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "ptvRequest": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_PtvRequestTypeEnum"
+        },
+        "data": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_LaneDataAttribute"
+          },
+          "minItems": 0,
+          "maxItems": 8
+        },
+        "nodeId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeId"
+        },
+        "nodeIdLink": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeId"
+          },
+          "minItems": 0,
+          "maxItems": 5
+        },
+        "_nodeAttributeSetXYExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "NodeAttributeXYEnum": {
+      "type": "string",
+      "enum": [
+        "reserved",
+        "stopLine",
+        "roundedCapStyleA",
+        "roundedCapStyleB",
+        "mergePoint",
+        "divergePoint",
+        "downstreamStopLine",
+        "downstreamStartNode",
+        "closedToTraffic",
+        "safeIsland",
+        "kerbPresentAtStepOff",
+        "hydrantPresent",
+        "_extended"
+      ]
+    },
+    "NodeId": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "id": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "lane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "_nodeIdExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "NodeListXY": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_nodeListXYExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "NodeSetXY": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "nodeXY": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeXY"
+          },
+          "minItems": 2,
+          "maxItems": 63
+        },
+        "_nodeSetXYExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "nodeXY"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeListXY"
+        }
+      ]
+    },
+    "NodeXY": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "delta": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointByCoordinates"
+        },
+        "attributes": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NodeAttributeSetXY"
+        },
+        "_nodeXYExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "delta"
+      ]
+    },
+    "NonNegativeLongInteger": {
+      "type": "string"
+    },
+    "OverlayLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "overlay": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_GenericLaneReference"
+        },
+        "_overlayLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "overlay"
+      ]
+    },
+    "ParkingLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "parkingLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesParking"
+        },
+        "_parkingLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "parkingLane"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "PathEndPointAngle": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pathEndPointAngle": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/DeltaAngleInDegrees"
+        },
+        "_pathEndPointAngleExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pathEndPointAngle"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneDataAttribute"
+        }
+      ]
+    },
+    "Pavement": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pavement": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesPavement"
+        },
+        "_pavementExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pavement"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "PedestrianCrossing": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "pedestrianCrossing": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesPedestrianCrossing"
+        },
+        "_pedestrianCrossingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pedestrianCrossing"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "PrioritisationResponse": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "stationId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/StationId"
+        },
+        "priorStatus": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_PrioritisationResponseStatusEnum"
+        },
+        "signalGroup": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SignalHeadLocationReference"
+        },
+        "signalGroupUnknownOrUnavailable": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "permanentGreenMovementStatus": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "_prioritisationResponseExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "permanentGreenMovementStatus",
+        "priorStatus",
+        "signalGroup",
+        "signalGroupUnknownOrUnavailable",
+        "stationId"
+      ]
+    },
+    "PrioritisationResponseStatusEnum": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "requested",
+        "processing",
+        "watchOverTraffic",
+        "granted",
+        "rejected",
+        "maxPresence",
+        "reserviceLocked",
+        "_extended"
+      ]
+    },
+    "PtvRequestTypeEnum": {
+      "type": "string",
+      "enum": [
+        "preRequest",
+        "mainRequest",
+        "doorCloseRequest",
+        "cancelRequest",
+        "emergencyRequest",
+        "_extended"
+      ]
+    },
+    "RailVehicleLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "railVehicleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesRailVehicle"
+        },
+        "_railVehicleLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "railVehicleLane"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "RegulatorySpeedLimit": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "type": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_SpeedLimitTypeEnum"
+        },
+        "speed": {
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "forVehiclesWithCharacteristicsOf": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "_regulatorySpeedLimitExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "speed",
+        "type"
+      ]
+    },
+    "RestrictionClassAssignment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "id": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RestrictionOrConnectionId"
+        },
+        "users": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RestrictionUserType"
+          },
+          "minItems": 1,
+          "maxItems": 16
+        },
+        "_restrictionClassAssignmentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "id",
+        "users"
+      ]
+    },
+    "RestrictionOrConnectionId": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "RestrictionsAppliesToEnum": {
+      "type": "string",
+      "enum": [
+        "none",
+        "equippedPublicTransport",
+        "equippedTaxis",
+        "equippedOther",
+        "emissionCompliant",
+        "equippedBicycle",
+        "weightCompliant",
+        "heightCompliant",
+        "pedestrians",
+        "slowMovingPersons",
+        "wheelchairUsers",
+        "visualDisabilities",
+        "audioDisabilities",
+        "otherUnknownDisabilities",
+        "_extended"
+      ]
+    },
+    "RestrictionUserType": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "basicType": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_RestrictionsAppliesToEnum"
+        },
+        "fuelType": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_FuelTypeEnum"
+        },
+        "emissions": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Emissions"
+        },
+        "_restrictionUserTypeExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "basicType"
+      ]
+    },
+    "RoadRegulatoryId": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "RoadSegment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_roadSegmentExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/Geometry"
+        }
+      ]
+    },
+    "SegmentAttributeXYEnum": {
+      "type": "string",
+      "enum": [
+        "reserved",
+        "doNotBlock",
+        "whiteLine",
+        "mergingLaneLeft",
+        "mergingLaneRight",
+        "kerbOnLeft",
+        "kerbOnRight",
+        "loadingZoneOnLeft",
+        "loadingZoneOnRight",
+        "laybyPointOnLeft",
+        "laybyPointOnRight",
+        "adjacentParkingOnLeft",
+        "adjacentParkingOnRight",
+        "adjacentBicycleLaneOnLeft",
+        "adjacentBicycleLaneOnRight",
+        "sharedBicycleLane",
+        "bicycleBoxInFront",
+        "publicTransportStopOnLeft",
+        "publicTransportStopOnRight",
+        "publicTransportStopInLane",
+        "sharedWithTrackedVehicle",
+        "safeIsland",
+        "lowKerbsPresent",
+        "rumbleStripPresent",
+        "audibleSignallingPresent",
+        "adaptiveTimingPresent",
+        "rfSignalRequestPresent",
+        "partialKerbIntrusion",
+        "taperToLeft",
+        "taperToRight",
+        "taperToCentreLine",
+        "parallelParking",
+        "headInParking",
+        "freeParking",
+        "timeRestrictionsOnParking",
+        "costToPark",
+        "midBlockKerbPresent",
+        "unevenPavementPresent",
+        "_extended"
+      ]
+    },
+    "SignalHeadLocation": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "signalGroupId": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneOrSignalId"
+        },
+        "nodeXYZ": {
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/PointByCoordinates"
+        },
+        "_signalHeadLocationExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "signalGroupId",
+        "nodeXYZ"
+      ]
+    },
+    "SignalPhaseAndTiming": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "mapDataReference": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_MapDataVersionedReference"
+        },
+        "timeStamp": {
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "name": {
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "spatMessageRealisation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "intersections": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/IntersectionState"
+          },
+          "minItems": 1,
+          "maxItems": 32
+        },
+        "_signalPhaseAndTimingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "mapDataReference",
+        "intersections"
+      ]
+    },
+    "SignalPhaseAndTimingPublication": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "headerInformation": {
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "signalPhaseAndTiming": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/SignalPhaseAndTiming"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "headerInformation",
+        "signalPhaseAndTiming"
+      ]
+    },
+    "SpeedLimitList": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "regulatorySpeedLimit": {
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_TrafficSignals.json#/definitions/RegulatorySpeedLimit"
+          },
+          "minItems": 1,
+          "maxItems": 9
+        },
+        "_speedLimitListExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "regulatorySpeedLimit"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneDataAttribute"
+        }
+      ]
+    },
+    "SpeedLimitTypeEnum": {
+      "type": "string",
+      "enum": [
+        "unknown",
+        "maxSpeedInSchoolZone",
+        "maxSpeedInSchoolZoneWhenChildrenArePresent",
+        "maxSpeedInConstructionZone",
+        "vehicleMinSpeed",
+        "vehicleMaxSpeed",
+        "_extended"
+      ]
+    },
+    "StationId": {
+      "$ref": "DATEXII_3_TrafficSignals.json#/definitions/NonNegativeLongInteger"
+    },
+    "Striping": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "striping": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesStriping"
+        },
+        "_stripingExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "striping"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    },
+    "TimeChangeDetails": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "startTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "minEndTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "maxEndTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "likelyTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "confidence": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/_TimeIntervalConfidenceEnum"
+        },
+        "nextTime": {
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_timeChangeDetailsExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "confidence",
+        "likelyTime",
+        "maxEndTime",
+        "minEndTime",
+        "nextTime",
+        "startTime"
+      ]
+    },
+    "TimeIntervalConfidenceEnum": {
+      "type": "string",
+      "enum": [
+        "lessThan21Percent",
+        "lessThan36Percent",
+        "lessThan47Percent",
+        "lessThan56Percent",
+        "lessThan62Percent",
+        "lessThan68Percent",
+        "lessThan73Percent",
+        "lessThan77Percent",
+        "lessThan81Percent",
+        "lessThan85Percent",
+        "lessThan88Percent",
+        "lessThan91Percent",
+        "lessThan94Percent",
+        "lessThan96Percent",
+        "lessThan98Percent",
+        "lessThan100Percent",
+        "_extended"
+      ]
+    },
+    "TimeReference": {
+      "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+    },
+    "VehicleLane": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "vehicleLane": {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneAttributesVehicle"
+        },
+        "_vehicleLaneExtension": {
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleLane"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_TrafficSignals.json#/definitions/LaneTypeAttributes"
+        }
+      ]
+    }
+  }
+}
