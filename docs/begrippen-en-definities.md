@@ -264,7 +264,7 @@ De maximumsnelheid die bij het snelheidsregime van de weg hoort volgens het <a h
 <dt><dfn data-lt="MIM">MIM: Metamodel informatiemodellering</dfn></dt>
 <dd>
 
-<dt><dfn dta lt ="Schild|Schilden">Schild</dfn></dt>
+<dt><dfn data lt ="Schild|Schilden">Schild</dfn></dt>
 <dd>
 De achtergrond van een Fysieke Plaat, waar verkeersborden en onderborden op kunnen staan. Een schild heeft een kleur en kan woorden bevatten zoals Zone of Herhaling
 </dd>
