@@ -181,7 +181,7 @@ Definitie conform de [=BABW=].
 
 </dd>
 
-<dt><dfn>Informatiemodel verkeerstekens</dfn></dt>
+<dt><dfn>Informatiemodel Verkeerstekens</dfn></dt>
 <dd>
 
 Een informatiemodel waarmee verkeersmaatregelen, waarschuwingen en verkeerstekens op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het verkeerskundige wegennetwerk, zodat deze informatie machine-verwerkbaar is.
