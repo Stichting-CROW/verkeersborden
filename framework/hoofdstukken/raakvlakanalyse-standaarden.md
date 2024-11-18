@@ -242,3 +242,9 @@ Het https://verkeersbordenoverzicht.nl/ is een de facto standaard in Nederland, 
 De [=VNVF=] publiceerde tot nu toe een bordenboekje met bestelcodes van verkeersborden. VNVF is bezig met het maken van een nieuwe, logische bestelcodering voor het samenstellen van de informatie die op een [=fysieke plaat=] komt. 
 
 **Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit odnerdelen van het informatiemodel. 
+
+### ISO 14832-1
+
+De [[NEN_EN_ISO_14823_1]] norm beschrijft een grafisch gegevenswoordenboek (GDD) met gestandaardiseerde codes voor verkeersborden en pictogrammen die gebruikt worden om verkeers- en reizigersinformatie (TTI) te communiceren. Het systeem zorgt ervoor dat deze beelden consistent en begrijpelijk zijn voor weggebruikers wereldwijd.
+
+De afbeeldingen worden gecodeerd en kunnen worden gebruikt in intelligente transportsystemen (ITS), zoals digitale verkeersborden of apps, om real-time informatie te verstrekken. De codering maakt het mogelijk om verkeersborden en pictogrammen eenvoudig te integreren in verschillende digitale systemen en zorgt voor uniforme communicatie van verkeersinformatie.
