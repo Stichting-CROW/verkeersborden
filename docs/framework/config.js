@@ -174,5 +174,11 @@ var respecConfig = {
       status: "Actueel",
       publisher: "CROW",
   },
+  NEN_EN_ISO_14823_1: {
+    title: "Intelligent transport systems - Graphic data dictionary - Part 1: Specification",
+    href: "https://www.nen.nl/en/nen-en-iso-14823-1-2024-en-324952",
+    status: "Actueel",
+    publisher: "NEN",
+  },
  },
 };
