@@ -87,9 +87,19 @@ var respecConfig = {
       name: "Elisabeth Klören",
       company: "CROW",
     },
+  ],
+  authors: [
+    {
+      name: "Elisabeth Klören",
+      company: "CROW",
+    },
     {
       name: "Redmer Kronemeijer",
       company: "CROW",
+    },
+    {
+      name: "Gulay Canbaloglu",
+      company: "Semmtech",
     },
   ],
   github: "https://github.com/Stichting-CROW/verkeersborden",
