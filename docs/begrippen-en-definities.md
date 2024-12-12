@@ -155,7 +155,7 @@ Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex:32019R2
 <dt><dfn data-lt="fysieke plaat|fysieke platen">fysieke plaat</dfn></dt>
 <dd>
 
-De fysieke uiting van verkeersmaatregelen zijn de platen die de weggebruiker buiten aantreft. Op een plaat staat informatie, in de vorm van een schild met een kleur en teksten en verkeersborden en/of onderborden die elk een eigen waarde kunnen hebben.
+De fysieke uiting van verkeersmaatregelen, met op de Fysieke plaat een schild met een omlijsting en achtergrondkleur en daarop iconen, in de vorm van afbeeldingen van verkeersborden of teksten.
 
 </dd>
 
@@ -363,9 +363,9 @@ Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volst
 
 Daarbij gelden momenteel de volgende regels:
 
-- Wanneer een weg uit één [=rijbaan=] bestaat, ook als die in beide richtingen bereden kan worden, is deze in het NWB opgenomen als één wegvak.
-- Wanneer een weg meerdere rijbanen heeft, wat vooral het geval is bij Rijkswegen, worden deze rijbanen als aparte wegvakken in het bestand verwerkt.
-- Het Nationaal Wegen Bestand is nog niet tot op het niveau van een [=rijstrook=] gedifferentieerd; een rijbaan met meerdere rijstroken is als één wegvak opgenomen in het NWB. Op het hoofdwegennet wordt wel het aantal rijstroken gedefinieerd als attribuut van het wegvak.
+* Wanneer een weg uit één [=rijbaan=] bestaat, ook als die in beide richtingen bereden kan worden, is deze in het NWB opgenomen als één wegvak.
+* Wanneer een weg meerdere rijbanen heeft, wat vooral het geval is bij Rijkswegen, worden deze rijbanen als aparte wegvakken in het bestand verwerkt.
+* Het Nationaal Wegen Bestand is nog niet tot op het niveau van een [=rijstrook=] gedifferentieerd; een rijbaan met meerdere rijstroken is als één wegvak opgenomen in het NWB. Op het hoofdwegennet wordt wel het aantal rijstroken gedefinieerd als attribuut van het wegvak.
 
 </dd>
 
