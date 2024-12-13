@@ -422,7 +422,7 @@ Project van de Vereniging Nederlandse Gemeenten samen met drie grote gemeenten o
 <dt><dfn data-lt="rijstrook|rijstroken">rijstrook</dfn></dt>
 <dd>
 
-Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken. Bron: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01">Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>. Merk op, dat in deze definitie de fietsstrook niet als rijstrook is gedefinieerd. 
+Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken. Bron: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01">Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>. Merk op, dat in deze definitie de fietsstrook niet als rijstrook is gedefinieerd. Het aspect Strook in het informatiemodel kan zowel een nummer van een rijstrook als van een fiets- of voetgangersstrook zijn.
 
 </dd>
 
