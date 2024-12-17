@@ -21,7 +21,7 @@ function indexOfRequirements(config) {
   if (!ul) return;
 
   const requirements = document.querySelectorAll(
-    "section:not(#conformance) em.rfc2119"
+    "section:not(#conformance) em.rfc2119",
   );
 
   /** @type {Record<string, RequirementReference[]>} */
@@ -96,31 +96,5 @@ var respecConfig = {
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
   lint: { "no-unused-dfns": false },
-  localBiblio: {
-    BOMOS_fundament: {
-      title: "BOMOS, het fundament",
-      href: "https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/",
-      status: "Actueel",
-      publisher: "Logius",
-    },
-    BOMOS_verdieping: {
-      title: "BOMOS, de verdieping",
-      href: "https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/",
-      status: "Actueel",
-      publisher: "Logius",
-    },
-    kenkrechmer: {
-      title: "Open standaards call for action",
-      href: "https://www.csrstds.com/OpnStdsCallforAction.pdf",
-      status: "Actueel",
-      publisher: "University of Colorado",
-    }, 
-    NEN_2660_2_2022: {
-      title: "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
-      href: "https://www.nen.nl/en/nen-2660-2-2022-nl-291667",
-      status: "Actueel",
-      publisher: "NEN",
-    }, 
-    },
+  localBiblio: window.localBibliography,
 };
-
