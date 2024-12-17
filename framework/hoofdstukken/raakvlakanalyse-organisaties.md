@@ -17,7 +17,7 @@ De eerste stap van de technische en inhoudelijke ontwikkeling van één samenhan
 Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het programma opgesteld.
 
 <figure>
-<img src="./hoofdstukken/media/programmanetwerkregistratie.png">
+<img src="../images/programmanetwerkregistratie.png">
 <figcaption>Het Programma Netwerkregistratie.</caption>
 </figure>
 
