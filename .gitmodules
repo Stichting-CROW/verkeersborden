@@ -1,0 +1,3 @@
+[submodule "docs/respec-common"]
+	path = docs/respec-common
+	url = https://github.com/Stichting-CROW/respec-common.git
