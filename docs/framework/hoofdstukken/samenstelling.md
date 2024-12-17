@@ -5,7 +5,7 @@
 In onderstaande afbeelding staan de onderdelen waaruit het informatiemodel bestaat.
 
 <figure>
-<img src="./hoofdstukken/media/SamenstellingInformatiemodel.jpg">
+<img src="../images/SamenstellingInformatiemodel.jpg">
 <figcaption>De samenstelling van het informatiemodel</caption>
 </figure>
 

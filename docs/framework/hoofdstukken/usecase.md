@@ -55,7 +55,7 @@ Verschillende <i>gebruikers</i> van de [=verkeerskundige informatie=] hebben een
 Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dbag.nl/en/schema/concepts">dit document</a> van TU Delft over de LOD's in de Basisregistratie Gebouwen (BAG).
 
 <figure>
-<img src="./hoofdstukken/media/levelofdetail.jpg">
+<img src="../images/levelofdetail.jpg">
 <figcaption>Level of detail van een rotonde. Van links naar rechts: LOD0, LOD1, LOD2. Het NWB streeft op dit moment naar LOD1. Dat betekent dat alle nieuw ingebrachte rotondes dat hebben en dat er toegewerkt wordt naar op allerlei manieren uit bijvoorbeeld luchtfoto’s en verkeersborden  herkennen van rotondes om die op dat niveau te brengen. LOD2 vereist rijbaanscheiding en dat is er in het huidige NWB nog niet.
 . </caption>
 </figure>
@@ -162,7 +162,7 @@ Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het ma
 
 In onderstaande figuur wordt de manier van informatie opslaan over een [=verkeersmaatregel=] gevisualiseerd. De onderdelen die voortkomen uit het volgende hoofdstuk, de stakeholderanalyse, en met name uit de use case "beheer van [=verkeerskundige informatie=]" zijn ook in deze afbeelding opgenomen.
 <figure>
-<img src="./hoofdstukken/media/Informatiebehoefte.jpg">
+<img src="../images/Informatiebehoefte.jpg">
 <figcaption>De informatiebehoefte bij een specifieke [=verkeersmaatregel=], voorbeeld: maximum snelheid. </caption>
 </figure> 
 

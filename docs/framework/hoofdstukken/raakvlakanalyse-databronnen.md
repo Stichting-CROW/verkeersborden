@@ -11,7 +11,7 @@ Het NWB wordt actueel gehouden met ingewonnen data en (in mindere mate) door aan
 Het NWB gebruikt op dit moment een eigen informatiemodel, wat aansluit op de eigen database. Om het [=Informatiemodel Verkeerstekens=] toe te kunnen passen moet onderzocht worden hoe dit aansluit op de historische gegevens en wat er nodig is om de informatie in het NWB zoekbaar en vindbaar te maken op basis van het datamodel. Op dit moment wordt het NWB door [=SMART Mobility=] systemen niet live bevraagd, maar wordt een kopie verwerkt in de systemen.
 
 <figure>
-<img src="./hoofdstukken/media/nwb.png">
+<img src="../images/nwb.png">
 <figcaption>Het [=Verkeerskundig wegennetwerk=]: visualisatie van de informatie in het [=NWB+=].</caption>
 </figure>
 

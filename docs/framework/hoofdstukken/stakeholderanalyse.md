@@ -14,7 +14,7 @@ Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus
 De informatie die wordt gepubliceerd over *wijzigingen* in de verkeerskundige situatie op basis van het [=Informatiemodel Verkeerstekens=], wordt gemaakt tijdens de ontwerpfase. 
 
 <figure>
-<img src="./hoofdstukken/media/ontwerpfase.jpg">
+<img src="../images/ontwerpfase.jpg">
 <figcaption>Ontwerpfase</caption>
 </figure>
 
@@ -36,7 +36,7 @@ Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer 
 Voor de weggebruikers in de primaire use case voor het [=Informatiemodel Verkeerstekens=] is reeds beschreven dat zij de locatie van een een [=verkeersmaatregelen=] of [=waarschuwingen=] willen weten. Deze wordt voor hen gerelateerd aan (een gedeelte van) het [=NWB-wegvak=]. De wegbeheerder denkt eerst in termen van een  [=Beïnvloedingsgebied=], daarna aan de [=verkeersmaatregelen=] of [=waarschuwingen=]  die van toepassing is; dan aan de te plaatsen verkeersborden. Pas bij het opstellen van digitale verkeerskundige informatie zal de beheerder ook de koppeling maken naar een specifiek [=NWB-wegvak=] of naar de [=werkingslengte=] binnen het [NWB-wegvak=]
 
 <figure>
-<img src="./hoofdstukken/media/vanbesluitviazonenaarwegvak.jpg">
+<img src="../images/vanbesluitviazonenaarwegvak.jpg">
 <figcaption>De denkstappen van een wegbeheerder van het verkeersmodel naar [=verkeerskundige informatie=]. </caption>
 </figure>
 
@@ -160,7 +160,7 @@ Als laatste stap registreert de wegbeheerder de [=verkeerskundige informatie=] i
 ## Bouwfase
 
 <figure>
-<img src="./hoofdstukken/media/bouwfase.jpg">
+<img src="../images/bouwfase.jpg">
 <figcaption>Bouwfase</caption>
 </figure>
 
@@ -205,7 +205,7 @@ Tijdens bouw en beheren kan een bouwbedrijf tijdelijk de verkeerssituatie aanpas
 
 
 <figure>
-<img src="./hoofdstukken/media/Beheerfase.jpg">
+<img src="../images/Beheerfase.jpg">
 <figcaption>Beheer- en gebruiksfase</caption>
 </figure>
 
@@ -224,7 +224,7 @@ In de beheerfase wordt informatie bijgehouden over de kwaliteit van de verkeersb
 
 
 <figure>
-<img src="./hoofdstukken/media/Beheerfase.jpg">
+<img src="../images/Beheerfase.jpg">
 <figcaption>Asset management proces volgens iAMPro</caption>
 </figure>
 

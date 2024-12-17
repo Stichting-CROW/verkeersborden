@@ -9,7 +9,7 @@ Zonder een goed beheerproces, zoals beschreven in hoofdstuk 11, waarin een infor
 
 Een informatiemodel werpt pas vruchten af als het geimplementewerd is en de bijbehorende informatie ook op vergelijkbare manier is opgesteld en doorzoekbaar is op basis van het informatiemodel en databases en applicaties daarop zijn ingericht. De periode van drie jaar geeft de wegbeheerders, KOOP, NDW en SMART Mobility leveranciers de gelegenheid om ook de eigen implementatie van het informatiemodel te ontwikkelen en beproeven.
 
-<figure><img src="./hoofdstukken/media/Ontwikkelingsfase_Informatiemodel_Verkeerstekens.jpg">
+<figure><img src="../images/Ontwikkelingsfase_Informatiemodel_Verkeerstekens.jpg">
 <figcaption>De ontwikkelingsfase van het informatiemodel in de eerste drie jaren.</caption>
 </figure>
 
@@ -21,6 +21,6 @@ Na de ontwikkel- en beproevingsfase gaat het informatiemodel een relatief stabie
 ## Scope-ontwikkeling
 Indien de scope van het informatiemodel wordt uitgebreid, geldt voor deze uitbreiding weer bovenstaand traject van ontwikkeling, beproeving en beheer. 
 
-<figure><img src="./hoofdstukken/media/scopeuitbreiden.jpg">
+<figure><img src="../images/scopeuitbreiden.jpg">
 <figcaption>Een voorbeeld van potentiële scope-uitbreidingen van het informatiemodel voor andere doelgroepen, zoals beschreven in hoofdstuk 5, de stakeholderanalyse</caption>
 </figure>

@@ -21,7 +21,7 @@ In de toekomst moet het ook mogelijk zijn om voor het werkproces van het maken v
 De stip op de horizon is het federatief data delen, waarbij de wegbeheerders de bronhouder zijn van verkeerskundige informatie, en het NDW een toegangspoort vormt tot die data. Onderstaande afbeelding geeft dat principe weer. Het informatiemodel wordt gepubliceerd door CROW; de wegbeheerder is de bronhouder voor [=verkeerskundige informatie=] op basis van het informatiemodel en deelt deze federatief met het [=NDW=], daarnaast deelt de wegbeheerder federatief data over verkeersbesluiten bij het KOOP (hiervoor is een ander informatiemodel nodig); de SMART Mobility systemen kunnen via het NDW de informatie van alle wegbeheerders vinden.
 
 <figure>
-<img src="./hoofdstukken/media/beoogdearchitectuur.jpg" width=100%>
+<img src="../images/beoogdearchitectuur.jpg" width=100%>
 <figcaption>De beoogde architectuur</caption>
 </figure>
 
@@ -37,7 +37,7 @@ Het [=Informatiemodel Verkeerstekens=] kan door wegbeheerders gebruikt worden bi
 De wegbeheerder moet daarvoor informatie kunnen delen met opdrachtnemers zoals ingenieursbureaus die de verkeerskundige situatie ontwerpen en uitvoeren. De beoogde informatieketen wordt weergegeven in onderstaande afbeelding. Het informatiemodel wordt gepubliceerd door CROW. Deze is gerelateerd aan de verkeersborden in [=NLCS=]. Een opdrachtnemer kan de gewenste nieuwe situatie ontwerpen in een ontwerpapplicatie en na uitvoering gegevens leveren aan de wegbeheerder, die zijn brondata kan beheren. 
 
 <figure>
-<img src="./hoofdstukken/media/informatieketen.jpg" width=100%>
+<img src="../images/informatieketen.jpg" width=100%>
 <figcaption>De informatieketen bij wijzigingen in de verkeerskundige situatie.  </caption>
 </figure>
 
@@ -48,7 +48,7 @@ Daarnaast moet het bord kunnen worden vervangen als het kwijt is. En moet een bu
 De "linking pin" met de landelijke registratie is daarbij de fysieke plaat die buiten aangetroffen wordt. Onderstaande afbeelding laat dit zien.
 
 <figure>
-<img src="./hoofdstukken/media/wegbeheerder-inkoop.jpg" width=100%>
+<img src="../images/wegbeheerder-inkoop.jpg" width=100%>
 <figcaption>De relatie tussen de landelijke registratie, de beheerinformatie van de wegbeheerder, een melding dat een bord kwijt is en de inkoop van een verkeersbord voor vervanging.  </caption>
 </figure>
 
@@ -70,7 +70,7 @@ De gebruikers die in deze use case centraal staan zijn de [=weggebruikers=], die
 Dit leidt ertoe dat de scope is beperkt tot de twee onderste lagen in onderstaande afbeelding: de fysieke laag voor de locatie van de verkeersborden en de netwerklaag, waarin het wegennetwerk en de daarbij geldende [=verkeersmaatregelen=] en [=waarschuwingen=]. 
 
 <figure>
-<img src="./hoofdstukken/media/scope.jpg" width=50%>
+<img src="../images/scope.jpg" width=50%>
 <figcaption>De lagen waarop verkeerskundige informatie kan worden vastgelgd: onderin de fysieke laag, met verhardingen en verkeersborden; de tweede laag is het netwerk en de geldende verkeersmaatregelen; de derde laag is die van tijdelijke situaties bij verbouwingen aan de weg; de vierde laag is die van actueel gebruik van het netwerk, verkeersgegevens, files en dergelijke; de vijfde laag is de besturing van de mobiliteit.  </caption>
 </figure>
 

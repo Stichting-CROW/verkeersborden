@@ -11,7 +11,7 @@ De [[NEN_2660_2_2022]] bevat drie belangrijke (hoofd)onderdelen:
 <li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li>
 
 <figure>
-<img src="./hoofdstukken/media/NEN2660-2_scope.png">
+<img src="../images/NEN2660-2_scope.png">
 <figcaption>NEN2660-2 scope in grijs grijze vlakken (bron: TNO) </caption>
 </figure>
 
@@ -141,6 +141,13 @@ Wegbeheerders leveren actuele wegen aan voor de kaarten van de BGT op basis van 
 
 **Raakvlaktype: Buiten scope** Potententieel op elkaar aansluitende informatiemodellen
 
+
+
+<figure>
+<img src="../images/domeinmodellen.png">
+<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [[NEN_3610]].</caption>
+</figure>
+
 ### IMBOR
 <aside class="note" title="Informatiemodel, data en applicaties"><ol><li><b>Informatiemodel</b>: IMBOR is alleen een informatiemodel, géén bron van gegevens over bijvoorbeeld de locatie van in beheer zijnde verkeersborden. </li>
 <li><b>Data</b>: IMBOR wordt gebruikt om informatie over de fysiek buiten geplaatste verkeersborden te kunnen opslaan. Elke wegbeheerder kan dit zelf organiseren in een eigen database of een database van een opdrachtnemer of softwareleverancier (publicatie bij de bron). Of men kan een landelijke afspraak maken om de in beheer zijnde verkeersborden ergens te publiceren, zoals via het [=NWB=] (centrale publicatie). Op dit moment zijn hiervoor geen afspraken. </li>
@@ -156,20 +163,7 @@ In [=IMBOR=] zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebak
 Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=Programma CORE-BORius=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
 
 
-#### IMWV
-[=IMWV=] staat voor Informatie Model Wegen en Verkeer. Het IMWV is onderdeel van IMBOR.
 
-<figure>
-<img src="./hoofdstukken/media/IMWV.jpg">
-<figcaption>Visualisatie alle objecttypen die tot het IMWV behoren.</caption>
-</figure>
-
-
-
-<figure>
-<img src="./hoofdstukken/media/domeinmodellen.png">
-<figcaption>Domeinmodellen voor geografische informatie; IMGeo is gebaseerd op de [[NEN_3610]].</caption>
-</figure>
 
 ### Datex II
 

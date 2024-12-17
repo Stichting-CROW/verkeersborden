@@ -82,6 +82,7 @@ var respecConfig = {
   shortName: "datamanagementguide",
   license: "CC-BY",
   subtitle: "Gids voor databeheerders van verkeerskundige informatie",
+  lint: { "no-unused-dfns": false },
   editors: [
     {
       name: "Elisabeth Klören",
