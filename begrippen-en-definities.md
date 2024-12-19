@@ -527,11 +527,8 @@ In het informatiemodel wordt hier specifiek bedoeld de afbeeldingen (InformatieO
 <dt><dfn data-lt="verkeersbordendata">verkeersbordendata</dfn></dt>
 <dd>
 
-Het NDW publiceert de <a href="https://docs.ndw.nu/api/trafficsigns/nl/index.html">actueel waargenomen verkeersborden</a> in Nederland.
+De door het NDW gepubliceerde <a href="https://docs.ndw.nu/api/trafficsigns/nl/index.html">fysiek geplaatste, geplande en verwijderde verkeersborden</a> in Nederland.
 
-Het bestand is op twee bronnen gebaseerd:
-
-<aside class="warning">Bronnen ontbreken</aside>
 
 <dt><dfn data-lt="verkeersteken|verkeerstekens">verkeersteken</dfn></dt>
 <dd>
