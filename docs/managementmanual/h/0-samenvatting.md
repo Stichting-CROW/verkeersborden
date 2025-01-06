@@ -1,0 +1,1 @@
+Dit document bevat de beheerhandleiding van het Infortmatiemodel Verkeerstekens en is bedoeld voor de beheerder van deze open standaard. 
