@@ -8,7 +8,7 @@ In deze paragraaf staan de modelleertechische normen en richtlijnen waaraan het 
 De [[NEN_2660_2_2022]] bevat drie belangrijke (hoofd)onderdelen:
 <ol><li>Een praktisch toplevelmodel waarin genoeg semantiek aangegeven wordt om het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], in uit te drukken.</li>
 <li>Extensies hierop voor de meest gebruikt toepassingen in de gebouwde omgeving. </li>
-<li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li>
+<li>Een taalbinding (en daarmee de keuze voor) de LinkedData W3C standaarden: SKOS [skos-primer], RDFS [rdf-schema], OWL [owl2-primer] en SHACL [shacl]. Het [=Informatiemodel Verkeerstekens=], net als [=IMBOR=], kan gebruik maken van deze twee keuzes en hierop zo goed mogelijk aan te sluiten. In onderstaande figuur is ook te zien waar de NEN2660-2 zich op focust. Het [=Informatiemodel Verkeerstekens=] neemt, net als [=IMBOR=], plaats in de "M1: Informatie model" laag.</li></ol>
 
 <figure>
 <img src="../images/NEN2660-2_scope.png">
@@ -17,13 +17,14 @@ De [[NEN_2660_2_2022]] bevat drie belangrijke (hoofd)onderdelen:
 
 Het NEN2660-2 topmodel focust op de gebouwde wereld. In deze specifieke use case is alleen het verkeersbord echt fysiek. Toch zorgt modellering op deze manier voor een mate van standaardisatie van het informatiemodel en de andere informatiemodellen in de gebouwde omgeving.
 
-
 * Het informatiemodel MOET worden opgesteld conform de [[NEN_2660_2_2022]].
 * Het informatiemodel MOET generiek en schaalbaar zijn, zodat de relatie met andere use cases in de toekomst goed te leggen valt.
 * Het informatiemodel MOET van alle concepten een definitie geven of verwijzen naar een definitie in wetten of andere informatiemodellen.
 
+
 ### NEN 3610
-[[NEN_3610]] is de standaard voor het uitwisselen van geo-informatie, gebruikt Unified Modeling Language (UML) als formele taal voor het vastleggen van semantiek en beveelt Geography Markup Language (GML) aan als technisch uitwisselingsformat. NEN 3610 is hiermee nog niet geschikt om semantiek, gegevensdeling en uitwisseling middels Linked Data te realiseren. De NEN3610 is in 2021 herzien (t.o.v. 2011) en vormt de basis van de Samenhangende objecten registratie (SOR) die binnen het DiSGeo programma wordt opgetuigd.  <a href="https://geonovum.github.io/NEN3610-Linkeddata/#inleiding">bron: Geonovum</a>  </dd>
+
+De [[NEN_3610]] is de standaard voor het uitwisselen van geo-informatie, gebruikt Unified Modeling Language (UML) als formele taal voor het vastleggen van semantiek en beveelt Geography Markup Language (GML) aan als technisch uitwisselingsformat. NEN 3610 is hiermee nog niet geschikt om semantiek, gegevensdeling en uitwisseling middels Linked Data te realiseren. De NEN3610 is in 2021 herzien (t.o.v. 2011) en vormt de basis van de Samenhangende objecten registratie (SOR) die binnen het DiSGeo programma wordt opgetuigd.  <a href="https://geonovum.github.io/NEN3610-Linkeddata/#inleiding">bron: Geonovum</a>  </dd>
 
 Binnen de NEN2660-2 is reeds een relatie tussen de NEN2660-2 en de NEN3610 aangegeven. Het gaat hier alleen om een afstemming tussen de begrippenkaders. 
 
@@ -172,8 +173,15 @@ Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR,
 https://www.datex2.eu/ is inmiddels open gepubliceerd. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. 
 
 
+* **Raakvlaktype: Bron voor informatiemodel**  Het Informatiemodel Verkeerstekens MOET gebruik maken van de concepten en definities uit DATEX II. Daarbij geldt wel de nuance, dat het model heel anders in elkaar zit dan een semantisch model, en er instabiliteit in de namespaces zit. Daarom worden namen van attributen waar mogelijk wel overgenomen, maar wordt nog niet gepoogd om een echte alignment te maken of om alles op elkaar af te stemmen. 
 
-* **Raakvlaktype: Bron voor informatiemodel**  Het Informatiemodel Verkeerstekens MOET gebruik maken van de concepten en definities uit DATEX II
+
+### ISO 14823-1
+NEN-EN-ISO 14823-1 specificeert een grafisch gegevenswoordenboek (GDD), een systeem van gestandaardiseerde codes voor bestaande verkeersborden en pictogrammen die worden gebruikt om verkeers- en reizigersinformatie (TTI) te verstrekken. Het coderingssysteem kan worden toegepast bij het opstellen van berichten binnen intelligente transportsystemen (ITS).
+Het coderingssysteem komt neer op een cijfercode waarmee de betekenis van het bord wordt aangeduid, een soort vertaaltabel waarmee soorten verkeersborden worden gecodeerd, voorbeeld: 
+* Nummer: 148
+* Naam: Warning of roundabout (Clockwise)
+* Definitie: Warning of a clockwise roundabout ahead.
 
 
 
