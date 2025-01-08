@@ -114,7 +114,7 @@ Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het info
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die in de [=RVV 1990=] staan. 
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomen zijn in wetgeving, en welke nog niet.
-* Het informatiemodel MOET de types en definities van onderborden definiëren die volgen uit de [=RVV 1990=].
+* Het informatiemodel MOET de meest voorkomende onderborden opnemen en de mogelijkheid om eigen gemaakte teksten op onderborden te publiceren. 
 
 **Buiten scope**  zijn de [=dynamische verkeersborden=]. 
 

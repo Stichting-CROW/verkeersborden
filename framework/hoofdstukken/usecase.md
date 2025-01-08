@@ -43,6 +43,14 @@ Omdat een [=verkeersmaatregel=] of [=waarschuwing=] zowel voor één als voor be
 * Het informatiemodel MOET als default situatie hebben dat een [=verkeersmaatregel=] of [=waarschuwing=] van toepassing is op het gehele [=NWB-wegvak=], in beide richtingen.
 * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden vanaf welke [NWB-junctie] een [=verkeersmaatregel=] of [=waarschuwing=] geldt, indien deze alleen in één richting geldt. 
 
+<aside class="note" title="Richting van het geometrische NWB-wegvak versus rijrichting">
+<p>Een geometrische representatie, de lijn, van een wegvak in het NWB heeft bij publicatie een beginpunt en een eindpunt. Dit is de geometrische richting van het wegvak. Daarnaast heeft het wegvak een of twee rijrichtingen: de richting waarop gereden mag worden. In onderstaand voorbeeld zie je dat bij het beginpunt van het wegvak een bord met verboden in te rijden staat. De rijrichting op het wegvak is in dit geval Terug. </p>
+<figure>
+<img src="../images/wegvakrichting.png"  style="width:50%; max-width:none;">
+<figcaption>Voorbeeld van wegvak waarbij de weg bij het beginpunt niet mag worden ingereden. De geometrische richting van de lijn op de kaart is hier tegengesteld aan de rijrichting voor voertuigen op de weg. </caption>
+</figure>
+</aside>
+
 #### Rijstrook 
 * Het informatiemodel MOET de mogelijkheid bieden om de [=verkeersmaatregelen=] en [=waarschuwingen=] te laten gelden voor één van de [=rijstroken=], die oplopend vanaf één worden genummerd vanuit het midden van de weg. Ook als het [=NWB-Wegvak=] nog niet is gesplitst in rijstroken.
 
@@ -67,20 +75,16 @@ Zie voor toelichting op Levels of Detail bijvoorbeeld <a href="https://docs.3dba
 #### Werkingslengte 
 Omdat een [=verkeersmaatregel=] of [=waarschuwing=] zowel voor het gehele als voor een gedeelte van het [=NWB-wegvak=] kan gelden, zal het systeem moeten kunnen vinden voor welk gedeelte van het [=NWB-wegvak=] de regel van toepassing is. 
 
-
+* Het informatiemodel MOET als default situatie hebben dat de [=verkeersmaatregel=] of [=waarschuwing=] geldt voor het gehele NWB-wegvak.
 
 
 **Beginpunt**
-
-* Het informatiemodel MOET als default situatie hebben dat de [=verkeersmaatregel=] of [=waarschuwing=] start op de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersmaatregel=] of [=waarschuwing=] te laten gelden vanaf een specifiek beginpunt gemeten in meters vanaf de [NWB-junctie].
-
-
-**Eindpunt**
-* Het informatiemodel MOET als default situatie hebben dat de [=verkeersmaatregel=] of [=waarschuwing=] eindigt op de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersmaatregel=] of [=waarschuwing=] te laten gelden tot een specifiek eindpunt op x lengte ná de [NWB-junctie]. 
+ 
+* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersmaatregel=] of [=waarschuwing=] te laten gelden vanaf een beginpunt in het [NWB-wegvak].
 
 
+**Eindpunt** 
+* Het informatiemodel MOET de mogelijkheid bieden om een [=verkeersmaatregel=] of [=waarschuwing=] te laten gelden tot een eindpunt in het [NWB-wegvak].
 
 ### Verkeersmaatregel
 De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden weten, welke [=verkeersmaatregelen=] en [=waarschuwingen=] er gelden. Dit betekent, dat het systeem deze regels bij het [=NWB-wegvak=] moet kunnen vinden. 
