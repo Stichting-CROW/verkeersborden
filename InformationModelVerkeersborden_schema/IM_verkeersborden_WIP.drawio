@@ -1,65 +1,74 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="0LnV7ETqTs7hgSCRXFs9">
-        <mxGraphModel dx="1184" dy="563" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1754" dy="851" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="BCpdqVNQJVRz4uYAB1dM-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-1" target="BCpdqVNQJVRz4uYAB1dM-22" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="383" y="500" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="BCpdqVNQJVRz4uYAB1dM-6" value="&lt;div&gt;describes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BCpdqVNQJVRz4uYAB1dM-5" vertex="1" connectable="0">
-                    <mxGeometry x="0.0148" y="2" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
-                    </mxGeometry>
-                </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-1" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="JAaSVqaNoPK4AC_1vTfK-9" value="&lt;div&gt;describes&lt;/div&gt;&lt;div&gt;0:n&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-8" vertex="1" connectable="0">
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-9" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;0:n&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-8" vertex="1" connectable="0">
                     <mxGeometry x="-0.4503" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="JAaSVqaNoPK4AC_1vTfK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-1" target="BCpdqVNQJVRz4uYAB1dM-2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="770" y="510" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="JAaSVqaNoPK4AC_1vTfK-13" value="&lt;div&gt;describes&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-12" vertex="1" connectable="0">
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-13" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-12" vertex="1" connectable="0">
                     <mxGeometry x="0.0127" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="BCpdqVNQJVRz4uYAB1dM-1" value="&lt;div&gt;&lt;b&gt;TrafficRegulation&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Verkeersmaatregel)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- toelichting&lt;br&gt;&lt;/div&gt;&lt;div&gt;- start/end date&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="340" y="400" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="330" y="400" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="JAaSVqaNoPK4AC_1vTfK-57">
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="JAaSVqaNoPK4AC_1vTfK-57" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="is &lt;br&gt;described by" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="7">
+                <mxCell id="8" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7" vertex="1" connectable="0">
                     <mxGeometry x="-0.1927" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
+                        <mxPoint x="10" y="1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="BCpdqVNQJVRz4uYAB1dM-2" value="&lt;div&gt;&lt;b&gt;RoadSign&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Fysieke plaat)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- geosparql:Feature&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Geo-orientatiehoek&lt;/div&gt;&lt;div&gt;- ObjectStatus&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="730" y="525" width="120" height="90" as="geometry"/>
+                    <mxGeometry x="730" y="540" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-22" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="390" y="510"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="12" vertex="1" connectable="0">
+                    <mxGeometry x="0.0837" y="2" relative="1" as="geometry">
+                        <mxPoint x="2" y="19" as="offset"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="BCpdqVNQJVRz4uYAB1dM-22" value="&lt;div&gt;&lt;b&gt;network locatie verkeersmaatregel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- strooknummer&lt;/div&gt;&lt;div&gt;- wegvakID&lt;/div&gt;&lt;div&gt;- wegvakrichting&lt;/div&gt;- wegvakfractieStart&lt;br&gt;- wegvakfractieEinde" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="340" y="510" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="330" y="525" width="120" height="120" as="geometry"/>
                 </mxCell>
                 <mxCell id="BCpdqVNQJVRz4uYAB1dM-29" value="&lt;div&gt;&lt;b&gt;network locatie fysieke plaat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- strooknummer&lt;/div&gt;&lt;div&gt;- wegvakID&lt;/div&gt;&lt;div&gt;- wegvakrichting&lt;/div&gt;&lt;div&gt;- wegvakfractie (percentage)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="500" y="510" width="120" height="120" as="geometry"/>
+                    <mxGeometry x="480" y="525" width="120" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="BCpdqVNQJVRz4uYAB1dM-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="BCpdqVNQJVRz4uYAB1dM-29" edge="1" source="BCpdqVNQJVRz4uYAB1dM-2">
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="BCpdqVNQJVRz4uYAB1dM-29" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="720" y="565" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="JAaSVqaNoPK4AC_1vTfK-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.017;exitY=0.289;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;exitPerimeter=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-32" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
+                <mxCell id="14" value="&lt;b&gt;&lt;u&gt;nen2660:contains&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BCpdqVNQJVRz4uYAB1dM-30" vertex="1" connectable="0">
+                    <mxGeometry x="0.2031" y="1" relative="1" as="geometry">
+                        <mxPoint x="23" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.013;exitY=0.542;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;exitPerimeter=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-32" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="BCpdqVNQJVRz4uYAB1dM-32" value="&lt;div&gt;&lt;b&gt;Aspect&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- zone&lt;/div&gt;&lt;div&gt;- time (condition of the regulation) (explicit &amp;amp; textual values)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt voor)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt niet voor)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt voor special)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt niet voor special)&lt;/div&gt;&lt;div&gt;- road conditions (wet/icy/...)&lt;/div&gt;&lt;div&gt;- local speed&lt;/div&gt;&lt;div&gt;- road speed category &lt;br&gt;&lt;/div&gt;&lt;div&gt;- advised speed&lt;/div&gt;&lt;div&gt;- priority (voorrang)&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1340" y="470" width="120" height="350" as="geometry"/>
+                    <mxGeometry x="1390" y="400" width="120" height="350" as="geometry"/>
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-1" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -71,7 +80,7 @@
                     <mxGeometry x="80" y="400" width="130" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-5" value="&lt;div&gt;&lt;b&gt;Icon&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&lt;/b&gt;type&lt;/div&gt;&lt;div&gt;-value&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1160" y="525" width="120" height="95" as="geometry"/>
+                    <mxGeometry x="1199" y="542.5" width="120" height="95" as="geometry"/>
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-40" value="&lt;div&gt;fysieke plaat&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
                     <mxGeometry x="640" y="60" width="250" height="250" as="geometry"/>
@@ -91,18 +100,18 @@
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-44" value="schildnummer 2b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
                     <mxGeometry x="774" y="155" width="90" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JAaSVqaNoPK4AC_1vTfK-57" target="JAaSVqaNoPK4AC_1vTfK-5">
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JAaSVqaNoPK4AC_1vTfK-57" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="1100" y="570" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="11" value="nen:hasPart" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="10">
+                <mxCell id="11" value="&lt;b&gt;&lt;u&gt;nen2660:hasPart&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="10" vertex="1" connectable="0">
                     <mxGeometry x="-0.2535" relative="1" as="geometry">
-                        <mxPoint as="offset"/>
+                        <mxPoint x="5" y="1" as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-57" value="&lt;div&gt;&lt;b&gt;Shield&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- ral colour&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-                    <mxGeometry x="960" y="520" width="100" height="100" as="geometry"/>
+                    <mxGeometry x="975" y="540" width="100" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="JAaSVqaNoPK4AC_1vTfK-5" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -129,11 +138,6 @@
                 </mxCell>
                 <mxCell id="JAaSVqaNoPK4AC_1vTfK-74" value="&lt;div&gt;nummering schild/icons op fysieke platen&lt;/div&gt;&lt;div&gt;- top&amp;gt;bottom : 1&amp;gt;x&lt;/div&gt;&lt;div&gt;- left&amp;gt;right : a&amp;gt;z&lt;/div&gt;&lt;div&gt;(geef alleen aan wat nodig is)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="350" y="60" width="250" height="70" as="geometry"/>
-                </mxCell>
-                <mxCell id="5" value="&lt;font color=&quot;#0000cc&quot;&gt;is located at&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="680" y="570" as="geometry">
-                        <mxPoint x="-10" y="-4" as="offset"/>
-                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
