@@ -93,25 +93,31 @@ De gebruiker wil van de actuele locatie waar hij rijdt of straks gaat rijden wet
 
 
 ### Fysiek verkeersbord 
-De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rijdt zien welk fysiek verkeersbord er staat.
+De gebruiker wil van de actuele locatie waar hij nu of binnen enkele minuten rijdt zien welk fysiek verkeersbord er staat. Daarbij wordt dit op twee manieren aangeboden, zodat zowel gewerkt kan worden met een relatieve plaatsbepaling in het wegennetwerk, als met een kaart of driedimensionale weergave van de omgeving. 
 
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat gemeten in meters vanaf de [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat gemeten in % van het [NWB-wegvak] vanaf een [NWB-junctie]. 
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat: boven de weg, of links of rechts naast de weg.
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat in x,y en z. 
-* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is, door de [NWB-junctie] op het startpunt van de rijrichting aan te duiden bij het bord.
+1. De netwerklocatie
+* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat ten opzichte van het wegennetwerk, de netwerklocatie:
+  * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welk wegvak het fysieke verkeersbord bedoeld is.
+  * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden voor welke rijrichting het fysieke verkeersbord bedoeld is (heen of terug)
+  * Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat: boven de weg, of links of rechts naast de weg.
+
+Zie voor de uitwerking de [Gids voor Databeheer: netwerklocatie fysieke plaat](https://docs.crow.nl/verkeersborden/howtodatamanagement/#netwerklocatie-fysieke-plaat)
+
+2. De fysieke locatie op een kaart of in een 3D model
+* Het informatiemodel MOET de mogelijkheid bieden om aan te duiden waar het fysieke verkeersbord staat op een kaart of in een 3D model, daarvoor is een geolocatie en een geo-orientatiehoek nodig. 
+
+Zie voor de uitwerking de [Gids voor databeheer: geolocatie fysieke plaat](https://docs.crow.nl/verkeersborden/howtodatamanagement/#geo-locatie-fysieke-plaat)
 
 <aside class="note" title="Locatieaanduiding verkeersbord">
 <br>
 <b>Argumenten voor x,y:</b><ul>
-<li>Doelgroep: wegontwerpers. X, Y volgt uit een wegontwerp, daar leidt je minder makkelijk de afstand in de lengterichting uit. Voor 3D ontwerpen is de z ook nog nodig</li>
-<li>Doelgroep: wegontwerpers. Om bestaande, in gebruik zijnde verkeersborden goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen. Een x,y is daarbij makkelijker te verwerken dan relatieve locaties. Voor 3D ontwerpen is de z ook nog nodig</li>
-<li>Doelgroep: bouwbedrijven: Om het bord te kunnen plaatsen is een x,y ook makkelijker te gebruiken dan de relatieve locatie ten opzichte van een theoretische junctie, deze is buiten niet te vinden.</li></ul>
+<li>Doelgroep: wegontwerpers. Om bestaande, in gebruik zijnde verkeersborden goed te kunnen toepassen in een ontwerp voor een nieuwe weginrichting moeten deze kunnen worden ingelezen/geviewed in CAD systemen. Een x,y kan daarbij gebruikt worden, CAD kan niet goed omgaan met netwerklocaties zoals dat gebruikelijk is in GIS-systemen. Voor 3D ontwerpen is de z ook nog nodig. Ook voor teuglevering uit het wegontwerp naar de registratie van verkeersborden kan het CAD systeem alleen maar met geolocatie overweg. </li>
+<li>Doelgroep: bouwbedrijven: Om het bord te kunnen plaatsen is een x,y ook makkelijker te gebruiken dan de relatieve locatie ten opzichte van een theoretisch netwerk, deze is buiten niet te vinden.</li></ul>
 <b>Argumenten voor lengterichting, in meters of % vanaf het wegvak (dit maakt voor deze argumenten geen verschil):</b><ul>
 <li>Doelgroep: Weggebruikers. Voor een SMART mobility systeem is nauwkeurig bepalen op welk moment het [=NWB-wegvak=] in loodrechte lijn een verkeersbord tegenkomt in verhouding tot de eigen x,y locatie die daar ook iets van afwijkt minder eenvoudig dan bepalen op hoeveel meter van de [=NWB-junctie=] men zich bevindt.</li>
 <li>Doelgroep: Wegbeheerders. Bij het opstellen van verkeerskundige data kun je met de lengterichting een relatie leggen met het beginpunt van de [=verkeersmaatregel=] en controleren of deze hetzelfde is</li>
 <li>Doelgroep: Wegbeheerders. Bij correcties van de geometrie van een [=NWB-wegvak=] of bij intekenen van borden met behulp van xy op een andere kaart dan het NWB leidt % tot nauwkeuriger informatie.</li></ul>
-Op dit moment worden alle opties meegenomen, al betekent dit dat er feitelijk dubbele informatie moet worden opgeslagen.
+Op dit moment worden beide opties meegenomen, al betekent dit dat er feitelijk dubbele informatie moet worden opgeslagen.
 </aside>
 
 
@@ -146,7 +152,7 @@ Het formaat is SVG, dat zijn schaalbare vectorafbeeldingen die op het web en in 
 
 ### Adviessnelheid+
 De wegbeheerder heeft de mogelijkheid een [=adviessnelheid] te geven met een A4 verkeersbord.
-Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom geeft het informatiemodel geeft de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over (een deel van) een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegeven, los van de individuele waarschuwingen bij de gevaarlijke punten.
+Daarnaast zijn er veel waarschuwingsborden die indirect advies geven over het matigen van de snelheid. Bijvoorbeeld gewenste lage snelheid bij donker en schemering om aanrijdingen met wild te beperken, of bij een drempel, school, inrit of zebrapad. Deze waarschuwingen zijn voor de mens een duidelijk, maar niet voor een machine. Daarom  geeft het informatiemodel de mogelijkheid een adviessnelheid toe te voegen, zonder plaatsing van een bijbehorend A4 verkeersbord. Over (een deel van) een [=NWB-wegvak=] kan een lagere adviessnelheid worden opgegeven, los van de individuele waarschuwingen bij de gevaarlijke punten.
 
 * Het informatiemodel MOET de mogelijkheid bieden bij (een deel van) een [=NWB-wegvak=] een [=adviessnelheid=] mee te geven, zonder dat hierbij een fysiek verkeersbord geplaatst wordt.
 

@@ -339,7 +339,7 @@ Een open geografisch databestand van een [=verkeerskundig wegennetwerk=] bestaan
 Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen.
 Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland.
 Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies.
-Zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a>
+Zie ook <a href="https://www.nationaalwegenbestand.nl/">deze website</a>
 
 </dd>
 
