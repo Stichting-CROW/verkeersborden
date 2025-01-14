@@ -30,7 +30,7 @@ De stip op de horizon is het federatief data delen, waarbij de wegbeheerders de 
 
 Het [=Informatiemodel Verkeerstekens=] kan door wegbeheerders gebruikt worden bij het registreren en publiceren van de actuele verkeerskundige situatie op de weg. Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=] op:
 
-1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelike netwerkregistratie.
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelijke netwerkregistratie.
 2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt. De informatie wordt gepubliceerd door KOOP. Vastlegging van de informatie wordt ondersteund in een verkeersbesluitenapplicatie.
 3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
 
@@ -82,16 +82,16 @@ Dit leidt ertoe dat de scope is beperkt tot de twee onderste lagen in onderstaan
 
 ### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het [=verkeerskundige wegennetwerk=] bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Het informatiemodel maakt het mogelijk verkeerskundige informatie toe te voegen aan het [=verkeerskundige wegennetwerk=] zoals dat gepubliceerd wordt bij het [=NWB=] met [=NWB-wegvakken=] en [=NWB-juncties=]. 
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het [=verkeerskundige wegennetwerk=] zoals dat gepubliceerd wordt bij het [=NWB=] bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Indien gewenst, kan hetzelfde model worden gebruikt voor het publiceren van de verkeersmaatregelen op de wegen en parkeervakken op particuliere terreinen zoals parkeerplaatsen van ziekenhuizen, bungalow parken enzovoorts. Daar maakt het model geen onderscheid in.
 
 **Buiten scope** zijn vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
 Het informatiemodel van het [=verkeerskundige wegennetwerk=] is buiten scope, dit hoort bij de geo-registratie van het netwerk waar het [=Informatiemodel Verkeerstekens=] de verkeersmaatregelen en dergelijke beschrijft ten opzichte van het netwerk.
 
 
 ### Verkeersmaatregelen
-[=verkeersmaatregelen=] en [=waarschuwingen=] uit [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
-Daarnaast is een lijst [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=] binnen scope die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. 
-Bij het verkeersbord worden zaken vastgelegd die voor de [=weggebruiker=] van belang zijn: plaatsingsdatum, beoogde locatie, type, informatie in het onderbord, en overige kenmerken van het verkeersbord die aanduiden wat de [=verkeersmaatregel=] is. 
+[=verkeersmaatregelen=] en [=waarschuwingen=] die volgen uit de [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
+Daarnaast zijn de [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=] binnen scope die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. 
+
 
 * Het informatiemodel MOET de types en definities van de [=verkeersmaatregelen=], [=waarschuwingen=] bevatten die in de [=RVV 1990=] staan. 
 * Het informatiemodel MOET de types en definities van de [=verkeersmaatregelen=], [=waarschuwingen=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
@@ -114,7 +114,7 @@ Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het info
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die in de [=RVV 1990=] staan. 
 * Het informatiemodel MOET de types en definities van de [=statische verkeersborden=] bevatten die genomineerd zijn om in de wet te worden opgenomen. 
 * Het informatiemodel MOET duidelijk aangeven welke [=statische verkeersborden=] al opgenomen zijn in wetgeving, en welke nog niet.
-* Het informatiemodel MOET de meest voorkomende onderborden opnemen en de mogelijkheid om eigen gemaakte teksten op onderborden te publiceren. 
+* Het informatiemodel MOET de meest voorkomende onderborden uit de praktijk opnemen en de mogelijkheid om eigen gemaakte teksten op onderborden te publiceren. 
 
 **Buiten scope**  zijn de [=dynamische verkeersborden=]. 
 
