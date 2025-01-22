@@ -27,7 +27,7 @@ Het ontwerpproces start met de aanvraag van een wijziging, bijvoorbeeld omdat er
 
 ### Verkeersmodel
 
-*Stakeholders: Wegbeheerders, verkeerskundigen* maken gebruik van het [=IMWV=] voor begrippen en definities
+*Stakeholders: Wegbeheerders, verkeerskundigen* 
 
 Verkeersmodellen worden gebruikt om de toekomstige doorstroming van het verkeer te kunnen voorspellen en zo een optimale inrichting van het [=verkeerskundige wegennetwerk=] te ontwerpen. Het ontwerpen van varianten waarmee verkeersstromen in de toekomst kunnen worden afgewikkeld. Hieruit volgen in elk geval een deel van de benodigde (te ontwerpen) verkeersborden. Een deel van de ontwerp-verkeersborden met specifieke invulling ("snelheidsbeperking; 60 km/h") is hiermee bekend of zou dit kunnen zijn. Dit proces gebeurt vaak tegelijkertijd (iteratief en parallel aan) het ontwerpen van de weg(inrichting) waardoor onderzocht wordt of het gewenste [=verkeerskundige wegennetwerk=] ook ruimtelijk inpasbaar is.
 
@@ -69,7 +69,7 @@ Daarnaast is het voor een wegbeheerder handig om bij het wijzigen van een [=verk
 
 *Stakeholders: Wegontwerpers* 
 
-Wegontwerpers maken gebruik van het [=IMWV=] voor begrippen en definities en van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=] voor ontwerprichtlijnen.
+Wegontwerpers maken gebruik van het [=Handboek Wegontwerp=]/de [=ASVV=]/[=Wegontwerp RWS=] voor ontwerprichtlijnen.
 
 Op basis van een verkeersmodel wordt de ruimtelijke inpassing van de wegen en de verkeersborden gemodelleerd. Op basis van de inpassing kunnen extra verkeersborden en markeringen nodig zijn, bijvoorbeeld daar waar zich extra gevaren voordoen zoals bij kruispunten of zijwegen. 
 

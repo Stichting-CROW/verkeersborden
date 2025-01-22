@@ -26,10 +26,9 @@ Bron: [CROW thesaurus](https://data.crow.nl/thesaurus/term/5BB62D05-7691-4A69-89
 
 De BABW bevat regels over de plaatsing en uitvoering/materialisatie van verkeersborden.
 BABW verwijst naar de NEN3381:2020 voor visualisaties van de fysiek te plaatsen verkeersborden.
+[regeling](https://wetten.overheid.nl/jci1.3:c:BWBR0004826&hoofdstuk=II&z=2024-01-01&g=2024-01-01)
 
-Zie ook [§ 3 _Algemene bepalingen ten aanzien van uitvoering van verkeersborden_](https://wetten.overheid.nl/jci1.3:c:BWBR0009104&hoofdstuk=II&paragraaf=3) van [=Uitvoeringsvoorschriften BABW inzake verkeerstekens=].
 
-[Tekst van de regeling](https://wetten.overheid.nl/jci1.3:c:BWBR0004826)
 
 <dt><dfn>Uitvoeringsvoorschriften BABW inzake verkeerstekens</dfn></dt>
 <dd>
@@ -49,7 +48,7 @@ Bebakening is het samenstel van op, in en naast de verharding aangebrachte verke
 <dt><dfn>beïnvloedingsgebied</dfn></dt>
 <dd>
 
-Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersmaatregel=] of [=waarschuwing=] geldt. Dit kan resulteren in een [=werkingslengte=], [rijstrook=]aanduiding, een [=route=], of een [=zone=].
+Een geografische locatie (punt, polygoon of vlak) waarvoor een [=verkeersmaatregel=] of [=waarschuwing=] geldt. Dit kan resulteren in een [=werkingslengte=], [=rijstrook=]aanduiding, een [=route=], of een [=zone=].
 
 </dd>
 
@@ -103,7 +102,7 @@ Zie [datapedia.nl](https://www.datapedia.nl/).
 <dt><dfn>Datex II</dfn></dt>
 <dd>
 
-DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's
+DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners. [Website](https://datex2.eu/)
 
 </dd>
 
@@ -115,19 +114,16 @@ DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeer
 <dt><dfn>DigiGO</dfn></dt>
 <dd>
 
-([=DigiGO=]) maakt en beheert standaarden voor de gebouwde omgeving, waaronder de met het informatiemodel samenhangende standaard [=NLCS=] en het [DSGO], een digitaal stelsel uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. 
+DigiGO maakt en beheert standaarden voor de gebouwde omgeving, waaronder de met het informatiemodel samenhangende standaard [=NLCS=] en het [DSGO]-stelsel. <a href="https://www.digigo.nu">Website</a>.
+
 
 
 </dd>
 
 <dt><dfn>DSGO</dfn></dt>
 <dd>
-
- Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Dit stelsel wordt ontwikkeld en beheerd door [=DigiGO=]
-Doel: Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken.Het
-Zie voor meer informatie de <a href="https://www.digigo.nu">website van DigiGO</a>.
-Bestuurlijke aanjager is de Bouwdigitaliseringsraad, waarin ook het ministerie van BZK deelneemt.
-
+Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Dit stelsel wordt ontwikkeld en beheerd door [=DigiGO=]
+Doel: Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken. 
 </dd>
 
 
@@ -169,7 +165,7 @@ De weergave van een object, zoals een verkeersbord of een weg, in een GIS of CAD
 <dt><dfn data-lt="HWO|Handboek Wegontwerp">Handboek Wegontwerp</dfn></dt>
 <dd>
 
-[=CROW=] publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/productpakketten/handboek-wegontwerp-2013-serie-papier-onlin">deze website</a>
+[=CROW=] publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/kennisproducten/km-wegontwerp-buiten-de-bebouwde-kom/">deze website</a>
 
 </dd>
 
@@ -210,19 +206,11 @@ Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".
 
 Het Informatiemodel Beheer Openbare Ruimte (IMBOR) bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden.
 De objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) vormen de de geometrische representatie van de objecten in IMBOR.
-Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://docs.crow.nl/onto-verkenner/imbor/#/view">deze viewer</a>
+Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://imbor-viewer.apps.crow.nl/">deze viewer</a>
 
 </dd>
 
-<dt><dfn data-lt="IMWV|Informatie Model Wegen en Verkeer">IMWV</dfn></dt>
-<dd>
 
-Het InformatieModel Wegen en Verkeer (IMWV) beschrijft de benamingen van verkeerskundige objecten en van verkeersgegevens, met de bijbehorende kenmerken en waarden.
-Het IMWV versie 2018 is de eerste publicatie van het IMWV en bevat een beschrijving van de fysieke objecten en statische gegevens die aan fysieke objecten gekoppeld kunnen worden.
-Het is gebaseerd op de gegevensbehoefte van drie verkeerskundige vraagstukken: verkeersveiligheid, wegontwerp/verkeerstechnisch ontwerp en verkeersmodellen.
-Het IMWV is sinds 2020 opgenomen in het [=IMBOR=] als de IMBOR Vakdiscipline Verkeer.
-
-</dd>
 
 <dt><dfn data-lt="Intelligente snelheidsondersteuning|ISA">Intelligente snelheidsondersteuning (ISA)</dfn></dt>
 <dd>
@@ -300,7 +288,7 @@ BIM loket beheert de Nederlandse CAD Standaard, de Nederlandse CAD standaard voo
 CAD betekent Computer-aided design: het ontwerpen van onder meer constructies en apparaten met behulp van computerprogramma's.
 De NLCS bevat basisafspraken over het omgaan met metadata, digitaal tekenen, het uiterlijk van de tekening en – vooral – de bestandsopbouw van 2D-tekenwerk.
 Deze afspraken zijn onafhankelijk van de CAD-platforms die geleverd worden door softwareleveranciers.
-Zie ook <a href="https://www.bimloket.nl/p/365/NLCS">deze website</a>
+<a href="https://www.digigo.nu/standaarden/nlcs/">NLCS website</a>
 
 </dd>
 
@@ -343,12 +331,6 @@ Zie ook <a href="https://www.nationaalwegenbestand.nl/">deze website</a>
 
 </dd>
 
-<dt><dfn data-lt="NWB+|Nationaal Wegen Bestand+">NWB+</dfn></dt>
-<dd>
-
-Een verbeterde versie van het nationaal wegen bestand, zie ook <a href="https://nationaalwegenbestand.nl/wat-het-nwb">deze website</a>
-
-</dd>
 
 <dt><dfn data-lt="NWB-Wegvak|NWB-Wegvakken">NWB-Wegvak</dfn></dt>
 
@@ -527,7 +509,7 @@ In het informatiemodel wordt hier specifiek bedoeld de afbeeldingen (InformatieO
 <dt><dfn data-lt="verkeersbordendata">verkeersbordendata</dfn></dt>
 <dd>
 
-De door het NDW gepubliceerde <a href="https://docs.ndw.nu/api/trafficsigns/nl/index.html">fysiek geplaatste, geplande en verwijderde verkeersborden</a> in Nederland.
+De door het NDW gepubliceerde fysiek geplaatste, geplande en verwijderde verkeersborden in Nederland.
 
 
 <dt><dfn data-lt="verkeersteken|verkeerstekens">verkeersteken</dfn></dt>
@@ -739,9 +721,9 @@ De Vereniging voor Nederlandse Verkeersbordenfabrikanten. Deze fabrikanten maken
 
 </dd>
 
-<dt><dfn data-lt="Programma CORE-BORius">Programma CORE-BORius</dfn></dt>
+<dt><dfn data-lt="DOOR Programma">DOOR Programma</dfn></dt>
 <dd>
-CORE staat voor samenwerkende gemeenten die een eigen centrale objectenregistratie willen hebben om informatie eenmalig op te slaan en meervoudig te delen. BORius staat voor Beheer Openbare Ruimte Informatie en Uitwissel Standaard. Het is de werktitel voor een nieuw initiatief dat ervoor zorgt dat assetmanagement organisaties hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor/borius-initiatief-voor-een-betere-uitwisseling-van">deze website</a>.
+DOOR staat voor Dataregistratie Objecten Openbare Ruimte. Het [=DOOR programma=] beoogt te zorgen dat assetmanagement organisaties, waaronder gemeenten en provincies, hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/Onderwerpen/Assetmanagement-en-beheer-openbare-ruimte/Data-en-informatie/programmadoor/">deze website</a>.
 
 </dd>
 
