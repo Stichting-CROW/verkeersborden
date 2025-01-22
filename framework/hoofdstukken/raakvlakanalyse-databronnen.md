@@ -1,7 +1,5 @@
 # Raakvlak: Databronnen
 
-## NWB(+)
-
 ### NWB Wegennetwerk
 
 
@@ -12,7 +10,7 @@ Het NWB gebruikt op dit moment een eigen informatiemodel, wat aansluit op de eig
 
 <figure>
 <img src="../images/nwb.png">
-<figcaption>Het [=Verkeerskundig wegennetwerk=]: visualisatie van de informatie in het [=NWB+=].</caption>
+<figcaption>Het [=Verkeerskundig wegennetwerk=]: visualisatie van de informatie in het [=NWB=].</caption>
 </figure>
 
 
@@ -79,7 +77,7 @@ De ontwikkeling van de samenhangende objectenregistratie is een samenwerkingsver
 
 
 ### [=Zweedse netwerkregistratie=]
-Zweedse variant van [=NWB+=].
+Zweedse variant van [=NWB=].
 
 **Raakvlaktype: Buiten scope** Potententieel raakvlak van de informatiemodellen bij internationale standaardisatie.
 

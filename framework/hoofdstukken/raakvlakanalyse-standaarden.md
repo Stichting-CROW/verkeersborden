@@ -161,14 +161,14 @@ In [=IMBOR=] zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebak
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=Programma CORE-BORius=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
+Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=DOOR Programma=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
 
 
 
 
 ### Datex II
 
-[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's</dd>
+[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners.</dd>
 
 https://www.datex2.eu/ is inmiddels open gepubliceerd. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. 
 

@@ -5,21 +5,6 @@ De raakvlakanalyse beschijft in drie hoofdstukken welke beheerorganisaties, part
 1. Het [=verkeerskundige wegennetwerk=] en de fysieke ligging van de wegen.
 2. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
-## Programma Netwerkregistratie
-
-Het [=Programma Netwerkregistratie=] werkt aan het op orde brengen van de verkeerskundige wegendata; dit zijn de data die gaan over wélke beperkingen op welke wegen gelden en wélk verkeer op welke wegen is toegestaan (ge- en verboden). De verkeerskundige wegendata zijn essentieel voor wegbeheerders en serviceproviders om het verkeer sneller, veiliger en groener te maken. <a href="https://dutchmobilityinnovations.com/spaces/1270/programma-netwerkregistratie/landing">Website Programma Netwerkregistratie</a></dd>
-
-Het verband met het [=NWB=]:<br>
-De eerste stap van de technische en inhoudelijke ontwikkeling van één samenhangende Netwerkregistratie Wegen zal zijn om samen met het [=NDW=] het bestaande Nationaal Wegen Bestand (NWB) door te ontwikkelen naar een NWB+ om alle wegbeheerders optimaal van de juiste, volledige en actuele verkeerskundige data te kunnen voorzien. 
-
-**Raakvlaktype: Gezamenlijke ontwikkeling **
-
-Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het programma opgesteld.
-
-<figure>
-<img src="../images/programmanetwerkregistratie.png">
-<figcaption>Het Programma Netwerkregistratie.</caption>
-</figure>
 
 ## NDW
 
@@ -32,7 +17,7 @@ Het [=NDW=] levert veel verkeersgegevens:
 
 NDW maakt gebruik van DATEX-II, een Europese standaard. 
 
-Het NDW beheert de volgende voor dit document relevante databronnen:
+Het NDW ontsluit de volgende voor dit document relevante databronnen:
 
 * [=NWB=]
 * [=Verkeersbordendata=]
@@ -42,13 +27,6 @@ Het NDW beheert de volgende voor dit document relevante databronnen:
 Het [=Informatiemodel Verkeerstekens=] wordt in samenwerking met het NDW opgesteld en beheerd.
 
 
-
-## KOOP
-
-Verkeersbesluiten zijn officiële overheidspublicaties. [=KOOP=] levert de infrastructuur/website om onder andere verkeersbesluiten op te publiceren en ontwikkelt en beheert een [=verkeersbesluiten applicatie=] waarmee de wegbeheerder verkeersbesluiten kan aanmaken en publiceren. De [=verkeerskundige informatie=] bij een verkeersbesluit is in het algemeen in tekst of als PDF bijlage aanwezig en minder gestructureerd.
-
-**Raakvlaktype: Gebruik informatiemodel**
-KOOP kan bij het publiceren van verkeersbesluiten en bij het inrichten van een verkeersbesluiten applicatie het [=Informatiemodel Verkeerstekens=] gebruiken. KOOP denkt mee in een samenwerkingsverband waarin ook de ontwikkeling van het [=Informatiemodel Verkeerstekens=] besproken wordt.
 
 ## Programma Digitalisering Overheden
 
@@ -101,11 +79,11 @@ CROW is daarnaast de facilitator van [=KPVV=]
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-### Programma CORE-BORius
-CORE staat voor samenwerkende gemeenten die een eigen centrale objectenregistratie willen hebben om informatie eenmalig op te slaan en meervoudig te delen. BORius staat voor Beheer Openbare Ruimte Informatie en Uitwissel Standaard. Het is de werktitel voor een nieuw initiatief dat ervoor zorgt dat assetmanagement organisaties hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor/borius-initiatief-voor-een-betere-uitwisseling-van">deze website</a>.
+### Programma DOOR
+DOOR staat voor Dataregistratie Objecten Openbare Ruimte. Het [=DOOR programma=] beoogt te zorgen dat assetmanagement organisaties, waaronder gemeenten en provincies, hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. 
 
 
-**Raakvlaktype: Gezamenlijk beheer / samenhangende standaarden** Het [=Informatiemodel Verkeerstekens=] sluit aan op [=IMBOR=], een van de standaarden die in het CORE-BORius programma doorontwikkeld worden.
+**Raakvlaktype: Gezamenlijk beheer / samenhangende standaarden** Het [=Informatiemodel Verkeerstekens=] sluit aan op [=IMBOR=], een van de standaarden die in het DOOR programma doorontwikkeld worden.
 
 
 
