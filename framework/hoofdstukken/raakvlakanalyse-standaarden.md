@@ -161,7 +161,7 @@ In [=IMBOR=] zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebak
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=DOOR Programma=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
+Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR. 
 
 
 
@@ -185,7 +185,7 @@ Het coderingssysteem komt neer op een cijfercode waarmee de betekenis van het bo
 
 
 
-### Dataspecs INSPIRE 
+### INSPIRE 
 
 De dataspecificaties van [=INSPIRE=], infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op [deze pagina](https://inspire.ec.europa.eu/Themes/115/2892) met UML-diagrammen en uitgebreide technische documentatie.
 
@@ -243,7 +243,7 @@ Het https://verkeersbordenoverzicht.nl/ is een de facto standaard in Nederland, 
 ### Bordenboekje VNVF
 De [=VNVF=] publiceerde tot nu toe een bordenboekje met bestelcodes van verkeersborden. VNVF is bezig met het maken van een nieuwe, logische bestelcodering voor het samenstellen van de informatie die op een [=fysieke plaat=] komt. 
 
-**Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit odnerdelen van het informatiemodel. 
+**Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit onderdelen van het informatiemodel. 
 
 ### ISO 14832-1
 

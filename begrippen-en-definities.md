@@ -93,9 +93,7 @@ Kennisinstelling voor de openbare ruimte en infrastructuur
 
 <dd>
 
-In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn.
-Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
-Zie [datapedia.nl](https://www.datapedia.nl/).
+In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. Zie [datapedia.nl](https://www.datapedia.nl/).
 
 </dd>
 
@@ -381,25 +379,8 @@ Zie ook <a href="https://www.pianoo.nl/nl">deze website</a>
 
 </dd>
 
-<dt><dfn>Programma Digitalisering Overheden</dfn></dt>
-<dd>
 
-In het landelijke programma Digitalisering Overheden werken 5 landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' te zijn.
-Hiervoor is een [=Data Top 15=] opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets.
 
-</dd>
-
-<dt><dfn data-lt="Programma Netwerkregistratie|Programma Netwerkregistraties">Programma Netwerkregistraties</dfn></dt>
-<dd>
-
-Het Programma Netwerkregistratie is een samenwerkingsverband; niet alleen van bronhouders en wegbeheerders van Gemeenten, Provincies, Waterschappen, RWS en het Ministerie van IenW, maar ook van een scala aan publieke en private makers en gebruikers van verkeerskundige wegendata.
-
-<dt><dfn data-lt="Programma Totaal 3Dimensionaal|T3D|Totaal 3Dimensionaal">Totaal 3Dimensionaal</dfn></dt>
-<dd>
-
-Project van de Vereniging Nederlandse Gemeenten samen met drie grote gemeenten om het gebruik en de mogelijkheden van 3D geografische gegevens te verkennen.
-
-</dd>
 
 <dt><dfn data-lt="rijstrook|rijstroken">rijstrook</dfn></dt>
 <dd>
@@ -424,15 +405,7 @@ Het Reglement verkeersregels en verkeerstekens 1990 is een uitvoeringsbesluit bi
 
 </dd>
 
-<dt><dfn data-lt="Regieprogramma DisGeo|DisGeo">DisGeo</dfn></dt>
-<dd>
 
-Regieprogramma Doorontwikkeling in Samenhang van de Geo-basisregistraties (DiS Geo) van het ministerie van BZK.
-Onderdeel van dit regieprogramma is het samenwerkingsverband voor de ontwikkeling van de samenhangende objectenregistratie ([=SOR=]) van onder meer gemeenten, provincies, waterschappen, Rijkswaterstaat, Kadaster en de Waarderingskamer.
-Het [=SOR=] traject heeft een relatie met het programma Centrale netwerkregistratie van het ministerie van I&W.
-Kennispartners bij de [=SOR=] zijn onder meer het Gemeentelijk Geo-Beraad (GGB), Geonovum en CROW.
-
-</dd>
 
 <dt><dfn data-lt="rijrichting|rijrichtingen">rijrichting</dfn></dt>
 <dd>
@@ -447,13 +420,7 @@ De richting waarin je moet of mag rijden
 Elk voor rijdende voertuigen bestemd weggedeelte met uitzondering van de fietspaden en de fiets/bromfietspaden.
 Bron: <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#HoofdstukI">RVV1990</a>
 
-<dt><dfn data-lt="SOR|Samenhangende objectenregistratie|Samenhangende objecten registratie">SOR: Samenhangende objectenregistratie</dfn></dt>
-<dd>
 
-Een Samenhangende Objecten Registratie in ontwikkeling binnen het [=DisGeo=] programma: een nog te ontwikkelen uniforme registratie met basisgegevens over objecten in de fysieke werkelijkheid. Daaronder worden verstaan objecten die in het terrein zichtbaar zijn, zoals spoorlijnen, wegen, water, gebouwen en bomen.
-Ook worden basisgegevens over niet-zichtbare objecten opgenomen, zoals bestuurlijke gebieden, woonplaatsen en openbare ruimten.
-
-</dd>
 
 <dt><dfn>Smart Mobility</dfn></dt>
 <dd>
@@ -694,9 +661,17 @@ Zweden heeft een netwerkregistratie live staan met deze <a href="https://www.nvd
 
 Nederlandse Overheid Referentie Architectuur, set van voor overheden bindende afspraken over interoperabiliteit en kwaliteit van digitale dienstverlening in de publieke sector. <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nora/">Startpagina</a>
 
+</dd>
 
+<dt><dfn data-lt="federatief data delen">federatief data delen</dfn></dt>
+<dd>
+
+Federatief data delen door de overheid is een manier waarop overheidsorganisaties gegevens delen zonder alles op één plek op te slaan. Het draait om samenwerking en het soepel laten aansluiten van verschillende systemen, zodat informatie makkelijk en veilig beschikbaar is. In een federatief stelsel spelen landelijke registraties een centrale rol als betrouwbare bronnen van kerngegevens, zoals een samenhangend [=verkeerskundig wegennetwerk=]. Ze vormen het fundament waarop andere overheidsorganisaties kunnen aansluiten, waardoor gegevensbijvoorbeeld de verkeerskundige informatie consistent is, actueel en efficiënt beschikbaar zijn binnen het netwerk.
 
 </dd>
+
+
+
 
 <dt><dfn data-lt="GEBORA">GEBORA</dfn></dt>
 <dd>
@@ -712,7 +687,7 @@ De Nationale Digitale Tweeling voor de fysieke Leefomgeving, waarmee de referent
 
 <dt><dfn data-lt="Geonovum">Geonovum</dfn></dt>
 <dd>
-Geonovum beheert de Nederlandse geo-standaarden waaronder [=IMgeo=], en is trekker van het [=DMI-ecosysteem=], het [=NDTFL=] en de [=SOR=].
+Geonovum beheert de Nederlandse geo-standaarden waaronder [=IMgeo=], en is trekker van het [=DMI-ecosysteem=].
 </dd>
 
 <dt><dfn data-lt="VNVF">VNVF</dfn></dt>
@@ -721,11 +696,7 @@ De Vereniging voor Nederlandse Verkeersbordenfabrikanten. Deze fabrikanten maken
 
 </dd>
 
-<dt><dfn data-lt="DOOR Programma">DOOR Programma</dfn></dt>
-<dd>
-DOOR staat voor Dataregistratie Objecten Openbare Ruimte. Het [=DOOR programma=] beoogt te zorgen dat assetmanagement organisaties, waaronder gemeenten en provincies, hun data over alle objecten in de buitenruimte beter kunnen registreren, ontsluiten en uitwisselen. Daarvoor is het noodzakelijk dat er datastandaarden komen voor het vastleggen en delen van objectgegevens die breed worden toegepast in het gehele assetmanagement proces van programmeren, ontwerp, aanleg en beheer. [=CROW=] en Stichting Rioned voeren dit programma uit. Zie ook <a href="https://www.crow.nl/Onderwerpen/Assetmanagement-en-beheer-openbare-ruimte/Data-en-informatie/programmadoor/">deze website</a>.
 
-</dd>
 
 
 </dl>
