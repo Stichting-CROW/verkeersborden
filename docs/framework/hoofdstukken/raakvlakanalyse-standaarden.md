@@ -194,9 +194,7 @@ Voorbeelden van relevante specificaties:
 * De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
 * Het [Linear reference system](https://inspire.ec.europa.eu/glossary/LinearReferenceSystem): "Reference system that identifies a location by reference to a segment of a linear spatial object and distance along that segment from a given point [ISO 19116 - modified]". 
 
-**Raakvlaktype: Bron voor informatiemodel** Bron voor de definitie van wegkenmerken die vanuit verkeerskundig perspectief moeten worden opgenomen in het informatiemodel.
-
-* Het Informatiemodel Verkeerstekens MOET waar relevant gebruik maken van de concepten en definities uit INSPIRE
+**Raakvlaktype: Net-rakend informatiemodel binnen domein wegen** Het wegennetwerk zit niet in het informatiemodel, er worden ook geen wegkenmerken in het model opgenomen, alleen verkeersmaatregelen. Binnen de huidige scope heeft het informatiemodel geen raakvlakken met INSPIRE.
 
 ### Data.vlaanderen.be
 
@@ -209,7 +207,7 @@ De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties t
 * [Mobiliteit](https://data.vlaanderen.be/ns/mobiliteit)
 * [Besluit](https://data.vlaanderen.be/ns/besluit)
 
-**Raakvlaktype: Potentiële internationale aansluiting** Indien de Vlaamse en Nederlandse situatie gelijkenissen vertonen kan gezocht worden naar een gemeenschappelijk vocabulair dat kan leiden tot internationale aansluiting van informatiemodellen en toegankelijker gebruik van informatiemodellen.
+**Raakvlaktype: Potentiële internationale aansluiting** Indien de Vlaamse en Nederlandse situatie gelijkenissen vertonen kan gezocht worden naar een gemeenschappelijk vocabulair dat kan leiden tot internationale aansluiting van informatiemodellen en toegankelijker gebruik van informatiemodellen. Dit valt vooralsnog buiten scope van het informatiemodel. 
 
 #### Besluiten Mobiliteit
 
