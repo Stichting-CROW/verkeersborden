@@ -11,7 +11,7 @@ Het Ministerie van Infrastructuur en Waterstaat constateert dat er in de sector 
 Vanuit [=weggebruikers=] die ondersteund worden door [=Smart Mobility=] systemen is behoefte aan accurate en actuele informatie, waarin voor het wegennet de wettelijke maximum snelheid en ge- en verboden (bijvoorbeeld parkeerverbod, inhaalverbod, stopverbod) per voertuigcategorie en met de daarbij geldende uitzonderingen/nadere aanduidingen op het onderbord (tijden, alleen bij glad wegdek, etc.) gevuld zijn voor ieder individueel wegvak of zelfs nog nauwkeuriger, per [=rijstrook=] en rijrichting. 
 <br>
 <br>
-Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden. De digitale [=verkeerskundige informatie=] van de wegen in Nederland is incompleet, vaak niet actueel en niet accuraat, en zijn opgeslagen in meerdere bronnen die niet altijd vindbaar en combineerbaar zijn. Hierdoor moeten gebruikers van deze informatie allerlei dure en tijdrovende “work-arounds” en provisorische oplossingen vinden om hun échte werk goed te kunnen doen.  De behoefte is om dit centraal te organiseren in een landelijke registratie, beheerd door het [=NDW=].
+Op dit moment wordt door verschillende (markt)partijen registraties gepubliceerd over verkeersborden. De digitale [=verkeerskundige informatie=] van de wegen in Nederland is incompleet, vaak niet actueel en niet accuraat, en zijn opgeslagen in meerdere bronnen die niet altijd vindbaar en combineerbaar zijn. Hierdoor moeten gebruikers van deze informatie allerlei dure en tijdrovende “work-arounds” en provisorische oplossingen vinden om hun échte werk goed te kunnen doen. De behoefte is om dit centraal te organiseren in een landelijke registratie, beheerd door het [=NDW=], gebaseerd op de principes van [=federatief data delen=] waarbij wegbeheerders hun eigen broninformatie over verkeersborden kunnen beheren en het NDW zorgt voor kwaliteitstoetsing en landelijke ontsluiting van de gecombineerde informatie van de wegbeheerders. 
 <br>
 <br>
 <b>Barrières voor data delen</b>
@@ -26,7 +26,7 @@ Daarnaast zijn veel data-eigenaren terughoudend om data te delen. Er is gebrek a
 
 <b>Tekortkoming bestaande Registraties</b>
 
-In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (o.a. [=BGT=]) en het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestande rijrichting. 
+In Nederland wordt digitale informatie over wegen vastgelegd in verschillende (basis)registraties. Die registraties omvatten vooral de registratie van de fysieke infrastructuur (o.a. [=BGT=]) en het [=verkeerskundige wegennetwerk=] ([=NWB=], [=WKD=], [=WEGGEG=]). In de huidig beschikbare digitale informatie wordt nog niet de volledige [=verkeerskundige informatie=] ontsloten, wel sommige onderdelen waaronder maximum snelheid en de toegestane rijrichting. Daarnaast zijn de informatiemodellen van deze registraties niet onderling samenhangend en nog niet gebaseerd op de technieken waarmee [=federatief data delen=] mogelijk wordt.
 
 ## Hoog over doel 
 
