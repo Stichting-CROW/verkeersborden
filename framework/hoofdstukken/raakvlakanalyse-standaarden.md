@@ -39,6 +39,11 @@ Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt 
 ### Ontology alignment
 Voor het op elkaar afstemmen van informatiemodellen, "ontology alignment" is nog geen formele specificatie beschikbaar. Tot hier op nationaal of internationaal niveau overeenstemming over is gaan we uit van de uitgangspunten die hierover beschreven staan in het [[whitepaper_ontology_alignment]]. Dit geldt alleen voor modellen op basis van de NEN 2660; voor een niet in linked data opgesteld model zoals worden gewoon concepten en attributen hard-copy overgenomen in het informatiemodel. 
 
+### Ontbreekt: netwerken
+Er is nog geen standaard die beschrijft, hoe verkeerskundige netwerken in samenhang kunnen worden gemodelleerd en beschreven. Diverse standaarden, waaronder [=INSPIRE=] en de [[NEN_2660_2_2022]] beschrijven delen. In [deze studie](https://www.linkedin.com/pulse/informatiemodellering-van-transportnetwerken-hein-corstens-8a17e/?trackingId=CmyreN11RMiTEWTTkDKrEg%3D%3D) uitgevoerd voor Rijkswaterstaat, afdeling vaarwegen staat een potentiële uitwerking. 
+
+Indien hier in de toekomst meer op wordt gestandaardiseerd, kan dit leiden tot wijzigingen in het informatiemodel. 
+
 
 ## Domeinstandaarden
 Er bestaan verschillende andere domeinstandaarden of informatiemodellen die wegkenmerken of verkeersborden beschrijven. Dat zijn raakvlakken of juist ijkingsbronnen om het [=Informatiemodel Verkeerstekens=] beter vorm te geven.
