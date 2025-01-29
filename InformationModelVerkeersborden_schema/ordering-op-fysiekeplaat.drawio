@@ -1,0 +1,46 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
+  <diagram name="Page-1" id="0LnV7ETqTs7hgSCRXFs9">
+    <mxGraphModel dx="2074" dy="1106" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-40" value="&lt;div&gt;fysieke plaat&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="299" y="129" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-72" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.22;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="JAaSVqaNoPK4AC_1vTfK-41" target="JAaSVqaNoPK4AC_1vTfK-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-41" value="schildnummer 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="364" y="154" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-42" value="schildnummer 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="374" y="294" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-43" value="schildnummer 2a" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="324" y="224" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-44" value="schildnummer 2b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="433" y="224" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-66" value="&lt;div&gt;schildnummer X&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="634" y="129" width="250" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-67" value="iconnummer 1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="699" y="154" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-68" value="iconnummer 3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="709" y="294" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-69" value="iconnummer&amp;nbsp; 2a" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="659" y="224" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-70" value="iconnummer&amp;nbsp; 2b" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="768" y="224" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-74" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Ordering Icoon op Achtergrondschild&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;amp; Achtergrondschild op FysiekePlaat&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;* Boven-beneden:&amp;nbsp; 1-x &lt;br&gt;&lt;/div&gt;&lt;div&gt;* Links-rechts: a-z&lt;br&gt;&lt;/div&gt;&lt;div&gt;(geef alleen aan wat nodig is)&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="437" y="27" width="250" height="87" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
