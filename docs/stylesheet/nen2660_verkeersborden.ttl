@@ -70,7 +70,7 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 							?bnode2 owl:onProperty ?tgtAspect .
 							?bnode2 owl:onClass ?tgtAspectEnumeration .
 							?bnode2 owl:hasValue ?tgtQualificationUri .
-							# ?tgtQualificationUri skos:prefLabel ?tgtNLQualificationName .
+							?tgtQualificationUri skos:prefLabel ?tgtQualificationName .
 							# ?tgtQualificationUri skos:prefLabel ?tgtENQualificationName .
 							?bnode2 owl:hasValue ?tgtQuantificationValue .
 						}
@@ -371,7 +371,7 @@ ex:ConvertConceptuals a sh:NodeShape ;
 			    ?tgtAnnotationProperty a owl:AnnotationProperty .
 			    ?tgtAnnotationProperty skos:prefLabel ?tgtAnnotationNLname, ?tgtAnnotationENname .
 			    ?tgtAnnotationProperty rdfs:range xsd:string .
-				?tgtThis skos:seeAlso ?tgtExternalSourceLink .
+				?tgtThis rdfs:seeAlso ?tgtExternalSourceLink .
 				?tgtExternalSourceLink dct:license ?license .
 				?tgtThis nen2660:isDescribedBy ?tgtRelatedDocument .
 			}
@@ -580,7 +580,7 @@ ex:ConvertGroupForQualifications a sh:NodeShape ;
 				?tgtElementUri skos:prefLabel ?tgtENname .
 				?tgtElementUri skos:definition ?nlDescription .
 				?tgtElementUri skos:definition ?enDescription .
-				?tgtElementUri skos:seeAlso ?link .
+				?tgtElementUri rdfs:seeAlso ?link .
 				?link skos:prefLabel ?linkName .
 				?tgtList rdf:rest ?tgtRestList .
 				?tgtThis rdfs:subClassOf nen2660:EnumerationType .
