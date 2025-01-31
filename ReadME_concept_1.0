@@ -1,0 +1,22 @@
+# Concept-versie 1.0 Ter Openbare Consultatie
+Dit is de ReadME voor de consultatieversie van het Informatiemodel Verkeerstekens 1.0. 
+
+
+Reviewen kan tot 1 april 2025
+
+## Reviewwijze
+* Tabellen, database en technische bestanden: via [issues](https://github.com/nl-digigo/NLCS/issues)
+* Documentatie in ReSpec: druk op de knop "Laad annotaties; je kunt dan rechtsbovenin een scherm uitklappen, eenmalig gratis registreren bij Hypothesis.com en dan kun je in de kantlijn van het document je opmerkingen weergeven. De te reviewen documenten kunnen tot 1 april 2025 van commentaar worden voorzien in de kantlijn; 
+indien men na de deadline nog review wil indienen, kan dat via de issues in GitHub.
+
+## Te reviewen documenten:
+* Schema Informatiemodel
+* [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework/consultationversions/CR-verkeersborden_framework-20241217.html)
+* 
+
+## Te reviewen tabellen, database en technische bestanden
+* 
+
+## Viewer
+
+

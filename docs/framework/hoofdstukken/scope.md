@@ -6,7 +6,7 @@ Korte termijn doel is:
 
 * Het  [=Informatiemodel Verkeerstekens=] MOET zorgen dat **[=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=]** op eenduidige manier gepubliceerd kunnen worden in relatie tot het [=verkeerskundige wegennetwerk=], **zodat deze informatie machine-verwerkbaar is**. 
 
-In de toekomst, na 2023, wordt de horizon verbreed naar [=SMART mobility=], met als doel dat auto en automobilist veilig en zuinig kunnen rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende, digitaal beschikbare, [=verkeersmaatregelen=]. Alle na 2022 gefabriceerde auto's voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/).
+In de toekomst wordt de horizon verbreed naar [=SMART mobility=], met als doel dat auto en automobilist veilig en zuinig kunnen rijden, waarbij de auto haar snelheid en rijrichting automatisch aanpast aan de daar geldende, digitaal beschikbare, [=verkeersmaatregelen=]. Alle na 2022 gefabriceerde auto's voor de Europese markt moeten over techniek beschikken om dit te ondersteunen. [EU persbericht Veilig Verkeer](https://www.consilium.europa.eu/nl/press/press-releases/2019/11/08/safer-cars-in-the-eu/).
 
 Het secundaire doel is:
 * Het  [=Informatiemodel Verkeerstekens=] MOET het *opstellen en beheren* van de [=verkeerskundige informatie=] ondersteunen: de wegbeheerder moet daarvoor herkenbare informatievelden invullen en de informatie kunnen beheren als aanvulling op, en passend bij, de asset informatie voor beheer en voor andere landelijke registraties.
@@ -18,7 +18,7 @@ In de toekomst moet het ook mogelijk zijn om voor het werkproces van het maken v
 
 ### Wegbeheerder als bronhouder
 
-De stip op de horizon is het federatief data delen, waarbij de wegbeheerders de bronhouder zijn van verkeerskundige informatie, en het NDW een toegangspoort vormt tot die data. Onderstaande afbeelding geeft dat principe weer. Het informatiemodel wordt gepubliceerd door CROW; de wegbeheerder is de bronhouder voor [=verkeerskundige informatie=] op basis van het informatiemodel en deelt deze federatief met het [=NDW=], daarnaast deelt de wegbeheerder federatief data over verkeersbesluiten bij het KOOP (hiervoor is een ander informatiemodel nodig); de SMART Mobility systemen kunnen via het NDW de informatie van alle wegbeheerders vinden.
+De stip op de horizon is het [=federatief data delen=], waarbij de wegbeheerders de bronhouder zijn van verkeerskundige informatie, en het NDW een toegangspoort vormt tot die data. Onderstaande afbeelding geeft dat principe weer. Het informatiemodel wordt gepubliceerd door CROW; de wegbeheerder is de bronhouder voor [=verkeerskundige informatie=] op basis van het informatiemodel en deelt deze federatief met het [=NDW=], daarnaast deelt de wegbeheerder federatief data over verkeersbesluiten bij het KOOP (hiervoor is een ander informatiemodel nodig); de SMART Mobility systemen kunnen via het NDW de informatie van alle wegbeheerders vinden.
 
 <figure>
 <img src="../images/beoogdearchitectuur.jpg" width=100%>
@@ -30,11 +30,11 @@ De stip op de horizon is het federatief data delen, waarbij de wegbeheerders de 
 
 Het [=Informatiemodel Verkeerstekens=] kan door wegbeheerders gebruikt worden bij het registreren en publiceren van de actuele verkeerskundige situatie op de weg. Een wegbeheerder stelt in drie contexten digitale [=verkeerskundige informatie=] op:
 
-1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken. De informatie wordt vastgelegd in een landelijke netwerkregistratie.
-2. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor een verkeersbesluit gepubliceerd wordt. De informatie wordt gepubliceerd door KOOP. Vastlegging van de informatie wordt ondersteund in een verkeersbesluitenapplicatie.
-3. Het doorgeven van tijdelijke en permanente wijzigingen in de verkeerskundige situatie waarvoor geen verkeersbesluit gepubliceerd hoeft te worden.
+1. Het inmeten en vastleggen van de huidige verkeerskundige situatie om de digitale informatie betrouwbaar, compleet en actueel te maken en te controleren of de geregistreerde borden buiten nog aanwezig en zichtbaar zijn.
+2. Het publiceren van tijdelijke verkeerssituaties tijdens werkzaamheden. 
+3. Het publiceren van de nieuwe verkeerskundige situatie bij wijzigingen aan de wegen en/of de verkeersborden. 
 
-De wegbeheerder moet daarvoor informatie kunnen delen met opdrachtnemers zoals ingenieursbureaus die de verkeerskundige situatie ontwerpen en uitvoeren. De beoogde informatieketen wordt weergegeven in onderstaande afbeelding. Het informatiemodel wordt gepubliceerd door CROW. Deze is gerelateerd aan de verkeersborden in [=NLCS=]. Een opdrachtnemer kan de gewenste nieuwe situatie ontwerpen in een ontwerpapplicatie en na uitvoering gegevens leveren aan de wegbeheerder, die zijn brondata kan beheren. 
+De wegbeheerder moet daarvoor informatie kunnen delen met opdrachtnemers zoals ingenieursbureaus die de nieuwe verkeerskundige situatie ontwerpen en met aannemers die het werk uitvoeren en revisiegegevens opleveren over de nieuwe situatie. De beoogde informatieketen wordt weergegeven in onderstaande afbeelding. Het informatiemodel wordt gepubliceerd door CROW. Deze is gerelateerd aan de verkeersborden in [=NLCS=]. Een opdrachtnemer kan de gewenste nieuwe situatie ontwerpen in een ontwerpapplicatie en na uitvoering gegevens leveren aan de wegbeheerder, die zijn brondata kan beheren. 
 
 <figure>
 <img src="../images/informatieketen.jpg" width=100%>
@@ -82,14 +82,14 @@ Dit leidt ertoe dat de scope is beperkt tot de twee onderste lagen in onderstaan
 
 ### Wegsoorten
 
-Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het [=verkeerskundige wegennetwerk=] zoals dat gepubliceerd wordt bij het [=NWB=] bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Indien gewenst, kan hetzelfde model worden gebruikt voor het publiceren van de verkeersmaatregelen op de wegen en parkeervakken op particuliere terreinen zoals parkeerplaatsen van ziekenhuizen, bungalow parken enzovoorts. Daar maakt het model geen onderscheid in.
+Het [=Informatiemodel Verkeerstekens=] heeft als scope: [=verkeerskundige informatie=] bij het [=verkeerskundige wegennetwerk=] zoals dat gepubliceerd wordt bij het [=NWB=] bestaande uit nationale, regionale en lokale wegen, inclusief fiets- en voetpaden, binnen en buiten de bebouwde kom. Ook tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer. Indien gewenst, kan hetzelfde model worden gebruikt voor het publiceren van de verkeersmaatregelen op de wegen en parkeervakken op particuliere terreinen zoals parkeerplaatsen van ziekenhuizen, bungalow parken enzovoorts. Daar maakt het model geen onderscheid in.
 
-**Buiten scope** zijn vaarwegen, spoorwegen, metrolijnen zijn buiten scope. Tramlijnen zijn binnen scope indien deze gecombineerd zijn met ander verkeer.
+**Buiten scope** zijn vaarwegen, spoorwegen, metrolijnen. 
 Het informatiemodel van het [=verkeerskundige wegennetwerk=] is buiten scope, dit hoort bij de geo-registratie van het netwerk waar het [=Informatiemodel Verkeerstekens=] de verkeersmaatregelen en dergelijke beschrijft ten opzichte van het netwerk.
 
 
 ### Verkeersmaatregelen
-[=verkeersmaatregelen=] en [=waarschuwingen=] die volgen uit de [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
+[=Verkeersmaatregelen=] en [=waarschuwingen=] die volgen uit de [=RVV 1990=] zijn binnen scope, met de bijbehorende [=verkeersborden=]. Ge- en verboden die volgen uit de weginrichting, bijvoorbeeld niet mogen inhalen bij een doorgetrokken streep, zijn binnen scope. 
 Daarnaast zijn de [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborden=] binnen scope die op de nominatie staan om bij een volgende wetswijziging te worden opgenomen. 
 
 
@@ -98,13 +98,14 @@ Daarnaast zijn de [=verkeersmaatregelen=], [=waarschuwingen=] en [=verkeersborde
 * Het informatiemodel MOET duidelijk aangeven welke [=verkeersmaatregelen=] of [=waarschuwingen=] al opgenomen zijn in wetgeving, en welke nog niet.
 * Het informatiemodel MOET mogelijk maken om niet-wettelijke borden, die wel buiten aanwezig zijn of die slechts genomineerd zijn om opgenomen te worden, te registreren. 
 
-**Buiten scope** zijn verkeersregels en voorwaarden voor verkeersregels. Indien deze voorwaarden niet worden aangeduid met een verkeersbord, zijn deze buiten scope. Om duidelijk te maken wat we hier bedoelen werken we hieronder het voorbeeld van "zicht" uit.
-<br>
-<b>Zicht</b><br>
-[RVV 1990 art 19](https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01) geeft aan: De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
+**Buiten scope** zijn verkeersregels en voorwaarden voor verkeersregels die beschreven zijn in de RVV 1990. Indien deze voorwaarden niet worden aangeduid met een verkeersbord, zijn deze buiten scope. Om duidelijk te maken wat we hier bedoelen werken we hieronder het voorbeeld van "zicht" uit.
+<br><br>
+
+<aside class=example title="Zicht">
+<a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=8&artikel=19&z=2021-07-01&g=2021-07-01">RVV 1990 art 19</a> geeft aan: De bestuurder moet in staat zijn zijn voertuig tot stilstand te brengen binnen de afstand waarover hij de weg kan overzien en waarover deze vrij is.
 
 Deze inschatting verschilt per voertuig en is daarom *buiten scope* van het informatiemodel, ook al kan een rechter, in het geval van een ongeluk, concluderen dat een bestuurder sneller heeft gereden dan wettelijk is toegestaan volgens deze regel.
-
+</aside>
 
 ### Statische verkeersborden
 
@@ -158,8 +159,8 @@ Als de actuele verkeerskundige informatie gepubliceerd wordt bij een landelijke 
 
 De metadata over de transactie bij registratie en validatie van wijzigingen in de [=verkeerskundige informatie=] zijn **buiten scope**, het informatiemodel beschrijft dus niet transactie-informatie zoals organisaties, rollen, personen en communicatieflows met berichten.
 
-<aside class="note" title="Transactie bij een datalevering">
-Een hapy flow van een transactie is bijvoorbeeld als onderstaand, de meeste stappen zijn volledig geautomatiseerd.
+<aside class="example" title="Transactie bij een datalevering">
+Een happy flow van een transactie is bijvoorbeeld als onderstaand, de meeste stappen zijn volledig geautomatiseerd.
 <ol>
 <li>Het systeem van de wegbeheerder levert de wijziging aan de landelijke registratie en vraagt om deze te publiceren.</li> 
 <li>De landelijke registratie bevestigt het verzoek te hebben ontvangen.</li> 
@@ -171,6 +172,8 @@ Daarnaast is voor een transactie een "Aanleverinstructie" nodig waarin staat hoe
 <li>In welk uitwisselformaat de informatie geleverd moet worden</li>
 <li>Of eerst de wijziging in het [=verkeerskundige wegennetwerk=] en dan de wijziging in de [=verkeersmaatregelen=] en [=verkeersborden=] moet worden geleverd of dat dit gelijktijdig kan. </li></ul>
 </aside> 
+
+
 
 
 

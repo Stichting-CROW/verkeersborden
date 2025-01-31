@@ -39,6 +39,11 @@ Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt 
 ### Ontology alignment
 Voor het op elkaar afstemmen van informatiemodellen, "ontology alignment" is nog geen formele specificatie beschikbaar. Tot hier op nationaal of internationaal niveau overeenstemming over is gaan we uit van de uitgangspunten die hierover beschreven staan in het [[whitepaper_ontology_alignment]]. Dit geldt alleen voor modellen op basis van de NEN 2660; voor een niet in linked data opgesteld model zoals worden gewoon concepten en attributen hard-copy overgenomen in het informatiemodel. 
 
+### Ontbreekt: netwerken
+Er is nog geen standaard die beschrijft, hoe verkeerskundige netwerken in samenhang kunnen worden gemodelleerd en beschreven. Diverse standaarden, waaronder [=INSPIRE=] en de [[NEN_2660_2_2022]] beschrijven delen. In [deze studie](https://www.linkedin.com/pulse/informatiemodellering-van-transportnetwerken-hein-corstens-8a17e/?trackingId=CmyreN11RMiTEWTTkDKrEg%3D%3D) uitgevoerd voor Rijkswaterstaat, afdeling vaarwegen staat een potentiële uitwerking. 
+
+Indien hier in de toekomst meer op wordt gestandaardiseerd, kan dit leiden tot wijzigingen in het informatiemodel. 
+
 
 ## Domeinstandaarden
 Er bestaan verschillende andere domeinstandaarden of informatiemodellen die wegkenmerken of verkeersborden beschrijven. Dat zijn raakvlakken of juist ijkingsbronnen om het [=Informatiemodel Verkeerstekens=] beter vorm te geven.
@@ -161,14 +166,14 @@ In [=IMBOR=] zijn 1331 soorten verkeerstekens opgenomen in de categorien [=bebak
 
 **Raakvlaktype: Gezamenlijk beheer**
 
-Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR, conform de architectuurprincipes voor samenhangende standaarden die ontwikkeld worden in het [=Programma CORE-BORius=]. Daarvoor is een besluit nodig waar welke informatie komt te staan. 
+Het [=Informatiemodel Verkeerstekens=] MOET waar mogelijk samenhangen met IMBOR, en waar nodig een alignment krijgen met IMBOR. 
 
 
 
 
 ### Datex II
 
-[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners, op basis van XML schema's</dd>
+[=DATEX II=] is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners.</dd>
 
 https://www.datex2.eu/ is inmiddels open gepubliceerd. Voor Nederlands is er door [=NDW=] een [Nederlands profiel](https://docs.ndw.nu/datex2/) opgesteld. 
 
@@ -185,7 +190,7 @@ Het coderingssysteem komt neer op een cijfercode waarmee de betekenis van het bo
 
 
 
-### Dataspecs INSPIRE 
+### INSPIRE 
 
 De dataspecificaties van [=INSPIRE=], infrastructuur voor ruimtelijke informatie in Europa, zijn openbaar beschreven op [deze pagina](https://inspire.ec.europa.eu/Themes/115/2892) met UML-diagrammen en uitgebreide technische documentatie.
 
@@ -194,9 +199,7 @@ Voorbeelden van relevante specificaties:
 * De FeatureType supertype _TransportProperty_ is relevant voor bijna alle wegkenmerken.
 * Het [Linear reference system](https://inspire.ec.europa.eu/glossary/LinearReferenceSystem): "Reference system that identifies a location by reference to a segment of a linear spatial object and distance along that segment from a given point [ISO 19116 - modified]". 
 
-**Raakvlaktype: Bron voor informatiemodel** Bron voor de definitie van wegkenmerken die vanuit verkeerskundig perspectief moeten worden opgenomen in het informatiemodel.
-
-* Het Informatiemodel Verkeerstekens MOET waar relevant gebruik maken van de concepten en definities uit INSPIRE
+**Raakvlaktype: Net-rakend informatiemodel binnen domein wegen** Het wegennetwerk zit niet in het informatiemodel, er worden ook geen wegkenmerken in het model opgenomen, alleen verkeersmaatregelen. Binnen de huidige scope heeft het informatiemodel geen raakvlakken met INSPIRE.
 
 ### Data.vlaanderen.be
 
@@ -209,7 +212,7 @@ De applicatieprofielen stellen dan vereisten aan eigenschappen van en relaties t
 * [Mobiliteit](https://data.vlaanderen.be/ns/mobiliteit)
 * [Besluit](https://data.vlaanderen.be/ns/besluit)
 
-**Raakvlaktype: Potentiële internationale aansluiting** Indien de Vlaamse en Nederlandse situatie gelijkenissen vertonen kan gezocht worden naar een gemeenschappelijk vocabulair dat kan leiden tot internationale aansluiting van informatiemodellen en toegankelijker gebruik van informatiemodellen.
+**Raakvlaktype: Potentiële internationale aansluiting** Indien de Vlaamse en Nederlandse situatie gelijkenissen vertonen kan gezocht worden naar een gemeenschappelijk vocabulair dat kan leiden tot internationale aansluiting van informatiemodellen en toegankelijker gebruik van informatiemodellen. Dit valt vooralsnog buiten scope van het informatiemodel. 
 
 #### Besluiten Mobiliteit
 
@@ -243,7 +246,7 @@ Het https://verkeersbordenoverzicht.nl/ is een de facto standaard in Nederland, 
 ### Bordenboekje VNVF
 De [=VNVF=] publiceerde tot nu toe een bordenboekje met bestelcodes van verkeersborden. VNVF is bezig met het maken van een nieuwe, logische bestelcodering voor het samenstellen van de informatie die op een [=fysieke plaat=] komt. 
 
-**Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit odnerdelen van het informatiemodel. 
+**Raakvlaktype: Samenhang met informatiemodel** De bestelcodering zou logisch moeten kunnen worden opgesteld uit onderdelen van het informatiemodel. 
 
 ### ISO 14832-1
 
