@@ -261,7 +261,7 @@ ex:ConvertAspectsWithoutRole a sh:NodeShape ;
 				?tgtAspect a rdf:Property .
 				?tgtAspect rdfs:subPropertyOf ?tgtParent .
 				?tgtAspect skos:prefLabel ?tgtAspectPrefName .
-				?tgtAspect skos:prefLaebl ?tgtAspectAltName .
+				?tgtAspect skos:prefLabel ?tgtAspectAltName .
 				?tgtAspect skos:definition ?tgtAttributeDescription .
 				?tgtAspect skos:note ?tgtAspectNote .
 				?tgtAspect skos:notation ?tgtAspectCode .
