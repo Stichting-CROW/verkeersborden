@@ -1,1 +1,1 @@
-Datachecks = in deze folder staan controlemechanismes om datasets te controleren bij het opstellen van verkeerskundige informatie door de wegbeheerder
+Datachecks = in deze folder staan controlemechanismes (SHACL) om datasets te controleren bij het opstellen van verkeerskundige informatie door de wegbeheerder
