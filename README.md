@@ -2,32 +2,25 @@
 
 Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen publiceren ten behoeve van SMART mobility systemen.
 
-## Context
-De context en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework).
-
 <figure>
-<img src="./imagemapdocumentatie.PNG">
+<img src="./imagemapdocumentatie.png">
 <figcaption>Beschikbare middelen bij het informatiemodel</caption>
 </figure>
 
+## Context
+De context en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework).
+
+
 ## Beheer
+* De website komt beschikbaar bij definitieve publicatie.
+* Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het beheer van het informatiemodel als open standaard. Voor de beheerder van het Informatiemodel is er een [Beheerhandleiding](https://docs.crow.nl/verkeersborden/managementmanual).
+* Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen.
 
+## Standaard
 
-
-* Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het strategische beheer en de beheerorganisatie, met verdere uitwerking naar tactische en operationele invulling van het beheer. Voor de beheerder van het Informatiemodel is er een [Beheerhandleiding](https://docs.crow.nl/verkeersborden/managementmanual).
-* Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen. 
 * De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
-
-
-### Publicatie
-<figure>
-<img src="./publicatieinformatiemodel.PNG">
-<figcaption>De publicatie van het informatiemodel</caption>
-</figure>
-
-* Een webpagina wordt ingericht met informatie over het doel en de samenwerkingsverbanden rondom het informatiemodel.
 * Voor rechtstreeks vanuit systemen of het internet zoeken in het informatiemodel wordt deze gepubliceerd op het SPARQL-endpoint van crow:  
-* De afbeeldingen in svg formaat zijn te vinden op de volgende locaties: het NDW publiceert de [iconen met verkeersborden uit de RVV1990](https://github.com/ndwnu/qgis-verkeersborden-style), CROW publiceert de [overige iconen](https://github.com/Stichting-CROW/verkeersborden/edit/main/images), die nog niet beschikbaar zijn bij de andere bronnen, NLCS publiceert de [Standaard fysieke platen, concept NLCS 5.1](https://github.com/nl-digigo/NLCS/tree/main/symbolen/concept/5.1/svg)
+* Zie voor de [svg's van verkeersborden](https://github.com/Stichting-CROW/verkeersborden/edit/main/images), met doorverwijzing naar NDW en NLCS in de [ReadME](https://github.com/Stichting-CROW/verkeersborden/edit/main/images/ReadME).
 * Er komt een techische viewer van het informatiemodel beschikbaar voor databeheerders en datagebruikers.
 * Voor het verkennen van het informatiemodel en sommige toepassingen kan het handig zijn om de code rechtstreeks te kunnen inzien en downloaden, daarom wordt het informatiemodel samen met de andere code op de Github_Verkeersborden omgeving geplaatst in het Turtle formaat:
 > "Terse RDF Triple Language", een bestandsformaat (Informatie technologie) ([Bron:Wikipedia](https://nl.wikipedia.org/wiki/Turtle_(syntaxis))). Turtle is een serialisatieformaat voor het Resource Description Framework (RDF), een universele taal ("Linked Data") voor het weergeven van informatie op het Web.
