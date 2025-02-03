@@ -5,16 +5,18 @@ Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Infor
 ## Context
 De context en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework).
 
+<figure>
+<img src="./imagemapdocumentatie.PNG">
+<figcaption>Beschikbare middelen bij het informatiemodel</caption>
+</figure>
+
 ## Beheer
 
-<figure>
-<img src="./beheerinformatiemodel.PNG">
-<figcaption>Het beheer van het informatiemodel</caption>
-</figure>
+
 
 * Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het strategische beheer en de beheerorganisatie, met verdere uitwerking naar tactische en operationele invulling van het beheer. Voor de beheerder van het Informatiemodel is er een [Beheerhandleiding](https://docs.crow.nl/verkeersborden/managementmanual).
 * Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen. 
-* De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel.
+* De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 
 
 ### Publicatie
