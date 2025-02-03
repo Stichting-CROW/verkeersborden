@@ -26,7 +26,7 @@ De context, doelen, use cases en uitgangspunten van het informatiemodel staan in
 
 
 ### Gebruikersondersteuning 
-De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige informatie als linked data gepubliceerd wordt, op basis van het informatiemodel. Dit is toekomstmuziek, er zal nog een heel ontwikkeltraject van de landelijke registratie (en bij wegbeheerders) moeten plaatsvinden voordat het zover is. Daarom is deze documentatie nog heel summier, en gericht op gebruikers met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
+De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige informatie federatief gedeeld wordt, waarbij de wegbeheerder verkeerskundige informatie federatief deelt op basis van het informatiemodel, en de landelijke registratie de samenhang en kwaliteit van de informatie op landelijk niveau bewaakt. Dit is toekomstmuziek, er zal nog een heel ontwikkeltraject van de landelijke registratie (en bij wegbeheerders) moeten plaatsvinden voordat het zover is. Daarom is deze documentatie nog heel summier, en gericht op gebruikers met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
 
 #### Voor databeheerders
 Databeheerders worden op weg geholpen met:
