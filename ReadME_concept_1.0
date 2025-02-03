@@ -27,8 +27,8 @@ indien men na de deadline nog review wil indienen, kan dat via de issues in GitH
 ### Review van Gebruikersondersteuning
 De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige informatie als linked data gepubliceerd wordt, op basis van het informatiemodel. Dit is toekomstmuziek, er zal nog een heel ontwikkeltraject van de landelijke registratie (en bij wegbeheerders) moeten plaatsvinden voordat het zover is. Daarom is deze documentatie nog heel summier, en gericht op gebruikers met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
 
-* De [Gids voor databeheer]()
-
+* De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
+* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met zoekmechanismes.
 
 ## Vervolg
 In de vervolgfase worden voorbeelddatasets uitgewerkt op basis van de huidige publicatie bij het NDW, en worden de leermaterialen voor het samenstellen en gebruiken van data opgesteld, evenals query's om verkeerskundige informatie te doorzoeken, controlebestanden waarmee de data kan worden gecontroleerd en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.

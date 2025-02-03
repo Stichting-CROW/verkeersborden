@@ -1,1 +1,3 @@
-Dataquerys = in deze folder staan query's om als weggebruiker informatie te kunnen halen uit verkeerskundige datasets.
+Dataquerys: in deze folder staan zoekmechanismes om als weggebruiker informatie te kunnen halen uit verkeerskundige datasets.
+
+De zoekmechanismes bestaan uit SPARQL queries waarmee in verkeerskundige informatie gezocht kan worden naar de op een wegvak van toepassing zijnde verkeersregels. De geleverde code kan gebruikt worden bij het inrichten van SMART Mobility systemen. De code werkt rechtstreeks indien de verkeerskundige informatie beschikbaar is als linked data, en zal moeten worden aangepast als de data in een andere vorm beschikbaar is.

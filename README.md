@@ -19,7 +19,7 @@ De context, doelen, use cases en uitgangspunten van het informatiemodel staan in
 
 ## Standaard
 
-* Het informatiemodel is online beschikbaar via een [SPARQL-endpoint](https://hub.laces.tech/crow/verkeersborden) waar het ook kan worden gedownload als turtle. Met standaard [query's]() kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0]()
+* Het informatiemodel is online beschikbaar via een [SPARQL-endpoint](https://hub.laces.tech/crow/verkeersborden) waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0]()
 * De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 * Zie voor de [svg's van verkeersborden](https://github.com/Stichting-CROW/verkeersborden/edit/main/images), met doorverwijzing naar NDW en NLCS in de [ReadME](https://github.com/Stichting-CROW/verkeersborden/edit/main/images/ReadME).
 * Een vertaling naar veel voorkomende standaard fysieke platen (fysieke verkeersborden met gekleurde achtergrondschilden, iconen van verkeersborden, onderborden en teksten) zoals men die buiten tegenkomt, en die in NLCS of IMBOR zijn opgenomen, is nog niet uitgewerkt voor de concept 1.0 versie.
@@ -32,8 +32,8 @@ De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige
 Databeheerders worden op weg geholpen met:
 
 * De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
-* In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de gebruiker ondersteund bij het leren door oefeningen. Daarbij horen voorbeeld-implementaties (datasets) en controlemechanismes (kwaliteitstoetsen datasets).
+* In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de gebruiker ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [controlemechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/datachecks) (kwaliteitstoetsen datasets).
 
-### Voor datagebruikers
-* [Gids voor datagebruik, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met de beschikbare Zoekmechanismes ([SPARQL queries]())
-* In  de [Leermaterialen voor ontwikkelaars, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datauserguide) wordt de datagebruiker ondersteund bij het leren door oefeningen. Daarbij horen voorbeeld-implementaties (datasets) en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
+#### Voor datagebruikers
+* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met de beschikbare zoekmechanismes ([SPARQL queries nog niet uitgewerkt]())
+* In  de [Leermaterialen voor ontwikkelaars, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datauserguide) wordt de datagebruiker ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [zoekmechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/dataquerys) voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
