@@ -1,0 +1,1 @@
+Modelquerys = in deze folder staan query's om het Informatiemodel Verkeerstekens te kunnen doorzoeken.
