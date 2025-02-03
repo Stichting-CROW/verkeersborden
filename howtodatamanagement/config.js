@@ -81,7 +81,7 @@ var respecConfig = {
   pubDomain: "verkeersborden",
   shortName: "howtodatamanagement",
   license: "CC-BY",
-  subtitle: "Leermiddelen voor databeheer",
+  subtitle: "Toelichting op databeheer verkeerskundige informatie",
   editors: [
     {
       name: "Elisabeth Klören",

@@ -81,7 +81,7 @@ var respecConfig = {
   pubDomain: "verkeersborden",
   shortName: "howtousedata",
   license: "CC-BY",
-  subtitle: "Leermiddelen datagebruik",
+  subtitle: "Toelichting op gebruik verkeerskundige informatie",
   editors: [
     {
       name: "Elisabeth Klören",
@@ -95,4 +95,7 @@ var respecConfig = {
   github: "https://github.com/Stichting-CROW/verkeersborden",
   postProcess: [indexOfRequirements],
   hypothesisComments: false,
+  lint: { "no-unused-dfns": false },
+  localBiblio: window.localBibliography,
 };
+
