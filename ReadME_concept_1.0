@@ -1,22 +1,35 @@
 # Concept-versie 1.0 Ter Openbare Consultatie
 Dit is de ReadME voor de consultatieversie van het Informatiemodel Verkeerstekens 1.0. 
 
+Het betreft de publicatie van verkeersmaatregelen en iconen (van verkeersborden) uit het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).
+De vertaling naar veel voorkomende standaard fysieke platen (fysieke verkeersborden met gekleurde achtergrondschilden, iconen van verkeersborden, onderborden en teksten) zoals men die buiten tegenkomt, en die in NLCS of IMBOR zijn opgenomen, is nog niet beschikbaar tijdens deze openbare consultatie.
+
 
 Reviewen kan tot 1 april 2025
 
+
 ## Reviewwijze
-* Tabellen, database en technische bestanden: via [issues](https://github.com/nl-digigo/NLCS/issues)
-* Documentatie in ReSpec: druk op de knop "Laad annotaties; je kunt dan rechtsbovenin een scherm uitklappen, eenmalig gratis registreren bij Hypothesis.com en dan kun je in de kantlijn van het document je opmerkingen weergeven. De te reviewen documenten kunnen tot 1 april 2025 van commentaar worden voorzien in de kantlijn; 
+
+* Database, viewer en technische bestanden: via [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues)
+* Te reviewen documenten in ReSpec: druk op de knop "Laad annotaties; je kunt dan rechtsbovenin een scherm uitklappen, eenmalig gratis registreren bij Hypothesis.com en dan kun je in de kantlijn van het document je opmerkingen weergeven. De te reviewen documenten kunnen tot 1 april 2025 van commentaar worden voorzien in de kantlijn.
 indien men na de deadline nog review wil indienen, kan dat via de issues in GitHub.
 
-## Te reviewen documenten:
-* Schema Informatiemodel
-* [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework/consultationversions/CR-verkeersborden_framework-20241217.html)
-* 
+## Technische review
+* Voor computers wordt het informatiemodel gepubliceerd op het (SPARQL-endpoint)[https://hub.laces.tech/crow/verkeersborden] waar het ook kan worden gedownload als turtle. Met standaard [query's]() kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0]().
+* De [Technische documentatie] bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 
-## Te reviewen tabellen, database en technische bestanden
-* 
 
-## Viewer
 
+### Review van uitgangspunten en beheer
+* De context, doelen, use cases en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework/consultationversions/CR-verkeersborden_framework-20241217.html)
+* Het [Beheerplan]() beschrijft het beheer van het informatiemodel als open standaard. 
+
+### Review van Gebruikersondersteuning
+De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige informatie als linked data gepubliceerd wordt, op basis van het informatiemodel. Dit is toekomstmuziek, er zal nog een heel ontwikkeltraject van de landelijke registratie (en bij wegbeheerders) moeten plaatsvinden voordat het zover is. Daarom is deze documentatie nog heel summier, en gericht op gebruikers met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
+
+* De [Gids voor databeheer]()
+
+
+## Vervolg
+In de vervolgfase worden voorbeelddatasets uitgewerkt op basis van de huidige publicatie bij het NDW, en worden de leermaterialen voor het samenstellen en gebruiken van data opgesteld, evenals query's om verkeerskundige informatie te doorzoeken, controlebestanden waarmee de data kan worden gecontroleerd en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
 
