@@ -34,10 +34,6 @@ Databeheerders worden op weg geholpen met:
 * De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
 * In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de gebruiker ondersteund bij het leren door oefeningen. Daarbij horen voorbeeld-implementaties (datasets) en controlemechanismes (kwaliteitstoetsen datasets).
 
-
- 
-
-
 ### Voor datagebruikers
 * [Gids voor datagebruik, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met de beschikbare Zoekmechanismes ([SPARQL queries]())
-* In  de [Leermaterialen voor ontwikkelaars, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datauserguide) wordt de datagebruiker ondersteund bij het leren door oefeningen. 
+* In  de [Leermaterialen voor ontwikkelaars, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datauserguide) wordt de datagebruiker ondersteund bij het leren door oefeningen. Daarbij horen voorbeeld-implementaties (datasets) en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
