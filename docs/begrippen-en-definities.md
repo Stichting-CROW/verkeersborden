@@ -204,7 +204,7 @@ Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".
 
 Het Informatiemodel Beheer Openbare Ruimte bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden.
 Veel gemeenten gebruiken de objecttypen uit de Basisregistratie Grootschalige Topografie ([=BGT=]) voor de geometrische representatie van de objecten.
-Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="https://imbor-viewer.apps.crow.nl/">deze viewer</a>
+Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="[https://imbor-viewer.apps.crow.nl/](https://imbor-viewer.apps.crow.nl/)">deze viewer</a>
 
 </dd>
 
