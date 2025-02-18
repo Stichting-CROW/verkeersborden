@@ -1,0 +1,9 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?termUri ?termNameNL
+WHERE {
+  ?termUri a skos:Concept .
+  FILTER NOT EXISTS { ?termUri skos:prefLabel ?termNameEN . FILTER ( LANG(?termNameEN) = "en" ) }
+  ?termUri skos:prefLabel ?termNameNL .
+  FILTER ( LANG(?termNameNL) = "nl" ) .
+}
