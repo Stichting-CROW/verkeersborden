@@ -6,7 +6,9 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 
-SELECT DISTINCT ?EnumerationGroupUri ?EnumerationUri ?EnumerationNameNL ?EnumerationNameEN ?EnumerationDefinitionNL ?EnumerationDefinitionEN ?EnumerationTerm
+# A query that retrieves all the enumerations captured in InformatieModel Verkeersborden - Domeinwaarden
+
+SELECT DISTINCT ?EnumerationGroupUri ?EnumerationUri ?EnumerationNameNL ?EnumerationNameEN ?EnumerationDefinitionNL ?EnumerationDefinitionEN ?EnumerationTermUri ?Reference ?ReferenceName
 WHERE {
   ?EnumerationGroupUri a sh:NodeShape .
   ?EnumerationUri a ?EnumerationGroupUri .
@@ -18,5 +20,11 @@ WHERE {
   FILTER(LANG(?EnumerationDefinitionNL) = "nl") .
   ?EnumerationUri skos:prefLabel ?EnumerationDefinitionEN .
   FILTER(LANG(?EnumerationDefinitionEN) = "en") .
-?EnumationUri rdfs:seeAlso ?EnumerationTerm .
+  ?EnumerationUri rdfs:seeAlso ?EnumerationTermUri .
+  FILTER(CONTAINS(STR(?EnumerationTermUri),"data.crow.nl/imv/term/")) .
+  OPTIONAL {
+    ?EnumerationUri rdfs:seeAlso ?Reference .
+    FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
+    ?Reference skos:prefLabel ?ReferenceName .
+  }
 }
