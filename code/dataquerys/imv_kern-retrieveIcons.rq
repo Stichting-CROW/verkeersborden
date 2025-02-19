@@ -1,0 +1,80 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# A query that retrieves all the Icons captured in InformatieModel Verkeersborden - Kern
+
+SELECT DISTINCT ?IcoonUri ?IcoonNameNL ?IcoonNameEN ?IcoonDefinitionNL ?IcoonDefinitionEN ?IcoonTermUri ?ParentIcoonUri ?ParentIcoonNameNL ?ParentIcoonNameEN ?IcoonRVVID ?ImageUnlicensed ?ImageLicensed ?Reference ?AspectUri ?AspectNameNL ?AspectNameEN ?EnumerationGroupUri ?EnumerationUri ?AspectQuantity ?AspectQuantityUnitUri ?AspectQuantityUnitName
+WHERE {
+  ?IcoonUri a owl:Class . 
+  ?IcoonUri rdfs:subClassOf*/skos:prefLabel "Icoon"@nl .
+  OPTIONAL {
+    ?IcoonUri rdfs:subClassOf ?ParentIcoonUri .
+    FILTER NOT EXISTS { ?ParentIcoonUri a owl:Restriction . }
+    FILTER(?ParentIcoonUri != <https://data.crow.nl/imv/def/Document>) .
+    OPTIONAL { 
+      ?ParentIcoonUri skos:prefLabel ?ParentIcoonNameNL .
+      FILTER(LANG(?ParentIcoonNameNL) = "nl") .
+      ?ParentIcoonUri skos:prefLabel ?ParentIcoonNameEN .
+      FILTER(LANG(?ParentIcoonNameEN) = "en") .
+    }
+  }
+  ?IcoonUri skos:prefLabel ?IcoonNameNL .
+  FILTER(LANG(?IcoonNameNL) = "nl") .
+  ?IcoonUri skos:prefLabel ?IcoonNameEN .
+  FILTER(LANG(?IcoonNameEN) = "en") .
+  ?IcoonUri skos:definition ?IcoonDefinitionNL .
+  FILTER(LANG(?IcoonDefinitionNL) = "nl") .
+  ?IcoonUri skos:definition ?IcoonDefinitionEN .
+  FILTER(LANG(?IcoonDefinitionEN) = "en") .
+  ?IcoonUri rdfs:seeAlso ?IcoonTermUri .
+  FILTER(CONTAINS(STR(?IcoonTermUri),"data.crow.nl/imv/term/")) .
+  OPTIONAL {
+    ?IcoonUri rdfs:seeAlso ?Reference .
+    FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
+    FILTER(!CONTAINS(STR(?Reference),".svg")) .
+  }
+  OPTIONAL {
+    ?IcoonUri rdfs:seeAlso ?ImageLicensed .
+    FILTER(CONTAINS(STR(?ImageLicensed),".svg")) .
+    ?ImageLicensed dcterms:license <https://opensource.org/licenses/MIT> .
+  }
+  OPTIONAL {
+    ?IcoonUri rdfs:seeAlso ?ImageUnlicensed .
+    FILTER(CONTAINS(STR(?ImageUnlicensed),".svg")) .
+    ?ImageUnlicensed dcterms:license <https://opensource.org/licenses/MIT> .
+  }
+  OPTIONAL { ?IcoonUri skos:notation ?IcoonRVVID . }
+  
+  ?shape sh:targetClass ?IcoonUri .
+  ?shape sh:property ?bnode .
+  ?bnode sh:path ?AspectUri .
+  ?AspectUri skos:prefLabel ?AspectNameNL .
+  FILTER(LANG(?AspectNameNL) = "nl") .
+  ?AspectUri skos:prefLabel ?AspectNameEN .
+  FILTER(LANG(?AspectNameEN) = "en") .
+  OPTIONAL { ?bnode sh:hasValue ?EnumerationUri . }
+  OPTIONAL { 
+    ?bnode sh:class ?EnumerationGroupUri .
+    ?EnumerationGroupUri rdfs:subClassOf nen2660:EnumerationType .
+ }
+  OPTIONAL {
+    ?bnode sh:node ?quantityshape .
+    ?quantityshape sh:property ?bnode2 .
+    ?bnode2 sh:path nen2660:hasUnit .
+    ?bnode2 sh:hasValue ?AspectQuantityUnitUri .
+    OPTIONAL { ?AspectQuantityUnitUri skos:prefLabel ?AspectQuantityUnitName . }
+    ?quantityshape sh:property ?bnode3 .
+    ?bnode3 sh:path rdf:value .
+    OPTIONAL { ?bnode3 sh:hasValue ?AspectQuantity . } 
+  }
+}
+
+# Retrieve BackgroundShields
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf
