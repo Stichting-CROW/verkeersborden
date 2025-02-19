@@ -6,7 +6,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dccollections: <http://purl.org/dc/collections/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 
-# A query that returns all the collections (enumeration groups) captured in InformatieModel Verkeersborden - Vocabulary
+# A query that returns all the collections (enumeration groups) captured in InformatieModel Verkeersborden - Vocabulaire
 
 SELECT DISTINCT ?collectionUri ?collectionNameNL ?collectionNameEN ?collectionDefinitionNL ?collectionDefinitionEN
 WHERE {
