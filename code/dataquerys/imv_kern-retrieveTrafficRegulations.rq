@@ -1,0 +1,55 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# A query that retrieves all the TrafficRegulations captured in InformatieModel Verkeersborden - Kern
+
+SELECT DISTINCT ?VerkeersmaatregelUri ?VerkeersmaatregelNameNL ?VerkeersmaatregelNameEN ?VerkeersmaatregelDefinitionNL ?VerkeersmaatregelDefinitionEN ?VerkeersmaatregelTermUri ?ParentVerkeersmaatregelUri ?ParentVerkeersmaatregelNameNL ?ParentVerkeersmaatregelNameEN ?Reference ?AspectUri ?AspectNameNL ?EnumerationGroupUri ?EnumerationUri
+WHERE {
+  ?VerkeersmaatregelUri a owl:Class . 
+  ?VerkeersmaatregelUri rdfs:subClassOf*/skos:prefLabel "Verkeersmaatregel"@nl .
+  OPTIONAL {
+    ?VerkeersmaatregelUri rdfs:subClassOf ?ParentVerkeersmaatregelUri .
+    FILTER NOT EXISTS { ?ParentVerkeersmaatregelUri a owl:Restriction . }
+    FILTER(?ParentVerkeersmaatregelUri != <https://data.crow.nl/imv/def/Document>) .
+    OPTIONAL { 
+      ?ParentVerkeersmaatregelUri skos:prefLabel ?ParentVerkeersmaatregelNameNL .
+      FILTER(LANG(?ParentVerkeersmaatregelNameNL) = "nl") .
+      ?ParentVerkeersmaatregelUri skos:prefLabel ?ParentVerkeersmaatregelNameEN .
+      FILTER(LANG(?ParentVerkeersmaatregelNameEN) = "en") .
+    }
+  }
+  ?VerkeersmaatregelUri skos:prefLabel ?VerkeersmaatregelNameNL .
+  FILTER(LANG(?VerkeersmaatregelNameNL) = "nl") .
+  ?VerkeersmaatregelUri skos:prefLabel ?VerkeersmaatregelNameEN .
+  FILTER(LANG(?VerkeersmaatregelNameEN) = "en") .
+  ?VerkeersmaatregelUri skos:definition ?VerkeersmaatregelDefinitionNL .
+  FILTER(LANG(?VerkeersmaatregelDefinitionNL) = "nl") .
+  ?VerkeersmaatregelUri skos:definition ?VerkeersmaatregelDefinitionEN .
+  FILTER(LANG(?VerkeersmaatregelDefinitionEN) = "en") .
+  ?VerkeersmaatregelUri rdfs:seeAlso ?VerkeersmaatregelTermUri .
+  FILTER(CONTAINS(STR(?VerkeersmaatregelTermUri),"data.crow.nl/imv/term/")) .
+  OPTIONAL {
+    ?VerkeersmaatregelUri rdfs:seeAlso ?Reference .
+    FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
+  }
+  
+  ?shape sh:targetClass ?VerkeersmaatregelUri .
+  ?shape sh:property ?bnode .
+  ?bnode sh:path ?AspectUri .
+  FILTER(?AspectUri NOT IN (nen2660:hasPart)) . 
+  ?AspectUri skos:prefLabel ?AspectNameNL .
+  FILTER(LANG(?AspectNameNL) = "nl") .
+  ?AspectUri skos:prefLabel ?AspectNameEN .
+  FILTER(LANG(?AspectNameEN) = "nl") .
+  OPTIONAL { ?bnode sh:hasValue ?EnumerationUri . }
+  OPTIONAL { 
+    ?bnode sh:class ?EnumerationGroupUri .
+    ?EnumerationGroupUri rdfs:subClassOf nen2660:EnumerationType .
+ }
+}
