@@ -21,7 +21,7 @@ WHERE {
   FILTER ( LANG(?termDefinitionEN) = "en" ) .
   OPTIONAL { 
     ?termUri skos:broader ?parentTermUri .
-}
+  }
   OPTIONAL {
     ?collectionUri a skos:Collection .
     ?collectionUri skos:member ?termUri .
