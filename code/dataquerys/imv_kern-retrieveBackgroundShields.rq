@@ -1,0 +1,55 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# A query to retrieve all BackgroundShields captured in InformatieModel Verkeersborden - Kern 
+
+SELECT DISTINCT ?AchtergrondschildUri ?AchtergrondschildNameNL ?AchtergrondschildNameEN ?AchtergrondschildDefinitionNL ?AchtergrondschildDefinitionEN ?AchtergrondschildTermUri ?ParentAchtergrondschildUri ?ParentAchtergrondschildNameNL ?ParentAchtergrondschildNameEN ?Reference ?AspectUri ?AspectNameNL ?EnumerationGroupUri ?EnumerationUri
+WHERE {
+  ?AchtergrondschildUri a owl:Class . 
+  ?AchtergrondschildUri rdfs:subClassOf*/skos:prefLabel "Achtergrondschild"@nl .
+  OPTIONAL {
+    ?AchtergrondschildUri rdfs:subClassOf ?ParentAchtergrondschildUri .
+    FILTER NOT EXISTS { ?ParentAchtergrondschildUri a owl:Restriction . }
+    FILTER(?ParentAchtergrondschildUri != <https://data.crow.nl/imv/def/Document>) .
+    OPTIONAL { 
+      ?ParentAchtergrondschildUri skos:prefLabel ?ParentAchtergrondschildNameNL .
+      FILTER(LANG(?ParentAchtergrondschildNameNL) = "nl") .
+      ?ParentAchtergrondschildUri skos:prefLabel ?ParentAchtergrondschildNameEN .
+      FILTER(LANG(?ParentAchtergrondschildNameEN) = "en") .
+    }
+  }
+  ?AchtergrondschildUri skos:prefLabel ?AchtergrondschildNameNL .
+  FILTER(LANG(?AchtergrondschildNameNL) = "nl") .
+  ?AchtergrondschildUri skos:prefLabel ?AchtergrondschildNameEN .
+  FILTER(LANG(?AchtergrondschildNameEN) = "en") .
+  ?AchtergrondschildUri skos:definition ?AchtergrondschildDefinitionNL .
+  FILTER(LANG(?AchtergrondschildDefinitionNL) = "nl") .
+  ?AchtergrondschildUri skos:definition ?AchtergrondschildDefinitionEN .
+  FILTER(LANG(?AchtergrondschildDefinitionEN) = "en") .
+  ?AchtergrondschildUri rdfs:seeAlso ?AchtergrondschildTermUri .
+  FILTER(CONTAINS(STR(?AchtergrondschildTermUri),"data.crow.nl/imv/term/")) .
+  OPTIONAL {
+    ?AchtergrondschildUri rdfs:seeAlso ?Reference .
+    FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
+  }
+  
+  ?shape sh:targetClass ?AchtergrondschildUri .
+  ?shape sh:property ?bnode .
+  ?bnode sh:path ?AspectUri .
+  FILTER(?AspectUri NOT IN (nen2660:hasPart)) . 
+  ?AspectUri skos:prefLabel ?AspectNameNL .
+  FILTER(LANG(?AspectNameNL) = "nl") .
+  ?AspectUri skos:prefLabel ?AspectNameEN .
+  FILTER(LANG(?AspectNameEN) = "nl") .
+  OPTIONAL { ?bnode sh:hasValue ?EnumerationUri . }
+  OPTIONAL { 
+    ?bnode sh:class ?EnumerationGroupUri .
+    ?EnumerationGroupUri rdfs:subClassOf nen2660:EnumerationType .
+ }
+}

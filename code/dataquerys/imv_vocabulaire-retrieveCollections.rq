@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dccollections: <http://purl.org/dc/collections/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+# A query that returns all the collections (enumeration groups) captured in InformatieModel Verkeersborden - Vocabulaire
+
+SELECT DISTINCT ?collectionUri ?collectionNameNL ?collectionNameEN ?collectionDefinitionNL ?collectionDefinitionEN
+WHERE {
+  ?collectionUri a skos:Collection .
+  ?collectionUri skos:prefLabel ?collectionNameNL .
+  FILTER ( LANG(?collectionNameNL) = "nl" ) .
+  ?collectionUri skos:prefLabel ?collectionNameEN .
+  FILTER ( LANG(?collectionNameEN) = "en" ) .
+  ?collectionUri skos:definition ?collectionDefinitionNL .
+  FILTER ( LANG(?collectionDefinitionNL) = "nl" ) .
+  ?collectionUri skos:definition ?collectionDefinitionEN .
+  FILTER ( LANG(?collectionDefinitionEN) = "en" ) .
+}

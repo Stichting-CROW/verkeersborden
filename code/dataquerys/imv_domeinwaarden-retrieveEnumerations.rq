@@ -1,0 +1,30 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+# A query that retrieves all the enumerations captured in InformatieModel Verkeersborden - Domeinwaarden
+
+SELECT DISTINCT ?EnumerationGroupUri ?EnumerationUri ?EnumerationNameNL ?EnumerationNameEN ?EnumerationDefinitionNL ?EnumerationDefinitionEN ?EnumerationTermUri ?Reference ?ReferenceName
+WHERE {
+  ?EnumerationGroupUri a sh:NodeShape .
+  ?EnumerationUri a ?EnumerationGroupUri .
+  ?EnumerationUri skos:prefLabel ?EnumerationNameNL .
+  FILTER(LANG(?EnumerationNameNL) = "nl") .
+  ?EnumerationUri skos:prefLabel ?EnumerationNameEN .
+  FILTER(LANG(?EnumerationNameEN) = "en") .
+  ?EnumerationUri skos:prefLabel ?EnumerationDefinitionNL .
+  FILTER(LANG(?EnumerationDefinitionNL) = "nl") .
+  ?EnumerationUri skos:prefLabel ?EnumerationDefinitionEN .
+  FILTER(LANG(?EnumerationDefinitionEN) = "en") .
+  ?EnumerationUri rdfs:seeAlso ?EnumerationTermUri .
+  FILTER(CONTAINS(STR(?EnumerationTermUri),"data.crow.nl/imv/term/")) .
+  OPTIONAL {
+    ?EnumerationUri rdfs:seeAlso ?Reference .
+    FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
+    ?Reference skos:prefLabel ?ReferenceName .
+  }
+}
