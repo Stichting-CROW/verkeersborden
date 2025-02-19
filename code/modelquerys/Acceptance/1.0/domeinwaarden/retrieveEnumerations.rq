@@ -25,6 +25,6 @@ WHERE {
   OPTIONAL {
     ?EnumerationUri rdfs:seeAlso ?Reference .
     FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
-    ?Reference skos:prefLabel ?ReferenceName .
+    OPTIONAL { ?Reference skos:prefLabel ?ReferenceName . }
   }
 }
