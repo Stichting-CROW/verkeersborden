@@ -1,0 +1,2741 @@
+<!DOCTYPE html><html lang="nl"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="utf-8">
+<meta name="generator" content="ReSpec 32.3.0">
+<style>
+.issue-label{text-transform:initial}
+.warning>p:first-child{margin-top:0}
+.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+span.warning{padding:.1em .5em .15em}
+.issue.closed span.issue-number{text-decoration:line-through}
+.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+li.task-list-item{list-style:none}
+input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+</style>
+<style>
+dfn{cursor:pointer}
+.dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:MuseoSans,"Museo Sans",Museo,sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+.dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+.dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+.dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+.dfn-panel *{margin:0}
+.dfn-panel b{display:block;color:#000;margin-top:.25em}
+.dfn-panel ul a[href]{color:#333}
+.dfn-panel>div{display:flex}
+.dfn-panel a.self-link{font-weight:700;margin-right:auto}
+.dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+.dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+.dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+.dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+.dfn-panel a[href]:hover{border-bottom-width:1px}
+.dfn-panel ul{padding:0}
+.dfn-panel li{margin-left:1em}
+.dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+</style>
+<link rel="stylesheet" href="https://docs.crow.nl/webfonts/webfonts.css">
+<link rel="stylesheet" href="https://docs.crow.nl/respec-design/stichting-crow/base.min.css">
+<link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://docs.crow.nl/respec-design/stichting-crow/dark.min.css">
+    
+    
+<meta content="text/html; charset=utf-8" http-equiv="content-type">
+    
+    
+    
+<title>Informatiemodel verkeerstekens: Beheerplan</title>
+    
+    
+    
+    
+<style>
+
+      @media (prefers-reduced-motion: no-preference) {
+        @keyframes animateheader {
+          0% {
+            background-color: unset;
+          }
+          20% {
+            background-color: #ffff0020;
+          }
+          100% {
+            background-color: unset;
+          }
+        }
+      }
+
+      :target {
+        animation: animateheader 1s ease-in-out;
+      }
+      .toc-labeled > li li {
+        margin-left: 0;
+        list-style: disc;
+        margin-left: 1rem;
+      }
+      :not(li) > .toc-labeled {
+        margin-left: 0;
+      }
+      .toc-labeled {
+        font-size: 0.9rem;
+        line-height: inherit;
+      }
+    
+</style>
+  
+<style id="respec-mainstyle">
+@keyframes pop{
+0%{transform:scale(1,1)}
+25%{transform:scale(1.25,1.25);opacity:.75}
+100%{transform:scale(1,1)}
+}
+:is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+dfn{font-weight:700}
+a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+a.bibref{text-decoration:none}
+.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+@supports not (text-decoration:red wavy underline){
+.respec-offending-element:not(pre){display:inline-block}
+.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+}
+#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+cite .bibref{font-style:normal}
+a[href].orcid{padding-left:4px;padding-right:4px}
+a[href].orcid>svg{margin-bottom:-2px}
+.toc a,.tof a{text-decoration:none}
+a .figno,a .secno{color:#000;color:var(--toclink-text)}
+ol.tof,ul.tof{list-style:none outside none}
+.caption{margin-top:.5em;font-style:italic}
+table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+.simple th a{color:#fff;padding:3px 5px;text-align:left}
+.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+.simple td{padding:3px 10px;border-top:1px solid #ddd}
+.simple tr:nth-child(even){background:#f0f6ff}
+.section dd>p:first-child{margin-top:0}
+.section dd>p:last-child{margin-bottom:0}
+.section dd{margin-bottom:1em}
+.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+#issue-summary>ul{column-count:2}
+#issue-summary li{list-style:none;display:inline-block}
+details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+details.respec-tests-details>*{padding-right:2em}
+details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+details.respec-tests-details>li{padding-left:1em}
+.self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+aside.example .marker>a.self-link{color:inherit}
+.header-wrapper{display:flex;align-items:baseline}
+:is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+:is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+:is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+:is(h2,h3)+a.self-link{top:-.2em}
+:is(h4,h5,h6)+a.self-link::before{color:#000}
+@media (max-width:767px){
+dd{margin-left:0}
+}
+@media print{
+.removeOnSave{display:none}
+}
+</style>
+<link rel="icon" href="https://docs.crow.nl/respec-design/logos/crow.ico">
+<meta name="description" content="Dit document beschrijft het beheer van het Informatiemodel Verkeerstekens volgens het BOMOS model zoals beschreven in [BOMOS_fundament] en [BOMOS_verdieping].">
+<style>
+var{position:relative;cursor:pointer}
+var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+</style>
+<script id="initialUserConfig" type="application/json">{
+  "specStatus": "IR",
+  "pubDomain": "verkeersborden",
+  "shortName": "beheerplan",
+  "license": "CC-BY",
+  "subtitle": "Open beheer conform BOMOS",
+  "editors": [
+    {
+      "name": "Elisabeth Klören",
+      "company": "CROW"
+    },
+    {
+      "name": "Redmer Kronemeijer",
+      "company": "CROW"
+    }
+  ],
+  "github": "https://github.com/Stichting-CROW/verkeersborden",
+  "postProcess": [
+    null
+  ],
+  "hypothesisComments": true,
+  "lint": {
+    "no-unused-dfns": false
+  },
+  "localBiblio": {
+    "BOMOS_fundament": {
+      "href": "https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/",
+      "publisher": "Logius",
+      "status": "Actueel",
+      "title": "BOMOS, het fundament",
+      "id": "bomos_fundament"
+    },
+    "BOMOS_verdieping": {
+      "href": "https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/",
+      "publisher": "Logius",
+      "status": "Actueel",
+      "title": "BOMOS, de verdieping",
+      "id": "bomos_verdieping"
+    },
+    "CROW_279": {
+      "href": "https://www.crow.nl/publicaties/karakteristieken-van-voertuigen-en-mensen",
+      "publisher": "CROW",
+      "status": "Actueel",
+      "title": "Karakteristieken van voertuigen en mensen"
+    },
+    "CROW_96a_en_96b": {
+      "href": "https://www.crow.nl/online-kennis-tools/kennismodule-wiu",
+      "publisher": "CROW",
+      "status": "Actueel",
+      "title": "Werk in uitvoering"
+    },
+    "DIN_67520_2013_10": {
+      "href": "https://www.baunormenlexikon.de/norm/din-67520/014ab8f6-7c8e-4f96-be3c-d91ca3d39355",
+      "publisher": "Bauwnormen Institut DeutschlandN",
+      "status": "Actueel",
+      "title": "Retroreflektierende Materialien zur Verkehrssicherung - Lichttechnische Mindestanforderungen an Reflexstoffe"
+    },
+    "ISO_IEC_IEEE_15288_2015": {
+      "href": "https://www.iso.org/standard/63711.html",
+      "publisher": "ISO",
+      "status": "Actueel",
+      "title": "ISO/IEC/IEEE 15288 Systems and software engineering - System life cycle processes"
+    },
+    "ISO_IEC_IEEE_29148_2018": {
+      "href": "https://www.iso.org/standard/72089.html",
+      "publisher": "ISO",
+      "status": "Actueel",
+      "title": "ISO/IEC/IEEE 29148:2018 Systems and software engineering — Life cycle processes — Requirements engineering"
+    },
+    "Leidraad_SE_3": {
+      "href": "https://www.leidraadse.nl/assets/files/downloads/LeidraadSE/V3/Leidraad_V3_SE_web.pdf",
+      "publisher": "Leidraad SE",
+      "status": "Actueel",
+      "title": "Leidraad SE versie 3"
+    },
+    "NEN3381:2020": {
+      "href": "https://www.nen.nl/nen-3381-2020-nl-267378",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden"
+    },
+    "NEN3381_2020": {
+      "href": "https://www.nen.nl/nen-3381-2020-nl-267378",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Wegmeubilair - Eisen voor permanente en tijdelijke verkeersborden"
+    },
+    "NEN_2660_1_2022": {
+      "href": "https://www.nen.nl/en/nen-2660-1-2022-nl-291666",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "NEN 2660-1 Rules for information modelling of the built environment - Part 1: Conceptual models"
+    },
+    "NEN_2660_2_2022": {
+      "href": "https://www.nen.nl/en/nen-2660-2-2022-nl-291667",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1",
+      "id": "nen_2660_2_2022"
+    },
+    "NEN_3610": {
+      "href": "https://www.nen.nl/nen-3610-2022-nl-296137",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Basismodel geo-informatie - Termen, definities, relaties en algemene regels voor de uitwisseling van informatie over aan de aarde gerelateerde ruimtelijke objecten"
+    },
+    "NEN_EN_12899_1_2007": {
+      "href": "https://www.nen.nl/en/nen-en-12899-1-2007-nl-144673",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Fixed, vertical road traffic signs - Part 1: Fixed signs"
+    },
+    "NEN_EN_ISO_14823_1": {
+      "href": "https://www.nen.nl/en/nen-en-iso-14823-1-2024-en-324952",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Intelligent transport systems - Graphic data dictionary - Part 1: Specification"
+    },
+    "NEN_EN_ISO_19650_1_2019": {
+      "href": "https://www.nen.nl/nen-en-iso-19650-1-2019-nl-275305",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van bouw informatie modelling - Deel 1: Concepten en beginselen"
+    },
+    "NEN_EN_ISO_19650_2_2019": {
+      "href": "https://www.nen.nl/nen-en-iso-19650-2-2019-nl-275518",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Organisatie en digitalisering van informatie over gebouwen en civieltechnische werken, met inbegrip van building information modelling (BIM) - Informatiemanagement met behulp van building information modelling - Deel 2: Leveringsfase van de assets"
+    },
+    "NEN_EN_ISO_19650_3_2020": {
+      "href": "https://www.nen.nl/nen-en-iso-19650-3-2020-en-275488",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 3: Operational phase of the assets"
+    },
+    "NEN_EN_ISO_19650_4_2022": {
+      "href": "https://www.nen.nl/nen-en-iso-19650-4-2022-en-301119",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "Organization and digitization of information about buildings and civil engineering works, including building information modelling (BIM) - Information management using building information modelling - Part 4: Information exchange"
+    },
+    "NEN_EN_ISO_55000_2014": {
+      "href": "https://www.nen.nl/nen-iso-55000-2014-nl-193078",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "ISO 55000:2014 Asset management — Overview, principles and terminology"
+    },
+    "NEN_EN_ISO_9000_2015": {
+      "href": "https://www.nen.nl/en/nen-en-iso-9000-2015-en-nl-211925",
+      "publisher": "NEN",
+      "status": "Actueel",
+      "title": "NEN-EN-ISO 9000:2015 Kwaliteitsmanagementsystemen - Grondbeginselen en verklarende woordenlijst"
+    },
+    "kenkrechmer": {
+      "href": "https://www.csrstds.com/OpnStdsCallforAction.pdf",
+      "publisher": "University of Colorado",
+      "status": "Actueel",
+      "title": "Open standaards call for action",
+      "id": "kenkrechmer"
+    },
+    "whitepaper_ontology_alignment": {
+      "href": "https://docs.crow.nl/ontology-alignment/whitepaper/",
+      "publisher": "CROW",
+      "status": "Actueel",
+      "title": "Ontology Matching trough alignment and extension: a Best Practice"
+    }
+  },
+  "reviewDateEnd": 2020,
+  "publishISODate": "2025-02-18T00:00:00.000Z",
+  "generatedSubtitle": "CROW, referentieversie 18 februari 2025"
+}</script></head>
+
+  <body class="h-entry" style="background-image: url(&quot;https://docs.crow.nl/respec-design/stichting-crow/status-nl/IR.svg&quot;);"><div class="head">
+    <p class="logos"><a class="logo" href="https://www.crow.nl"><img crossorigin="" alt="CROW" height="75" src="https://docs.crow.nl/respec-design/stichting-crow/logo/crow.svg" width="150">
+  </a></p>
+    <h1 id="title" class="title">Informatiemodel verkeerstekens: Beheerplan</h1> <h2 id="subtitle" class="subtitle">Open beheer conform BOMOS</h2>
+    <p id="w3c-state">CROW,
+  referentieversie <time style="white-space: pre;" class="dt-published" datetime="2025-02-18">18 februari 2025</time></p>
+    <details open="">
+      <summary>Meer informatie over dit document</summary>
+      <dl>
+        
+        
+        
+        <dt>Laatste werkversie:</dt><dd><a href="https://docs.crow.nl/verkeersborden/beheerplan">https://docs.crow.nl/verkeersborden/beheerplan</a></dd>
+        <dt>Geschiedenis:</dt><dd>
+                    <a href="https://github.com/Stichting-CROW/verkeersborden/commits/">Wijzigingsgeschiedenis</a>
+                  </dd>
+        
+        
+        
+        <dt>Redacteurs:</dt><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Elisabeth Klören</span> (<span class="p-org org h-org">CROW</span>)
+  </dd><dd class="editor p-author h-card vcard">
+    <span class="p-name fn">Redmer Kronemeijer</span> (<span class="p-org org h-org">CROW</span>)
+  </dd>
+        
+        
+        <dt>Feedback:</dt><dd>
+        <a href="https://github.com/Stichting-CROW/verkeersborden/">GitHub Stichting-CROW/verkeersborden</a>
+        (<a href="https://github.com/Stichting-CROW/verkeersborden/pulls/">wijzigingsverzoeken</a>,
+        <a href="https://github.com/Stichting-CROW/verkeersborden/issues/new/choose">nieuw issue</a>,
+        <a href="https://github.com/Stichting-CROW/verkeersborden/issues/">openstaande issues</a>)
+      </dd><dd id="annotation-service-placeholder">
+        <button type="button" data-load-annotation-service="">
+          Laad annotaties
+        </button>
+        <span><small>Annotaties door <a href="https://web.hypothes.is">Hypothes.is</a> (<a href="https://web.hypothes.is/privacy">privacybeleid</a>).</small></span>
+      </dd><dd hidden="" id="annotation-service-loaded">
+        <span data-hypothesis-annotation-count="">...</span> annotatie(s) met <em>Hypothes.is</em>
+        <button type="button" data-hypothesis-trigger="">
+          Toon annotatiebalk
+        </button>
+        <button type="button" data-unload-annotation-service="">
+          Verberg
+        </button>
+      </dd>
+        
+        
+      </dl>
+    </details>
+    
+    <p class="copyright">
+    Copyright ©
+    2025
+    
+    <a href="https://www.crow.nl">CROW</a>.
+    CROW
+    <a href="https://www.crow.nl/disclaimer">disclaimer</a>
+      van toepassing en gedistribueerd onder
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons Naamsvermelding">CC BY 4.0</a>
+  </p>
+    <hr title="Separator for header">
+  </div>
+    
+    <section id="abstract" data-format="markdown" class="introductory"><h2>Samenvatting</h2><p>Dit document beschrijft het beheer van het Informatiemodel Verkeerstekens volgens het <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> model zoals beschreven in [<cite><a class="bibref" data-link-type="biblio" href="#bib-bomos_fundament" title="BOMOS, het fundament">BOMOS_fundament</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-bomos_verdieping" title="BOMOS, de verdieping">BOMOS_verdieping</a></cite>].</p>
+<p>Voor een overzicht van alle documentatie van het Informatiemodel Verkeerstekens wordt verwezen naar de <a href="https://github.com/Stichting-CROW/verkeersborden/blob/main/README.md">Readme op GitHub</a>.</p>
+</section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">1. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">2. </bdi>Inleiding</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#doel-documentatie"><bdi class="secno">2.1 </bdi>Doel documentatie</a></li><li class="tocline"><a class="tocxref" href="#bomos"><bdi class="secno">2.2 </bdi><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ken-krechmer"><bdi class="secno">2.2.1 </bdi>Ken Krechmer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#leeswijzer"><bdi class="secno">2.3 </bdi>Leeswijzer</a></li></ol></li><li class="tocline"><a class="tocxref" href="#strategie"><bdi class="secno">3. </bdi>Strategie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#governance"><bdi class="secno">3.1 </bdi>Governance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#stuurgroep"><bdi class="secno">3.1.1 </bdi>Stuurgroep</a></li><li class="tocline"><a class="tocxref" href="#beheerder"><bdi class="secno">3.1.2 </bdi>Beheerder</a></li><li class="tocline"><a class="tocxref" href="#gebruikerscommissie"><bdi class="secno">3.1.3 </bdi>Gebruikerscommissie</a></li><li class="tocline"><a class="tocxref" href="#participatie"><bdi class="secno">3.1.4 </bdi>Participatie</a></li><li class="tocline"><a class="tocxref" href="#inter-nationale-samenwerking"><bdi class="secno">3.1.5 </bdi>(Inter-)nationale samenwerking</a></li></ol></li><li class="tocline"><a class="tocxref" href="#visie-missie-en-businesscase"><bdi class="secno">3.2 </bdi>Visie, missie en businesscase</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visie"><bdi class="secno">3.2.1 </bdi>Visie</a></li><li class="tocline"><a class="tocxref" href="#missie"><bdi class="secno">3.2.2 </bdi>Missie</a></li><li class="tocline"><a class="tocxref" href="#toepassingsgebied-standaarden"><bdi class="secno">3.2.3 </bdi>Toepassingsgebied standaarden</a></li><li class="tocline"><a class="tocxref" href="#businesscase-standaard"><bdi class="secno">3.2.4 </bdi>Businesscase standaard</a></li></ol></li><li class="tocline"><a class="tocxref" href="#financien"><bdi class="secno">3.3 </bdi>Financiën</a></li><li class="tocline"><a class="tocxref" href="#volwassenheid-bereiken"><bdi class="secno">3.4 </bdi>Volwassenheid bereiken</a></li></ol></li><li class="tocline"><a class="tocxref" href="#tactiek"><bdi class="secno">4. </bdi>Tactiek</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#community"><bdi class="secno">4.1 </bdi>Community</a></li><li class="tocline"><a class="tocxref" href="#adoptie-en-erkenning"><bdi class="secno">4.2 </bdi>Adoptie en erkenning</a></li><li class="tocline"><a class="tocxref" href="#rechtenbeleid"><bdi class="secno">4.3 </bdi>Rechtenbeleid</a></li><li class="tocline"><a class="tocxref" href="#architectuur"><bdi class="secno">4.4 </bdi>Architectuur</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#toegankelijk-duurzaamheid"><bdi class="secno">4.4.1 </bdi>Toegankelijk, duurzaamheid</a></li><li class="tocline"><a class="tocxref" href="#security-en-privacy"><bdi class="secno">4.4.2 </bdi>Security en Privacy</a></li><li class="tocline"><a class="tocxref" href="#api-s-en-uitwisselformaten"><bdi class="secno">4.4.3 </bdi>API's en uitwisselformaten</a></li></ol></li><li class="tocline"><a class="tocxref" href="#kwaliteitsbeleid-benchmarking"><bdi class="secno">4.5 </bdi>Kwaliteitsbeleid benchmarking</a></li></ol></li><li class="tocline"><a class="tocxref" href="#operationeel"><bdi class="secno">5. </bdi>Operationeel</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#versiebeleid"><bdi class="secno">5.1 </bdi>Versiebeleid</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#releaseplanning"><bdi class="secno">5.1.1 </bdi>Releaseplanning</a></li><li class="tocline"><a class="tocxref" href="#feedbackprocedure"><bdi class="secno">5.1.2 </bdi>Feedbackprocedure</a></li><li class="tocline"><a class="tocxref" href="#kwaliteitstoets"><bdi class="secno">5.1.3 </bdi>Kwaliteitstoets</a></li><li class="tocline"><a class="tocxref" href="#vaststellingsproces"><bdi class="secno">5.1.4 </bdi>Vaststellingsproces</a></li></ol></li><li class="tocline"><a class="tocxref" href="#documentatie"><bdi class="secno">5.2 </bdi>Documentatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#vergaderingen"><bdi class="secno">5.2.1 </bdi>Vergaderingen</a></li><li class="tocline"><a class="tocxref" href="#verslagen-en-besluiten"><bdi class="secno">5.2.2 </bdi>Verslagen en besluiten</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#implementatie-ondersteuning"><bdi class="secno">6. </bdi>Implementatie ondersteuning</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#opleiding"><bdi class="secno">6.1 </bdi>Opleiding</a></li><li class="tocline"><a class="tocxref" href="#helpdesk"><bdi class="secno">6.2 </bdi>Helpdesk</a></li><li class="tocline"><a class="tocxref" href="#moduleontwikkeling"><bdi class="secno">6.3 </bdi>Moduleontwikkeling</a></li><li class="tocline"><a class="tocxref" href="#validatie-en-certificatie"><bdi class="secno">6.4 </bdi>Validatie en certificatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#communicatie"><bdi class="secno">7. </bdi>Communicatie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#promotie"><bdi class="secno">7.1 </bdi>Promotie</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#publicatie"><bdi class="secno">7.1.1 </bdi>Publicatie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#klachtenafhandeling"><bdi class="secno">7.2 </bdi>Klachtenafhandeling</a></li></ol></li><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">8. </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav>
+    
+    
+    
+    <section id="conformance"><div class="header-wrapper"><h2 id="x1-conformiteit"><bdi class="secno">1. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 1."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn,
+      zijn ook alle diagrammen, voorbeelden, en noten in dit document niet
+      normatief. Verder is alles in dit document normatief.</p></section>
+    
+    <section data-format="markdown" id="inleiding"><div class="header-wrapper"><h2 id="x2-inleiding"><bdi class="secno">2. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 2."></a></div>
+<section id="doel-documentatie"><div class="header-wrapper"><h3 id="x2-1-doel-documentatie"><bdi class="secno">2.1 </bdi>Doel documentatie</h3><a class="self-link" href="#doel-documentatie" aria-label="Permalink for Section 2.1"></a></div>
+<p>Dit document is het beheerplan dat beschrijft hoe de standaarden van DigiGO beheerd worden, met als basis het Beheermodel voor Open Standaarden (<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>) zoals beschreven in [<cite><a class="bibref" data-link-type="biblio" href="#bib-bomos_fundament" title="BOMOS, het fundament">BOMOS_fundament</a></cite>] en [<cite><a class="bibref" data-link-type="biblio" href="#bib-bomos_verdieping" title="BOMOS, de verdieping">BOMOS_verdieping</a></cite>].</p>
+</section><section id="bomos"><div class="header-wrapper"><h3 id="x2-2-bomos"><bdi class="secno">2.2 </bdi><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr></h3><a class="self-link" href="#bomos" aria-label="Permalink for Section 2.2"></a></div>
+<p>Beheer volgens <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> heeft de volgende voordelen:</p>
+<ul>
+<li>Belangen van stakeholders worden evenwichtig afgewogen bij ontwikkeling en beheer van de standaard.</li>
+<li>De standaard wordt samen met gebruikers actueel gehouden, iedereen kan ideeën aandragen.</li>
+<li>Het beheer gebeurt transparant.</li>
+<li>Informatie is voor iedereen toegankelijk met heldere voorwaarden voor gebruik.</li>
+</ul>
+<figure id="figure">
+  <img src="../images/bomos.PNG" alt="Visualisatie van de aandachtsgebieden van BOMOS, op strategisch, tactisch en operationeel niveau. De inhoudsopgave van dit document volgt de BOMOS standaard" height="643" width="1058">
+  <figcaption>Figuur <bdi class="figno">1</bdi> <span class="fig-title">De aandachtsgebieden van <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr></span></figcaption>
+</figure>
+
+<section id="ken-krechmer"><div class="header-wrapper"><h4 id="x2-2-1-ken-krechmer"><bdi class="secno">2.2.1 </bdi>Ken Krechmer</h4><a class="self-link" href="#ken-krechmer" aria-label="Permalink for Section 2.2.1"></a></div>
+<p>Voor digitale en informatiestandaarden gelden daarnaast de criteria van Ken Krechmer ([<cite><a class="bibref" data-link-type="biblio" href="#bib-kenkrechmer" title="Open standaards call for action">kenkrechmer</a></cite>]). Deze critaria worden gebruikt om de beheerstrategie van DigiGO aan te scherpen.</p>
+</section></section><section id="leeswijzer"><div class="header-wrapper"><h3 id="x2-3-leeswijzer"><bdi class="secno">2.3 </bdi>Leeswijzer</h3><a class="self-link" href="#leeswijzer" aria-label="Permalink for Section 2.3"></a></div>
+<ul>
+<li><strong>Hoofdstuk 2</strong> beschrijft het beheer van standaarden op strategisch niveau</li>
+<li><strong>Hoofdstuk 3</strong> beschrijft het beheer van standaarden op tactisch niveau</li>
+<li><strong>Hoofdstuk 4</strong> beschrijft het beheer van standaarden op operationeel niveau</li>
+<li><strong>Hoofdstuk 5</strong> beschrijft welke implementatie ondersteuning geboden wordt bij de standaarden </li>
+<li><strong>Hoofdstuk 6</strong> beschrijft hoe communicatie over de standaarden gebeurt</li>
+</ul>
+</section></section>
+    <section data-format="markdown" id="strategie"><div class="header-wrapper"><h2 id="x3-strategie"><bdi class="secno">3. </bdi>Strategie</h2><a class="self-link" href="#strategie" aria-label="Permalink for Section 3."></a></div>
+<section id="governance"><div class="header-wrapper"><h3 id="x3-1-governance"><bdi class="secno">3.1 </bdi>Governance</h3><a class="self-link" href="#governance" aria-label="Permalink for Section 3.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen aan governance</span></div><aside class="">
+<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> zegt: De governance van de standaard is voor iedereen helder:
+<ul><li> De organisatiestructuur </li>
+<li> De rollen en taken van commissies en van de beheerder </li>
+<li> De benoeming een neutraliteit van voorzitters </li></ul>
+Ken Krechmer eisen:
+<ul><li>Open meeting: alle stakeholders kunnen participeren</li>
+<li>Consensus: besluitvorming met brede consensus, draagvlak, belangenafweging</li></ul>
+</aside></div>
+
+<p>Het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-1">Informatiemodel Verkeerstekens</a> wordt open beheerd volgens de uitgangspunten van <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>.</p>
+<section id="stuurgroep"><div class="header-wrapper"><h4 id="x3-1-1-stuurgroep"><bdi class="secno">3.1.1 </bdi>Stuurgroep</h4><a class="self-link" href="#stuurgroep" aria-label="Permalink for Section 3.1.1"></a></div>
+<p><strong>Rol: Beheren</strong> De Stuurgroep is op strategisch niveau verantwoordelijk voor het beheer van het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-2">Informatiemodel Verkeerstekens</a> op basis van <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>.</p>
+<ul>
+<li>Taak: De Stuurgroep beslist welke onderdelen aan het [Informatiemodel Verkeerstekens] worden toegevoegd.</li>
+<li>Taak: De Stuurgroep stelt nieuwe of gewijzigde onderdelen van het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-3">Informatiemodel Verkeerstekens</a> vast.</li>
+</ul>
+<p>Het Ministerie van Infrastructuur en Waterstaat, NDW en DigiGO worden in elk geval uitgenodigd om deel te nemen in het besluitvormend orgaan van de standaard, zodat de samenhang tussen de standaarden en centrale voorzieningen blijvend gemonitord kan worden. </p>
+</section><section id="beheerder"><div class="header-wrapper"><h4 id="x3-1-2-beheerder"><bdi class="secno">3.1.2 </bdi>Beheerder</h4><a class="self-link" href="#beheerder" aria-label="Permalink for Section 3.1.2"></a></div>
+<p><strong>Rol: Beheren</strong> Een uitvoerende partij is verantwoordelijk voor het beheer van het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-4">Informatiemodel Verkeerstekens</a>.</p>
+<ul>
+<li>Taak: De beheerder werkt eisen en wensen inhoudelijk uit.</li>
+<li>Taak: De beheerder is organisator en secretaris van strategische en tactische beheeractiviteiten om te zorgen dat er open inspraak is, en transparante besluitvorming plaatsvindt.</li>
+<li>Taak: De beheerder is uitvoerder van operationele beheeractiviteiten:<ul>
+<li>Uitvoeren van wijzigingen in het informatiemodel, waaronder het uitgeven van coderingen bij <a data-link-type="dfn" href="#dfn-icoon" class="internalDFN" id="ref-for-dfn-icoon-1">iconen</a>.</li>
+<li>Publicatie van het informatiemodel en bijbehorende documentatie.</li>
+<li>Communicatie en gebruikersondersteuning bieden voor implementatie.</li>
+</ul>
+</li>
+</ul>
+</section><section id="gebruikerscommissie"><div class="header-wrapper"><h4 id="x3-1-3-gebruikerscommissie"><bdi class="secno">3.1.3 </bdi>Gebruikerscommissie</h4><a class="self-link" href="#gebruikerscommissie" aria-label="Permalink for Section 3.1.3"></a></div>
+<p><strong>Rol: Vertegenwoordigen gebruikers</strong>  In de gebruikerscommissie, die openstaat voor deelname van eenieder die hiervoor de tijd wil nemmen, kunnen wegbeheerders, verkeerskundigen, en wegontwerpers deelnemen om inhoudelijke kennis bij te dragen en hun behoeften aan te geven; softwareleveranciers die gebruik maken van de landelijke registratie van verkeerskundige informatie kunnen deelnemen om de impact van wijzigingen op software-implementaties te duiden; partijen die data verzamelen in de openbare ruimte of inspecties doen aan verkeersborden kunnen participeren om om inhoudelijke kennis bij te dragen en hun behoeften aan te geven. </p>
+<ul>
+<li>Taak: De gebruikerscommissie adviseert de Stuurgroep over de belangen van de gebruikers en adviseert de beheerder over de wenselijkheid van voorgestelde wijzigingen voor de gebruikers. Dit geeft de Stuurgroep informatie om de belangen goed af te wegen.</li>
+</ul>
+</section><section id="participatie"><div class="header-wrapper"><h4 id="x3-1-4-participatie"><bdi class="secno">3.1.4 </bdi>Participatie</h4><a class="self-link" href="#participatie" aria-label="Permalink for Section 3.1.4"></a></div>
+<p>Bij elke publicatie krijgen stakeholders de kans om de documentatie en het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-5">Informatiemodel Verkeerstekens</a> te reviewen en hun wensen en eisen aan te geven, middels openbare consultaties. </p>
+</section><section id="inter-nationale-samenwerking"><div class="header-wrapper"><h4 id="x3-1-5-inter-nationale-samenwerking"><bdi class="secno">3.1.5 </bdi>(Inter-)nationale samenwerking</h4><a class="self-link" href="#inter-nationale-samenwerking" aria-label="Permalink for Section 3.1.5"></a></div>
+<p>Om het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-6">Informatiemodel Verkeerstekens</a> optimaal te ontwikkelen en beheren in samenhang met het ecosysteem wordt actief samengewerkt en afgestemd met:</p>
+<ul>
+<li><a data-link-type="dfn" href="#dfn-digigo" class="internalDFN" id="ref-for-dfn-digigo-1">DigiGO</a> voor <a data-link-type="dfn" href="#dfn-nlcs" class="internalDFN" id="ref-for-dfn-nlcs-1">NLCS</a>.</li>
+<li>Het NDW, voor de landelijke registraties van het wegennetwerk en verkeersborden.</li>
+<li>Het Ministerie van Infrastructuur en Waterstaat.</li>
+<li>De <a data-link-type="dfn" href="#dfn-informatiemodel-beheer-openbare-ruimte" class="internalDFN" id="ref-for-dfn-informatiemodel-beheer-openbare-ruimte-1">IMBOR</a>-beheerorganisatie voor de aansluiting op de beheersystemen van de wegbeheerder.</li>
+</ul>
+</section></section><section id="visie-missie-en-businesscase"><div class="header-wrapper"><h3 id="x3-2-visie-missie-en-businesscase"><bdi class="secno">3.2 </bdi>Visie, missie en businesscase</h3><a class="self-link" href="#visie-missie-en-businesscase" aria-label="Permalink for Section 3.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-0"><div role="heading" class="note-title marker" id="h-note-0" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<ul><li><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>: De visie en missie van de standaard is voor iedereen duidelijk</li>
+<li>Ken Krechmer: One world - de standaard vult andere standaarden aan, concurreert niet</li></ul>
+</aside></div>
+
+<section id="visie"><div class="header-wrapper"><h4 id="x3-2-1-visie"><bdi class="secno">3.2.1 </bdi>Visie</h4><a class="self-link" href="#visie" aria-label="Permalink for Section 3.2.1"></a></div>
+<p>Bij een standaard hoort een visie. Deze kan worden opgesteld door de beheerder, maar wordt versterkt als het ministerie een beleidsdocument opstelt over de beoogde architectuur van de centrale voorziening voor verkeerskundige informatie, de rol en taken van de wegbeheerders en het groeipad voor implementatie. Deze actie staat nog open bij uitgave van het concept informatiemodel. </p>
+</section><section id="missie"><div class="header-wrapper"><h4 id="x3-2-2-missie"><bdi class="secno">3.2.2 </bdi>Missie</h4><a class="self-link" href="#missie" aria-label="Permalink for Section 3.2.2"></a></div>
+<p>De primaire missie van het  <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-7">Informatiemodel Verkeerstekens</a> is ondersteuning voor de use case "Gebruiken van digitale <a data-link-type="dfn" href="#dfn-verkeerskundige-informatie" class="internalDFN" id="ref-for-dfn-verkeerskundige-informatie-1">verkeerskundige informatie</a> over de ter plaatse geldende maat en de bijbehorende verkeersborden in een systeem voor <a data-link-type="dfn" href="#dfn-smart-mobility" class="internalDFN" id="ref-for-dfn-smart-mobility-1">SMART Mobility</a> dat een <a data-link-type="dfn" href="#dfn-weggebruiker" class="internalDFN" id="ref-for-dfn-weggebruiker-1">weggebruiker</a> ondersteunt tijdens deelname aan het verkeer." Technisch gezien is het uitgangspunt <a data-link-type="dfn" href="#dfn-federatief-data-delen" class="internalDFN" id="ref-for-dfn-federatief-data-delen-1">federatief data delen</a></p>
+<p>Als secundaire missie worden de volgende use cases ondersteund: </p>
+<ol>
+<li>De controle op de samenhang van verkeersregels en de logische plaatsing van verkeersborden;</li>
+<li>De levering van mutaties vanuit projecten voor het bijwerken van de verkeerskundige informatie na aanpassingen aan het wegennetwerk of verkeersborden. </li>
+<li>De aansluiting op de beheerinformatie van de wegbeheerder.</li>
+</ol>
+</section><section id="toepassingsgebied-standaarden"><div class="header-wrapper"><h4 id="x3-2-3-toepassingsgebied-standaarden"><bdi class="secno">3.2.3 </bdi>Toepassingsgebied standaarden</h4><a class="self-link" href="#toepassingsgebied-standaarden" aria-label="Permalink for Section 3.2.3"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-1"><div role="heading" class="note-title marker" id="h-note-1" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Het doel van de standaard en het toepassingsgebied (use cases) zijn voor iedereen duidelijk 
+</aside></div>
+
+<p>Het toepassingsgebied van de standaard zijn alle verkeersmaatregelen die gelden op openbare wegen in Nederland, met de daarbij horende verkeersborden.</p>
+</section><section id="businesscase-standaard"><div class="header-wrapper"><h4 id="x3-2-4-businesscase-standaard"><bdi class="secno">3.2.4 </bdi>Businesscase standaard</h4><a class="self-link" href="#businesscase-standaard" aria-label="Permalink for Section 3.2.4"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-2"><div role="heading" class="note-title marker" id="h-note-2" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+De business case van de standaard is voor iedereen duidelijk:
+<ul><li> De business case van de standaard (oftewel de keten)</li>
+<li> De business case van een individuele organisatie om de standaard te implementeren </li>
+<li> De business case voor de softwareleveranciers </li> </ul>
+</aside></div>
+
+
+</section></section><section id="financien"><div class="header-wrapper"><h3 id="x3-3-financien"><bdi class="secno">3.3 </bdi>Financiën</h3><a class="self-link" href="#financien" aria-label="Permalink for Section 3.3"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-3"><div role="heading" class="note-title marker" id="h-note-3" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS eisen</span></div><aside class="">
+De standaard heeft een structurele financiering voor beheer en implementatieondersteuning
+</aside></div>
+
+<p>In het <abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr> model wordt gewezen op het belang van structurele financiering voor beheer, om continuïteit te kunnen waarborgen. Daarom is het voorstel om structureel financiering vrij te maken vanuit de begroting van ministerie van Infrastructuur en Waterstaat voor beheer van het informatiemodel. Dit past bij het ecosysteem van de <a data-link-type="dfn" href="#dfn-verkeerskundige-informatie" class="internalDFN" id="ref-for-dfn-verkeerskundige-informatie-2">verkeerskundige informatie</a> die door de overheid wordt gepubliceerd bij het <a data-link-type="dfn" href="#dfn-ndw" class="internalDFN" id="ref-for-dfn-ndw-1">NDW</a>.</p>
+</section><section id="volwassenheid-bereiken"><div class="header-wrapper"><h3 id="x3-4-volwassenheid-bereiken"><bdi class="secno">3.4 </bdi>Volwassenheid bereiken</h3><a class="self-link" href="#volwassenheid-bereiken" aria-label="Permalink for Section 3.4"></a></div>
+<p>Het informatiemodel en de overige onderdelen worden pas volwassen door toepassing, waardoor de toepasbaarheid verbeterd wordt en er een werkend ecosysteem ontstaat van informatiemodel, informatie en applicaties.</p>
+</section></section>
+    <section data-format="markdown" id="tactiek"><div class="header-wrapper"><h2 id="x4-tactiek"><bdi class="secno">4. </bdi>Tactiek</h2><a class="self-link" href="#tactiek" aria-label="Permalink for Section 4."></a></div>
+<section id="community"><div class="header-wrapper"><h3 id="x4-1-community"><bdi class="secno">4.1 </bdi>Community</h3><a class="self-link" href="#community" aria-label="Permalink for Section 4.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-4"><div role="heading" class="note-title marker" id="h-note-4" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+<a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf"><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr></a> eist: De standaard heeft een degelijke, actieve community
+<ul><li> Het is duidelijk wie de doelgroep is van de standaard (primaire stakeholders) </li>
+<li> Het is duidelijk wie de gebruikers zijn (inclusief softwareleveranciers, opdrachtmers</li>
+  <li>Community: Gebruikers zijn actief betrokken bij het beheer</li></ul>
+</aside></div>
+
+<p>Actieve participatie door eindgebruikers wordt aangemoedigd, specifiek twee doelgroepen:  de fabrikanten van SMART Mobility systemen en de verkeerskundigen. j de ingebrachte wensen kunnen valideren en de stuurgroep kunnen adviseren over wijzigingen die in hun belang zijn. </p>
+<p>De gebruikersgroepen van het <a data-link-type="dfn" href="#dfn-ndw" class="internalDFN" id="ref-for-dfn-ndw-2">NDW</a> worden uitgenodid om de ingebrachte wensen te valideren en de stuurgroep te adviseren over wijzigingen die in hun belang zijn.
+Daarnaast worden alle versies online en openbaar in consultatie gebracht zodat ook een bredere groep gebruikers kan meedenken en zich kan aanmelden voor actieve participatie. </p>
+</section><section id="adoptie-en-erkenning"><div class="header-wrapper"><h3 id="x4-2-adoptie-en-erkenning"><bdi class="secno">4.2 </bdi>Adoptie en erkenning</h3><a class="self-link" href="#adoptie-en-erkenning" aria-label="Permalink for Section 4.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-5"><div role="heading" class="note-title marker" id="h-note-5" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS eisen</span></div><aside class="">
+De standaard is voldoende ontwikkeld voor een hoge adoptiegraad
+<ul><li> De kwaliteit is voldoende hoog voor de beoogde toepassingen </li>
+<li> Proces en data zijn voldoende duidelijk voor implementatie </li>
+<li>De vereisten bij implementatie zijn duidelijk en (uitwissel)formaten zijn duidelijk gedefinieerd. Dit vraagt om specifieke use cases</li>
+</ul>
+</aside></div>
+
+<p>Een informatiemodel kan pas marktadoptie krijgen als de specificaties ervan in verschillende vrije formaten vrij beschikbaar zijn.
+Dat houdt in dat het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-8">Informatiemodel Verkeerstekens</a> open en publiek gepubliceerd moet worden én dat het zowel in mens- als machineleesbare formaten wordt gepubliceerd. Dit gebeurt voor het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-9">Informatiemodel Verkeerstekens</a>.</p>
+<p>In de beschrijving van het informatiemodel worden gemaakte keuzes beschreven, zodat implementaties en toekomstige uitbreidingen afgewogen keuzes kunnen maken.
+Het informatiemodel vermeldt expliciet welke onderdelen normatief zijn, en welke niet-normatief (informatief).</p>
+<p>Een voorbeeld van een vrij, machineleesbaar formaat is een RDF-ontologie zoals gebruikt wordt voor het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-10">Informatiemodel Verkeerstekens</a>.
+Een voorbeeldimplementatie is aanbevelenswaardig, omdat het aantoont dat de specificatie van het informatiemodel werkbaar is. Deze zijn aanwezig bij het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-11">Informatiemodel Verkeerstekens</a>.
+Voorbeelden van data conform het informatiemodel zijn essentieel om de implementatie ervan te ondersteunen. Deze zijn aanwezig bij het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-12">Informatiemodel Verkeerstekens</a>.</p>
+</section><section id="rechtenbeleid"><div class="header-wrapper"><h3 id="x4-3-rechtenbeleid"><bdi class="secno">4.3 </bdi>Rechtenbeleid</h3><a class="self-link" href="#rechtenbeleid" aria-label="Permalink for Section 4.3"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-6"><div role="heading" class="note-title marker" id="h-note-6" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<br>
+<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>:<br>
+De standaard heeft een duidelijk rechtenbeleid: Softwareleveranciers weten qua rechten waar ze aan toe zijn bij implementatie <br>
+<br>
+Ken Krechmer:<br>
+<li>Open PIR (eigendomsrechten): de standaard kan zonder beperkingen worden toegepast  door alle partijen</li>
+</aside></div>
+
+<p>Uitgangspunten voor rechten bij het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-13">Informatiemodel Verkeerstekens</a>:</p>
+<ol>
+<li>Gebruik van de ontologie en de afbeeldingen zijn vrij van rechten en komen beschikbaar in het publieke domein onder de <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a> licentie. Dit garandeert dat de ontologie vrij beschikbaar is voor gebruik en hergebruik, en stimuleert brede adoptie en interoperabiliteit binnen de sector.</li>
+<li>Alle documentatie wordt uitgegeven onder de <a href="https://creativecommons.org/licenses/by/4.0/deed.nl">CC BY 4.0</a> licentie. Dit zorgt ervoor dat de documentatie vrij gedeeld en aangepast mag worden, zolang de oorspronkelijke auteurs erkend worden. Dit bevordert kennisdeling en transparantie.</li>
+<li>Code wordt uitgegeven onder de <a href="https://opensource.org/licenses/MIT">MIT</a> licentie. Dit ondersteunt brede inzet en ontwikkeling van ondersteunende software zonder beperkingen, waardoor gebruikers hun eigen implementaties kunnen aanpassen en uitbreiden.</li>
+</ol>
+</section><section id="architectuur"><div class="header-wrapper"><h3 id="x4-4-architectuur"><bdi class="secno">4.4 </bdi>Architectuur</h3><a class="self-link" href="#architectuur" aria-label="Permalink for Section 4.4"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-7"><div role="heading" class="note-title marker" id="h-note-7" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<br>
+<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>: De standaard heeft duidelijke architectuuruitgangspunten
+<ul><li> Het ontwerpparadigma is helder: een filosofie over de oplossing, informatiemodel, berichten, services </li>
+<li> De methodieken en talen die gebruikt worden bij het ontwerp van de standaard zijn helder.  </li>
+<li> De publicatievormen van de standaard zijn helder </li>
+<li> De architectuur is duidelijk: de functionele en technische architectuur van de standaard en de relatie met andere standaarden. </li></ul>
+<br>
+Ken Krechmer:
+<ul><li>Open interface: de standaard is “backwards compatible” en laat voldoende ruimte voor tijdelijke uitbreidingen</li></ul>
+</aside></div>
+
+<p>Alle afhankelijkheden met andere standaarden worden expliciet benoemd zijn.  Daarnaast kunnen andere standaarden hergebruikt worden, of verder ingevuld worden, bijvoorbeeld voor lokalisatie. Hieraan wordt invulling gegeven in de <a href="https://docs.crow.nl/verkeersborden/technicaldocs/">Technische documentatie</a>.</p>
+<p>De functionele afbakening met andere standaarden wordt expliciet beschreven in het <a href="https://docs.crow.nl/verkeersborden/framework">Architectuur Framework</a>.</p>
+<section id="toegankelijk-duurzaamheid"><div class="header-wrapper"><h4 id="x4-4-1-toegankelijk-duurzaamheid"><bdi class="secno">4.4.1 </bdi>Toegankelijk, duurzaamheid</h4><a class="self-link" href="#toegankelijk-duurzaamheid" aria-label="Permalink for Section 4.4.1"></a></div>
+<p>Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van toegangkelijkheid en duurzaamheid:</p>
+<ul>
+<li>Zijn de specficiaties duidelijk genoeg en behapbaar genoeg dat grote en kleine spelers op gelijkwaardige voet informatie kunnen leveren volgens het informatiemodel? Hiertoe is uitegbreide documentatie beschikbaar bij het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-14">Informatiemodel Verkeerstekens</a>.</li>
+<li>Zijn de specificaties geschikt alleen voor de Nederlandse context? Het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-15">Informatiemodel Verkeerstekens</a> wordt specifiek ontwikkeld voor de Nederlandse situatie, al worden internationale normen en voorbeelden waar mogelijk gevolgd. Met name <a data-link-type="dfn" href="#dfn-datex-ii" class="internalDFN" id="ref-for-dfn-datex-ii-1">DATEX II</a>.</li>
+<li>Zijn de specificaties geschikt alleen voor de actuele situatie of zijn ze ook geschikt voor de historische gegevens? De specificaties zijn bedoeld voor de actuele situatie, alleen de begin- en eindtijd van een <a data-link-type="dfn" href="#dfn-verkeersmaatregel" class="internalDFN" id="ref-for-dfn-verkeersmaatregel-1">verkeersmaatregel</a> en verkeersbord zijn wel opgenomen. Er wordt niet beoogd een informatiemodel te maken waarmee de gehele ontwikkeling van het weggenet en de verkeerskundige kenmerken kan worden gevolgd. Ook de voorbeeld queries zijn gebaseerd op een actuele dataset.</li>
+<li>Is het geschikt voor toekomstige toepassingen, doordat het eenvoudig uit te breiden is? Dit wordt bereikt door gebruik te maken van de modelleerregels uit de <a data-link-type="dfn" class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found">NEN_2660_2_2022</a>.</li>
+</ul>
+</section><section id="security-en-privacy"><div class="header-wrapper"><h4 id="x4-4-2-security-en-privacy"><bdi class="secno">4.4.2 </bdi>Security en Privacy</h4><a class="self-link" href="#security-en-privacy" aria-label="Permalink for Section 4.4.2"></a></div>
+<p>Een goed informatiemodel heeft gedocumenteerde afwegingen gemaakt op het gebied van security en privacy:</p>
+<ul>
+<li>Stelt de specificatie niet te veel evt. privacygevoelige informatie verplicht?</li>
+<li>Schrijft de specificatie voorzorgsmaatregelen voor t.b.v. informatiebeveiliging?</li>
+<li>Worden privacygevoelige elementen van het informatiemodel expliciet genoemd?</li>
+</ul>
+<p>In het geval van het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-16">Informatiemodel Verkeerstekens</a> gaat het om publiek toegankelijke, openbare en transparante data.</p>
+</section><section id="api-s-en-uitwisselformaten"><div class="header-wrapper"><h4 id="x4-4-3-api-s-en-uitwisselformaten"><bdi class="secno">4.4.3 </bdi>API's en uitwisselformaten</h4><a class="self-link" href="#api-s-en-uitwisselformaten" aria-label="Permalink for Section 4.4.3"></a></div>
+<p>Het informatiemodel dient los te staan van specifieke uitwisselingsstandaarden, zoals API's en uitwisselformaten voor <a data-link-type="dfn" href="#dfn-verkeerskundige-informatie" class="internalDFN" id="ref-for-dfn-verkeerskundige-informatie-3">verkeerskundige informatie</a>.
+Dat komt het hergebruik van het Informatiemodel ten goede, als er niet technologie-specifieke beperkingen zijn gemaakt.</p>
+<p>Dit wordt ingevuld door het gebruik van semantische informatiemodellering volgens <a data-link-type="dfn" class="respec-offending-element" title="No matching definition found." id="respec-offender-no-matching-definition-found-0">NEN_2660_2_2022</a>.</p>
+</section></section><section id="kwaliteitsbeleid-benchmarking"><div class="header-wrapper"><h3 id="x4-5-kwaliteitsbeleid-benchmarking"><bdi class="secno">4.5 </bdi>Kwaliteitsbeleid benchmarking</h3><a class="self-link" href="#kwaliteitsbeleid-benchmarking" aria-label="Permalink for Section 4.5"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-8"><div role="heading" class="note-title marker" id="h-note-8" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+<br>
+De standaard heeft een hoge kwaliteit
+<ul><li> De standaard is effectief: de mate waarin de standaard in de specifieke situatie de functies biedt en implementeert die expliciet of impliciet vereist zijn. </li>
+<li> De standaard is bruikbaar: de mate waarin een standaard begrepen, geleerd en gebruikt/ toegepast kan worden door gebruikers in de specifieke situatie </li>
+<li> De standaard heeft portabiliteit: de mate waarin een standaard de mogelijkheid heeft om in verschillende omgevingen ingezet te worden. </li>
+<li>De standaard is betrouwbaar: de mate waarin een standaard een op een gespecificeerd niveau blijft presteren onder specifieke condities zoals foutieve implementaties of verschillen in implementaties tussen partijen.</li>
+<li> Onderhoudbaarheid: de mate waarin een standaard eenvoudig aangepast kan worden aan een veranderende situatie. </li></ul>
+</aside></div>
+
+<p>Het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-17">Informatiemodel Verkeerstekens</a> zit nog in de ontwikkelfase. Het is opgesteld als voorbereiding op het federatief delen van verkeerskundige informatie. Voor wat betreft de centrale voorzieningen is hiervoor een groeipad nodig. Daarnaast vraagt dit om serieuze organisatieveranderingen bij wegbeheerders met technische middelen, opleidingen, veranderingen in de werkprocessen en de cultuur van informatie delen en samenwerken met opdrachtnemers in bouwprojecten. 
+Ook softwareleveranciers zullen verleid moeten worden met een wenkend perspectief om investeringen te rechtvaardigen.</p>
+<p>Deze handschoen wordt niet opgepakt door de beheerder van het informatiemodel; het ministerie van Infrastructuur en Waterstaat is aan zet om de samenwerking in het hele ecosysteem rondom verkeerskundige informatie op gang te brengen. Hier zal de beheerorganisatie van het <a data-link-type="dfn" href="#dfn-informatiemodel-verkeerstekens" class="internalDFN" id="ref-for-dfn-informatiemodel-verkeerstekens-18">Informatiemodel Verkeerstekens</a> actief aan deelnemen.</p>
+</section></section>
+    <section data-format="markdown" id="operationeel"><div class="header-wrapper"><h2 id="x5-operationeel"><bdi class="secno">5. </bdi>Operationeel</h2><a class="self-link" href="#operationeel" aria-label="Permalink for Section 5."></a></div>
+<div class="note" role="note" id="issue-container-generatedID-9"><div role="heading" class="note-title marker" id="h-note-9" aria-level="3"><span>Noot</span><span class="issue-label">: Ken Krechmer</span></div><aside class="">
+Open change: de standaard heeft duidelijk beleid voor versiebeheer en een wijzigingsprocedure
+</aside></div>
+
+<section id="versiebeleid"><div class="header-wrapper"><h3 id="x5-1-versiebeleid"><bdi class="secno">5.1 </bdi>Versiebeleid</h3><a class="self-link" href="#versiebeleid" aria-label="Permalink for Section 5.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-10"><div role="heading" class="note-title marker" id="h-note-10" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Procedures en versiebeleid worden open gepubliceerd
+</aside></div>
+
+<p>Major releases betreffen aanpassingen aan het kernmodel, waardoor de verkeerskundige informatie van de wegbeheerder en de nationale registratie anders moeten worden weergegeven. Deze releases vinden plaats na openbare consultatie, én na beproeving van de wijziging door het NDW. Zo wordt gezorgd dat de impact van de wijziging op de bestaande verkeerskundige informatie bekend is voor definitieve release. </p>
+<p>Minor releases betreffen het toevoegen van bijvoorbeeld iconen of standaard verkeersborden, deze kunnen doorlopend plaatsvinden en kunnen dank zij het gebruik van de linked data technologie direct herkend worden in verkeerskundige informatie waar de nieuwe iconen worden gebruikt. </p>
+<section id="releaseplanning"><div class="header-wrapper"><h4 id="x5-1-1-releaseplanning"><bdi class="secno">5.1.1 </bdi>Releaseplanning</h4><a class="self-link" href="#releaseplanning" aria-label="Permalink for Section 5.1.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-11"><div role="heading" class="note-title marker" id="h-note-11" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Er is duidelijkheid over de publicatiedata van nieuwe releases 
+</aside></div>
+
+<ul>
+<li>Het kernmodel met de concepten en informatiestructuur wordt jaarlijks herzien. Nieuwe versies worden minimaal 3 maanden ter openbare consultatie aangeboden, voordat zij worden vastgesteld. </li>
+<li>Waardelijsten worden continue aangevuld met bijvoorbeeld nieuwe iconen en coderingen, op verzoek van gebruikers. Zo kunnen nieuwe verkeersborden snel worden gepubliceerd. Verwijderen van waardes uit waardelijsten gebeurt alleen tijdens de jaarlijkse release van het kernmodel, en zal daar ook bij ter consultatie worden aangeboden.</li>
+</ul>
+</section><section id="feedbackprocedure"><div class="header-wrapper"><h4 id="x5-1-2-feedbackprocedure"><bdi class="secno">5.1.2 </bdi>Feedbackprocedure</h4><a class="self-link" href="#feedbackprocedure" aria-label="Permalink for Section 5.1.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-12"><div role="heading" class="note-title marker" id="h-note-12" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Er is een procedure voor Bug fixing
+</aside></div>
+
+<p>Een omgeving voor wijzigingsbeheer is beschikbaar om feedback te kunnen ophalen van gebruikers en deze beheerst te verwerken tot wijzigingen. Dat moet ervoor zorgen dat afwegingen in het beheer van het informatiemodel transparant zijn en dat de reden voor wijzigingen achterhaald kan worden in wijzigingsdocumentatie. 
+Gebruikers kunnen op de <a href="https://github.com/Stichting-CROW/verkeersborden">Github_Verkeersborden</a> Issues aandragen voor bug/features/aanbevelingen op het informatiemodel en de documentatie.
+Bij de concept-release van documentatie in ReSpec wordt de mogelijkheid geboden om deze te reviewen met annotaties in de kantlijn. </p>
+</section><section id="kwaliteitstoets"><div class="header-wrapper"><h4 id="x5-1-3-kwaliteitstoets"><bdi class="secno">5.1.3 </bdi>Kwaliteitstoets</h4><a class="self-link" href="#kwaliteitstoets" aria-label="Permalink for Section 5.1.3"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-13"><div role="heading" class="note-title marker" id="h-note-13" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Het is duidelijk hoe de kwaliteit van de nieuwe release getest wordt voor definitieve vrijgave
+</aside></div>
+
+<p>Nieuwe releases worden getoetst op:</p>
+<ol>
+<li>Conformiteit aan de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>].</li>
+<li>Impact op de verkeerskundige dataset door het opstellen van voorbeelddatasets en vergelijking met de bestaande datasets.</li>
+<li>Expert toets door verkeerskundigen op de waardelijsten en afbeeldingen.</li>
+</ol>
+</section><section id="vaststellingsproces"><div class="header-wrapper"><h4 id="x5-1-4-vaststellingsproces"><bdi class="secno">5.1.4 </bdi>Vaststellingsproces</h4><a class="self-link" href="#vaststellingsproces" aria-label="Permalink for Section 5.1.4"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-14"><div role="heading" class="note-title marker" id="h-note-14" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Er is een openbare consultatieronde voor definitieve vrijgave.
+</aside></div>
+De beheerder verzamelt gewenste wijzigingen voor major releases op GitHub en vraagt advies aan de gebruikerscommissie. 
+Als het voorstel past binnen de structuur en werkwijze van het informatiemodel en het betreft slechts een uitbreiding van waardelijsten, kan de expertcommissie direct een positief advies geven. Bij fundamentele beslissingen die de werking van de standaard aanpassen of uitbreiden wordt de keuze voorgelegd aan de Stuurgroep en wordt eventueel financiering gezocht voor de gewenste ontwikkeling. 
+
+<p>De beheerder handelt de issue af voor de release van een concept-publicatie.</p>
+<p>Vervolgens vindt een openbare consultatie plaats van de concept-publicatie, waarbij alle stakeholders feedback kunnen leveren op de voorgestelde wijzigingen.</p>
+<p>De Gebruikerscommissie geeft advies over de feedback en de verwerking ervan en adviseert de Stuurgroep om de concept-publicatie met eventuele aanpassingen op basis van feedback de status definitief te geven. </p>
+</section></section><section id="documentatie"><div class="header-wrapper"><h3 id="x5-2-documentatie"><bdi class="secno">5.2 </bdi>Documentatie</h3><a class="self-link" href="#documentatie" aria-label="Permalink for Section 5.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-15"><div role="heading" class="note-title marker" id="h-note-15" aria-level="3"><span>Noot</span><span class="issue-label">: Ken Krechmer</span></div><aside class="">
+Open documents: de documentatie en besluitvorming/changelogs zijn open toegankelijk en goed vindbaar
+</aside></div>
+Alle documentatie wordt openbaar op GitHub gepubliceerd, evenals de wijzigingsvoorstellen (issues). Advies van de gebruikerscommissie wordt gedocumenteerd bij de issues. 
+
+<section id="vergaderingen"><div class="header-wrapper"><h4 id="x5-2-1-vergaderingen"><bdi class="secno">5.2.1 </bdi>Vergaderingen</h4><a class="self-link" href="#vergaderingen" aria-label="Permalink for Section 5.2.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-16"><div role="heading" class="note-title marker" id="h-note-16" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+<ul><li> Vergaderfrequenties zijn duidelijk </li>
+<li> Vergaderdata worden open gepubliceerd </li>
+<li> Toegankelijkheid van vergaderingen is duidelijk </li>
+</ul></aside></div>
+Bijeenkomsten van de gebruikerscommissie zullen op de website van CROW worden aangekondigd. 
+
+</section><section id="verslagen-en-besluiten"><div class="header-wrapper"><h4 id="x5-2-2-verslagen-en-besluiten"><bdi class="secno">5.2.2 </bdi>Verslagen en besluiten</h4><a class="self-link" href="#verslagen-en-besluiten" aria-label="Permalink for Section 5.2.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-17"><div role="heading" class="note-title marker" id="h-note-17" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Verslagen en besluiten worden open gepubliceerd
+</aside></div>
+Advies van de gebruikerscommissie wordt gedocumenteerd bij de issues. Verslagen van de Stuurgroep worden gepubliceerd op gitHub.</section></section></section>
+    <section data-format="markdown" id="implementatie-ondersteuning"><div class="header-wrapper"><h2 id="x6-implementatie-ondersteuning"><bdi class="secno">6. </bdi>Implementatie ondersteuning</h2><a class="self-link" href="#implementatie-ondersteuning" aria-label="Permalink for Section 6."></a></div>
+<div class="note" role="note" id="issue-container-generatedID-18"><div role="heading" class="note-title marker" id="h-note-18" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>:<br>:
+Implementatie is voldoende ondersteund:
+<ul><li>Informatie over implementaties, waaronder ook referentieprojecten of gecertificeerde implementaties is beschikbaar </li>
+<li>De communicatie- en adoptiestrategie zijn duidelijk: hoe worden gebruikers bereikt?</li></ul>
+Ken Krechmer:
+<ul><li>Open interface: de standaard is “backwards compatible” en laat voldoende ruimte voor tijdelijke uitbreidingen</li>
+<li>Open access: de implementatie van de standaard kan onafhankelijk getest worden bijvoorbeeld met  testprocedures, validatie, certificatie en/of plugfests.</li>
+<li>Ongoing support: er is meerjaren duidelijkheid over ondersteuning bij implementatie</li></ul> 
+</aside></div>
+
+<p>De implementatie hangt af van de invoering van het federatief datastelsel, en de aanpassing van de landelijke registraties hierop. Dit vraagt een ontwikkeltraject. </p>
+<p>De implementatie-ondersteuning besperkt zich daarom tot het leveren van voorbeeld datasets, query's en controlebestanden. </p>
+<section id="opleiding"><div class="header-wrapper"><h3 id="x6-1-opleiding"><bdi class="secno">6.1 </bdi>Opleiding</h3><a class="self-link" href="#opleiding" aria-label="Permalink for Section 6.1"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-19"><div role="heading" class="note-title marker" id="h-note-19" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+<a href="https://www.forumstandaardisatie.nl/sites/bfs/files/proceedings/FS22-10-04%204b%20BOMOS.pdf"><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr></a> eist: Opleidingen leiden tot inzicht in de standaard en ondersteunen de implementatie:
+<ul><li>Het is duidelijk voor welk toepassingsgebied van de standaard de opleiding bedoeld is</li>
+<li>De opleiding geeft voldoende handvaten voor implementatie</li></ul>
+</aside></div>
+
+
+</section><section id="helpdesk"><div class="header-wrapper"><h3 id="x6-2-helpdesk"><bdi class="secno">6.2 </bdi>Helpdesk</h3><a class="self-link" href="#helpdesk" aria-label="Permalink for Section 6.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-20"><div role="heading" class="note-title marker" id="h-note-20" aria-level="3"><span>Noot</span><span class="issue-label">: BOMOS</span></div><aside class="">
+Er is een helpdesk voor ondersteuning, de opdracht en scope van de helpdesk zijn duidelijk
+</aside></div>
+
+<p>Voor eindgebruikers van het informatiemodel (databeheerders en gebruikers) is de <a href="https://www.crow.nl/hulp-en-contact/helpdesk/">helpdesk van CROW</a> beschikbaar voor vragen. Omdat wegbeheerders ook via <a data-link-type="dfn" href="#dfn-koop" class="internalDFN" id="ref-for-dfn-koop-1">KOOP</a> en het <a data-link-type="dfn" href="#dfn-nwb" class="internalDFN" id="ref-for-dfn-nwb-1">NWB</a> ondersteund worden bij publicatie van de verkeerskundige informatie is de verwachte omvang van het aantal hulpvragen beperkt.</p>
+</section><section id="moduleontwikkeling"><div class="header-wrapper"><h3 id="x6-3-moduleontwikkeling"><bdi class="secno">6.3 </bdi>Moduleontwikkeling</h3><a class="self-link" href="#moduleontwikkeling" aria-label="Permalink for Section 6.3"></a></div>
+<p>Bij de standaard worden alleen open source hulpbestanden ontwikkelt die beschikbaar zijn voor software-implementaties, er worden geen modules ontwikkeld bij de standaard. </p>
+</section><section id="validatie-en-certificatie"><div class="header-wrapper"><h3 id="x6-4-validatie-en-certificatie"><bdi class="secno">6.4 </bdi>Validatie en certificatie</h3><a class="self-link" href="#validatie-en-certificatie" aria-label="Permalink for Section 6.4"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-21"><div role="heading" class="note-title marker" id="h-note-21" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<ul><li><abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>: Het is duidelijk hoe je een implementatie kan valideren en/of certificeren</li>
+<li>Ken Krechmer: Open access - de implementatie van de standaard kan onafhankelijk getest worden bijvoorbeeld met  testprocedures, validatie, certificatie en/of plugfests.</li></ul>
+</aside></div>
+
+<p>Door het gebruik van de linked data technologie is geen validatie of certificatie nodig; ofwel de verkeerskundige informatie is afgeleid van het informatiemodel, of niet. Dit blijkt uit de links in de dataset. </p>
+<p>Validatie van verkeerskundige informatie is buiten scope voor de beheerder van het model en kan vorm krijgen in het ecosysteem met verkeerskundige informatie bij wegbeheerders, de landelijke ontsluiting daarvan bij het NDW en eventuele andere partijen.</p>
+</section></section>
+    <section data-format="markdown" id="communicatie"><div class="header-wrapper"><h2 id="x7-communicatie"><bdi class="secno">7. </bdi>Communicatie</h2><a class="self-link" href="#communicatie" aria-label="Permalink for Section 7."></a></div>
+<section id="promotie"><div class="header-wrapper"><h3 id="x7-1-promotie"><bdi class="secno">7.1 </bdi>Promotie</h3><a class="self-link" href="#promotie" aria-label="Permalink for Section 7.1"></a></div>
+<p>Promotie gebeurt via de nieuwsbrieven en website van CROW en NDW, als samenwerkingspartners in het ecosysteem van landelijke verkeerskundige informatie. </p>
+<section id="publicatie"><div class="header-wrapper"><h4 id="x7-1-1-publicatie"><bdi class="secno">7.1.1 </bdi>Publicatie</h4><a class="self-link" href="#publicatie" aria-label="Permalink for Section 7.1.1"></a></div>
+<p>De standaard zelf wordt gepubliceerd op een sparql-endpoint en is direct beschikbaar in applicaties.</p>
+<p>De documentatie van de standaard wordt gepubliceerd in ReSpec formaat, welke openbaar toegankelijk is online, en doorzoekbaar en vindbaar in zoekmachines. </p>
+</section></section><section id="klachtenafhandeling"><div class="header-wrapper"><h3 id="x7-2-klachtenafhandeling"><bdi class="secno">7.2 </bdi>Klachtenafhandeling</h3><a class="self-link" href="#klachtenafhandeling" aria-label="Permalink for Section 7.2"></a></div>
+<div class="note" role="note" id="issue-container-generatedID-22"><div role="heading" class="note-title marker" id="h-note-22" aria-level="3"><span>Noot</span><span class="issue-label">: Eisen</span></div><aside class="">
+<br:>
+<abbr title="Beheer- en Ontwikkelmodel Standaarden">BOMOS</abbr>: Er is een duidelijke procedure voor klachtenafhandeling:
+<ul><li>De procedure is helder</li>
+<li>Klachten worden grondig onderzocht en opgevolgd</li></ul>
+<br>Ken Krechmer:<br>
+Due Process: inspraak en klachtenprocedures zijn goed georganiseerd
+</br:></aside></div>
+
+<p>De Stuurgroep behandelt klachten vanuit gebruikers. Elke klacht wordt in behandeling genomen en binnen zes weken beantwoord. indien een impasse ontstaat, wordt opgeschaald naar de directie van de beheerorganisatie.</p>
+</section></section>
+    <section class="informative" data-format="markdown" id="definities"><div class="header-wrapper"><h2 id="x8-definities"><bdi class="secno">8. </bdi>Definities</h2><a class="self-link" href="#definities" aria-label="Permalink for Section 8."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<dl data-sort=""><dt><dfn id="dfn-actiepunt" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">actiepunt</dfn></dt>
+<dd>
+
+<p>De plek op het NWB-wegvak waar een verkeersmaatregel geldt</p>
+</dd>
+
+<dt><dfn data-lt="adviessnelheid|adviessnelheden" id="dfn-adviessnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">adviessnelheid</dfn></dt>
+<dd>
+
+<p>Een verkeersmaatregel die een aanbevolen maar niet verplichte maximumsnelheid geeft</p>
+</dd>
+
+<dt><dfn data-lt="ASVV|ASVV: Aanbevelingen voor Verkeersvoorzieningen binnen de bebouwde kom" id="dfn-asvv" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">ASVV: Aanbevelingen voor Verkeersvoorzieningen binnen de bebouwde kom</dfn></dt>
+<dd>
+
+<p><a data-link-type="dfn" href="#dfn-crow" class="internalDFN" id="ref-for-dfn-crow-1">CROW</a> publiceert de ASVV, de Aanbevelingen voor Verkeersvoorzieningen Binnen de Bebouwde Kom. De kennis uit de ASVV wordt gebruikt door verkeerskundig ontwerpers, adviseurs, wegbeheerders, beleidsmedewerkers en juristen. De ASVV is op dit moment geen open standaard, er moet een abonnement voor worden afgesloten. Zie ook <a href="https://www.crow.nl/publicaties/asvv-2021">ASVV op crow.nl</a>.</p>
+</dd>
+
+<dt><dfn data-lt="BABW|BABW: Besluit administratieve bepalingen inzake het wegverkeer" id="dfn-babw" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">BABW: Besluit administratieve bepalingen inzake het wegverkeer</dfn></dt>
+<dd>
+
+<p>Besluit administratieve bepalingen inzake het wegverkeer.
+De Algemene maatregel van bestuur waarbij regels worden gesteld voor het nemen van verkeersbesluiten en verkeersmaatregelen.
+Bron: <a href="https://data.crow.nl/thesaurus/term/5BB62D05-7691-4A69-8950-740AA16AFD45">CROW thesaurus</a></p>
+<p>De BABW bevat regels over de plaatsing en uitvoering/materialisatie van verkeersborden.
+BABW verwijst naar de NEN3381:2020 voor visualisaties van de fysiek te plaatsen verkeersborden.
+<a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004826&amp;hoofdstuk=II&amp;z=2024-01-01&amp;g=2024-01-01">regeling</a></p>
+</dd><dt><dfn id="dfn-bebakening" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bebakening</dfn></dt>
+<dd>
+
+<p>Bebakening is het samenstel van op, in en naast de verharding aangebrachte verkeerstekens en voorwerpen die ter geleiding, waarschuwing, regeling en beveiliging van het verkeer dienen. <a href="https://data.crow.nl/thesaurus/term/DA24A2CE-114B-4226-B8FB-94DD79D94B7F">Bron: CROW thesaurus</a></p>
+</dd>
+
+<dt><dfn id="dfn-beinvloedingsgebied" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">beïnvloedingsgebied</dfn></dt>
+<dd>
+
+<p>Een geografische locatie (punt, polygoon of vlak) waarvoor een <a data-link-type="dfn" href="#dfn-verkeersmaatregel" class="internalDFN" id="ref-for-dfn-verkeersmaatregel-2">verkeersmaatregel</a> of <a data-link-type="dfn" href="#dfn-waarschuwing" class="internalDFN" id="ref-for-dfn-waarschuwing-1">waarschuwing</a> geldt. Dit kan resulteren in een <a data-link-type="dfn" href="#dfn-werkingslengte" class="internalDFN" id="ref-for-dfn-werkingslengte-1">werkingslengte</a>, <a data-link-type="dfn" href="#dfn-rijstrook" class="internalDFN" id="ref-for-dfn-rijstrook-1">rijstrook</a>aanduiding, een <a data-link-type="dfn" href="#dfn-route" class="internalDFN" id="ref-for-dfn-route-1">route</a>, of een <a data-link-type="dfn" href="#dfn-zone" class="internalDFN" id="ref-for-dfn-zone-1">zone</a>.</p>
+</dd>
+
+<dt><dfn id="dfn-bewegwijzering" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">bewegwijzering</dfn></dt>
+<dd>
+
+<p>Bewegwijzering is het geheel van visuele middelen dat op, langs of boven de weg is aangebracht om de weggebruiker in staat te stellen zijn route te bepalen.
+<a href="https://data.crow.nl/thesaurus/term/5883952B-E8D8-4EF6-B1A9-EB340C30006D">Bron: CROW thesaurus</a></p>
+</dd><dt><dfn data-lt="BGT|Basisregistratie Grootschalige Topografie|BGT: Basisregistratie Grootschalige Topografie" id="dfn-bgt" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">BGT: Basisregistratie Grootschalige Topografie</dfn></dt>
+<dd>
+
+<p>Een digitale kaart van Nederland waarop gebouwen, wegen, waterlopen, terreinen en spoorlijnen eenduidig zijn vastgelegd. De kaart is op 20 centimeter nauwkeurig. De informatie wordt aangeleverd door de beheerders van de objecten. Wegen zijn hierin opgenomen als 2D vlakobject. Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord", op basis van het informatiemodel <a data-link-type="dfn" href="#dfn-imgeo" class="internalDFN" id="ref-for-dfn-imgeo-1">IMGeo</a>.</p>
+</dd>
+
+<dt><dfn data-lt="Buyer Group|Buyer Group verkeersborden" id="dfn-buyer-group" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Buyer Group verkeersborden</dfn></dt>
+<dd>
+
+<p>De Buyer Group verkeersborden en <a data-link-type="dfn" href="#dfn-bewegwijzering" class="internalDFN" id="ref-for-dfn-bewegwijzering-1">bewegwijzering</a> werkt aan het verduurzamen van verkeersborden en <a data-link-type="dfn" href="#dfn-bewegwijzering" class="internalDFN" id="ref-for-dfn-bewegwijzering-2">bewegwijzering</a>.
+In maandelijkse sessies delen de opdrachtgevers kennis en ervaringen en werken zij samen aan één duurzame marktvisie en -strategie.
+Deze strategie passen deelnemers toe in hun eigen projecten.
+Zie ook <a href="https://www.pianoo.nl/nl/themas/maatschappelijk-verantwoord-inkopen/buyer-groups/buyer-group-verkeersborden-en">deze website</a></p>
+</dd>
+
+<dt><dfn id="dfn-crow" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">CROW</dfn></dt>
+<dd>
+
+<p>Kennisinstelling voor de openbare ruimte en infrastructuur</p>
+</dd>
+
+<dt><dfn id="dfn-data-top-15" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Data Top 15</dfn></dt>
+
+<dd>
+
+<p>In het landelijke programma 'Digitalisering Overheden' werkt het Ministerie van Infrastructuur en Waterstaat met vijf landsdelen samen om er voor te zorgen dat in 2023 alle wegbeheerders 'digitaal capabel in mobiliteit' zijn. Hiervoor is een Data Top 15 opgesteld, met onder andere maximumsnelheden, verkeersborden en andere datasets. Zie <a href="https://www.datapedia.nl/">datapedia.nl</a>.</p>
+</dd>
+
+<dt><dfn id="dfn-datex-ii" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Datex II</dfn></dt>
+<dd>
+
+<p>DATEX II is de Europese standaard voor het vastleggen en uitwisselen van verkeersgegevens tussen verkeerscentrales, verkeersinformatiecentra en dienstverleners. <a href="https://datex2.eu/">Website</a></p>
+</dd>
+
+<dt><dfn id="dfn-digigo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DigiGO</dfn></dt>
+<dd>
+
+<p>DigiGO maakt en beheert standaarden voor de gebouwde omgeving, waaronder de met het informatiemodel samenhangende standaard <a data-link-type="dfn" href="#dfn-nlcs" class="internalDFN" id="ref-for-dfn-nlcs-2">NLCS</a> en het [DSGO]-stelsel. <a href="https://www.digigo.nu">Website</a>.</p>
+</dd>
+
+<dt><dfn data="" lt="Digitaal Stelsel|Digitale Stelsels" id="dfn-digitaal-stelsel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Digitaal Stelsel</dfn></dt>
+
+<dd> Een geïntegreerd systeem dat technologieën, gegevens, processen en standaarden combineert om informatie-uitwisseling en samenwerking binnen een bepaald domein te faciliteren. 
+</dd>
+
+<dt><dfn id="dfn-dmi-ecosysteem" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DMI-ecosysteem</dfn></dt>
+<dd>
+
+<p>Het Dutch Metropolitan Innovations (DMI)-ecosysteem voorziet de domeinen van mobiliteit, openbare ruimte en woningbouw van nieuwe instrumenten vanuit de digitale wereld. DMI is mede mogelijk gemaakt door het Nationaal Groeifonds. <a href="https://dmi-ecosysteem.nl/">DMI-website</a></p>
+</dd><dt><dfn id="dfn-dsgo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">DSGO</dfn></dt>
+<dd>
+Digitaal Stelsel Gebouwde Omgeving maakt een set van uniforme afspraken die zorgt voor veilige, betrouwbare en gecontroleerde toegang tot data in de gebouwde omgeving. Dit stelsel wordt ontwikkeld en beheerd door <a data-link-type="dfn" href="#dfn-digigo" class="internalDFN" id="ref-for-dfn-digigo-2">DigiGO</a>
+Doel: Met deze uniforme afspraken maken alle ketenpartners die actief zijn in de verschillende fases van de levenscyclus van een bouwwerk makkelijk en veilig gebruik van reeds beschikbare data. Waardoor zij in staat zijn om hun onderlinge – digitale - samenwerking te verbeteren, en efficiënter en duurzamer te werken. 
+</dd>
+
+
+<dt><dfn data-lt="dynamische verkeersborden|dynamisch verkeersbord" id="dfn-dynamische-verkeersborden" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">dynamisch verkeersbord</dfn></dt>
+<dd>
+
+<p>Een verkeersbord weergegeven op een electronisch signaleringsbord, waarmee telkens wisselende afbeedlingen dan wel teksten getoond kunnen worden.</p>
+</dd>
+
+<dt><dfn data-lt="federatief data delen" id="dfn-federatief-data-delen" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">federatief data delen</dfn></dt>
+<dd>
+
+<p>Federatief data delen door de overheid is een manier waarop overheidsorganisaties gegevens delen zonder alles op één plek op te slaan. Het draait om samenwerking en het soepel laten aansluiten van verschillende systemen, zodat informatie makkelijk en veilig beschikbaar is. In een federatief stelsel spelen landelijke registraties een centrale rol als betrouwbare bronnen van kerngegevens, zoals een samenhangend <a data-link-type="dfn" href="#dfn-verkeerskundig-wegennetwerk" class="internalDFN" id="ref-for-dfn-verkeerskundig-wegennetwerk-1">verkeerskundig wegennetwerk</a>. Ze vormen het fundament waarop andere overheidsorganisaties kunnen aansluiten, waardoor gegevensbijvoorbeeld de verkeerskundige informatie consistent is, actueel en efficiënt beschikbaar zijn binnen het netwerk.</p>
+</dd>
+
+
+
+
+<dt><dfn data-lt="fysieke plaat|fysieke platen" id="dfn-fysieke-plaat" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">fysieke plaat</dfn></dt>
+<dd>
+
+<p>De fysieke uiting van verkeersmaatregelen, met op de Fysieke plaat een schild met een omlijsting en achtergrondkleur en daarop iconen, in de vorm van afbeeldingen van verkeersborden of teksten.</p>
+</dd>
+
+<dt><dfn data-lt="GEBORA" id="dfn-gebora" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">GEBORA</dfn></dt>
+<dd>
+
+<p>GEBouwde Omgeving Referentie Architectuur, dit is één van de families binnen het digitale stelsel <a data-link-type="dfn" href="#dfn-nora" class="internalDFN" id="ref-for-dfn-nora-1">NORA</a>. Deze referentie architectuur beschrijft de manier van werken in de gebouwde omgeving. Daartoe is een ketenbenadering gekozen: de waardeketens vormen het hoogste niveau van beschrijving in de organisatielaag. De waardeketens worden gebaseerd op de asset life cycle. GEBORA wordt ontwikkeld en beheerd door <a data-link-type="dfn" href="#dfn-digigo" class="internalDFN" id="ref-for-dfn-digigo-3">DigiGO</a>, zie deze <a href="https://www.digigo.nu/referentiearchitectuur">website</a>.</p>
+</dd>
+
+<dt><dfn id="dfn-geometrische-objectrepresentatie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Geometrische objectrepresentatie</dfn></dt>
+<dd>
+
+<p>De weergave van een object, zoals een verkeersbord of een weg, in een GIS of CAD model. Dit kan een punt, vlak of lijn zijn, maar ook een 3D vorm. Een object zoals een verkeersbord kan meerdere representaties hebben.</p>
+</dd>
+
+<dt><dfn data-lt="Geonovum" id="dfn-geonovum" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Geonovum</dfn></dt>
+<dd>
+Geonovum beheert de Nederlandse geo-standaarden waaronder <a data-link-type="dfn" href="#dfn-imgeo" class="internalDFN" id="ref-for-dfn-imgeo-2">IMgeo</a>, en is trekker van het <a data-link-type="dfn" href="#dfn-dmi-ecosysteem" class="internalDFN" id="ref-for-dfn-dmi-ecosysteem-1">DMI-ecosysteem</a>.
+</dd>
+
+<dt><dfn data-lt="HWO|Handboek Wegontwerp" id="dfn-hwo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Handboek Wegontwerp</dfn></dt>
+<dd>
+
+<p><a data-link-type="dfn" href="#dfn-crow" class="internalDFN" id="ref-for-dfn-crow-2">CROW</a> publiceert het Handboek Wegontwerp. Dit is een bundeling kennis, richtlijnen en praktijkvoorbeelden rond het ontwerp van wegen buiten de bebouwde kom (Bubeko). Het Handboek Wegontwerp is geen open standaard maar kennis waarvoor een abonnement moet worden afgesloten. Zie ook <a href="https://www.crow.nl/kennisproducten/km-wegontwerp-buiten-de-bebouwde-kom/">deze website</a></p>
+</dd>
+
+<dt><dfn id="dfn-herhalingsbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Herhalingsbord</dfn></dt>
+<dd>
+
+<p>Een bord geplaatst ter herinnering aan eenzelfde bord dat aan het begin van een en hetzelfde wegvak geplaatst is.
+Definitie conform de <a data-link-type="dfn" href="#dfn-babw" class="internalDFN" id="ref-for-dfn-babw-1">BABW</a>.</p>
+</dd>
+
+<dt><dfn data-lt="icoon|iconen|Icoon" id="dfn-icoon" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Icoon</dfn></dt>
+<dd>
+
+<p>Een afbeelding of tekst op een Fysieke Plaat. De meeste iconen hebben hun oorsprong in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;bijlage=1&amp;z=2024-07-01&amp;g=2024-07-01">Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>, waarbij de afbeeldingen van types vervoersmiddelen zoals fiets en auto ook los gebruikt kunnen worden op een fysieke plaat 
+(in het geval van een onderbord). Ook teksten als Zone, Herhaling en allerlei teksten zoals "bij nat wegdek" worden beschouwd als een icoon. Zo kan verschil worden gemaakt tussen de in de wet bedoelde afbeelding van een verkeersbord, en de visuele vormgeving van de afbeelding op de fysieke plaat.</p>
+</dd>
+
+<dt><dfn data-lt="Informatiemodel Beheer Openbare Ruimte|IMBOR" id="dfn-informatiemodel-beheer-openbare-ruimte" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">IMBOR</dfn></dt>
+<dd>
+
+<p>Het Informatiemodel Beheer Openbare Ruimte bevat de afspraken over de benamingen en definities van alle type objecten in de openbare ruimte en de beheergegevens die per type object vastgelegd kunnen worden.
+Veel gemeenten gebruiken de objecttypen uit de Basisregistratie Grootschalige Topografie (<a data-link-type="dfn" href="#dfn-bgt" class="internalDFN" id="ref-for-dfn-bgt-1">BGT</a>) voor de geometrische representatie van de objecten.
+Zie ook <a href="https://www.crow.nl/thema-s/management-openbare-ruimte/imbor">deze website</a> en <a href="[https://imbor-viewer.apps.crow.nl/](https://imbor-viewer.apps.crow.nl/)">deze viewer</a></p>
+</dd>
+
+
+
+<dt><dfn data-lt="IMGeo|Informatiemodel Geografie" id="dfn-imgeo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">IMGeo</dfn></dt>
+<dd>
+
+<p>Het Informatiemodel ontwikkeld voor objectgerichte geografische informatie in de <a data-link-type="dfn" href="#dfn-bgt" class="internalDFN" id="ref-for-dfn-bgt-2">BGT</a>.
+Wegen zijn hierin opgenomen als 2D vlakobject.
+Verkeersborden zijn hierin opgenomen als 2D punt van het type "bord".</p>
+</dd>
+
+<dt><dfn id="dfn-informatiemodel-verkeerstekens" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Informatiemodel Verkeerstekens</dfn></dt>
+<dd>
+
+<p>Een informatiemodel waarmee verkeersmaatregelen, waarschuwingen en verkeerstekens op eenduidige manier digitaal gepubliceerd kunnen worden in relatie tot het verkeerskundige wegennetwerk, zodat deze informatie machine-verwerkbaar is.</p>
+</dd>
+
+<dt><dfn id="dfn-inspire" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">INSPIRE</dfn></dt>
+<dd>
+
+<p>In het kader van INSPIRE realiseren de Europese lidstaten een digitaal netwerk voor het uitwisselen van gegevens over de leefomgeving.
+Geonovum ondersteunt het Ministerie van Binnenlandse Zaken en Koninkrijksrelaties en dataproviders bij de invoering van INSPIRE in Nederland.</p>
+</dd>
+
+<dt><dfn data-lt="Intelligente snelheidsondersteuning|ISA|Intelligente snelheidsondersteuning (ISA)" id="dfn-intelligente-snelheidsondersteuning" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Intelligente snelheidsondersteuning (ISA)</dfn></dt>
+<dd>
+
+<p>Een systeem om de bestuurder te helpen de juiste snelheid voor de wegomgeving aan te houden door hem specifieke en gepaste feedback te geven.</p>
+<p>Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex:32019R2144">Verordening (EU) 2019/2144, art 3, lid 3</a></p>
+</dd>
+
+<dt><dfn data-lt="KOOP" id="dfn-koop" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">KOOP</dfn></dt>
+<dd>
+
+<p>Kennis- en Exploitatiecentrum voor Officiële Overheidspublicaties.
+De primaire taak van KOOP is het rechtsgeldig bekendmaken en beschikbaar stellen van wet- en regelgeving van alle overheden van Nederland.</p>
+</dd>
+
+<dt><dfn data-lt="KpVV|Kennisprogramma Verkeer en Vervoer|KpVV: Kennisprogramma Verkeer en Vervoer" id="dfn-kpvv" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">KpVV: Kennisprogramma Verkeer en Vervoer</dfn></dt>
+<dd>
+
+<p>Onder de vlag van CROW wordt het Kennisprogramma Verkeer en Vervoer uitgevoerd.
+Doel van dit programma is om door middel van kennis bij te dragen aan de kennisbehoefte van de decentrale overheden op het gebied van mobiliteit.
+De projecten zijn gericht op het ontwikkelen van nieuwe kennisproducten of op kennisontwikkeling en – uitwisseling (bv communities).
+Zie ook <a href="https://www.kpvv.nl/">deze website</a></p>
+</dd>
+
+<dt><dfn data="" lt="lokale wettelijke maximumsnelheid|lokale wettelijke maximumsnelheden" id="dfn-lokale-wettelijke-maximumsnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">lokale wettelijke maximumsnelheid</dfn></dt>
+<dd>
+Een lokaal afwijkende maximumsnelheid ten opzichte van de <a data-link-type="dfn" href="#dfn-standaard-wettelijke-maximumsnelheid" class="internalDFN" id="ref-for-dfn-standaard-wettelijke-maximumsnelheid-1">standaard wettelijke maximumsnelheid</a> die bij het snelheidsregime van de weg hoort volgens het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;z=2023-07-01&amp;g=2023-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
+<dt><dfn data-lt="MIM|MIM: Metamodel informatiemodellering" id="dfn-mim" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">MIM: Metamodel informatiemodellering</dfn></dt>
+<dd>
+
+</dd><dt><dfn data-lt="NDTFL" id="dfn-ndtfl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NDTFL</dfn></dt>
+<dd>
+De Nationale Digitale Tweeling voor de fysieke Leefomgeving, waarmee de referentie-architectuur wordt gegeven voor een ecosysteem van digitale tweelingen van de gebouwde omgevingen. NDTFL wordt ontwikkeld en beheerd door <a data-link-type="dfn" href="#dfn-geonovum" class="internalDFN" id="ref-for-dfn-geonovum-1">Geonovum</a>, zie dit <a href="https://www.geonovum.nl/uploads/documents/Samenvatting%20Investeringsvoorstel%20Nationale%20Digitale%20Tweeling%20Infrastructuur.pdf">ontwikkelvoorstel</a> Hierbij horen architectuur uitgangspunten.
+</dd>
+
+<dt><dfn data-lt="NDW|NDW: Nationaal Dataportaal Wegverkeer" id="dfn-ndw" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NDW: Nationaal Dataportaal Wegverkeer</dfn></dt>
+<dd>
+
+<p>Onder vlag van het NDW werken Nederlandse overheden samen aan het inwinnen, combineren, opslaan en distribueren van mobiliteitsdata.
+Deze gegevens zijn essentieel voor het managen van het verkeer, ze voeden talloze verkeersinformatiediensten en vormen een stevige basis onder het mobiliteitsbeleid in ons land.
+NDW is de gezamenlijke organisatie die de inwinning van de gegevens organiseert, toeziet op de kwaliteit, data verrijkt, opslaat en publiceert.
+Zie ook <a href="https://www.ndw.nu/">De website van het NDW</a></p>
+</dd>
+
+<dt><dfn id="dfn-niet-wettelijk-verkeersbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Niet-wettelijk verkeersbord</dfn></dt>
+<dd>
+
+<p>Verkeersbord waarvoor geen wettelijke basis is in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) of daarop aanvullende wetten.</p>
+</dd>
+
+<dt><dfn data-lt="NLCS|de Nederlandse CAD Standaard|NLCS: de Nederlandse CAD Standaard" id="dfn-nlcs" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NLCS: de Nederlandse CAD Standaard</dfn></dt>
+<dd>
+
+<p>BIM loket beheert de Nederlandse CAD Standaard, de Nederlandse CAD standaard voor uitwisseling van informatie in 2D CAD-ontwerptekeningen.
+CAD betekent Computer-aided design: het ontwerpen van onder meer constructies en apparaten met behulp van computerprogramma's.
+De NLCS bevat basisafspraken over het omgaan met metadata, digitaal tekenen, het uiterlijk van de tekening en – vooral – de bestandsopbouw van 2D-tekenwerk.
+Deze afspraken zijn onafhankelijk van de CAD-platforms die geleverd worden door softwareleveranciers.
+<a href="https://www.digigo.nu/standaarden/nlcs/">NLCS website</a></p>
+</dd>
+
+<dt><dfn data-lt="NORA" id="dfn-nora" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NORA</dfn></dt>
+<dd>
+
+<p>Nederlandse Overheid Referentie Architectuur, set van voor overheden bindende afspraken over interoperabiliteit en kwaliteit van digitale dienstverlening in de publieke sector. <a href="https://www.digitaleoverheid.nl/overzicht-van-alle-onderwerpen/nora/">Startpagina</a></p>
+</dd>
+
+<dt><dfn data-lt="Normcommissie Verkeerstekens" id="dfn-normcommissie-verkeerstekens" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Normcommissie Verkeerstekens</dfn></dt>
+<dd>
+
+<p>De normcommissie Verkeerstekens houdt zich onder de vlag van de NEN bezig met de normalisatie op het gebied van <a data-link-type="dfn" href="#dfn-verkeersteken" class="internalDFN" id="ref-for-dfn-verkeersteken-1">verkeerstekens</a>.
+De Europese en nationale normalisatie is gericht op uniformering van het programma van eisen van de constructies van verkeerstekens binnen Nederland en Europa.
+De normcommissie is actief betrokken bij het opstellen en herzien van Europese normen.
+Ook houdt de commissie zich bezig met ontwerpen, het vaststellen van nieuwe en onderhouden van bestaande niet-RVV verkeersborden, naar aanleiding van vragen uit de markt.
+Het Ministerie van Infrastructuur en Milieu wordt voorzien van advies en voorstellen omtrent nieuwe RVV verkeersborden.
+Zie ook <a href="https://www.nen.nl/normcommissie-verkeerstekens">deze website</a></p>
+</dd>
+
+<dt><dfn data-lt="NWB-Junctie|NWB-Juncties" data-plurals="nwb-juncties" id="dfn-nwb-junctie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NWB-Junctie</dfn></dt>
+<dd>
+
+<p>Het begin- of eindpunt van één of meer wegvakken in het Nationaal Wegen Bestand (NWB).
+In het NWB hebben juncties aan de hand van X- en Y-coördinaten een locatie in het digitale verkeerskundige wegennetwerk gekregen.
+Juncties komen voor bij kruispunten, gemeentegrenzen, provinciegrenzen, beheergrenzen en bij bepaalde specifieke kenmerkwijzigingen zoals straatnaamwijziging.</p>
+</dd>
+
+<dt><dfn data-lt="NWB-Wegvak|NWB-Wegvakken" id="dfn-nwb-wegvak" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NWB-Wegvak</dfn></dt>
+
+<dd>
+
+<p>Een wegvak in het Nationaal Wegen Bestand (NWB) is een deel van een weg, dat zich tussen twee punten (juncties) bevindt.</p>
+<p>Een wegvak in het Nationaal Wegen Bestand (NWB) is Road element conform de Europese standaard voor wegeninformatie (Geografic Data Files).</p>
+<p>Een wegvak in het NWB is een lijn met x- en y coördinaten. Elk wegvak loopt van een begin- naar een eindjunctie en kent een positieve en een negatieve richting.
+Welke van beide juncties als beginjunctie van het wegvak wordt benoemd, is volstrekt willekeurig.</p>
+<p>Daarbij gelden momenteel de volgende regels:</p>
+<ul>
+<li>Wanneer een weg uit één <a data-link-type="dfn" href="#dfn-rijbaan" class="internalDFN" id="ref-for-dfn-rijbaan-1">rijbaan</a> bestaat, ook als die in beide richtingen bereden kan worden, is deze in het NWB opgenomen als één wegvak.</li>
+<li>Wanneer een weg meerdere rijbanen heeft, wat vooral het geval is bij Rijkswegen, worden deze rijbanen als aparte wegvakken in het bestand verwerkt.</li>
+<li>Het Nationaal Wegen Bestand is nog niet tot op het niveau van een <a data-link-type="dfn" href="#dfn-rijstrook" class="internalDFN" id="ref-for-dfn-rijstrook-2">rijstrook</a> gedifferentieerd; een rijbaan met meerdere rijstroken is als één wegvak opgenomen in het NWB. Op het hoofdwegennet wordt wel het aantal rijstroken gedefinieerd als attribuut van het wegvak.</li>
+</ul>
+</dd>
+
+<dt><dfn data-lt="NWB|Nationaal Wegen Bestand|NWB: Nationaal Wegenbestand" id="dfn-nwb" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">NWB: Nationaal Wegenbestand</dfn></dt>
+<dd>
+
+<p>Een open geografisch databestand van een <a data-link-type="dfn" href="#dfn-verkeerskundig-wegennetwerk" class="internalDFN" id="ref-for-dfn-verkeerskundig-wegennetwerk-2">verkeerskundig wegennetwerk</a> bestaande uit lijnen (<a data-link-type="dfn" href="#dfn-nwb-wegvak" class="internalDFN" id="ref-for-dfn-nwb-wegvak-1">NWB-wegvakken</a>) en knopen (<a data-link-type="dfn" href="#dfn-nwb-junctie" class="internalDFN" id="ref-for-dfn-nwb-junctie-1">NWB-juncties</a>) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals Schiphol en Havenbedrijf Rotterdam.
+Ook losliggende voet- en fietspaden en onverharde wegen zijn in het NWB-Wegen opgenomen.
+Het NWB is gedeeld eigendom van alle wegbeheerders en gebruikers van wegendata in Nederland.
+Het Nationaal Wegenbestand wordt op vrijwillige basis bijgehouden door wegbeheerders, gemeenten en provincies.
+Zie ook <a href="https://www.nationaalwegenbestand.nl/">deze website</a></p>
+</dd>
+
+
+<dt><dfn data-lt="onderbord|onderborden" id="dfn-onderbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">onderbord</dfn></dt>
+<dd>
+
+<p>Een bord onder het verkeersbord met een van de volgende inhouden:</p>
+<ol>
+<li>Een nadere uitleg van het verkeersbord</li>
+<li>ingeval op een onderbord uitsluitend symbolen voorkomen: het verkeersbord geldt slechts voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag;</li>
+<li>ingeval op een onderbord het woord "uitgezonderd" in combinatie met symbolen voorkomt: het verkeersbord geldt niet voor de aldus aangeduide weggebruikers of het aldus aangeduide verkeersgedrag.</li>
+</ol>
+</dd><dt><dfn data-lt="OSLO|OSLO: Open Standaarden voor Linkende Organisaties" id="dfn-oslo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">OSLO: Open Standaarden voor Linkende Organisaties</dfn></dt>
+<dd>
+
+<p>Het Belgische OSLO (Open Standaarden voor Linkende Organisaties) ontwikkelt en publiceert open standaarden in co-creatie met publieke of private partners.
+De Vlaamse Overheid zet daarmee in op een eenduidige standaard voor de uitwisseling van informatie.
+Het is de bedoeling om te zorgen voor meer samenhang, een betere begrijpbaarheid en een betere vindbaarheid van informatie en dienstverlening.
+Op die manier kan iedereen de gegevens makkelijker gebruiken.
+Doel is het bereiken van semantische interoperabiliteit.</p>
+</dd>
+
+<dt><dfn id="dfn-pianoo" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">PIANOo</dfn></dt>
+<dd>
+
+<p>PIANOo, Expertisecentrum Aanbesteden van het ministerie van Economische Zaken en Klimaat heeft als taak het inkopen en aanbesteden bij overheden te professionaliseren.
+PIANOo brengt experts op inkoop- en aanbestedingsgebied bij elkaar, bundelt kennis en ervaring en geeft advies en praktische tips.
+PIANOo valt per 1 januari 2017 onder de directie Nationale Programma's van de Rijksdienst voor Ondernemend Nederland (RVO).
+Zie ook <a href="https://www.pianoo.nl/nl">deze website</a></p>
+</dd>
+
+
+
+
+<dt><dfn data-lt="rijbaan|rijbanen" id="dfn-rijbaan" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rijbaan</dfn></dt>
+<dd>
+
+<p>Elk voor rijdende voertuigen bestemd weggedeelte met uitzondering van de fietspaden en de fiets/bromfietspaden.
+Bron: <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#HoofdstukI">RVV1990</a></p>
+</dd><dt><dfn data-lt="rijbaandeel|rijbaandelen" id="dfn-rijbaandeel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rijbaandeel</dfn></dt>
+<dd>
+
+<p>Delen van de <a data-link-type="dfn" href="#dfn-rijbaan" class="internalDFN" id="ref-for-dfn-rijbaan-2">rijbaan</a> waarvoor aparte verkeersregels bestaan in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;z=2023-07-01&amp;g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>, dit betreft rijstroken en fietsstroken</p>
+</dd>
+
+
+<dt><dfn data-lt="rijrichting|rijrichtingen" id="dfn-rijrichting" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rijrichting</dfn></dt>
+<dd>
+
+<p>De richting waarin je moet of mag rijden</p>
+</dd>
+
+<dt><dfn data-lt="rijstrook|rijstroken" id="dfn-rijstrook" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">rijstrook</dfn></dt>
+<dd>
+
+<p>Door doorgetrokken of onderbroken strepen gemarkeerd gedeelte van de rijbaan van zodanige breedte dat bestuurders van motorvoertuigen op meer dan twee wielen daarvan gebruik kunnen maken. Bron: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=I&amp;artikel=1&amp;z=2023-07-01&amp;g=2023-07-01">Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>. Merk op, dat in deze definitie de fietsstrook niet als rijstrook is gedefinieerd. Het aspect Strook in het informatiemodel kan zowel een nummer van een rijstrook als van een fiets- of voetgangersstrook zijn.</p>
+</dd>
+
+<dt><dfn id="dfn-route" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">route</dfn></dt>
+<dd>
+
+<p>Een verzameling met meerdere wegvakken waarvoor een <a data-link-type="dfn" href="#dfn-verkeersmaatregel" class="internalDFN" id="ref-for-dfn-verkeersmaatregel-3">verkeersmaatregelen</a> of <a data-link-type="dfn" href="#dfn-waarschuwing" class="internalDFN" id="ref-for-dfn-waarschuwing-2">waarschuwingen</a> gelden, denk bijvoorbeeld aan een route voor transport voor gevaarlijke stoffen, of een weg met meerdere kruispunten (en dus meerdere wegvakken) waarvoor een verlaagde snelheid geldt.</p>
+</dd>
+
+<dt><dfn data-lt="RVV1990|RVV 1990|Reglement verkeersregels en verkeerstekens 1990" id="dfn-rvv1990" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">RVV 1990</dfn></dt>
+<dd>
+
+<p>Het Reglement verkeersregels en verkeerstekens 1990 is een uitvoeringsbesluit bij de Wegenverkeerswet 1994. In het RVV zijn de verkeersregels en verkeerstekens te vinden die in Nederland van toepassing zijn.</p>
+<p><a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825">Tekst van de regeling</a></p>
+</dd>
+
+
+
+<dt><dfn data="" lt="Schild|Schilden" id="dfn-schild" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Schild</dfn></dt>
+<dd>
+De achtergrond van een Fysieke Plaat, waar verkeersborden en onderborden op kunnen staan. Een schild heeft een kleur en kan woorden bevatten zoals Zone of Herhaling
+</dd>
+
+<p>Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen.
+Het model bevat duidelijke afspraken over het vastleggen van gegevensspecificaties en biedt tegelijkertijd ruimte aan de verschillende niveaus van modellering.
+Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel, ondanks enkele tegenstrijdigheden met de [<cite><a class="bibref" data-link-type="biblio" href="#bib-nen_2660_2_2022" title="NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1">NEN_2660_2_2022</a></cite>].</p>
+<p>Het MIM gaat uit van:</p>
+<ul>
+<li>Het scheiden van soort informatiemodellen in niveaus.</li>
+<li>De inhoudelijke modellering van modelconcepten en de metagegevens ervan.
+Door een informatiemodel uit te drukken in het MIM is een standaard manier van vastleggen en uitleg geborgd.</li>
+</ul>
+<p>Het MIM gaat uit van een begrippenkader en een explicietere modellering van een informatiemodel.</p>
+<dt><dfn id="dfn-smart-mobility" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Smart Mobility</dfn></dt>
+<dd>
+
+<p>Reis- en rijgedrag ondersteund door digitale systemen waaronder andere navigatiesystemen, rijtaakondersteunende systemen, zelfrijdende voertuigen, intelligente verkeersregelinstallaties en systemen waarmee reizigers hun reis online kunnen plannen, reserveren, betalen en onderweg op de hoogte te blijven</p>
+</dd>
+
+<dt><dfn data-lt="Snelheidsregime" id="dfn-snelheidsregime" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Snelheidsregime</dfn></dt>
+<dd>
+
+<p>Snelheidsregime voor verkeer conform <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II%C2%B6graaf=8&amp;z=2023-07-01&amp;g=2023-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a></p>
+</dd>
+
+
+<dt><dfn id="dfn-sparql" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">SPARQL</dfn></dt>
+<dd>
+
+<p>SPARQL (<em>SPARQL Protocol and RDF Query Language</em>) is een RDF-zoektaal (querytaal) die gebruikt wordt om RDF-gebaseerde data te bevragen door middel van zoekopdrachten (queries).
+Met deze zoektaal is het mogelijk om informatie op te vragen voor applicaties op het semantisch web.
+<a href="https://nl.wikipedia.org/wiki/SPARQL">Bron: Wikipedia</a></p>
+</dd>
+
+<dt><dfn data="" lt="standaard wettelijke maximumsnelheid|standaard wettelijke maximumsnelheden" id="dfn-standaard-wettelijke-maximumsnelheid" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">standaard wettelijke maximumsnelheid</dfn></dt>
+<dd>
+De maximumsnelheid die bij het snelheidsregime van de weg hoort volgens het <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;paragraaf=8&amp;z=2023-07-01&amp;g=2023-07-01">§ 8 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
+<dt><dfn data-lt="statische verkeersborden|statisch verkeersbord" id="dfn-statische-verkeersborden" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">statisch verkeersbord</dfn></dt>
+<dd>
+
+<p>Een verkeersbord waarop altijd dezelfde afbeelding dan wel tekst te zien is</p></dd><p></p>
+<dt><dfn id="dfn-uitvoeringsvoorschriften-babw-inzake-verkeerstekens" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Uitvoeringsvoorschriften BABW inzake verkeerstekens</dfn></dt>
+<dd>
+
+<p>Uitvoeringsvoorschriften BABW inzake verkeerstekens.
+<a href="https://wetten.overheid.nl/jci1.3:c:BWBR0009104">Regeling</a></p>
+</dd>
+
+<dt><dfn data-lt="verkeersbesluit|verkeersbesluiten" id="dfn-verkeersbesluit" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersbesluit</dfn></dt>
+<dd>
+
+<p>Wegbeheerders zijn per 01072021 wettelijk verplicht om verkeersbesluiten over nieuwe en langdurende (&gt;4 maanden) tijdelijke verkeerskundige situaties digitaal te publiceren in de decentrale bladen zoals het Gemeenteblad, Provinciaal Blad, Waterschapsblad of Staatscourant en deze officieel bekend te maken op <a href="http://www.overheid.nl">www.overheid.nl</a>, conform <a href="https://wetten.overheid.nl/BWBR0006622/2021-10-19/#HoofdstukII_Paragraaf2_Artikel15">Wegenverkeerswet 1994 artikel 15</a>.</p>
+</dd>
+
+<dt><dfn data-lt="verkeersbesluiten applicatie" id="dfn-verkeersbesluiten-applicatie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersbesluiten applicatie</dfn></dt>
+<dd>
+
+<p>Een applicatie van <a data-link-type="dfn" href="#dfn-koop" class="internalDFN" id="ref-for-dfn-koop-2">KOOP</a> voor het publiceren van (eenvoudige) <a data-link-type="dfn" href="#dfn-verkeerskundige-informatie" class="internalDFN" id="ref-for-dfn-verkeerskundige-informatie-4">Verkeerskundige informatie</a> bij verkeersbesluiten</p>
+</dd>
+
+<dt><dfn data-lt="verkeersbord|verkeersborden" id="dfn-verkeersbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersbord</dfn></dt>
+<dd>
+
+<p>In het informatiemodel wordt hier specifiek bedoeld de afbeeldingen (InformatieObjecten) zoals bekend uit de <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#Bijlage1">RVV 1990, bijlage 1</a> bedoeld om op een <a data-link-type="dfn" href="#dfn-fysieke-plaat" class="internalDFN" id="ref-for-dfn-fysieke-plaat-1">fysieke plaat</a> weer te geven ter regeling, waarschuwing, geleiding of informering van het verkeer.</p>
+</dd><dt><dfn data-lt="verkeersbordendata" id="dfn-verkeersbordendata" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersbordendata</dfn></dt>
+<dd>
+
+<p>De door het NDW gepubliceerde fysiek geplaatste, geplande en verwijderde verkeersborden in Nederland.</p>
+</dd><dt><dfn data-lt="verkeerskundig wegennetwerk|verkeerskundige wegennetwerk" id="dfn-verkeerskundig-wegennetwerk" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeerskundig wegennetwerk</dfn></dt>
+<dd>
+
+<p>Een geometrische beschrijving van de wegen op basis van lijnen en knopen, waarmee de routes die gereden kunnen worden vastliggen.
+Deze beschrijving kan zich op verschillende abstratieniveau's bevinden: op wegniveau, op rijbaanniveau en op rijstrookniveau.</p>
+</dd>
+
+<dt><dfn data-lt="verkeerskundige informatie" id="dfn-verkeerskundige-informatie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeerskundige informatie</dfn></dt>
+<dd>
+
+<p>Informatie over de op een weg geldende <a data-link-type="dfn" href="#dfn-verkeersmaatregel" class="internalDFN" id="ref-for-dfn-verkeersmaatregel-4">verkeersmaatregelen</a>, <a data-link-type="dfn" href="#dfn-waarschuwing" class="internalDFN" id="ref-for-dfn-waarschuwing-3">waarschuwingen</a> en de bijbehorende verkeersborden.</p>
+</dd>
+
+<dt><dfn data-lt="verkeersmaatregel|verkeersmaatregelen" id="dfn-verkeersmaatregel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersmaatregel</dfn></dt>
+<dd>
+
+<p>Een gebod en/of verbod of adviessnelheid dat kan worden gevisualiseerd met een verkeersbord uit bijlage I, behorende bij het <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#Bijlage1">RVV 1990, categorie A tot en met H.</a></p>
+</dd>
+
+<dt><dfn data="" lt="Verkeersregel|Verkeersregels" id="dfn-verkeersregel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verkeersregel</dfn></dt>
+<dd>
+De regels voor verkeer uit <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;z=2023-07-01&amp;g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>
+</dd>
+
+<dt><dfn data-lt="verkeersteken|verkeerstekens" id="dfn-verkeersteken" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">verkeersteken</dfn></dt>
+<dd>
+
+<ul>
+<li>verkeersborden</li>
+<li>verkeerslichten</li>
+<li>verkeerstekens op het wegdek</li>
+</ul>
+<p>Bron: <a href="https://wetten.overheid.nl/BWBR0004826/2024-01-01#HoofdstukII_Paragraaf1">BABW</a></p>
+</dd><dt><dfn data-lt="EU 2019-2144|Verordening (EU) 2019/2144" id="dfn-eu-2019-2144" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Verordening (EU) 2019/2144</dfn></dt>
+<dd>
+
+<p>De Europese Unie heeft in deze wet besloten om voor <a data-link-type="dfn" href="#dfn-intelligente-snelheidsondersteuning" class="internalDFN" id="ref-for-dfn-intelligente-snelheidsondersteuning-1">ISA</a> een snelheidsbeperking afdwingende versie te gaan voorschrijven, samen met een aantal andere veiligheidsmaatregelen voor voertuigen, verplicht in voertuigen die verkocht worden vanaf 2022.</p>
+<p>Bron: <a href="https://eur-lex.europa.eu/legal-content/NL/TXT/?uri=celex:32019R2144">Verordening (EU) 2019/2144, art 3, lid 3</a></p>
+</dd>
+
+<dt><dfn data-lt="Vlaamse wegen OTL|AWV OTL" id="dfn-vlaamse-wegen-otl" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Vlaamse wegen OTL</dfn></dt>
+<dd>
+
+<p>Een uitwerking van <a data-link-type="dfn" href="#dfn-oslo" class="internalDFN" id="ref-for-dfn-oslo-1">OSLO</a> is de objecttypenbibliotheek van alle weginfrastructuurobjecten van het Agentschap wegen en verkeer, zoals beschreven in de verschillende standaardbestekken.
+Elk objecttype heeft daarin een eenduidige definitie, een aantal vastgelegde eigenschappen en mogelijke relaties met andere objecttypes.
+Zie ook <a href="https://wegenenverkeer.be/zakelijk/bim">deze website</a> en meer specifiek <a href="https://wegenenverkeer.be/zakelijk/bim/otl">de startpagina over de OTL.</a></p>
+</dd>
+
+<dt><dfn data-lt="VNG|VNG: Vereniging Nederlandse Gemeenten" id="dfn-vng" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">VNG: Vereniging Nederlandse Gemeenten</dfn></dt>
+<dd>
+
+<p>De Vereniging van Nederlandse Gemeenten is de koepelorganisatie van alle gemeenten in Nederland.
+De VNG is een privaatrechtelijke rechtspersoon met volledige rechtsbevoegdheid naar Nederlands recht.</p>
+</dd>
+
+<dt><dfn data-lt="VNVF" id="dfn-vnvf" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">VNVF</dfn></dt>
+<dd>
+De Vereniging voor Nederlandse Verkeersbordenfabrikanten. Deze fabrikanten maken gezamelijk afspraken over de bestelcodes voor nieuwe verkeersborden, die logisch zijn opgebouwd uit borden, onderborden, eigen afbeeldingen en eigen teksten.
+
+</dd><dt><dfn id="dfn-voorwaarschuwingsbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">voorwaarschuwingsbord</dfn></dt>
+<dd>
+
+<p>Een op enige afstand voor het bord geplaatst identiek bord van bijlage 1 van het RVV 1990, met een onderbord waarop een afstandsaanduiding is vermeld. Definitie conform de <a data-link-type="dfn" href="#dfn-babw" class="internalDFN" id="ref-for-dfn-babw-2">BABW</a>.</p>
+</dd>
+
+<dt><dfn data-lt="waarschuwing|waarschuwingen" id="dfn-waarschuwing" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">waarschuwing</dfn></dt>
+<dd>
+
+<p>De waarschuwingen aan het verkeer op een locatie volgens de <a href="https://wetten.overheid.nl/BWBR0004825/2023-07-01#Bijlage1">RVV 1990, Bijlage 1 Verkeersborden, categorie J.</a></p>
+</dd>
+
+<dt><dfn data-lt="weg|wegen" id="dfn-weg" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">weg</dfn></dt>
+<dd>
+
+<p>Alle voor het openbaar verkeer openstaande wegen of paden met inbegrip van de daarin liggende bruggen en duikers en de tot die wegen behorende paden en bermen of zijkanten. Bron: <a href="https://wetten.overheid.nl/BWBR0006622/2024-01-01#HoofdstukaIA">Wegenverkeerswet</a></p>
+</dd>
+
+<dt><dfn id="dfn-wegalignement" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">wegalignement</dfn></dt>
+<dd>
+
+<p>Een aaneenschakeling van bogen, overgangsboden en rechte lijnen met daarbij vastgelegd de gebruikte ontwerpsnelheid en verkanting (hoe schuin de weg ligt in een boog).
+Op basis van de ontwerpsnelheid, die meestal gelijk is aan de gewenste wettelijke maximumsnelheid, kan vervolgens onderzocht worden, of de weg comfortabel en veilig te berijden valt.
+Uit het alignement volgt de benodigde <a data-link-type="dfn" href="#dfn-rijstrook" class="internalDFN" id="ref-for-dfn-rijstrook-3">rijstrook</a>breedte die toeneemt bij hogere snelheden of krappe bochten.</p>
+</dd>
+
+<dt><dfn data-lt="wegdeel|wegdelen" id="dfn-wegdeel" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">wegdeel</dfn></dt>
+<dd>
+
+<p>Delen van de <a data-link-type="dfn" href="#dfn-weg" class="internalDFN" id="ref-for-dfn-weg-1">weg</a> waarvoor aparte verkeersregels bestaan in <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=II&amp;z=2023-07-01&amp;g=2023-07-01">Hoofdstuk II Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a>, voorbeelden: rijbaan, voetpad, fietspad, ruiterpad</p>
+</dd>
+
+<dt><dfn data-lt="weggebruiker|weggebruikers" id="dfn-weggebruiker" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">weggebruiker</dfn></dt>
+<dd>
+
+<p>Voetgangers, fietsers, bromfietsers, bestuurders van een gehandicaptenvoertuig, van een motorvoertuig of van een tram, ruiters, geleiders van rij- of trekdieren of vee en bestuurders van een bespannen of onbespannen wagen.
+Definitie conform de <a data-link-type="dfn" href="#dfn-rvv1990" class="internalDFN" id="ref-for-dfn-rvv1990-1">RVV 1990</a>.</p>
+</dd>
+
+<dt><dfn data-lt="WEGGEG|Weggegevens" id="dfn-weggeg" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">WEGGEG</dfn></dt>
+<dd>
+
+<p>De gegevens over wegkenmerken op het Nederlandse hoofdwegennet.
+De bestanden zijn beschikbaar als een landelijke webservices via het open data portaal van Rijkswaterstaat.</p>
+</dd>
+
+<dt><dfn data-lt="wegmarkering|wegmarkeringen|Wegmarkering" id="dfn-wegmarkering" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Wegmarkering</dfn></dt>
+<dd>
+
+<p>Op of in het oppervlak van de verharding aangebrachte tekens ter geleiding, waarschuwing, regeling of informatie van het verkeer.
+<a href="https://data.crow.nl/thesaurus/term/735B2275-9052-4DD2-9F86-9EC796BDC483">Bron: CROW thesaurus</a>.</p>
+<p>Wegmarkering omvat onder meer pijlen, strepen, doorgetrokken en onderbroken lijnen en haaientanden.</p>
+</dd>
+
+<dt><dfn data-lt="Wegontwerp RWS" id="dfn-wegontwerp-rws" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Wegontwerp RWS</dfn></dt>
+<dd>
+
+<p>Rijkswaterstaat publiceert op <a href="https://www.rijkswaterstaat.nl/zakelijk/werken-aan-infrastructuur/bouwrichtlijnen-infrastructuur/autosnelwegen">deze website</a> eigen handleidingen en richtlijnen voor wegontwerp.</p>
+</dd>
+
+<dt><dfn data-lt="wegvak|wegvakken" id="dfn-wegvak" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">wegvak</dfn></dt>
+<dd>
+
+<p>Gedeelte van een weg tussen twee zijwegen of – indien geen zijweg aanwezig is – tussen twee punten waarop een verkeersmaatregel betrekking heeft.
+Bron: <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004826&amp;hoofdstuk=I&amp;artikel=1&amp;z=2024-01-01&amp;g=2024-01-01">BABW</a></p>
+</dd>
+
+<dt><dfn id="dfn-werkingslengte" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">werkingslengte</dfn></dt>
+<dd>
+
+<p>De werkingssfeer van punt a naar punt b op een NWB-wegvak waarvoor een verkeersmaatregel of waarschuwing van toepassing is.</p>
+</dd>
+
+<dt><dfn data-lt="Wettelijk verkeersbord" id="dfn-wettelijk-verkeersbord" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Wettelijk verkeersbord</dfn></dt>
+<dd>
+
+<p>Verkeersbord met een wettelijke basis in het Reglement verkeersregels en verkeerstekens 1990 (RVV 1990) of daarop aanvullende wetten.</p>
+</dd>
+
+<dt><dfn data-lt="WKD|WKD: Wegkenmerken Database" id="dfn-wkd" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">WKD: Wegkenmerken Database</dfn></dt>
+<dd>
+
+<p>De gegevens over wegkenmerken op het nederlandse wegennet. De bestanden zijn beschikbaar als een landelijke webservices via het open data portaal van Rijkswaterstaat. Daar waar de wegkenmerken op het rijkswegennet bekend zijn (<a data-link-type="dfn" href="#dfn-weggeg" class="internalDFN" id="ref-for-dfn-weggeg-1">WEGGEG</a>) komen ze ook terug in WKD.
+WKD is volop in ontwikkeling en kent medio 2022 de volgende wegkenmerken: maximumsnelheid, wegcategorie, komgrenzen, wegbreedte en breedtebeperkingen, verkeerstype, aanwezigheid inritten en parkeerpunten op 80 km/h wegen aanwezigheid parkeervlakken langs overige wegen alsmede diverse informatie mbt begroeiing en bomen langs de 80km/h wegen.</p>
+</dd>
+
+<dt><dfn data-lt="zone|zones" id="dfn-zone" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">zone</dfn></dt>
+<dd>
+
+<p>Gebied bestaande uit meerdere (delen van) wegvakken waarvoor een verkeersmaatregel geldt, conform <a href="https://wetten.overheid.nl/jci1.3:c:BWBR0004825&amp;hoofdstuk=III&amp;paragraaf=2&amp;artikel=66&amp;z=2023-07-01&amp;g=2023-07-01">Artikel 66 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)</a></p>
+</dd>
+
+<dt><dfn data-lt="Zweedse netwerkregistratie" id="dfn-zweedse-netwerkregistratie" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">Zweedse netwerkregistratie</dfn></dt>
+<dd>
+
+<p>Zweden heeft een netwerkregistratie live staan met deze <a href="https://www.nvdb.se/sv">website</a>, deze <a href="https://dataut.vegvesen.no/en/dataset/nasjonal-vegdatabank">landingspagina voor datasets</a> en <a href="https://dce2.au.dk/pub/TR151.pdf">deze Engelstalige toelichting</a></p>
+</dd>
+
+
+
+</dl></section>
+  
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<script id="annotation-service-runtime">(() => {
+// @ts-check
+const SETTING_KEY = "annotation-service-hypothesis";
+const SETTING_VALUE_ALLOWED = "allowed";
+const hClientDefault = {
+  openSidebar: false,
+  showHighlights: true,
+  theme: "classic",
+  branding: {
+    accentColor: "rgb(0, 157, 224)",
+    appBackgroundColor: "white",
+    ctaBackgroundColor: "rgb(255, 110, 26)",
+    ctaTextColor: "white",
+    selectionFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+    annotationFontFamily: "'Museo Sans', Museo, Helvetica, Arial, sans serif",
+  },
+};
+
+if (document.respec) {
+  document.respec.ready.then(render);
+} else {
+  render();
+}
+
+/** Render the placeholder (Load Service Button) or annotation info (# annotations, Show Annotation Button). */
+function render() {
+  if (localStorage.getItem(SETTING_KEY) == SETTING_VALUE_ALLOWED) {
+    renderAnnotationServiceInfo();
+  } else {
+    renderPlaceholder();
+  }
+}
+
+/** Render Load Service Button, with privacy info. */
+function renderPlaceholder() {
+  localStorage.removeItem(SETTING_KEY);
+
+  /** @type {HTMLElement} */
+  const placeholder = document.querySelector("#annotation-service-placeholder");
+  placeholder.hidden = false;
+
+  const listener = loadButtonListener();
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("keydown", listener);
+  document
+    .querySelector("[data-load-annotation-service]")
+    .addEventListener("click", listener);
+
+  /** @type {HTMLElement} */
+  const serviceInfo = document.querySelector("#annotation-service-loaded");
+  serviceInfo.hidden = true;
+}
+
+function loadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.setItem(SETTING_KEY, SETTING_VALUE_ALLOWED);
+    renderAnnotationServiceInfo();
+  };
+}
+
+function unloadButtonListener() {
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLButtonElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    target.disabled = true;
+    localStorage.removeItem(SETTING_KEY);
+    removeHScript();
+  };
+}
+
+function renderAnnotationServiceInfo() {
+  addHConfig(document);
+  addHScript(document);
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHScript(doc, conf) {
+  const script = doc.createElement("script");
+  script.src = "https://hypothes.is/embed.js";
+  script.async = true;
+  doc.body.appendChild(script);
+
+  script.addEventListener("load", event => {
+    /** @type {HTMLElement} */
+    const placeholder = document.querySelector(
+      "#annotation-service-placeholder"
+    );
+    placeholder.hidden = true;
+
+    /** @type {HTMLElement} */
+    const serviceInfo = document.querySelector("#annotation-service-loaded");
+    serviceInfo.hidden = false;
+
+    const unloadListener = unloadButtonListener();
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("keydown", unloadListener);
+    document
+      .querySelector("[data-unload-annotation-service]")
+      .addEventListener("click", unloadListener);
+  });
+}
+
+/**
+ * Retract Hypothesis permission.
+ */
+function removeHScript() {
+  // Deleting the hypothesis-script, does not undo its changes, listeners etc.
+  // Instead, reload the frame.
+  window.location.reload();
+}
+
+/**
+ *
+ * @param {Document} doc
+ * @param {*} conf
+ */
+function addHConfig(doc, conf) {
+  const script = doc.createElement("script");
+  script.className = "js-hypothesis-config";
+  script.type = "application/json";
+  script.innerText = JSON.stringify(hClientDefault);
+  doc.body.appendChild(script);
+}
+})()</script><section id="references" class="appendix"><div class="header-wrapper"><h2 id="a-referenties"><bdi class="secno">A. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix A."></a></div><section id="normatieve-referenties"><div class="header-wrapper"><h3 id="a-1-normatieve-referenties"><bdi class="secno">A.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix A.1"></a></div>
+    
+    <dl class="bibliography"><dt id="bib-bomos_fundament">[BOMOS_fundament]</dt><dd>
+      <a href="https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/"><cite>BOMOS, het fundament</cite></a>.  Logius. Actueel. URL: <a href="https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/">https://gitdocumentatie.logius.nl/publicatie/bomos/fundament/</a>
+    </dd><dt id="bib-bomos_verdieping">[BOMOS_verdieping]</dt><dd>
+      <a href="https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/"><cite>BOMOS, de verdieping</cite></a>.  Logius. Actueel. URL: <a href="https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/">https://gitdocumentatie.logius.nl/publicatie/bomos/verdieping/</a>
+    </dd><dt id="bib-kenkrechmer">[kenkrechmer]</dt><dd>
+      <a href="https://www.csrstds.com/OpnStdsCallforAction.pdf"><cite>Open standaards call for action</cite></a>.  University of Colorado. Actueel. URL: <a href="https://www.csrstds.com/OpnStdsCallforAction.pdf">https://www.csrstds.com/OpnStdsCallforAction.pdf</a>
+    </dd><dt id="bib-nen_2660_2_2022">[NEN_2660_2_2022]</dt><dd>
+      <a href="https://www.nen.nl/en/nen-2660-2-2022-nl-291667"><cite>NEN 2660-2 Regels voor informatiemodellering van de gebouwde omgeving - Deel 2: Praktische configuratie, extensie en implementatie van NEN 2660-1</cite></a>.  NEN. Actueel. URL: <a href="https://www.nen.nl/en/nen-2660-2-2022-nl-291667">https://www.nen.nl/en/nen-2660-2-2022-nl-291667</a>
+    </dd></dl>
+  </section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-actiepunt" aria-label="Links in this document to definition: actiepunt">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-actiepunt" aria-label="Permalink for definition: actiepunt. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-adviessnelheid" aria-label="Links in this document to definition: adviessnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-adviessnelheid" aria-label="Permalink for definition: adviessnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-asvv" aria-label="Links in this document to definition: ASVV: Aanbevelingen voor Verkeersvoorzieningen binnen de bebouwde kom">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-asvv" aria-label="Permalink for definition: ASVV: Aanbevelingen voor Verkeersvoorzieningen binnen de bebouwde kom. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-babw" aria-label="Links in this document to definition: BABW: Besluit administratieve bepalingen inzake het wegverkeer">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-babw" aria-label="Permalink for definition: BABW: Besluit administratieve bepalingen inzake het wegverkeer. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-babw-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-babw-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bebakening" aria-label="Links in this document to definition: bebakening">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bebakening" aria-label="Permalink for definition: bebakening. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-beinvloedingsgebied" aria-label="Links in this document to definition: beïnvloedingsgebied">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-beinvloedingsgebied" aria-label="Permalink for definition: beïnvloedingsgebied. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bewegwijzering" aria-label="Links in this document to definition: bewegwijzering">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bewegwijzering" aria-label="Permalink for definition: bewegwijzering. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-bewegwijzering-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-bewegwijzering-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-bgt" aria-label="Links in this document to definition: BGT: Basisregistratie Grootschalige Topografie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-bgt" aria-label="Permalink for definition: BGT: Basisregistratie Grootschalige Topografie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-bgt-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-bgt-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-buyer-group" aria-label="Links in this document to definition: Buyer Group verkeersborden">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-buyer-group" aria-label="Permalink for definition: Buyer Group verkeersborden. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-crow" aria-label="Links in this document to definition: CROW">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-crow" aria-label="Permalink for definition: CROW. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-crow-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-crow-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-data-top-15" aria-label="Links in this document to definition: Data Top 15">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-data-top-15" aria-label="Permalink for definition: Data Top 15. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-datex-ii" aria-label="Links in this document to definition: Datex II">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-datex-ii" aria-label="Permalink for definition: Datex II. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-datex-ii-1" title="§ 4.4.1 Toegankelijk, duurzaamheid">§ 4.4.1 Toegankelijk, duurzaamheid</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-digigo" aria-label="Links in this document to definition: DigiGO">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-digigo" aria-label="Permalink for definition: DigiGO. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-digigo-1" title="§ 3.1.5 (Inter-)nationale samenwerking">§ 3.1.5 (Inter-)nationale samenwerking</a> 
+  </li><li>
+    <a href="#ref-for-dfn-digigo-2" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-digigo-3" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-digitaal-stelsel" aria-label="Links in this document to definition: Digitaal Stelsel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-digitaal-stelsel" aria-label="Permalink for definition: Digitaal Stelsel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-dmi-ecosysteem" aria-label="Links in this document to definition: DMI-ecosysteem">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-dmi-ecosysteem" aria-label="Permalink for definition: DMI-ecosysteem. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-dmi-ecosysteem-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-dsgo" aria-label="Links in this document to definition: DSGO">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-dsgo" aria-label="Permalink for definition: DSGO. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-dynamische-verkeersborden" aria-label="Links in this document to definition: dynamisch verkeersbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-dynamische-verkeersborden" aria-label="Permalink for definition: dynamisch verkeersbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-federatief-data-delen" aria-label="Links in this document to definition: federatief data delen">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-federatief-data-delen" aria-label="Permalink for definition: federatief data delen. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-federatief-data-delen-1" title="§ 3.2.2 Missie">§ 3.2.2 Missie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-fysieke-plaat" aria-label="Links in this document to definition: fysieke plaat">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-fysieke-plaat" aria-label="Permalink for definition: fysieke plaat. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-fysieke-plaat-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-gebora" aria-label="Links in this document to definition: GEBORA">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-gebora" aria-label="Permalink for definition: GEBORA. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-geometrische-objectrepresentatie" aria-label="Links in this document to definition: Geometrische objectrepresentatie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-geometrische-objectrepresentatie" aria-label="Permalink for definition: Geometrische objectrepresentatie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-geonovum" aria-label="Links in this document to definition: Geonovum">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-geonovum" aria-label="Permalink for definition: Geonovum. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-geonovum-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-hwo" aria-label="Links in this document to definition: Handboek Wegontwerp">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-hwo" aria-label="Permalink for definition: Handboek Wegontwerp. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-herhalingsbord" aria-label="Links in this document to definition: Herhalingsbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-herhalingsbord" aria-label="Permalink for definition: Herhalingsbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-icoon" aria-label="Links in this document to definition: Icoon">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-icoon" aria-label="Permalink for definition: Icoon. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-icoon-1" title="§ 3.1.2 Beheerder">§ 3.1.2 Beheerder</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-informatiemodel-beheer-openbare-ruimte" aria-label="Links in this document to definition: IMBOR">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-informatiemodel-beheer-openbare-ruimte" aria-label="Permalink for definition: IMBOR. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-informatiemodel-beheer-openbare-ruimte-1" title="§ 3.1.5 (Inter-)nationale samenwerking">§ 3.1.5 (Inter-)nationale samenwerking</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-imgeo" aria-label="Links in this document to definition: IMGeo">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-imgeo" aria-label="Permalink for definition: IMGeo. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-imgeo-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-imgeo-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-informatiemodel-verkeerstekens" aria-label="Links in this document to definition: Informatiemodel Verkeerstekens">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-informatiemodel-verkeerstekens" aria-label="Permalink for definition: Informatiemodel Verkeerstekens. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-1" title="§ 3.1 Governance">§ 3.1 Governance</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-2" title="§ 3.1.1 Stuurgroep">§ 3.1.1 Stuurgroep</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-3" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-4" title="§ 3.1.2 Beheerder">§ 3.1.2 Beheerder</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-5" title="§ 3.1.4 Participatie">§ 3.1.4 Participatie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-6" title="§ 3.1.5 (Inter-)nationale samenwerking">§ 3.1.5 (Inter-)nationale samenwerking</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-7" title="§ 3.2.2 Missie">§ 3.2.2 Missie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-8" title="§ 4.2 Adoptie en erkenning">§ 4.2 Adoptie en erkenning</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-9" title="Reference 2">(2)</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-10" title="Reference 3">(3)</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-11" title="Reference 4">(4)</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-12" title="Reference 5">(5)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-13" title="§ 4.3 Rechtenbeleid">§ 4.3 Rechtenbeleid</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-14" title="§ 4.4.1 Toegankelijk, duurzaamheid">§ 4.4.1 Toegankelijk, duurzaamheid</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-15" title="Reference 2">(2)</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-16" title="§ 4.4.2 Security en Privacy">§ 4.4.2 Security en Privacy</a> 
+  </li><li>
+    <a href="#ref-for-dfn-informatiemodel-verkeerstekens-17" title="§ 4.5 Kwaliteitsbeleid benchmarking">§ 4.5 Kwaliteitsbeleid benchmarking</a> <a href="#ref-for-dfn-informatiemodel-verkeerstekens-18" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-inspire" aria-label="Links in this document to definition: INSPIRE">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-inspire" aria-label="Permalink for definition: INSPIRE. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-intelligente-snelheidsondersteuning" aria-label="Links in this document to definition: Intelligente snelheidsondersteuning (ISA)">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-intelligente-snelheidsondersteuning" aria-label="Permalink for definition: Intelligente snelheidsondersteuning (ISA). Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-intelligente-snelheidsondersteuning-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-koop" aria-label="Links in this document to definition: KOOP">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-koop" aria-label="Permalink for definition: KOOP. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-koop-1" title="§ 6.2 Helpdesk">§ 6.2 Helpdesk</a> 
+  </li><li>
+    <a href="#ref-for-dfn-koop-2" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-kpvv" aria-label="Links in this document to definition: KpVV: Kennisprogramma Verkeer en Vervoer">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-kpvv" aria-label="Permalink for definition: KpVV: Kennisprogramma Verkeer en Vervoer. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-lokale-wettelijke-maximumsnelheid" aria-label="Links in this document to definition: lokale wettelijke maximumsnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-lokale-wettelijke-maximumsnelheid" aria-label="Permalink for definition: lokale wettelijke maximumsnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-mim" aria-label="Links in this document to definition: MIM: Metamodel informatiemodellering">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-mim" aria-label="Permalink for definition: MIM: Metamodel informatiemodellering. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-ndtfl" aria-label="Links in this document to definition: NDTFL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-ndtfl" aria-label="Permalink for definition: NDTFL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-ndw" aria-label="Links in this document to definition: NDW: Nationaal Dataportaal Wegverkeer">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-ndw" aria-label="Permalink for definition: NDW: Nationaal Dataportaal Wegverkeer. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-ndw-1" title="§ 3.3 Financiën">§ 3.3 Financiën</a> 
+  </li><li>
+    <a href="#ref-for-dfn-ndw-2" title="§ 4.1 Community">§ 4.1 Community</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-niet-wettelijk-verkeersbord" aria-label="Links in this document to definition: Niet-wettelijk verkeersbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-niet-wettelijk-verkeersbord" aria-label="Permalink for definition: Niet-wettelijk verkeersbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nlcs" aria-label="Links in this document to definition: NLCS: de Nederlandse CAD Standaard">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nlcs" aria-label="Permalink for definition: NLCS: de Nederlandse CAD Standaard. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nlcs-1" title="§ 3.1.5 (Inter-)nationale samenwerking">§ 3.1.5 (Inter-)nationale samenwerking</a> 
+  </li><li>
+    <a href="#ref-for-dfn-nlcs-2" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nora" aria-label="Links in this document to definition: NORA">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nora" aria-label="Permalink for definition: NORA. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nora-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-normcommissie-verkeerstekens" aria-label="Links in this document to definition: Normcommissie Verkeerstekens">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-normcommissie-verkeerstekens" aria-label="Permalink for definition: Normcommissie Verkeerstekens. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nwb-junctie" aria-label="Links in this document to definition: NWB-Junctie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nwb-junctie" aria-label="Permalink for definition: NWB-Junctie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nwb-junctie-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nwb-wegvak" aria-label="Links in this document to definition: NWB-Wegvak">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nwb-wegvak" aria-label="Permalink for definition: NWB-Wegvak. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nwb-wegvak-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-nwb" aria-label="Links in this document to definition: NWB: Nationaal Wegenbestand">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-nwb" aria-label="Permalink for definition: NWB: Nationaal Wegenbestand. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-nwb-1" title="§ 6.2 Helpdesk">§ 6.2 Helpdesk</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-onderbord" aria-label="Links in this document to definition: onderbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-onderbord" aria-label="Permalink for definition: onderbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-oslo" aria-label="Links in this document to definition: OSLO: Open Standaarden voor Linkende Organisaties">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-oslo" aria-label="Permalink for definition: OSLO: Open Standaarden voor Linkende Organisaties. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-oslo-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-pianoo" aria-label="Links in this document to definition: PIANOo">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-pianoo" aria-label="Permalink for definition: PIANOo. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rijbaan" aria-label="Links in this document to definition: rijbaan">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rijbaan" aria-label="Permalink for definition: rijbaan. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rijbaan-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-rijbaan-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rijbaandeel" aria-label="Links in this document to definition: rijbaandeel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rijbaandeel" aria-label="Permalink for definition: rijbaandeel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rijrichting" aria-label="Links in this document to definition: rijrichting">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rijrichting" aria-label="Permalink for definition: rijrichting. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rijstrook" aria-label="Links in this document to definition: rijstrook">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rijstrook" aria-label="Permalink for definition: rijstrook. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rijstrook-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-rijstrook-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-rijstrook-3" title="Reference 3">(3)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-route" aria-label="Links in this document to definition: route">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-route" aria-label="Permalink for definition: route. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-route-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rvv1990" aria-label="Links in this document to definition: RVV 1990">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rvv1990" aria-label="Permalink for definition: RVV 1990. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-rvv1990-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-schild" aria-label="Links in this document to definition: Schild">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-schild" aria-label="Permalink for definition: Schild. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-smart-mobility" aria-label="Links in this document to definition: Smart Mobility">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-smart-mobility" aria-label="Permalink for definition: Smart Mobility. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-smart-mobility-1" title="§ 3.2.2 Missie">§ 3.2.2 Missie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-snelheidsregime" aria-label="Links in this document to definition: Snelheidsregime">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-snelheidsregime" aria-label="Permalink for definition: Snelheidsregime. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-sparql" aria-label="Links in this document to definition: SPARQL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-sparql" aria-label="Permalink for definition: SPARQL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-standaard-wettelijke-maximumsnelheid" aria-label="Links in this document to definition: standaard wettelijke maximumsnelheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-standaard-wettelijke-maximumsnelheid" aria-label="Permalink for definition: standaard wettelijke maximumsnelheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-standaard-wettelijke-maximumsnelheid-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-statische-verkeersborden" aria-label="Links in this document to definition: statisch verkeersbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-statische-verkeersborden" aria-label="Permalink for definition: statisch verkeersbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-uitvoeringsvoorschriften-babw-inzake-verkeerstekens" aria-label="Links in this document to definition: Uitvoeringsvoorschriften BABW inzake verkeerstekens">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-uitvoeringsvoorschriften-babw-inzake-verkeerstekens" aria-label="Permalink for definition: Uitvoeringsvoorschriften BABW inzake verkeerstekens. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbesluit" aria-label="Links in this document to definition: verkeersbesluit">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbesluit" aria-label="Permalink for definition: verkeersbesluit. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbesluiten-applicatie" aria-label="Links in this document to definition: verkeersbesluiten applicatie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbesluiten-applicatie" aria-label="Permalink for definition: verkeersbesluiten applicatie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbord" aria-label="Links in this document to definition: verkeersbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbord" aria-label="Permalink for definition: verkeersbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersbordendata" aria-label="Links in this document to definition: verkeersbordendata">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersbordendata" aria-label="Permalink for definition: verkeersbordendata. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeerskundig-wegennetwerk" aria-label="Links in this document to definition: verkeerskundig wegennetwerk">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeerskundig-wegennetwerk" aria-label="Permalink for definition: verkeerskundig wegennetwerk. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeerskundig-wegennetwerk-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-verkeerskundig-wegennetwerk-2" title="Reference 2">(2)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeerskundige-informatie" aria-label="Links in this document to definition: verkeerskundige informatie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeerskundige-informatie" aria-label="Permalink for definition: verkeerskundige informatie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeerskundige-informatie-1" title="§ 3.2.2 Missie">§ 3.2.2 Missie</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeerskundige-informatie-2" title="§ 3.3 Financiën">§ 3.3 Financiën</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeerskundige-informatie-3" title="§ 4.4.3 API's en uitwisselformaten">§ 4.4.3 API's en uitwisselformaten</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeerskundige-informatie-4" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersmaatregel" aria-label="Links in this document to definition: verkeersmaatregel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersmaatregel" aria-label="Permalink for definition: verkeersmaatregel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersmaatregel-1" title="§ 4.4.1 Toegankelijk, duurzaamheid">§ 4.4.1 Toegankelijk, duurzaamheid</a> 
+  </li><li>
+    <a href="#ref-for-dfn-verkeersmaatregel-2" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-verkeersmaatregel-3" title="Reference 2">(2)</a> <a href="#ref-for-dfn-verkeersmaatregel-4" title="Reference 3">(3)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersregel" aria-label="Links in this document to definition: Verkeersregel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersregel" aria-label="Permalink for definition: Verkeersregel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-verkeersteken" aria-label="Links in this document to definition: verkeersteken">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-verkeersteken" aria-label="Permalink for definition: verkeersteken. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-verkeersteken-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-eu-2019-2144" aria-label="Links in this document to definition: Verordening (EU) 2019/2144">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-eu-2019-2144" aria-label="Permalink for definition: Verordening (EU) 2019/2144. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-vlaamse-wegen-otl" aria-label="Links in this document to definition: Vlaamse wegen OTL">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-vlaamse-wegen-otl" aria-label="Permalink for definition: Vlaamse wegen OTL. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-vng" aria-label="Links in this document to definition: VNG: Vereniging Nederlandse Gemeenten">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-vng" aria-label="Permalink for definition: VNG: Vereniging Nederlandse Gemeenten. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-vnvf" aria-label="Links in this document to definition: VNVF">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-vnvf" aria-label="Permalink for definition: VNVF. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorwaarschuwingsbord" aria-label="Links in this document to definition: voorwaarschuwingsbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-voorwaarschuwingsbord" aria-label="Permalink for definition: voorwaarschuwingsbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-waarschuwing" aria-label="Links in this document to definition: waarschuwing">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-waarschuwing" aria-label="Permalink for definition: waarschuwing. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-waarschuwing-1" title="§ 8. Definities">§ 8. Definities</a> <a href="#ref-for-dfn-waarschuwing-2" title="Reference 2">(2)</a> <a href="#ref-for-dfn-waarschuwing-3" title="Reference 3">(3)</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-weg" aria-label="Links in this document to definition: weg">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-weg" aria-label="Permalink for definition: weg. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-weg-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wegalignement" aria-label="Links in this document to definition: wegalignement">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegalignement" aria-label="Permalink for definition: wegalignement. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wegdeel" aria-label="Links in this document to definition: wegdeel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegdeel" aria-label="Permalink for definition: wegdeel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-weggebruiker" aria-label="Links in this document to definition: weggebruiker">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-weggebruiker" aria-label="Permalink for definition: weggebruiker. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-weggebruiker-1" title="§ 3.2.2 Missie">§ 3.2.2 Missie</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-weggeg" aria-label="Links in this document to definition: WEGGEG">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-weggeg" aria-label="Permalink for definition: WEGGEG. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-weggeg-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wegmarkering" aria-label="Links in this document to definition: Wegmarkering">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegmarkering" aria-label="Permalink for definition: Wegmarkering. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wegontwerp-rws" aria-label="Links in this document to definition: Wegontwerp RWS">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegontwerp-rws" aria-label="Permalink for definition: Wegontwerp RWS. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wegvak" aria-label="Links in this document to definition: wegvak">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wegvak" aria-label="Permalink for definition: wegvak. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-werkingslengte" aria-label="Links in this document to definition: werkingslengte">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-werkingslengte" aria-label="Permalink for definition: werkingslengte. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-werkingslengte-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wettelijk-verkeersbord" aria-label="Links in this document to definition: Wettelijk verkeersbord">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wettelijk-verkeersbord" aria-label="Permalink for definition: Wettelijk verkeersbord. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-wkd" aria-label="Links in this document to definition: WKD: Wegkenmerken Database">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-wkd" aria-label="Permalink for definition: WKD: Wegkenmerken Database. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-zone" aria-label="Links in this document to definition: zone">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-zone" aria-label="Permalink for definition: zone. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+    <a href="#ref-for-dfn-zone-1" title="§ 8. Definities">§ 8. Definities</a> 
+  </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-zweedse-netwerkregistratie" aria-label="Links in this document to definition: Zweedse netwerkregistratie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-zweedse-netwerkregistratie" aria-label="Permalink for definition: Zweedse netwerkregistratie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
+    </div><script id="respec-dfn-panel">(() => {
+// @ts-check
+if (document.respec) {
+  document.respec.ready.then(setupPanel);
+} else {
+  setupPanel();
+}
+
+function setupPanel() {
+  const listener = panelListener();
+  document.body.addEventListener("keydown", listener);
+  document.body.addEventListener("click", listener);
+}
+
+function panelListener() {
+  /** @type {HTMLElement} */
+  let panel = null;
+  return event => {
+    const { target, type } = event;
+
+    if (!(target instanceof HTMLElement)) return;
+
+    // For keys, we only care about Enter key to activate the panel
+    // otherwise it's activated via a click.
+    if (type === "keydown" && event.key !== "Enter") return;
+
+    const action = deriveAction(event);
+
+    switch (action) {
+      case "show": {
+        hidePanel(panel);
+        /** @type {HTMLElement} */
+        const dfn = target.closest("dfn, .index-term");
+        panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+        const coords = deriveCoordinates(event);
+        displayPanel(dfn, panel, coords);
+        break;
+      }
+      case "dock": {
+        panel.style.left = null;
+        panel.style.top = null;
+        panel.classList.add("docked");
+        break;
+      }
+      case "hide": {
+        hidePanel(panel);
+        panel = null;
+        break;
+      }
+    }
+  };
+}
+
+/**
+ * @param {MouseEvent|KeyboardEvent} event
+ */
+function deriveCoordinates(event) {
+  const target = /** @type HTMLElement */ (event.target);
+
+  // We prevent synthetic AT clicks from putting
+  // the dialog in a weird place. The AT events sometimes
+  // lack coordinates, so they have clientX/Y = 0
+  const rect = target.getBoundingClientRect();
+  if (
+    event instanceof MouseEvent &&
+    event.clientX >= rect.left &&
+    event.clientY >= rect.top
+  ) {
+    // The event probably happened inside the bounding rect...
+    return { x: event.clientX, y: event.clientY };
+  }
+
+  // Offset to the middle of the element
+  const x = rect.x + rect.width / 2;
+  // Placed at the bottom of the element
+  const y = rect.y + rect.height;
+  return { x, y };
+}
+
+/**
+ * @param {Event} event
+ */
+function deriveAction(event) {
+  const target = /** @type {HTMLElement} */ (event.target);
+  const hitALink = !!target.closest("a");
+  if (target.closest("dfn:not([data-cite]), .index-term")) {
+    return hitALink ? "none" : "show";
+  }
+  if (target.closest(".dfn-panel")) {
+    if (hitALink) {
+      return target.classList.contains("self-link") ? "hide" : "dock";
+    }
+    const panel = target.closest(".dfn-panel");
+    return panel.classList.contains("docked") ? "hide" : "none";
+  }
+  if (document.querySelector(".dfn-panel:not([hidden])")) {
+    return "hide";
+  }
+  return "none";
+}
+
+/**
+ * @param {HTMLElement} dfn
+ * @param {HTMLElement} panel
+ * @param {{ x: number, y: number }} clickPosition
+ */
+function displayPanel(dfn, panel, { x, y }) {
+  panel.hidden = false;
+  // distance (px) between edge of panel and the pointing triangle (caret)
+  const MARGIN = 20;
+
+  const dfnRects = dfn.getClientRects();
+  // Find the `top` offset when the `dfn` can be spread across multiple lines
+  let closestTop = 0;
+  let minDiff = Infinity;
+  for (const rect of dfnRects) {
+    const { top, bottom } = rect;
+    const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+    if (diffFromClickY < minDiff) {
+      minDiff = diffFromClickY;
+      closestTop = top;
+    }
+  }
+
+  const top = window.scrollY + closestTop + dfnRects[0].height;
+  const left = x - MARGIN;
+  panel.style.left = `${left}px`;
+  panel.style.top = `${top}px`;
+
+  // Find if the panel is flowing out of the window
+  const panelRect = panel.getBoundingClientRect();
+  const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+  if (panelRect.right > SCREEN_WIDTH) {
+    const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+    const newCaretOffset = left - newLeft;
+    panel.style.left = `${newLeft}px`;
+    /** @type {HTMLElement} */
+    const caret = panel.querySelector(".caret");
+    caret.style.left = `${newCaretOffset}px`;
+  }
+
+  // As it's a dialog, we trap focus.
+  // TODO: when <dialog> becomes a implemented, we should really
+  // use that.
+  trapFocus(panel, dfn);
+}
+
+/**
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function trapFocus(panel, dfn) {
+  /** @type NodeListOf<HTMLAnchorElement> elements */
+  const anchors = panel.querySelectorAll("a[href]");
+  // No need to trap focus
+  if (!anchors.length) return;
+
+  // Move focus to first anchor element
+  const first = anchors.item(0);
+  first.focus();
+
+  const trapListener = createTrapListener(anchors, panel, dfn);
+  panel.addEventListener("keydown", trapListener);
+
+  // Hiding the panel releases the trap
+  const mo = new MutationObserver(records => {
+    const [record] = records;
+    const target = /** @type HTMLElement */ (record.target);
+    if (target.hidden) {
+      panel.removeEventListener("keydown", trapListener);
+      mo.disconnect();
+    }
+  });
+  mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+}
+
+/**
+ *
+ * @param {NodeListOf<HTMLAnchorElement>} anchors
+ * @param {HTMLElement} panel
+ * @param {HTMLElement} dfn
+ * @returns
+ */
+function createTrapListener(anchors, panel, dfn) {
+  const lastIndex = anchors.length - 1;
+  let currentIndex = 0;
+  return event => {
+    switch (event.key) {
+      // Hitting "Tab" traps us in a nice loop around elements.
+      case "Tab": {
+        event.preventDefault();
+        currentIndex += event.shiftKey ? -1 : +1;
+        if (currentIndex < 0) {
+          currentIndex = lastIndex;
+        } else if (currentIndex > lastIndex) {
+          currentIndex = 0;
+        }
+        anchors.item(currentIndex).focus();
+        break;
+      }
+
+      // Hitting "Enter" on an anchor releases the trap.
+      case "Enter":
+        hidePanel(panel);
+        break;
+
+      // Hitting "Escape" returns focus to dfn.
+      case "Escape":
+        hidePanel(panel);
+        dfn.focus();
+        return;
+    }
+  };
+}
+
+/** @param {HTMLElement} panel */
+function hidePanel(panel) {
+  if (!panel) return;
+  panel.hidden = true;
+  panel.classList.remove("docked");
+}
+})()</script><script src="https://docs.crow.nl/respec-design/fixup.js"></script></body></html>
