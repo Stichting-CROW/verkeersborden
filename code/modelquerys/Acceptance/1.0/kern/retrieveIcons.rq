@@ -47,7 +47,7 @@ WHERE {
   OPTIONAL {
     ?IcoonUri rdfs:seeAlso ?ImageUnlicensed .
     FILTER(CONTAINS(STR(?ImageUnlicensed),".svg")) .
-    ?ImageUnlicensed dcterms:license <https://opensource.org/licenses/MIT> .
+    FILTER NOT EXISTS { ?ImageUnlicensed dcterms:license <https://opensource.org/licenses/MIT> . }
   }
   OPTIONAL { ?IcoonUri skos:notation ?IcoonRVVID . }
   
@@ -74,7 +74,3 @@ WHERE {
     OPTIONAL { ?bnode3 sh:hasValue ?AspectQuantity . } 
   }
 }
-
-# Retrieve BackgroundShields
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf
