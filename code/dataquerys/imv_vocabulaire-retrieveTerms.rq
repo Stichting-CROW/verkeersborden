@@ -6,7 +6,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 
-# A query that returns all the terms captured in the InformatieModel Verkeersborden - Vocabulary 
+# A query that returns all the terms captured in the InformatieModel Verkeersborden - Vocabulaire 
 
 SELECT DISTINCT ?termUri ?termNameNL ?termNameEN ?termDefinitionNL ?termDefinitionEN ?parentTermUri ?collectionUri ?collectionNameNL ?collectionNameEN
 WHERE {
