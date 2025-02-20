@@ -32,7 +32,7 @@ De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige
 Databeheerders worden op weg geholpen met:
 
 * De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
-* In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de gebruiker ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [controlemechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/datachecks) (kwaliteitstoetsen datasets).
+* In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de weg(data-)beheerder ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [controlemechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/datachecks) (kwaliteitstoetsen datasets).
 
 #### Voor datagebruikers
 * [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met de beschikbare zoekmechanismes ([SPARQL queries nog niet uitgewerkt]())

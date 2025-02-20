@@ -15,19 +15,25 @@ indien men na de deadline nog review wil indienen, kan dat via de issues in GitH
 
 ## Technische review
 * Voor computers wordt het informatiemodel gepubliceerd op het (SPARQL-endpoint)[https://hub.laces.tech/crow/verkeersborden] waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0]().
-* De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs/consultationversions/IR-verkeersborden_technicaldocs-20250218.html) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
+* De [Technische documentatie](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_technicaldocs-20250218.html) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 
 
 ### Review van uitgangspunten en beheer
-* De context, doelen, use cases en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework/consultationversions/CR-verkeersborden_framework-20241217.html)
-* Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan/consultatieversies/IR-verkeersborden_beheerplan-20250218.html) beschrijft het beheer van het informatiemodel als open standaard. 
+* De context, doelen, use cases en uitgangspunten van het informatiemodel staan in het  [Architectuur Framework](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_framework-20241217.html)
+* Het [Beheerplan](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_beheerplan-20250218.html) beschrijft het beheer van het informatiemodel als open standaard. 
 
 ### Review van Gebruikersondersteuning
 De gebruikersondersteuning is geschreven met als aanname, dat de verkeerskundige informatie federatief gedeeld wordt, waarbij de wegbeheerder verkeerskundige informatie federatief deelt op basis van het informatiemodel, en de landelijke registratie de samenhang en kwaliteit van de informatie op landelijk niveau bewaakt. Dit is toekomstmuziek, er zal nog een heel ontwikkeltraject van de landelijke registratie (en bij wegbeheerders) moeten plaatsvinden voordat het zover is. Daarom is deze documentatie nog heel summier, en gericht op gebruikers met technische kennis op het gebied van code lezen en schrijven, en voor softwareontwikkelaars.
 
-* De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/howtodatamanagement) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
-* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met zoekmechanismes.
+Voor weg(data-)beheerders
+* De [Gids voor databeheer](https://docs.crow.nl/verkeersborden/consultationversions/) beschrijft het samenstellen en beheren van verkeerskundige informatie op basis van het informatiemodel.
+* In de [Leermaterialen voor databeheerders](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_datamanagementguide-20250220.html) wordt de weg(data-)beheerder ondersteund bij het leren door oefeningen.
+
+Voor ontwikkelaars die verkeerskundige informatie gebruiken:
+* [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_howtousedata-20250218.html): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met zoekmechanismes.
+* In  de [Leermaterialen voor ontwikkelaars](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_datauserguide-20250220.html)
+
 
 ## Vervolg
-In de vervolgfase worden voorbeelddatasets uitgewerkt op basis van de huidige publicatie bij het NDW, en worden de leermaterialen voor het samenstellen en gebruiken van data opgesteld, evenals query's om verkeerskundige informatie te doorzoeken, controlebestanden waarmee de data kan worden gecontroleerd en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
+In de vervolgfase worden voorbeelddatasets uitgewerkt op basis van de huidige publicatie bij het NDW, en worden de leermaterialen voor het samenstellen en gebruiken van data uitgerbeid, evenals query's om verkeerskundige informatie te doorzoeken, controlebestanden waarmee de data kan worden gecontroleerd en zoekmechanismes voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
 
