@@ -16,15 +16,15 @@ WHERE {
   FILTER(LANG(?EnumerationNameNL) = "nl") .
   ?EnumerationUri skos:prefLabel ?EnumerationNameEN .
   FILTER(LANG(?EnumerationNameEN) = "en") .
-  ?EnumerationUri skos:prefLabel ?EnumerationDefinitionNL .
+  ?EnumerationUri skos:definition ?EnumerationDefinitionNL .
   FILTER(LANG(?EnumerationDefinitionNL) = "nl") .
-  ?EnumerationUri skos:prefLabel ?EnumerationDefinitionEN .
+  ?EnumerationUri skos:definition ?EnumerationDefinitionEN .
   FILTER(LANG(?EnumerationDefinitionEN) = "en") .
   ?EnumerationUri rdfs:seeAlso ?EnumerationTermUri .
   FILTER(CONTAINS(STR(?EnumerationTermUri),"data.crow.nl/imv/term/")) .
   OPTIONAL {
     ?EnumerationUri rdfs:seeAlso ?Reference .
     FILTER(!CONTAINS(STR(?Reference),"data.crow.nl/imv/term/")) .
-    ?Reference skos:prefLabel ?ReferenceName .
+    OPTIONAL { ?Reference skos:prefLabel ?ReferenceName . }
   }
 }

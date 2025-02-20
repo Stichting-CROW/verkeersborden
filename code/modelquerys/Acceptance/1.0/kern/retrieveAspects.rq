@@ -1,0 +1,42 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# A query that retrieves all the Aspects that are captured in InformatieModel Verkeersborden - Kern
+
+SELECT ?AspectUri ?AspectNameNL ?AspectNameEN ?AspectDefinitionNL ?AspectDefinitionEN ?EnumerationGroupUri ?EnumerationGroupNameNL ?EnumerationGroupNameEN ?AspectUnitUri ?AspectUnitName
+WHERE {
+  ?AspectUri a ?type .
+  FILTER(CONTAINS(STR(?type), "Property")) .
+  FILTER(?AspectUri NOT IN (nen2660:hasPart)) .
+  ?AspectUri skos:prefLabel ?AspectNameNL .
+  FILTER(LANG(?AspectNameNL) = "nl") .
+  ?AspectUri skos:prefLabel ?AspectNameEN .
+  FILTER(LANG(?AspectNameEN) = "en") .
+  ?AspectUri skos:definition ?AspectDefinitionNL .
+  FILTER(LANG(?AspectDefinitionNL) = "nl") .
+  ?AspectUri skos:definition ?AspectDefinitionEN .
+  FILTER(LANG(?AspectDefinitionEN) = "en") .
+
+  OPTIONAL{
+    ?bnode sh:path ?AspectUri .
+    ?bnode sh:class ?EnumerationGroupUri .
+    ?EnumerationGroupUri skos:prefLabel ?EnumerationGroupNameNL .
+    FILTER(LANG(?EnumerationGroupNameNL) = "nl") .
+    ?EnumerationGroupUri skos:prefLabel ?EnumerationGroupNameEN .
+    FILTER(LANG(?EnumerationGroupNameEN) = "en") .
+  }
+  OPTIONAL {
+    ?bnode sh:path ?AspectUri .
+    ?bnode sh:node ?quantityshape .
+    ?quantityshape sh:property ?bnode2 .
+    ?bnode2 sh:path nen2660:hasUnit .
+    ?bnode2 sh:hasValue ?AspectUnitUri .
+    ?AspectUnitUri skos:prefLabel ?AspectUnitName .
+  }
+}
