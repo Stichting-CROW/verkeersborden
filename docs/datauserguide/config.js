@@ -81,7 +81,7 @@ var respecConfig = {
   pubDomain: "verkeersborden",
   shortName: "datauserguide",
   license: "CC-BY",
-  subtitle: "Gids voor gebruik van verkeerskundige datasets",
+  subtitle: "Ondersteuning voor gebruik verkeerskundige informatie",
   editors: [
     {
       name: "Elisabeth Klören",
