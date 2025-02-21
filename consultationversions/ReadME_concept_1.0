@@ -14,7 +14,7 @@ Reviewen kan tot 1 mei 2025
 indien men na de deadline nog review wil indienen over een document, kan dat via de issues in GitHub.
 
 ## Technische review
-* Voor computers wordt het concept-informatiemodel gepubliceerd op het SPARQL-endpoint, zie voor de publicaties de [Hub](https://hub.laces.tech/crow/verkeersborden) (toegang na eenmalig een gratis inlog aanmaken) als "Acceptance" versie waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0, nog in ontwikkeling](https://github.com/Stichting-CROW/verkeersborden/issues/410).
+* Voor computers wordt het concept-informatiemodel gepubliceerd op het SPARQL-endpoint, zie voor de publicaties de [Hub](https://hub.laces.tech/crow/verkeersborden) (toegang na eenmalig een gratis inlog aanmaken) als "Acceptance" versie waar het ook kan worden gedownload als turtle. Met eigen of [standaard modelquery's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden. Voor mensen is er een [viewer concept 1.0, nog in ontwikkeling](https://github.com/Stichting-CROW/verkeersborden/issues/410).
 * De [Technische documentatie](https://docs.crow.nl/verkeersborden/consultationversions/CR-verkeersborden_technicaldocs-20250218.html) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 
 
