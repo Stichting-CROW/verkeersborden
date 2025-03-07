@@ -1,0 +1,25 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+SELECT DISTINCT ?fysiekePlaatUri ?fysiekePlaatNameNL ?fysiekePlaatNameEN ?svg ?parentFysiekePlaatUri ?parentFysiekePlaatNaam
+WHERE {
+  ?fysiekePlaatUri a owl:Class .
+  ?fysiekePlaatUri rdfs:subClassOf*/skos:prefLabel "FysiekePlaat" .
+  ?fysiekePlaatUri skos:prefLabel ?fysiekePlaatNameNL .
+  FILTER (LANG(?fysiekePlaatNameNL) = "nl") .
+  ?fysiekePlaatUri skos:altLabel ?fysiekePlaatNameEN .
+  FILTER (LANG(?fysiekePlaatNameEN) = "en") .
+
+  ?fysiekePlaatUri rdfs:subClassOf ?parentFysiekePlaatUri .
+  FILTER NOT EXISTS { ?parentFysiekePlaatUri a owl:Restriction } .
+  FILTER (?parentFysiekePlaatUri != <https://w3id.org/nen2660/def#RealObject>) . 
+  ?parentFysiekePlaatUri skos:prefLabel ?parentFysiekePlaatNaam .
+  
+  ?fysiekePlaatUri rdfs:seeAlso ?svg .
+}
