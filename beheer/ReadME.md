@@ -16,7 +16,7 @@ Je hebt de volgende Python-bibliotheek nodig:
 - **pandas**: Installeer met `pip install pandas`
 
 ## Bestanden
-- **Invoer CSV-bestand** (`tableDownload.csv`): Om dit invoer-CSV-bestand te verkrijgen, voer je de opgeslagen query (Retrieve Standaard Platen) uit in de [IVM Standard Signs-publicatie op het Laces Data Platform](https://hub.laces.tech/crow/verkeersborden/test/imv-standard-signs/versions/v1_0_1). Dit bestand moet in dezelfde map als het script worden geplaatst (of geef het volledige pad op). Het moet de volgende kolommen bevatten:
+- **Invoer CSV-bestand** (`tableDownload.csv`): Om dit invoer-CSV-bestand te verkrijgen, voer je de opgeslagen query (Retrieve Standaard Platen) uit in de [IVM Standard Signs-publicatie op het Laces Data Platform](https://hub.laces.tech/crow/verkeersborden/test/imv-standard-signs/versions/v1_0_1) en download daar het CSV-bestand.. Dit bestand moet in dezelfde map als het script worden geplaatst (of geef het volledige pad op). Het moet de volgende kolommen bevatten:
   - `fysiekePlaatNameNL`: De naam van het item die wordt weergegeven in het `<figcaption>`.
   - `fysiekePlaatDefinition`: De beschrijving die als alt-tekst voor de afbeelding wordt gebruikt.
   - `svg`: De URL of het pad naar de afbeelding.
@@ -91,7 +91,7 @@ You will need the following Python libraries:
 - **pandas**: Install using `pip install pandas`
 
 ## Files
-- **Input CSV file** (`tableDownload.csv`): To obtain this input csv, run the saved query (Retrieve Standaard Platen) in the [IVM Standard Signs publication on Laces Data Platform](https://hub.laces.tech/crow/verkeersborden/test/imv-standard-signs/versions/v1_0_1). This file should be placed in the same directory as the script (or provide the full path). It must contain the following columns:
+- **Input CSV file** (`tableDownload.csv`): To obtain this input csv, run the saved query (Retrieve Standaard Platen) in the [IVM Standard Signs publication on Laces Data Platform](https://hub.laces.tech/crow/verkeersborden/test/imv-standard-signs/versions/v1_0_1), and download the csv file there. This file should be placed in the same directory as the script (or provide the full path). It must contain the following columns:
   - `fysiekePlaatNameNL`: The name of the item to be displayed in the `<figcaption>`.
   - `fysiekePlaatDefinition`: The description to be used as the alt text for the image.
   - `svg`: The URL or path of the image.
