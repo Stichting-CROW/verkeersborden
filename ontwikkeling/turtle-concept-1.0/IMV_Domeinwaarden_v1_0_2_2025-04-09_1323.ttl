@@ -1,0 +1,1982 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/57e1dfc7-841a-4a92-818d-638a6f3702cb> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/57e1dfc7-841a-4a92-818d-638a6f3702cb>;
+  skos:prefLabel "t100-bus"@en, "t100-bus"@nl;
+  skos:definition "A bus, as indicated by a note on the vehicle registration certificate or in the vehicle registration database, that is configured to be eligible for a maximum speed of 100 kilometers per hour. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Autobus, ten aanzien waarvan uit een aantekening op het kentekenbewijs of uit het kentekenregister blijkt dat hij zodanig is ingericht dat hij in aanmerking komt voor een maximumsnelheid van 100 kilometer per uur. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/d050a5bb-56a7-4a13-ad2c-3150ca049730> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/d050a5bb-56a7-4a13-ad2c-3150ca049730>;
+  skos:prefLabel "taxi"@nl, "taxi"@en;
+  skos:definition "A motor vehicle, often a car, used to transport passengers for payment from a location of their choice to another destination."@en,
+    "Een motorvoertuig, vaak een auto, dat tegen betaling wordt gebruikt om passagiers van een door hen gewenste locatie naar een andere bestemming te vervoeren."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/aca01d9b-845e-4da4-b8b9-06f0017fcc60> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/aca01d9b-845e-4da4-b8b9-06f0017fcc60>;
+  skos:prefLabel "dangerousCrossing"@en, "gevaarlijkKruispunt"@nl;
+  skos:definition "An intersection designated as dangerous by the road authority."@en,
+    "Een door de wegbeheerder als gevaarlijk aangemerkte kruising."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0e9b0243-7bd2-4b83-9227-060b13b08f06> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0e9b0243-7bd2-4b83-9227-060b13b08f06>;
+  skos:prefLabel "alleenOpDeParkeerstrook"@nl, "onlyInTheParkingStrip"@en;
+  skos:definition "Parking within the parking lane or parking strip."@en, "Parkeren op de parkeerstrook."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/5ce08362-923f-41fc-83ef-6ed1c22de1d1> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/5ce08362-923f-41fc-83ef-6ed1c22de1d1>;
+  skos:prefLabel "railwayCrossingSingleTrack"@en, "overwegMetEnkelSpoor"@nl;
+  skos:definition "Level crossing with a single track."@en, "Gelijkvloerse spoorwegkruising met enkel spoor."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/a2d94fb3-de7c-47f9-9119-80bfd49a41eb> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/a2d94fb3-de7c-47f9-9119-80bfd49a41eb>;
+  skos:prefLabel "airplanes"@en, "vliegtuigen"@nl;
+  skos:definition "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@en,
+    "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/21c921b9-0c4e-4ded-bb9b-42d6ca03da88> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/21c921b9-0c4e-4ded-bb9b-42d6ca03da88>;
+  skos:prefLabel "ruiter"@nl, "rider"@en;
+  skos:definition "Iemand die te paard rijdt"@nl, "Someone riding on a horse"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/77a4c459-c3ff-42c1-95fe-c1ec61be7192> a
+    <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/77a4c459-c3ff-42c1-95fe-c1ec61be7192>;
+  skos:prefLabel "Erf"@nl, "ResidentialZone"@en;
+  skos:definition "An area where special traffic regulations apply."@en, "Een woongebied waar speciale verkeersregels gelden."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/faf2633d-4fd1-4416-8d7e-fe3abf17e272> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/faf2633d-4fd1-4416-8d7e-fe3abf17e272>;
+  skos:prefLabel "beweegbareBrug"@nl, "movableBridge"@en;
+  skos:definition "Een brug die kan worden geopend of verplaatst om scheepvaartverkeer doorgang te verlenen."@nl,
+    "A bridge that can be opened or moved to allow passage for maritime traffic."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/37c3422e-b94f-4efc-99a4-f2d16cdf0797> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/37c3422e-b94f-4efc-99a4-f2d16cdf0797>;
+  skos:prefLabel "ladiesVehicle"@en, "vrouwenvoertuig"@nl;
+  skos:definition "Vehicle of a woman, in the context of socially safe parking."@en,
+    "Voertuig van een vrouw, in de context van sociaal veilig parkeren."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7d9f877c-eda7-40d8-9264-02edf26ec4bf> a
+    <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7d9f877c-eda7-40d8-9264-02edf26ec4bf>;
+  skos:prefLabel "Rechtsaf"@nl, "GoRight"@en;
+  skos:definition "Rechtsaf slaan of rechts het bord passeren"@nl, "Turn right or pass the sign on the right"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e3397306-1bbd-4549-be3b-9303f0fde42c> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e3397306-1bbd-4549-be3b-9303f0fde42c>;
+  skos:prefLabel "onlyInTheMarkedSpaces"@en, "alleenInDeVakken"@nl;
+  skos:definition "Parkeren in de vakken."@nl, "Parking within the marked spaces."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/95ed9c48-1dcf-4d93-8108-d4cf408a426e> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/95ed9c48-1dcf-4d93-8108-d4cf408a426e>;
+  skos:prefLabel "bromfiets"@nl, "moped"@en;
+  skos:definition "A vehicle that is designated as a moped according to the issued registration certificate. Source: Article 1 of the Road Traffic Act 1994."@en,
+    "Een voertuig dat blijkens het afgegeven kentekenbewijs als bromfiets is aangeduid. Bron: Artikel 1 Wegenverkeerswet 1994."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/528c0cc5-a29d-4255-86a0-60e4d2c5a5b9> a
+    <https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/528c0cc5-a29d-4255-86a0-60e4d2c5a5b9>;
+  skos:prefLabel "Kruising"@nl, "Crossroads"@en;
+  skos:definition "Kruising"@nl, "Crossroads"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6a6a528c-7217-4e73-84da-54c139a610a5> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6a6a528c-7217-4e73-84da-54c139a610a5>;
+  skos:prefLabel "kampeerwagen"@nl, "camperVan"@en;
+  skos:definition "Kampeerwagen als bedoeld in artikel 1.1 van de Regeling voertuigen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor caravan as defined in Article 1.1 of the Dutch Vehicle Regulations.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/56715a83-7dbf-49c4-aebb-f28dbf743848> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/56715a83-7dbf-49c4-aebb-f28dbf743848>;
+  skos:prefLabel "voetganger"@nl, "pedestrian"@en;
+  skos:definition "Road user, not being a driver. "@en, "Weggebruiker, niet zijnde een bestuurder."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/00af4826-535d-4435-b56d-4efe139d59f3> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/00af4826-535d-4435-b56d-4efe139d59f3>;
+  skos:prefLabel "priorityJunctionRight"@en, "voorrangskruispuntRechts"@nl;
+  skos:definition "Een kruising met een ondergeschikte weg van rechts."@nl, "A junction with a minor road on the right."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/423d404c-7687-4005-8ac2-9c88e57eba1e> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/423d404c-7687-4005-8ac2-9c88e57eba1e>;
+  skos:prefLabel "vergunninghouders"@nl, "permitHolders"@en;
+  skos:definition "The parking measure applies on the condition that the driver holds a parking permit."@en,
+    "Onder voorwaarde dat de bestuurder een parkeervergunning heeft."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7abbe6ee-0264-44fc-a962-29c34d3726d0> a
+    <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7abbe6ee-0264-44fc-a962-29c34d3726d0>;
+  skos:prefLabel "gladWegdek"@nl, "slipperyRoad"@en;
+  skos:definition "A slippery road surface."@en, "Een glad wegdek."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c2838a56-4f1b-4f67-8d1d-6b07bb354672> a
+    <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c2838a56-4f1b-4f67-8d1d-6b07bb354672>;
+  skos:prefLabel "VoorrangKrijgen"@nl, "GetPriority"@en;
+  skos:definition "Value indicating the traffic on a crossing has priority."@en, "Waarde die aangeeft dat het verkeer op het kruispunt voorrang heeft."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f94a8004-7d77-4f17-8b8c-dfb37928a104> a
+    <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/f94a8004-7d77-4f17-8b8c-dfb37928a104>;
+  skos:prefLabel "voertuigbeperkingszone"@nl, "vehicleRestrictionZone"@en;
+  skos:definition "Gebied waar bepaalde voertuigtypen geweerd worden."@nl, "Area with restricted acces for specific vehicle types."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c5347f30-aba7-4d87-b8ab-84f396336f82> a
+    <https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c5347f30-aba7-4d87-b8ab-84f396336f82>;
+  skos:prefLabel "closedRoad"@en, "geslotenWeg"@nl;
+  skos:definition "Value indicating the road is closed for traffic."@en, "Waarde die aangeeft dat de weg gesloten is voor verkeer."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/70013d6b-7671-4b19-bbf9-1342e1712e1a> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/70013d6b-7671-4b19-bbf9-1342e1712e1a>;
+  skos:prefLabel "motorvoertuig"@nl, "motorizedVehicle"@en;
+  skos:definition "Alle gemotoriseerde voertuigen behalve bromfietsen, fietsen met trapondersteuning en gehandicaptenvoertuigen, bestemd om anders dan langs rails te worden voortbewogen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "All motorized vehicles, except mopeds, pedal-assisted bicycles, and mobility vehicles, designed to be propelled other than along rails. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f4799f17-e34a-4b02-865e-ecf290c844f7> a
+    <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852>;
+  rdfs:seeAlso <https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>,
+    <https://data.crow.nl/imv/term/f4799f17-e34a-4b02-865e-ecf290c844f7>;
+  skos:prefLabel "autoweg"@nl, "expressRoad"@en;
+  skos:definition "Weg, aangeduid door bord G3 van bijlage I; langs autowegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autoweg uit."@nl,
+    "Road indicated by sign G3 from Annex I; parking areas, petrol stations, and bus stops located along main roads are not considered part of the main road."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/5434ae00-789d-4d6b-a958-59a751378858> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/5434ae00-789d-4d6b-a958-59a751378858>;
+  skos:prefLabel "snorfiets"@nl, "lightMoped"@en;
+  skos:definition "1. Moped that, according to the vehicle registration data, is constructed for a maximum speed not exceeding 25 km/h, excluding the speed-pedelec, or 2. Moped as referred to in Article 1, paragraph 1, subparagraph e, item d, of the law. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "1.bromfiets die blijkens de gegevens in het kentekenregister is geconstrueerd voor een maximumsnelheid die niet meer bedraagt dan 25 km per uur, met uitzondering van de speed-pedelec, of 2.bromfiets als bedoeld in artikel 1, eerste lid, onderdeel e, subonderdeel d, van de wet. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9eb55747-ded5-4ddd-972c-c247d34bdd3b> a
+    <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9eb55747-ded5-4ddd-972c-c247d34bdd3b>;
+  skos:prefLabel "Loodrecht"@nl, "Perpendicular"@en;
+  skos:definition "Loodrecht"@nl, "Perpendicular"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0b9c583a-c9b1-4db5-9568-92c87a96e405> a
+    <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0b9c583a-c9b1-4db5-9568-92c87a96e405>;
+  skos:prefLabel "Veerooster"@nl, "CattleGrid"@en;
+  skos:definition "Veerooster"@nl, "Cattle grid"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3fe82a6c-a3ec-48c9-9946-70ceb1222281> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3fe82a6c-a3ec-48c9-9946-70ceb1222281>;
+  skos:prefLabel "Diesel"@en, "Diesel"@nl;
+  skos:definition "Value for diesel vehicles."@en, "Waarde voor dieselvoertuigen."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/d7d29b25-5129-49a7-8bdb-3e02be144dbe> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/d7d29b25-5129-49a7-8bdb-3e02be144dbe>;
+  skos:prefLabel "bestemmingsverkeer"@nl, "sourceAndDestinationTraffic"@en;
+  skos:definition "Bestuurders wier reisdoel één of meer bepaalde percelen betreft die zijn gelegen aan of in de directe nabijheid van een weg met een door verkeerstekens aangegeven geslotenverklaring voor bepaalde categorieën bestuurders en die slechts via deze weg zijn te bereiken alsmede bestuurders van lijnbussen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Drivers whose travel destination concerns one or more specific premises located on or near a road with a traffic sign indicating a prohibition for certain categories of drivers, and which can only be accessed via this road, as well as drivers of scheduled buses.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3e340ae4-f972-45ab-a045-327a95a43439> a
+    <https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3e340ae4-f972-45ab-a045-327a95a43439>;
+  skos:prefLabel "helling"@nl, "hillUpwards"@en;
+  skos:definition "An upward slope where the road gradually or steeply asscends."@en,
+    "Een opwaartse helling waarbij de weg geleidelijk of steil naar boven loopt."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/528ff047-c9d0-4e50-bb78-cabdacca2de5> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/528ff047-c9d0-4e50-bb78-cabdacca2de5>;
+  skos:prefLabel "gehandicaptenvoertuigMetInWerkingZijndeMotor"@nl, "disabledVehicleWithWorkingMotor"@en;
+  skos:definition "Voertuig met motor dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en niet is uitgerust met een motor, dan wel is uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km per uur bedraagt, en geen bromfiets is. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A vehicle with motor designed for the transport of a disabled person, not exceeding 1.10 meters in width, either without a motor or equipped with a motor whose design limits the maximum speed to no more than 45 km/h, and is not a moped.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/237993cf-0c33-4b76-98ee-089321d945c9> a
+    <https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/237993cf-0c33-4b76-98ee-089321d945c9>;
+  skos:prefLabel "daling"@nl, "hillDownwards"@en;
+  skos:definition "Een neerwaartse helling waarbij de weg geleidelijk of steil naar beneden loopt."@nl,
+    "A downward slope where the road gradually or steeply descends."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b5ec0905-605e-4f17-a895-27fcc60addc7> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b5ec0905-605e-4f17-a895-27fcc60addc7>;
+  skos:prefLabel "brommobiel"@nl, "microcar"@en;
+  skos:definition "Bromfiets op meer dan twee wielen, die is voorzien van een carrosserie. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A moped with more than two wheels, equipped with a body.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/796754a8-f02e-4eb1-8e89-183ef284fb11> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/796754a8-f02e-4eb1-8e89-183ef284fb11>;
+  skos:prefLabel "voetgangersoversteekplaats"@nl, "pedestrianCrossing"@en;
+  skos:definition "Zebra crossing were pedestrians have priority."@en, "Oversteekplaats met zebrapad waar voetgangers voorrang hebben."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7332c18c-f02c-4d77-b868-63aab1bbc365> a
+    <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7332c18c-f02c-4d77-b868-63aab1bbc365>;
+  skos:prefLabel "Verwijderd"@nl, "Removed"@en;
+  skos:definition "Verwijderd"@nl, "Removed"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/35a96d87-1e2e-4c02-a63d-c4a185235538> a
+    <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/35a96d87-1e2e-4c02-a63d-c4a185235538>;
+  skos:prefLabel "StopSecondaryRoad"@en, "StoppenVoorrangVerlenen"@nl;
+  skos:definition "Value indicating the traffic on a road has to halt and give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg moet stoppen en voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/29ea23be-b691-44e6-a867-c27421fc79bb> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/29ea23be-b691-44e6-a867-c27421fc79bb>;
+  skos:prefLabel "autobus"@nl, "bus"@en;
+  skos:definition "Motor vehicle designed to transport more than eight persons, excluding the driver. "@en,
+    "Motorvoertuig, ingericht voor het vervoer van meer dan acht personen, de bestuurder daaronder niet begrepen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/1199081f-c7d3-408a-93e6-1fbf402487f9> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/1199081f-c7d3-408a-93e6-1fbf402487f9>;
+  skos:prefLabel "mobileMachine"@en, "mobieleMachine"@nl;
+  skos:definition "Machines die ontworpen zijn om zich zelfstandig te verplaatsen en gebruikt worden voor specifieke werkzaamheden, zoals graafwerkzaamheden, hijsen of het transporteren van materialen."@nl,
+    "Machines designed to move independently and used for specific tasks, such as excavation, lifting, or transporting materials."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c212eaef-f49b-46d2-8764-b57578035f23> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c212eaef-f49b-46d2-8764-b57578035f23>;
+  skos:prefLabel "opladenVoertuigen"@nl, "chargingVehicle"@en;
+  skos:definition "Parkeren voor het opladen van een elektrisch voertuig. "@nl, "Parking on the condition that an electric vehicle is charging."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/cdd8a1da-2509-4a4e-a657-b679299ac6af> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/cdd8a1da-2509-4a4e-a657-b679299ac6af>;
+  skos:prefLabel "quayOrRiverBench"@en, "kadeOfRivieroever"@nl;
+  skos:definition "KadeOfRivieroever"@nl, "QuayOrRiverBench"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0b78145c-96ad-4d99-9a84-2d479e04fb6d> a
+    <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0b78145c-96ad-4d99-9a84-2d479e04fb6d>;
+  skos:prefLabel "Keren"@nl, "TurnAround"@en;
+  skos:definition "Keren"@nl, "Turn around"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/89600d0d-1ea3-4c4b-a371-6c6f8b0b3dcc> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/89600d0d-1ea3-4c4b-a371-6c6f8b0b3dcc>;
+  skos:prefLabel "driewieligMotorvoertuig"@nl, "three-wheeledMotorVehicle"@en;
+  skos:definition "Driewielig motorrijtuig als bedoeld in artikel 1.1 van de Regeling voertuigen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A three-wheeled motor vehicle as defined in Article 1.1 of the Dutch Vehicle Regulations.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3972342d-0c33-45cc-94d3-46109fc97d8e> a
+    <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3972342d-0c33-45cc-94d3-46109fc97d8e>;
+  skos:prefLabel "insiteBuiltUpAreas"@en, "binnenBebouwdeKom"@nl;
+  skos:definition "The area within a town or city, marked with boundary signs, where there is a higher concentration of buildings."@en,
+    "De met komborden aangeduide gebied binnen een plaats of stad waar een hogere concentratie aan bebouwing aanwezig is."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e71e5504-71da-4509-aab1-163e1bea4609> a
+    <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e71e5504-71da-4509-aab1-163e1bea4609>;
+  skos:prefLabel "milieuzone"@nl, "lowEmissionZone"@en;
+  skos:definition "Gebied waarin alleen voertuigen met een specifieke emissieklasse mogen rijden."@nl,
+    "Area where only vehicles with a specific emission class are allowed to drive."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b1a0244c-8945-46fb-8cd6-1a9973150142> a
+    <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b1a0244c-8945-46fb-8cd6-1a9973150142>;
+  skos:prefLabel "wetRoadSurface"@en, "natWegdek"@nl;
+  skos:definition "Een nat wegdek."@nl, "A wet road surface"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6041578e-dda2-40b1-a6d6-62f15b156471> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6041578e-dda2-40b1-a6d6-62f15b156471>;
+  skos:prefLabel "motorizedCargoTricycle."@en, "brombakfiets"@nl;
+  skos:definition "Moped with three symmetrically placed wheels, featuring two front wheels and designed exclusively for transporting the driver and goods, and possibly a passenger seated behind the driver.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Bromfiets op drie symmetrisch geplaatste wielen, met twee voorwielen en uitsluitend ingericht voor het vervoer van de bestuurder en van goederen en eventueel van een achter de bestuurder gezeten passagier. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/dcf2c3ef-6892-419f-bfb0-ae9025f80ad4> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/dcf2c3ef-6892-419f-bfb0-ae9025f80ad4>;
+  skos:prefLabel "fireBrigadeVehicle"@en, "brandweervoertuig"@nl;
+  skos:definition "Voertuig van de brandweer."@nl, "Fire brigade vehicle."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fc0c86b5-548a-4191-9693-b97cbc28d6c0> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fc0c86b5-548a-4191-9693-b97cbc28d6c0>;
+  skos:prefLabel "loadingAndUnloading"@en, "ladenEnLossen"@nl;
+  skos:definition "Parkeren voor voertuigen aan het laden of lossen zijn."@nl, "Parking on the condition that vehicles are loading of unloading."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fe56cf26-bc6f-47d5-8260-1bed0952dfc9> a
+    <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fe56cf26-bc6f-47d5-8260-1bed0952dfc9>;
+  skos:prefLabel "snelheidszone"@nl, "speedZone"@en;
+  skos:definition "Gebied waarin een maximum snelheid geldt."@nl, "Area were a maximum speed applies."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c71980c7-64c5-4550-9c92-4cb50bafe456> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c71980c7-64c5-4550-9c92-4cb50bafe456>;
+  skos:prefLabel "landbouwtrekker"@nl, "agriculturalTractor"@en;
+  skos:definition "A vehicle specifically designed for use in agriculture, such as towing agricultural machinery and implements."@en,
+    "Een voertuig dat speciaal is ontworpen voor gebruik in de landbouw, bijvoorbeeld voor het trekken van landbouwmachines en werktuigen."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7e5179d1-c460-4597-ad32-3f881d9a1489> a
+    <https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7e5179d1-c460-4597-ad32-3f881d9a1489>;
+  skos:prefLabel "Tegenliggers"@nl, "OncomingTraffic"@en;
+  skos:definition "Tegenliggers"@nl, "Oncoming traffic"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/bb88d6ad-5d9f-4ad4-8c99-f0df25ce162c> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/bb88d6ad-5d9f-4ad4-8c99-f0df25ce162c>;
+  skos:prefLabel "fiets"@nl, "bicycle"@en;
+  skos:definition "Door mens aangedreven voertuig, inclusief elektrische fietsen (e-bikes) met trapondersteuning tot maximaal 25 km/u en een motorvermogen van niet meer dan 250 watt."@nl,
+    "Human powered vehicle, including electric bicycles (e-bikes) with pedal assistance up to a maximum of 25 km/h and a motor power not exceeding 250 watts."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/44609fb4-3dcd-49eb-a01a-b4376fed0207> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/44609fb4-3dcd-49eb-a01a-b4376fed0207>;
+  skos:prefLabel "speed-pedelec"@nl, "speed-pedelec"@en;
+  skos:definition "Elektrische bromfiets met trapondersteuning waarvan de aandrijfkracht aanhoudt als het voertuig de snelheid van 25 km per uur overschrijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Electric moped with pedal assistance, where the drive power continues when the vehicle exceeds a speed of 25 km/h. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/980d58a9-18bc-453c-9eb7-609d02813faa> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/980d58a9-18bc-453c-9eb7-609d02813faa>;
+  skos:prefLabel "doctorsVehicle"@en, "doktersvoertuig"@nl;
+  skos:definition "A vehicle belonging to a doctor."@en, "Voertuig van een arts."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/524fea79-13c1-4e62-8f42-849fe083971e> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/524fea79-13c1-4e62-8f42-849fe083971e>;
+  skos:prefLabel "gehandicandicaptenvoertuig"@nl, "disabledVehicle"@en;
+  skos:definition "Voertuig dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en niet is uitgerust met een motor, dan wel is uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km per uur bedraagt, en geen bromfiets is. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A vehicle designed for the transport of a disabled person, not exceeding 1.10 meters in width, either without a motor or equipped with a motor whose design limits the maximum speed to no more than 45 km/h, and is not a moped.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/315f424e-1b24-446b-b93a-758b68ae0a68> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/315f424e-1b24-446b-b93a-758b68ae0a68>;
+  skos:prefLabel "overwegZonderSlagboom"@nl, "levelCrossing"@en;
+  skos:definition "Level crossing without barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising zonder slagboom."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f4778a0d-dab4-444a-bd8b-4a67d5ae61a8> a
+    <https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/f4778a0d-dab4-444a-bd8b-4a67d5ae61a8>;
+  skos:prefLabel "parkerenToegestaan"@nl, "parkingAllowed"@en;
+  skos:definition "Parkeren is hier toegestaan, soms onder voorwaarden."@nl, "Parking is allowed, sometimes conditionally."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fbda1fe6-240f-4321-b471-543db781fb4a> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fbda1fe6-240f-4321-b471-543db781fb4a>;
+  skos:prefLabel "3EnHoger"@nl, "3AndHigher"@en;
+  skos:definition "Waarde voor voertuigen met emissieklasse drie en hoger."@nl, "Value for vehicles with emission class three and higher."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/867a923b-2962-42ee-8830-8e19c771ff2f> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/867a923b-2962-42ee-8830-8e19c771ff2f>;
+  skos:prefLabel "5AndHigher"@en, "5EnHoger"@nl;
+  skos:definition "Value for vehicles with emission class five and higher."@en, "Waarde voor voertuigen met emissieklasse vijf en hoger."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0315377a-1b11-4378-a273-f38eee3c6040> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0315377a-1b11-4378-a273-f38eee3c6040>;
+  skos:prefLabel "motorfiets"@nl, "motorcycle"@en;
+  skos:definition "Motor vehicle on two wheels, with or without a sidecar or trailer. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Motorvoertuig op twee wielen al dan niet met zijspan- of aanhangwagen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3984670a-7167-4580-a9b0-b310e2a0b04c> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3984670a-7167-4580-a9b0-b310e2a0b04c>;
+  skos:prefLabel "carpool"@en, "carpool"@nl;
+  skos:definition "For vehicles used by multiple people traveling together to a shared destination."@en,
+    "Voor voertuigen die worden gebruikt door meerdere personen die samen reizen naar een gedeelde bestemming."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7f55f785-9e2f-4faa-9d60-b49c78b2205c> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7f55f785-9e2f-4faa-9d60-b49c78b2205c>;
+  skos:prefLabel "dienstenVoorSpoedeisendeMedischeHulpverlening"@nl, "emergencyMedicalServices"@en;
+  skos:definition "The Regional Ambulance Services designated under Article 4, paragraph 2, of the Dutch Ambulance Care Facilities Act, as well as other emergency services engaged in providing emergency medical assistance on behalf of a Regional Ambulance Service as referred to in Article 4, paragraph 2, of the Ambulance Care Facilities Act.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "De op grond van artikel 4, tweede lid, van de Wet ambulancezorgvoorzieningen aangewezen Regionale Ambulancevoorzieningen, alsmede andere hulpverleningsdiensten die zich in opdracht van een Regionale Ambulancevoorziening als bedoeld in artikel 4, tweede lid, van de Wet ambulancezorgvoorzieningen bezig houden met het verlenen van spoedeisende medische hulpverlening. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/2f099dcd-34b8-4471-a101-a82c31f9ee26> a
+    <https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0>, <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/2f099dcd-34b8-4471-a101-a82c31f9ee26>;
+  skos:prefLabel "Heen"@nl, "Outbound"@en;
+  skos:definition "Heen"@nl, "Outbound"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e08f5e59-f104-42bc-a87b-7064b00ebcc3> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e08f5e59-f104-42bc-a87b-7064b00ebcc3>;
+  skos:prefLabel "scooter"@en, "scooter"@nl;
+  skos:definition "\"Een gemotoriseerd tweewielig voertuig met een doorstapframe, een vlakke voetplaat en kleine wielen, ontworpen voor comfortabele en efficiënte stedelijke mobiliteit. Scooters kunnen zowel op benzine als elektrisch aangedreven zijn en vallen afhankelijk van hun snelheid en vermogen in de categorie bromfiets, snorfiets of motorfiets.\", \"A motorized two-wheeled vehicle with a step-through frame, a flat footboard, and small wheels, designed for comfortable and efficient urban mobility. Scooters can be powered by either petrol or electricity and fall into the category of moped, light moped, or motorcycle depending on their speed and power.\""@en,
+    "\"Een gemotoriseerd tweewielig voertuig met een doorstapframe, een vlakke voetplaat en kleine wielen, ontworpen voor comfortabele en efficiënte stedelijke mobiliteit. Scooters kunnen zowel op benzine als elektrisch aangedreven zijn en vallen afhankelijk van hun snelheid en vermogen in de categorie bromfiets, snorfiets of motorfiets.\", \"A motorized two-wheeled vehicle with a step-through frame, a flat footboard, and small wheels, designed for comfortable and efficient urban mobility. Scooters can be powered by either petrol or electricity and fall into the category of moped, light moped, or motorcycle depending on their speed and power.\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3179a177-faaa-4e2c-9d26-2ada0d0701de> a
+    <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3179a177-faaa-4e2c-9d26-2ada0d0701de>;
+  skos:prefLabel "Paal"@nl, "Pole"@en;
+  skos:definition "Paal"@nl, "Pole"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/93e83d4d-0834-4f05-a07a-1cfa0a741dfb> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/93e83d4d-0834-4f05-a07a-1cfa0a741dfb>;
+  skos:prefLabel "vehicleCarryingCertainHazardousMaterials"@en, "voertuigMetBepaaldeGevaarlijkeStoffen"@nl;
+  skos:definition "A vehicle transporting hazardous materials subject to specific traffic regulations."@en,
+    "Een voertuig dat gevaarlijke stoffen vervoert waarvoor specifieke verkeersmaatregelen gelden."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c0a4b5d4-9e1d-4f2b-b154-bb67a1e72dbe> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c0a4b5d4-9e1d-4f2b-b154-bb67a1e72dbe>;
+  skos:prefLabel "ZeroEmission"@en, "Nuluitstoot"@nl;
+  skos:definition "Waarde voor voertuigen met nul emissie."@nl, "Value for vehicles with zero emission."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3063c86a-7cf6-4d73-9cb8-f4d5b114de48> a
+    <https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0>, <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3063c86a-7cf6-4d73-9cb8-f4d5b114de48>;
+  skos:prefLabel "Return"@en, "Terug"@nl;
+  skos:definition "Return"@en, "Terug"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/8070e825-0493-4e3c-a5a7-2f387b328999> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/8070e825-0493-4e3c-a5a7-2f387b328999>;
+  skos:prefLabel "bedrijfsauto"@nl, "companyCar"@en;
+  skos:definition "Commercial vehicle as referred to in Article 1.1 of the Dutch Vehicle Regulation. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Bedrijfsauto als bedoeld in artikel 1.1 van de Regeling voertuigen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/46849bbe-e979-4f42-95ad-7fed20934c2c> a
+    <https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/46849bbe-e979-4f42-95ad-7fed20934c2c>;
+  skos:prefLabel "openRoad"@en, "openWeg"@nl;
+  skos:definition "Waarde die aangeeft dat de weg open is voor verkeer."@nl, "Value indicating the road is open for traffic."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/90ae1fa8-f8ca-4074-b094-0397b3fb5b55> a
+    <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/90ae1fa8-f8ca-4074-b094-0397b3fb5b55>;
+  skos:prefLabel "Planned"@en, "Gepland"@nl;
+  skos:definition "Planned"@en, "Gepland"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/aaad5839-589a-472e-8cc3-97574459f68d> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/aaad5839-589a-472e-8cc3-97574459f68d>;
+  skos:prefLabel "voorrangskruispunt"@nl, "priorityJunction"@en;
+  skos:definition "A junction with two minor roads."@en, "Een kruising met twee ondergeschikte wegen."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/da7a150a-5392-4c1c-894e-ffd10b5a2515> a
+    <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/da7a150a-5392-4c1c-894e-ffd10b5a2515>;
+  skos:prefLabel "looseGravel"@en, "losseStenen"@nl;
+  skos:definition "Een wegdek met daarop losliggende stenen."@nl, "A road surface with loose gravel."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/151a124c-82e3-40e2-84cd-51dbdfe095ca> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/151a124c-82e3-40e2-84cd-51dbdfe095ca>;
+  skos:prefLabel "politievoertuig"@nl, "policeVehicle"@en;
+  skos:definition "Voertuig van de politie."@nl, "A vehicle belonging to the police."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/383b500a-e996-46d5-9558-af13062d9473> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/383b500a-e996-46d5-9558-af13062d9473>;
+  skos:prefLabel "overwegMeerSporen"@nl, "railwayCrossingMultipleTracks"@en;
+  skos:definition "Gelijkvloerse spoorwegkruising met twee of meer sporen."@nl, "Level crossing with two or more tracks."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/eba692ed-ae1c-415f-a54f-902d0a3580ae> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/eba692ed-ae1c-415f-a54f-902d0a3580ae>;
+  skos:prefLabel "levelCrossingWithGate"@en, "overwegMetSlagboom"@nl;
+  skos:definition "Level crossing with barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising met slagboom."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/32b19a42-1145-4b62-af1f-dfb72f7d6d1c> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/32b19a42-1145-4b62-af1f-dfb72f7d6d1c>;
+  skos:prefLabel "trainTaxi"@en, "treintaxi"@nl;
+  skos:definition "A shared taxi that transports train passengers to and from the station at a fixed fare."@en,
+    "Een deeltaxi die treinreizigers van en naar het station vervoert tegen een vaste ritprijs."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e0356544-f907-45b1-a5d0-8389aafdbc78> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e0356544-f907-45b1-a5d0-8389aafdbc78>;
+  skos:prefLabel "twoWheelsOnTheSidewalk"@en, "tweeWielenOpHetTrottoir"@nl;
+  skos:definition "Parking with two wheels on the pavement."@en, "Parkeren met twee wielen op het trottoir."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6fe4b98e-a119-4ad6-af20-2dce086b4ddc> a
+    <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6fe4b98e-a119-4ad6-af20-2dce086b4ddc>;
+  skos:prefLabel "Rechtdoor"@nl, "StraightAhead"@en;
+  skos:definition "Rechtdoor gaan"@nl, "Go straight ahead"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/2cac6972-cbc4-42c3-9af5-178eab3cebff> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/2cac6972-cbc4-42c3-9af5-178eab3cebff>;
+  skos:prefLabel "lijnbus"@nl, "publicServiceVehicle"@en;
+  skos:definition "Motor vehicle used for providing public transport as defined in the Dutch Passenger Transport Act 2000. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Motorvoertuig, gebezigd voor het verrichten van openbaar vervoer in de zin van de Wet personenvervoer 2000. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f0592ede-4ebe-423b-810a-1613a8a8ee31> a
+    <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/f0592ede-4ebe-423b-810a-1613a8a8ee31>;
+  skos:prefLabel "Drempel"@nl, "SpeedBump"@en;
+  skos:definition "Verkeersdrempel"@nl, "Speed bump"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3953f3ff-1056-4c46-90ca-67647767a0e0> a
+    <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3953f3ff-1056-4c46-90ca-67647767a0e0>;
+  skos:prefLabel "Voorrangsweg"@nl, "PriorityRoad"@en;
+  skos:definition "Waarde die aangeeft dat het verkeer op de weg voorrang heeft op alle kruispunten."@nl,
+    "Value indicating the traffic on the road has priority on all crossings."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/305102dc-b7fe-4f9b-8656-21d70456abf3> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/305102dc-b7fe-4f9b-8656-21d70456abf3>;
+  skos:prefLabel "bestelauto"@nl, "deliveryVan"@en;
+  skos:definition "Motor vehicle designed for the transport of goods, with a maximum authorized mass not exceeding 3500 kg.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Motorvoertuig, bestemd voor het vervoer van goederen, waarvan de toegestane maximum massa niet meer bedraagt dan 3500 kg. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/a2045d78-318a-4af1-9620-692a3fc897c6> a
+    <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852>;
+  rdfs:seeAlso <https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>,
+    <https://data.crow.nl/imv/term/a2045d78-318a-4af1-9620-692a3fc897c6>;
+  skos:prefLabel "autosnelweg"@nl, "motorway"@en;
+  skos:definition "Weg, aangeduid door bord G1 van bijlage I; langs autosnelwegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autosnelweg uit."@nl,
+    "Road indicated by sign G1 from Annex I; parking areas, petrol stations, and bus stops located along motorways are not considered part of the motorway."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/274212d0-a248-48ee-b217-9b16e6856018> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/274212d0-a248-48ee-b217-9b16e6856018>;
+  skos:prefLabel "4AndHigher"@en, "4EnHoger"@nl;
+  skos:definition "Value for vehicles with emission class four and higher."@en, "Waarde voor voertuigen met emissieklasse vier en hoger."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/81f51843-21f3-471a-9c4a-fb1f4f2d8fd0> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/81f51843-21f3-471a-9c4a-fb1f4f2d8fd0>;
+  skos:prefLabel "wagen"@nl, "cart"@en;
+  skos:definition "Een voertuig zonder motor dat wordt voortbewogen door spierkracht (zoals een handkar), door dieren wordt getrokken (zoals een paard-en-wagen), of anderszins niet zelfstandig gemotoriseerd is."@nl,
+    "a non-motorized vehicle that is either propelled by human power (e.g., a handcart), pulled by animals (e.g., a horse-drawn cart), or otherwise not motorized."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f64490d6-9750-4e82-953e-452c0ca7f90c> a
+    <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/f64490d6-9750-4e82-953e-452c0ca7f90c>;
+  skos:prefLabel "VoorrangVerlenen"@nl, "SecondaryRoad"@en;
+  skos:definition "Value indicating the traffic on a road has to give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/a9ca135b-7b70-4eef-84ba-b65c0e9baf80> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/a9ca135b-7b70-4eef-84ba-b65c0e9baf80>;
+  skos:prefLabel "motorvoertuigOpMeerDanTweeWielen"@nl, "motorVehicleOnMoreThanTwoWheels"@en;
+  skos:definition "Motorvoertuig met meer dan twee wielen."@nl, "Motorised vehicle with more than two wheels."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/8932d1fa-640a-43d9-883d-aef43884a627> a
+    <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/8932d1fa-640a-43d9-883d-aef43884a627>;
+  skos:prefLabel "buitenBebouwdeKom"@nl, "outsiteBuiltUpAreas"@en;
+  skos:definition "The area outside the boundary signs of a town or village where the density of buildings is lower."@en,
+    "Het gebied buiten de komborden van een stad of dorp waar de concentratie aan bebouwing lager is."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/1c948cd2-6e3d-4a5a-ac2b-d904cf48d964> a
+    <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/1c948cd2-6e3d-4a5a-ac2b-d904cf48d964>;
+  skos:prefLabel "schoolZone"@en, "schoolzone"@nl;
+  skos:definition "Area with a school were a Traffic Regulation applies."@en, "Gebied met een school waarin een Verkeersmaatregel geldt."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c6067ff6-48c1-44e1-9e62-2d1a91064b6f> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c6067ff6-48c1-44e1-9e62-2d1a91064b6f>;
+  skos:prefLabel "rotonde"@nl, "turnabout"@en;
+  skos:definition "A circular traffic arrangement where multiple roads converge, with a mandatory direction of travel."@en,
+    "Een cirkelvormige verkeerssituatie waar meerdere wegen op uitkomen, met een verplichte rijrichting."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/107e4953-e264-4fb0-8161-ad6d7fe6183e> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/107e4953-e264-4fb0-8161-ad6d7fe6183e>;
+  skos:prefLabel "tram"@nl, "tram"@en;
+  skos:definition "A vehicle that runs on rails, like a train or a metro. Often, the rails are embedded in public roads, allowing the tram to operate amidst other traffic. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Een voertuig dat rijdt op rails, net als een trein of een metro. Veelal liggen de rails in de openbare weg zodat de tram tussen het andere verkeer rijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9b28aac1-fd3e-4110-b806-7d4770a52c7d> a
+    <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9b28aac1-fd3e-4110-b806-7d4770a52c7d>;
+  skos:prefLabel "parkeerzone"@nl, "parkingZone"@en;
+  skos:definition "Gebied waarin specifieke regels gelden voor parkeren."@nl, "Area were specific parking rules apply."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/552deed2-940d-4ff3-8dfa-8513338722b7> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/552deed2-940d-4ff3-8dfa-8513338722b7>;
+  skos:prefLabel "passengerLoadingAndUnloading"@en, "kissAndRide"@nl;
+  skos:definition "On the condition that it is used to pick up or set down passengers."@en,
+    "De parkeermaatregel geldt onder voorwaarde dat de plek gebruikt wordt voor het in- en uitstappen van passagiers."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/26bf1671-f17c-49a6-aa51-d8be411fe4ee> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/26bf1671-f17c-49a6-aa51-d8be411fe4ee>;
+  skos:prefLabel "tramkruising"@nl, "tramCrossing"@en;
+  skos:definition "A crossing with tram traffic."@en, "Een kruising met tramverkeer."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/76622f0f-0199-4724-aca3-9b5ec6c4dd65> a
+    <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/76622f0f-0199-4724-aca3-9b5ec6c4dd65>;
+  skos:prefLabel "Placed"@en, "Geplaatst"@nl;
+  skos:definition "Placed"@en, "Geplaatst"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/5c37d862-b994-4a27-939c-0a7668d41153> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/5c37d862-b994-4a27-939c-0a7668d41153>;
+  skos:prefLabel "motorVehicleWithLowSpeed"@en, "motorrijtuigMetBeperkeSnelheid"@nl;
+  skos:definition "Een motorrijtuig dat is ontworpen en gebouwd voor een beperkte maximumsnelheid, doorgaans gebruikt voor specifieke doeleinden zoals landbouw of industrie."@nl,
+    "A motor vehicle designed and constructed for a limited maximum speed, typically used for specific purposes such as agriculture or industry."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/240905b5-ab0d-47e8-889a-00997f6dd7ee> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/240905b5-ab0d-47e8-889a-00997f6dd7ee>;
+  skos:prefLabel "geleiderVanRij-OfTrekdierenOfVee"@nl, "leaderOfRidingOrDraftAnimalsOrLivestock"@en;
+  skos:definition "Leaders of riding or draft animals or livestock"@en, "Geleider van rij- of trekdieren of vee."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fe081119-4ec0-4630-9155-b4dbd154ed6d> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fe081119-4ec0-4630-9155-b4dbd154ed6d>;
+  skos:prefLabel "crossingWithTrafficLights"@en, "kruisingMetVerkeerslichten"@nl;
+  skos:definition "Een wegknooppunt waar het verkeer wordt geregeld door middel van stoplichten."@nl,
+    "An intersection where traffic flow is controlled by signal lights."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3837dd00-380f-49a1-ae6c-dedbbcc7ccf4> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3837dd00-380f-49a1-ae6c-dedbbcc7ccf4>;
+  skos:prefLabel "disabledVehicleWithoutMotor"@en, "gehandicaptenvoertuigZonderMotor"@nl;
+  skos:definition "A vehicle without motor designed for the transport of a disabled person, not exceeding 1.10 meters in width, either without a motor or equipped with a motor whose design limits the maximum speed to no more than 45 km/h, and is not a moped.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Voertuig zonder motor dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en niet is uitgerust met een motor, dan wel is uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km per uur bedraagt, en geen bromfiets is. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/96b8e120-c042-4e69-ac94-4f0dd11416e2> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/96b8e120-c042-4e69-ac94-4f0dd11416e2>;
+  skos:prefLabel "animalAmbulance."@en, "dierenambulance"@nl;
+  skos:definition "Motorvoertuig, ingericht en bestemd om te worden gebruikt voor het vervoer van zieke en gewonde dieren. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor vehicle designed and intended for the transport of sick and injured animals.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/796ed66d-751a-4821-bd8b-dcb2ef65c03a> a
+    <https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/796ed66d-751a-4821-bd8b-dcb2ef65c03a>;
+  skos:prefLabel "parkerenVerboden"@nl, "parkingProhibited"@en;
+  skos:definition "Drivers should stop no longer than a specified amount of time, except for loading and unloading or to set down or pick up passengers."@en,
+    "Voertuigen mogen niet langer stilstaan dan nodig voor het in- en uitladen van goederen of in- en uitstappen van passagiers"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/69a073ae-3085-45e4-9de8-7024faa45559> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/69a073ae-3085-45e4-9de8-7024faa45559>;
+  skos:prefLabel "personenauto"@nl, "passengerCar"@en;
+  skos:definition "Gemotoriseerd voertuig bestemd voor het vervoer van personen en hun bagage."@nl,
+    "Motor vehicle intended for the transportation of passengers and their luggage."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/665ee167-2b14-48b8-b859-c903a60d775a> a
+    <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/665ee167-2b14-48b8-b859-c903a60d775a>;
+  skos:prefLabel "Linksaf"@nl, "GoLeft"@en;
+  skos:definition "Linksaf slaan of links het bord passeren"@nl, "Turn left or pass the sign on the left"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7f102232-cc45-49a7-8ae7-5b8885e9480b> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7f102232-cc45-49a7-8ae7-5b8885e9480b>;
+  skos:prefLabel "vrachtauto"@nl, "lorry"@en;
+  skos:definition "Motorvoertuig, niet ingericht voor het vervoer van personen, waarvan de toegestane maximum massa meer bedraagt dan 3500 kg. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Motor vehicle, not designed for the transport of persons, with a maximum authorized mass exceeding 3,500 kg. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/148b5b9c-cafc-4403-8d31-5936d093e4b7> a
+    <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/148b5b9c-cafc-4403-8d31-5936d093e4b7>;
+  skos:prefLabel "Bollard"@en, "Poller"@nl;
+  skos:definition "Bollard"@en, "Poller"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/> a owl:Ontology;
+  skos:prefLabel "IMV Domeinwaarden";
+  rdfs:comment "";
+  owl:versionInfo "v1_0_2";
+  owl:imports <https://w3id.org/nen2660/def#>;
+  dcterms:date "2025-03-26936" .
+
+<https://data.crow.nl/imv/id/domeinwaarden/dfb32c52-e1c6-410f-9971-12f4e57ad5dd> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/dfb32c52-e1c6-410f-9971-12f4e57ad5dd>;
+  skos:prefLabel "priorityJunctionLeft"@en, "voorrangskruispuntLinks"@nl;
+  skos:definition "A junction with a minor road on the left."@en, "Een kruising met een ondergeschikte weg van links."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/443b0c51-04da-4c0a-8f32-20ec301531ba> a
+    <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/443b0c51-04da-4c0a-8f32-20ec301531ba>;
+  skos:prefLabel "slechtWegdek"@nl, "unevenRoad"@en;
+  skos:definition "Een wegdek dat beschadigd, ongelijkmatig of versleten is, waardoor rijden minder comfortabel en mogelijk gevaarlijk kan zijn."@nl,
+    "A road surface that is damaged, uneven, or worn out, making driving less smooth and potentially hazardous."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/482035ba-68bc-4eab-a976-35a8ac657421> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/482035ba-68bc-4eab-a976-35a8ac657421>;
+  skos:prefLabel "ambulance"@nl, "ambulance"@en;
+  skos:definition "A motor vehicle equipped for providing care to and transporting the sick and injured, as referred to in Article 1, paragraph 1, of the Ambulance Care Facilities Act. "@en,
+    "Een voor het verlenen van zorg aan en vervoer van zieken en gewonden ingericht motorvoertuig als bedoeld in Artikel 1 Wet ambulancezorgvoorzieningen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/d9ab3d48-90ee-4d72-9665-5822d409c1c3> a
+    <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/d9ab3d48-90ee-4d72-9665-5822d409c1c3>;
+  skos:prefLabel "parkAndRide"@en, "parkAndRide"@nl;
+  skos:definition "Voor parkeren en verder reizen met openbaar vervoer."@nl, "For parking and continuing the journey by public transport."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/11f4bbdd-ad46-44ad-9c0c-c6a96eb5539f> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/11f4bbdd-ad46-44ad-9c0c-c6a96eb5539f>;
+  skos:prefLabel "motorvoertuigMetAanhangwagen"@nl, "motorVehicleWithTrailer"@en;
+  skos:definition "Een voertuig dat door een voertuig worden voortbewogen of kennelijk bestemd is om aldus te worden voortbewogen, alsmede opleggers. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A vehicle that is propelled by another vehicle or is clearly intended to be propelled in such a manner, including semi-trailers. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/25a8b375-8004-4361-b378-e15d4ec8e2cb> a
+    <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/25a8b375-8004-4361-b378-e15d4ec8e2cb>;
+  skos:prefLabel "6EnHoger"@nl, "6AndHigher"@en;
+  skos:definition "Value for vehicles with emission class six and higher."@en, "Waarde voor voertuigen met emissieklasse zes en hoger."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/a154937f-12d3-480e-b3fa-99180e45628b> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>, <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/a154937f-12d3-480e-b3fa-99180e45628b>;
+  skos:prefLabel "vee"@nl, "livestock"@en;
+  skos:definition "Vee"@nl, "Livestock"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/874ade5b-144b-4a2e-b07f-18409c851c69> a
+    <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/874ade5b-144b-4a2e-b07f-18409c851c69>;
+  skos:prefLabel "Wildrooster"@nl, "AnimalGrid"@en;
+  skos:definition "Wildrooster"@nl, "Animal grid"@en .
+
+<https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0-list-0>;
+  sh:in <https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0-list-0> .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-0>;
+  sh:in <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-0> .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-0>;
+  sh:in <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-0> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-0>;
+  sh:in <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-0> .
+
+<https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-0>;
+  sh:in <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-0> .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-0>;
+  sh:in <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-0> .
+
+<https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-0>;
+  sh:in <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-0> .
+
+<https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-0>;
+  sh:in <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-0> .
+
+<https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-0>;
+  sh:in <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-0> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-0>;
+  sh:in <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-0> .
+
+<https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-0>;
+  sh:in <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-0> .
+
+<https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a-list-0>;
+  sh:in <https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a-list-0> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-0>;
+  sh:in <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-0> .
+
+<https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-0>;
+  sh:in <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-0> .
+
+<https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218-list-0>;
+  sh:in <https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218-list-0> .
+
+<https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b-list-0>;
+  sh:in <https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b-list-0> .
+
+<https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53-list-0>;
+  sh:in <https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53-list-0> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-0>;
+  sh:in <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-0> .
+
+<https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-0>;
+  sh:in <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-0> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-0>;
+  sh:in <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-0> .
+
+<https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7abbe6ee-0264-44fc-a962-29c34d3726d0>;
+  rdf:rest <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-2> .
+
+<https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b1a0244c-8945-46fb-8cd6-1a9973150142>;
+  rdf:rest <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-3> .
+
+<https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/11ed3e58-5b1b-4987-9573-8117f91c1691>;
+  rdf:rest <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-1> .
+
+<https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/19d49f97-a82c-4712-8284-8b885ac618c5>;
+  rdf:rest <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-2> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-20> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/5c37d862-b994-4a27-939c-0a7668d41153>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-21> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-21> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6041578e-dda2-40b1-a6d6-62f15b156471>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-22> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-41> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/dcf2c3ef-6892-419f-bfb0-ae9025f80ad4>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-42> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-42> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e08f5e59-f104-42bc-a87b-7064b00ebcc3>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-43> .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3972342d-0c33-45cc-94d3-46109fc97d8e>;
+  rdf:rest <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-1> .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/77a4c459-c3ff-42c1-95fe-c1ec61be7192>;
+  rdf:rest <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-2> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b40cc04b-9ea7-4ea3-b3ed-e0c2863b51ce>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-10> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c6067ff6-48c1-44e1-9e62-2d1a91064b6f>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-11> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-14> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/faf2633d-4fd1-4416-8d7e-fe3abf17e272>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-15> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/240905b5-ab0d-47e8-889a-00997f6dd7ee>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-7> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/29ea23be-b691-44e6-a867-c27421fc79bb>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-8> .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e71e5504-71da-4509-aab1-163e1bea4609>;
+  rdf:rest <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-3> .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f94a8004-7d77-4f17-8b8c-dfb37928a104>;
+  rdf:rest <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-4> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-12> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3837dd00-380f-49a1-ae6c-dedbbcc7ccf4>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-13> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-13> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/44609fb4-3dcd-49eb-a01a-b4376fed0207>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-14> .
+
+<https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/528c0cc5-a29d-4255-86a0-60e4d2c5a5b9>;
+  rdf:rest <https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b-list-1> .
+
+<https://data.crow.nl/imv/def/b4983e45-923b-4dae-90cc-e84142fd813b-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7e5179d1-c460-4597-ad32-3f881d9a1489>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-33> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/980d58a9-18bc-453c-9eb7-609d02813faa>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-34> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-34> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a154937f-12d3-480e-b3fa-99180e45628b>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-35> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fd875d97-eeb3-44da-8fb2-8e3a5f9ca9af>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fc0c86b5-548a-4191-9693-b97cbc28d6c0>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c5347f30-aba7-4d87-b8ab-84f396336f82>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/26bf1671-f17c-49a6-aa51-d8be411fe4ee>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-2> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/315f424e-1b24-446b-b93a-758b68ae0a68>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-3> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-25> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7f102232-cc45-49a7-8ae7-5b8885e9480b>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-26> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-26> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7f55f785-9e2f-4faa-9d60-b49c78b2205c>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-27> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0e9b0243-7bd2-4b83-9227-060b13b08f06>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-1> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3984670a-7167-4580-a9b0-b310e2a0b04c>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-2> .
+
+<https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/33344b39-8e05-4b00-8be6-e03539a6e935>;
+  rdf:rest <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-1> .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/867a923b-2962-42ee-8830-8e19c771ff2f>;
+  rdf:rest <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-4> .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c0a4b5d4-9e1d-4f2b-b154-bb67a1e72dbe>;
+  rdf:rest <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-5> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-17> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/5434ae00-789d-4d6b-a958-59a751378858>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-18> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-18> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/56715a83-7dbf-49c4-aebb-f28dbf743848>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-19> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-38> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c71980c7-64c5-4550-9c92-4cb50bafe456>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-39> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-39> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/d050a5bb-56a7-4a13-ad2c-3150ca049730>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-40> .
+
+<https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f4778a0d-dab4-444a-bd8b-4a67d5ae61a8>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a2d94fb3-de7c-47f9-9119-80bfd49a41eb>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-7> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/aaad5839-589a-472e-8cc3-97574459f68d>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-8> .
+
+<https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/76622f0f-0199-4724-aca3-9b5ec6c4dd65>;
+  rdf:rest <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-2> .
+
+<https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/90ae1fa8-f8ca-4074-b094-0397b3fb5b55>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/cdd8a1da-2509-4a4e-a657-b679299ac6af>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-12> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-12> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/dfb32c52-e1c6-410f-9971-12f4e57ad5dd>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-13> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/11f4bbdd-ad46-44ad-9c0c-c6a96eb5539f>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-4> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/151a124c-82e3-40e2-84cd-51dbdfe095ca>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-5> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-30> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/93e83d4d-0834-4f05-a07a-1cfa0a741dfb>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-31> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-31> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/95ed9c48-1dcf-4d93-8108-d4cf408a426e>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-32> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3179a177-faaa-4e2c-9d26-2ada0d0701de>;
+  rdf:rest <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-3> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/874ade5b-144b-4a2e-b07f-18409c851c69>;
+  rdf:rest <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-4> .
+
+<https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/665ee167-2b14-48b8-b859-c903a60d775a>;
+  rdf:rest <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-2> .
+
+<https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6fe4b98e-a119-4ad6-af20-2dce086b4ddc>;
+  rdf:rest <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-3> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/d9ab3d48-90ee-4d72-9665-5822d409c1c3>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-6> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e0356544-f907-45b1-a5d0-8389aafdbc78>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-7> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7e0f44ba-6457-444f-8d8b-776dda30ba61>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-4> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9f4a16aa-ad1a-4b44-bc02-b83ecadcba6b>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-5> .
+
+<https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/da7a150a-5392-4c1c-894e-ffd10b5a2515>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/d57384b4-ab02-4b88-98c1-69010d2315b9>;
+  rdf:rest <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-2> .
+
+<https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/aeef96c3-41ea-4138-abf5-d38a4b48f1ef>;
+  rdf:rest <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-3> .
+
+<https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e46f4f74-3a99-493d-b681-660998a0644c>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3e340ae4-f972-45ab-a045-327a95a43439>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-22> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/69a073ae-3085-45e4-9de8-7024faa45559>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-23> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-23> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6a6a528c-7217-4e73-84da-54c139a610a5>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-24> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-43> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f6bd2ef9-c25e-4c43-89de-3a015df49e9d>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/8932d1fa-640a-43d9-883d-aef43884a627>;
+  rdf:rest <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-3> .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a2045d78-318a-4af1-9620-692a3fc897c6>;
+  rdf:rest <https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-4> .
+
+<https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/2f099dcd-34b8-4471-a101-a82c31f9ee26>;
+  rdf:rest <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-1> .
+
+<https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3063c86a-7cf6-4d73-9cb8-f4d5b114de48>;
+  rdf:rest <https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-2> .
+
+<https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3063c86a-7cf6-4d73-9cb8-f4d5b114de48>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fe56cf26-bc6f-47d5-8260-1bed0952dfc9>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/25a8b375-8004-4361-b378-e15d4ec8e2cb>;
+  rdf:rest <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-1> .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/274212d0-a248-48ee-b217-9b16e6856018>;
+  rdf:rest <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-2> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/2cac6972-cbc4-42c3-9af5-178eab3cebff>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-9> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/305102dc-b7fe-4f9b-8656-21d70456abf3>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-10> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-14> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/482035ba-68bc-4eab-a976-35a8ac657421>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-15> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-15> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/524fea79-13c1-4e62-8f42-849fe083971e>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-16> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-35> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a9ca135b-7b70-4eef-84ba-b65c0e9baf80>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-36> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-36> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b5ec0905-605e-4f17-a895-27fcc60addc7>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-37> .
+
+<https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3953f3ff-1056-4c46-90ca-67647767a0e0>;
+  rdf:rest <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-2> .
+
+<https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c2838a56-4f1b-4f67-8d1d-6b07bb354672>;
+  rdf:rest <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-3> .
+
+<https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7332c18c-f02c-4d77-b868-63aab1bbc365>;
+  rdf:rest <https://data.crow.nl/imv/def/48524ac8-a15a-4fee-8f85-1ca829a6b250-list-1> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/383b500a-e996-46d5-9558-af13062d9473>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-4> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/5ce08362-923f-41fc-83ef-6ed1c22de1d1>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-5> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0315377a-1b11-4378-a273-f38eee3c6040>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-1> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/107e4953-e264-4fb0-8161-ad6d7fe6183e>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-2> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-27> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/8070e825-0493-4e3c-a5a7-2f387b328999>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-28> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-28> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/81f51843-21f3-471a-9c4a-fb1f4f2d8fd0>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-29> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/423d404c-7687-4005-8ac2-9c88e57eba1e>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-3> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/552deed2-940d-4ff3-8dfa-8513338722b7>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-4> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/08f12a84-4038-4a1b-9cbb-795509c25029>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-1> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/17a3876d-7fed-4ac1-907a-472c7793c780>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-2> .
+
+<https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/443b0c51-04da-4c0a-8f32-20ec301531ba>;
+  rdf:rest <https://data.crow.nl/imv/def/99b046a4-58a6-4811-b4b3-e84c3d564637-list-1> .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fbda1fe6-240f-4321-b471-543db781fb4a>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-19> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/57e1dfc7-841a-4a92-818d-638a6f3702cb>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-20> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-40> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/d7d29b25-5129-49a7-8bdb-3e02be144dbe>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-41> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0b9c583a-c9b1-4db5-9568-92c87a96e405>;
+  rdf:rest <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-1> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/aca01d9b-845e-4da4-b8b9-06f0017fcc60>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-9> .
+
+<https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/2f099dcd-34b8-4471-a101-a82c31f9ee26>;
+  rdf:rest <https://data.crow.nl/imv/def/f204ec10-64f4-42b1-9a50-a2dd4476eae0-list-1> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-13> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/eba692ed-ae1c-415f-a54f-902d0a3580ae>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-14> .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9b28aac1-fd3e-4110-b806-7d4770a52c7d>;
+  rdf:rest <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-2> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/21c921b9-0c4e-4ded-bb9b-42d6ca03da88>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-6> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/37c3422e-b94f-4efc-99a4-f2d16cdf0797>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-12> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-32> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/96b8e120-c042-4e69-ac94-4f0dd11416e2>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-33> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f0592ede-4ebe-423b-810a-1613a8a8ee31>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7d9f877c-eda7-40d8-9264-02edf26ec4bf>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/eb84e1cb-0aea-4418-89d3-9cde7df52c54>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-6> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e3397306-1bbd-4549-be3b-9303f0fde42c>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-8> .
+
+<https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/46849bbe-e979-4f42-95ad-7fed20934c2c>;
+  rdf:rest <https://data.crow.nl/imv/def/3b70b7dc-0c42-43cb-877d-cc71c2ce0c4a-list-1> .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/00af4826-535d-4435-b56d-4efe139d59f3>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-1> .
+
+<https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fdec8658-09d6-4876-a5b4-d661b41a7edf>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/1c948cd2-6e3d-4a5a-ac2b-d904cf48d964>;
+  rdf:rest <https://data.crow.nl/imv/def/c7432241-50b9-4f23-9774-fe513d89e527-list-1> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-24> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/70013d6b-7671-4b19-bbf9-1342e1712e1a>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-25> .
+
+<https://data.crow.nl/imv/def/637e10f2-854c-4854-b075-3c86efc02852-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f4799f17-e34a-4b02-865e-ecf290c844f7>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/62bf5630-3fd2-4a56-a755-aaff485048a5-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9eb55747-ded5-4ddd-972c-c247d34bdd3b>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3fe82a6c-a3ec-48c9-9946-70ceb1222281>;
+  rdf:rest <https://data.crow.nl/imv/def/bb14d912-f53e-42e5-a465-9efa85c5eda0-list-3> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-16> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/528ff047-c9d0-4e50-bb78-cabdacca2de5>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-17> .
+
+<https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/796ed66d-751a-4821-bd8b-dcb2ef65c03a>;
+  rdf:rest <https://data.crow.nl/imv/def/e5dbed0a-6eef-436d-b60c-85845f224218-list-1> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-37> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/bb88d6ad-5d9f-4ad4-8c99-f0df25ce162c>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-38> .
+
+<https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/f64490d6-9750-4e82-953e-452c0ca7f90c>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/796754a8-f02e-4eb1-8e89-183ef284fb11>;
+  rdf:rest <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-6> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/1199081f-c7d3-408a-93e6-1fbf402487f9>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-3> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-29> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/89600d0d-1ea3-4c4b-a371-6c6f8b0b3dcc>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-30> .
+
+<https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/148b5b9c-cafc-4403-8d31-5936d093e4b7>;
+  rdf:rest <https://data.crow.nl/imv/def/bc2f08ea-6a88-4574-9909-bfeef625b0a3-list-2> .
+
+<https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0b78145c-96ad-4d99-9a84-2d479e04fb6d>;
+  rdf:rest <https://data.crow.nl/imv/def/e833f3fe-9deb-439d-8635-0dcf00da10d3-list-1> .
+
+<https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c212eaef-f49b-46d2-8764-b57578035f23>;
+  rdf:rest <https://data.crow.nl/imv/def/40d55044-551e-4d96-9e5b-bfa0715d67ea-list-5> .
+
+<https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/25dd7e06-8255-415e-b593-947e759581b3>;
+  rdf:rest <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2-list-3> .
+
+<https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/237993cf-0c33-4b76-98ee-089321d945c9>;
+  rdf:rest <https://data.crow.nl/imv/def/ae7eeec1-d9eb-4ec4-9f3d-8b0619cc7d53-list-1> .
+
+<https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/35a96d87-1e2e-4c02-a63d-c4a185235538>;
+  rdf:rest <https://data.crow.nl/imv/def/8c4fd73e-6a0a-4814-8ac3-2209d5b317ae-list-1> .
+
+<https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/32b19a42-1145-4b62-af1f-dfb72f7d6d1c>;
+  rdf:rest <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d-list-11> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/11ed3e58-5b1b-4987-9573-8117f91c1691> a
+    <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/11ed3e58-5b1b-4987-9573-8117f91c1691>;
+  skos:prefLabel "s-bochtLinks"@nl, "s-bendLeft"@en;
+  skos:definition "S-bocht(en), eerst naar links"@nl, "S-bend(s), first to the left"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b40cc04b-9ea7-4ea3-b3ed-e0c2863b51ce> a
+    <https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b40cc04b-9ea7-4ea3-b3ed-e0c2863b51ce>;
+  skos:prefLabel "Voorrangskruispunt"@nl, "PriorityJunction"@en;
+  skos:definition "A junction with two minor roads."@en, "Een kruising met twee ondergeschikte wegen."@nl .
+
+<https://data.crow.nl/imv/def/a709cfb1-a734-458b-85df-991c0f9f6a02-list-15> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fe081119-4ec0-4630-9155-b4dbd154ed6d>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fd875d97-eeb3-44da-8fb2-8e3a5f9ca9af> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fd875d97-eeb3-44da-8fb2-8e3a5f9ca9af>;
+  skos:prefLabel "ral8016"@en, "ral8016"@nl;
+  skos:definition "Bruin"@nl, "Brown"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/08f12a84-4038-4a1b-9cbb-795509c25029> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/08f12a84-4038-4a1b-9cbb-795509c25029>;
+  skos:prefLabel "ral3020"@en, "ral3020"@nl;
+  skos:definition "Rood"@nl, "Red"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/33344b39-8e05-4b00-8be6-e03539a6e935> a
+    <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/33344b39-8e05-4b00-8be6-e03539a6e935>;
+  skos:prefLabel "roadNarrowingRight"@en, "wegversmallingRechts"@nl;
+  skos:definition "Road narrowing on the right-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter rechterzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7e0f44ba-6457-444f-8d8b-776dda30ba61> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7e0f44ba-6457-444f-8d8b-776dda30ba61>;
+  skos:prefLabel "ral5017"@en, "ral5017"@nl;
+  skos:definition "Blauw"@nl, "Blue"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/aeef96c3-41ea-4138-abf5-d38a4b48f1ef> a
+    <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/aeef96c3-41ea-4138-abf5-d38a4b48f1ef>;
+  skos:prefLabel "leftBend"@en, "bochtNaarLinks"@nl;
+  skos:definition "Left bend"@en, "Bocht naar links"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/f6bd2ef9-c25e-4c43-89de-3a015df49e9d> a
+    <https://data.crow.nl/imv/def/c278c366-a5fa-4472-af3f-efa8aa80f99d>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/f6bd2ef9-c25e-4c43-89de-3a015df49e9d>;
+  skos:prefLabel "bosbouwtrekker"@nl, "forestryTraktor"@en;
+  skos:definition "Een voertuig dat speciaal is ontworpen voor gebruik in de bosbouw."@nl,
+    "A vehicle specifically designed for use in forestry."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/25dd7e06-8255-415e-b593-947e759581b3> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/25dd7e06-8255-415e-b593-947e759581b3>;
+  skos:prefLabel "ral9017"@en, "ral9017"@nl;
+  skos:definition "Zwart"@nl, "Black"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/19d49f97-a82c-4712-8284-8b885ac618c5> a
+    <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/19d49f97-a82c-4712-8284-8b885ac618c5>;
+  skos:prefLabel "rightBend"@en, "bochtNaarRechts"@nl;
+  skos:definition "Right bend"@en, "Bocht naar rechts"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/eb84e1cb-0aea-4418-89d3-9cde7df52c54> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/eb84e1cb-0aea-4418-89d3-9cde7df52c54>;
+  skos:prefLabel "ral6024"@en, "ral6024"@nl;
+  skos:definition "Fluoriserend groen"@nl, "Fluorescent green"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e46f4f74-3a99-493d-b681-660998a0644c> a
+    <https://data.crow.nl/imv/def/5da7342a-ca1b-4198-9832-4606bb647525>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e46f4f74-3a99-493d-b681-660998a0644c>;
+  skos:prefLabel "s-bendRight"@en, "s-bochtRechts"@nl;
+  skos:definition "S-bend(s), first to the right"@en, "S-bocht(en), eerst naar rechts"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fdec8658-09d6-4876-a5b4-d661b41a7edf> a
+    <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fdec8658-09d6-4876-a5b4-d661b41a7edf>;
+  skos:prefLabel "wegversmalling"@nl, "roadNarrowing"@en;
+  skos:definition "Symmetrische versmalling van de weg."@nl, "Symmetrical narrowing of the road."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9f4a16aa-ad1a-4b44-bc02-b83ecadcba6b> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9f4a16aa-ad1a-4b44-bc02-b83ecadcba6b>;
+  skos:prefLabel "ral9016"@en, "ral9016"@nl;
+  skos:definition "Wit"@nl, "White"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/17a3876d-7fed-4ac1-907a-472c7793c780> a
+    <https://data.crow.nl/imv/def/87d6547c-4bb9-4a51-bb7a-437f9035a1a2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/17a3876d-7fed-4ac1-907a-472c7793c780>;
+  skos:prefLabel "ral1023"@en, "ral1023"@nl;
+  skos:definition "Fluorescent yellow"@en, "Fluoriserend geel"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/d57384b4-ab02-4b88-98c1-69010d2315b9> a
+    <https://data.crow.nl/imv/def/8de13c7f-aece-4025-9d22-7e634c20ada2>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/d57384b4-ab02-4b88-98c1-69010d2315b9>;
+  skos:prefLabel "wegversmallingLinks"@nl, "roadNarrowingLeft"@en;
+  skos:definition "Road narrowing on the left-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter linkerzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-0>;
+  sh:in <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b7e1bb24-23d1-4768-b263-9d62b4a4cc4a> a
+    <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b7e1bb24-23d1-4768-b263-9d62b4a4cc4a>;
+  skos:prefLabel "maandag"@nl, "monday"@en;
+  skos:definition "Monday"@en, "Maandag"@nl .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-0>;
+  sh:in <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-0> .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-12> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c385c05d-c539-41c9-8472-0887cbcd4b1e>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-13> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c385c05d-c539-41c9-8472-0887cbcd4b1e> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c385c05d-c539-41c9-8472-0887cbcd4b1e>;
+  skos:prefLabel "rvv-voetganger"@nl, "rvv-pedestrian"@en;
+  skos:definition """\"Voetganger zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Pedestrian as represented by the pedestrian icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-13> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/ec6492af-5105-4c99-9c01-41c15139a907>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/1eb4f510-948f-42c1-8f2f-7c8fc5b8bfcf> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/1eb4f510-948f-42c1-8f2f-7c8fc5b8bfcf>;
+  skos:prefLabel "ongeval"@nl, "trafficAccident"@en;
+  skos:definition "Traffic accident"@en, "Ongeval"@nl .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-0>;
+  sh:in <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6d0fea54-f69e-42b6-bf44-f20b95f4990f> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6d0fea54-f69e-42b6-bf44-f20b95f4990f>;
+  skos:prefLabel "kinderen"@nl, "children"@en;
+  skos:definition "Kinderen"@nl, "Children"@en .
+
+<https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9758afd6-8759-4843-9707-1d427963d6fe>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9758afd6-8759-4843-9707-1d427963d6fe> a
+    <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9758afd6-8759-4843-9707-1d427963d6fe>;
+  skos:prefLabel "wheelclamp"@en, "wielklem"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where a clamp is placed on one of the vehicle's wheels to prevent movement until a fine is paid or the required conditions are met."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een klem op een van de wielen van het voertuig geplaatst om verplaatsing te voorkomen totdat een boete is betaald of aan de vereiste voorwaarden is voldaan."@nl .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/d8a6d6dc-d117-47b7-8aff-2babfb92267c>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/d8a6d6dc-d117-47b7-8aff-2babfb92267c> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/d8a6d6dc-d117-47b7-8aff-2babfb92267c>;
+  skos:prefLabel "paddentrek"@nl, "migratoryToadCrossing"@en;
+  skos:definition "Paddentrek"@nl, "Migratory toad crossing."@en .
+
+<https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-0>;
+  sh:in <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-0> .
+
+<https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/061cf82d-8c45-49f4-93f2-5e275df17f9a>;
+  rdf:rest <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-1> .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9c288e34-a7e8-4d85-a94f-708ee6d0c3be>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-8> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9c288e34-a7e8-4d85-a94f-708ee6d0c3be> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9c288e34-a7e8-4d85-a94f-708ee6d0c3be>;
+  skos:prefLabel "rvv-bus"@en, "rvv-autobus"@nl;
+  skos:definition """\"Autobus zoals bedoeld met het icoon van een autobus in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bus as represented by the bus icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/acb07f83-bae2-4617-9ae4-db7d633c1ece>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-9> .
+
+<https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/4d9c1010-501c-4a6a-8084-095ff114b70d>;
+  rdf:rest <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/4d9c1010-501c-4a6a-8084-095ff114b70d> a
+    <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/4d9c1010-501c-4a6a-8084-095ff114b70d>;
+  skos:prefLabel "zonsopZonsonder"@nl, "sunRiseSunDown"@en;
+  skos:definition "Between sunrise and sundown, daytime."@en, "Tussen zonsopkomst en zonsondergang, overdag."@nl .
+
+<https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b109a766-be61-4ba7-a86d-a83e208deb31>;
+  rdf:rest <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/142e8762-19eb-4179-b083-0858c65daa7f> a
+    <https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/142e8762-19eb-4179-b083-0858c65daa7f>;
+  skos:prefLabel "standingAllowed"@en, "stilstaanToegestaan"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg is toegestaan, voor het laden en lossen van goederen of in- en uitstappen van passagiers."@nl,
+    "Indication that standing for a short while is allowed, for loading and unloading or to set down or pick up passengers."@en .
+
+<https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495-list-0>;
+  sh:in <https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495-list-0> .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/300f54eb-8521-464c-a5f4-30ebecb2615c>;
+  rdf:rest <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/300f54eb-8521-464c-a5f4-30ebecb2615c> a
+    <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/300f54eb-8521-464c-a5f4-30ebecb2615c>;
+  skos:prefLabel "vrijdag"@nl, "friday"@en;
+  skos:definition "Friday"@en, "Vrijdag"@nl .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/7b7f9fd7-78dd-4096-ae66-cb725c6ba915>;
+  rdf:rest <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-3> .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3f2c1f45-f6ef-4ec0-be72-ddb0bd6e62ed>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3f2c1f45-f6ef-4ec0-be72-ddb0bd6e62ed> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3f2c1f45-f6ef-4ec0-be72-ddb0bd6e62ed>;
+  skos:prefLabel "voetgangers"@nl, "pedestrians"@en;
+  skos:definition "Voetgangers"@nl, "Pedestrians"@en .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/4ec1312b-5a76-4635-9dff-935a55cce268>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-5> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0ebc9304-11e2-4e4a-8431-7f2682ae90f2> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0ebc9304-11e2-4e4a-8431-7f2682ae90f2>;
+  skos:prefLabel "rvv-hazardous"@en, "rvv-gevaarlijkeStoffen"@nl;
+  skos:definition "\"Voertuigen met bepaalde gevaarlijke stoffen zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Vehicles carrying certain hazardous substances as represented by the pedestrian icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/147780e2-57a9-4c5e-bb61-6f7c2ef26fce> a
+    <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/147780e2-57a9-4c5e-bb61-6f7c2ef26fce>;
+  skos:prefLabel "thursday"@en, "donderdag"@nl;
+  skos:definition "Donderdag"@nl, "Thursday"@en .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/192f30a6-b475-49ba-8878-13ee694f657f>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/192f30a6-b475-49ba-8878-13ee694f657f> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/192f30a6-b475-49ba-8878-13ee694f657f>;
+  skos:prefLabel "rvv-cycle"@en, "rvv-fiets"@nl;
+  skos:definition "\"Fietsen en gehandicaptenvoertuigen zonder motor zoals bedoeld met het icoon van een fiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bicycles and vehicles for disabled persons without a motor as represented by the bicycle icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/2c08b491-d8d7-49e1-be6f-310fc20f3384>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-3> .
+
+<https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1-list-0>;
+  sh:in <https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1-list-0> .
+
+<https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c41c789d-45bc-4a4d-a29d-2607ea08e582>;
+  rdf:rest <https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/1e0a391d-cb25-48f3-90fe-5ca0f9c6dff9> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/1e0a391d-cb25-48f3-90fe-5ca0f9c6dff9>;
+  skos:prefLabel "file"@nl, "trafficJam"@en;
+  skos:definition "File"@nl, "Traffic jam"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/ec6492af-5105-4c99-9c01-41c15139a907> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/ec6492af-5105-4c99-9c01-41c15139a907>;
+  skos:prefLabel "rvv-car"@en, "rvv-auto"@nl;
+  skos:definition """\"Motorvoertuig op meer dan twee wielen zoals bedoeld met het icoon van een auto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicle with more than two wheels as represented by the car icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c1e28393-92dd-4c53-944d-b0e8a4998d4f>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-12> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c1e28393-92dd-4c53-944d-b0e8a4998d4f> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c1e28393-92dd-4c53-944d-b0e8a4998d4f>;
+  skos:prefLabel "rvv-tractor-moped-cycle"@en, "rvv-trekker-brom-fiets"@nl;
+  skos:definition "\"Ruiters, vee, wagens, landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid, mobiele machines, brommobielen, fietsen, snorfietsen, bromfietsen en gehandicaptenvoertuigen zoals bedoeld met de gecombineerde iconen van een trekker, een brommer en een fiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Riders, livestock, carts, agricultural and forestry tractors, motor vehicles with limited speed, mobile machines, microcars, bicycles, light mopeds, mopeds, and vehicles for disabled persons as represented by the combined icons of a tractor, a moped, and a bicycle in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/29947375-d42a-4484-991d-c02f8e31d6a4>;
+  rdf:rest <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/29947375-d42a-4484-991d-c02f8e31d6a4> a
+    <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/29947375-d42a-4484-991d-c02f8e31d6a4>;
+  skos:prefLabel "boete"@nl, "fine"@en;
+  skos:definition "A form of enforcement on incorrect traffic behaviour where a fine has to be paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag waarbij een boete moet worden betaald."@nl .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a154937f-12d3-480e-b3fa-99180e45628b>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-9> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/553df1bf-e1c3-4143-9082-cf0d49e41e00> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/553df1bf-e1c3-4143-9082-cf0d49e41e00>;
+  skos:prefLabel "rvv-moped"@en, "rvv-brommer"@nl;
+  skos:definition "\"Bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor zoals bedoeld met het icoon van een brommer in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Mopeds, light mopeds, and vehicles for disabled persons with an active motor as represented by the moped icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/8968a94d-270d-4d2e-81f8-ab5ea214aa55>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-7> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/8968a94d-270d-4d2e-81f8-ab5ea214aa55> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/8968a94d-270d-4d2e-81f8-ab5ea214aa55>;
+  skos:prefLabel "rvv-vrachtauto"@nl, "rvv-lorry"@en;
+  skos:definition """\"Vrachtauto zoals bedoeld met het icoon van een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Lorry as represented by the lorry icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4-list-0>;
+  sh:in <https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4-list-0> .
+
+<https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/28cc0107-4957-41b6-bf0e-84dc26189d5a>;
+  rdf:rest <https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4-list-1> .
+
+<https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-0>;
+  sh:in <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-0> .
+
+<https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0c5af7e7-682f-444a-a3fc-4ddb8a69219f>;
+  rdf:rest <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-1> .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/147780e2-57a9-4c5e-bb61-6f7c2ef26fce>;
+  rdf:rest <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-1> .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/1eb4f510-948f-42c1-8f2f-7c8fc5b8bfcf>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-3> .
+
+<https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/e53c2fa8-151b-4885-9a4c-cf43a1e38a5e>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/e53c2fa8-151b-4885-9a4c-cf43a1e38a5e> a
+    <https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/e53c2fa8-151b-4885-9a4c-cf43a1e38a5e>;
+  skos:prefLabel "saturday"@en, "zaterdag"@nl;
+  skos:definition "Saturday"@en, "Zaterdag"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/cb296f6a-f440-484f-89c0-d67f4e02695b> a
+    <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/cb296f6a-f440-484f-89c0-d67f4e02695b>;
+  skos:prefLabel "neerslag"@nl, "precipitation"@en;
+  skos:definition "Slecht zicht door sneeuw, regen of mist."@nl, "Poor visibility due to precipitation."@en .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/0ebc9304-11e2-4e4a-8431-7f2682ae90f2>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/8ac3379e-cf01-465b-aecb-66ad199dd813> a
+    <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/8ac3379e-cf01-465b-aecb-66ad199dd813>;
+  skos:prefLabel "zijwind"@nl, "sideWind"@en;
+  skos:definition "Side wind"@en, "Zijwind"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c41c789d-45bc-4a4d-a29d-2607ea08e582> a
+    <https://data.crow.nl/imv/def/74694229-f7bb-4851-b95d-199ffc6fd8b1>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c41c789d-45bc-4a4d-a29d-2607ea08e582>;
+  skos:prefLabel "zondag"@nl, "sunday"@en;
+  skos:definition "Sunday"@en, "Zondag"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/8c0cd293-6dc7-44d6-9e71-2fc20fc57484> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/8c0cd293-6dc7-44d6-9e71-2fc20fc57484>;
+  skos:prefLabel "cyclistsAndMopedRiders"@en, "fietsersEnBromfietsers"@nl;
+  skos:definition "Fietsers en bromfietsers"@nl, "Cyclists and moped riders"@en .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b4de7cfb-e6c6-4828-825d-41f4c0c930c6>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-11> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b4de7cfb-e6c6-4828-825d-41f4c0c930c6> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b4de7cfb-e6c6-4828-825d-41f4c0c930c6>;
+  skos:prefLabel "rvv-disabledVehicle"@en, "rvv-gehandicandicaptenvoertuig"@nl;
+  skos:definition "Voertuig dat is ingericht voor het vervoer van een gehandicapte, niet breder is dan 1,10 meter en niet is uitgerust met een motor, dan wel is uitgerust met een motor waarvan de door de constructie bepaalde maximumsnelheid niet meer dan 45 km per uur bedraagt, en geen bromfiets is. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A vehicle designed for the transport of a disabled person, not exceeding 1.10 meters in width, either without a motor or equipped with a motor whose design limits the maximum speed to no more than 45 km/h, and is not a moped.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/b109a766-be61-4ba7-a86d-a83e208deb31> a
+    <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/b109a766-be61-4ba7-a86d-a83e208deb31>;
+  skos:prefLabel "duringDuskAndDarkness"@en, "bijSchemerEnDuisternis"@nl;
+  skos:definition "Bij schemer en duisternis"@nl, "During dusk and darkness"@en .
+
+<https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-0>;
+  sh:in <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/758b4cf0-842c-4e5e-85c7-47e76d77ca78> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/758b4cf0-842c-4e5e-85c7-47e76d77ca78>;
+  skos:prefLabel "workInProgress"@en, "werkInUitvoering"@nl;
+  skos:definition "WorkInProgress"@en, "WerkInUitvoering"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/acb07f83-bae2-4617-9ae4-db7d633c1ece> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/acb07f83-bae2-4617-9ae4-db7d633c1ece>;
+  skos:prefLabel "rvv-bedrijfsvoertuig"@nl, "rvv-companyvehicle"@en;
+  skos:definition "\"Bedrijfs- en vrachtauto's zoals bedoeld met het gecombineerde icoon van een bedrijfsbus en een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Commercial vehicles and lorries as represented by the combined icons of a commercial van and a lorry in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/061cf82d-8c45-49f4-93f2-5e275df17f9a> a
+    <https://data.crow.nl/imv/def/d4e47e38-1cb0-4765-8be3-7c2708811967>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/061cf82d-8c45-49f4-93f2-5e275df17f9a>;
+  skos:prefLabel "tow-awayRegulation"@en, "wegsleepregeling"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where the vehicle is towed away and held until a fine is paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een  voertuig wordt afgevoerd en bewaard totdat een boete is betaald."@nl .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/8c0cd293-6dc7-44d6-9e71-2fc20fc57484>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-8> .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6b71f566-0db2-4fd6-adef-93a104f0fc8c>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-6> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6b71f566-0db2-4fd6-adef-93a104f0fc8c> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6b71f566-0db2-4fd6-adef-93a104f0fc8c>;
+  skos:prefLabel "rvv-motorcycle"@en, "rvv-motorfiets"@nl;
+  skos:definition """\"Motorfiets zoals bedoeld met het icoon van een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motorcycle as represented by the motorcycle icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/4fb56f29-fb10-43a7-95c1-6e0bf178fa44> a
+    <https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/4fb56f29-fb10-43a7-95c1-6e0bf178fa44>;
+  skos:prefLabel "nietInhalen"@nl, "noOvertaking"@en;
+  skos:definition "Indicatie dat inhalen niet is toegestaan."@nl, "Indication that overtaking is not allowed."@en .
+
+<https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/cb296f6a-f440-484f-89c0-d67f4e02695b>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/2c08b491-d8d7-49e1-be6f-310fc20f3384> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/2c08b491-d8d7-49e1-be6f-310fc20f3384>;
+  skos:prefLabel "rvv-trailer"@en, "rvv-aanhanger"@nl;
+  skos:definition "\"Motorvoertuigen met aanhangwagen zoals bedoeld met het icoon van een aanhanger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicles with a trailer as represented by the trailer icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/1e0a391d-cb25-48f3-90fe-5ca0f9c6dff9>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-2> .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/16415972-72b2-4b5f-8e21-44b82e20eb8a>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/a439d419-d76d-48f0-b8b5-18d7f9676d24> a
+    <https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/a439d419-d76d-48f0-b8b5-18d7f9676d24>;
+  skos:prefLabel "nonMandatoryUse"@en, "nietVerplichtGebruik"@nl;
+  skos:definition "Value indicating that a road, lane, or track must not be used obligatorily, as in the case of a non-mandatory cycle path."@en,
+    "Waarde die aangeeft dat een weg, baan of strook niet verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een onverplicht fietspad"@nl .
+
+<https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e-list-0>;
+  sh:in <https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e-list-0> .
+
+<https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/a439d419-d76d-48f0-b8b5-18d7f9676d24>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/b7e1bb24-23d1-4768-b263-9d62b4a4cc4a>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/758b4cf0-842c-4e5e-85c7-47e76d77ca78>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-7> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/28cc0107-4957-41b6-bf0e-84dc26189d5a> a
+    <https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/28cc0107-4957-41b6-bf0e-84dc26189d5a>;
+  skos:prefLabel "inhalenToegestaan"@nl, "overtakingAllowed"@en;
+  skos:definition "Indicatie dat inhalen is toegestaan."@nl, "Indication that overtaking is allowed."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/16415972-72b2-4b5f-8e21-44b82e20eb8a> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/16415972-72b2-4b5f-8e21-44b82e20eb8a>;
+  skos:prefLabel "largeWildlife"@en, "grootWild"@nl;
+  skos:definition "Groot wild"@nl, "Large wildlife"@en .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/553df1bf-e1c3-4143-9082-cf0d49e41e00>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-5> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/7b7f9fd7-78dd-4096-ae66-cb725c6ba915> a
+    <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/7b7f9fd7-78dd-4096-ae66-cb725c6ba915>;
+  skos:prefLabel "wednesday"@en, "woensdag"@nl;
+  skos:definition "Wednesday"@en, "Woensdag"@nl .
+
+<https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/8ac3379e-cf01-465b-aecb-66ad199dd813>;
+  rdf:rest <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/0c5af7e7-682f-444a-a3fc-4ddb8a69219f> a
+    <https://data.crow.nl/imv/def/d0315b10-1cda-4334-997e-383c1c34c3cb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/0c5af7e7-682f-444a-a3fc-4ddb8a69219f>;
+  skos:prefLabel "ijzelofsneeuw"@nl, "riskOfIce"@en;
+  skos:definition "Risk of ice form freezing rain or snow."@en, "IJzel of sneeuw,"@nl .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/afc1297c-48bb-4618-90ee-73b8ad906a4b>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-10> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/afc1297c-48bb-4618-90ee-73b8ad906a4b> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/afc1297c-48bb-4618-90ee-73b8ad906a4b>;
+  skos:prefLabel "rvv-tractor"@en, "rvv-trekker"@nl;
+  skos:definition "\"Landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines zoals bedoeld met het icoon van een trekker in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Agricultural and forestry tractors, motor vehicles with limited speed, and mobile machines as represented by the tractor icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/9c03ce7a-2354-463d-b46f-9e5e71f26047> a
+    <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/9c03ce7a-2354-463d-b46f-9e5e71f26047>;
+  skos:prefLabel "tuesday"@en, "dinsdag"@nl;
+  skos:definition "Tuesday"@en, "Dinsdag"@nl .
+
+<https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/fac07db2-e14f-4b52-b877-e3567aa4caa3>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/fac07db2-e14f-4b52-b877-e3567aa4caa3> a
+    <https://data.crow.nl/imv/def/6592f5fa-2e69-4771-ba4c-3e25849efaba>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/fac07db2-e14f-4b52-b877-e3567aa4caa3>;
+  skos:prefLabel "sunDownSunRise"@en, "zonsonderZonsop"@nl;
+  skos:definition "Between sundown and sunrise, at night."@en, "Tussen zonsondergang en zonsopkost, 's nachts."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/4ec1312b-5a76-4635-9dff-935a55cce268> a
+    <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/4ec1312b-5a76-4635-9dff-935a55cce268>;
+  skos:prefLabel "oncomingTraffic"@en, "tegenliggers"@nl;
+  skos:definition "Tegenliggers"@nl, "Oncoming traffic"@en .
+
+<https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/864df8e2-4b93-47c2-a762-d51c0c009195>;
+  rdf:rest <https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/864df8e2-4b93-47c2-a762-d51c0c009195> a
+    <https://data.crow.nl/imv/def/e91166bf-be4d-4b75-89cf-8a7934085e2e>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/864df8e2-4b93-47c2-a762-d51c0c009195>;
+  skos:prefLabel "mandatoryUse"@en, "verplichtGebruik"@nl;
+  skos:definition "Value indicating that a road, lane, or track must be used obligatorily, as in the case of a mandatory cycle path or passing lane."@en,
+    "Waarde die aangeeft dat een weg, baan of strook verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een verplicht fietspad of een passeerbaan."@nl .
+
+<https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/9c03ce7a-2354-463d-b46f-9e5e71f26047>;
+  rdf:rest <https://data.crow.nl/imv/def/a73d8a69-f37f-4341-af39-9fc5400729b4-list-4> .
+
+<https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6d0fea54-f69e-42b6-bf44-f20b95f4990f>;
+  rdf:rest <https://data.crow.nl/imv/def/70e91368-79e5-465d-a4b3-6a1831b7edcb-list-6> .
+
+<https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/c74dfb49-773e-41d6-b46f-8ff816b8c077>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/c74dfb49-773e-41d6-b46f-8ff816b8c077> a
+    <https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/c74dfb49-773e-41d6-b46f-8ff816b8c077>;
+  skos:prefLabel "standingProhibited"@en, "stilstaanVerboden"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg niet is toegestaan."@nl,
+    "Indication that standing for a short while is not allowed."@en .
+
+<https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/490eacc0-7be4-45e0-b17c-e2aaa93fc69e>;
+  rdf:rest <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/490eacc0-7be4-45e0-b17c-e2aaa93fc69e> a
+    <https://data.crow.nl/imv/def/0d648534-a249-4085-9a6d-31f130df6501>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/490eacc0-7be4-45e0-b17c-e2aaa93fc69e>;
+  skos:prefLabel "rvv-motorVehicle"@en, "rvv-motorvoertuig"@nl;
+  skos:definition "\"Alle motorvoertuigen zoals bedoeld met de gecombineerde iconen van een auto en een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"All motor vehicles as represented by the combined icons of a car and a motorcycle in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/d52d1621-fdc4-4a45-b3a3-efd34936cbe4-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/4fb56f29-fb10-43a7-95c1-6e0bf178fa44>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/142e8762-19eb-4179-b083-0858c65daa7f>;
+  rdf:rest <https://data.crow.nl/imv/def/e787835c-d1df-428b-bff0-d4d456221495-list-1> .
+
+<https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>
+  skos:prefLabel "Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)" .
