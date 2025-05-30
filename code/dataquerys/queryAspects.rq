@@ -1,0 +1,21 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+
+# Retrieve the aspect URIs with their corresponding names
+
+SELECT DISTINCT ?aspectUri ?aspectNaamNL ?aspectNaamEN
+WHERE {
+  ?aspectUri a ?aspectType .
+  FILTER(!CONTAINS(STR(?aspectUri), "nen2660/def#")) .
+  FILTER(?aspectType IN (rdf:Property, owl:ObjectProperty)) .
+  ?aspectUri skos:prefLabel ?aspectNaamNL .
+  FILTER (LANG(?aspectNaamNL) = "nl") . 
+  ?aspectUri skos:prefLabel ?aspectNaamEN .
+  FILTER (LANG(?aspectNaamEN) = "en") . 
+
+}
