@@ -1,98 +1,161 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
-  <diagram name="Page-1" id="0LnV7ETqTs7hgSCRXFs9">
-    <mxGraphModel dx="2440" dy="1301" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.017;entryY=0.129;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-1" target="BCpdqVNQJVRz4uYAB1dM-32" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-9" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;sh:property&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-8" vertex="1" connectable="0">
-          <mxGeometry x="-0.4503" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="747" y="137" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-13" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-12" vertex="1" connectable="0">
-          <mxGeometry x="0.0127" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-1" value="&lt;div&gt;&lt;b&gt;Verkeersmaatregel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;TrafficRegulation&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- toelichting&lt;br&gt;&lt;/div&gt;&lt;div&gt;- start/end date&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="307" y="27" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="zsQL0wGQAGFPRSmptsXq-15" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="923" y="225.36970474967916" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7" vertex="1" connectable="0">
-          <mxGeometry x="-0.1927" relative="1" as="geometry">
-            <mxPoint x="4" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-2" value="&lt;div&gt;&lt;b&gt;FysiekePlaat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;RoadSign&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- geosparql:Feature&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Geo-orientatiehoek&lt;/div&gt;&lt;div&gt;- ObjectStatus&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="307" y="198" width="120" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="zsQL0wGQAGFPRSmptsXq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-22" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="zsQL0wGQAGFPRSmptsXq-17" value="&lt;b&gt;&lt;u&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="zsQL0wGQAGFPRSmptsXq-16" vertex="1" connectable="0">
-          <mxGeometry x="-0.2206" y="-3" relative="1" as="geometry">
-            <mxPoint x="-7" y="-5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-22" value="&lt;div&gt;&lt;b&gt;NetwerkLocatieVerkeersmaatregel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;NetworkLocationTrafficRegulation&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- strooknummer&lt;/div&gt;&lt;div&gt;- wegvakID&lt;/div&gt;&lt;div&gt;- wegvakrichting&lt;/div&gt;- wegvakfractieStart&lt;br&gt;- wegvakfractieEinde" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="22" y="345" width="226" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-29" value="&lt;div&gt;&lt;b&gt;NetwerkLocatieFysiekePlaat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;NetworkLocationRoadSign)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- strooknummer&lt;/div&gt;&lt;div&gt;- wegvakID&lt;/div&gt;&lt;div&gt;- wegvakrichting&lt;/div&gt;&lt;div&gt;- wegvakfractie (percentage)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="277.5" y="345" width="179" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-29" target="BCpdqVNQJVRz4uYAB1dM-2" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="697" y="192" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="14" value="&lt;b&gt;&lt;u&gt;nen2660:contains&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="BCpdqVNQJVRz4uYAB1dM-30" vertex="1" connectable="0">
-          <mxGeometry x="0.2031" y="1" relative="1" as="geometry">
-            <mxPoint x="1" y="6" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.008;entryY=0.662;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="JAaSVqaNoPK4AC_1vTfK-5" target="BCpdqVNQJVRz4uYAB1dM-32" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="887" y="473" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="15" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;sh:property&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-14" vertex="1" connectable="0">
-          <mxGeometry x="0.2212" y="4" relative="1" as="geometry">
-            <mxPoint x="-13" y="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="BCpdqVNQJVRz4uYAB1dM-32" value="&lt;div&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- zone&lt;/div&gt;&lt;div&gt;- time (condition of the regulation) (explicit &amp;amp; textual values)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt voor)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt niet voor)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt voor special)&lt;/div&gt;&lt;div&gt;- vehicletype (geldt niet voor special)&lt;/div&gt;&lt;div&gt;- road conditions (wet/icy/...)&lt;/div&gt;&lt;div&gt;- local speed&lt;/div&gt;&lt;div&gt;- road speed category &lt;br&gt;&lt;/div&gt;&lt;div&gt;- advised speed&lt;/div&gt;&lt;div&gt;- priority (voorrang)&lt;br&gt;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="952" y="11" width="120" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-5" value="&lt;div&gt;&lt;b&gt;Icoon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Icon)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&lt;/b&gt;type&lt;/div&gt;&lt;div&gt;-value&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="745" y="199" width="120" height="88" as="geometry" />
-        </mxCell>
-        <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zsQL0wGQAGFPRSmptsXq-15" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1077" y="197" as="targetPoint" />
-            <mxPoint x="1050.5" y="218.25" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="11" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;hasPart&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="10" vertex="1" connectable="0">
-          <mxGeometry x="-0.2535" relative="1" as="geometry">
-            <mxPoint x="5" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="zsQL0wGQAGFPRSmptsXq-15" value="&lt;div&gt;&lt;b&gt;Achtergrondschild&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;BackgroundShield&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- ral colour&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="529" y="213" width="129" height="60" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="0LnV7ETqTs7hgSCRXFs9">
+        <mxGraphModel dx="1002" dy="1413" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.001;entryY=0.165;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="33" target="BCpdqVNQJVRz4uYAB1dM-32" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="640" y="55" as="sourcePoint"/>
+                        <mxPoint x="982" y="54" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-9" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;sh:property&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-8" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4503" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="747" y="137" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-13" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;color: rgb(63, 63, 63); border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-12" vertex="1" connectable="0">
+                    <mxGeometry x="0.0127" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" style="edgeStyle=none;html=1;rounded=0;curved=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BCpdqVNQJVRz4uYAB1dM-1" target="JAaSVqaNoPK4AC_1vTfK-5">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="397" y="116"/>
+                            <mxPoint x="805" y="114"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="&lt;b style=&quot;color: rgb(63, 63, 63); border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="19">
+                    <mxGeometry x="-0.5173" y="-2" relative="1" as="geometry">
+                        <mxPoint x="131" y="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-1" value="&lt;div&gt;&lt;b&gt;Verkeersmaatregel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;TrafficRegulation&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;-&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Start/End date&lt;/div&gt;&lt;div&gt;- Note&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="21" width="120" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="zsQL0wGQAGFPRSmptsXq-15" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="923" y="225.36970474967916" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;u style=&quot;border-color: var(--border-color);&quot;&gt;isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="7" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1927" relative="1" as="geometry">
+                        <mxPoint x="4" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="BCpdqVNQJVRz4uYAB1dM-29">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;b&gt;&lt;u&gt;nen2660:contains&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="17">
+                    <mxGeometry x="-0.3263" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-2" value="&lt;div&gt;&lt;b&gt;FysiekePlaat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;RoadSign&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Geo-oriëntatiehoek&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- ObjectStatus&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="307" y="198" width="120" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="zsQL0wGQAGFPRSmptsXq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-22" target="BCpdqVNQJVRz4uYAB1dM-1" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="zsQL0wGQAGFPRSmptsXq-17" value="&lt;b&gt;&lt;u&gt;nen2660:isDescribedBy&lt;/u&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="zsQL0wGQAGFPRSmptsXq-16" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2206" y="-3" relative="1" as="geometry">
+                        <mxPoint x="-7" y="-5" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-22" value="&lt;div&gt;&lt;b&gt;NetwerkLocatieVerkeersmaatregel&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;NetworkLocationTrafficRegulation&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Strooknummer&lt;/div&gt;&lt;div&gt;- WegvakID&lt;/div&gt;&lt;div&gt;- Wegvakrichting&lt;/div&gt;- WegvakfractieStart&lt;br&gt;- WegvakfractieEinde" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="22" y="345" width="226" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-29" value="&lt;div&gt;&lt;b&gt;NetwerkLocatieFysiekePlaat&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;NetworkLocationRoadSign)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Strooknummer&lt;/div&gt;&lt;div&gt;- WegvakID&lt;/div&gt;&lt;div&gt;- Wegvakrichting&lt;/div&gt;&lt;div&gt;- Wegvakfractie (percentage)&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="277.5" y="345" width="179" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="38" target="BCpdqVNQJVRz4uYAB1dM-32" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="887" y="473" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;sh:property&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="JAaSVqaNoPK4AC_1vTfK-14" vertex="1" connectable="0">
+                    <mxGeometry x="0.2212" y="4" relative="1" as="geometry">
+                        <mxPoint x="-13" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="BCpdqVNQJVRz4uYAB1dM-32" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="983" y="-6" width="390" height="371" as="geometry"/>
+                </mxCell>
+                <mxCell id="JAaSVqaNoPK4AC_1vTfK-5" value="&lt;div&gt;&lt;b&gt;Icoon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Icon)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Nnote&lt;/div&gt;&lt;div&gt;- rvvCode&lt;/div&gt;&lt;div&gt;- IcoonPositienummer&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="199" width="122" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zsQL0wGQAGFPRSmptsXq-15" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1077" y="197" as="targetPoint"/>
+                        <mxPoint x="1050.5" y="218.25" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="&lt;div&gt;&lt;b&gt;&lt;u&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;u&gt;hasPart&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="10" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2535" relative="1" as="geometry">
+                        <mxPoint x="5" y="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="zsQL0wGQAGFPRSmptsXq-15" value="&lt;div&gt;&lt;b&gt;Achtergrondschild&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;BackgroundShield&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;- RAL-Kleur&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;- SchildPositienummer&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="529" y="204" width="129" height="74" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- BijzondereTijdsvoorwaarden&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- BochtInDeWeg&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- DagenVanGeldigheid&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Start / EindeSeizoen&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;- Start / EindTijd&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Handhavingsregime&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;HellingspercentageWeg&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;Hellingsrichting&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Inhaalindicatie&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- MaximaleParkeertijd&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- MaximumSnelheid&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Medeweggebruiker&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- NaXMeter&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- OpenOfGesloten&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Parkeerindicatie&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Parkeervoorwaarde&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Snelheidregime&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1004" y="28" width="178" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;Stilstaanindicatie&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- ToegestaneRijrichting&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- TotXMeterNaBord&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- TypeKruising&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- TypeObstekel&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- VanToepassingOpVoertuigtype&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- VerplichtGebruikWeg&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- VoertuigaslastGroterDan&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;VoertuigAslastSomGroterDan&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;VoertuigbreedteGroterDan&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;Voertuigemissiecategorie&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: rgb(63, 63, 63);&quot;&gt;VoertuighoogteGroterDan&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;VoertuiglengteGroterDan&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Voorrangsindicatie&lt;/span&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Voorrangssituatie&lt;/span&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Weerconditie&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Wegconditie&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Wegversmalling&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(63, 63, 63);&quot;&gt;&lt;span style=&quot;color: rgb(63, 63, 63);&quot;&gt;- Zone&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1179" y="28" width="188" height="293" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Regulatory Properties&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1082.5" y="-2" width="195" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="relation between locations?" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="185" y="478" width="163" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;" edge="1" parent="1" source="33" target="BCpdqVNQJVRz4uYAB1dM-1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="&lt;span style=&quot;font-family: monospace; font-size: 0px; text-align: start; background-color: rgb(251, 251, 251);&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%26lt%3Bu%26gt%3Bsh%3ATargetClass%26lt%3B%2Fu%26gt%3B%22%20style%3D%22text%3Bhtml%3D1%3Balign%3Dcenter%3BverticalAlign%3Dmiddle%3Bresizable%3D0%3Bpoints%3D%5B%5D%3Bautosize%3D1%3BstrokeColor%3Dnone%3BfillColor%3Dnone%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22461%22%20y%3D%2265%22%20width%3D%2297%22%20height%3D%2226%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="34">
+                    <mxGeometry x="0.0191" y="-3" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="&lt;u&gt;&lt;b&gt;sh:TargetClass&lt;/b&gt;&lt;/u&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="34">
+                    <mxGeometry x="0.1887" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="&lt;b&gt;Shape Verkeersmaatregel&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="584" y="26" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="38" target="JAaSVqaNoPK4AC_1vTfK-5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;u&gt;&lt;b&gt;sh:TargetClass&lt;/b&gt;&lt;/u&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="40">
+                    <mxGeometry x="-0.1732" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="&lt;b&gt;Shape Icoon&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="746" y="335" width="121" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="313" width="78" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="550" y="181" width="78" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="273" y="178" width="78" height="26" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
