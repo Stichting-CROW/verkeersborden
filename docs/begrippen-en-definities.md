@@ -658,8 +658,7 @@ Gebied bestaande uit meerdere (delen van) wegvakken waarvoor een verkeersmaatreg
 <dt><dfn data-lt="Zweedse netwerkregistratie">Zweedse netwerkregistratie</dfn></dt>
 <dd>
 
-Zweden heeft een netwerkregistratie live staan met deze <a href="https://www.nvdb.se/sv">website</a>, deze <a href="https://dataut.vegvesen.no/en/dataset/nasjonal-vegdatabank">landingspagina voor datasets</a> en <a href="https://dce2.au.dk/pub/TR151.pdf">deze Engelstalige toelichting</a>
-
+Zweden heeft een netwerkregistratie live staan met deze <a href="https://www.nvdb.se/sv">website</a> en deze <a href="https://nvdbpakarta.trafikverket.se/">kaartapplicatie</a>.
 </dd>
 
 
