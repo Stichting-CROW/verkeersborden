@@ -326,7 +326,7 @@ Juncties komen voor bij kruispunten, gemeentegrenzen, provinciegrenzen, beheergr
 
 </dd>
 
-<dt><dfn data-lt="NWB|Nationaal Wegen Bestand">NWB: Nationaal Wegenbestand</dfn></dt>
+<dt><dfn data-lt="NWB|Nationaal Wegen Bestand">Nationaal Wegenbestand</dfn></dt>
 <dd>
 
 Een open geografisch databestand van een [=verkeerskundig wegennetwerk=] bestaande uit lijnen ([=NWB-wegvakken=]) en knopen ([=NWB-juncties=]) met alle wegen in Nederland die in beheer zijn bij het Rijk, provincies, gemeenten en waterschappen of beheerorganisaties zoals Schiphol en Havenbedrijf Rotterdam.

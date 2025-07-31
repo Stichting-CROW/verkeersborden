@@ -46,20 +46,20 @@ Dit document beschrijft de context, raakvlakken, use case, inhoudelijke en techn
 
 Dit document beschrijft de volgende zaken: 
 
-**2. Doel en scope** Beschrijft het doel en de inhoudelijke scope van de [=verkeerskundige informatie=] in het [=Informatiemodel Verkeerstekens=]
+**3. Doel en scope** Beschrijft het doel en de inhoudelijke scope van de [=verkeerskundige informatie=] in het [=Informatiemodel Verkeerstekens=]
 
-**3. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een [=SMART Mobility=] systeem van een [=weggebruiker=]. Hieruit volgen eisen voor het [=Informatiemodel Verkeerstekens=].
+**4. Use case** De use case geeft een weergave van het verwachte gebruik van de digitale [=verkeerskundige informatie=] door een [=SMART Mobility=] systeem van een [=weggebruiker=]. Hieruit volgen eisen voor het [=Informatiemodel Verkeerstekens=].
 
-**4. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er 'gebruiker', 'leverancier' en 'afnemer' zijn van [=verkeerskundige informatie=], gemodelleerd met het [=Informatiemodel Verkeerstekens=]. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. Door in de gehele keten te denken kan duidelijk worden welke aanvullende eisen er gelden voor het informatiemodel, om gebruik en beheer van de [=verkeerskundige informatie=] te faciliteren.
+**5. Stakeholderanalyse** De stakeholderanalyse verkent  welke partijen er 'gebruiker', 'leverancier' en 'afnemer' zijn van [=verkeerskundige informatie=], gemodelleerd met het [=Informatiemodel Verkeerstekens=]. Dit gebeurt door een verkenning van de use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop. Door in de gehele keten te denken kan duidelijk worden welke aanvullende eisen er gelden voor het informatiemodel, om gebruik en beheer van de [=verkeerskundige informatie=] te faciliteren.
 
-**5-10. Raakvlakanalyse** De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, digitale stelsels, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
+**6-11. Raakvlakanalyse** De raakvlakanalyse beschijft welke beheerorganisaties, partijen en samenwerkingsverbanden er zijn die te maken hebben met wetgeving, digitale stelsels, standaarden of informatiemodellen, databronnen en niet-commerciële applicaties met als inhoud: 
 
 1. Regels voor informatiemodellen
 2. Het [=verkeerskundig wegennetwerk=] en de fysieke ligging van de wegen.
 3. De digitale representatie van verkeersborden in andere use cases in de fases van de levenscyclus: Ontwerp, Bouw, Beheer, Gebruik, Sloop.
 
 
-**11. Beheer** In Beheer staat beschreven aan welke eisen het beheer van het informatiemodel moet voldoen.
+**12. Beheer** In Beheer staat beschreven aan welke eisen het beheer van het informatiemodel moet voldoen en staan per versie de uitgangspunten gedocumenteerd.
 
 **12. Samenstelling** In Samenstelling staat een overzicht van de onderdelen waaruit het informatiemodel bestaat, inclusief documentatie en implementatieondersteuning. 
 
