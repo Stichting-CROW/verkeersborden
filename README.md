@@ -1,5 +1,3 @@
-# [Concept 1.0 Reviewen? Klik hier](https://github.com/Stichting-CROW/verkeersborden/issues/418)
-
 # Informatiemodel Verkeerstekens en verkeersbesluiten
 
 Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen publiceren ten behoeve van SMART mobility systemen. 
