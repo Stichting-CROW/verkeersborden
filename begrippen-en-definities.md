@@ -265,13 +265,13 @@ De achtergrond van een Fysieke Plaat, waar verkeersborden en onderborden op kunn
 
 Het Metamodel Informatie Modellering (MIM) is een gemeenschappelijk vertrekpunt voor het maken van informatiemodellen.
 Het model bevat duidelijke afspraken over het vastleggen van gegevensspecificaties en biedt tegelijkertijd ruimte aan de verschillende niveaus van modellering.
-Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel, ondanks enkele tegenstrijdigheden met de [[NEN_2660_2_2022]].
+Het MIM is in 2020 uitgekomen en vormt een belangrijke leidraad voor het informatiemodel, ondanks enkele tegenstrijdigheden met de NEN 2660-2.
 
 Het MIM gaat uit van:
 
-- Het scheiden van soort informatiemodellen in niveaus.
-- De inhoudelijke modellering van modelconcepten en de metagegevens ervan.
-  Door een informatiemodel uit te drukken in het MIM is een standaard manier van vastleggen en uitleg geborgd.
+* Het scheiden van soort informatiemodellen in niveaus.
+* De inhoudelijke modellering van modelconcepten en de metagegevens ervan.
+Door een informatiemodel uit te drukken in het MIM is een standaard manier van vastleggen en uitleg geborgd.
 
 Het MIM gaat uit van een begrippenkader en een explicietere modellering van een informatiemodel.
 
