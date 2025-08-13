@@ -1,12 +1,13 @@
 import pandas as pd 
 
+# Run query in Kern!
 CONCEPT_NAME = "iconName" # 'fysiekePlaatNameNL'
 CONCEPT_DESCR = "iconDefinition" # "fysiekePlaatDefinition"
 
 # Put the script and your input file in the same folder, or provide the full path below.
-csv_file_name = "beheer/tableDownloadIcon.csv"
+csv_file_name = "beheer/tableDownloadIcons.csv"
 text_separator = '"'
-output_file = "beheer/outputIcons.html"
+output_file = "beheer/output_icons.html"
 
 
 df = pd.read_csv(csv_file_name, quotechar=text_separator)
