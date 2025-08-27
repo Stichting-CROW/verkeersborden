@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
   <diagram name="Page-1" id="0LnV7ETqTs7hgSCRXFs9">
-    <mxGraphModel dx="2431" dy="1414" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1042" dy="722" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
             <mxPoint y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="JAaSVqaNoPK4AC_1vTfK-5">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="BCpdqVNQJVRz4uYAB1dM-2" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="464" y="221" />
@@ -69,7 +69,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-51" value="&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;b style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;u style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;b style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;u style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;span style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;0:n&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PASU3v6HnOj7eX3eN5TI-50">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-51" value="&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;b style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;u style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;nen2660:&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;b style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;u style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;isDescribedBy&lt;/u&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;&lt;span style=&quot;border-color: rgb(218, 218, 218);&quot;&gt;0:n&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="PASU3v6HnOj7eX3eN5TI-50" vertex="1" connectable="0">
           <mxGeometry x="-0.1439" y="3" relative="1" as="geometry">
             <mxPoint x="33" y="1" as="offset" />
           </mxGeometry>
@@ -105,7 +105,7 @@
         <mxCell id="BCpdqVNQJVRz4uYAB1dM-32" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="952" y="26" width="390" height="371" as="geometry" />
         </mxCell>
-        <mxCell id="JAaSVqaNoPK4AC_1vTfK-5" value="&lt;div&gt;&lt;b&gt;Icoon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Icon)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Nnote&lt;/div&gt;&lt;div&gt;- rvvCode&lt;/div&gt;&lt;div&gt;- IcoonPositienummer&lt;/div&gt;&lt;div&gt;- IcoonKleur&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="JAaSVqaNoPK4AC_1vTfK-5" value="&lt;div&gt;&lt;b&gt;Icoon&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(Icon)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;-&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Note&lt;/div&gt;&lt;div&gt;- rvvCode&lt;/div&gt;&lt;div&gt;- IcoonPositienummer&lt;/div&gt;&lt;div&gt;- RALKleur&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="745" y="188.5" width="122" height="105" as="geometry" />
         </mxCell>
         <mxCell id="10" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontColor=#000000;" parent="1" source="zsQL0wGQAGFPRSmptsXq-15" target="JAaSVqaNoPK4AC_1vTfK-5" edge="1">
@@ -119,7 +119,7 @@
             <mxPoint x="5" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zsQL0wGQAGFPRSmptsXq-15" value="&lt;div&gt;&lt;b&gt;Achtergrondschild&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;BackgroundShield&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- SchildPositienummer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- SchildKleur&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
+        <mxCell id="zsQL0wGQAGFPRSmptsXq-15" value="&lt;div&gt;&lt;b&gt;Achtergrondschild&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;(&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;BackgroundShield&lt;/b&gt;&lt;b&gt;)&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Description&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- SchildPositienummer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- RALKleur&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="529" y="204" width="129" height="74" as="geometry" />
         </mxCell>
         <mxCell id="25" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- BijzondereTijdsvoorwaarden&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- BochtInDeWeg&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- DagenVanGeldigheid&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Start / EindeSeizoen&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Start / EindTijd&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Handhavingsregime&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;HellingspercentageWeg&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;-&amp;nbsp;Hellingsrichting&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Inhaalindicatie&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- MaximaleParkeertijd&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;&quot;&gt;- MaximumSnelheid&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Medeweggebruiker&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;&quot;&gt;- NaXMeter&lt;/span&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- OpenOfGesloten&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Parkeerindicatie&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;&quot;&gt;- Parkeervoorwaarde&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;- Snelheidregime&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" parent="1" vertex="1">
@@ -167,19 +167,19 @@
         <mxCell id="47" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="294" y="178" width="78" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-47" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-47" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="731" y="166.5" width="78" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-48" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-48" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="274" y="332" width="78" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-49" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-49" value="OWL Class" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="42" y="332" width="78" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-52" value="SHACL NodeShape" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-52" value="SHACL NodeShape" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="579" y="6" width="124" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="PASU3v6HnOj7eX3eN5TI-53" value="SHACL NodeShape" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="PASU3v6HnOj7eX3eN5TI-53" value="SHACL NodeShape" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="685" y="332" width="124" height="26" as="geometry" />
         </mxCell>
       </root>
