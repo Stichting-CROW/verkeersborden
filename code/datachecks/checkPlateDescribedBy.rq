@@ -1,0 +1,26 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# Check whether all standard plates are described by atleast one shield or icon
+
+SELECT DISTINCT ?faultyPlate
+WHERE {
+  BIND (<https://data.crow.nl/imv/def/FysiekePlaat> AS ?plate) .
+  ?faultyPlate rdfs:subClassOf ?plate .
+  FILTER NOT EXISTS {
+    ?plateShape sh:targetClass ?flautyPlate .
+    ?plateShape sh:property ?describedProperty .
+    ?describedProperty sh:path nen2660:isDescribedBy .
+    ?describedProperty sh:qualifiedValueShape ?valueShape .
+    ?valueShape sh:class ?shieldIcon .
+    
+    ?shieldIcon rdfs:subClassOf+ ?type .
+    FILTER (?type IN (<https://data.crow.nl/imv/def/Achtergrondschild>, <https://data.crow.nl/imv/def/Icoon>)) .
+  }
+}

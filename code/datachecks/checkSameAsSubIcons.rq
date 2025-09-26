@@ -1,0 +1,18 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# Check whether all 1st level subIcons have a sameAs relation to a IMV core counterpart
+
+SELECT DISTINCT ?faultySubIcon
+WHERE {
+  BIND (<https://data.crow.nl/imv/def/Icoon> AS ?icon) .
+  ?faultySubIcon rdfs:subClassOf ?icon .
+  FILTER(!CONTAINS(STR(?faultySubIcon), "https://data.crow.nl/imv/def/")) .
+
+}
