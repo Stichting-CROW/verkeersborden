@@ -1,0 +1,21 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX nen2660: <https://w3id.org/nen2660/def#>
+
+# Check whether the lowest level of icons have a filled in positionnumber
+
+SELECT DISTINCT ?childIcon
+WHERE {
+  BIND (<https://data.crow.nl/imv/def/Icoon> AS ?icon) .
+  ?childIcon rdfs:subClassOf+ ?icon .
+  FILTER NOT EXISTS { ?grandchildIcon rdfs:subClassOf ?childIcon . } .
+  ?iconShape sh:targetClass ?childIcon .
+  ?iconShape sh:property ?positionNumber .
+  ?positionNumber sh:path <https://data.crow.nl/imv/def/positienummerIcoon> .
+  FILTER NOT EXISTS { ?positionNumber sh:hasValue ?value . } .
+}
