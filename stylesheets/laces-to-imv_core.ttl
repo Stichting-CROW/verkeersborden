@@ -102,8 +102,10 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 				OPTIONAL {
 					?aspect otl:rel-Conceptual-isSpecializationOf ?parentAspect .
 					OPTIONAL {
-						?parentAspect shapes:sequence/rdf:_1 ?parentName .
-						BIND (URI(STR(?parentAspect)) AS ?newParentAspectURI) .
+						?parentAspect otl:attr-Conceptual-name ?parentName .
+						FILTER (LANG(?parentName) = "nl") .
+
+						BIND (ex:createHumanReadableUri(?parentName) AS ?newParentAspectURI) .
 					} .
 					BIND (COALESCE(?newParentAspectURI, ?parentAspect) AS ?tgtParent) .
 				} .
@@ -112,7 +114,10 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 					?hasAspect otl:rel-Relation-toRole ?this .
 					?hasAspect otl:rel-Relation-to ?aspect .
 					?aspect a otl:Aspect .
-					BIND (URI(STR(?aspect)) AS ?tgtAspect) .
+					?aspect otl:attr-Conceptual-name ?aspectUriName .
+					FILTER (LANG(?aspectUriName) = "nl") .
+
+					BIND (ex:createHumanReadableUri(?aspectUriName) AS ?tgtAspect) .  
 					BIND (URI(REPLACE(STR(?tgtAspect), "/def/", "/term/")) AS ?tgtAspectTerm ) .
 				}
 				UNION
@@ -125,7 +130,10 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 					BIND (?aspect AS ?tgtAspect) .
 					BIND (URI(REPLACE(STR(?tgtAspect), "/def/", "/term/")) AS ?tgtAspectTerm ) .
 				} .
-				BIND (URI(STR(?object)) AS ?tgtObject) .
+				?object otl:attr-Conceptual-name ?objectUriName .
+				FILTER (LANG(?objectUriName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?objectUriName) AS ?tgtObject) .
 				
 				# Get all the descriptive information of the aspect
 				?aspect shapes:sequence/rdf:_1 ?tgtAspectPrefName .
@@ -184,11 +192,11 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 					} .
 					?qualification otl:attr-Conceptual-name ?tgtQualificationName .
 					FILTER (?tgtQualificationName != "") .
-					# BIND(IF(CONTAINS(str(?tgtQualificationName), ","), STRBEFORE(?tgtQualificationName, ","), ?tgtQualificationName) AS ?tgtNLQualificationName) .
-					# BIND(IF(CONTAINS(str(?tgtQualificationName), ","), STRAFTER(?tgtQualificationName, ","), ?undefined) AS ?tgtENQualificationName) .
+					BIND(IF(CONTAINS(str(?tgtQualificationName), ","), STRLANG(STRBEFORE(?tgtQualificationName, ","), "nl"), STRLANG(?tgtQualificationName, "nl")) AS ?tgtNLQualificationName) .
+					
+					BIND (ex:createHumanReadableUri(?tgtNLQualificationName) AS ?qualificationURI) .
+					BIND (URI(REPLACE(STR(?qualificationURI), "/def/", "/id/domeinwaarden/")) AS ?tgtQualificationUri ) .
 
-					# BIND (URI(STR(?qualification)) AS ?tgtQualificationUri) .
-					BIND (URI(REPLACE(STR(?qualification), "/def/", "/id/domeinwaarden/")) AS ?tgtQualificationUri ) .
 					BIND (owl:ObjectProperty AS ?tgtPropertyType) .
 				}
 				UNION
@@ -198,7 +206,13 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 					?this otl:rel-RoleOfAspect-PossessedAspect-isQualifiedAs-Qualification ?emptyQualification .
 					?emptyQualification otl:attr-Conceptual-name ?EmptyQualificationName .
 					FILTER (?EmptyQualificationName = "") .
-					BIND (URI(STR(?aspectEnumeration)) AS ?tgtAspectEnumeration) .
+
+					?aspectEnumeration otl:attr-Group-name ?EnumerationName . 
+					BIND(IF(CONTAINS(str(?EnumerationName), "$"), STRBEFORE(?EnumerationName, "$"), ?EnumerationName) AS ?tgtEnumNames) .
+					BIND(IF(CONTAINS(str(?tgtEnumNames), ","), STRLANG(STRBEFORE(?tgtEnumNames, ","), "nl"), STRLANG(?tgtEnumNames,"nl")) AS ?tgtEnumerationNLname) .
+					
+					BIND (ex:createHumanReadableUri(?tgtEnumerationNLname) AS ?tgtAspectEnumeration) .
+					
 					BIND (owl:ObjectProperty AS ?tgtPropertyType) .
 					BIND (rdfs:Resource AS ?tgtRangeDatatype) .
 				}
@@ -227,7 +241,7 @@ ex:ConvertAspectWithRole a sh:NodeShape ;
 						?unitOfMeasure otl:rel-Conceptual-hasExternalLink ?externalLink1 .
 						?externalLink1 otl:attr-ExternalLink-relation "isSameAs" .
 						?externalLink1 otl:attr-ExternalLink-uri ?externalLinkUnitUri .
-						FILTER regex(str(?externalLinkUnitUri), "http://qudt.org/vocab/unit/", "i") .
+						FILTER regex(str(?externalLinkUnitUri), "http://qudt.org/schema/qudt/", "i") .
 					}
 					BIND (URI(STR(?unitOfMeasure)) AS ?implicitUnit) .
 					BIND (COALESCE(URI(STR(?externalLinkUnitUri)), ?implicitUnit) AS ?tgtUnit) .
@@ -291,8 +305,10 @@ ex:ConvertAspectsWithoutRole a sh:NodeShape ;
 				OPTIONAL {
 					?this otl:rel-Conceptual-isSpecializationOf ?parentAspect .
 					OPTIONAL {
-						?parentAspect shapes:sequence/rdf:_1 ?parentName .
-						BIND (URI(STR(?parentAspect)) AS ?newParentAspectURI) .
+						?parentAspect otl:attr-Conceptual-name ?parentName .
+						FILTER (LANG(?parentName) = "nl") .
+
+						BIND (ex:createHumanReadableUri(?parentName) AS ?newParentAspectURI) .
 					} .
 					BIND (COALESCE(?newParentAspectURI, ?parentAspect) AS ?tgtParent) .
 				} .
@@ -322,8 +338,12 @@ ex:ConvertAspectsWithoutRole a sh:NodeShape ;
 					FILTER (STRLEN(str(?tgtAnnotationValue)) > 0) .
 					BIND (ex:createURI(MD5(?tgtAnnotationName)) AS ?tgtAnnotationProperty) .
 				} .
-				BIND (URI(STR(?this)) AS ?tgtAspect) .
-				BIND (URI(REPLACE(STR(?this), "/def/", "/term/")) AS ?tgtTerm ) .
+
+				?this otl:attr-Conceptual-name ?aspectUriName .
+				FILTER (LANG(?aspectUriName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?aspectUriName) AS ?tgtAspect) .  
+				BIND (URI(REPLACE(STR(?tgtAspect), "/def/", "/term/")) AS ?tgtTerm ) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -359,7 +379,9 @@ ex:ConvertConceptuals a sh:NodeShape ;
 			    ?tgtAnnotationProperty skos:prefLabel ?tgtAnnotationNLname, ?tgtAnnotationENname .
 			    ?tgtAnnotationProperty rdfs:range xsd:string .
 				?tgtThis rdfs:seeAlso ?tgtExternalSourceLink .
+				?tgtExternalSourceLink a schema:URL .
 				?tgtExternalSourceLink dct:license ?license .
+				?tgtExternalSourceLink schema:url ?tgtExternalSourceLink3 .
 				?tgtThis nen2660:isDescribedBy ?tgtRelatedDocument .
 				?tgtThis rdfs:seeAlso ?tgtTerm .
 			}
@@ -371,8 +393,10 @@ ex:ConvertConceptuals a sh:NodeShape ;
 				OPTIONAL {
 			        ?this otl:rel-Conceptual-isSpecializationOf ?parentConceptual .
 			        OPTIONAL {
-			            ?parentConceptual shapes:sequence/rdf:_1 ?parentName .
-			            BIND (URI(STR(?parentConceptual)) AS ?newParentConceptualURI) .
+						?parentConceptual otl:attr-Conceptual-name ?parentName .
+						FILTER(LANG(?parentName) = "nl") .
+
+						BIND (ex:createHumanReadableUri(?parentName) AS ?newParentConceptualURI) .
 			        } .
 			    } .
     			BIND (COALESCE(?newParentConceptualURI, ?parentConceptual) AS ?newParentConceptual) .
@@ -409,14 +433,15 @@ ex:ConvertConceptuals a sh:NodeShape ;
 				} .
 			#This part handles the image links.
 				OPTIONAL {
-					?this otl:describes ?tgtExternalSourceLink .
-				}
-				OPTIONAL {
-					?this otl:describes ?tgtExternalSourceLink .
-					FILTER (
-						CONTAINS(str(?tgtExternalSourceLink), "https://raw.githubusercontent.com/ndwnu/qgis-verkeersborden-style/")
-					)
-					BIND (<https://opensource.org/licenses/MIT> AS ?license) .
+					?this otl:describes ?describesLink .
+					BIND (URI(str(?describesLink)) AS ?describesURI) .
+					BIND (STRDT(STR(?describesLink), xsd:anyURI) AS ?tgtExternalSourceLink) .
+					OPTIONAL {
+						FILTER (
+							CONTAINS(str(?describesLink), "https://raw.githubusercontent.com/ndwnu/qgis-verkeersborden-style/")
+						)
+						BIND (<https://opensource.org/licenses/MIT> AS ?license) .						
+					}
 				}
 			# This section finds any extra attributes of a concept that have been stored using the InformationField and InformationType classes. Each attribute is converted to one value by concatenating its InformationType and InformationField value.
 				OPTIONAL {
@@ -438,10 +463,18 @@ ex:ConvertConceptuals a sh:NodeShape ;
 				OPTIONAL {
 					?relation a otl:Document-isDescribedIn-Document .
 					?relation otl:rel-Relation-from ?this .
-					?relation otl:rel-Relation-to ?tgtRelatedDocument .
+					?relation otl:rel-Relation-to ?relatedDocument .
+					?relatedDocument otl:attr-Conceptual-name ?relatedDocName .
+					FILTER (LANG(?relatedDocName) = "nl") .
+
+					BIND (ex:createHumanReadableUri(?relatedDocName) AS ?tgtRelatedDocument) .  
 				}
-				BIND (URI(STR(?this)) AS ?tgtThis) .
-				BIND (URI(REPLACE(STR(?this), "/def/", "/term/")) AS ?tgtTerm ) .
+
+				?this otl:attr-Conceptual-name ?conceptUriName .
+				FILTER (LANG(?conceptUriName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?conceptUriName) AS ?tgtThis) .  
+				BIND (URI(REPLACE(STR(?tgtThis), "/def/", "/term/")) AS ?tgtTerm ) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -471,26 +504,34 @@ ex:ConvertExternalSource a sh:NodeShape ;
 			}
 			WHERE {
 				?this a ?conceptual .
+				FILTER (?conceptual != otl:Aspect) .
+				?this shapes:sequence/rdf:_1 ?name .
+				# ?this otl:attr-Conceptual-name ?name .
+				# FILTER(LANG(?name) = "nl") .
 				OPTIONAL {
 					?childConceptual otl:rel-Conceptual-isSpecializationOf ?this .
 					FILTER NOT EXISTS {
 						?childConceptual otl:attr-Conceptual-name ?childName .
 					} .
 				} .
-				OPTIONAL {
-					?this otl:rel-Conceptual-hasExternalLink ?1externalRelation .
-					?1externalRelation a otl:ExternalLink .
-					?1externalRelation otl:attr-ExternalLink-relation "isSameAs" .
-					?1externalRelation otl:attr-ExternalLink-uri ?sameAsExternalURI .
-					FILTER (!regex(str(?sameAsExternalURI), "http://qudt.org/vocab/unit/", "i")) .
-					BIND (URI(str(?sameAsExternalURI)) AS ?tgtSameAsExternalURI) .
-				} .
+				# OPTIONAL {  # Only used for QUDT Units (see convertUnitOfMeasure)
+				# 	?this otl:rel-Conceptual-hasExternalLink ?1externalRelation .
+				# 	?1externalRelation a otl:ExternalLink .
+				# 	?1externalRelation otl:attr-ExternalLink-relation "isSameAs" .
+				# 	?1externalRelation otl:attr-ExternalLink-uri ?sameAsExternalURI .
+				# 	FILTER (!regex(str(?sameAsExternalURI), "http://qudt.org/schema/qudt/", "i")) .
+				# 	BIND (URI(str(?sameAsExternalURI)) AS ?tgtSameAsExternalURI) .
+				# } .
 				OPTIONAL {
 					?this otl:rel-Conceptual-hasExternalLink ?2externalRelation .
 					?2externalRelation a otl:ExternalLink .
 					?2externalRelation otl:attr-ExternalLink-relation "isRelatedTo" .
 					?2externalRelation otl:attr-ExternalLink-uri ?relatedToExternalURI .
-					BIND (URI(str(?relatedToExternalURI)) AS ?tgtRelatedToExternalURI) .
+					BIND (IF(
+						CONTAINS(STR(?relatedToExternalURI), "https://wetten.overheid.nl/"), 
+						STRDT(STR(?relatedToExternalURI), xsd:anyURI), 
+						URI(str(?relatedToExternalURI))) AS ?tgtRelatedToExternalURI) .
+					# BIND (URI(str(?relatedToExternalURI)) AS ?tgtRelatedToExternalURI) .
 				} .
 				OPTIONAL {
 					?this otl:rel-Conceptual-hasExternalLink ?3externalRelation .
@@ -500,7 +541,8 @@ ex:ConvertExternalSource a sh:NodeShape ;
 					BIND (URI(str(?isCompliantWithExternalURI)) AS ?tgtIsCompliantWithExternalURI) .
 					BIND (ex:createURI("shallBeCompliantWith") AS ?shallBeCompliantWith) .
 				} .
-				BIND (URI(STR(?this)) AS ?tgtThis) .
+
+				BIND (ex:createHumanReadableUri(?name) AS ?tgtThis) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -528,21 +570,27 @@ ex:ConvertExternalSourceAspect a sh:NodeShape ;
 			WHERE {
 				?aspect otl:rel-Conceptual-hasExternalLink ?this .
 				?aspect a otl:Aspect .
-				OPTIONAL {
-					?aspect otl:rel-Conceptual-hasExternalLink ?1externalRelation .
-					?1externalRelation a otl:ExternalLink .
-					?1externalRelation otl:attr-ExternalLink-relation "isSameAs" .
-					?1externalRelation otl:attr-ExternalLink-uri ?sameAsExternalURI .
-					BIND (URI(str(?sameAsExternalURI)) AS ?tgtSameAsExternalURI) .
-				} .
+				?aspect otl:attr-Conceptual-name ?name .
+				FILTER(LANG(?name) = "nl") .
+				# OPTIONAL {  # Only used for QUDT units
+				# 	?aspect otl:rel-Conceptual-hasExternalLink ?1externalRelation .
+				# 	?1externalRelation a otl:ExternalLink .
+				# 	?1externalRelation otl:attr-ExternalLink-relation "isSameAs" .
+				# 	?1externalRelation otl:attr-ExternalLink-uri ?sameAsExternalURI .
+				# 	BIND (URI(str(?sameAsExternalURI)) AS ?tgtSameAsExternalURI) .
+				# } .
 				OPTIONAL {
 					?aspect otl:rel-Conceptual-hasExternalLink ?2externalRelation .
 					?2externalRelation a otl:ExternalLink .
 					?2externalRelation otl:attr-ExternalLink-relation "isRelatedTo" .
 					?2externalRelation otl:attr-ExternalLink-uri ?relatedToExternalURI .
-					BIND (URI(str(?relatedToExternalURI)) AS ?tgtRelatedToExternalURI) .
+					BIND (IF(
+						CONTAINS(STR(?relatedToExternalURI), "https://wetten.overheid.nl/"), 
+						STRDT(STR(?relatedToExternalURI), xsd:anyURI), 
+						URI(str(?relatedToExternalURI))) AS ?tgtRelatedToExternalURI) .
 				} .
-				BIND (URI(STR(?aspect)) AS ?tgtAspect) .
+				
+				BIND (ex:createHumanReadableUri(?name) AS ?tgtAspect) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -564,16 +612,21 @@ ex:ConvertFunctionalSpace a sh:NodeShape ;
     sh:rule [ a sh:SPARQLRule ;
             sh:construct """	
 			CONSTRUCT {
-				?tgtThis a geo:Feature .
+				?tgtThis rdfs:subClassOf geo:Feature .
 			}
 			WHERE {
-				?tgtThis a otl:FunctionalSpace .
+				?this a otl:FunctionalSpace .
+				?this otl:attr-Conceptual-name ?name .
+				FILTER (LANG(?name) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?name) AS ?tgtThis) . 
 			} 
 		""" ;
             sh:deactivated false ;
             sh:prefixes ex:,
                 otl:,
                 geo:,
+                rdfs:,
                 sh: ] ;
     sh:targetClass otl:FunctionalSpace .
 
@@ -651,7 +704,7 @@ ex:ConvertGroupForQualifications a sh:NodeShape ;
 
 				BIND(IF(CONTAINS(str(?rest), "]"), STRAFTER(STRBEFORE(?rest, "]"), "["), ?undefined) AS ?linkName) .
 				BIND(IF(CONTAINS(str(?rest), "]"), STRAFTER(	STRBEFORE(STRAFTER(?rest, "]"), ")")	,"(") , ?undefined) AS ?strlink) .
-				BIND(URI(?strlink) AS ?link) .
+				BIND (STRDT(STR(?strlink), xsd:anyURI) AS ?link) .
 
 				# GroupForQualification
 				?this otl:attr-Group-name ?EnumerationName .
@@ -663,14 +716,16 @@ ex:ConvertGroupForQualifications a sh:NodeShape ;
   				BIND(IF(CONTAINS(str(?tgtEnumNames), ","), STRLANG(STRAFTER(?tgtEnumNames, ","), "en"), ?undefined) AS ?tgtEnumerationENname) .
 				BIND(IF(REGEX(?tgtEnumDescriptions, '^"([^"]*)",'), STRLANG(REPLACE(?tgtEnumDescriptions, '^"([^"]*)",".*$', '$1'), "nl"), STRLANG(?tgtEnumDescriptions, "nl")) AS ?enumnlDescription) .
 				BIND(IF(REGEX(?tgtEnumDescriptions, '^"([^"]*)",'), STRLANG(REPLACE(?tgtEnumDescriptions, '^".*","([^"]*)"$', '$1'), "en"), ?undefined) AS ?enumenDescription) .
+				
+				BIND (ex:createHumanReadableUri(?tgtEnumerationNLname) AS ?tgtThis) .
+				
+				BIND (ex:createHumanReadableUri(?tgtNLname) AS ?tgtElementUri) . 
 
-				BIND (URI(STR(?this)) AS ?tgtThis) .
-				BIND (URI(STR(?qualification)) AS ?tgtElementUri) .
 				BIND (CONCAT(str(?tgtThis), "-list-") AS ?listBase) .
 				BIND (IRI(CONCAT(?listBase, "0")) AS ?tgtListFirst) .
 				BIND (IRI(CONCAT(?listBase, str(?elementIndex))) AS ?tgtList) .
 				BIND (IF((?isLastElement = 0), rdf:nil, URI(CONCAT(?listBase, str((?elementIndex + 1))))) AS ?tgtRestList) .
-				BIND (URI(REPLACE(STR(?this), "/def/", "/term/")) AS ?tgtTerm ) .
+				BIND (URI(REPLACE(STR(?tgtThis), "/def/", "/term/")) AS ?tgtTerm ) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -706,20 +761,26 @@ ex:ConvertGroups a sh:NodeShape ;
 				} .
 			# Find the conceptuals that are part of the group
 				?this otl:rel-Group-isCollectionFor ?conceptual .
-				BIND (URI(STR(?conceptual)) AS ?tgtConceptual) .
+				?conceptual otl:attr-Conceptual-name ?name .
+				FILTER(LANG(?name) = "nl") .
+				
+				BIND (ex:createHumanReadableUri(?name) AS ?tgtConceptual) . 
 			# Find the group names if applicable
 				OPTIONAL {
 					?this otl:attr-Group-name ?tgtGroupName .
-					BIND(IF(CONTAINS(str(?tgtGroupName), ","), STRBEFORE(?tgtGroupName, ","), ?tgtGroupName) AS ?tgtNLGroupname) .
-  					BIND(IF(CONTAINS(str(?tgtGroupName), ","), STRAFTER(?tgtGroupName, ","), ?undefined) AS ?tgtENGroupname) .
+					FILTER(LANG(?tgtGroupName) = "nl") .
 				} .
 			# Find groups that are part of this group, these will be added as group members, just like conceptuals
 				OPTIONAL {
 					?this otl:rel-Group-isWholeFor ?partGroup .
-					BIND (URI(STR(?partGroup)) AS ?tgtPartGroup) .
+					?partGroup otl:attr-Group-name ?tgtPartGroupName .
+					FILTER(LANG(?tgtPartGroupName) = "nl") .
+					
+					BIND (ex:createHumanReadableUri(?tgtPartGroupName) AS ?tgtPartGroup) .  
 				} .
-				BIND (URI(STR(?this)) AS ?tgtThis) .
-				BIND (URI(REPLACE(STR(?this), "/def/", "/term/")) AS ?tgtTerm ) .
+				
+				BIND (ex:createHumanReadableUri(?tgtGroupName) AS ?tgtThis) .
+				BIND (URI(REPLACE(STR(?tgtThis), "/def/", "/term/")) AS ?tgtTerm ) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -761,7 +822,15 @@ ex:ConvertRelations a sh:NodeShape ;
 				BIND (BNODE() AS ?bnode2) .
 				BIND (BNODE() AS ?bnode3) .
 				?this otl:rel-Relation-from ?from .
+				?from otl:attr-Conceptual-name ?fromName .
+				FILTER (LANG(?fromName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?fromName) AS ?fromUri) .
 				?this otl:rel-Relation-to ?to .
+				?to otl:attr-Conceptual-name ?toName .
+				FILTER (LANG(?toName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?toName) AS ?toUri) .
 				?this a ?lacesRelation .
 				FILTER NOT EXISTS { 
 					?lacesRelation rdfs:subClassOf otl:hasAspect .
@@ -806,8 +875,8 @@ ex:ConvertRelations a sh:NodeShape ;
 				} .
 				BIND (COALESCE(?shapeToReused, ex:createURI(CONCAT(ex:localname(?to), "-Shape"))) AS ?tmpShapeTo) .
 				
-				BIND (IF(bound(?inverseRelation) && !bound(?bsRelation0), ?to, ?from) AS ?tgtFrom) .
-				BIND (IF(bound(?inverseRelation) && !bound(?bsRelation0), ?from, ?to) AS ?tgtTo) .
+				BIND (IF(bound(?inverseRelation) && !bound(?bsRelation0), ?toUri, ?fromUri) AS ?tgtFrom) .
+				BIND (IF(bound(?inverseRelation) && !bound(?bsRelation0), ?fromUri, ?toUri) AS ?tgtTo) .
 				BIND (IF(bound(?inverseRelation) && !bound(?bsRelation0), ?tmpShapeTo,?tmpShapeFrom) AS ?tgtShapeFromLaces) .
 				BIND (IF(bound(?minCardinality), ?minCardinality, IF(bound(?maxCardinality), ?null, "0"^^xsd:nonNegativeInteger)) AS ?tgtMinCardinality) .
 				BIND (COALESCE(?bsRelation0, ?inverseRelation, ?bsRelation1, ?bsRelation2) AS ?tgtRelation) .
@@ -841,7 +910,10 @@ ex:ConvertShapes a sh:NodeShape ;
 			}
 			WHERE {
 				?shapeObject otl:rel-Conceptual-hasShape ?this .
-				BIND (URI(STR(?shapeObject)) AS ?tgtShapeObject) .
+				?shapeObject otl:attr-Conceptual-name ?objectName .
+				FILTER (LANG(?objectName) = "nl") .
+
+				BIND (ex:createHumanReadableUri(?objectName) AS ?tgtShapeObject) .
 				OPTIONAL {
 					?this bm:attr-ShapeElement-name ?tgtObjectName .
 					BIND(IF(CONTAINS(str(?tgtObjectName), ","), STRLANG(STRBEFORE(?tgtObjectName, ","), "nl"), STRLANG(?tgtObjectName, "nl")) AS ?tgtNLObjectName) .
@@ -875,39 +947,15 @@ ex:ConvertUnitOfMeasure a sh:NodeShape ;
     sh:rule [ a sh:SPARQLRule ;
             sh:construct """	
 			CONSTRUCT {
-				?tgtUnitOfMeasure a <http://qudt.org/schema/qudt/Unit>.
-				?tgtUnitOfMeasure skos:prefLabel ?tgtNLUnitName .
-				?tgtUnitOfMeasure skos:prefLabel ?tgtENUnitName .
-				?tgtUnitOfMeasure ?tgtAnnotationProperty ?tgtAnnotationValue .
-				?tgtAnnotationProperty a owl:AnnotationProperty .
-				?tgtAnnotationProperty skos:prefLabel ?tgtNLAnnotationName .
-				?tgtAnnotationProperty skos:prefLabel ?tgtENAnnotationName .
-				?tgtAnnotationProperty rdfs:range xsd:string .
-				?tgtUnitOfMeasure rdfs:seeAlso ?tgtTerm .
+				?tgtUnitOfMeasure a <http://qudt.org/schema/qudt/Unit> .
 			}
 			WHERE {
-				?this shapes:sequence/rdf:_1 ?tgtUnitName .
-				BIND(IF(CONTAINS(str(?tgtUnitName), ","), STRBEFORE(?tgtUnitName, ","), ?tgtUnitName) AS ?tgtNLUnitName) .
-  				BIND(IF(CONTAINS(str(?tgtUnitName), ","), STRAFTER(?tgtUnitName, ","), ?undefined) AS ?tgtENUnitName) .
-				FILTER NOT EXISTS {
-					?this otl:rel-Conceptual-hasExternalLink ?externalLink .
-					?externalLink otl:attr-ExternalLink-relation "isSameAs" .
-					?externalLink otl:attr-ExternalLink-uri ?externalUnitUri .
-					FILTER regex(str(?externalUnitUri), "http://qudt.org/vocab/unit/", "i") .
-				} .
-				OPTIONAL {
-					?this otl:rel-Conceptual-isDescribedIn ?informationField .
-					?informationField otl:attr-InformationField-value ?tgtAnnotationValue .
-					?informationField otl:rel-InformationField-isClassifiedAs ?informationType .
-					?informationType otl:attr-Conceptual-name ?tgtAnnotationName .
-					FILTER (STRLEN(str(?tgtAnnotationValue)) > 0) .
-					BIND(IF(CONTAINS(str(?tgtAnnotationName), ","), STRBEFORE(?tgtAnnotationName, ","), ?tgtAnnotationName) AS ?tgtNLAnnotationName) .
-  					BIND(IF(CONTAINS(str(?tgtAnnotationName), ","), STRAFTER(?tgtAnnotationName, ","), ?undefined) AS ?tgtENAnnotationName) .
-					BIND (ex:createURI(MD5(?tgtAnnotationName)) AS ?tgtAnnotationProperty) .
-				} .
-				
-				BIND (URI(STR(?this)) AS ?tgtUnitOfMeasure) .
-				BIND (URI(REPLACE(STR(?this), "/def/", "/term/")) AS ?tgtTerm ) .
+				?this a otl:UnitOfMeasure .
+				?this otl:rel-Conceptual-hasExternalLink ?externalLink .
+				?externalLink otl:attr-ExternalLink-relation "isSameAs" .
+				?externalLink otl:attr-ExternalLink-uri ?externalUnitUri .
+				FILTER (CONTAINS(STR(?externalUnitUri), "http://qudt.org/schema/qudt/")) .
+				BIND (URI(STR(?externalUnitUri)) AS ?tgtUnitOfMeasure) .
 			}
 			""" ;
             sh:deactivated false ;
@@ -953,16 +1001,20 @@ ex:ConvertWholeFor a sh:NodeShape ;
 				?this otl:rel-Relation-from ?objectWhole .
 				# Check if the ?objectWhole has a name (if not then this object is an external source and the URI should stay the same)
 				OPTIONAL {
-					?objectWhole shapes:sequence/rdf:_1 ?objectWholeName .
-					BIND (URI(STR(?objectWhole)) AS ?objectWholeURI) .
+					?objectWhole otl:attr-Conceptual-name ?objectWholeName .
+					FILTER (LANG(?objectWholeName) = "nl") .
+
+					BIND (ex:createHumanReadableUri(?objectWholeName) AS ?objectWholeURI) .
 				} .
 				BIND (COALESCE(?objectWholeURI, ?objectWhole) AS ?tgtObjectWhole) .
 				
 				?this otl:rel-Relation-to ?objectPart .
 				# Check if ?objectPart has a name (same reason ?objectWhole)
 				OPTIONAL {
-					?objectPart shapes:sequence/rdf:_1 ?objectPartName .
-					BIND (URI(STR(?objectPart)) AS ?objectPartURI) .
+					?objectPart otl:attr-Conceptual-name ?objectPartName .
+					FILTER (LANG(?objectPartName) = "nl") .
+
+					BIND (ex:createHumanReadableUri(?objectPartName) AS ?objectPartURI) .
 				} .
 				BIND (COALESCE(?objectPartURI, ?objectPart) AS ?tgtObjectPart) .
 				# Check of the ?objectWhole has a shape, if yes, reuse. If not create shape
@@ -1080,20 +1132,14 @@ ex:CreateOntology a sh:NodeShape ;
 				BIND (REPLACE(?versionDate, "T[0-9]{2}:[0-9]{2}:[0-9]{2}.[0-9]{6}", "") AS ?tgtVersionDate) .
 				}
 			    BIND (ex:createURI("") AS ?tgtInferredOntology) .
-			    BIND (ex:createURI("Function") AS ?tgtFunction) .
-			    BIND (ex:createURI("Objective") AS ?tgtObjective) .
-			    BIND (ex:createURI("Risk") AS ?tgtRisk) .
-			    BIND (ex:createURI("Agent") AS ?tgtAgent) .
-			    BIND (ex:createURI("Document") AS ?tgtDocument) .
-			    BIND (ex:createURI("File") AS ?tgtFile) .
-			    BIND (nen2660:GeometricEntity AS ?tgtSpatialRegion) .
+			    # BIND (nen2660:GeometricEntity AS ?tgtSpatialRegion) .
 			    BIND (nen2660:RealObject AS ?tgtPhysicalObject) .
-			    BIND (nen2660:Activity AS ?tgtActivity) .
-			    BIND (nen2660:Event AS ?tgtEvent) .
+			    # BIND (nen2660:Activity AS ?tgtActivity) .
+			    # BIND (nen2660:Event AS ?tgtEvent) .
 			    BIND (nen2660:InformationObject AS ?tgtInformationObject) .
 			    BIND (nen2660:EnumerationType AS ?tgtEnumerationType) .
-			    BIND (nen2660:State AS ?tgtState) .
-				BIND (nen2660:Matter AS ?tgtMatter) .
+			    # BIND (nen2660:State AS ?tgtState) .
+				# BIND (nen2660:Matter AS ?tgtMatter) .
 				BIND (nen2660:SpatialRegion AS ?tgtFunctionalSpace ) . 
 			}
 			""" ;
@@ -1112,6 +1158,35 @@ ex:CreateOntology a sh:NodeShape ;
                 schema:,
                 nen2660: ] ;
     sh:targetClass owl:Ontology .
+
+ex:createHumanReadableUri a sh:SPARQLFunction ;
+    sh:parameter [ sh:datatype xsd:string ;
+            sh:description "The label that will be used for the Uri" ;
+            sh:path ex:op1 ] ;
+    sh:prefixes ex:,
+        dct:,
+        rdfs:,
+        owl: ;
+    sh:returnType rdfs:Resource ;
+    sh:select """
+		SELECT ?uri
+		WHERE {	
+			?namespace a owl:Ontology .
+			FILTER (!STRSTARTS(str(?namespace), "http://hub.laces.tech/semmtech/schemas")) .
+			FILTER (!STRSTARTS(str(?namespace), "http://www.laces.tech/publication/ns/semmtech")) .
+			#Filtering out contract manager and blueprint manager.
+			FILTER (!STRSTARTS(str(?namespace), "http://models.laces.tech/")) .
+			FILTER (!STRSTARTS(str(?namespace), "http://data.semmtech.com/sem/")) .
+			FILTER (!STRSTARTS(str(?namespace), "http://www.w3.org/")) .
+ 
+			?namespace rdfs:label ?ontologyName . # This one also does nothing, but can be left in. 
+
+			BIND (ex:humanReadableNameForUri($op1, $op1) AS ?nameCamelCase) .
+			BIND (STR(ENCODE_FOR_URI(?nameCamelCase))  AS ?nameEncoded) . 
+			BIND (URI(CONCAT(STR(?namespace),  str(?nameEncoded))) AS ?uri) .
+		}
+		LIMIT 1
+		""" .
 
 ex:createURI a sh:SPARQLFunction ;
     sh:parameter [ sh:datatype xsd:string ;
@@ -1133,10 +1208,49 @@ ex:createURI a sh:SPARQLFunction ;
 			FILTER (!STRSTARTS(str(?namespace), "http://data.semmtech.com/sem/")) .
 			FILTER (!STRSTARTS(str(?namespace), "http://www.w3.org/")) .
  
-			?namespace rdfs:label ?ontologyName . # This one also does nothing, but can be left in. 
-			?namespace <http://purl.org/dc/terms/description> ?description . 
+			?namespace rdfs:label ?ontologyName . # This one also does nothing, but can be left in.  
 
 			BIND (URI(CONCAT(STR(?namespace),  str($op1))) AS ?uri) .
+		}
+		LIMIT 1
+		""" .
+
+ex:humanReadableNameForUri a sh:SPARQLFunction ;
+    sh:parameter [ sh:datatype xsd:string ;
+            sh:description "The original label in its entirety" ;
+            sh:path ex:op1 ],
+        [ sh:datatype xsd:string ;
+            sh:description "The part of the label that needs to be processed" ;
+            sh:path ex:op2 ] ;
+    sh:prefixes ex:,
+        dct:,
+        rdfs:,
+        owl: ;
+    sh:returnType rdfs:Resource ;
+    sh:select """
+		SELECT ?tgtLabel
+		WHERE {	
+			### How it works
+			## 1st iteration
+			# op1: this is a test
+			# op2: this is a test
+			# processedPartCamelCase: this
+			# toBeProcessed: is a test
+
+			## 2nd iteration
+			# op1: this is a test
+			# op2: is a test
+			# processedPartCamelCase: Is
+			# toBeProcessed: a test
+
+			# after final iteration it loops back to concatenate the values for ?processedPartCamelCase
+
+			BIND (IF(CONTAINS($op1, " "), STRBEFORE($op1, " "), $op1) AS ?lowercasePart) .
+			BIND (IF(CONTAINS($op2, " "), STRBEFORE($op2, " "), $op2) AS ?processedPart) .
+			BIND (IF(?processedPart = ?lowercasePart, ?processedPart, CONCAT(UCASE(SUBSTR(?processedPart, 1, 1)), LCASE(SUBSTR(?processedPart, 2)))) AS ?processedPartCamelCase) .
+			BIND (IF(CONTAINS($op2, " "), STRAFTER($op2, " "), 1/0) AS ?toBeProcessed) .
+
+			BIND (IF(BOUND(?toBeProcessed), CONCAT(?processedPartCamelCase, ex:humanReadableNameForUri($op1, ?toBeProcessed)),  ?processedPartCamelCase) AS ?tgtLabel) .
 		}
 		LIMIT 1
 		""" .
@@ -1175,13 +1289,9 @@ otl:Activity rdfs:seeAlso nen2660:Activity .
 
 otl:Activity-isLocatedAt-GeometricalSpace rdfs:seeAlso nen2660:hasInterior .
 
-otl:Agent skos:altLabel "Agent" .
-
-otl:Document skos:altLabel "Document" .
+otl:Document rdfs:seeAlso nen2660:InformationObject .
 
 otl:Event rdfs:seeAlso nen2660:Event .
-
-otl:Function skos:altLabel "Function" .
 
 otl:FunctionalSpace-isLocatedAt-GeometricalSpace rdfs:seeAlso nen2660:hasInterior .
 
@@ -1189,13 +1299,9 @@ otl:GeometricalSpace rdfs:seeAlso nen2660:GeometricEntity .
 
 otl:Matter rdfs:seeAlso nen2660:Matter .
 
-otl:Objective skos:altLabel "Objective" .
-
 otl:PhysicalObject rdfs:seeAlso nen2660:RealObject .
 
 otl:PhysicalObject-isLocatedAt-GeometricalSpace rdfs:seeAlso nen2660:hasInterior .
-
-otl:Risk skos:altLabel "Risk" .
 
 otl:State rdfs:seeAlso nen2660:State .
 
@@ -1279,14 +1385,14 @@ nen2660: sh:declare [ sh:namespace "https://w3id.org/nen2660/def#"^^xsd:anyURI ;
 otl: sh:declare [ sh:namespace "http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/"^^xsd:anyURI ;
             sh:prefix "otl" ] .
 
-rdfs: sh:declare [ sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ;
-            sh:prefix "rdfs" ] .
+sh: sh:declare [ sh:namespace "http://www.w3.org/ns/shacl#"^^xsd:anyURI ;
+            sh:prefix "sh" ] .
 
 owl: sh:declare [ sh:namespace "http://www.w3.org/2002/07/owl#"^^xsd:anyURI ;
             sh:prefix "owl" ] .
 
-sh: sh:declare [ sh:namespace "http://www.w3.org/ns/shacl#"^^xsd:anyURI ;
-            sh:prefix "sh" ] .
+rdfs: sh:declare [ sh:namespace "http://www.w3.org/2000/01/rdf-schema#"^^xsd:anyURI ;
+            sh:prefix "rdfs" ] .
 
 ex: sh:declare [ sh:namespace "http://example.org/example#"^^xsd:anyURI ;
             sh:prefix "ex" ] .
