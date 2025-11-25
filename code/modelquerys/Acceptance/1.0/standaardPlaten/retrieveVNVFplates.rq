@@ -8,7 +8,7 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX nen2660: <https://w3id.org/nen2660/def#>
 PREFIX imv: <https://data.crow.nl/imv/def/>
 
-SELECT DISTINCT ?fysiekePlaatUri ?fysiekePlaatNameNL ?fysiekePlaatNameEN ?svg ?vnvf # ?parentFysiekePlaatUri ?parentFysiekePlaatNaam
+SELECT DISTINCT ?fysiekePlaatUri ?fysiekePlaatNameNL ?fysiekePlaatNameEN # ?vnvf
 WHERE {
   ?fysiekePlaatUri a owl:Class .
   ?fysiekePlaatUri rdfs:subClassOf imv:FysiekePlaat .
@@ -21,17 +21,6 @@ WHERE {
     FILTER (LANG(?fysiekePlaatNameEN) = "en") .
   }
   
-  # ?fysiekePlaatUri rdfs:subClassOf ?parentFysiekePlaatUri .
-  # FILTER NOT EXISTS { ?parentFysiekePlaatUri a owl:Restriction } .
-  # FILTER (?parentFysiekePlaatUri != <https://w3id.org/nen2660/def#RealObject>) . 
-  # ?parentFysiekePlaatUri skos:prefLabel ?parentFysiekePlaatNaam .
-  
-  OPTIONAL {
-    ?fysiekePlaatUri nen2660:isDescribedBy ?svg .
-	  FILTER (contains(str(?svg), "https://raw.githubusercontent.com/nl-digigo/NLCS/") )
-  }
-  OPTIONAL {
-    ?fysiekePlaatUri nen2660:isDescribedBy ?vnvf .
-	  FILTER (contains(str(?vnvf), "https://vnvf.nl/product/vnvf-bordenboek/") )
-  }
+  ?fysiekePlaatUri nen2660:isDescribedBy ?vnvf .
+  FILTER (contains(str(?vnvf), "https://vnvf.nl/product/vnvf-bordenboek/") )
 }
