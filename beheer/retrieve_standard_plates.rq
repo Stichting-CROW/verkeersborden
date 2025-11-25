@@ -6,21 +6,23 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX nen2660: <https://w3id.org/nen2660/def#>
+PREFIX imv: <https://data.crow.nl/imv/def/>
 
-SELECT DISTINCT ?fysiekePlaatUri ?fysiekePlaatNameNL ?fysiekePlaatNameEN ?fysiekePlaatDefinition ?svg ?parentFysiekePlaatUri ?parentFysiekePlaatNaam
+# Query to retrieve plates from Staandard Verkeersborden publication 
+
+SELECT DISTINCT ?URI ?name ?definition ?svgImage
 WHERE {
-  ?fysiekePlaatUri a owl:Class .
-  ?fysiekePlaatUri rdfs:subClassOf*/skos:prefLabel "FysiekePlaat" .
-  ?fysiekePlaatUri skos:prefLabel ?fysiekePlaatNameNL .
-  FILTER (LANG(?fysiekePlaatNameNL) = "nl") .
-  ?fysiekePlaatUri skos:altLabel ?fysiekePlaatNameEN .
-  FILTER (LANG(?fysiekePlaatNameEN) = "en") .
-  ?fysiekePlaatUri skos:definition ?fysiekePlaatDefinition .
-
-  ?fysiekePlaatUri rdfs:subClassOf ?parentFysiekePlaatUri .
-  FILTER NOT EXISTS { ?parentFysiekePlaatUri a owl:Restriction } .
-  FILTER (?parentFysiekePlaatUri != <https://w3id.org/nen2660/def#RealObject>) . 
-  ?parentFysiekePlaatUri skos:prefLabel ?parentFysiekePlaatNaam .
-  
-  ?fysiekePlaatUri rdfs:seeAlso ?svg .
+  ?URI rdfs:subClassOf imv:FysiekePlaat .
+  OPTIONAL {
+    ?URI skos:prefLabel ?name .
+    FILTER (LANG(?name) = "nl") .
+  }
+  OPTIONAL {
+    ?URI skos:definition ?definition .
+    FILTER (LANG(?definition) = "nl") .
+  }
+  OPTIONAL {
+    ?URI nen2660:isDescribedBy ?svgImage .
+	FILTER (contains(str(?svgImage), "https://raw.githubusercontent.com/nl-digigo/NLCS/") )
+  }
 }

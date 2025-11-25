@@ -2,17 +2,26 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX vb: <https://data.crow.nl/imv/def/>
 
-SELECT DISTINCT ?iconURI ?iconName ?iconDefinition ?svg
+# Query to retrieve icons from Kern publication 
 
+SELECT DISTINCT ?URI ?name ?definition ?svgImage
 WHERE {
-    ?iconURI a owl:Class .
-    ?iconURI rdfs:subClassOf vb:Icoon .
-    ?iconURI skos:prefLabel ?iconName .
-    FILTER (LANG(?iconName) = "nl") .
-    ?iconURI skos:definition ?iconDefinition .
-    FILTER (LANG(?iconDefinition) = "nl") .
-    ?iconURI rdfs:seeAlso ?svg .
-    FILTER (STRSTARTS(str(?svg), "https://raw.githubusercontent.com/ndwnu/qgis-verkeersborden-style/")) .
+    ?icoon a owl:Class .
+    ?icoon skos:prefLabel "Icoon"@nl .
+    ?URI rdfs:subClassOf+ ?icoon .
+
+    ?URI skos:prefLabel ?name .
+    FILTER (LANG(?name) = "nl") . 
+    ?URI skos:prefLabel ?icoonNaamEN .
+    FILTER (LANG(?icoonNaamEN) = "en") . 
+
+    OPTIONAL {
+        ?URI skos:definition ?definition .
+        FILTER (LANG(?definition) = "nl") .
+    }
+    OPTIONAL {
+        ?URI rdfs:seeAlso ?svgImage .
+        FILTER (STRSTARTS(str(?svgImage), "https://raw.githubusercontent.com/ndwnu/qgis-verkeersborden-style/")) .
+    }
 }
