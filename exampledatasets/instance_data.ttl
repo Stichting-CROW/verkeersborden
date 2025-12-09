@@ -1,0 +1,112 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix nen2660: <https://w3id.org/nen2660/def#> .
+@prefix geo:      <http://www.opengis.net/ont/geosparql#> .
+@prefix imv_kern: <https://data.crow.nl/imv/def/> .
+@prefix imv_domainwaarden: <https://data.crow.nl/imv/domeinwaarden/> .
+@prefix imv_standaard_platen: <https://data.crow.nl/imv-standaard-platen/def/> .
+@prefix imv_inst: <https://data.crow.nl/imv/id/> .
+
+
+imv_inst:J21_001
+    rdf:type imv_standaard_platen:J21 ;
+    <https://data.crow.nl/imv/def/geo-ori%C3%ABntatiehoek> "90"^^xsd:decimal ;
+    imv_kern:objectstatus imv_domainwaarden:Geplaatst .
+
+imv_inst:Network_Locatie_001
+    a imv_kern:NetwerklocatieFysiekePlaat ;
+    nen2660:contains imv_inst:J21_001 ; 
+    geo:hasGeometry imv_inst:NetworkLocation_001_Geom ;
+    imv_kern:wegvakfractie "0.10255926102399826"^^xsd:decimal ;
+    imv_kern:wegvakId "368259049" ;
+    # imv_kern:strooknummer "1"^^xsd:string ;
+    imv_kern:wegvakrichting imv_domainwaarden:Heen .
+
+imv_inst:NetworkLocation_001_Geom
+    a geo:Geometry ;
+    geo:asWKT "POINT (5.8090650644276 51.854063493961)"^^geo:wktLiteral .
+
+
+
+imv_inst:C2_002
+    rdf:type imv_standaard_platen:C02 ;
+    <https://data.crow.nl/imv/def/geo-ori%C3%ABntatiehoek> "90"^^xsd:decimal ;
+    imv_kern:objectstatus imv_domainwaarden:Geplaatst .
+
+imv_inst:Network_Locatie_002
+    a imv_kern:NetwerklocatieFysiekePlaat ;
+    nen2660:contains imv_inst:C2_002 ; 
+    geo:hasGeometry imv_inst:NetworkLocation_002_Geom ;
+    imv_kern:wegvakfractie "0.9452245235443115"^^xsd:decimal ;
+    imv_kern:wegvakId "600380570" ;
+    imv_kern:wegvakrichting imv_domainwaarden:Terug .
+
+imv_inst:NetworkLocation_002_Geom
+    a geo:Geometry ;
+    geo:asWKT "POINT (5.8092871672043 51.85430908624)"^^geo:wktLiteral .
+    
+
+
+imv_inst:A1_003                                     # BlackCode attribute specifies value (speed in this case)
+    rdf:type imv_standaard_platen:A0130zb ;         # or A0130 ?
+    <https://data.crow.nl/imv/def/geo-ori%C3%ABntatiehoek> "180"^^xsd:decimal ;
+    imv_kern:objectstatus imv_domainwaarden:Geplaatst .
+
+imv_inst:Network_Locatie_003
+    a imv_kern:NetwerklocatieFysiekePlaat ;
+    nen2660:contains imv_inst:A1_003 ; 
+    geo:hasGeometry imv_inst:NetworkLocation_003_Geom ;
+    imv_kern:wegvakfractie "0.009777000173926353"^^xsd:decimal ;
+    imv_kern:wegvakId "367260009" ;
+    imv_kern:wegvakrichting imv_domainwaarden:Heen .
+
+imv_inst:NetworkLocation_003_Geom
+    a geo:Geometry ;
+    geo:asWKT "POINT (5.8049752700747 51.857974139772)"^^geo:wktLiteral .
+
+
+
+
+
+imv_inst:A1_004                                     # BlackCode attribute specifies value (speed in this case)
+    rdf:type imv_standaard_platen:A0160zb ;         
+    <https://data.crow.nl/imv/def/geo-ori%C3%ABntatiehoek> "0"^^xsd:decimal ;
+    imv_kern:objectstatus imv_domainwaarden:Geplaatst .
+
+imv_inst:Network_Locatie_004
+    a imv_kern:NetwerklocatieFysiekePlaat ;
+    nen2660:contains imv_inst:A1_004 ; 
+    geo:hasGeometry imv_inst:NetworkLocation_004_Geom ;
+    imv_kern:wegvakfractie "0.010014900006353855"^^xsd:decimal ;
+    imv_kern:wegvakId "367260009" ;
+    imv_kern:wegvakrichting imv_domainwaarden:Terug .
+
+imv_inst:NetworkLocation_004_Geom
+    a geo:Geometry ;
+    geo:asWKT "POINT (5.8049717750423 51.857972938775)"^^geo:wktLiteral .
+    
+
+
+
+
+imv_inst:L8_005                                     
+    # rdf:type imv_standaard_platen:??? ;           # not modelled yet
+    <https://data.crow.nl/imv/def/geo-ori%C3%ABntatiehoek> "180"^^xsd:decimal ;
+    imv_kern:objectstatus imv_domainwaarden:Geplaatst .
+
+imv_inst:Network_Locatie_005
+    a imv_kern:NetwerklocatieFysiekePlaat ;
+    nen2660:contains imv_inst:L8_005 ; 
+    geo:hasGeometry imv_inst:NetworkLocation_005_Geom ;
+    imv_kern:wegvakfractie "0.011622563004493713"^^xsd:decimal ;
+    imv_kern:wegvakId "367260009" ;
+    imv_kern:wegvakrichting imv_domainwaarden:Heen .
+
+imv_inst:NetworkLocation_005_Geom
+    a geo:Geometry ;
+    geo:asWKT "POINT (5.8050885145839 51.857951103758)"^^geo:wktLiteral .
