@@ -1,0 +1,2361 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://data.crow.nl/imv/term/> a skos:ConceptScheme;
+  skos:prefLabel "IMV Vocabulaire";
+  rdfs:comment "";
+  owl:imports <https://w3id.org/nen2660/term#>;
+  dcterms:date "2025-10-31373" .
+
+<https://data.crow.nl/imv/term/A4-adviessnelheid> a skos:Concept;
+  skos:prefLabel "A4-advised-speed"@en, "A4-adviessnelheid"@nl;
+  skos:definition "Verkeersbord dat de wettelijke maximumsnelheid aangeeft"@nl, "Road sign indicating a recommended but not mandatory maximum speed limit"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Icoon> a skos:Concept;
+  skos:prefLabel "Icon"@en, "Icoon"@nl;
+  skos:definition "A picture or tekst on a Road Sign"@en, "Een afbeelding of tekst op een Fysieke Plaat."@nl;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> .
+
+<https://data.crow.nl/imv/term/C4-eenrichtingsweg> a skos:Concept;
+  skos:prefLabel "C4-one-way"@en, "C4-eenrichtingsweg"@nl;
+  skos:definition "Een verkeersbord dat aanduidt dat de weg een eenrichtingsweg is, naar rechts is deze richting open"@nl,
+    "A road sign indicating that the road is a one-way street, with this direction open to the right."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J21-kinderen> a skos:Concept;
+  skos:prefLabel "J21-kids"@en, "J21-kinderen"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor kinderen"@nl, "Traffic sign indicating a warning for children"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E8-parkeren-auto> a skos:Concept;
+  skos:prefLabel "E8-parkeren-auto"@nl, "E8-car-parking"@en;
+  skos:definition "Een verkeersbord dat parkeergelegenheid aangeeft, uitsluitend voor auto's."@nl,
+    "A road sign indicating parking designated for cars."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J35-slecht-zicht> a skos:Concept;
+  skos:prefLabel "J35-poor-visibility"@en, "J35-slecht-zicht"@nl;
+  skos:definition "Traffic sign indicating a warning for poor visibility due to snow, rain, or fog"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor slecht zicht door sneeuw, regen of mist"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J24-fietsbrom> a skos:Concept;
+  skos:prefLabel "J24-cyclist"@en, "J24-fietsbrom"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor fietsers en bromfietsers"@nl,
+    "Traffic sign indicating a warning for cyclists and moped riders"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Linksaf> a skos:Concept;
+  skos:prefLabel "Go left"@en, "Linksaf"@nl;
+  skos:definition "Linksaf slaan of links het bord passeren"@nl, "Turn left or pass the sign on the left"@en .
+
+<https://data.crow.nl/imv/term/Zone> a skos:Concept;
+  skos:prefLabel "Zone"@en, "Zone"@nl;
+  skos:definition "Tekst die aangeeft dat er een zone is waar een verkeersmaatregel geldt"@nl,
+    "Tekst dat indicates the start of a traffic regulation zone"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/VerbodOpStilstaan> a skos:Concept;
+  skos:prefLabel "Prohibition of stopping"@en, "Verbod op stilstaan"@nl;
+  skos:definition "Verkeersmaatregel die aanduidt dat het verboden is om te stoppen."@nl,
+    "Traffic measure indicating that stopping is prohibited."@en;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/Verkeersmaatregel> a skos:Concept;
+  skos:prefLabel "Verkeersmaatregel"@nl, "Traffic regulation"@en;
+  skos:definition "A command and/or prohibition or advisory speed that can be visualized with a traffic sign from Annex I of the Dutch law: Road Traffic Signs and Regulations 1990 (RVV 1990), categories A to H."@en,
+    "Een gebod en/of verbod of adviessnelheid dat kan worden gevisualiseerd met een verkeersbord uit bijlage I, behorende bij het RVV 1990, categorie A tot en met H."@nl;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> .
+
+<https://data.crow.nl/imv/term/C17-voertuiglengte> a skos:Concept;
+  skos:prefLabel "C17-vehilcle-length"@en, "C17-voertuiglengte"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen en samenstellen van voertuigen die, met inbegrip van de lading, langer zijn dan op het bord is aangegeven."@nl,
+    "A road sign indicating that the road is closed to vehicles and vehicle combinations exceeding the length specified on the sign, including any load."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Parkeervoorwaardenlijst> a skos:Collection;
+  skos:prefLabel "Parkeervoorwaardenlijst"@nl, "Parking condition list"@en;
+  skos:definition "Lijst met voorwaarden om te mogen parkeren."@nl, "List with conditions under which parking is allowed."@en;
+  skos:member <https://data.crow.nl/imv/term/Carpool>, <https://data.crow.nl/imv/term/Vergunninghouders>,
+    <https://data.crow.nl/imv/term/TweeWielenOpHetTrottoir>, <https://data.crow.nl/imv/term/OpladenVoertuig>,
+    <https://data.crow.nl/imv/term/LadenEnLossen>, <https://data.crow.nl/imv/term/AlleenInDeVakken>,
+    <https://data.crow.nl/imv/term/KissAndRide>, <https://data.crow.nl/imv/term/AlleenOpDeParkeerstrook>,
+    <https://data.crow.nl/imv/term/ParkAndRide>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Drempel> a skos:Concept;
+  skos:prefLabel "Drempel"@nl, "Speed bump"@en;
+  skos:definition "Verkeersdrempel"@nl, "Speed bump"@en .
+
+<https://data.crow.nl/imv/term/Veerooster> a skos:Concept;
+  skos:prefLabel "Veerooster"@nl, "Cattle grid"@en;
+  skos:definition "Veerooster"@nl, "Cattle grid"@en .
+
+<https://data.crow.nl/imv/term/Paal> a skos:Concept;
+  skos:prefLabel "Paal"@nl, "Pole"@en;
+  skos:definition "Paal"@nl, "Pole"@en .
+
+<https://data.crow.nl/imv/term/Poller> a skos:Concept;
+  skos:prefLabel "Bollard"@en, "Poller"@nl;
+  skos:definition "Bollard"@en, "Poller"@nl .
+
+<https://data.crow.nl/imv/term/Wildrooster> a skos:Concept;
+  skos:prefLabel "Wildrooster"@nl, "Animal grid"@en;
+  skos:definition "Wildrooster"@nl, "Animal grid"@en .
+
+<https://data.crow.nl/imv/term/wegversmalling> a skos:Concept;
+  skos:prefLabel "wegversmalling"@nl, "road narrowing"@en;
+  skos:definition "The aspect that indicates the type of road narrowing."@en, "Het aspect dat het soort wegversmalling aangeeft."@nl .
+
+<https://data.crow.nl/imv/term/Diesel> a skos:Concept;
+  skos:prefLabel "Diesel"@en, "Diesel"@nl;
+  skos:definition "Value for diesel vehicles."@en, "Waarde voor dieselvoertuigen."@nl .
+
+<https://data.crow.nl/imv/term/Inhaalverbod> a skos:Concept;
+  skos:prefLabel "Inhaalverbod"@nl, "Overtaking prohibition"@en;
+  skos:definition "Prohibition to overtake other traffic"@en, "Verbod om ander verkeer in te halen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/NetwerklocatieVerkeersmaatregel> a skos:Concept;
+  skos:prefLabel "Netwerklocatie verkeersmaatregel"@nl, "Network location traffic measure"@en;
+  skos:definition "The location of a traffic measure in the road network"@en, "De locatie van een verkeersmaatregel in het wegennetwerk"@nl;
+  skos:broader <https://w3id.org/nen2660/term#SpatialRegion> .
+
+<https://data.crow.nl/imv/term/Achtergrondschild> a skos:Concept;
+  skos:prefLabel "Achtergrondschild"@nl, "Background shield"@en;
+  skos:definition "The background of a Road Sign"@en, "De achtergrond van een Fysieke Plaat"@nl;
+  skos:broader <https://w3id.org/nen2660/term#InformationObject> .
+
+<https://data.crow.nl/imv/term/B5-voorrang-rechts> a skos:Concept;
+  skos:prefLabel "B5-priority-right"@en, "B5-voorrang-rechts"@nl;
+  skos:definition "A road sign indicating that you have priority at the next junction with a road coming from the right"@en,
+    "Een verkeersboord dat aangeeft dat je voorrang hebt op het volgende kruispunt met een weg van rechts"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/LijstBijzondereTijdsvoorwaarden> a skos:Collection;
+  skos:prefLabel "List special time conditions"@en, "Lijst bijzondere tijdsvoorwaarden"@nl;
+  skos:definition "Lijst met bijzondere voorwaarden qua tijdstip van de dag."@nl, "\"Lijst met bijzondere voorwaarden qua tijdstip van de dag.\",\"List with special time conditions"@en;
+  skos:member <https://data.crow.nl/imv/term/BijSchemerEnDuisternis>, <https://data.crow.nl/imv/term/TussenZonsopkomstEnZonsondergang>,
+    <https://data.crow.nl/imv/term/TussenZonsondergangEnZonsopkomst>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/VoorrangVerlenen> a skos:Concept;
+  skos:prefLabel "Voorrang verlenen"@nl, "Secondary road"@en;
+  skos:definition "Value indicating the traffic on a road has to give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/term/Heen> a skos:Concept;
+  skos:prefLabel "Heen"@nl, "Outbound"@en;
+  skos:definition "Heen"@nl, "Outbound"@en .
+
+<https://data.crow.nl/imv/term/Rechtdoor> a skos:Concept;
+  skos:prefLabel "Straight ahead"@en, "Rechtdoor"@nl;
+  skos:definition "Rechtdoor gaan"@nl, "Go straight ahead"@en .
+
+<https://data.crow.nl/imv/term/Keren> a skos:Concept;
+  skos:prefLabel "Keren"@nl, "Turn around"@en;
+  skos:definition "Keren"@nl, "Turn around"@en .
+
+<https://data.crow.nl/imv/term/Rechtsaf> a skos:Concept;
+  skos:prefLabel "Rechtsaf"@nl, "Go right"@en;
+  skos:definition "Rechtsaf slaan of rechts het bord passeren"@nl, "Turn right or pass the sign on the right"@en .
+
+<https://data.crow.nl/imv/term/F11-passeerbaan> a skos:Concept;
+  skos:prefLabel "F11-passing-lane"@en, "F11-passeerbaan"@nl;
+  skos:definition "A road sign indicating mandatory use of a passing lane for specific vehicles."@en,
+    "Een verkeersbord dat verplicht gebruik van een passeerbaan aangeeft voor specifieke voertuigen."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C20-aslast> a skos:Concept;
+  skos:prefLabel "C20-axle-load"@en, "C20-aslast"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen waarvan de aslast hoger is dan op het bord is aangegeven."@nl,
+    "A road sign indicating that the road is closed to vehicles with an axle load exceeding the limit specified on the sign."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/H2-einde-bebouwde-kom> a skos:Concept;
+  skos:prefLabel "H2-end-built-up-area"@en, "H2-einde-bebouwde-kom"@nl;
+  skos:definition "A traffic sign indicating that the built-up area is ending."@en,
+    "Verkeersbord dat aanduidt dat de bebouwde kom eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Nuluitstoot> a skos:Concept;
+  skos:prefLabel "Nuluitstoot"@nl, "Zero emission"@en;
+  skos:definition "Waarde voor voertuigen met nul emissie."@nl, "Value for vehicles with zero emission."@en .
+
+<https://data.crow.nl/imv/term/G1-autosnelweg> a skos:Concept;
+  skos:prefLabel "G1-motorway"@en, "G1-autosnelweg"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat het een autosnelweg betreft"@nl, "A traffic sign that indicates that it is a motorway"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C14-fiets> a skos:Concept;
+  skos:prefLabel "C14-bicycle"@en, "C14-fiets"@nl;
+  skos:definition "A road sign indicating that the road is closed to bicycles and mobility vehicles without a motor."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor fietsen en voor gehandicaptenvoertuigen zonder motor."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F1-inhaalverbod> a skos:Concept;
+  skos:prefLabel "F1-no-overtaking"@en, "F1-inhaalverbod"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat motorvoertuigen verboden zijn elkaar in te halen."@nl,
+    "A road sign indicating that motor vehicles are prohibited from overtaking each other."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F15-trambaan> a skos:Concept;
+  skos:prefLabel "F15-tram-lane"@en, "F15-trambaan"@nl;
+  skos:definition "A road sign indicating a lane reserved exclusively for trams."@en,
+    "Een verkeersbord dat aangeeft dat een rijbaan uitsluitend bedoeld is voor trams."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Flashlight> a skos:Concept;
+  skos:prefLabel "Flashlight"@en, "Flashlight"@nl;
+  skos:definition "Light on a physical sign that draws extra attention to the sign."@en,
+    "Licht op een fysieke plaat waarmee extra aandacht op de plaat wordt gevestigd."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J17-versmalling> a skos:Concept;
+  skos:prefLabel "J17-versmalling"@nl, "J17-road-narrowing"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor rijbaanversmalling"@nl,
+    "Traffic sign indicating a warning for road narrowing"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F7-keerverbod> a skos:Concept;
+  skos:prefLabel "F7-no-turning"@en, "F7-keerverbod"@nl;
+  skos:definition "A road sign indicating a prohibition on making U-turns."@en, "Een verkeersbord dat een verbod aangeeft om te keren."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C23-02-spitsstrook-vrij> a skos:Concept;
+  skos:prefLabel "C23-02-free-rush-lane"@en, "C23-02-spitsstrook-vrij"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de spitsstrook moet worden vrijgemaakt."@nl,
+    "A road sign indicating that the rush-hour lane must be cleared."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C10-aanhangwagen> a skos:Concept;
+  skos:prefLabel "C10-trailer"@en, "C10-aanhangwagen"@nl;
+  skos:definition "A road sign indicating that the road is closed to motor vehicles with trailers"@en,
+    "een verkeersbord dat aangeeft dat een weg gesloten is voor voor motorvoertuigen met aanhangwagen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F2-einde-inhaalverbod> a skos:Concept;
+  skos:prefLabel "F2-end-no-overtaking"@en, "F2-einde-inhaalverbod"@nl;
+  skos:definition "A road sign indicating the end of the overtaking prohibition for motor vehicles."@en,
+    "Een verkeersbord dat het einde van het inhaalverbod voor motorvoertuigen aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Wielklem> a skos:Concept;
+  skos:prefLabel "Wielklem"@nl, "WheelClamp"@en, "Wheelclamp"@en;
+  skos:definition "A text or image indicating a wheel clamp."@en, "Tekst of afbeelding die een wielklem aangeeft."@nl,
+    "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where a clamp is placed on one of the vehicle's wheels to prevent movement until a fine is paid or the required conditions are met."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een klem op een van de wielen van het voertuig geplaatst om verplaatsing te voorkomen totdat een boete is betaald of aan de vereiste voorwaarden is voldaan."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a3-milieuzone-5-6> a skos:Concept;
+  skos:prefLabel "C22a3-emission-5-6"@en, "C22a3-milieuzone-5-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor personen- en bedrijfsautoâ€™s van emissieklasse 5 en 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to passenger and commercial vehicles with emission classes 5 and 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J22-voetgangsoversteek> a skos:Concept;
+  skos:prefLabel "J22-pedestrian-crossing"@en, "J22-voetgangsoversteek"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor voetgangersoversteekplaats"@nl,
+    "Traffic sign indicating a warning for a pedestrian crossing"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J10-overweg-slagbomen> a skos:Concept;
+  skos:prefLabel "J10-level-crossing-barrier"@en, "J10-overweg-slagbomen"@nl;
+  skos:definition "Traffic sign indicating a warning for a railway crossing with barriers"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor overweg met slagbomen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E12-ov-parkeerplaats> a skos:Concept;
+  skos:prefLabel "E12-public-transport"@en, "E12-ov-parkeerplaats"@nl;
+  skos:definition "A road sign indicating parking for public transport commuters."@en,
+    "Een verkeersbord dat parkeergelegenheid aangeeft ten behoeve van OV-overstappers."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Terug> a skos:Concept;
+  skos:prefLabel "Return"@en, "Terug"@nl;
+  skos:definition "Return"@en, "Terug"@nl .
+
+<https://data.crow.nl/imv/term/C22a-milieuzone-diesel> a skos:Concept;
+  skos:prefLabel "C22a-diesel"@en, "C22a-milieuzone-diesel"@nl;
+  skos:definition "A road sign indicating that the road is closed to passenger and commercial vehicles, lorries, or buses with a diesel engine due to the environmental zone."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor personen- en bedrijfsauto's, vrachtauto's of bussen met een dieselmotor vanwege de milieuzone."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Wegversmalling> a skos:Concept;
+  skos:prefLabel "Wegversmalling"@nl, "Road narrowing"@en;
+  skos:definition "Symmetrische versmalling van de weg."@nl, "Symmetrical narrowing of the road."@en .
+
+<https://data.crow.nl/imv/term/C5-tweerichtingsweg> a skos:Concept;
+  skos:prefLabel "C5-two-way"@en, "C5-tweerichtingsweg"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg in beide richtingen bereden mag worden"@nl,
+    "A road sign indicating that the road may be used in both directions."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E7-laden-lossen> a skos:Concept;
+  skos:prefLabel "E7-un-loading"@en, "E7-laden-lossen"@nl;
+  skos:definition "Een verkeersbord dat een gelegenheid aanduidt voor direct laden en lossen van goederen."@nl,
+    "A road sign indicating a designated space for immediate loading and unloading of goods."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E10-parkeerschijf> a skos:Concept;
+  skos:prefLabel "E10-time-limited-parking"@en, "E10-parkeerschijf"@nl;
+  skos:definition "A road sign indicating a parking disc zone with mandatory disc use."@en,
+    "Een verkeersbord dat een parkeerschijf-zone aangeeft met verplicht gebruik van een parkeerschijf."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Voorrangskruispunt> a skos:Concept;
+  skos:prefLabel "Voorrangskruispunt"@nl, "Priority junction"@en;
+  skos:definition "A junction with two minor roads."@en, "Een kruising met twee ondergeschikte wegen."@nl .
+
+<https://data.crow.nl/imv/term/VoorrangKrijgen> a skos:Concept;
+  skos:prefLabel "Get priority"@en, "Voorrang krijgen"@nl;
+  skos:definition "Value indicating the traffic on a crossing has priority."@en, "Waarde die aangeeft dat het verkeer op het kruispunt voorrang heeft."@nl .
+
+<https://data.crow.nl/imv/term/G5-erf> a skos:Concept;
+  skos:prefLabel "G5-residential-zone"@en, "G5-erf"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat het een erf betreft"@nl, "A traffic sign indicating that it is a residential zone"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F6-voorrang-op-tegenligger> a skos:Concept;
+  skos:prefLabel "F6-go-first"@en, "F6-voorrang-op-tegenligger"@nl;
+  skos:definition "A road sign indicating that drivers from the opposite direction must give way."@en,
+    "Een verkeersbord dat aangeeft dat bestuurders uit tegengestelde richting voorrang moeten verlenen."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Sleepregeling> a skos:Concept;
+  skos:prefLabel "Tow-away"@en, "Sleepregeling"@nl;
+  skos:definition "Tekst of afbeelding die een sleepregeling aangeeft"@nl, "Text or image indicating a tow-away regulation."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G6-einde-erf> a skos:Concept;
+  skos:prefLabel "G6-end-residential-zone"@en, "G6-einde-erf"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat het erf eindigt"@nl, "A traffic sign indicating that the residential zone is ending."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J39-poller> a skos:Concept;
+  skos:prefLabel "J39-bollard"@en, "J39-poller"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor elektrische in- en uitschuifbare paal in de rijbaan (poller)"@nl,
+    "Traffic sign indicating a warning for an electric retractable bollard on the road, regulating access to certain areas"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/4EnHoger> a skos:Concept;
+  skos:prefLabel "4 en hoger"@nl, "4 and higher"@en;
+  skos:definition "Value for vehicles with emission class four and higher."@en, "Waarde voor voertuigen met emissieklasse vier en hoger."@nl .
+
+<https://data.crow.nl/imv/term/B4-voorrang-links> a skos:Concept;
+  skos:prefLabel "B4-priority-left"@en, "B4-voorrang-links"@nl;
+  skos:definition "A road sign indicating that you have priority at the next junction with a road coming from the left."@en,
+    "Een verkeersboord dat aangeeft dat je voorrang hebt op het volgende kruispunt met een weg van links"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Gepland> a skos:Concept;
+  skos:prefLabel "Planned"@en, "Gepland"@nl;
+  skos:definition "Planned"@en, "Gepland"@nl .
+
+<https://data.crow.nl/imv/term/Zone-einde> a skos:Concept;
+  skos:prefLabel "Zone-einde"@nl, "Zone-End"@en;
+  skos:definition "Text and three black diagonal stripes indicating that the zone ends."@en,
+    "Tekst en drie zwarte schuine strepen die aanduiden dat  de zone eindigt."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C23-03-einde-spitsstrook> a skos:Concept;
+  skos:prefLabel "C23-03-end-rush-lane"@en, "C23-03-einde-spitsstrook"@nl;
+  skos:definition "A road sign indicating the end of the rush-hour lane."@en, "Een verkeersbord dat aangeeft dat het einde van de spitsstrook is bereikt."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Voertuigemissieklassenlijst> a skos:Collection;
+  skos:prefLabel "Voertuigemissieklassenlijst"@nl, "Vehicle emission class list"@en;
+  skos:definition "Lijst met emissieklassen van voertuigen."@nl, "List of emission classes of vehicles."@en;
+  skos:member <https://data.crow.nl/imv/term/Diesel>, <https://data.crow.nl/imv/term/Nuluitstoot>,
+    <https://data.crow.nl/imv/term/4EnHoger>, <https://data.crow.nl/imv/term/6EnHoger>,
+    <https://data.crow.nl/imv/term/5EnHoger>, <https://data.crow.nl/imv/term/3EnHoger>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/6EnHoger> a skos:Concept;
+  skos:prefLabel "6 en hoger"@nl, "6 and higher"@en;
+  skos:definition "Value for vehicles with emission class six and higher."@en, "Waarde voor voertuigen met emissieklasse zes en hoger."@nl .
+
+<https://data.crow.nl/imv/term/5EnHoger> a skos:Concept;
+  skos:prefLabel "5 and higher"@en, "5 en hoger"@nl;
+  skos:definition "Value for vehicles with emission class five and higher."@en, "Waarde voor voertuigen met emissieklasse vijf en hoger."@nl .
+
+<https://data.crow.nl/imv/term/3EnHoger> a skos:Concept;
+  skos:prefLabel "3 and higher"@en, "3 en hoger"@nl;
+  skos:definition "Waarde voor voertuigen met emissieklasse drie en hoger."@nl, "Value for vehicles with emission class three and higher."@en .
+
+<https://data.crow.nl/imv/term/WettelijkeMaximumsnelheid> a skos:Concept;
+  skos:prefLabel "Wettelijke maximumsnelheid"@nl, "Statutory maximum speed"@en;
+  skos:definition "Verkeersmaatregel waarmee de wettelijke maximumsnelheid wordt aangeduid."@nl,
+    "Traffic measure indicating the statutory maximum speed."@en;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/C22a7-milieu-bus-6> a skos:Concept;
+  skos:prefLabel "C22a7-emission-bus-6"@en, "C22a7-milieu-bus-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor bussen van emissieklasse 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to buses with emission classes 4 through 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D5-verplichte-rijrichting> a skos:Concept;
+  skos:prefLabel "D5-mandatory-direction"@en, "D5-verplichte-rijrichting"@nl;
+  skos:definition "A road sign mandating adherence to the direction indicated on the sign."@en,
+    "Een verkeersbord dat een gebod aangeeft tot het volgen van de rijrichting die op het bord is aangegeven."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Na-x-meter> a skos:Concept;
+  skos:prefLabel "Na-x-meter"@en, "Na-x-meter"@nl;
+  skos:definition "A white rectangular icon with the text After x meters or sometimes just x meters, where x represents the distance in meters to the location where the traffic measure applies."@en,
+    "Wit rechthoekig icoon met de tekst Na x meter, soms alleen x meter, met x de afstand in meters naar de locatie waarvoor de verkeersmaatregel geldt."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/LijstVerplichtGebruikWeg> a skos:Collection;
+  skos:prefLabel "List obligatory use road"@en, "Lijst verplicht gebruik weg"@nl;
+  skos:definition "Lijst met indicatoren of een weg verplicht gebruikt moet worden door het specifieke voertuigtype of niet."@nl,
+    "List of indicators whether a road must be used mandatorily by the specific vehicle type or not."@en;
+  skos:member <https://data.crow.nl/imv/term/NietVerplichtGebruik>, <https://data.crow.nl/imv/term/VerplichtGebruik>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/C8-trekker> a skos:Concept;
+  skos:prefLabel "C8-tractor"@en, "C8-trekker"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor"@nl, "A road sign indicating that the road is closed to agricultural and forestry tractors, low-speed motor vehicles, and mobile machinery."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G10-einde-ruiterpad> a skos:Concept;
+  skos:prefLabel "G10-end-riders"@en, "G10-einde-ruiterpad"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat het ruiterpad eindigt"@nl, "A traffic sign indicating that the bridleway is ending."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/H1-bebouwde-kom> a skos:Concept;
+  skos:prefLabel "H1-built-up-area"@en, "H1-bebouwde-kom"@nl;
+  skos:definition "A traffic sign indicating that it is a road within the built-up area."@en,
+    "Verkeersbord dat aanduidt dat het een weg binnen de bebouwde kom betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J28-vee> a skos:Concept;
+  skos:prefLabel "J28-livestock"@en, "J28-vee"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor vee"@nl, "Traffic sign indicating a warning for livestock"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E4-parkeergelegenheid> a skos:Concept;
+  skos:prefLabel "E4-parking"@en, "E4-parkeergelegenheid"@nl;
+  skos:definition "A road sign indicating the availability of parking facilities."@en,
+    "Een verkeersbord dat aangeeft dat er parkeergelegenheid is."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F10-stop> a skos:Concept;
+  skos:prefLabel "F10-stop"@en, "F10-stop"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat stoppen verplicht is, met vermelding van reden of autoriteit."@nl,
+    "A stop sign indicating mandatory stopping, with reason or authority specified."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Tegenliggers> a skos:Concept;
+  skos:prefLabel "Tegenliggers"@nl, "Oncoming traffic"@en;
+  skos:definition "Tegenliggers"@nl, "Oncoming traffic"@en .
+
+<https://data.crow.nl/imv/term/J1-slecht-wegdek> a skos:Concept;
+  skos:prefLabel "J1-slecht-wegdek"@nl, "J1-bad-road-surfcae"@en;
+  skos:definition "Traffic sign indicating a warning for poor road surface"@en, "Verkeersbord dat een waarschuwing aanduidt voor slecht wegdek"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/B7-stop> a skos:Concept;
+  skos:prefLabel "B7-stop"@en, "B7-stop"@nl;
+  skos:definition "A road sign that indicates you must stop and give way to drivers on the intersecting road."@en,
+    "Een verkeersbord dat aangeeft dat je moet stoppen en voorrang verlenen aan bestuurders op de kruisende weg"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J37-gevaar> a skos:Concept;
+  skos:prefLabel "J37-danger"@en, "J37-gevaar"@nl;
+  skos:definition "Traffic sign indicating a warning for danger (specific hazard indicated on an additional sign)"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor gevaar"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J20-slipgevaar> a skos:Concept;
+  skos:prefLabel "J20-slippery-road"@en, "J20-slipgevaar"@nl;
+  skos:definition "Traffic sign indicating a warning for slippery road conditions"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor slipgevaar"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Loodrecht> a skos:Concept;
+  skos:prefLabel "Loodrecht"@nl, "Perpendicular"@en;
+  skos:definition "Loodrecht"@nl, "Perpendicular"@en .
+
+<https://data.crow.nl/imv/term/Geplaatst> a skos:Concept;
+  skos:prefLabel "Placed"@en, "Geplaatst"@nl;
+  skos:definition "Placed"@en, "Geplaatst"@nl .
+
+<https://data.crow.nl/imv/term/Weekend> a skos:Collection;
+  skos:prefLabel "Weekend"@nl, "Weekend"@en;
+  skos:definition "Lijst van weekenddagen voor het aanduiden van geldigheid van een verkeersmaatregel op een specifieke dag"@nl,
+    "List of weekenddays for indicating the validity of a traffic regulation on a specific day."@en;
+  skos:member <https://data.crow.nl/imv/term/Zondag>, <https://data.crow.nl/imv/term/Zaterdag>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/F3-inhaalverbod-vrachtauto> a skos:Concept;
+  skos:prefLabel "F3-no-overtake-lorry"@en, "F3-inhaalverbod-vrachtauto"@nl;
+  skos:definition "A road sign indicating that lorries are prohibited from overtaking motor vehicles."@en,
+    "Een verkeersbord dat aangeeft dat vrachtauto's verboden zijn motorvoertuigen in te halen."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Voorrangsindicatielijst> a skos:Collection;
+  skos:prefLabel "Voorrangsindicatielijst"@nl, "Priority indication list"@en;
+  skos:definition "List with values of priority indication"@en, "Lijst met waarde van voorrangsindicatie"@nl;
+  skos:member <https://data.crow.nl/imv/term/VoorrangVerlenen>, <https://data.crow.nl/imv/term/VoorrangKrijgen>,
+    <https://data.crow.nl/imv/term/Voorrangsweg>, <https://data.crow.nl/imv/term/StoppenVoorrangVerlenen>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Voorrangsweg> a skos:Concept;
+  skos:prefLabel "Voorrangsweg"@nl, "Priority road"@en;
+  skos:definition "Waarde die aangeeft dat het verkeer op de weg voorrang heeft op alle kruispunten."@nl,
+    "Value indicating the traffic on the road has priority on all crossings."@en .
+
+<https://data.crow.nl/imv/term/StoppenVoorrangVerlenen> a skos:Concept;
+  skos:prefLabel "Stop secondary road"@en, "Stoppen voorrang verlenen"@nl;
+  skos:definition "Value indicating the traffic on a road has to halt and give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg moet stoppen en voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/term/C22a4-vrachtemissie-4-6> a skos:Concept;
+  skos:prefLabel "C22a4-emission-lorry-4-6"@en, "C22a4-vrachtemissie-4-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor vrachtauto's van emissieklasse 4 tot en met 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to lorries with emission classes 4 through 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a1-milieuzone-3-6> a skos:Concept;
+  skos:prefLabel "C22a1-milieuzone-3-6"@nl, "C22a1-emission-3-6"@en;
+  skos:definition "A supplementary sign indicating that the environmental zone is accessible to passenger and commercial vehicles with emission classes 3 through 6."@en,
+    "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor personen- en bedrijfsauto's van emissieklasse 3 tot en met 6."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F21-vrachtwagenstrook> a skos:Concept;
+  skos:prefLabel "F21-lorry-lane"@en, "F21-vrachtwagenstrook"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat een rijbaan uitsluitend bedoeld is voor vrachtauto's."@nl,
+    "A road sign indicating a lane reserved exclusively for lorries."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G8-einde-voetpad> a skos:Concept;
+  skos:prefLabel "G8-end-footpath"@en, "G8-einde-voetpad"@nl;
+  skos:definition "A traffic sign indicating that the footpath is ending."@en, "Verkeersbord dat aanduidt dat het voetpad eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22c1-nul-emissie> a skos:Concept;
+  skos:prefLabel "C22c1-zero-emission"@en, "C22c1-nul-emissie"@nl;
+  skos:definition "A supplementary sign indicating that the zero-emission zone is accessible to zero-emission commercial and freight vehicles."@en,
+    "Een onderbord dat aangeeft dat de nul-emissiezone toegankelijk is voor emissieloze bedrijfs- en vrachtauto's."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J26-kade> a skos:Concept;
+  skos:prefLabel "J26-quay"@en, "J26-kade"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor kade of rivieroever"@nl,
+    "Traffic sign indicating a warning for a quay or riverbank"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C16-voetganger> a skos:Concept;
+  skos:prefLabel "C16-pedestrian"@en, "C16-voetganger"@nl;
+  skos:definition "A road sign indicating that the road is closed to pedestrians."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor voetgangers."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F13-busstrook> a skos:Concept;
+  skos:prefLabel "F13-bus-lane"@en, "F13-busstrook"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat een rijbaan uitsluitend bedoeld is voor lijnbussen."@nl,
+    "A road sign indicating a lane reserved exclusively for buses."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G12b-einde-fiets-bromfietspad> a skos:Concept;
+  skos:prefLabel "G12b-end-bicycle-moped-lane"@en, "G12b-einde-fiets-bromfietspad"@nl;
+  skos:definition "A traffic sign indicating that the combined cycle/moped path is ending."@en,
+    "Verkeersbord dat aanduidt dat het fiets/bromfietspad eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Inhaalindicatielijst> a skos:Collection;
+  skos:prefLabel "Inhaalindicatielijst"@nl, "Overtaking indiciation list"@en;
+  skos:definition "Lijst met indicatie of ingehaald mag worden of niet."@nl, "List indicating whether overtaking is allowed or not."@en;
+  skos:member <https://data.crow.nl/imv/term/InhalenToegestaan>, <https://data.crow.nl/imv/term/NietInhalen>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Verwijderd> a skos:Concept;
+  skos:prefLabel "Verwijderd"@nl, "Removed"@en;
+  skos:definition "Verwijderd"@nl, "Removed"@en .
+
+<https://data.crow.nl/imv/term/E13-carpoolplaats> a skos:Concept;
+  skos:prefLabel "E13-carpoolers"@en, "E13-carpoolplaats"@nl;
+  skos:definition "A road sign indicating parking for carpoolers."@en, "Een verkeersbord dat parkeergelegenheid aangeeft ten behoeve van carpoolers."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F18-einde-bus-tram-baan> a skos:Concept;
+  skos:prefLabel "F18-end-bus-tram-lane"@en, "F18-einde-bus-tram-baan"@nl;
+  skos:definition "A road sign indicating the end of the bus and tram lane."@en, "Een verkeersbord dat het einde van de bus- en trambaan aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/A5-einde-adviessnelheid> a skos:Concept;
+  skos:prefLabel "A5-end-advised-speed"@en, "A5-einde-adviessnelheid"@nl;
+  skos:definition "Verkeersbord dat het einde van de wettelijke maximumsnelheid aangeeft"@nl,
+    "Road sign indicating the end of a recommended but not mandatory maximum speed limit"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22d-einde-nulemissie> a skos:Concept;
+  skos:prefLabel "C22d-end-zero-emission"@en, "C22d-einde-nulemissie"@nl;
+  skos:definition "Een verkeersbord dat het einde aangeeft van de nulemissiezone."@nl,
+    "A road sign indicating the end of the zero-emission zone restriction."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C7-gesloten-vrachtauto> a skos:Concept;
+  skos:prefLabel "C7-closed-lorry"@en, "C7-gesloten-vrachtauto"@nl;
+  skos:definition "A road sign indicating that the road is closed to lorries"@en, "Een verkeersbord dat aangeeft dat de weg gesloten is voor vrachtauto's"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F20-einde-vracht-bus-baan> a skos:Concept;
+  skos:prefLabel "F20-end-lorry-bus-lane"@en, "F20-einde-vracht-bus-baan"@nl;
+  skos:definition "Een verkeersbord dat het einde van de rijbaan voor vrachtauto's en lijnbussen aangeeft."@nl,
+    "A road sign indicating the end of the lane for lorries and buses."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/B1-voorrang> a skos:Concept;
+  skos:prefLabel "B1-priority"@en, "B1-voorrang"@nl;
+  skos:definition "A road sign indicating that the road you are on is a priority road."@en,
+    "Een verkeersbord dat aangeeft dat de weg waarop men rijdt een voorrangsweg is"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G9-ruiterpad> a skos:Concept;
+  skos:prefLabel "G9-bridleway"@en, "G9-ruiterpad"@nl;
+  skos:definition "A traffic sign indicating that it is a bridleway."@en, "Verkeersbord dat aanduidt dat het een ruiterpad betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Waarschuwing> a skos:Concept;
+  skos:prefLabel "Waarschuwing"@nl, "Warning"@en;
+  skos:definition "Verkeersmaatregel die aangeeft dat de bestuurder moet uitkijken voor nader gespecificeerd gevaar."@nl,
+    "Traffic measure indicating that the driver must exercise extra caution for a specified danger."@en;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/C23-01-spittsstrook> a skos:Concept;
+  skos:prefLabel "C23-01-rush-lane"@en, "C23-01-spittsstrook"@nl;
+  skos:definition "A road sign indicating that the rush-hour lane is open for use."@en,
+    "Een verkeersbord dat aangeeft dat de spitsstrook open is voor gebruik."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C2-eenrichtingsweg> a skos:Concept;
+  skos:prefLabel "C2-one-way"@en, "C2-eenrichtingsweg"@nl;
+  skos:definition "Een verkeersbord dat aanduidt dat de weg een eenrichtingsweg is, in deze richting gesloten voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee."@nl,
+    "A road sign indicating that the road is a one-way street, closed in this direction for vehicles, riders, and handlers of draft animals or livestock"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E2-stilstaan-verboden> a skos:Concept;
+  skos:prefLabel "E2-stopping-prohibition"@en, "E2-stilstaan-verboden"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat stilstaan verboden is."@nl, "A road sign indicating that stopping is prohibited."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/B2-einde-voorrangsweg> a skos:Concept;
+  skos:prefLabel "B2-end-of-priority"@en, "B2-einde-voorrangsweg"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg waarop men rijdt niet langer een voorrangsweg is"@nl,
+    "A road sign indicating that the road you are on is not longer a priority road."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C7b-bus-vracht> a skos:Concept;
+  skos:prefLabel "C7b-bus-lorry"@en, "C7b-bus-vracht"@nl;
+  skos:definition "A road sign indicating that the road is closed to buses and lorries"@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor autobussen en vrachtauto's"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Parkeermaatregel> a skos:Concept;
+  skos:prefLabel "Parkeermaatregel"@nl, "Parking measure"@en;
+  skos:definition "Traffic measure indicating a designated area where vehicles are permitted to park, subject to applicable rules and regulations."@en,
+    "Verkeersmaatregel die aanduidt dat"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/J33-file> a skos:Concept;
+  skos:prefLabel "J33-traffic-congestion"@en, "J33-file"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor file"@nl, "Traffic sign indicating a warning for traffic congestion"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F17-bus-tram-baan> a skos:Concept;
+  skos:prefLabel "F17-bus-tram-lane"@en, "F17-bus-tram-baan"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat een rijbaan uitsluitend bedoeld is voor lijnbussen en trams."@nl,
+    "A road sign indicating a lane reserved exclusively for buses and trams."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22c-nul-emissie-vracht> a skos:Concept;
+  skos:prefLabel "C22c-zero-emission-lorry"@en, "C22c-nul-emissie-vracht"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor bedrijfs- en vrachtauto's vanwege de nul-emissiezone."@nl,
+    "A road sign indicating that the road is closed to commercial vehicles"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J27-wild> a skos:Concept;
+  skos:prefLabel "J27-wild-animals"@en, "J27-wild"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor groot wild"@nl, "Traffic sign indicating a warning for large wild animals"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J30-vliegtuigen> a skos:Concept;
+  skos:prefLabel "J30-aircraft"@en, "J30-vliegtuigen"@nl;
+  skos:definition "Traffic sign indicating a warning for low-flying aircraft"@en, "Verkeersbord dat een waarschuwing aanduidt voor laagvliegende vliegtuigen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J23-voetgangers> a skos:Concept;
+  skos:prefLabel "J23-pedestrians"@en, "J23-voetgangers"@nl;
+  skos:definition "Traffic sign indicating a warning for pedestrians"@en, "Verkeersbord dat een waarschuwing aanduidt voor voetgangers"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J31-zijwind> a skos:Concept;
+  skos:prefLabel "J31-side-winds"@en, "J31-zijwind"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor zijwind"@nl, "Traffic sign indicating a warning for side winds"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D6-keuze-rijrichting> a skos:Concept;
+  skos:prefLabel "D6-choose-direction"@en, "D6-keuze-rijrichting"@nl;
+  skos:definition "Een verkeersbord dat een gebod aangeeft tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven."@nl,
+    "A road sign mandating the choice to follow one of the directions indicated on the sign."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J9-rotonde> a skos:Concept;
+  skos:prefLabel "J9-roundabout"@en, "J9-rotonde"@nl;
+  skos:definition "Traffic sign indicating a warning for a roundabout"@en, "Verkeersbord dat een waarschuwing aanduidt voor rotonde"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E3-verbod-fietsparkeren> a skos:Concept;
+  skos:prefLabel "E3-parking-bicycle-prohibition"@en, "E3-verbod-fietsparkeren"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat het plaatsen van fietsen en bromfietsen verboden is."@nl,
+    "A road sign indicating that placing bicycles and mopeds is prohibited."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J32-verkeerslichten> a skos:Concept;
+  skos:prefLabel "J32-traffic-lights"@en, "J32-verkeerslichten"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor verkeerslichten"@nl,
+    "Traffic sign indicating a warning for traffic lights"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D7-keuze-rijrichting> a skos:Concept;
+  skos:prefLabel "D7-keuze-rijrichting"@nl, "D7-choice-of-direction"@en;
+  skos:definition "Een verkeersbord dat een gebod aangeeft tot het volgen van één van de rijrichtingen die op het bord zijn aangegeven."@nl,
+    "A road sign mandating the choice to follow one of the directions indicated on the sign."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E1-parkeerverbod> a skos:Concept;
+  skos:prefLabel "E1-parking-prohibition"@en, "E1-parkeerverbod"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat parkeren verboden is."@nl, "A road sign indicating that parking is prohibited."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a5-vrachtemissie-6> a skos:Concept;
+  skos:prefLabel "C22a5-emission-lorry-6"@en, "C22a5-vrachtemissie-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor vrachtauto's van emissieklasse 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to lorries with emission class 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E8b-parkeren-trottoir> a skos:Concept;
+  skos:prefLabel "E8b-parking-pavement"@en, "E8b-parkeren-trottoir"@nl;
+  skos:definition "A road sign indicating parking with two wheels on the pavement (sidewalk)."@en,
+    "Een verkeersbord dat parkeergelegenheid aangeeft voor het parkeren met twee wielen op het trottoir."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D1-rotonde-verplichte-richting> a skos:Concept;
+  skos:prefLabel "D1-rotonde-verplichte-richting"@nl, "D1-roundabout-direction"@en;
+  skos:definition "A road sign indicating that the roundabout must be followed in the mandatory direction shown."@en,
+    "Een verkeersbord dat aangeeft dat de rotonde verplicht in de aangegeven richting moet worden gevolgd."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/MedeweggebruikersLijst> a skos:Collection;
+  skos:prefLabel "MedeweggebruikersLijst"@nl, "Fellow road users list"@en;
+  skos:definition "Lijst met types van medeweggebruikers"@nl, "List of types of road users"@en;
+  skos:member <https://data.crow.nl/imv/term/Tegenliggers>, <https://data.crow.nl/imv/term/File>,
+    <https://data.crow.nl/imv/term/Ongeval>, <https://data.crow.nl/imv/term/Voetgangers>,
+    <https://data.crow.nl/imv/term/Paddentrek>, <https://data.crow.nl/imv/term/Kinderen>,
+    <https://data.crow.nl/imv/term/Vee>, <https://data.crow.nl/imv/term/FietsersEnBromfietsers>,
+    <https://data.crow.nl/imv/term/WerkInUitvoering>, <https://data.crow.nl/imv/term/GrootWild>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/G2-einde-autosnelweg> a skos:Concept;
+  skos:prefLabel "G2-end-motorway"@en, "G2-einde-autosnelweg"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat de autosnelweg eindigt"@nl, "A traffic sign indicating that the motorway is ending."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F19-vracht-bus-baan> a skos:Concept;
+  skos:prefLabel "F19-lorry-bus-lane"@en, "F19-vracht-bus-baan"@nl;
+  skos:definition "A road sign indicating a lane reserved exclusively for lorries and buses."@en,
+    "Een verkeersbord dat aangeeft dat een rijbaan uitsluitend bedoeld is voor vrachtauto's en lijnbussen."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/TypeWegconditie> a skos:Collection;
+  skos:prefLabel "Road condition type"@en, "Type wegconditie"@nl;
+  skos:definition "Lijst met soorten wegcondities.\",\"List with types of road conditions.\""@nl;
+  skos:member <https://data.crow.nl/imv/term/LosseStenen>, <https://data.crow.nl/imv/term/GladWegdek>,
+    <https://data.crow.nl/imv/term/SlechtWegdek>, <https://data.crow.nl/imv/term/NatWegdek>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/E8a-kamperplaats> a skos:Concept;
+  skos:prefLabel "E8a-kamperplaats"@nl, "E8a-camper-vans"@en;
+  skos:definition "Een verkeersbord dat parkeergelegenheid aangeeft, uitsluitend bestemd voor kampeerwagens."@nl,
+    "A road sign indicating parking designated for camper vans only."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E6-gehandicaptenparkeerplaats> a skos:Concept;
+  skos:prefLabel "E6-disabled-parking"@en, "E6-gehandicaptenparkeerplaats"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat er een parkeerplaats is voor gehandicapten."@nl,
+    "A road sign indicating parking for disabled persons."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G7-voetpad> a skos:Concept;
+  skos:prefLabel "G7-foot-path"@en, "G7-voetpad"@nl;
+  skos:definition "Verkeersbord dat aanduidt dat het een voetpad betreft"@nl, "A traffic sign indicating that it is a footpath"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E8c-laadplaats> a skos:Concept;
+  skos:prefLabel "E8c-charging"@en, "E8c-laadplaats"@nl;
+  skos:definition "Een verkeersbord dat parkeergelegenheid aangeeft, uitsluitend voor het opladen van elektrische voertuigen."@nl,
+    "A road sign indicating parking designated for charging electric vehicles only."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Voorrangsinstelling> a skos:Concept;
+  skos:prefLabel "Voorrangsinstelling"@nl, "Priority setting"@en;
+  skos:definition "Traffic regulation indicating which traffic has priority."@en, "Verkeersmaatregel die aanduidt welk verkeer voorrang krijgt."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/C6-gesloten-auto> a skos:Concept;
+  skos:prefLabel "C6-closed-car"@en, "C6-gesloten-auto"@nl;
+  skos:definition "A road sign indicating that the road is closed to motor vehicles with more than two wheels."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor motorvoertuigen op meer dan twee wielen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Weekdagen> a skos:Collection;
+  skos:prefLabel "Weekdagen"@nl, "Weekdays"@en;
+  skos:definition "Lijst van weekdagen voor het aanduiden van geldigheid van een verkeersmaatregel op een specifieke dag"@nl,
+    "List of weekdays for indicating the validity of a traffic regulation on a specific day."@en;
+  skos:member <https://data.crow.nl/imv/term/Vrijdag>, <https://data.crow.nl/imv/term/Donderdag>,
+    <https://data.crow.nl/imv/term/Maandag>, <https://data.crow.nl/imv/term/Dinsdag>,
+    <https://data.crow.nl/imv/term/Woensdag>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/D4-verplichte-rijrichting> a skos:Concept;
+  skos:prefLabel "D4-mandatory-direction"@en, "D4-verplichte-rijrichting"@nl;
+  skos:definition "A road sign mandating adherence to the direction indicated on the sign."@en,
+    "Een verkeersbord dat een gebod aangeeft tot het volgen van de rijrichting die op het bord is aangegeven."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G12-einde-verplicht-fietspad> a skos:Concept;
+  skos:prefLabel "G12-end-obligatory-bicycle-lane"@en, "G12-einde-verplicht-fietspad"@nl;
+  skos:definition "A traffic sign indicating that the mandatory cycle path is ending."@en,
+    "Verkeersbord dat aanduidt dat het verplichte fietspad eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a8-milieu-vracht-bus-4-6> a skos:Concept;
+  skos:prefLabel "C22a8-emission-lorry-bus-4-6"@en, "C22a8-milieu-vracht-bus-4-6"@nl;
+  skos:definition "A supplementary sign indicating that the environmental zone is accessible to buses and lorries with emission classes 4 through 6."@en,
+    "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor vrachtauto's en bussen van emissieklasse 4 tot en met 6."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F14-einde-busstrook> a skos:Concept;
+  skos:prefLabel "F14-end-bus-lane"@en, "F14-einde-busstrook"@nl;
+  skos:definition "Een verkeersbord dat het einde van de busstrook aangeeft."@nl, "A road sign indicating the end of the bus lane."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22b-einde-milieuzone> a skos:Concept;
+  skos:prefLabel "C22b-end-emission"@en, "C22b-einde-milieuzone"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de geslotenverklaring van de milieuzone eindigt."@nl,
+    "A road sign indicating the end of the environmental zone restriction."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F22-einde-vrachtwagenstrook> a skos:Concept;
+  skos:prefLabel "F22-end-lorry-lane"@en, "F22-einde-vrachtwagenstrook"@nl;
+  skos:definition "Een verkeersbord dat het einde van de rijbaan voor vrachtauto's aangeeft."@nl,
+    "A road sign indicating the end of the lane for lorries."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/A2-einde-snelheid> a skos:Concept;
+  skos:prefLabel "A2-end-speed"@en, "A2-einde-snelheid"@nl;
+  skos:definition "Verkeersbord dat het einde van de wettelijke maximumsnelheid aangeeft"@nl,
+    "A traffic sign that indicates the end of the legal maximum speed"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Herhaling> a skos:Concept;
+  skos:prefLabel "Herhaling"@nl, "Repetition"@en;
+  skos:definition "Tekst die een herhaling aangeeft van de zone van een verkeersmaatregel"@nl,
+    "Tekst dat indicates a repetition warning of a traffic regulation zone"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/VerplichteRijrichting> a skos:Concept;
+  skos:prefLabel "Verplichte rijrichting"@nl, "Mandatory driving direction"@en;
+  skos:definition "Verkeersmaatregel die een verplichte rijrichting aangeeft, inclusief de passeerrichting voor een obstakel en een rotonde."@nl,
+    "Traffic measure indicating a mandatory driving direction, including the passing direction for an obstacle and a roundabout."@en;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/C12-motorvoertuig> a skos:Concept;
+  skos:prefLabel "C12-motor-vehicles"@en, "C12-motorvoertuig"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor alle motorvoertuigen"@nl,
+    "A road sign indicating that the road is closed to all motor vehicles."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Erf> a skos:Concept;
+  skos:prefLabel "Erf"@nl, "Residential zone"@en;
+  skos:definition "An area where special traffic regulations apply."@en, "Een woongebied waar speciale verkeersregels gelden."@nl .
+
+<https://data.crow.nl/imv/term/A1-snelheid> a skos:Concept;
+  skos:prefLabel "A1-speed"@en, "A1-snelheid"@nl;
+  skos:definition "Verkeersbord dat de wettelijke maximumsnelheid aangeeft"@nl, "A traffic sign that indicates the legal maximum speed."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C7a-autobus> a skos:Concept;
+  skos:prefLabel "C7a-bus"@en, "C7a-autobus"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor autobussen"@nl,
+    "A road sign indicating that the road is closed to buses."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C3-eenrichtingsweg> a skos:Concept;
+  skos:prefLabel "C3-one-way"@en, "C3-eenrichtingsweg"@nl;
+  skos:definition "A road sign indicating that the road is a one-way street, open in this direction"@en,
+    "Een verkeersbord dat aanduidt dat de weg een eenrichtingsweg is, in deze richting open"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F4-einde-inhaalverbod-vrachtauto> a skos:Concept;
+  skos:prefLabel "F4-end-no-overtake-lorry"@en, "F4-einde-inhaalverbod-vrachtauto"@nl;
+  skos:definition "A road sign indicating the end of the overtaking prohibition for lorries."@en,
+    "Een verkeersbord dat het einde van het inhaalverbod voor vrachtauto's aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/B3-voorrangskruispunt> a skos:Concept;
+  skos:prefLabel "B3-priority-junction"@en, "B3-voorrangskruispunt"@nl;
+  skos:definition "A road sign indicating that you have priority at the next junction."@en,
+    "Een verkeersboord dat aangeeft dat je voorrang hebt op het volgende kruispunt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G11-verplicht-fietspad> a skos:Concept;
+  skos:prefLabel "G11-obligatory-bicycle-lane"@en, "G11-verplicht-fietspad"@nl;
+  skos:definition "A traffic sign indicating that it is a mandatory cycle path."@en,
+    "Verkeersbord dat aanduidt dat het een verplicht fietspad betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F8-einde-verboden> a skos:Concept;
+  skos:prefLabel "F8-end-prohibition"@en, "F8-einde-verboden"@nl;
+  skos:definition "A road sign indicating the end of all prohibitions imposed by traffic signs."@en,
+    "Een verkeersbord dat het einde van alle door verkeersborden aangegeven verboden aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C9-trekker-fiets> a skos:Concept;
+  skos:prefLabel "C9-tractor-bicycle"@en, "C9-trekker-fiets"@nl;
+  skos:definition "A road sign indicating that the road is closed to riders, livestock, carts, agricultural and forestry tractors, low-speed motor vehicles, mobile machinery, mopeds, bicycles, light mopeds, scooters, and vehicles for disabled persons."@en,
+    "Verkeersbord dat aangeeft dat een weg gesloten is voor voor ruiters, vee, wagens, landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid, mobiele machines, brommobielen, fietsen, snorfietsen, bromfietsen en gehandicaptenvoertuigen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J29-tegenliggers> a skos:Concept;
+  skos:prefLabel "J29-oncoming-traffic"@en, "J29-tegenliggers"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor tegenliggers"@nl,
+    "Traffic sign indicating a warning for oncoming traffic"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E9-vergunninghouders> a skos:Concept;
+  skos:prefLabel "E9-permits"@en, "E9-vergunninghouders"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de parkeergelegenheid alleen bestemd is voor vergunninghouders."@nl,
+    "A road sign indicating that the parking area is reserved for permit holders only."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G13-onverplicht-fietspad> a skos:Concept;
+  skos:prefLabel "G13-bicycle-path"@en, "G13-onverplicht-fietspad"@nl;
+  skos:definition "A traffic sign indicating that it is a non-mandatory cycle path."@en,
+    "Verkeersbord dat aanduidt dat het een onverplicht fietspad betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E5-taxistandplaats> a skos:Concept;
+  skos:prefLabel "E5-taxi-parking"@en, "E5-taxistandplaats"@nl;
+  skos:definition "Een verkeersbord dat een taxistandplaats aangeeft."@nl, "A road sign indicating a taxi stand location."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a2-milieuzone-4-6> a skos:Concept;
+  skos:prefLabel "C22a2-emission-4-6"@en, "C22a2-milieuzone-4-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor personen- en bedrijfsauto's van emissieklasse 4 tot en met 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to passenger and commercial vehicles with emission classes 4 through 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J6-steile-helling> a skos:Concept;
+  skos:prefLabel "J6-steep-hill-up"@en, "J6-steile-helling"@nl;
+  skos:definition "Traffic sign indicating a warning for a steep incline"@en, "Verkeersbord dat een waarschuwing aanduidt voor steile helling"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/GaTerug> a skos:Concept;
+  skos:prefLabel "GoBack"@en, "Ga terug"@nl;
+  skos:definition "A rectangular white icon with the text Go back."@en, "Een rechthoekig wit icoon met daarin de tekst Ga terug."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J34-ongeval> a skos:Concept;
+  skos:prefLabel "J34-accident"@en, "J34-ongeval"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor ongeval"@nl, "Traffic sign indicating a warning for an accident"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G4-einde-autoweg> a skos:Concept;
+  skos:prefLabel "G4-end-A-road"@en, "G4-einde-autoweg"@nl;
+  skos:definition "A traffic sign indicating that the A-way is ending."@en, "Verkeersbord dat aanduidt dat de autoweg eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C11-motor> a skos:Concept;
+  skos:prefLabel "C11-motorbike"@en, "C11-motor"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor motoren"@nl,
+    "A road sign indicating that the road is closed to motorcycles."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D2-pijlzijde-passeren> a skos:Concept;
+  skos:prefLabel "D2-pass-arrow"@en, "D2-pijlzijde-passeren"@nl;
+  skos:definition "A road sign mandating all drivers to pass the sign on the side indicated by the arrow."@en,
+    "Een verkeersbord dat een gebod geeft voor alle bestuurders om het bord voorbij te gaan aan de zijde die de pijl aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/FysiekePlaat> a skos:Concept;
+  skos:prefLabel "Road sign"@en, "Fysieke plaat"@nl;
+  skos:definition "The physical manifestation of traffic measures, featuring a shield on the road sign with a frame and background color, displaying icons in the form of traffic sign images or texts."@en,
+    "De fysieke uiting van verkeersmaatregelen, met op de Fysieke plaat een schild met een omlijsting en achtergrondkleur en daarop iconen, in de vorm van afbeeldingen van verkeersborden of teksten."@nl;
+  skos:broader <https://w3id.org/nen2660/term#RealObject> .
+
+<https://data.crow.nl/imv/term/C21-gewichtsbeperking> a skos:Concept;
+  skos:prefLabel "C21-weight-load"@en, "C21-gewichtsbeperking"@nl;
+  skos:definition "A road sign indicating that the road is closed to vehicles and vehicle combinations exceeding the total weight or axle load sum specified on the sign."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen en samenstellen van voertuigen waarvan de totaalmassa of de som van de aslasten hoger is dan op het bord is aangegeven."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D3-passeren-beide-zijden> a skos:Concept;
+  skos:prefLabel "D3-pass-both-sides"@en, "D3-passeren-beide-zijden"@nl;
+  skos:definition "A road sign indicating that passing is allowed on both sides of the sign."@en,
+    "Een verkeersbord dat aangeeft dat het bord aan beide zijden mag worden gepasseerd."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C19-voertuighoogte> a skos:Concept;
+  skos:prefLabel "C19-vehicle-height"@en, "C19-voertuighoogte"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen die, met inbegrip van de lading, hoger zijn dan op het bord is aangegeven."@nl,
+    "A road sign indicating that the road is closed to vehicles exceeding the height specified on the sign, including any load."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J36-winter> a skos:Concept;
+  skos:prefLabel "J36-winter"@en, "J36-winter"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor ijzel of sneeuw"@nl,
+    "Traffic sign indicating a warning for icy or snowy conditions"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G14-einde-onverplicht-fietspad> a skos:Concept;
+  skos:prefLabel "G14-end-bicycle-path"@en, "G14-einde-onverplicht-fietspad"@nl;
+  skos:definition "A traffic sign indicating that the non-mandatory cycle path is ending."@en,
+    "Verkeersbord dat aanduidt dat het onverplichte fietspad eindigt"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C15-brom-fiets> a skos:Concept;
+  skos:prefLabel "C15-moped-bicycle"@en, "C15-brom-fiets"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor fietsen, bromfietsen en gehandicaptenvoertuigen."@nl,
+    "A road sign indicating that the road is closed to bicycles, mopeds, and mobility vehicles."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D8-verplicht-keren> a skos:Concept;
+  skos:prefLabel "D8-verplicht-keren"@nl, "D8-mandatory-turn-around"@en;
+  skos:definition "Een verkeersbord dat een gebod aangeeft om te keren."@nl, "A traffic sign indicating a mandatory U-turn."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J25-stenen> a skos:Concept;
+  skos:prefLabel "J25-stones"@en, "J25-stenen"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor losliggende stenen"@nl,
+    "Traffic sign indicating a warning for loose stones"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F16-einde-trambaan> a skos:Concept;
+  skos:prefLabel "F16-end-tram-lane"@en, "F16-einde-trambaan"@nl;
+  skos:definition "Een verkeersbord dat het einde van de trambaan aangeeft."@nl, "A road sign indicating the end of the tram lane."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J38-drempel> a skos:Concept;
+  skos:prefLabel "J38-bump"@en, "J38-drempel"@nl;
+  skos:definition "Traffic sign indicating a warning for a speed bump"@en, "Verkeersbord dat een waarschuwing aanduidt voor verkeersdrempel"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J19-versmalling-l> a skos:Concept;
+  skos:prefLabel "J19-road-narrowing-l"@en, "J19-versmalling-l"@nl;
+  skos:definition "Traffic sign indicating a warning for road narrowing on the left"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor rijbaanversmalling links"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Handhavingslijst> a skos:Collection;
+  skos:prefLabel "Handhavingslijst"@nl, "Enforcement list"@en;
+  skos:definition "Lijst van handhavingsmaatregelen."@nl, "List of enforcement types."@en;
+  skos:member <https://data.crow.nl/imv/term/Wielklem>, <https://data.crow.nl/imv/term/Boete>,
+    <https://data.crow.nl/imv/term/Wegsleepregeling>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/J18-versmalling-r> a skos:Concept;
+  skos:prefLabel "J18-road-narrowing-r"@en, "J18-versmalling-r"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor rijbaanversmalling rechts"@nl,
+    "Traffic sign indicating a warning for road narrowing on the right"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G3-autoweg> a skos:Concept;
+  skos:prefLabel "G3-A-road"@en, "G3-autoweg"@nl;
+  skos:definition "A traffic sign indicating that it is an A-road."@en, "Verkeersbord dat aanduidt dat het een autoweg betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Snelheidsadvies> a skos:Concept;
+  skos:prefLabel "Snelheidsadvies"@nl, "Advisory speed"@en;
+  skos:definition "Traffic measure that provides a recommended but not mandatory maximum speed."@en,
+    "Verkeersmaatregel die een aanbevolen maar niet verplichte maximumsnelheid geeft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/C18-voertuigbreedte> a skos:Concept;
+  skos:prefLabel "C18-vehicle-width"@en, "C18-voertuigbreedte"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen die, met inbegrip van de lading, breder zijn dan op het bord is aangegeven."@nl,
+    "A road sign indicating that the road is closed to vehicles exceeding the width specified on the sign, including any load."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a9-milieu-vracht-bus-6> a skos:Concept;
+  skos:prefLabel "C22a9-emission-lorry-bus-6"@en, "C22a9-milieu-vracht-bus-6"@nl;
+  skos:definition "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor vrachtauto's en bussen van emissieklasse 6."@nl,
+    "A supplementary sign indicating that the environmental zone is accessible to buses and lorries with emission classes 4 through 6."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/B6-verleen-voorrang> a skos:Concept;
+  skos:prefLabel "B6-give-priority"@en, "B6-verleen-voorrang"@nl;
+  skos:definition "Verkeersbord dat aangeeft dat je voorrang moet verlenen aan bestuurders op de kruisende weg"@nl,
+    "A road sign indicating that you must give way to drivers on the crossing road"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C13-bromfiets> a skos:Concept;
+  skos:prefLabel "C13-moped"@en, "C13-bromfiets"@nl;
+  skos:definition "A road sign indicating that the road is closed to mopeds, light mopeds, and mobility vehicles with an operating motor."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor bromfietsen, snorfietsen en gehandicaptenvoertuigen met in werking zijnde motor."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F5-voorrang-tegenliggers> a skos:Concept;
+  skos:prefLabel "F5-oncoming-first"@en, "F5-voorrang-tegenliggers"@nl;
+  skos:definition "Een verkeersbord dat aangeeft dat bestuurders bij nadering van tegenliggers geen voorrang hebben."@nl,
+    "A road sign indicating that drivers approaching oncoming traffic do not have the right of way."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/G12a-fiets-bromfietspad> a skos:Concept;
+  skos:prefLabel "G12a-bicycle-moped-lane"@en, "G12a-fiets-bromfietspad"@nl;
+  skos:definition "A traffic sign indicating that it is a combined cycle/moped path."@en,
+    "Verkeersbord dat aanduidt dat het een fiets/bromfietspad betreft"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C22a6-milieu-bus-4-6> a skos:Concept;
+  skos:prefLabel "C22a6-emission-bus-4-6"@en, "C22a6-milieu-bus-4-6"@nl;
+  skos:definition "A supplementary sign indicating that the environmental zone is accessible to buses with emission classes 4 through 6."@en,
+    "Een onderbord dat aangeeft dat de milieuzone toegankelijk is voor bussen van emissieklasse 4 tot en met 6."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C1-gesloten> a skos:Concept;
+  skos:prefLabel "C1-closed"@en, "C1-gesloten"@nl;
+  skos:definition "Een verkeersbord dat aanduidt dat de weg in beide richtingen gesloten is voor voertuigen, ruiters en geleiders van rij- of trekdieren of vee."@nl,
+    "A road sign indicating that the road is closed in both directions for vehicles, riders, and handlers of draft animals or livestock."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J7-gevaarlijke-daling> a skos:Concept;
+  skos:prefLabel "J7-steep-hill-down"@en, "J7-gevaarlijke-daling"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor gevaarlijke daling"@nl,
+    "Traffic sign indicating a warning for a dangerous descent"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E11-einde-parkeerschijf> a skos:Concept;
+  skos:prefLabel "E11-end-timed-parking"@en, "E11-einde-parkeerschijf"@nl;
+  skos:definition "A road sign indicating the end of the parking disc zone."@en, "Een verkeersbord dat het einde van de parkeerschijf-zone aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Rvv-aanhanger> a skos:Concept;
+  skos:prefLabel "Rvv-aanhanger"@nl, "Rvv-trailer"@en;
+  skos:definition "\"Motorvoertuigen met aanhangwagen zoals bedoeld met het icoon van een aanhanger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicles with a trailer as represented by the trailer icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/startdatum> a skos:Concept;
+  skos:prefLabel "start date"@en, "startdatum"@nl;
+  skos:definition "Start date of the traffic regulation"@en, "Startdatum van de verkeersmaatregel"@nl .
+
+<https://data.crow.nl/imv/term/Neerslag> a skos:Concept;
+  skos:prefLabel "Neerslag"@nl, "Precipitation"@en;
+  skos:definition "Slecht zicht door sneeuw, regen of mist."@nl, "Poor visibility due to precipitation."@en .
+
+<https://data.crow.nl/imv/term/handhavingsregime> a skos:Concept;
+  skos:prefLabel "handhavingsregime"@nl, "enforcement regime"@en;
+  skos:definition "Soort handhaving op incorrect verkeersgedrag, meestal parkeren."@nl,
+    "A type of enforcement on incorrect traffic behaviour, usually parking."@en .
+
+<https://data.crow.nl/imv/term/Scootmobiel> a skos:Concept;
+  skos:prefLabel "Mobility scooter"@en, "Scootmobiel"@nl;
+  skos:definition "Scootmobiel,Mobility scooter"@nl .
+
+<https://data.crow.nl/imv/term/Zijwind> a skos:Concept;
+  skos:prefLabel "Side wind"@en, "Zijwind"@nl;
+  skos:definition "Side wind"@en, "Zijwind"@nl .
+
+<https://data.crow.nl/imv/term/RVV-Voertuigtypenlijst> a skos:Collection;
+  skos:prefLabel "RVV-Vehicle types list"@en, "RVV-Voertuigtypenlijst"@nl;
+  skos:definition "\"Lijst met groepen voertuigtypes die met een icoon of tekst op een verkeersbord in de RVV-1990 staan.\"List of groups of vehicle types represented by an icon or text on a traffic sign in the RVV 1990.\""@nl;
+  skos:member <https://data.crow.nl/imv/term/Rvv-aanhanger>, <https://data.crow.nl/imv/term/Rvv-trekker>,
+    <https://data.crow.nl/imv/term/Rvv-motorfiets>, <https://data.crow.nl/imv/term/Rvv-voetganger>,
+    <https://data.crow.nl/imv/term/Rvv-fiets>, <https://data.crow.nl/imv/term/Rvv-auto>,
+    <https://data.crow.nl/imv/term/Rvv-autobus>, <https://data.crow.nl/imv/term/Rvv-brommer>,
+    <https://data.crow.nl/imv/term/Rvv-bedrijfsvoertuig>, <https://data.crow.nl/imv/term/Rvv-vrachtauto>,
+    <https://data.crow.nl/imv/term/Rvv-tram>, <https://data.crow.nl/imv/term/Rvv-motorvoertuig>,
+    <https://data.crow.nl/imv/term/Rvv-gevaarlijkeStoffen>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Rvv-trekker> a skos:Concept;
+  skos:prefLabel "Rvv-trekker"@nl, "Rvv-tractor"@en;
+  skos:definition "\"Landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines zoals bedoeld met het icoon van een trekker in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Agricultural and forestry tractors, motor vehicles with limited speed, and mobile machines as represented by the tractor icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-motorfiets> a skos:Concept;
+  skos:prefLabel "Rvv-motorfiets"@nl, "Rvv-motorcycle"@en;
+  skos:definition """\"Motorfiets zoals bedoeld met het icoon van een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motorcycle as represented by the motorcycle icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-voetganger> a skos:Concept;
+  skos:prefLabel "Rvv-pedestrian"@en, "Rvv-voetganger"@nl;
+  skos:definition """\"Voetganger zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Pedestrian as represented by the pedestrian icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-fiets> a skos:Concept;
+  skos:prefLabel "Rvv-cycle"@en, "Rvv-fiets"@nl;
+  skos:definition "\"Fietsen en gehandicaptenvoertuigen zonder motor zoals bedoeld met het icoon van een fiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bicycles and vehicles for disabled persons without a motor as represented by the bicycle icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-auto> a skos:Concept;
+  skos:prefLabel "Rvv-car"@en, "Rvv-auto"@nl, "Rvv-bedrijfsvoertuig"@en;
+  skos:definition ""@nl, """\"Motorvoertuig op meer dan twee wielen zoals bedoeld met het icoon van een auto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicle with more than two wheels as represented by the car icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-autobus> a skos:Concept;
+  skos:prefLabel "Rvv-bus"@en, "Rvv-autobus"@nl;
+  skos:definition """\"Autobus zoals bedoeld met het icoon van een autobus in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bus as represented by the bus icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-brommer> a skos:Concept;
+  skos:prefLabel "Rvv-brommer"@nl, "Rvv-moped"@en;
+  skos:definition "\"Bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor zoals bedoeld met het icoon van een brommer in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Mopeds, light mopeds, and vehicles for disabled persons with an active motor as represented by the moped icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-bedrijfsvoertuig> a skos:Concept;
+  skos:prefLabel "Rvv-bedrijfsvoertuig"@nl, "Rvv-company vehicle"@en;
+  skos:definition "\"Bedrijfs- en vrachtauto's zoals bedoeld met het gecombineerde icoon van een bedrijfsbus en een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Commercial vehicles and lorries as represented by the combined icons of a commercial van and a lorry in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-vrachtauto> a skos:Concept;
+  skos:prefLabel "Rvv-vrachtauto"@nl, "Rvv-lorry"@en;
+  skos:definition """\"Vrachtauto zoals bedoeld met het icoon van een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Lorry as represented by the lorry icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/term/Rvv-tram> a skos:Concept;
+  skos:prefLabel "Rvv-tram"@en, "Rvv-tram"@nl;
+  skos:definition "A vehicle that runs on rails, like a train or a metro. Often, the rails are embedded in public roads, allowing the tram to operate amidst other traffic. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Een voertuig dat rijdt op rails, net als een trein of een metro. Veelal liggen de rails in de openbare weg zodat de tram tussen het andere verkeer rijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/term/Rvv-motorvoertuig> a skos:Concept;
+  skos:prefLabel "Rvv-motorvoertuig"@nl, "Rvv-motor vehicle"@en;
+  skos:definition "\"Alle motorvoertuigen zoals bedoeld met de gecombineerde iconen van een auto en een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"All motor vehicles as represented by the combined icons of a car and a motorcycle in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/Vrouwenvoertuig> a skos:Concept;
+  skos:prefLabel "Vrouwenvoertuig"@nl, "Ladies vehicle"@en;
+  skos:definition "Vehicle of a woman, in the context of socially safe parking."@en,
+    "Voertuig van een vrouw, in de context van sociaal veilig parkeren."@nl .
+
+<https://data.crow.nl/imv/term/weerconditie> a skos:Concept;
+  skos:prefLabel "weather condition"@en, "weerconditie"@nl;
+  skos:definition "Weather conditions requiring cautious driving"@en, "Weersomstandigheden waarbij voorzichtig rijgedrag nodig is"@nl .
+
+<https://data.crow.nl/imv/term/inhaalindicatie> a skos:Concept;
+  skos:prefLabel "inhaalindicatie"@nl, "overtaking indication"@en;
+  skos:definition "Aspect indicating whether or not overtaking is permitted on the road."@en,
+    "Aspect dat aangeeft of het wel of niet is toegestaan om in te halen op de weg."@nl .
+
+<https://data.crow.nl/imv/term/Voorlaatsituatielijst> a skos:Collection;
+  skos:prefLabel "Priority situation list"@en, "Voorlaatsituatielijst"@nl;
+  skos:definition "List with types of situations dealing with oncoming traffic."@en,
+    "Lijst met situaties voor het omgaan met tegenliggers."@nl;
+  skos:member <https://data.crow.nl/imv/term/GaEerst>, <https://data.crow.nl/imv/term/VoorLatenGaan>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Carpool> a skos:Concept;
+  skos:prefLabel "Carpool"@en, "Carpool"@nl;
+  skos:definition "For vehicles used by multiple people traveling together to a shared destination."@en,
+    "Voor voertuigen die worden gebruikt door meerdere personen die samen reizen naar een gedeelde bestemming."@nl .
+
+<https://data.crow.nl/imv/term/Vergunninghouders> a skos:Concept;
+  skos:prefLabel "Vergunninghouders"@nl, "Permit holders"@en;
+  skos:definition "The parking measure applies on the condition that the driver holds a parking permit."@en,
+    "Onder voorwaarde dat de bestuurder een parkeervergunning heeft."@nl .
+
+<https://data.crow.nl/imv/term/Milieuzone> a skos:Concept;
+  skos:prefLabel "Milieuzone"@nl, "Low emission zone"@en;
+  skos:definition "Gebied waarin alleen voertuigen met een specifieke emissieklasse mogen rijden."@nl,
+    "Area where only vehicles with a specific emission class are allowed to drive."@en .
+
+<https://data.crow.nl/imv/term/Zondag> a skos:Concept;
+  skos:prefLabel "Sunday"@en, "Zondag"@nl;
+  skos:definition "Sunday"@en, "Zondag"@nl .
+
+<https://data.crow.nl/imv/term/Vrijdag> a skos:Concept;
+  skos:prefLabel "Friday"@en, "Vrijdag"@nl;
+  skos:definition "Friday"@en, "Vrijdag"@nl .
+
+<https://data.crow.nl/imv/term/Autoweg> a skos:Concept;
+  skos:prefLabel "Autoweg"@nl, "Express road"@en;
+  skos:definition "Weg, aangeduid door bord G3 van bijlage I; langs autowegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autoweg uit."@nl,
+    "Road indicated by sign G3 from Annex I; parking areas, petrol stations, and bus stops located along main roads are not considered part of the main road."@en .
+
+<https://data.crow.nl/imv/term/voorlaatsituatie> a skos:Concept;
+  skos:prefLabel "voorlaatsituatie"@nl, "yielding situation"@en;
+  skos:definition "Aspect dat het soort voorrangssituatie aanduidt."@nl, "Aspect that indicates the type of priority situation."@en .
+
+<https://data.crow.nl/imv/term/Daling> a skos:Concept;
+  skos:prefLabel "Daling"@nl, "Hill downwards"@en;
+  skos:definition "Een neerwaartse helling waarbij de weg geleidelijk of steil naar beneden loopt."@nl,
+    "A downward slope where the road gradually or steeply descends."@en .
+
+<https://data.crow.nl/imv/term/Zaterdag> a skos:Concept;
+  skos:prefLabel "Saturday"@en, "Zaterdag"@nl;
+  skos:definition "Saturday"@en, "Zaterdag"@nl .
+
+<https://data.crow.nl/imv/term/Donderdag> a skos:Concept;
+  skos:prefLabel "Donderdag"@nl, "Thursday"@en;
+  skos:definition "Donderdag"@nl, "Thursday"@en .
+
+<https://data.crow.nl/imv/term/hellingsrichting> a skos:Concept;
+  skos:prefLabel "hellingsrichting"@nl, "hill direction"@en;
+  skos:definition "Value for the driving direction on a steep slope."@en, "Waarde voor de rijrichting op een  steile helling."@nl .
+
+<https://data.crow.nl/imv/term/Kruisingenlijst> a skos:Collection;
+  skos:prefLabel "Crossingskist"@en, "Kruisingenlijst"@nl;
+  skos:definition "Lijst met typen kruisingen."@nl, "List of types of crossings and junctions."@en;
+  skos:member <https://data.crow.nl/imv/term/Voorrangskruispunt>, <https://data.crow.nl/imv/term/Vliegtuigen>,
+    <https://data.crow.nl/imv/term/Rotonde>, <https://data.crow.nl/imv/term/Tramkruising>,
+    <https://data.crow.nl/imv/term/Voetgangersoversteekplaats>, <https://data.crow.nl/imv/term/OverwegMetSlagboom>,
+    <https://data.crow.nl/imv/term/OverwegMeerSporen>, <https://data.crow.nl/imv/term/KruisingMetVerkeerslichten>,
+    <https://data.crow.nl/imv/term/GevaarlijkKruispunt>, <https://data.crow.nl/imv/term/VoorrangskruispuntLinks>,
+    <https://data.crow.nl/imv/term/KadeOfRivieroever>, <https://data.crow.nl/imv/term/OverwegZonderSlagboom>,
+    <https://data.crow.nl/imv/term/OverwegMetEnkelSpoor>, <https://data.crow.nl/imv/term/BeweegbareBrug>,
+    <https://data.crow.nl/imv/term/VoorrangskruispuntRechts>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Vliegtuigen> a skos:Concept;
+  skos:prefLabel "Vliegtuigen"@nl, "Airplanes"@en;
+  skos:definition "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@en,
+    "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@nl .
+
+<https://data.crow.nl/imv/term/Rotonde> a skos:Concept;
+  skos:prefLabel "Rotonde"@nl, "Turnabout"@en;
+  skos:definition "A circular traffic arrangement where multiple roads converge, with a mandatory direction of travel."@en,
+    "Een cirkelvormige verkeerssituatie waar meerdere wegen op uitkomen, met een verplichte rijrichting."@nl .
+
+<https://data.crow.nl/imv/term/Tramkruising> a skos:Concept;
+  skos:prefLabel "Tramkruising"@nl, "Tram crossing"@en;
+  skos:definition "A crossing with tram traffic."@en, "Een kruising met tramverkeer."@nl .
+
+<https://data.crow.nl/imv/term/Voetgangersoversteekplaats> a skos:Concept;
+  skos:prefLabel "Voetgangersoversteekplaats"@nl, "Pedestrian crossing"@en;
+  skos:definition "Zebra crossing were pedestrians have priority."@en, "Oversteekplaats met zebrapad waar voetgangers voorrang hebben."@nl .
+
+<https://data.crow.nl/imv/term/wegconditie> a skos:Concept;
+  skos:prefLabel "wegconditie"@nl, "road condition"@en;
+  skos:definition "The condition of the road surface and the shoulder."@en, "De toestand waarin het wegdek en de berm zich bevindt."@nl .
+
+<https://data.crow.nl/imv/term/starttijd> a skos:Concept;
+  skos:prefLabel "start time"@en, "starttijd"@nl;
+  skos:definition "Start time of the validity of the traffic measure"@en, "Starttijd van de geldigheid van verkeersmaatregel"@nl .
+
+<https://data.crow.nl/imv/term/einddatum> a skos:Concept;
+  skos:prefLabel "end date"@en, "einddatum"@nl;
+  skos:definition "Einddatum van de verkeersmaatregel"@nl, "End date of the traffic regulation"@en .
+
+<https://data.crow.nl/imv/term/F12-einde-passeerbaan> a skos:Concept;
+  skos:prefLabel "F12-end-passing-lane"@en, "F12-einde-passeerbaan"@nl;
+  skos:definition "A road sign indicating the end of mandatory use of the passing lane."@en,
+    "Een verkeersbord dat het einde van het verplicht gebruik van de passeerbaan aangeeft."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Dierenambulance> a skos:Concept;
+  skos:prefLabel "Animal ambulance."@en, "Dierenambulance"@nl;
+  skos:definition "Motorvoertuig, ingericht en bestemd om te worden gebruikt voor het vervoer van zieke en gewonde dieren. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor vehicle designed and intended for the transport of sick and injured animals.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/term/Kampeerwagen> a skos:Concept;
+  skos:prefLabel "Kampeerwagen"@nl, "Camper van"@en;
+  skos:definition "Kampeerwagen als bedoeld in artikel 1.1 van de Regeling voertuigen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor caravan as defined in Article 1.1 of the Dutch Vehicle Regulations.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/term/zone> a skos:Concept;
+  skos:prefLabel "zone"@nl, "zone"@en;
+  skos:definition "Area were a Traffic Regulation applies"@en, "Gebied waarin een Verkeersmaatregel geldt"@nl .
+
+<https://data.crow.nl/imv/term/Zonetypes> a skos:Collection;
+  skos:prefLabel "Zonetypes"@nl, "Zone types"@en;
+  skos:definition "Lijst met soorten zones."@nl, "List with types of zones."@en;
+  skos:member <https://data.crow.nl/imv/term/Milieuzone>, <https://data.crow.nl/imv/term/Schoolzone>,
+    <https://data.crow.nl/imv/term/Voertuigbeperkingszone>, <https://data.crow.nl/imv/term/Parkeerzone>,
+    <https://data.crow.nl/imv/term/Snelheidszone>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Schoolzone> a skos:Concept;
+  skos:prefLabel "Schoolzone"@nl, "School zone"@en;
+  skos:definition "Area with a school were a Traffic Regulation applies."@en, "Gebied met een school waarin een Verkeersmaatregel geldt."@nl .
+
+<https://data.crow.nl/imv/term/Voertuigbeperkingszone> a skos:Concept;
+  skos:prefLabel "Voertuigbeperkingszone"@nl, "Vehicle restriction zone"@en;
+  skos:definition "Gebied waar bepaalde voertuigtypen geweerd worden."@nl, "Area with restricted acces for specific vehicle types."@en .
+
+<https://data.crow.nl/imv/term/Parkeerzone> a skos:Concept;
+  skos:prefLabel "Parkeerzone"@nl, "Parking zone"@en;
+  skos:definition "Gebied waarin specifieke regels gelden voor parkeren."@nl, "Area were specific parking rules apply."@en .
+
+<https://data.crow.nl/imv/term/Snelheidszone> a skos:Concept;
+  skos:prefLabel "Speed zone"@en, "Snelheidszone"@nl;
+  skos:definition "Gebied waarin een maximum snelheid geldt."@nl, "Area were a maximum speed applies."@en .
+
+<https://data.crow.nl/imv/term/stilstaanindicatie> a skos:Concept;
+  skos:prefLabel "stilstaanindicatie"@nl, "halting indication"@en;
+  skos:definition "Waarde die aangeeft of het verkeer op een locatie mag stilstaan of niet"@nl,
+    "Value indicating whether traffic at a location is allowed to halt or not."@en .
+
+<https://data.crow.nl/imv/term/Ambulance> a skos:Concept;
+  skos:prefLabel "Ambulance"@en, "Ambulance"@nl;
+  skos:definition "A motor vehicle equipped for providing care to and transporting the sick and injured, as referred to in Article 1, paragraph 1, of the Ambulance Care Facilities Act. "@en,
+    "Een voor het verlenen van zorg aan en vervoer van zieken en gewonden ingericht motorvoertuig als bedoeld in Artikel 1 Wet ambulancezorgvoorzieningen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/term/File> a skos:Concept;
+  skos:prefLabel "File"@nl, "Traffic jam"@en;
+  skos:definition "File"@nl, "Traffic jam"@en .
+
+<https://data.crow.nl/imv/term/Objectstatussenlijst> a skos:Collection;
+  skos:prefLabel "Object status list"@en, "Objectstatussenlijst"@nl;
+  skos:definition "Lijst met levenscyclusstatussen van een fysiek object."@nl, "List of lifecycle statusses of a physical object."@en;
+  skos:member <https://data.crow.nl/imv/term/Gepland>, <https://data.crow.nl/imv/term/Geplaatst>,
+    <https://data.crow.nl/imv/term/Verwijderd>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Scooter> a skos:Concept;
+  skos:prefLabel "Scooter"@en, "Scooter"@nl;
+  skos:definition "Scooter,Scooter"@nl .
+
+<https://data.crow.nl/imv/term/Boete> a skos:Concept;
+  skos:prefLabel "Fine"@en, "Boete"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour where a fine has to be paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag waarbij een boete moet worden betaald."@nl .
+
+<https://data.crow.nl/imv/term/Treintaxi> a skos:Concept;
+  skos:prefLabel "Treintaxi"@nl, "Train taxi"@en;
+  skos:definition "Een taxi voor vervoer van treinpassagiers."@nl, "A taxi used to transport train passengers."@en .
+
+<https://data.crow.nl/imv/term/Speed-pedelec> a skos:Concept;
+  skos:prefLabel "Speed-pedelec"@en, "Speed-pedelec"@nl;
+  skos:definition "Elektrische bromfiets met trapondersteuning waarvan de aandrijfkracht aanhoudt als het voertuig de snelheid van 25 km per uur overschrijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Electric moped with pedal assistance, where the drive power continues when the vehicle exceeds a speed of 25 km/h. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/term/Doktersvoertuig> a skos:Concept;
+  skos:prefLabel "Doctors vehicle"@en, "Doktersvoertuig"@nl;
+  skos:definition "A vehicle belonging to a doctor."@en, "Voertuig van een arts."@nl .
+
+<https://data.crow.nl/imv/term/ralkleur> a skos:Concept;
+  skos:prefLabel "ral color"@en, "ralkleur"@nl;
+  skos:definition "Een standaardkleur uit het RAL-kleurcoderingssysteem, dat ontwikkeld is door het Duitse Reichsausschuss für Lieferbedingungen (RAL) om kleuren te definiëren voor verf, coatings, en andere materialen."@nl,
+    "A standard color from the RAL color coding system, developed by the German Reichsausschuss für Lieferbedingungen (RAL) to define colors for paint, coatings, and other materials."@en .
+
+<https://data.crow.nl/imv/term/snelheidsregime> a skos:Concept;
+  skos:prefLabel "snelheidsregime"@nl, "speed regine"@en;
+  skos:definition "The rules that determine the maximum speed for motor vehicles on a road section, depending on the road type (such as motorways, built-up areas, or residential zones) and vehicle type, as stipulated in the RVV 1990."@en,
+    "De regels die de maximumsnelheid voor motorvoertuigen op een wegdeel bepalen, afhankelijk van het wegtype (zoals autosnelwegen, bebouwde kom of erven) en voertuigtype, zoals vastgelegd in de RVV 1990"@nl .
+
+<https://data.crow.nl/imv/term/Ongeval> a skos:Concept;
+  skos:prefLabel "Traffic accident"@en, "Ongeval"@nl;
+  skos:definition "Traffic accident"@en, "Ongeval"@nl .
+
+<https://data.crow.nl/imv/term/objectstatus> a skos:Concept;
+  skos:prefLabel "objectstatus"@nl, "object status"@en;
+  skos:definition "De levenscyclusstatus van een fysiek object."@nl, "The lifecycle status of a physical object."@en .
+
+<https://data.crow.nl/imv/term/Helling> a skos:Concept;
+  skos:prefLabel "Helling"@nl, "Hill upwards"@en;
+  skos:definition "An upward slope where the road gradually or steeply asscends."@en,
+    "Een opwaartse helling waarbij de weg geleidelijk of steil naar boven loopt."@nl .
+
+<https://data.crow.nl/imv/term/eindtijd> a skos:Concept;
+  skos:prefLabel "eindtijd"@nl, "end time"@en;
+  skos:definition "End time of the validity of the traffic measure"@en, "Eindtijd van de geldigheid van verkeersmaatregel"@nl .
+
+<https://data.crow.nl/imv/term/medeweggebruiker> a skos:Concept;
+  skos:prefLabel "medeweggebruiker"@nl, "fellow road user"@en;
+  skos:definition "The aspect that indicates which type of fellow road user is being warned for."@en,
+    "Het aspect wat aangeeft voor welk type medeweggebruiker wordt gewaarschuwd."@nl .
+
+<https://data.crow.nl/imv/term/voertuigemissiecategorie> a skos:Concept;
+  skos:prefLabel "vehicle emission category"@en, "voertuigemissiecategorie"@nl;
+  skos:definition "Aspect dat de emissiecategorie van voertuigen aanduidt."@nl, "Aspect that indicates the emission category of vehicles."@en .
+
+<https://data.crow.nl/imv/term/Parkeerindicatielijst> a skos:Collection;
+  skos:prefLabel "Parking indication list"@en, "Parkeerindicatielijst"@nl;
+  skos:definition "Lijst met indicaties voor wel of niet toestaan van parkeren."@nl,
+    "List of indications for allowing or not allowing parking."@en;
+  skos:member <https://data.crow.nl/imv/term/ParkerenVerboden>, <https://data.crow.nl/imv/term/ParkerenToegestaan>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/parkeervoorwaarde> a skos:Concept;
+  skos:prefLabel "parking condition"@en, "parkeervoorwaarde"@nl;
+  skos:definition "Condition under which parking is allowed."@en, "Voorwaarde waaronder men mag parkeren."@nl .
+
+<https://data.crow.nl/imv/term/Voetgangers> a skos:Concept;
+  skos:prefLabel "Voetgangers"@nl, "Pedestrians"@en;
+  skos:definition "Voetgangers"@nl, "Pedestrians"@en .
+
+<https://data.crow.nl/imv/term/strooknummer> a skos:Concept;
+  skos:prefLabel "lane number"@en, "strooknummer"@nl;
+  skos:definition "Number of the lane, where lanes in one direction of the carriageway are numbered sequentially starting from one, moving outward from the center of the road. A bicycle lane or footpath is also considered a lane."@en,
+    "Nummer van de strook, waarbij in één richting van het rijvak de stroken oplopend vanaf één worden genummerd vanuit het midden van de weg naar buiten. Een fiets- of voetgangersstrook wordt ook beschouwd als strook."@nl .
+
+<https://data.crow.nl/imv/term/Paddentrek> a skos:Concept;
+  skos:prefLabel "Paddentrek"@nl, "Migratory toad crossing"@en;
+  skos:definition "Paddentrek"@nl, "Migratory toad crossing."@en .
+
+<https://data.crow.nl/imv/term/Kinderen> a skos:Concept;
+  skos:prefLabel "Kinderen"@nl, "Children"@en;
+  skos:definition "Kinderen"@nl, "Children"@en .
+
+<https://data.crow.nl/imv/term/Vee> a skos:Concept;
+  skos:prefLabel "Vee"@nl, "Livestock"@en;
+  skos:definition "Vee"@nl, "Livestock"@en .
+
+<https://data.crow.nl/imv/term/wegvakrichting> a skos:Concept;
+  skos:prefLabel "road segment driving direction"@en, "wegvakrichting"@nl;
+  skos:definition "The designation of which driving direction of an NWB road segment a traffic measure or physical plate is intended for."@en,
+    "De aanduiding voor welke rijrichting van een NWB-wegvak een verkeersmaatregel of fysieke plaat bedoeld is."@nl .
+
+<https://data.crow.nl/imv/term/Autosnelweg> a skos:Concept;
+  skos:prefLabel "Motorway"@en, "Autosnelweg"@nl;
+  skos:definition "Weg, aangeduid door bord G1 van bijlage I; langs autosnelwegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autosnelweg uit."@nl,
+    "Road indicated by sign G1 from Annex I; parking areas, petrol stations, and bus stops located along motorways are not considered part of the motorway."@en .
+
+<https://data.crow.nl/imv/term/Maandag> a skos:Concept;
+  skos:prefLabel "Monday"@en, "Maandag"@nl;
+  skos:definition "Monday"@en, "Maandag"@nl .
+
+<https://data.crow.nl/imv/term/Dinsdag> a skos:Concept;
+  skos:prefLabel "Tuesday"@en, "Dinsdag"@nl;
+  skos:definition "Tuesday"@en, "Dinsdag"@nl .
+
+<https://data.crow.nl/imv/term/Woensdag> a skos:Concept;
+  skos:prefLabel "Wednesday"@en, "Woensdag"@nl;
+  skos:definition "Wednesday"@en, "Woensdag"@nl .
+
+<https://data.crow.nl/imv/term/parkeerindicatie> a skos:Concept;
+  skos:prefLabel "parking indication"@en, "parkeerindicatie"@nl;
+  skos:definition "Aspect indicating whether parking is allowed or not on or along a road segment."@en,
+    "Aspect dat aangeeft of wel of niet geparkeerd mag worden op of langs een wegvak."@nl .
+
+<https://data.crow.nl/imv/term/wegvakfractie> a skos:Concept;
+  skos:prefLabel "road fraction"@en, "wegvakfractie"@nl;
+  skos:definition "The % of the road section above or next to which the physical plate is located."@en,
+    "Het % van het wegvak waarboven of naast zich de fysieke plaat bevindt."@nl .
+
+<https://data.crow.nl/imv/term/Hellingsrichtingenlijst> a skos:Collection;
+  skos:prefLabel "Hellingsrichtingenlijst"@nl, "Steep hill directions list"@en;
+  skos:definition "Lijst met waardes voor de hellingsrichting."@nl, "List of values for steep hill directions."@en;
+  skos:member <https://data.crow.nl/imv/term/Daling>, <https://data.crow.nl/imv/term/Helling>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Snelheidsregimeslijst> a skos:Collection;
+  skos:prefLabel "Snelheidsregimeslijst"@nl, "Speed regimes list"@en;
+  skos:definition "Lijst met soorten snelheidsregimes uit de RVV 1990."@nl, "List of types of speed regulations from the RVV 1990."@en;
+  skos:member <https://data.crow.nl/imv/term/Erf>, <https://data.crow.nl/imv/term/Autoweg>,
+    <https://data.crow.nl/imv/term/Autosnelweg>, <https://data.crow.nl/imv/term/BuitenBebouwdeKom>,
+    <https://data.crow.nl/imv/term/BinnenBebouwdeKom>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Brandweervoertuig> a skos:Concept;
+  skos:prefLabel "Brandweervoertuig"@nl, "Fire brigade vehicle"@en;
+  skos:definition "Voertuig van de brandweer."@nl, "Fire brigade vehicle."@en .
+
+<https://data.crow.nl/imv/term/voorrangsindicatie> a skos:Concept;
+  skos:prefLabel "priority indication"@en, "voorrangsindicatie"@nl;
+  skos:definition "Aspect dat aanduidt of het verkeer op de weg voorrang krijgt of voorrang moet verlenen"@nl,
+    "Aspect indicating whether traffic on the road has priority or must give way."@en .
+
+<https://data.crow.nl/imv/term/Wegsleepregeling> a skos:Concept;
+  skos:prefLabel "Tow-away regulation"@en, "Wegsleepregeling"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where the vehicle is towed away and held until a fine is paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een  voertuig wordt afgevoerd en bewaard totdat een boete is betaald."@nl .
+
+<https://data.crow.nl/imv/term/Obstakeltypenlijst> a skos:Collection;
+  skos:prefLabel "List of obstacle types"@en, "Obstakeltypenlijst"@nl;
+  skos:definition "Lijst met soorten obstakels."@nl, "List of obstacle types."@en;
+  skos:member <https://data.crow.nl/imv/term/Drempel>, <https://data.crow.nl/imv/term/Veerooster>,
+    <https://data.crow.nl/imv/term/Paal>, <https://data.crow.nl/imv/term/Poller>, <https://data.crow.nl/imv/term/Wildrooster>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/Bestemmingsverkeer> a skos:Concept;
+  skos:prefLabel "Bestemmingsverkeer"@nl, "Source and destination traffic"@en;
+  skos:definition "Bestuurders wier reisdoel één of meer bepaalde percelen betreft die zijn gelegen aan of in de directe nabijheid van een weg met een door verkeerstekens aangegeven geslotenverklaring voor bepaalde categorieën bestuurders en die slechts via deze weg zijn te bereiken alsmede bestuurders van lijnbussen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Drivers whose travel destination concerns one or more specific premises located on or near a road with a traffic sign indicating a prohibition for certain categories of drivers, and which can only be accessed via this road, as well as drivers of scheduled buses.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/term/Politievoertuig> a skos:Concept;
+  skos:prefLabel "Police vehicle"@en, "Politievoertuig"@nl;
+  skos:definition "Voertuig van de politie."@nl, "A vehicle belonging to the police."@en .
+
+<https://data.crow.nl/imv/term/C22-gevaarlijke-stoffen> a skos:Concept;
+  skos:prefLabel "C22-hazard"@en, "C22-gevaarlijke-stoffen"@nl;
+  skos:definition "A road sign indicating that the road is closed to vehicles carrying certain hazardous materials."@en,
+    "Een verkeersbord dat aangeeft dat de weg gesloten is voor voertuigen met bepaalde gevaarlijke stoffen."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Ral9017> a skos:Concept;
+  skos:prefLabel "Ral 9017"@en, "Ral 9017"@nl;
+  skos:definition "Zwart"@nl, "Black"@en .
+
+<https://data.crow.nl/imv/term/Ral8016> a skos:Concept;
+  skos:prefLabel "Ral 8016"@en, "Ral 8016"@nl;
+  skos:definition "Bruin"@nl, "Brown"@en .
+
+<https://data.crow.nl/imv/term/Ral9016> a skos:Concept;
+  skos:prefLabel "Ral 9016"@en, "Ral 9016"@nl;
+  skos:definition "Wit"@nl, "White"@en .
+
+<https://data.crow.nl/imv/term/Ral5017> a skos:Concept;
+  skos:prefLabel "Ral 5017"@en, "Ral 5017"@nl;
+  skos:definition "Blauw"@nl, "Blue"@en .
+
+<https://data.crow.nl/imv/term/Ral6024> a skos:Concept;
+  skos:prefLabel "Ral 6024"@en, "Ral 6024"@nl;
+  skos:definition "Fluoriserend groen"@nl, "Fluorescent green"@en .
+
+<https://data.crow.nl/imv/term/Ral1023> a skos:Concept;
+  skos:prefLabel "Ral 1023"@en, "Ral 1023"@nl;
+  skos:definition "Fluorescent yellow"@en, "Fluoriserend geel"@nl .
+
+<https://data.crow.nl/imv/term/Ral3020> a skos:Concept;
+  skos:prefLabel "Ral 3020"@en, "Ral 3020"@nl;
+  skos:definition "Rood"@nl, "Red"@en .
+
+<https://data.crow.nl/imv/term/geo-ori%C3%ABntatiehoek> a skos:Concept;
+  skos:prefLabel "orientation angle"@en, "geo-oriëntatiehoek"@nl;
+  skos:definition "De oriëntatie van de leeszijde van de fysieke plaat in graden met de richting  ten opzichte van het geografische noorden."@nl,
+    "The orientation of the readable side of the physical sign in degrees relative to geographic north."@en .
+
+<https://data.crow.nl/imv/term/LijstRijrichtingenVoorEenVerkeersmatregel> a skos:Collection;
+  skos:prefLabel "Lijst rijrichtingen voor een verkeersmatregel"@nl, "List driving directions for traffic measures"@en;
+  skos:definition "Lijst met aanduidingen voor welke rijrichting van een NWB-wegvak een verkeersmaatregel bedoeld is."@nl,
+    "List of designations indicating which driving direction of an NWB road segment a traffic measure is intended for."@en;
+  skos:member <https://data.crow.nl/imv/term/Heen>, <https://data.crow.nl/imv/term/Terug>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/TweeWielenOpHetTrottoir> a skos:Concept;
+  skos:prefLabel "Two wheels on the sidewalk"@en, "Twee wielen op het trottoir"@nl;
+  skos:definition "Parking with two wheels on the pavement."@en, "Parkeren met twee wielen op het trottoir."@nl .
+
+<https://data.crow.nl/imv/term/positienummerIcoon> a skos:Concept;
+  skos:prefLabel "positienummer icoon"@nl, "position number icon"@en;
+  skos:definition "Logical numbering of the position of the icon on a shield; numbers from top to bottom, letters from left to right."@en,
+    "Logische nummering van de positie van het icoon op een schild; cijfers van boven naar beneden, letters van links naar rechts."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-fiets> a skos:Concept;
+  skos:prefLabel "Icoon rvv-fiets"@nl, "Rvv-bicycle icon"@en;
+  skos:definition "Zwart icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op fietsen en voor gehandicaptenvoertuigen zonder motor, of dat deze juist uitgezonderd zijn."@nl,
+    "Black icon used on a supplementary sign to indicate that a traffic regulation applies to bicycles and non-motorized mobility scooters, or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/BuitenBebouwdeKom> a skos:Concept;
+  skos:prefLabel "Buiten bebouwde kom"@nl, "Outsite built up areas"@en;
+  skos:definition "The area outside the boundary signs of a town or village where the density of buildings is lower."@en,
+    "Het gebied buiten de komborden van een stad of dorp waar de concentratie aan bebouwing lager is."@nl .
+
+<https://data.crow.nl/imv/term/OverwegMetSlagboom> a skos:Concept;
+  skos:prefLabel "Overweg met slagboom"@nl, "Level crossing with gate"@en;
+  skos:definition "Level crossing with barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising met slagboom."@nl .
+
+<https://data.crow.nl/imv/term/InhalenToegestaan> a skos:Concept;
+  skos:prefLabel "Inhalen toegestaan"@nl, "Overtaking allowed"@en;
+  skos:definition "Indicatie dat inhalen is toegestaan."@nl, "Indication that overtaking is allowed."@en .
+
+<https://data.crow.nl/imv/term/wegvakId> a skos:Concept;
+  skos:prefLabel "wegvak id"@nl, "road segment id"@en;
+  skos:definition "The unique identification number of an NWB road segment."@en, "Het unieke identificatienummer van een NWB-wegvak."@nl .
+
+<https://data.crow.nl/imv/term/Rvv-gevaarlijkeStoffen> a skos:Concept;
+  skos:prefLabel "Rvv-hazardous"@en, "Rvv-gevaarlijke stoffen"@nl;
+  skos:definition "\"Voertuigen met bepaalde gevaarlijke stoffen zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Vehicles carrying certain hazardous substances as represented by the pedestrian icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/term/vanToepassingOpVoertuigtype> a skos:Concept;
+  skos:prefLabel "applies to vehicle type"@en, "van toepassing op voertuigtype"@nl;
+  skos:definition "Indication of the type of vehicle to which the traffic measure applies."@en,
+    "Aanduiding van het soort voertuigtype waarop de verkeersmaatregel van toepassing is."@nl .
+
+<https://data.crow.nl/imv/term/BijSchemerEnDuisternis> a skos:Concept;
+  skos:prefLabel "Bij schemer en duisternis"@nl, "During dusk and darkness"@en;
+  skos:definition "Bij schemer en duisternis"@nl, "During dusk and darkness"@en .
+
+<https://data.crow.nl/imv/term/voertuigaslastGroterDan> a skos:Concept;
+  skos:prefLabel "vehicle axle load greater than"@en, "voertuigaslast groter dan"@nl;
+  skos:definition "Minimale aslast van een voertuig waarop een verkeersmaatregel van toepassing is"@nl,
+    "Minimum axle load of a vehicle to which a traffic measure applies."@en .
+
+<https://data.crow.nl/imv/term/BochtNaarRechts> a skos:Concept;
+  skos:prefLabel "Right bend"@en, "Bocht naar rechts"@nl;
+  skos:definition "Right bend"@en, "Bocht naar rechts"@nl .
+
+<https://data.crow.nl/imv/term/GaEerst> a skos:Concept;
+  skos:prefLabel "Go first"@en, "Ga eerst"@nl;
+  skos:definition "Ga eerst als er een tegenligger aan komt."@nl, "Go first in the case of oncoming traffic."@en .
+
+<https://data.crow.nl/imv/term/VoorLatenGaan> a skos:Concept;
+  skos:prefLabel "Voor laten gaan"@nl, "Yield"@en;
+  skos:definition "Yield to oncoming traffic"@en, "Tegenliggers voor laten gaan"@nl .
+
+<https://data.crow.nl/imv/term/OpladenVoertuig> a skos:Concept;
+  skos:prefLabel "Opladen voertuig"@nl, "Charging vehicle"@en;
+  skos:definition "Parkeren voor het opladen van een elektrisch voertuig. "@nl, "Parking on the condition that an electric vehicle is charging."@en .
+
+<https://data.crow.nl/imv/term/LadenEnLossen> a skos:Concept;
+  skos:prefLabel "Laden en lossen"@nl, "Loading and unloading"@en;
+  skos:definition "Parkeren voor voertuigen aan het laden of lossen zijn."@nl, "Parking on the condition that vehicles are loading of unloading."@en .
+
+<https://data.crow.nl/imv/term/AlleenInDeVakken> a skos:Concept;
+  skos:prefLabel "Alleen in de vakken"@nl, "Only in the marked spaces"@en;
+  skos:definition "Parkeren in de vakken."@nl, "Parking within the marked spaces."@en .
+
+<https://data.crow.nl/imv/term/KissAndRide> a skos:Concept;
+  skos:prefLabel "Passenger loading and unloading"@en, "Kiss and ride"@nl;
+  skos:definition "On the condition that it is used to pick up or set down passengers."@en,
+    "De parkeermaatregel geldt onder voorwaarde dat de plek gebruikt wordt voor het in- en uitstappen van passagiers."@nl .
+
+<https://data.crow.nl/imv/term/AlleenOpDeParkeerstrook> a skos:Concept;
+  skos:prefLabel "Alleen op de parkeerstrook"@nl, "Only in the parking strip"@en;
+  skos:definition "Parking within the parking lane or parking strip."@en, "Parkeren op de parkeerstrook."@nl .
+
+<https://data.crow.nl/imv/term/ParkAndRide> a skos:Concept;
+  skos:prefLabel "Park and Ride"@en, "Park and Ride"@nl;
+  skos:definition "Voor parkeren en verder reizen met openbaar vervoer."@nl, "For parking and continuing the journey by public transport."@en .
+
+<https://data.crow.nl/imv/term/GeslotenOfOpenverklaring> a skos:Concept;
+  skos:prefLabel "Acces statement"@en, "Gesloten of openverklaring"@nl;
+  skos:definition "Traffic regulation indicating whether the road in question may be entered and used."@en,
+    "Verkeersmaatregel die aangeeft of de betrokken weg ingereden mag worden en gebruikt mag worden."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/TussenZonsopkomstEnZonsondergang> a skos:Concept;
+  skos:prefLabel "Between sunrise and sundown"@en, "Tussen zonsopkomst en zonsondergang"@nl;
+  skos:definition "Between sunrise and sundown, daytime."@en, "Tussen zonsopkomst en zonsondergang, overdag."@nl .
+
+<https://data.crow.nl/imv/term/TussenZonsondergangEnZonsopkomst> a skos:Concept;
+  skos:prefLabel "Tussen zonsondergang en zonsopkomst"@nl, "Between sundown and sunrise"@en;
+  skos:definition "Between sundown and sunrise, at night."@en, "Tussen zonsondergang en zonsopkomst, 's nachts."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-ruiter> a skos:Concept;
+  skos:prefLabel "Icoon rvv-ruiter"@nl, "Rvv-rider icon"@en;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to riders, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op ruiters, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/S-bochtNaarLinks> a skos:Concept;
+  skos:prefLabel "S-bocht naar links"@nl, "S-bend to the left"@en;
+  skos:definition "S-bocht(en), eerst naar links"@nl, "S-bend(s), first to the left"@en .
+
+<https://data.crow.nl/imv/term/ToegestaneRijrichtinglijst> a skos:Collection;
+  skos:prefLabel "Allowed direction list"@en, "Toegestane rijrichtinglijst"@nl;
+  skos:definition "Lijst met toegestane rijrichtingen."@nl, "List of permitted driving directions."@en;
+  skos:member <https://data.crow.nl/imv/term/Linksaf>, <https://data.crow.nl/imv/term/Rechtdoor>,
+    <https://data.crow.nl/imv/term/Keren>, <https://data.crow.nl/imv/term/Rechtsaf>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/OverwegMeerSporen> a skos:Concept;
+  skos:prefLabel "Railway crossing multiple tracks"@en, "Overweg meer sporen"@nl;
+  skos:definition "Gelijkvloerse spoorwegkruising met twee of meer sporen."@nl, "Level crossing with two or more tracks."@en .
+
+<https://data.crow.nl/imv/term/KruisingMetVerkeerslichten> a skos:Concept;
+  skos:prefLabel "Kruising met verkeerslichten"@nl, "Crossing with traffic lights"@en;
+  skos:definition "Een wegknooppunt waar het verkeer wordt geregeld door middel van stoplichten."@nl,
+    "An intersection where traffic flow is controlled by signal lights."@en .
+
+<https://data.crow.nl/imv/term/GevaarlijkKruispunt> a skos:Concept;
+  skos:prefLabel "Gevaarlijk kruispunt"@nl, "Dangerous crossing"@en;
+  skos:definition "An intersection designated as dangerous by the road authority."@en,
+    "Een door de wegbeheerder als gevaarlijk aangemerkte kruising."@nl .
+
+<https://data.crow.nl/imv/term/VoorrangskruispuntLinks> a skos:Concept;
+  skos:prefLabel "Priority junction left"@en, "Voorrangskruispunt links"@nl;
+  skos:definition "A junction with a minor road on the left."@en, "Een kruising met een ondergeschikte weg van links."@nl .
+
+<https://data.crow.nl/imv/term/KadeOfRivieroever> a skos:Concept;
+  skos:prefLabel "Quay or river bench"@en, "Kade of rivieroever"@nl;
+  skos:definition "KadeOfRivieroever"@nl, "QuayOrRiverBench"@en .
+
+<https://data.crow.nl/imv/term/OverwegZonderSlagboom> a skos:Concept;
+  skos:prefLabel "Level crossing"@en, "Overweg zonder slagboom"@nl;
+  skos:definition "Level crossing without barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising zonder slagboom."@nl .
+
+<https://data.crow.nl/imv/term/OverwegMetEnkelSpoor> a skos:Concept;
+  skos:prefLabel "Railway crossing single track"@en, "Overweg met enkel spoor"@nl;
+  skos:definition "Level crossing with a single track."@en, "Gelijkvloerse spoorwegkruising met enkel spoor."@nl .
+
+<https://data.crow.nl/imv/term/BeweegbareBrug> a skos:Concept;
+  skos:prefLabel "Movable bridge"@en, "Beweegbare brug"@nl;
+  skos:definition "Een brug die kan worden geopend of verplaatst om scheepvaartverkeer doorgang te verlenen."@nl,
+    "A bridge that can be opened or moved to allow passage for maritime traffic."@en .
+
+<https://data.crow.nl/imv/term/VoorrangskruispuntRechts> a skos:Concept;
+  skos:prefLabel "Voorrangskruispunt rechts"@nl, "Priority junction right"@en;
+  skos:definition "Een kruising met een ondergeschikte weg van rechts."@nl, "A junction with a minor road on the right."@en .
+
+<https://data.crow.nl/imv/term/voertuiglengteGroterDan> a skos:Concept;
+  skos:prefLabel "vehicle length greater than"@en, "voertuiglengte groter dan"@nl;
+  skos:definition "Minimale lengte van een voertuig en samenstellen van voertuigen met inbegrip van de lading waarop een verkeersmaatregel van toepassing is"@nl,
+    "Minimum length of a vehicle and vehicle combinations, including the load, to which a traffic measure applies."@en .
+
+<https://data.crow.nl/imv/term/dagenVanGeldigheid> a skos:Concept;
+  skos:prefLabel "days of validity"@en, "dagen van geldigheid"@nl;
+  skos:definition "De dagen waarop een verkeersmaatregel van toepassing is."@nl, "The days on which a traffic measure applies."@en .
+
+<https://data.crow.nl/imv/term/NietVerplichtGebruik> a skos:Concept;
+  skos:prefLabel "Niet verplicht gebruik"@nl, "Non mandatory use"@en;
+  skos:definition "Value indicating that a road, lane, or track must not be used obligatorily, as in the case of a non-mandatory cycle path."@en,
+    "Waarde die aangeeft dat een weg, baan of strook niet verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een onverplicht fietspad"@nl .
+
+<https://data.crow.nl/imv/term/startWegvakfractie> a skos:Concept;
+  skos:prefLabel "start wegvakfractie"@nl, "road fraction start"@en;
+  skos:definition "Het beginpunt van een verkeersmaatregel, uitgedrukt in het percentage van de lengte van het wegvak vanaf het begin wegvak."@nl,
+    "The starting point of a traffic measure, expressed as a percentage of the road segment's length from the start of the segment."@en .
+
+<https://data.crow.nl/imv/term/S-bochtNaarRechts> a skos:Concept;
+  skos:prefLabel "S-bend to the right"@en, "S-bocht naar rechts"@nl;
+  skos:definition "S-bend(s), first to the right"@en, "S-bocht(en), eerst naar rechts"@nl .
+
+<https://data.crow.nl/imv/term/LijstMetGevaarlijkeBochten> a skos:Collection;
+  skos:prefLabel "Lijst met gevaarlijke bochten"@nl, "List with dangerous turns"@en;
+  skos:definition "Lijst met types gevaarlijke bochten"@nl, "List of types of dangerous bends."@en;
+  skos:member <https://data.crow.nl/imv/term/BochtNaarRechts>, <https://data.crow.nl/imv/term/S-bochtNaarLinks>,
+    <https://data.crow.nl/imv/term/S-bochtNaarRechts>, <https://data.crow.nl/imv/term/BochtNaarLinks>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/BochtNaarLinks> a skos:Concept;
+  skos:prefLabel "Left bend"@en, "Bocht naar links"@nl;
+  skos:definition "Left bend"@en, "Bocht naar links"@nl .
+
+<https://data.crow.nl/imv/term/naXMeter> a skos:Concept;
+  skos:prefLabel "na x meter"@nl, "after x meters"@en;
+  skos:definition "The number of meters between the physical sign and the location where the traffic regulation applies."@en,
+    "Het aantal meters tussen de fysieke plaat en de plek waar de verkeersmaatregel van toepassing is."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-motorvoertuig> a skos:Concept;
+  skos:prefLabel "AppliesToMotorizedVehicles"@en, "Icoon rvv-motorvoertuig"@nl;
+  skos:definition "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op motorvoertuigen op meer dan twee wielen, of dat deze juist uitgezonderd zijn."@nl,
+    "Icon used to indicate on a subplate that a traffic measure applies to motor vehicles with more than two wheels, or that they are specifically exempted."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/voertuigbreedteGroterDan> a skos:Concept;
+  skos:prefLabel "voertuigbreedte groter dan"@nl, "vehicle width greater than"@en;
+  skos:definition "Minimale breedte van een voertuig en samenstellen van voertuigen met inbegrip van de lading waarop een verkeersmaatregel van toepassing is"@nl,
+    "Minimum width of a vehicle and vehicle combinations, including the load, to which a traffic measure applies."@en .
+
+<https://data.crow.nl/imv/term/IcoonRvv-voetganger> a skos:Concept;
+  skos:prefLabel "Rvv-pedestrian icon"@en, "Icoon rvv-voetganger"@nl;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to pedestrians, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op voetgangers, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/VerplichtGebruik> a skos:Concept;
+  skos:prefLabel "Mandatory use"@en, "Verplicht gebruik"@nl;
+  skos:definition "Value indicating that a road, lane, or track must be used obligatorily, as in the case of a mandatory cycle path or passing lane."@en,
+    "Waarde die aangeeft dat een weg, baan of strook verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een verplicht fietspad of een passeerbaan."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-bedrijfsauto> a skos:Concept;
+  skos:prefLabel "Rvv-company vehicle icon"@en, "Icoon rvv-bedrijfsauto"@nl;
+  skos:definition "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op bedrijfsauto's, of dat deze juist uitgezonderd zijn."@nl,
+    "Icon used to indicate on a subplate that a traffic measure applies to company vehicles, or that they are specifically exempted."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/toegestaneRijrichting> a skos:Concept;
+  skos:prefLabel "toegestane rijrichting"@nl, "permitted driving direction"@en;
+  skos:definition "Indicator for specifying the permitted driving direction. In the case of an obstacle, this indicates the passing side of the sign."@en,
+    "Aspect waarmee de toegestane rijrichting kan worden aangegeven. In het geval van een obstakel is dit de passeerzijde van het bord."@nl .
+
+<https://data.crow.nl/imv/term/OpenWeg> a skos:Concept;
+  skos:prefLabel "Open weg"@nl, "Open road"@en;
+  skos:definition "Waarde die aangeeft dat de weg open is voor verkeer."@nl, "Value indicating the road is open for traffic."@en .
+
+<https://data.crow.nl/imv/term/FietsersEnBromfietsers> a skos:Concept;
+  skos:prefLabel "Fietsers en bromfietsers"@nl, "Cyclists and moped riders"@en;
+  skos:definition "Fietsers en bromfietsers"@nl, "Cyclists and moped riders"@en .
+
+<https://data.crow.nl/imv/term/ParkerenVerboden> a skos:Concept;
+  skos:prefLabel "Parkeren verboden"@nl, "Parking prohibited"@en;
+  skos:definition "Drivers should stop no longer than a specified amount of time, except for loading and unloading or to set down or pick up passengers."@en,
+    "Voertuigen mogen niet langer stilstaan dan nodig voor het in- en uitladen van goederen of in- en uitstappen van passagiers"@nl .
+
+<https://data.crow.nl/imv/term/maximumSnelheid> a skos:Concept;
+  skos:prefLabel "maximum snelheid"@nl, "maximum speed"@en;
+  skos:definition "wettelijke maximumsnelheid in km/h"@nl, "legal speed limit in km/h"@en .
+
+<https://data.crow.nl/imv/term/StilstaanToegestaan> a skos:Concept;
+  skos:prefLabel "Standing allowed"@en, "Stilstaan toegestaan"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg is toegestaan, voor het laden en lossen van goederen of in- en uitstappen van passagiers."@nl,
+    "Indication that standing for a short while is allowed, for loading and unloading or to set down or pick up passengers."@en .
+
+<https://data.crow.nl/imv/term/IcoonRvv-aanhangwagen> a skos:Concept;
+  skos:prefLabel "Icoon rvv-aanhangwagen"@nl, "Rvv-trailer icon"@en;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to motor vehicles with a trailer, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op motorvoertuigen met aanhangwagen, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/StilstaanIndicatielijst> a skos:Collection;
+  skos:prefLabel "Halting indicationlist"@en, "Stilstaan indicatielijst"@nl;
+  skos:definition "Lijst met indicaties of men mag stilstaan of niet."@nl, "List of indications whether halting is allowed or not."@en;
+  skos:member <https://data.crow.nl/imv/term/StilstaanToegestaan>, <https://data.crow.nl/imv/term/StilstaanVerboden>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/StilstaanVerboden> a skos:Concept;
+  skos:prefLabel "Standing prohibited"@en, "Stilstaan verboden"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg niet is toegestaan."@nl,
+    "Indication that standing for a short while is not allowed."@en .
+
+<https://data.crow.nl/imv/term/IcoonRvv-tram> a skos:Concept;
+  skos:prefLabel "Icoon rvv-tram"@nl, "Rvv-tram icon"@en;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to trams, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op trams, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonRvv-trekker> a skos:Concept;
+  skos:prefLabel "Rvv-tractor icon"@en, "Icoon rvv-trekker"@nl;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to agricultural and forestry tractors, slow-moving motor vehicles, and mobile machines, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IJzelOfSneeuw> a skos:Concept;
+  skos:prefLabel "Risk of Ice"@en, "IJzel of sneeuw"@nl;
+  skos:definition "Risk of ice form freezing rain or snow."@en, "IJzel of sneeuw,"@nl .
+
+<https://data.crow.nl/imv/term/NietInhalen> a skos:Concept;
+  skos:prefLabel "No overtaking"@en, "Niet inhalen"@nl;
+  skos:definition "Indicatie dat inhalen niet is toegestaan."@nl, "Indication that overtaking is not allowed."@en .
+
+<https://data.crow.nl/imv/term/WegversmallingLinks> a skos:Concept;
+  skos:prefLabel "Wegversmalling links"@nl, "Road narrowing left"@en;
+  skos:definition "Road narrowing on the left-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter linkerzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/term/voertuigaslastsomGroterDan> a skos:Concept;
+  skos:prefLabel "gross vehicle weight greater than"@en, "voertuigaslastsom groter dan"@nl;
+  skos:definition "Minimum gross vehicle weight or sum of axle loads of a vehicle or vehicle combination to which a traffic measure applies."@en,
+    "Minimale totaalmassa of som van aslasten van een voertuig of een samenstel van voertuigen waarop een verkeersmaatregel van toepassing is"@nl .
+
+<https://data.crow.nl/imv/term/startSeizoen> a skos:Concept;
+  skos:prefLabel "season start"@en, "start seizoen"@nl;
+  skos:definition "Startdatum van de geldigheid van een seizoensmatige verkeersmaatregel in termen van dag en maand van het jaar"@nl,
+    "Start date of the validity of a seasonal traffic regulation in terms of day and month of the year"@en .
+
+<https://data.crow.nl/imv/term/WerkInUitvoering> a skos:Concept;
+  skos:prefLabel "Werk in uitvoering"@nl, "Work in progress"@en;
+  skos:definition "WorkInProgress"@en, "WerkInUitvoering"@nl .
+
+<https://data.crow.nl/imv/term/IcoonKampeerwagen> a skos:Concept;
+  skos:prefLabel "Icoon kampeerwagen"@nl, "Campervan icon"@en;
+  skos:definition "An icon that can be used to indicate that a traffic regulation applies to motorhomes or that they are exempt."@en,
+    "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op kampeerwagens, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/LijstRijrichtingFysiekePlaten> a skos:Collection;
+  skos:prefLabel "Lijst rijrichting fysieke platen"@nl, "List driving direction physical plates"@en;
+  skos:definition "List of designations indicating which driving direction of an NWB road segment a physical plate is intended for."@en,
+    "Lijst met aanduidingen voor welke rijrichting van een NWB-wegvak een fysieke plaat bedoeld is."@nl;
+  skos:member <https://data.crow.nl/imv/term/Heen>, <https://data.crow.nl/imv/term/Terug>,
+    <https://data.crow.nl/imv/term/Loodrecht>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/IcoonRvv-gevaarlijkeStoffen> a skos:Concept;
+  skos:prefLabel "Icoon rvv-gevaarlijke stoffen"@nl, "Rvv-hazardous icon"@en;
+  skos:definition "Icon used on a supplementary sign to indicate that a traffic regulation applies to vehicles with hazardous loads, or that they are exempt."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op voertuigen met gevaarlijke stoffen, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/LosseStenen> a skos:Concept;
+  skos:prefLabel "Loose gravel"@en, "Losse stenen"@nl;
+  skos:definition "Een wegdek met daarop losliggende stenen."@nl, "A road surface with loose gravel."@en .
+
+<https://data.crow.nl/imv/term/eindeSeizoen> a skos:Concept;
+  skos:prefLabel "einde seizoen"@nl, "end of season"@en;
+  skos:definition "Einddatum van de geldigheid van een seizoensmatige verkeersmaatregel in termen van dag en maand van het jaar"@nl,
+    "End date of the validity of a seasonal traffic regulation in terms of day and month of the year."@en .
+
+<https://data.crow.nl/imv/term/GeslotenWeg> a skos:Concept;
+  skos:prefLabel "Closed road"@en, "Gesloten weg"@nl;
+  skos:definition "Value indicating the road is closed for traffic."@en, "Waarde die aangeeft dat de weg gesloten is voor verkeer."@nl .
+
+<https://data.crow.nl/imv/term/VoertuigtypenlijstZonderRvv-icoon> a skos:Collection;
+  skos:prefLabel "Voertuigtypenlijst zonder rvv-icoon"@nl, "Vehicle types list without rvv-icon"@en;
+  skos:definition "List of vehicle types without icon in the RVV."@en, "Lijst met voertuigtypes die niet als icoon in de RVV staan."@nl;
+  skos:member <https://data.crow.nl/imv/term/Scootmobiel>, <https://data.crow.nl/imv/term/Vrouwenvoertuig>,
+    <https://data.crow.nl/imv/term/Dierenambulance>, <https://data.crow.nl/imv/term/Kampeerwagen>,
+    <https://data.crow.nl/imv/term/Ambulance>, <https://data.crow.nl/imv/term/Scooter>,
+    <https://data.crow.nl/imv/term/Treintaxi>, <https://data.crow.nl/imv/term/Speed-pedelec>,
+    <https://data.crow.nl/imv/term/Doktersvoertuig>, <https://data.crow.nl/imv/term/Brandweervoertuig>,
+    <https://data.crow.nl/imv/term/Bestemmingsverkeer>, <https://data.crow.nl/imv/term/Politievoertuig>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/ParkerenToegestaan> a skos:Concept;
+  skos:prefLabel "Parking allowed"@en, "Parkeren toegestaan"@nl;
+  skos:definition "Parkeren is hier toegestaan, soms onder voorwaarden."@nl, "Parking is allowed, sometimes conditionally."@en .
+
+<https://data.crow.nl/imv/term/bochtInDeWeg> a skos:Concept;
+  skos:prefLabel "curve in the road"@en, "bocht in de weg"@nl;
+  skos:definition "Aspect indicating a curve in the road."@en, "Aspect dat een boog in de weg aangeeft."@nl .
+
+<https://data.crow.nl/imv/term/typeObstakel> a skos:Concept;
+  skos:prefLabel "type of obstacle"@en, "type obstakel"@nl;
+  skos:definition "Aspect voor het type obstakel op een weg"@nl, "Aspect for the type of obstacle on a road."@en .
+
+<https://data.crow.nl/imv/term/GladWegdek> a skos:Concept;
+  skos:prefLabel "Slippery road"@en, "Glad wegdek"@nl;
+  skos:definition "A slippery road surface."@en, "Een glad wegdek."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-motorfiets> a skos:Concept;
+  skos:prefLabel "Rvv-motorcycle icon"@en, "Icoon rvv-motorfiets"@nl;
+  skos:definition "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op motorfietsen, of dat deze juist uitgezonderd zijn."@nl,
+    "Icon used to indicate on a subplate that a traffic measure applies to motorcycles, or that they are specifically exempted."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/eindeWegvakfractie> a skos:Concept;
+  skos:prefLabel "einde wegvakfractie"@nl, "end of road fraction"@en;
+  skos:definition "The endpoint of a traffic measure, expressed as a percentage of the road segment's length from the start of the segment."@en,
+    "Het eindpunt van een verkeersmaatregel, uitgedrukt in het percentage van de lengte van het wegvak vanaf het begin wegvak."@nl .
+
+<https://data.crow.nl/imv/term/GrootWild> a skos:Concept;
+  skos:prefLabel "Groot wild"@nl, "Large wildlife"@en;
+  skos:definition "Groot wild"@nl, "Large wildlife"@en .
+
+<https://data.crow.nl/imv/term/SlechtWegdek> a skos:Concept;
+  skos:prefLabel "Slecht wegdek"@nl, "Uneven road"@en;
+  skos:definition "Een wegdek dat beschadigd, ongelijkmatig of versleten is, waardoor rijden minder comfortabel en mogelijk gevaarlijk kan zijn."@nl,
+    "A road surface that is damaged, uneven, or worn out, making driving less smooth and potentially hazardous."@en .
+
+<https://data.crow.nl/imv/term/NatWegdek> a skos:Concept;
+  skos:prefLabel "Wet road surface"@en, "Nat wegdek"@nl;
+  skos:definition "Een nat wegdek."@nl, "A wet road surface"@en .
+
+<https://data.crow.nl/imv/term/BinnenBebouwdeKom> a skos:Concept;
+  skos:prefLabel "Insite built up areas"@en, "Binnen bebouwde kom"@nl;
+  skos:definition "The area within a town or city, marked with boundary signs, where there is a higher concentration of buildings."@en,
+    "De met komborden aangeduide gebied binnen een plaats of stad waar een hogere concentratie aan bebouwing aanwezig is."@nl .
+
+<https://data.crow.nl/imv/term/NetwerklocatieFysiekePlaat> a skos:Concept;
+  skos:prefLabel "Netwerklocatie fysieke plaat"@nl, "Network location road sign"@en;
+  skos:definition "De locatie van een Fysieke Plaat in het wegennetwerk."@nl, "The location of a road sign in the road network."@en;
+  skos:broader <https://w3id.org/nen2660/term#SpatialRegion> .
+
+<https://data.crow.nl/imv/term/LijstVanWeercondities> a skos:Collection;
+  skos:prefLabel "Lijst van weercondities"@nl, "List of weather conditions"@en;
+  skos:definition "Lijst met weersomstandigheden"@nl, "List with weather conditions"@en;
+  skos:member <https://data.crow.nl/imv/term/Neerslag>, <https://data.crow.nl/imv/term/Zijwind>,
+    <https://data.crow.nl/imv/term/IJzelOfSneeuw>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/maximaleParkeertijd> a skos:Concept;
+  skos:prefLabel "maximum parking duration"@en, "maximale parkeertijd"@nl;
+  skos:related "https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=II&paragraaf=10&artikel=25&z=2023-07-01&g=2023-07-01"^^xsd:anyURI;
+  skos:definition "De maximale parkeertijd in uren"@nl, "The maximum parking duration in hours"@en .
+
+<https://data.crow.nl/imv/term/RAL-kleurenlijstVerkeersborden> a skos:Collection;
+  skos:prefLabel "RAL-kleurenlijst verkeersborden"@nl, "RAL-color list traffic signs"@en;
+  skos:definition "Lijst met RAL-kleuren gebruikt voor verkeersborden. Bron: NEN 3381:2020"@nl,
+    "\"Lijst met RAL-kleuren gebruikt voor verkeersborden. Bron: NEN 3381:2020\",\"List with RAL-colors used for road signs. Source: NEN 3381:2020\"$https://www.nen.nl/nen-3381-2020-nl-267378"@en;
+  skos:member <https://data.crow.nl/imv/term/Ral9017>, <https://data.crow.nl/imv/term/Ral8016>,
+    <https://data.crow.nl/imv/term/Ral9016>, <https://data.crow.nl/imv/term/Ral5017>,
+    <https://data.crow.nl/imv/term/Ral6024>, <https://data.crow.nl/imv/term/Ral1023>,
+    <https://data.crow.nl/imv/term/Ral3020>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/typeKruising> a skos:Concept;
+  skos:prefLabel "type kruising"@nl, "type of crossing"@en;
+  skos:definition "Aspect indicating the type of crossing"@en, "Aspect dat het type kruising aanduidt"@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-autobus> a skos:Concept;
+  skos:prefLabel "Icoon rvv-autobus"@nl, "Rvv-bus icon"@en;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to buses, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op autobussen, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/voertuighoogteGroterDan> a skos:Concept;
+  skos:prefLabel "voertuighoogte groter dan"@nl, "vehicle height greater than"@en;
+  skos:definition "Minimum height of a vehicle and vehicle combinations, including the load, to which a traffic measure applies."@en,
+    "Minimale hoogte van een voertuig en samenstellen van voertuigen met inbegrip van de lading waarop een verkeersmaatregel van toepassing is"@nl .
+
+<https://data.crow.nl/imv/term/verplichtGebruikWeg> a skos:Concept;
+  skos:prefLabel "verplicht gebruik weg"@nl, "obligatory road use"@en;
+  skos:definition "Aanduiding of een bepaalde weg, rijbaan of strook verplicht moet worden gebruikt in specifieke verkeerssituaties."@nl,
+    "Indication of whether a particular road, lane, or track must be used in specific traffic situations."@en .
+
+<https://data.crow.nl/imv/term/IcoonRvv-bromfiets> a skos:Concept;
+  skos:prefLabel "Icoon rvv-bromfiets"@nl, "Rvv-moped icon"@en;
+  skos:definition "Black icon used to indicate on a subplate that a traffic measure applies to mopeds, scooters, and mobility vehicles with an engine in operation, or that they are specifically exempted."@en,
+    "Zwart icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/hellingspercentageWeg> a skos:Concept;
+  skos:prefLabel "hellingspercentage weg"@nl, "road gradient value"@en;
+  skos:definition "Waarde van het hellingspercentage"@nl, "Value of the road gradient in percent."@en .
+
+<https://data.crow.nl/imv/term/OpenOfGeslotenlijst> a skos:Collection;
+  skos:prefLabel "Open or closed list"@en, "Open of geslotenlijst"@nl;
+  skos:definition "Lijst met waardes voor een open of gesloten weg."@nl, "List of values for open and closed roads."@en;
+  skos:member <https://data.crow.nl/imv/term/OpenWeg>, <https://data.crow.nl/imv/term/GeslotenWeg>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/TypesWegversmallingen> a skos:Collection;
+  skos:prefLabel "Types wegversmallingen"@nl, "Road narrowing types"@en;
+  skos:definition "Lijst met soorten wegversmallingen."@nl, "List with types of road narrowing."@en;
+  skos:member <https://data.crow.nl/imv/term/Wegversmalling>, <https://data.crow.nl/imv/term/WegversmallingLinks>,
+    <https://data.crow.nl/imv/term/WegversmallingRechts>;
+  skos:broader <https://w3id.org/nen2660/def#EnumerationType> .
+
+<https://data.crow.nl/imv/term/WegversmallingRechts> a skos:Concept;
+  skos:prefLabel "Wegversmalling rechts"@nl, "Road narrowing right"@en;
+  skos:definition "Road narrowing on the right-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter rechterzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/term/IcoonRvv-vrachtauto> a skos:Concept;
+  skos:prefLabel "Icoon rvv-vrachtauto"@nl, "Rvv-lorry icon"@en;
+  skos:definition "Icon used to indicate on a subplate that a traffic measure applies to motor vehicles with more than two wheels, or that they are specifically exempted."@en,
+    "Icoon waarmee in een onderbord kan worden aangeduid dat een verkeersmaatregel van toepassing is op vrachtauto's, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/bijzondereTijdsvoorwaarden> a skos:Concept;
+  skos:prefLabel "special time conditions"@en, "bijzondere tijdsvoorwaarden"@nl;
+  skos:definition "Een voorwaarde die aangeeft dat een specifieke verkeersmaatregel geldt tijdens schemering of duisternis"@nl,
+    "A condition that indicates a specific traffic measure applies during dusk or darkness."@en .
+
+<https://data.crow.nl/imv/term/openOfGesloten> a skos:Concept;
+  skos:prefLabel "open of gesloten"@nl, "open or closed"@en;
+  skos:definition "Aspect indicating whether a road is open or closed."@en, "Aspect waarmee aangegeven wordt of een weg open of gesloten is."@nl .
+
+<https://data.crow.nl/imv/term/positienummerSchild> a skos:Concept;
+  skos:prefLabel "positienummer schild"@nl, "shield position number"@en;
+  skos:definition "Logische nummering van de positie van het achtergrondschild op de fysieke plaat; cijfers van boven naar beneden, letters van links naar rechts."@nl,
+    "Logical numbering of the position of the background shield on the physical plate; numbers from top to bottom, letters from left to right."@en .
+
+<https://data.crow.nl/imv/term/Plaatsnaam> a skos:Concept;
+  skos:prefLabel "Plaatsnaam"@nl, "Town name"@en;
+  skos:definition "Icoon voor de aanduiding van de plaatsnaam op een bord op één regel tekst."@nl,
+    "Icon for indicating the town name on a sign using one line of text."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonScootmobiel> a skos:Concept;
+  skos:prefLabel "Icoon scootmobiel"@nl, "Icon mobility scooter"@en;
+  skos:definition "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op scootmobielen, of dat deze juist uitgezonderd zijn."@nl,
+    "An icon that can be used to indicate that a traffic regulation applies to mobility scooters or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonScooter> a skos:Concept;
+  skos:prefLabel "Icoon scooter"@nl, "Icon scooter"@en;
+  skos:definition "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op scooters, of dat deze juist uitgezonderd zijn."@nl,
+    "An icon that can be used to indicate that a traffic regulation applies to motorhomes or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonVrouwenvoertuig> a skos:Concept;
+  skos:prefLabel "Icoon vrouwenvoertuig"@nl, "Icon womans vehicle"@en;
+  skos:definition "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op voertuigen gebruikt door vrouwen, of dat deze juist uitgezonderd zijn."@nl,
+    "An icon that can be used to indicate that a traffic regulation applies to vehicles belonging to women or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonAmbulance> a skos:Concept;
+  skos:prefLabel "Icoon ambulance"@nl, "Icon ambulance"@en;
+  skos:definition "An icon that can be used on to indicate that a traffic regulation applies to ambulances or that they are exempt."@en,
+    "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op ambulances, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonPolitie> a skos:Concept;
+  skos:prefLabel "Icoon politie"@nl, "Icon police"@en;
+  skos:definition "An icon that can be used to indicate that a traffic regulation applies to police vehicles or that they are exempt."@en,
+    "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op politievoertuigen, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/PijlLinks> a skos:Concept;
+  skos:prefLabel "Arrow left"@en, "Pijl links"@nl;
+  skos:definition "Icoon van een pijl wijzend naar links."@nl, "Icon of an arrow pointing to the left."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonAutodelen> a skos:Concept;
+  skos:prefLabel "Icon car sharing"@en, "Icoon autodelen"@nl;
+  skos:definition "The text car sharing on a road sign."@en, "De tekst auto-delen op een verkeersbord."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/PijlRechtsonder> a skos:Concept;
+  skos:prefLabel "Red arrow down right"@en, "Pijl rechtsonder"@nl;
+  skos:definition "Icon of an arrow pointing downwards to the right."@en, "Icoon van een pijl naar rechtsonder."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/PijlLinksonder> a skos:Concept;
+  skos:prefLabel "Red arrow down left"@en, "Pijl linksonder"@nl;
+  skos:definition "Icoon van een pijl naar linksonder."@nl, "Icon of an arrow pointing downwards to the left."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/xMeterGeldig> a skos:Concept;
+  skos:prefLabel "x meter geldig"@nl, "valid for x metres."@en;
+  skos:definition "Aspect indicating the distance in metres from the sign over which the traffic measure applies."@en,
+    "Aspect wat aangeeft hoeveel meter lengte vanaf het bord de verkeersmaatregel geldt."@nl .
+
+<https://data.crow.nl/imv/term/IcoonArtsenvoertuig> a skos:Concept;
+  skos:prefLabel "Icoon artsenvoertuig"@nl, "Icon doctors vehicle"@en;
+  skos:definition "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op ambulances, of dat deze juist uitgezonderd zijn."@nl,
+    "An icon that can be used to indicate that a traffic regulation applies to doctors vehicles or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonBetaaldParkeren> a skos:Concept;
+  skos:prefLabel "Icon payed parking"@en, "Icoon betaald parkeren"@nl;
+  skos:definition "Image of a hand inserting a coin into a machine."@en, "Afbeelding van een hand die een munt in een automaat gooit,"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/BuurtnaamGemeentenaam> a skos:Concept;
+  skos:prefLabel "Neighbourhood name municipality name"@en, "Buurtnaam gemeentenaam"@nl;
+  skos:definition "Icon for indicating the neighbourhood name and the municipality name."@en,
+    "Icoon voor de aanduiding van de buurtnaam en de gemeentenaam."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Tijd> a skos:Concept;
+  skos:prefLabel "Time"@en, "Tijd"@nl;
+  skos:definition "Rechthoekig icoon met een witte achtergrond en daarop de aanduiding van de uren van de dag waarop het bord geldig is."@nl,
+    "Rectangular icon with a white background displaying the hours of the day during which the sign is valid."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/PlaatsnaamStreektaal> a skos:Concept;
+  skos:prefLabel "Town name dialect"@en, "Plaatsnaam streektaal"@nl;
+  skos:definition "Icon for indicating the town name in Dutch and below it the name in the local tongue."@en,
+    "Icoon voor de aanduiding van de plaatsnaam op een bord op één regel tekst en de streeknaam eronder."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/X-meter> a skos:Concept;
+  skos:prefLabel "X-meter"@en, "X-meter"@nl;
+  skos:definition "Wit rechthoekig icoon met in zwart de tekst x meter."@nl, "A white rectangular icon with in black the text x meters."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/PijlRechts> a skos:Concept;
+  skos:prefLabel "Pijl rechts"@nl, "Arrow right"@en;
+  skos:definition "Icoon van een pijl wijzend naar links."@nl, "Icon of an arrow pointing to the right."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonTreintaxi> a skos:Concept;
+  skos:prefLabel "Icoon treintaxi"@nl, "Icon train taxi"@en;
+  skos:definition "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op treintaxi's, of dat deze juist uitgezonderd zijn."@nl,
+    "An icon that can be used to indicate that a traffic regulation applies to train taxi's or that they are exempt."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Buurtnaam> a skos:Concept;
+  skos:prefLabel "Neighbourhood name"@en, "Buurtnaam"@nl;
+  skos:definition "Icon for indicating the neighbourhood name on a sign using one line of text."@en,
+    "Icoon voor de aanduiding van de buurtnaam op een bord op één regel tekst."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/Buurtnaam2Regels> a skos:Concept;
+  skos:prefLabel "Neighbourhood name 2 lines"@en, "Buurtnaam 2 regels"@nl;
+  skos:definition "Icon for indicating the neighbourhood name on a sign using two lines of text."@en,
+    "Icoon voor de aanduiding van de buurtnaam op een bord op twee regels tekst."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C23-snorfiets> a skos:Concept;
+  skos:prefLabel "ClosedToLightMopeds"@en, "C23-snorfiets"@nl;
+  skos:definition "Icoon Gesloten voor snorfietsen."@nl, "Icon Closed to light mopeds."@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E8-vracht> a skos:Concept;
+  skos:prefLabel "E8-vracht"@nl, "E8-vracht"@en;
+  skos:definition "A road sign indicating that the parking area is reserved for lorries only."@en,
+    "Een verkeersbord dat parkeergelegenheid aangeeft, uitsluitend voor vrachtauto's."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/E8-bus-vracht> a skos:Concept;
+  skos:prefLabel "E8-bus-vracht"@nl, "E8-bus-lorry"@en;
+  skos:definition "A road sign indicating that the parking area is reserved for busses and lorries only."@en,
+    "Een verkeersbord dat parkeergelegenheid aangeeft, uitsluitend voor bussen en vrachtwagens."@fr;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D103-bromfiets-r> a skos:Concept;
+  skos:prefLabel "D103-bromfiets-r"@nl, "D103-moped-r"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D104-bromfiets-l> a skos:Concept;
+  skos:prefLabel "D104-bromfiets-l"@nl, "D104-moped-l"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D101-fiets-r> a skos:Concept;
+  skos:prefLabel "D101-bike-r"@en, "D101-fiets-r"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/D102-fiets-l> a skos:Concept;
+  skos:prefLabel "D102-fiets-l"@nl, "D102-bike-l"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/OmgaanMetTegenliggers> a skos:Concept;
+  skos:prefLabel "Oncoming traffic situation"@en, "Omgaan met tegenliggers"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Verkeersmaatregel> .
+
+<https://data.crow.nl/imv/term/J2-bocht-naar-rechts> a skos:Concept;
+  skos:prefLabel "J2-curve-to-right"@en, "J2-bocht-naar-rechts"@nl;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor een bocht naar rechts"@nl,
+    "Traffic sign indicating a warning for a right turn"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J8-gevaarlijk-kruispunt> a skos:Concept;
+  skos:prefLabel "J8-gevaarlijk-kruispunt"@nl, "J8-dangerous-junction"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor gevaarlijk kruispunt"@nl,
+    "Traffic sign indicating a warning for a dangerous intersection"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J15-beweegbare-brug> a skos:Concept;
+  skos:prefLabel "J15-beweegbare-brug"@nl, "J15-movable-bridge"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor beweegbare brug"@nl,
+    "Traffic sign indicating a warning for a movable bridge"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J11-overweg> a skos:Concept;
+  skos:prefLabel "J11-overweg"@nl, "J11-level-crossing"@en;
+  skos:definition "Traffic sign indicating a warning for a railway crossing without barriers"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor overweg zonder slagbomen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J12-overweg-enkelspoor> a skos:Concept;
+  skos:prefLabel "J12-overweg-enkelspoor"@nl, "J12-level-crossing-single-railway"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor overweg met enkel spoor"@nl,
+    "Traffic sign indicating a warning for a single-track railway crossing"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/F10-Brigadier> a skos:Concept;
+  skos:prefLabel "F10-Brigadier"@nl, "F10-Sergeant"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J5-s-bocht-links> a skos:Concept;
+  skos:prefLabel "J5-s-bocht-links"@nl, "J5-s-curve-left"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor S-bocht(en), eerst naar links"@nl,
+    "Traffic sign indicating a warning for S-curve(s), first to the left"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J16-werk-in-uitvoering> a skos:Concept;
+  skos:prefLabel "J16-werk-in-uitvoering"@nl, "J16-road-work"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor werk in uitvoering"@nl,
+    "Traffic sign indicating a warning for road works in progress"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J3-bocht-naar-links> a skos:Concept;
+  skos:prefLabel "J3-curve-to-left"@en, "J3-bocht-naar-links"@nl;
+  skos:definition "Traffic sign indicating a warning for a left turn"@en, "Verkeersbord dat een waarschuwing aanduidt voor bocht naar links"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J4-s-bocht-rechts> a skos:Concept;
+  skos:prefLabel "J4-s-curve-right"@en, "J4-s-bocht-rechts"@nl;
+  skos:definition "Traffic sign indicating a warning for S-curve(s), first to the right"@en,
+    "Verkeersbord dat een waarschuwing aanduidt voor S-bocht(en), eerst naar rechts"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/IcoonBrandweer> a skos:Concept;
+  skos:prefLabel "Icon firefigther"@en, "Icoon brandweer"@nl;
+  skos:definition "An icon that can be used to indicate that a traffic regulation applies to fire guard vehicles or that they are exempt."@en,
+    "Icoon waarmee kan worden aangeduid dat een verkeersmaatregel van toepassing is op brandweerwagens, of dat deze juist uitgezonderd zijn."@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J13-overweg-meersporen> a skos:Concept;
+  skos:prefLabel "J13-overweg-meersporen"@nl, "J13-level-crossing-multiple-railway"@en;
+  skos:definition "Verkeersbord dat een waarschuwing aanduidt voor overweg met twee of meer sporen"@nl,
+    "Traffic sign indicating a warning for a railway crossing with two or more tracks"@en;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/J14-tramkruising> a skos:Concept;
+  skos:prefLabel "J14-tramkruising"@nl, "J14-tram-crossing"@en;
+  skos:definition "Traffic sign indicating a warning for a tram crossing"@en, "Verkeersbord dat een waarschuwing aanduidt voor tram(kruising)"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .
+
+<https://data.crow.nl/imv/term/C7c-kampeerwagen> a skos:Concept;
+  skos:prefLabel "C7c-camping-trailer"@en, "C7c-kampeerwagen"@nl;
+  skos:broader <https://data.crow.nl/imv/term/Icoon> .

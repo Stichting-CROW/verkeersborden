@@ -1,0 +1,1484 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dsa: <http://w3id.org/dsa/> .
+@prefix otl: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/otl-manager/> .
+@prefix ldoc: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/document-extractions/> .
+@prefix lkos: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/kos/> .
+@prefix lspec: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/specifications/> .
+@prefix ls: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/shapes/> .
+@prefix lbm: <http://www.laces.tech/publication/ns/semmtech/live/laces/schema/blueprint-manager/> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/> a owl:Ontology;
+  skos:prefLabel "IMV Domeinwaarden";
+  rdfs:comment "";
+  owl:versionInfo "v1_0_5";
+  owl:imports <https://w3id.org/nen2660/def#>;
+  dcterms:date "2025-10-31597" .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-trekker> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-trekker>;
+  skos:prefLabel "Rvv-trekker"@nl, "Rvv-tractor"@en;
+  skos:definition "\"Landbouw- en bosbouwtrekkers, motorrijtuigen met beperkte snelheid en mobiele machines zoals bedoeld met het icoon van een trekker in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Agricultural and forestry tractors, motor vehicles with limited speed, and mobile machines as represented by the tractor icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-autobus> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-autobus>;
+  skos:prefLabel "Rvv-bus"@en, "Rvv-autobus"@nl;
+  skos:definition """\"Autobus zoals bedoeld met het icoon van een autobus in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bus as represented by the bus icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral9016> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral9016>;
+  skos:prefLabel "Ral 9016"@en, "Ral 9016"@nl;
+  skos:definition "Wit"@nl, "White"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rotonde> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rotonde>;
+  skos:prefLabel "Rotonde"@nl, "Turnabout"@en;
+  skos:definition "A circular traffic arrangement where multiple roads converge, with a mandatory direction of travel."@en,
+    "Een cirkelvormige verkeerssituatie waar meerdere wegen op uitkomen, met een verplichte rijrichting."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Vee> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Vee>;
+  skos:prefLabel "Vee"@nl, "Livestock"@en;
+  skos:definition "Vee"@nl, "Livestock"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Wegsleepregeling> a <https://data.crow.nl/imv/def/Handhavingslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Wegsleepregeling>;
+  skos:prefLabel "Tow-away regulation"@en, "Wegsleepregeling"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where the vehicle is towed away and held until a fine is paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een  voertuig wordt afgevoerd en bewaard totdat een boete is betaald."@nl .
+
+<https://data.crow.nl/imv/def/Objectstatussenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Objectstatussenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Objectstatussenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Milieuzone> a <https://data.crow.nl/imv/def/Zonetypes>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Milieuzone>;
+  skos:prefLabel "Milieuzone"@nl, "Low emission zone"@en;
+  skos:definition "Gebied waarin alleen voertuigen met een specifieke emissieklasse mogen rijden."@nl,
+    "Area where only vehicles with a specific emission class are allowed to drive."@en .
+
+<https://data.crow.nl/imv/def/Voorrangsindicatielijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Poller> a <https://data.crow.nl/imv/def/Obstakeltypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Poller>;
+  skos:prefLabel "Bollard"@en, "Poller"@nl;
+  skos:definition "Bollard"@en, "Poller"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Keren> a <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Keren>;
+  skos:prefLabel "Keren"@nl, "Turn around"@en;
+  skos:definition "Keren"@nl, "Turn around"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-motorfiets> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-motorfiets>;
+  skos:prefLabel "Rvv-motorfiets"@nl, "Rvv-motorcycle"@en;
+  skos:definition """\"Motorfiets zoals bedoeld met het icoon van een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motorcycle as represented by the motorcycle icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Autoweg> a <https://data.crow.nl/imv/def/Snelheidsregimeslijst>;
+  rdfs:seeAlso <https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>,
+    <https://data.crow.nl/imv/term/Autoweg>;
+  skos:prefLabel "Autoweg"@nl, "Express road"@en;
+  skos:definition "Weg, aangeduid door bord G3 van bijlage I; langs autowegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autoweg uit."@nl,
+    "Road indicated by sign G3 from Annex I; parking areas, petrol stations, and bus stops located along main roads are not considered part of the main road."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rechtsaf> a <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rechtsaf>;
+  skos:prefLabel "Rechtsaf"@nl, "Go right"@en;
+  skos:definition "Rechtsaf slaan of rechts het bord passeren"@nl, "Turn right or pass the sign on the right"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-vrachtauto> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-vrachtauto>;
+  skos:prefLabel "Rvv-vrachtauto"@nl, "Rvv-lorry"@en;
+  skos:definition """\"Vrachtauto zoals bedoeld met het icoon van een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Lorry as represented by the lorry icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Voorrangskruispunt> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Voorrangskruispunt>;
+  skos:prefLabel "Voorrangskruispunt"@nl, "Priority junction"@en;
+  skos:definition "A junction with two minor roads."@en, "Een kruising met twee ondergeschikte wegen."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-fiets> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-fiets>;
+  skos:prefLabel "Rvv-cycle"@en, "Rvv-fiets"@nl;
+  skos:definition "\"Fietsen en gehandicaptenvoertuigen zonder motor zoals bedoeld met het icoon van een fiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Bicycles and vehicles for disabled persons without a motor as represented by the bicycle icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Voorrangsweg> a <https://data.crow.nl/imv/def/Voorrangsindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Voorrangsweg>;
+  skos:prefLabel "Voorrangsweg"@nl, "Priority road"@en;
+  skos:definition "Waarde die aangeeft dat het verkeer op de weg voorrang heeft op alle kruispunten."@nl,
+    "Value indicating the traffic on the road has priority on all crossings."@en .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-voetganger> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-voetganger>;
+  skos:prefLabel "Rvv-pedestrian"@en, "Rvv-voetganger"@nl;
+  skos:definition """\"Voetganger zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Pedestrian as represented by the pedestrian icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Snelheidszone> a <https://data.crow.nl/imv/def/Zonetypes>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Snelheidszone>;
+  skos:prefLabel "Speed zone"@en, "Snelheidszone"@nl;
+  skos:definition "Gebied waarin een maximum snelheid geldt."@nl, "Area were a maximum speed applies."@en .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Autosnelweg> a <https://data.crow.nl/imv/def/Snelheidsregimeslijst>;
+  rdfs:seeAlso <https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>,
+    <https://data.crow.nl/imv/term/Autosnelweg>;
+  skos:prefLabel "Motorway"@en, "Autosnelweg"@nl;
+  skos:definition "Weg, aangeduid door bord G1 van bijlage I; langs autosnelwegen gelegen parkeerplaatsen, tankstations en bushalteplaatsen maken geen deel van de autosnelweg uit."@nl,
+    "Road indicated by sign G1 from Annex I; parking areas, petrol stations, and bus stops located along motorways are not considered part of the motorway."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-gevaarlijkeStoffen> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-gevaarlijkeStoffen>;
+  skos:prefLabel "Rvv-hazardous"@en, "Rvv-gevaarlijke stoffen"@nl;
+  skos:definition "\"Voertuigen met bepaalde gevaarlijke stoffen zoals bedoeld met het icoon van een voetganger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Vehicles carrying certain hazardous substances as represented by the pedestrian icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Voetgangers> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Voetgangers>;
+  skos:prefLabel "Voetgangers"@nl, "Pedestrians"@en;
+  skos:definition "Voetgangers"@nl, "Pedestrians"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-brommer> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-brommer>;
+  skos:prefLabel "Rvv-brommer"@nl, "Rvv-moped"@en;
+  skos:definition "\"Bromfietsen, snorfietsen en gehandicaptenvoertuigen, met in werking zijnde motor zoals bedoeld met het icoon van een brommer in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Mopeds, light mopeds, and vehicles for disabled persons with an active motor as represented by the moped icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/Parkeerindicatielijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Parkeerindicatielijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Parkeerindicatielijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Vergunninghouders> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Vergunninghouders>;
+  skos:prefLabel "Vergunninghouders"@nl, "Permit holders"@en;
+  skos:definition "The parking measure applies on the condition that the driver holds a parking permit."@en,
+    "Onder voorwaarde dat de bestuurder een parkeervergunning heeft."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Daling> a <https://data.crow.nl/imv/def/Hellingsrichtingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Daling>;
+  skos:prefLabel "Daling"@nl, "Hill downwards"@en;
+  skos:definition "Een neerwaartse helling waarbij de weg geleidelijk of steil naar beneden loopt."@nl,
+    "A downward slope where the road gradually or steeply descends."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-tram> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-tram>;
+  skos:prefLabel "Rvv-tram"@en, "Rvv-tram"@nl;
+  skos:definition "A vehicle that runs on rails, like a train or a metro. Often, the rails are embedded in public roads, allowing the tram to operate amidst other traffic. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en,
+    "Een voertuig dat rijdt op rails, net als een trein of een metro. Veelal liggen de rails in de openbare weg zodat de tram tussen het andere verkeer rijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-motorvoertuig> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-motorvoertuig>;
+  skos:prefLabel "Rvv-motorvoertuig"@nl, "Rvv-motor vehicle"@en;
+  skos:definition "\"Alle motorvoertuigen zoals bedoeld met de gecombineerde iconen van een auto en een motorfiets in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"All motor vehicles as represented by the combined icons of a car and a motorcycle in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Neerslag> a <https://data.crow.nl/imv/def/LijstVanWeercondities>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Neerslag>;
+  skos:prefLabel "Neerslag"@nl, "Precipitation"@en;
+  skos:definition "Slecht zicht door sneeuw, regen of mist."@nl, "Poor visibility due to precipitation."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-bedrijfsvoertuig> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-bedrijfsvoertuig>;
+  skos:prefLabel "Rvv-bedrijfsvoertuig"@nl, "Rvv-company vehicle"@en;
+  skos:definition "\"Bedrijfs- en vrachtauto's zoals bedoeld met het gecombineerde icoon van een bedrijfsbus en een vrachtauto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Commercial vehicles and lorries as represented by the combined icons of a commercial van and a lorry in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/def/Hellingsrichtingenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Hellingsrichtingenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Hellingsrichtingenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Nuluitstoot> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Nuluitstoot>;
+  skos:prefLabel "Nuluitstoot"@nl, "Zero emission"@en;
+  skos:definition "Waarde voor voertuigen met nul emissie."@nl, "Value for vehicles with zero emission."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral1023> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral1023>;
+  skos:prefLabel "Ral 1023"@en, "Ral 1023"@nl;
+  skos:definition "Fluorescent yellow"@en, "Fluoriserend geel"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral9017> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral9017>;
+  skos:prefLabel "Ral 9017"@en, "Ral 9017"@nl;
+  skos:definition "Zwart"@nl, "Black"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Paal> a <https://data.crow.nl/imv/def/Obstakeltypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Paal>;
+  skos:prefLabel "Paal"@nl, "Pole"@en;
+  skos:definition "Paal"@nl, "Pole"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Erf> a <https://data.crow.nl/imv/def/Snelheidsregimeslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Erf>;
+  skos:prefLabel "Erf"@nl, "Residential zone"@en;
+  skos:definition "An area where special traffic regulations apply."@en, "Een woongebied waar speciale verkeersregels gelden."@nl .
+
+<https://data.crow.nl/imv/def/Zonetypes> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Zonetypes-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Zonetypes-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-auto> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-auto>;
+  skos:prefLabel "Rvv-car"@en, "Rvv-auto"@nl, "Rvv-bedrijfsvoertuig"@en;
+  skos:definition ""@nl, """\"Motorvoertuig op meer dan twee wielen zoals bedoeld met het icoon van een auto in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicle with more than two wheels as represented by the car icon in 
+Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ongeval> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ongeval>;
+  skos:prefLabel "Traffic accident"@en, "Ongeval"@nl;
+  skos:definition "Traffic accident"@en, "Ongeval"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Zijwind> a <https://data.crow.nl/imv/def/LijstVanWeercondities>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Zijwind>;
+  skos:prefLabel "Side wind"@en, "Zijwind"@nl;
+  skos:definition "Side wind"@en, "Zijwind"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Kinderen> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Kinderen>;
+  skos:prefLabel "Kinderen"@nl, "Children"@en;
+  skos:definition "Kinderen"@nl, "Children"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Diesel> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Diesel>;
+  skos:prefLabel "Diesel"@en, "Diesel"@nl;
+  skos:definition "Value for diesel vehicles."@en, "Waarde voor dieselvoertuigen."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Vliegtuigen> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Vliegtuigen>;
+  skos:prefLabel "Vliegtuigen"@nl, "Airplanes"@en;
+  skos:definition "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@en,
+    "\"Een kruising met laagvliegende vliegtuigen.\", \"A crossing with low flying aircrafts.\""@nl .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-0> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Kruisingenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Kruisingenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Helling> a <https://data.crow.nl/imv/def/Hellingsrichtingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Helling>;
+  skos:prefLabel "Helling"@nl, "Hill upwards"@en;
+  skos:definition "An upward slope where the road gradually or steeply asscends."@en,
+    "Een opwaartse helling waarbij de weg geleidelijk of steil naar boven loopt."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral3020> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral3020>;
+  skos:prefLabel "Ral 3020"@en, "Ral 3020"@nl;
+  skos:definition "Rood"@nl, "Red"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rvv-aanhanger> a <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rvv-aanhanger>;
+  skos:prefLabel "Rvv-aanhanger"@nl, "Rvv-trailer"@en;
+  skos:definition "\"Motorvoertuigen met aanhangwagen zoals bedoeld met het icoon van een aanhanger in Bijlage 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990).\".\"Motor vehicles with a trailer as represented by the trailer icon in Annex 1 of the 1990 Traffic Rules and Signs Regulations (RVV 1990).\""@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Kampeerwagen> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Kampeerwagen>;
+  skos:prefLabel "Kampeerwagen"@nl, "Camper van"@en;
+  skos:definition "Kampeerwagen als bedoeld in artikel 1.1 van de Regeling voertuigen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor caravan as defined in Article 1.1 of the Dutch Vehicle Regulations.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral5017> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral5017>;
+  skos:prefLabel "Ral 5017"@en, "Ral 5017"@nl;
+  skos:definition "Blauw"@nl, "Blue"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Tegenliggers> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Tegenliggers>;
+  skos:prefLabel "Tegenliggers"@nl, "Oncoming traffic"@en;
+  skos:definition "Tegenliggers"@nl, "Oncoming traffic"@en .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Carpool> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Carpool>;
+  skos:prefLabel "Carpool"@en, "Carpool"@nl;
+  skos:definition "For vehicles used by multiple people traveling together to a shared destination."@en,
+    "Voor voertuigen die worden gebruikt door meerdere personen die samen reizen naar een gedeelde bestemming."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral6024> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral6024>;
+  skos:prefLabel "Ral 6024"@en, "Ral 6024"@nl;
+  skos:definition "Fluoriserend groen"@nl, "Fluorescent green"@en .
+
+<https://data.crow.nl/imv/def/Voorlaatsituatielijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Voorlaatsituatielijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Voorlaatsituatielijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Voetgangersoversteekplaats> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Voetgangersoversteekplaats>;
+  skos:prefLabel "Voetgangersoversteekplaats"@nl, "Pedestrian crossing"@en;
+  skos:definition "Zebra crossing were pedestrians have priority."@en, "Oversteekplaats met zebrapad waar voetgangers voorrang hebben."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/File> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/File>;
+  skos:prefLabel "File"@nl, "Traffic jam"@en;
+  skos:definition "File"@nl, "Traffic jam"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ral8016> a <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ral8016>;
+  skos:prefLabel "Ral 8016"@en, "Ral 8016"@nl;
+  skos:definition "Bruin"@nl, "Brown"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Drempel> a <https://data.crow.nl/imv/def/Obstakeltypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Drempel>;
+  skos:prefLabel "Drempel"@nl, "Speed bump"@en;
+  skos:definition "Verkeersdrempel"@nl, "Speed bump"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Linksaf> a <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Linksaf>;
+  skos:prefLabel "Go left"@en, "Linksaf"@nl;
+  skos:definition "Linksaf slaan of links het bord passeren"@nl, "Turn left or pass the sign on the left"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Parkeerzone> a <https://data.crow.nl/imv/def/Zonetypes>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Parkeerzone>;
+  skos:prefLabel "Parkeerzone"@nl, "Parking zone"@en;
+  skos:definition "Gebied waarin specifieke regels gelden voor parkeren."@nl, "Area were specific parking rules apply."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Wielklem> a <https://data.crow.nl/imv/def/Handhavingslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Wielklem>;
+  skos:prefLabel "Wielklem"@nl, "Wheelclamp"@en;
+  skos:definition "A form of enforcement on incorrect traffic behaviour, usually for illegal parking, where a clamp is placed on one of the vehicle's wheels to prevent movement until a fine is paid or the required conditions are met."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag, meestal bij foutparkeren waarbij een klem op een van de wielen van het voertuig geplaatst om verplaatsing te voorkomen totdat een boete is betaald of aan de vereiste voorwaarden is voldaan."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Wegversmalling> a <https://data.crow.nl/imv/def/TypesWegversmallingen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Wegversmalling>;
+  skos:prefLabel "Wegversmalling"@nl, "Road narrowing"@en;
+  skos:definition "Symmetrische versmalling van de weg."@nl, "Symmetrical narrowing of the road."@en .
+
+<https://data.crow.nl/imv/def/Zonetypes-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Milieuzone>;
+  rdf:rest <https://data.crow.nl/imv/def/Zonetypes-list-4> .
+
+<https://data.crow.nl/imv/def/Zonetypes-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Voertuigbeperkingszone>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-0> .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Paal>;
+  rdf:rest <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-2> .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Veerooster>;
+  rdf:rest <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-3> .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Kinderen>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-9> .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Tegenliggers>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Doktersvoertuig> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Doktersvoertuig>;
+  skos:prefLabel "Doctors vehicle"@en, "Doktersvoertuig"@nl;
+  skos:definition "A vehicle belonging to a doctor."@en, "Voertuig van een arts."@nl .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Autosnelweg>;
+  rdf:rest <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-1> .
+
+<https://data.crow.nl/imv/def/Inhaalindicatielijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/InhalenToegestaan>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-motorfiets>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-8> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-bedrijfsvoertuig>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-9> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Brandweervoertuig> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Brandweervoertuig>;
+  skos:prefLabel "Brandweervoertuig"@nl, "Fire brigade vehicle"@en;
+  skos:definition "Voertuig van de brandweer."@nl, "Fire brigade vehicle."@en .
+
+<https://data.crow.nl/imv/def/Weekend-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Zaterdag>;
+  rdf:rest <https://data.crow.nl/imv/def/Weekend-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Zaterdag> a <https://data.crow.nl/imv/def/Weekend>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Zaterdag>;
+  skos:prefLabel "Saturday"@en, "Zaterdag"@nl;
+  skos:definition "Saturday"@en, "Zaterdag"@nl .
+
+<https://data.crow.nl/imv/def/Weekend-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Zondag>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Poller>;
+  rdf:rest <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/Weekdagen-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Maandag>;
+  rdf:rest <https://data.crow.nl/imv/def/Weekdagen-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Maandag> a <https://data.crow.nl/imv/def/Weekdagen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Maandag>;
+  skos:prefLabel "Monday"@en, "Maandag"@nl;
+  skos:definition "Monday"@en, "Maandag"@nl .
+
+<https://data.crow.nl/imv/def/Weekdagen-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Dinsdag>;
+  rdf:rest <https://data.crow.nl/imv/def/Weekdagen-list-2> .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/4EnHoger>;
+  rdf:rest <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-3> .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/5EnHoger>;
+  rdf:rest <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-4> .
+
+<https://data.crow.nl/imv/def/Handhavingslijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Wielklem>;
+  rdf:rest <https://data.crow.nl/imv/def/Handhavingslijst-list-2> .
+
+<https://data.crow.nl/imv/def/Handhavingslijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Boete>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/StoppenVoorrangVerlenen>;
+  rdf:rest <https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-3> .
+
+<https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Voorrangsweg>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VoorrangskruispuntLinks>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-9> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OverwegMetSlagboom>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-10> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Boete> a <https://data.crow.nl/imv/def/Handhavingslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Boete>;
+  skos:prefLabel "Fine"@en, "Boete"@nl;
+  skos:definition "A form of enforcement on incorrect traffic behaviour where a fine has to be paid."@en,
+    "Een vorm van handhaving op incorrect verkeersgedrag waarbij een boete moet worden betaald."@nl .
+
+<https://data.crow.nl/imv/def/Handhavingslijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Handhavingslijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Handhavingslijst-list-0> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-gevaarlijkeStoffen>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-11> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-tram>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-12> .
+
+<https://data.crow.nl/imv/def/Zonetypes-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Parkeerzone>;
+  rdf:rest <https://data.crow.nl/imv/def/Zonetypes-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Rechtdoor> a <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Rechtdoor>;
+  skos:prefLabel "Straight ahead"@en, "Rechtdoor"@nl;
+  skos:definition "Rechtdoor gaan"@nl, "Go straight ahead"@en .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Erf>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ongeval>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-3> .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/WerkInUitvoering>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Politievoertuig> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Politievoertuig>;
+  skos:prefLabel "Police vehicle"@en, "Politievoertuig"@nl;
+  skos:definition "Voertuig van de politie."@nl, "A vehicle belonging to the police."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Bestemmingsverkeer> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Bestemmingsverkeer>;
+  skos:prefLabel "Bestemmingsverkeer"@nl, "Source and destination traffic"@en;
+  skos:definition "Bestuurders wier reisdoel één of meer bepaalde percelen betreft die zijn gelegen aan of in de directe nabijheid van een weg met een door verkeerstekens aangegeven geslotenverklaring voor bepaalde categorieën bestuurders en die slechts via deze weg zijn te bereiken alsmede bestuurders van lijnbussen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Drivers whose travel destination concerns one or more specific premises located on or near a road with a traffic sign indicating a prohibition for certain categories of drivers, and which can only be accessed via this road, as well as drivers of scheduled buses.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-trekker>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-2> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-voetganger>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-3> .
+
+<https://data.crow.nl/imv/def/Parkeerindicatielijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/ParkerenToegestaan>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/KruisingMetVerkeerslichten>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-12> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-12> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Tramkruising>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-13> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Paddentrek> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Paddentrek>;
+  skos:prefLabel "Paddentrek"@nl, "Migratory toad crossing"@en;
+  skos:definition "Paddentrek"@nl, "Migratory toad crossing."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Wildrooster> a <https://data.crow.nl/imv/def/Obstakeltypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Wildrooster>;
+  skos:prefLabel "Wildrooster"@nl, "Animal grid"@en;
+  skos:definition "Wildrooster"@nl, "Animal grid"@en .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Vergunninghouders>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-4> .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OpladenVoertuig>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-5> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OverwegZonderSlagboom>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-3> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OverwegMetEnkelSpoor>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-4> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/GevaarlijkKruispunt>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/Hellingsrichtingenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Daling>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Zonetypes-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Snelheidszone>;
+  rdf:rest <https://data.crow.nl/imv/def/Zonetypes-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Dierenambulance> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Dierenambulance>;
+  skos:prefLabel "Animal ambulance."@en, "Dierenambulance"@nl;
+  skos:definition "Motorvoertuig, ingericht en bestemd om te worden gebruikt voor het vervoer van zieke en gewonde dieren. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "A motor vehicle designed and intended for the transport of sick and injured animals.  Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Voetgangers>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-8> .
+
+<https://data.crow.nl/imv/def/Inhaalindicatielijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/NietInhalen>;
+  rdf:rest <https://data.crow.nl/imv/def/Inhaalindicatielijst-list-1> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-brommer>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-auto>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-7> .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Nuluitstoot>;
+  rdf:rest <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-2> .
+
+<https://data.crow.nl/imv/def/Handhavingslijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Wegsleepregeling>;
+  rdf:rest <https://data.crow.nl/imv/def/Handhavingslijst-list-1> .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/ParkAndRide>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Voorrangskruispunt>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-8> .
+
+<https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VoorrangKrijgen>;
+  rdf:rest <https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-2> .
+
+<https://data.crow.nl/imv/def/Inhaalindicatielijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Inhaalindicatielijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Inhaalindicatielijst-list-0> .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BuitenBebouwdeKom>;
+  rdf:rest <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Dinsdag> a <https://data.crow.nl/imv/def/Weekdagen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Dinsdag>;
+  skos:prefLabel "Tuesday"@en, "Dinsdag"@nl;
+  skos:definition "Tuesday"@en, "Dinsdag"@nl .
+
+<https://data.crow.nl/imv/def/Weekdagen> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Weekdagen-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Weekdagen-list-0> .
+
+<https://data.crow.nl/imv/def/Hellingsrichtingenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Helling>;
+  rdf:rest <https://data.crow.nl/imv/def/Hellingsrichtingenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/FietsersEnBromfietsers>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-2> .
+
+<https://data.crow.nl/imv/def/Weekdagen-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Donderdag>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Donderdag> a <https://data.crow.nl/imv/def/Weekdagen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Donderdag>;
+  skos:prefLabel "Donderdag"@nl, "Thursday"@en;
+  skos:definition "Donderdag"@nl, "Thursday"@en .
+
+<https://data.crow.nl/imv/def/Parkeerindicatielijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/ParkerenVerboden>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeerindicatielijst-list-1> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VoorrangskruispuntRechts>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-11> .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/LadenEnLossen>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-3> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OverwegMeerSporen>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Loodrecht> a <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Loodrecht>;
+  skos:prefLabel "Loodrecht"@nl, "Perpendicular"@en;
+  skos:definition "Loodrecht"@nl, "Perpendicular"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Woensdag> a <https://data.crow.nl/imv/def/Weekdagen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Woensdag>;
+  skos:prefLabel "Wednesday"@en, "Woensdag"@nl;
+  skos:definition "Wednesday"@en, "Woensdag"@nl .
+
+<https://data.crow.nl/imv/def/Zonetypes-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Schoolzone>;
+  rdf:rest <https://data.crow.nl/imv/def/Zonetypes-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Schoolzone> a <https://data.crow.nl/imv/def/Zonetypes>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Schoolzone>;
+  skos:prefLabel "Schoolzone"@nl, "School zone"@en;
+  skos:definition "Area with a school were a Traffic Regulation applies."@en, "Gebied met een school waarin een Verkeersmaatregel geldt."@nl .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/File>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-7> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Scootmobiel> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Scootmobiel>;
+  skos:prefLabel "Mobility scooter"@en, "Scootmobiel"@nl;
+  skos:definition "Scootmobiel,Mobility scooter"@nl .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-autobus>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-6> .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Diesel>;
+  rdf:rest <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/KissAndRide>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-8> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Vliegtuigen>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-7> .
+
+<https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VoorrangVerlenen>;
+  rdf:rest <https://data.crow.nl/imv/def/Voorrangsindicatielijst-list-1> .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Autoweg>;
+  rdf:rest <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Heen> a <https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel>,
+    <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Heen>;
+  skos:prefLabel "Heen"@nl, "Outbound"@en;
+  skos:definition "Heen"@nl, "Outbound"@en .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Wildrooster>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Vee>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Scooter> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Scooter>;
+  skos:prefLabel "Scooter"@en, "Scooter"@nl;
+  skos:definition "Scooter,Scooter"@nl .
+
+<https://data.crow.nl/imv/def/Weekdagen-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Woensdag>;
+  rdf:rest <https://data.crow.nl/imv/def/Weekdagen-list-4> .
+
+<https://data.crow.nl/imv/def/Voorlaatsituatielijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VoorLatenGaan>;
+  rdf:rest <https://data.crow.nl/imv/def/Voorlaatsituatielijst-list-1> .
+
+<https://data.crow.nl/imv/def/Voorlaatsituatielijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/GaEerst>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/3EnHoger>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Carpool>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Vrijdag> a <https://data.crow.nl/imv/def/Weekdagen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Vrijdag>;
+  skos:prefLabel "Friday"@en, "Vrijdag"@nl;
+  skos:definition "Friday"@en, "Vrijdag"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Terug> a <https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel>,
+    <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Terug>;
+  skos:prefLabel "Return"@en, "Terug"@nl;
+  skos:definition "Return"@en, "Terug"@nl .
+
+<https://data.crow.nl/imv/def/Weekend> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/Weekend-list-0>;
+  sh:in <https://data.crow.nl/imv/def/Weekend-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Tramkruising> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Tramkruising>;
+  skos:prefLabel "Tramkruising"@nl, "Tram crossing"@en;
+  skos:definition "A crossing with tram traffic."@en, "Een kruising met tramverkeer."@nl .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Paddentrek>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-6> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Treintaxi> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Treintaxi>;
+  skos:prefLabel "Treintaxi"@nl, "Train taxi"@en;
+  skos:definition "Een taxi voor vervoer van treinpassagiers."@nl, "A taxi used to transport train passengers."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Vrouwenvoertuig> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Vrouwenvoertuig>;
+  skos:prefLabel "Vrouwenvoertuig"@nl, "Ladies vehicle"@en;
+  skos:definition "Vehicle of a woman, in the context of socially safe parking."@en,
+    "Voertuig van een vrouw, in de context van sociaal veilig parkeren."@nl .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/AlleenInDeVakken>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-vrachtauto>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-5> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-14> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rotonde>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/AlleenOpDeParkeerstrook>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-7> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/KadeOfRivieroever>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-6> .
+
+<https://data.crow.nl/imv/def/Objectstatussenlijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Gepland>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Gepland> a <https://data.crow.nl/imv/def/Objectstatussenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Gepland>;
+  skos:prefLabel "Planned"@en, "Gepland"@nl;
+  skos:definition "Planned"@en, "Gepland"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Speed-pedelec> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Speed-pedelec>;
+  skos:prefLabel "Speed-pedelec"@en, "Speed-pedelec"@nl;
+  skos:definition "Elektrische bromfiets met trapondersteuning waarvan de aandrijfkracht aanhoudt als het voertuig de snelheid van 25 km per uur overschrijdt. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl,
+    "Electric moped with pedal assistance, where the drive power continues when the vehicle exceeds a speed of 25 km/h. Source: Article 1 of the Traffic Rules and Traffic Signs Regulations 1990 (RVV 1990)."@en .
+
+<https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BinnenBebouwdeKom>;
+  rdf:rest <https://data.crow.nl/imv/def/Snelheidsregimeslijst-list-2> .
+
+<https://data.crow.nl/imv/def/Obstakeltypenlijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Drempel>;
+  rdf:rest <https://data.crow.nl/imv/def/Obstakeltypenlijst-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Zondag> a <https://data.crow.nl/imv/def/Weekend>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Zondag>;
+  skos:prefLabel "Sunday"@en, "Zondag"@nl;
+  skos:definition "Sunday"@en, "Zondag"@nl .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-fiets>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-10> .
+
+<https://data.crow.nl/imv/def/Weekdagen-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Vrijdag>;
+  rdf:rest <https://data.crow.nl/imv/def/Weekdagen-list-3> .
+
+<https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/6EnHoger>;
+  rdf:rest <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst-list-5> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-12> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-aanhanger>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-13> .
+
+<https://data.crow.nl/imv/def/Objectstatussenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Verwijderd>;
+  rdf:rest <https://data.crow.nl/imv/def/Objectstatussenlijst-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Geplaatst> a <https://data.crow.nl/imv/def/Objectstatussenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Geplaatst>;
+  skos:prefLabel "Placed"@en, "Geplaatst"@nl;
+  skos:definition "Placed"@en, "Geplaatst"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Veerooster> a <https://data.crow.nl/imv/def/Obstakeltypenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Veerooster>;
+  skos:prefLabel "Veerooster"@nl, "Cattle grid"@en;
+  skos:definition "Veerooster"@nl, "Cattle grid"@en .
+
+<https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/GrootWild>;
+  rdf:rest <https://data.crow.nl/imv/def/MedeweggebruikersLijst-list-5> .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-auto>;
+  rdf:rest <https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Ambulance> a <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Ambulance>;
+  skos:prefLabel "Ambulance"@en, "Ambulance"@nl;
+  skos:definition "A motor vehicle equipped for providing care to and transporting the sick and injured, as referred to in Article 1, paragraph 1, of the Ambulance Care Facilities Act. "@en,
+    "Een voor het verlenen van zorg aan en vervoer van zieken en gewonden ingericht motorvoertuig als bedoeld in Artikel 1 Wet ambulancezorgvoorzieningen. Bron: Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)."@nl .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-13> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BeweegbareBrug>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-14> .
+
+<https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/TweeWielenOpHetTrottoir>;
+  rdf:rest <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst-list-6> .
+
+<https://data.crow.nl/imv/def/Objectstatussenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Geplaatst>;
+  rdf:rest <https://data.crow.nl/imv/def/Objectstatussenlijst-list-2> .
+
+<https://data.crow.nl/imv/def/Kruisingenlijst-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Voetgangersoversteekplaats>;
+  rdf:rest <https://data.crow.nl/imv/def/Kruisingenlijst-list-5> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Voertuigbeperkingszone> a <https://data.crow.nl/imv/def/Zonetypes>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Voertuigbeperkingszone>;
+  skos:prefLabel "Voertuigbeperkingszone"@nl, "Vehicle restriction zone"@en;
+  skos:definition "Gebied waar bepaalde voertuigtypen geweerd worden."@nl, "Area with restricted acces for specific vehicle types."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/Verwijderd> a <https://data.crow.nl/imv/def/Objectstatussenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/Verwijderd>;
+  skos:prefLabel "Verwijderd"@nl, "Removed"@en;
+  skos:definition "Verwijderd"@nl, "Removed"@en .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-0>;
+  sh:in <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-0> .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel-list-0> .
+
+<https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-0> .
+
+<https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-0> .
+
+<https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-0> .
+
+<https://data.crow.nl/imv/def/OpenOfGeslotenlijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/OpenOfGeslotenlijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/OpenOfGeslotenlijst-list-0> .
+
+<https://data.crow.nl/imv/def/TypeWegconditie> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/TypeWegconditie-list-0>;
+  sh:in <https://data.crow.nl/imv/def/TypeWegconditie-list-0> .
+
+<https://data.crow.nl/imv/def/TypesWegversmallingen> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/TypesWegversmallingen-list-0>;
+  sh:in <https://data.crow.nl/imv/def/TypesWegversmallingen-list-0> .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-0>;
+  sh:in <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-0> .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-0> .
+
+<https://data.crow.nl/imv/def/LijstVanWeercondities-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/IJzelOfSneeuw>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstVanWeercondities-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/IJzelOfSneeuw> a <https://data.crow.nl/imv/def/LijstVanWeercondities>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/IJzelOfSneeuw>;
+  skos:prefLabel "Risk of Ice"@en, "IJzel of sneeuw"@nl;
+  skos:definition "Risk of ice form freezing rain or snow."@en, "IJzel of sneeuw,"@nl .
+
+<https://data.crow.nl/imv/def/LijstVanWeercondities-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Neerslag>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral9017>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-6> .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral1023>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/TypeWegconditie-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/GladWegdek>;
+  rdf:rest <https://data.crow.nl/imv/def/TypeWegconditie-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/GladWegdek> a <https://data.crow.nl/imv/def/TypeWegconditie>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/GladWegdek>;
+  skos:prefLabel "Slippery road"@en, "Glad wegdek"@nl;
+  skos:definition "A slippery road surface."@en, "Een glad wegdek."@nl .
+
+<https://data.crow.nl/imv/def/TypeWegconditie-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/NatWegdek>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/InhalenToegestaan> a <https://data.crow.nl/imv/def/Inhaalindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/InhalenToegestaan>;
+  skos:prefLabel "Inhalen toegestaan"@nl, "Overtaking allowed"@en;
+  skos:definition "Indicatie dat inhalen is toegestaan."@nl, "Indication that overtaking is allowed."@en .
+
+<https://data.crow.nl/imv/def/OpenOfGeslotenlijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/GeslotenWeg>;
+  rdf:rest <https://data.crow.nl/imv/def/OpenOfGeslotenlijst-list-1> .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-10> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Politievoertuig>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-11> .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-11> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Vrouwenvoertuig>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/StilstaanIndicatielijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/StilstaanVerboden>;
+  rdf:rest <https://data.crow.nl/imv/def/StilstaanIndicatielijst-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/StilstaanVerboden> a <https://data.crow.nl/imv/def/StilstaanIndicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/StilstaanVerboden>;
+  skos:prefLabel "Standing prohibited"@en, "Stilstaan verboden"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg niet is toegestaan."@nl,
+    "Indication that standing for a short while is not allowed."@en .
+
+<https://data.crow.nl/imv/def/StilstaanIndicatielijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/StilstaanToegestaan>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/4EnHoger> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/4EnHoger>;
+  skos:prefLabel "4 en hoger"@nl, "4 and higher"@en;
+  skos:definition "Value for vehicles with emission class four and higher."@en, "Waarde voor voertuigen met emissieklasse vier en hoger."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/StoppenVoorrangVerlenen> a <https://data.crow.nl/imv/def/Voorrangsindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/StoppenVoorrangVerlenen>;
+  skos:prefLabel "Stop secondary road"@en, "Stoppen voorrang verlenen"@nl;
+  skos:definition "Value indicating the traffic on a road has to halt and give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg moet stoppen en voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VoorrangskruispuntLinks> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VoorrangskruispuntLinks>;
+  skos:prefLabel "Priority junction left"@en, "Voorrangskruispunt links"@nl;
+  skos:definition "A junction with a minor road on the left."@en, "Een kruising met een ondergeschikte weg van links."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/KruisingMetVerkeerslichten> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/KruisingMetVerkeerslichten>;
+  skos:prefLabel "Kruising met verkeerslichten"@nl, "Crossing with traffic lights"@en;
+  skos:definition "Een wegknooppunt waar het verkeer wordt geregeld door middel van stoplichten."@nl,
+    "An intersection where traffic flow is controlled by signal lights."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/KissAndRide> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/KissAndRide>;
+  skos:prefLabel "Passenger loading and unloading"@en, "Kiss and ride"@nl;
+  skos:definition "On the condition that it is used to pick up or set down passengers."@en,
+    "De parkeermaatregel geldt onder voorwaarde dat de plek gebruikt wordt voor het in- en uitstappen van passagiers."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OverwegMetEnkelSpoor> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OverwegMetEnkelSpoor>;
+  skos:prefLabel "Railway crossing single track"@en, "Overweg met enkel spoor"@nl;
+  skos:definition "Level crossing with a single track."@en, "Gelijkvloerse spoorwegkruising met enkel spoor."@nl .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-6> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Scootmobiel>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-7> .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-7> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Dierenambulance>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-8> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VoorLatenGaan> a <https://data.crow.nl/imv/def/Voorlaatsituatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VoorLatenGaan>;
+  skos:prefLabel "Voor laten gaan"@nl, "Yield"@en;
+  skos:definition "Yield to oncoming traffic"@en, "Tegenliggers voor laten gaan"@nl .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Terug>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-2> .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Loodrecht>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/TypesWegversmallingen-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Wegversmalling>;
+  rdf:rest <https://data.crow.nl/imv/def/TypesWegversmallingen-list-1> .
+
+<https://data.crow.nl/imv/def/TypesWegversmallingen-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/WegversmallingRechts>;
+  rdf:rest <https://data.crow.nl/imv/def/TypesWegversmallingen-list-2> .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Scooter>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-1> .
+
+<https://data.crow.nl/imv/def/LijstVanWeercondities> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstVanWeercondities-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstVanWeercondities-list-0> .
+
+<https://data.crow.nl/imv/def/LijstVanWeercondities-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Zijwind>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstVanWeercondities-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/ParkerenToegestaan> a <https://data.crow.nl/imv/def/Parkeerindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/ParkerenToegestaan>;
+  skos:prefLabel "Parking allowed"@en, "Parkeren toegestaan"@nl;
+  skos:definition "Parkeren is hier toegestaan, soms onder voorwaarden."@nl, "Parking is allowed, sometimes conditionally."@en .
+
+<https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/S-bochtNaarLinks>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/S-bochtNaarLinks> a <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/S-bochtNaarLinks>;
+  skos:prefLabel "S-bocht naar links"@nl, "S-bend to the left"@en;
+  skos:definition "S-bocht(en), eerst naar links"@nl, "S-bend(s), first to the left"@en .
+
+<https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/S-bochtNaarRechts>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OverwegZonderSlagboom> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OverwegZonderSlagboom>;
+  skos:prefLabel "Level crossing"@en, "Overweg zonder slagboom"@nl;
+  skos:definition "Level crossing without barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising zonder slagboom."@nl .
+
+<https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/TussenZonsopkomstEnZonsondergang>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/TussenZonsopkomstEnZonsondergang> a <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/TussenZonsopkomstEnZonsondergang>;
+  skos:prefLabel "Between sunrise and sundown"@en, "Tussen zonsopkomst en zonsondergang"@nl;
+  skos:definition "Between sunrise and sundown, daytime."@en, "Tussen zonsopkomst en zonsondergang, overdag."@nl .
+
+<https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/TussenZonsondergangEnZonsopkomst>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-2> .
+
+<https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rechtdoor>;
+  rdf:rest <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-1> .
+
+<https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Keren>;
+  rdf:rest <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VoorrangKrijgen> a <https://data.crow.nl/imv/def/Voorrangsindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VoorrangKrijgen>;
+  skos:prefLabel "Get priority"@en, "Voorrang krijgen"@nl;
+  skos:definition "Value indicating the traffic on a crossing has priority."@en, "Waarde die aangeeft dat het verkeer op het kruispunt voorrang heeft."@nl .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Kampeerwagen>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/LosseStenen> a <https://data.crow.nl/imv/def/TypeWegconditie>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/LosseStenen>;
+  skos:prefLabel "Loose gravel"@en, "Losse stenen"@nl;
+  skos:definition "Een wegdek met daarop losliggende stenen."@nl, "A road surface with loose gravel."@en .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral5017>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-5> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/NietVerplichtGebruik> a <https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/NietVerplichtGebruik>;
+  skos:prefLabel "Niet verplicht gebruik"@nl, "Non mandatory use"@en;
+  skos:definition "Value indicating that a road, lane, or track must not be used obligatorily, as in the case of a non-mandatory cycle path."@en,
+    "Waarde die aangeeft dat een weg, baan of strook niet verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een onverplicht fietspad"@nl .
+
+<https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg-list-0>;
+  sh:in <https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg-list-0> .
+
+<https://data.crow.nl/imv/def/TypeWegconditie-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/SlechtWegdek>;
+  rdf:rest <https://data.crow.nl/imv/def/TypeWegconditie-list-2> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/SlechtWegdek> a <https://data.crow.nl/imv/def/TypeWegconditie>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/SlechtWegdek>;
+  skos:prefLabel "Slecht wegdek"@nl, "Uneven road"@en;
+  skos:definition "Een wegdek dat beschadigd, ongelijkmatig of versleten is, waardoor rijden minder comfortabel en mogelijk gevaarlijk kan zijn."@nl,
+    "A road surface that is damaged, uneven, or worn out, making driving less smooth and potentially hazardous."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/ParkAndRide> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/ParkAndRide>;
+  skos:prefLabel "Park and Ride"@en, "Park and Ride"@nl;
+  skos:definition "Voor parkeren en verder reizen met openbaar vervoer."@nl, "For parking and continuing the journey by public transport."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/NietInhalen> a <https://data.crow.nl/imv/def/Inhaalindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/NietInhalen>;
+  skos:prefLabel "No overtaking"@en, "Niet inhalen"@nl;
+  skos:definition "Indicatie dat inhalen niet is toegestaan."@nl, "Indication that overtaking is not allowed."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/StilstaanToegestaan> a <https://data.crow.nl/imv/def/StilstaanIndicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/StilstaanToegestaan>;
+  skos:prefLabel "Standing allowed"@en, "Stilstaan toegestaan"@nl;
+  skos:definition "Indicatie dat voor een korte tijdstilstaan op de weg is toegestaan, voor het laden en lossen van goederen of in- en uitstappen van passagiers."@nl,
+    "Indication that standing for a short while is allowed, for loading and unloading or to set down or pick up passengers."@en .
+
+<https://data.crow.nl/imv/def/StilstaanIndicatielijst> a sh:NodeShape;
+  owl:oneOf <https://data.crow.nl/imv/def/StilstaanIndicatielijst-list-0>;
+  sh:in <https://data.crow.nl/imv/def/StilstaanIndicatielijst-list-0> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BuitenBebouwdeKom> a <https://data.crow.nl/imv/def/Snelheidsregimeslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BuitenBebouwdeKom>;
+  skos:prefLabel "Buiten bebouwde kom"@nl, "Outsite built up areas"@en;
+  skos:definition "The area outside the boundary signs of a town or village where the density of buildings is lower."@en,
+    "Het gebied buiten de komborden van een stad of dorp waar de concentratie aan bebouwing lager is."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OverwegMetSlagboom> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OverwegMetSlagboom>;
+  skos:prefLabel "Overweg met slagboom"@nl, "Level crossing with gate"@en;
+  skos:definition "Level crossing with barrier or gate ahead."@en, "Gelijkvloerse spoorwegkruising met slagboom."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VoorrangskruispuntRechts> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VoorrangskruispuntRechts>;
+  skos:prefLabel "Voorrangskruispunt rechts"@nl, "Priority junction right"@en;
+  skos:definition "Een kruising met een ondergeschikte weg van rechts."@nl, "A junction with a minor road on the right."@en .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-5> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Treintaxi>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-6> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BeweegbareBrug> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BeweegbareBrug>;
+  skos:prefLabel "Movable bridge"@en, "Beweegbare brug"@nl;
+  skos:definition "Een brug die kan worden geopend of verplaatst om scheepvaartverkeer doorgang te verlenen."@nl,
+    "A bridge that can be opened or moved to allow passage for maritime traffic."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/WegversmallingLinks> a <https://data.crow.nl/imv/def/TypesWegversmallingen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/WegversmallingLinks>;
+  skos:prefLabel "Wegversmalling links"@nl, "Road narrowing left"@en;
+  skos:definition "Road narrowing on the left-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter linkerzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/GeslotenWeg> a <https://data.crow.nl/imv/def/OpenOfGeslotenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/GeslotenWeg>;
+  skos:prefLabel "Closed road"@en, "Gesloten weg"@nl;
+  skos:definition "Value indicating the road is closed for traffic."@en, "Waarde die aangeeft dat de weg gesloten is voor verkeer."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/3EnHoger> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/3EnHoger>;
+  skos:prefLabel "3 and higher"@en, "3 en hoger"@nl;
+  skos:definition "Waarde voor voertuigen met emissieklasse drie en hoger."@nl, "Value for vehicles with emission class three and higher."@en .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Heen>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstRijrichtingFysiekePlaten-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/FietsersEnBromfietsers> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/FietsersEnBromfietsers>;
+  skos:prefLabel "Fietsers en bromfietsers"@nl, "Cyclists and moped riders"@en;
+  skos:definition "Fietsers en bromfietsers"@nl, "Cyclists and moped riders"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/GevaarlijkKruispunt> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/GevaarlijkKruispunt>;
+  skos:prefLabel "Gevaarlijk kruispunt"@nl, "Dangerous crossing"@en;
+  skos:definition "An intersection designated as dangerous by the road authority."@en,
+    "Een door de wegbeheerder als gevaarlijk aangemerkte kruising."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/ParkerenVerboden> a <https://data.crow.nl/imv/def/Parkeerindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/ParkerenVerboden>;
+  skos:prefLabel "Parkeren verboden"@nl, "Parking prohibited"@en;
+  skos:definition "Drivers should stop no longer than a specified amount of time, except for loading and unloading or to set down or pick up passengers."@en,
+    "Voertuigen mogen niet langer stilstaan dan nodig voor het in- en uitladen van goederen of in- en uitstappen van passagiers"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/TweeWielenOpHetTrottoir> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/TweeWielenOpHetTrottoir>;
+  skos:prefLabel "Two wheels on the sidewalk"@en, "Twee wielen op het trottoir"@nl;
+  skos:definition "Parking with two wheels on the pavement."@en, "Parkeren met twee wielen op het trottoir."@nl .
+
+<https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BochtNaarLinks>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BochtNaarLinks> a <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BochtNaarLinks>;
+  skos:prefLabel "Left bend"@en, "Bocht naar links"@nl;
+  skos:definition "Left bend"@en, "Bocht naar links"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BijSchemerEnDuisternis> a <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BijSchemerEnDuisternis>;
+  skos:prefLabel "Bij schemer en duisternis"@nl, "During dusk and darkness"@en;
+  skos:definition "Bij schemer en duisternis"@nl, "During dusk and darkness"@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/LadenEnLossen> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/LadenEnLossen>;
+  skos:prefLabel "Laden en lossen"@nl, "Loading and unloading"@en;
+  skos:definition "Parkeren voor voertuigen aan het laden of lossen zijn."@nl, "Parking on the condition that vehicles are loading of unloading."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OverwegMeerSporen> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OverwegMeerSporen>;
+  skos:prefLabel "Railway crossing multiple tracks"@en, "Overweg meer sporen"@nl;
+  skos:definition "Gelijkvloerse spoorwegkruising met twee of meer sporen."@nl, "Level crossing with two or more tracks."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/5EnHoger> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/5EnHoger>;
+  skos:prefLabel "5 and higher"@en, "5 en hoger"@nl;
+  skos:definition "Value for vehicles with emission class five and higher."@en, "Waarde voor voertuigen met emissieklasse vijf en hoger."@nl .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral6024>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-4> .
+
+<https://data.crow.nl/imv/def/TypeWegconditie-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/LosseStenen>;
+  rdf:rest <https://data.crow.nl/imv/def/TypeWegconditie-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/TussenZonsondergangEnZonsopkomst> a <https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/TussenZonsondergangEnZonsopkomst>;
+  skos:prefLabel "Tussen zonsondergang en zonsopkomst"@nl, "Between sundown and sunrise"@en;
+  skos:definition "Between sundown and sunrise, at night."@en, "Tussen zonsondergang en zonsopkomst, 's nachts."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VoorrangVerlenen> a <https://data.crow.nl/imv/def/Voorrangsindicatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VoorrangVerlenen>;
+  skos:prefLabel "Voorrang verlenen"@nl, "Secondary road"@en;
+  skos:definition "Value indicating the traffic on a road has to give priority to another road."@en,
+    "Waarde die aangeeft dat het verkeer op de weg voorrang moet verlenen"@nl .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-4> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Speed-pedelec>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-5> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/S-bochtNaarRechts> a <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/S-bochtNaarRechts>;
+  skos:prefLabel "S-bend to the right"@en, "S-bocht naar rechts"@nl;
+  skos:definition "S-bend(s), first to the right"@en, "S-bocht(en), eerst naar rechts"@nl .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral8016>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/GaEerst> a <https://data.crow.nl/imv/def/Voorlaatsituatielijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/GaEerst>;
+  skos:prefLabel "Go first"@en, "Ga eerst"@nl;
+  skos:definition "Ga eerst als er een tegenligger aan komt."@nl, "Go first in the case of oncoming traffic."@en .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-9> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Brandweervoertuig>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-10> .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral9016>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/VerplichtGebruik> a <https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/VerplichtGebruik>;
+  skos:prefLabel "Mandatory use"@en, "Verplicht gebruik"@nl;
+  skos:definition "Value indicating that a road, lane, or track must be used obligatorily, as in the case of a mandatory cycle path or passing lane."@en,
+    "Waarde die aangeeft dat een weg, baan of strook verplicht moet worden gebruikt, zoals bedoeld bij bijvoorbeeld een verplicht fietspad of een passeerbaan."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/WerkInUitvoering> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/WerkInUitvoering>;
+  skos:prefLabel "Werk in uitvoering"@nl, "Work in progress"@en;
+  skos:definition "WorkInProgress"@en, "WerkInUitvoering"@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/AlleenOpDeParkeerstrook> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/AlleenOpDeParkeerstrook>;
+  skos:prefLabel "Alleen op de parkeerstrook"@nl, "Only in the parking strip"@en;
+  skos:definition "Parking within the parking lane or parking strip."@en, "Parkeren op de parkeerstrook."@nl .
+
+<https://data.crow.nl/imv/def/OpenOfGeslotenlijst-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/OpenWeg>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OpenWeg> a <https://data.crow.nl/imv/def/OpenOfGeslotenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OpenWeg>;
+  skos:prefLabel "Open weg"@nl, "Open road"@en;
+  skos:definition "Waarde die aangeeft dat de weg open is voor verkeer."@nl, "Value indicating the road is open for traffic."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/KadeOfRivieroever> a <https://data.crow.nl/imv/def/Kruisingenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/KadeOfRivieroever>;
+  skos:prefLabel "Quay or river bench"@en, "Kade of rivieroever"@nl;
+  skos:definition "KadeOfRivieroever"@nl, "QuayOrRiverBench"@en .
+
+<https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Linksaf>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ambulance>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-4> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BinnenBebouwdeKom> a <https://data.crow.nl/imv/def/Snelheidsregimeslijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BinnenBebouwdeKom>;
+  skos:prefLabel "Insite built up areas"@en, "Binnen bebouwde kom"@nl;
+  skos:definition "The area within a town or city, marked with boundary signs, where there is a higher concentration of buildings."@en,
+    "De met komborden aangeduide gebied binnen een plaats of stad waar een hogere concentratie aan bebouwing aanwezig is."@nl .
+
+<https://data.crow.nl/imv/id/domeinwaarden/AlleenInDeVakken> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/AlleenInDeVakken>;
+  skos:prefLabel "Alleen in de vakken"@nl, "Only in the marked spaces"@en;
+  skos:definition "Parkeren in de vakken."@nl, "Parking within the marked spaces."@en .
+
+<https://data.crow.nl/imv/id/domeinwaarden/6EnHoger> a <https://data.crow.nl/imv/def/Voertuigemissieklassenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/6EnHoger>;
+  skos:prefLabel "6 en hoger"@nl, "6 and higher"@en;
+  skos:definition "Value for vehicles with emission class six and higher."@en, "Waarde voor voertuigen met emissieklasse zes en hoger."@nl .
+
+<https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/VerplichtGebruik>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-8> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Doktersvoertuig>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-9> .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel-list-1> a
+    rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Terug>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-1> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Ral3020>;
+  rdf:rest <https://data.crow.nl/imv/def/RAL-kleurenlijstVerkeersborden-list-2> .
+
+<https://data.crow.nl/imv/def/TypesWegversmallingen-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/WegversmallingLinks>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/GrootWild> a <https://data.crow.nl/imv/def/MedeweggebruikersLijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/GrootWild>;
+  skos:prefLabel "Groot wild"@nl, "Large wildlife"@en;
+  skos:definition "Groot wild"@nl, "Large wildlife"@en .
+
+<https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel-list-0> a
+    rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Heen>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstRijrichtingenVoorEenVerkeersmatregel-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/OpladenVoertuig> a <https://data.crow.nl/imv/def/Parkeervoorwaardenlijst>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/OpladenVoertuig>;
+  skos:prefLabel "Opladen voertuig"@nl, "Charging vehicle"@en;
+  skos:definition "Parkeren voor het opladen van een elektrisch voertuig. "@nl, "Parking on the condition that an electric vehicle is charging."@en .
+
+<https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten-list-3> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BochtNaarRechts>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/id/domeinwaarden/BochtNaarRechts> a <https://data.crow.nl/imv/def/LijstMetGevaarlijkeBochten>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/BochtNaarRechts>;
+  skos:prefLabel "Right bend"@en, "Bocht naar rechts"@nl;
+  skos:definition "Right bend"@en, "Bocht naar rechts"@nl .
+
+<https://data.crow.nl/imv/def/LijstBijzondereTijdsvoorwaarden-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/BijSchemerEnDuisternis>;
+  rdf:rest rdf:nil .
+
+<https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rechtsaf>;
+  rdf:rest <https://data.crow.nl/imv/def/ToegestaneRijrichtinglijst-list-3> .
+
+<https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-2> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Bestemmingsverkeer>;
+  rdf:rest <https://data.crow.nl/imv/def/VoertuigtypenlijstZonderRvv-icoon-list-3> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/NatWegdek> a <https://data.crow.nl/imv/def/TypeWegconditie>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/NatWegdek>;
+  skos:prefLabel "Wet road surface"@en, "Nat wegdek"@nl;
+  skos:definition "Een nat wegdek."@nl, "A wet road surface"@en .
+
+<https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg-list-0> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/NietVerplichtGebruik>;
+  rdf:rest <https://data.crow.nl/imv/def/LijstVerplichtGebruikWeg-list-1> .
+
+<https://data.crow.nl/imv/id/domeinwaarden/WegversmallingRechts> a <https://data.crow.nl/imv/def/TypesWegversmallingen>;
+  rdfs:seeAlso <https://data.crow.nl/imv/term/WegversmallingRechts>;
+  skos:prefLabel "Wegversmalling rechts"@nl, "Road narrowing right"@en;
+  skos:definition "Road narrowing on the right-hand side as viewed from the driver's perspective."@en,
+    "Wegversmalling ter rechterzijde bekeken vanuit de bestuurder."@nl .
+
+<https://data.crow.nl/imv/def/RVV-Voertuigtypenlijst-list-13> a rdf:List;
+  rdf:first <https://data.crow.nl/imv/id/domeinwaarden/Rvv-motorvoertuig>;
+  rdf:rest rdf:nil .
+
+<https://wetten.overheid.nl/jci1.3:c:BWBR0004825&hoofdstuk=I&artikel=1&z=2023-07-01&g=2023-07-01>
+  skos:prefLabel "Artikel 1 Reglement verkeersregels en verkeerstekens 1990 (RVV 1990)" .
