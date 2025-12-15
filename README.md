@@ -21,7 +21,9 @@ De context, doelen, use cases en uitgangspunten van het informatiemodel staan in
 
 ## Standaard
 
-* Het informatiemodel is online beschikbaar via [SPARQL-endpoints](https://github.com/Stichting-CROW/verkeersborden/blob/main/SPARQL-endpoints.md) waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden.  Voor mensen is er een [viewer](https://imv-viewer.apps.crow.wistor.nl/) om het informatiemodel te bekijken.
+* Het informatiemodel is online beschikbaar via [SPARQL-endpoints](https://github.com/Stichting-CROW/verkeersborden/blob/main/SPARQL-endpoints.md) en als [ttl-files](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/models) 
+* Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden.  
+* Voor mensen is er een [viewer](https://imv-viewer.apps.crow.wistor.nl/) om het informatiemodel te bekijken.
 * De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 * Zie voor de [svg's van verkeersborden](https://github.com/Stichting-CROW/verkeersborden/edit/main/images), met doorverwijzing naar NDW en NLCS in de [ReadME](https://github.com/Stichting-CROW/verkeersborden/edit/main/images/ReadME).
 * Een vertaling naar veel voorkomende standaard fysieke platen (fysieke verkeersborden met gekleurde achtergrondschilden, iconen van verkeersborden, onderborden en teksten) zoals men die buiten tegenkomt, en die in NLCS of IMBOR zijn opgenomen, is nog niet uitgewerkt voor de concept 1.0 versie.
