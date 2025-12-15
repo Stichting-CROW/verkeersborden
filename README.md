@@ -1,6 +1,9 @@
-# Informatiemodel Verkeerstekens en verkeersbesluiten
+# Informatiemodel Verkeerstekens en verkeersbesluiten, 
+Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen tonen. Met het informatiemodel wordt mogelijk dat wegbeheerders de verkeersborden uit hun eigen assetmanagementsystemen rechtstreeks kunnen delen met de nationale registratie, zonder dubbele administratie. 
 
-Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Informatiemodel Verkeerstekens op te stellen, met als doel bij het weggennetwerk verkeersregels en -borden te kunnen publiceren ten behoeve van SMART mobility systemen. 
+## Status: Acceptatie-versie 1.0
+Door de gebruikerscommissie is uitgesproken, dat eerst een implementatie-beproeving zou moeten plaatsvinden voordat het informatiemodel kan worden aangepast tot een eerste actuele versie. 
+Daarnaast is vanuit het ministerie nog geen structurele financiering beschikbaar voor beheer van het informatiemodel. De nieuwste wetswijziging in de borden voor milieurzones zijn daarom nog niet verwerkt. 
 
 <figure>
 <img src="./imagemapdocumentatie.png">
@@ -11,15 +14,14 @@ Het Ministerie van Infrastructuur en Waterstaat heeft CROW gevraagd om een Infor
 De context, doelen, use cases en uitgangspunten van het informatiemodel staan in het [Architectuur Framework](https://docs.crow.nl/verkeersborden/framework).
 
 
-## Open beheer conform BOMOS
-* De website komt beschikbaar bij definitieve publicatie.
+## Open standaard, beheer volgens BOMOS 
 * Het [Beheerplan](https://docs.crow.nl/verkeersborden/beheerplan) beschrijft het beheer van het informatiemodel als open standaard. Voor de beheerder van het Informatiemodel is er een [Beheerhandleiding](https://docs.crow.nl/verkeersborden/managementmanual).
 * Met [GitHub issues](https://github.com/Stichting-CROW/verkeersborden/issues) kunnen gebruikers van het informatiemodel verzoeken om opheldering van de documentatie of om wijzigingen in het informatiemodel vragen.
 * Gebruikers kunnen bij de [helpdesk van CROW](https://www.crow.nl/ondersteuning/helpdesk) terecht voor vragen over het informatiemodel.
 
 ## Standaard
 
-* Het informatiemodel is online beschikbaar via [SPARQL-endpoints](https://github.com/Stichting-CROW/verkeersborden/blob/main/SPARQL-endpoints.md) waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden.  Voor mensen is er een [viewer](https://crow.wistor.nl/projects/Test/XuQYW/) om het informatiemodel te bekijken, en een viewer met [standaard Fysieke Platen](https://docs.crow.nl/verkeersborden/standardplates/).
+* Het informatiemodel is online beschikbaar via [SPARQL-endpoints](https://github.com/Stichting-CROW/verkeersborden/blob/main/SPARQL-endpoints.md) waar het ook kan worden gedownload als turtle. Met standaard [query's](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/modelquerys) kan het informatiemodel doorzocht worden.  Voor mensen is er een [viewer](https://imv-viewer.apps.crow.wistor.nl/) om het informatiemodel te bekijken.
 * De [Technische documentatie](https://docs.crow.nl/verkeersborden/technicaldocs) bevat de onderbouwing van de technische uitwerking van het informatiemodel. 
 * Zie voor de [svg's van verkeersborden](https://github.com/Stichting-CROW/verkeersborden/edit/main/images), met doorverwijzing naar NDW en NLCS in de [ReadME](https://github.com/Stichting-CROW/verkeersborden/edit/main/images/ReadME).
 * Een vertaling naar veel voorkomende standaard fysieke platen (fysieke verkeersborden met gekleurde achtergrondschilden, iconen van verkeersborden, onderborden en teksten) zoals men die buiten tegenkomt, en die in NLCS of IMBOR zijn opgenomen, is nog niet uitgewerkt voor de concept 1.0 versie.
@@ -35,5 +37,6 @@ Databeheerders worden op weg geholpen met:
 * In de [Leermaterialen voor assetdatabeheerders en wegbeheerders, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datamanagementguide) wordt de weg(data-)beheerder ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [controlemechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/datachecks) (kwaliteitstoetsen datasets).
 
 #### Voor datagebruikers
+Gezien de acceptatie-status van het informatiemodel en het feit dat deze nog niet in gebruik in bij de landselijke wegennetwerk- en verkeersbordenregistratie zijn deze onderdelen nog niet uitgewerkt. 
 * [Gids voor datagebruik](https://docs.crow.nl/verkeersborden/howtousedata): toelichting op de logica van het informatiemodel en hoe de verkeerskundige informatie kan worden doorzocht met de beschikbare zoekmechanismes ([SPARQL queries nog niet uitgewerkt]())
 * In  de [Leermaterialen voor ontwikkelaars, nog niet uitgewerkt](https://docs.crow.nl/verkeersborden/datauserguide) wordt de datagebruiker ondersteund bij het leren door oefeningen. Daarbij horen [voorbeelddatasets, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/exampledatasets) en [zoekmechanismes, nog niet uitgewerkt](https://github.com/Stichting-CROW/verkeersborden/tree/main/code/dataquerys) voor het zoeken naar actuele verkeersmaatregelen en verkeersborden.
